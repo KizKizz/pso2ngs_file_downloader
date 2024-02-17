@@ -1,0 +1,583 @@
+﻿ナグルス,Nogleth,en_r01_gd_box_ba.ice,92\c21bda72b557f1c3fdf61fffa070c0
+ナグルス,Nogleth,en_r01_gd_box_ba_ag.ice,73\95f275404065592c3acd295f3c0a8b,ベテラン,Veteran
+en_gd_box_common.ice,14\7400f545dbf5a0f2ef5662b8162532
+ネクス・エアリオ,Nex Aelio,en_r01_gd_dra_ba.ice,d7\69e56ee35efa37c9bf7bb4e12a904c
+ネクス・エアリオ,Nex Aelio,en_r01_gd_dra_ba_ag.ice,d0\166e77659c73401d7b97f9dfd6c164,ベテラン,Veteran
+ネクス,Nex,en_r01_gd_dra_cm.ice,01\201860c1d03bfefe1a984799260dc2
+ネクス,Nex,en_r01_gd_dra_cm.ice,01\201860c1d03bfefe1a984799260dc2
+ネクス・ヴェラ,Nex Vera,en_r01_gd_dra_rai.ice,18\00cf00b09593231448e1e0452fc79e
+en_gd_dra_common.ice,f4\01aec29c453c452a4e2729753b5aa9
+フワン,Fuwan,en_r01_gd_flo_wi.ice,27\e8ac0f1281b9acef2b23772adcb43e
+en_gd_flo_common.ice,c2\9e34669c8ec1f2462da713a0e12b0b
+ドッツ,Dotts,en_r01_gd_for_ba.ice,44\1b3dec8e707c3b29d113791703cb0e
+en_gd_for_common.ice,fa\62dbc6550503ddf84c93b353513d54
+ダイダル・アックス,Daityl Axe,en_r01_gd_gia_ax.ice,37\6355bf6acb73f0c428acd9d41ee690
+ダイダル・アックス,Daityl Axe,en_r01_gd_gia_ax_ag.ice,b0\990ad91a68ea3f9abd86b99488e74e,ベテラン,Veteran
+ダイダル・ソード,Daityl Sword,en_r01_gd_gia_sw.ice,0b\41c5cb9780c674220a29a0f2f98c71
+ダイダル・ソード,Daityl Sword,en_r01_gd_gia_sw_ag.ice,9e\f59741c9c48ad9e9f9f5dd29d78978,ベテラン,Veteran
+en_gd_gia_common.ice,11\3ad631180178bacf461021b9a9a637
+？？？？？,???,en_r01_gd_god_1.ice,9f\ec87c1c71b3b339a26773c932078ef
+ゴロロン,Gororon,en_r01_gd_gor_ba.ice,1d\2aa055f4548cb84a8d25241cfa70bf
+ゴロロクス,Gororox,en_r01_gd_gor_bald.ice,e9\4d4867c42fb8352ec101839dacbf4c
+en_gd_gor_common.ice,42\b1bba7ca2e1d2461269f93edf2b8f7
+デストラグラス,Destragras,en_r01_gd_ins_ba.ice,c7\fd8024c238fdbed5765086fdf1369a
+en_gd_ins_common.ice,15\d2782913994a75ddc06c6276804798
+ブジン,Bujin,en_r01_gd_ktn_ba.ice,95\feed6e45aba03be7ef873ce7a4e372
+ブジン,Bujin,en_r01_gd_ktn_ba_ag.ice,96\bb941e42b667fc7d77dd75f3393dc5,ベテラン,Veteran
+en_gd_ktn_common.ice,7f\320a884c696ffc87442bd349b6ab6b
+ヴァラス,Varas,en_r01_gd_mag_ba.ice,65\d1b16b1b2035d8381213f44bf3ffa6
+ヴァラス,Varas,en_r01_gd_mag_ba_ag.ice,11\d6442d60a9fe990e0935713ad5a130,ベテラン,Veteran
+en_gd_mag_common.ice,9e\6b31d63acc3434ec983aec54c9826f
+オルク,Oruq,en_r01_gd_phe_ba.ice,87\87a80fc810fbcc92e5981df6b880b7
+オルク,Oruq,en_r01_gd_phe_ba_ag.ice,27\79de9b7964b0754534d56321164d36,ベテラン,Veteran
+en_gd_phe_common.ice,c0\f859059ee6f4236649181f8ed435c5
+ティノス,Tinos,en_r01_gd_pyc_ba.ice,ee\36c92f5aad2e6835a607705f30e779
+en_gd_pyc_common.ice,81\92a7560f76d3554c8fd796d1494f42
+ペダス・アックス,Pettas Axe,en_r01_gd_sol_ax.ice,18\24b9144be71ebd208f1c589a06a8ab
+ペダクス・アックス,Pettax Axe,en_r01_gd_sol_axld.ice,4f\32ab05f17b8f65b5f761ccac2ffa65
+ペダス・ランチャー,Pettas Launcher,en_r01_gd_sol_lu.ice,55\edf6f5db697a79b616899672b813d2
+ペダクス・ランチャー,Pettax Launcher,en_r01_gd_sol_luld.ice,9d\c686dcd115e0c76b492b86fa7123ed
+ペダス・ヴェラ,Pettas Vera,en_r01_gd_sol_rai.ice,78\85d463285d526435bd3914ae437dd8
+ペダス・ガン,Pettas Gun,en_r01_gd_sol_ri.ice,b5\8e4e351abc17176e54fca039f50d67
+ボムス・ガン,Boms Gun,en_r01_gd_sol_ribo.ice,12\77d32854afec1dfee51d63616daeb2
+ボムクス・ガン,Bomks Gun,en_r01_gd_sol_ribold.ice,06\1c11857d87756436b638b4c8aedefd
+ペダクス・ガン,Pettax Gun,en_r01_gd_sol_rild.ice,7a\7ee85a78d469a83e5a429ad2a7d585
+ペダス・ソード,Pettas Sword,en_r01_gd_sol_sw.ice,3d\13950a466318e72aef09a0ec537e07
+ボムス・ソード,Boms Sword,en_r01_gd_sol_swbo.ice,01\b5d12b8d7b881fa4d9ee5b74e1466a
+ボムクス・ソード,Bomks Sword,en_r01_gd_sol_swbold.ice,96\fbf161a28dd7770dace82d9544e2f5
+ペダクス・ソード,Pettax Sword,en_r01_gd_sol_swld.ice,44\586ed71e30b347bacb5b91f20bb260
+en_gd_sol_common.ice,3f\374d3ce809469e3666c4571719e017
+ガラガロンゴ,Gara Garongo,en_r01_nat_armma_ba.ice,9c\ea6c221eebc264674700652c671072
+ガロンゴ・ジオ,Garongo Geo,en_r01_nat_armma_bi.ice,67\9e4a2fdf3a27f970a65f799f21166d
+en_nat_armma_common.ice,d5\da138f5d9ff25cfce478e0cb381edb
+クラッグベア,Crag Bear,en_r01_nat_bea_ba.ice,ab\8776d1e9f5d95370803fb704bd216f
+クラッグベア,Crag Bear,en_r01_nat_bea_ba_ag.ice,96\fce521c24092914563d8365f41e012,ベテラン,Veteran
+ロックベア・ジオ,Rockbear Geo,en_r01_nat_bea_robi.ice,6c\7a796efb5a024f0b21066170f022b5
+en_nat_bea_common.ice,95\2b8045f0ff0233f4bf8c3a4d65b97f
+アギニス・ロア,Agnis Lore,en_r01_nat_bir_ba.ice,a0\b8e8666d17318623f321dd380e47bd
+en_nat_bir_common.ice,be\96a6f7ae396db1cdbf4b7491909676
+アードバンシー,Ard Banshee,en_r01_nat_fan_f.ice,4c\323707e3630972e9f197b06e64c9fa
+アードバンシー,Ard Banshee,en_r01_nat_fan_f_ag.ice,1d\063b97f22315803455398d0bfeced5,ベテラン,Veteran
+アードバンサー,Ard Banser,en_r01_nat_fan_m.ice,56\02f9ceee16837878d0d66b5d07c4e5
+アードバンサー,Ard Banser,en_r01_nat_fan_m_ag.ice,ec\c8e1f051f6244c420c3ad8db3501ef,ベテラン,Veteran
+サンダバンサー,Thunder Banser,en_r01_nat_fan_thum.ice,72\a3eaf34dc1a2db5dba80653b10ffb2
+サンダバンサー,Thunder Banser,en_r01_nat_fan_thum_ag.ice,43\80cc8fcd6959496e1f64323cf57e08,ベテラン,Veteran
+サンダバンシー,Thunder Banshee,en_r01_nat_fan_thuf.ice,b3\35d6da9d7edcd4e771bb2f2bb922eb
+サンダバンシー,Thunder Banshee,en_r01_nat_fan_thuf_ag.ice,c8\3d73d2783df9f158062e6ba66615ba,ベテラン,Veteran
+en_nat_fan_common.ice,03\ebc66ad51eb0fd7b41e43bcaa998a1
+ウーダン・ロア,Udan Lore,en_r01_nat_monki_ba.ice,3c\752cc7041eee8ed072337370bc7b1b
+en_nat_monki_common.ice,3b\da39dc07e1ef9176d60bed048938cc
+ザウーダン・ロア,Za'udan Lore,en_r01_nat_month_ba.ice,73\1f40643bc84cf7de50b1fc8011d8a0
+en_nat_month_common.ice,09\4283b93cc6a63c2dde5177f3b1507f
+フォンガルフ・ロア,Phongrulf Lore,en_r01_nat_wol_bi.ice,58\61fd2ac88593e0288f26d09e3a7dd2
+ガルフ・ロア,Grulf Lore,en_r01_nat_wol_sm.ice,29\0427f1ae7a58777cba63128ae32d0e
+en_nat_wol_common.ice,84\fdd28ce421ad3073b55e409c28c1dd
+セレモ・エンペラッピー,Ceremo Emperappy,en_r01_unk_emp_10av.ice,4a\a14d0495ebdf0aba19f0b0171a1240
+セレモ・グレトラッピー,Ceremo Great Rappy,en_r01_unk_emp_10avbi.ice,f8\62cff7910b6d29076cd1113771fc29
+ヤオロ・エンペラッピー,Yaolo Emperappy,en_r01_unk_emp_atm.ice,cf\0bd7af72fbf2808ab665ca58a32752
+ヤオロ・グレトラッピー,Yaolo Great Rappy,en_r01_unk_emp_atmbi.ice,cb\c5a464adab978f7f4a05914aaab85c
+エンペ・ラッピー,Emperappy,en_r01_unk_emp_ba.ice,99\cb335371269aeddc2c8fd273cc412a
+グレト・ラッピー,Great Rappy,en_r01_unk_emp_babi.ice,e9\746b31620ed7bb97d93a7af6e3a0e0
+セント・エンペラッピー,Saint Emperappy,en_r01_unk_emp_ch.ice,34\081994ce0b9803760eb6a600e7aec3
+フルル・エンペラッピー,Hululu Emperappy,en_r01_unk_emp_ea.ice,9a\7668cd35bb190108417a4d93c2d9b6
+トリト・エンペラッピー,Trickertreat Emperappy,en_r01_unk_emp_ha.ice,5a\58c3a3c1b2bc9ff255d1c2ea6648e2
+ツキミ・エンペラッピー,Moongaze Emperappy,en_r01_unk_emp_mo.ice,05\075c2c0c2a388c4d80fd7ebe902315
+ツキミ・グレトラッピー,Moongaze Great Rappy,en_r01_unk_emp_mobi.ice,6f\e5b69c8493c8312b056f4150d40302
+ノルディ・エンペラッピー,Nord Emperappy,en_r01_unk_emp_wi.ice,b5\52f1efe922e7b2e9aedb8f06b78370
+セント・グレトラッピー,Saint Great Rappy,en_r01_unk_emp_chbi.ice,b6\1b13f0ea2fc53e3ecfc72f87be1588
+ノルディ・グレトラッピー,Nord Great Rappy,en_r01_unk_emp_wibi.ice,77\8b9584e15361e624c1fac031ca2f97
+フルル・グレトラッピー,Hululu Great Rappy,en_r01_unk_emp_eabi.ice,34\39771f2a249bd362fa314bd5cf12de
+トリト・グレトラッピー,Trickertreat Great Rappy,en_r01_unk_emp_habi.ice,c4\13db6e852b882b6c9a0dafb2b5120b
+スノム・エンペラッピー,Snome Emperappy,en_r01_unk_emp_wi2.ice,92\f567634143c6b4686212d834f06640
+スノム・グレトラッピー,Snome Great Rappy,en_r01_unk_emp_wi2bi.ice,ae\f87c8959437c955600861b2fe73b99
+en_unk_emp_common.ice,d6\dc27fc7e6818459ec7fd2797a30ecd
+アニバ・ラッピー,Anni Rappy,en_r01_unk_rap_1ng.ice,7d\6adda32907e5aa403c1fcdc7027de8
+セレモ・ラッピー,Ceremo Rappy,en_r01_unk_rap_9av.ice,d8\0a9922ca42e21542a84081216f2491
+アニバ・ラッピー,Anni Rappy,en_r01_unk_rap_1ng.ice,7d\6adda32907e5aa403c1fcdc7027de8
+ヤオロ・ラッピー,Yaolo Rappy,en_r01_unk_rap_atm.ice,41\c3438280125b4dd4ffb7e12a00f27c
+ラッピー,Rappy,en_r01_unk_rap_ba.ice,ea\2ab78d0bbf63b561c854b882762975
+トナ・ラッピー,Reindeer Rappy,en_r01_unk_rap_ch.ice,67\748297260ca15acd8af5213fdf5f33
+フルル・ラッピー,Hululu Rappy,en_r01_unk_rap_ea.ice,15\2e7c3bd5937977ac875482f6ce8c73
+サイズ・ラッピー,Reaper Rappy,en_r01_unk_rap_ha.ice,5f\bd2be6d56825771bf82a3a3b231c26
+ツキミ・ラッピー,Moongaze Rappy,en_r01_unk_rap_mo.ice,82\f075d5683aa20ea933c1307674f80e
+ドルズ・ラッピー,DOLLS Rappy,en_r01_unk_rap_ud1.ice,a1\70c4cd5f8df1627dd31de230828a50
+スペキュ・ラッピー,Specu Rappy,en_r01_unk_rap_ud2.ice,63\3a4edd7e6ae5c7574cdafba02149eb
+ノルディ・ラッピー,Nord Rappy,en_r01_unk_rap_wi.ice,7e\347f1b0423bd0d21b749abd43bef13
+スノム・ラッピー,Snome Rappy,en_r01_unk_rap_wi2.ice,fb\50bb83d7c4ccf2f2879d7d02110a6b
+en_unk_rap_common.ice,3a\70e26f5ce413d87461887c9556fa78
+カプタン,Captan,en_r01_unk_tan_ba.ice,ee\8d4e618b20c016cbcd2d1d22bde80f
+キングカプタン,King Captan,en_r01_unk_tan_kn.ice,c7\cdcd336ee40f13fc3dd606c2d5a878
+en_unk_tan_common.ice,63\28fbbfceebbafc15de565e54e4f06e
+チアキュリオ,Chiacurio,en_r01_alt_cli_ba.ice,61\d31431ed37cd8c10083480959217e9
+チアキュリオ,Chiacurio,en_r01_alt_cli_ba_ag.ice,d3\56027dc99b1155950230e9debd8317,ベテラン,Veteran
+en_alt_cli_common.ice,56\7b7aee02c7d024856ebf57342f54f1
+ヘルーク,Heruc,en_r01_alt_der_ba.ice,4a\f6e83eb09eb1547d6805870fb22ce9
+en_alt_der_common.ice,22\65085ff72faec9d44e4f01b1bd6831
+ビグフロッガ,Bigg Frogga,en_r01_alt_flg_ba.ice,e8\d3cf86274c1c4050fdc26ea0d6faaf
+ビグフロッガ,Bigg Frogga,en_r01_alt_flg_ba_ag.ice,fd\992de97b4a967f0508b89ba648bbc5,ベテラン,Veteran
+en_alt_flg_common.ice,87\2b7f61b13c8e3bc5b66190f84b3edd
+バインホッグ,Banehog,en_r01_alt_hog_ba.ice,1b\a1be7678779d4e082353e280f537ad
+en_alt_hog_common.ice,ef\a76da129ae8db1d2a0b84dad205ee7
+エヴィルアンジェ,Evil Angelo,en_r01_alt_hrp_ba.ice,9b\05ea5f0c6d5bc5d62a1e32fde5e009
+en_alt_hrp_common.ice,0f\8cd4d3385e25a3686d9f77c0620474
+リザド・フレイ,Lizard Fray,en_r01_alt_lzd_fl.ice,76\30f7b390ffebadfb190816e0ce19a1
+リザド・アイス,Lizard Ice,en_r01_alt_lzd_sn.ice,6c\23482f748c087142684a05c5a5b261
+リザド・サンダ,Lizard Thunder,en_r01_alt_lzd_th.ice,93\ea71cc5aa71d21678ff42a80713c4a
+en_alt_lzd_common.ice,43\fcacc9f9b2633bb4048d18d9a9b86c
+エルディサイズ,Eldi Scythe,en_r01_alt_tis_ba.ice,8d\e507aa04ef8685af61af0cfdf50eaa
+エルディサイズ,Eldi Scythe,en_r01_alt_tis_ba_ag.ice,a5\65ecde8120cd2360807ca7e6f079a0,ベテラン,Veteran
+en_alt_tis_common.ice,4d\382018cb76419bb36d83a011ca15da
+ワウロン,Waulon,en_r01_alt_wlf_ba.ice,e7\cdc3bbf09961b6036fcc8d414d1066
+ワウロン,Waulon,en_r01_alt_wlf_ba_ag.ice,52\a9290a77550b2e442ef38402006f85,ベテラン,Veteran
+ワウロン・ジオ,Waulon Geo,en_r01_alt_wlf_bi.ice,8b\b9fec1e7348a2d01debeae989c1e5e
+en_alt_wlf_common.ice,19\ebabbd9f5cb9cd602ff8311de783d4
+バーディ,Birdoth,en_r01_ani_bir_b.ice,6a\1b7078cc22ebad785002b0475be6ca
+フランゴ,Frango,en_r01_ani_bir_yz.ice,0f\7b2c3c34b94ad122936a8813ff07c0
+en_ani_bir_common.ice,fd\3d5faaf8952fb16ab6cf5e4e7fff03
+ノッシ,Noxxi,en_r01_ani_boa_a.ice,12\a3dc56c5502e1b6a10f7ebdf41f843
+en_ani_boa_common.ice,b7\21e7fa321480dbeb53e2f5d4ac4811
+パット,Patt,en_r01_ani_brs_a.ice,2b\30532d8b8ecfbe27c0bec7af7b5504
+en_ani_brs_common.ice,ba\f4894b055569b92fa0c9001e14403b
+フォクス,Voks,en_r01_ani_kit_a.ice,15\069481d1f9f3be7eccec5a74bc69be
+en_ani_kit_common.ice,38\417d4e27cc742966c52c024df601c6
+ディアン,Dian,en_r01_ani_moo_a.ice,24\b8783f0818666e56cba61f8c68ec5d
+en_ani_moo_common.ice,47\cebbb22af97ecb052c7f60ae0323d6
+ムーニィ,Moony,en_r01_ani_rbt_b.ice,3d\9ba6c0ea1659d2ed223f42646a0ab6
+サニィ,Sunny,en_r01_ani_rbt_w.ice,64\3bf454b331a777874bc1295d206d87
+en_ani_rbt_common.ice,25\af964afa2d5a73dfaaa063d050ce30
+オタリカ,Otarica,en_r01_ani_sli_a.ice,e0\23fa229c5bc257ffdb5934c752d097
+en_ani_sli_common.ice,ae\94378ef003b6395b5a42b865834697
+モォベル,Moo Bell,en_r01_ani_ush_a.ice,3a\9da24594261dc21a39754e66dbf12c
+タウベル,Tau Bell,en_r01_ani_ush_b.ice,ef\713677c51115279d140ecf48607345
+en_ani_ush_common.ice,ab\628175884647b994db77814d99d499
+ドローム,Drome,en_r01_non_dro_a.ice,a3\a78d3765abcaac62a0a5628fb6bac3
+,,en_r01_non_dro_b.ice,9c\38c4817deda9e012e7300166d09baf
+en_non_dro_common.ice,f9\27bf8bd8717d02da844940ed7ab6cb
+サンドナグルス,Sand Nogleth,en_r02_gd_box_ba.ice,05\e9e80756c6c15308148c428d192532
+サンドナグルス,Sand Nogleth,en_r02_gd_box_ba_ag.ice,cd\a6e7c8602bff0130408997db25df38,ベテラン,Veteran
+en_gd_box_common.ice,14\7400f545dbf5a0f2ef5662b8162532
+ブランクル,Brancle,en_r02_gd_bra_ba.ice,0f\3897d70fa8dcc154a1a2dcd731904f
+en_gd_bra_common.ice,39\c75d8a6042120e4d48c4cc67f0ecbc
+フォートス・レーザー,Fortos Laser,en_r02_gd_cas_el.ice,19\c76a008f60a1e398e725a2f4f03278
+フォートス・レーザー,Fortos Laser,en_r02_gd_cas_el_ag.ice,a3\5824ab8f1f0a5e2721fc70982a5805,ベテラン,Veteran
+フォートス・ランチャー,Fortos Launcher,en_r02_gd_cas_mi.ice,34\6134072fed57d33a044c350d89b6d5
+フォートス・ランチャー,Fortos Launcher,en_r02_gd_cas_mi_ag.ice,ca\e9a99b88b6fe006875ef2323b0df93,ベテラン,Veteran
+en_gd_cas_common.ice,cc\1fb10473db644382190699d1bb67d6
+サンドフワン,Sand Fuwan,en_r02_gd_flo_th.ice,12\9b1bde66af1fe0d17caf145fcd7e0d
+en_gd_flo_common.ice,c2\9e34669c8ec1f2462da713a0e12b0b
+サンドッツ,Sand Dotts,en_r02_gd_for_ba.ice,6b\84fff7998fe12d2fe9cb87d099e195
+en_gd_for_common.ice,fa\62dbc6550503ddf84c93b353513d54
+スナイダル・ハンマー,Dustyl Hammer,en_r02_gd_gia_hm.ice,05\a35e4063759f4271c598dd277d4bd9
+スナイダル・ハンマー,Dustyl Hammer,en_r02_gd_gia_hm_ag.ice,9c\de7444ce7f927d0d07432927267dcc,ベテラン,Veteran
+スナイダル・ヴェラ,Dustyl Vera,en_r02_gd_gia_rai.ice,96\344e14b806afa7508cfc2eb3c0533e
+en_gd_gia_common.ice,11\3ad631180178bacf461021b9a9a637
+ダークファルス,Dark Falz,en_r02_gd_god2_ba.ice,c1\6a7d38c4a5c2898c576574eaa2dfe9
+ダークファルス,Dark Falz,en_r02_gd_god2_ex.ice,ae\44cb8344d55e8571f3278a3cdaa052
+en_gd_god2_common.ice,50\07fcf13bba9addf784fc8b64ccb649
+サンドロロン,Sand Roron,en_r02_gd_gor_ba.ice,3e\0dac5acd531e5209ad4d6b185bc023
+サンドロロクス,Sand Rorox,en_r02_gd_gor_bald.ice,3c\f93278cd32158301f25c18c41ddd3e
+en_gd_gor_common.ice,42\b1bba7ca2e1d2461269f93edf2b8f7
+サンドコロン,Sand Koron,en_r02_gd_gos_ba.ice,33\be3cd53df44e327d0eb1727f9232af
+en_gd_gos_common.ice,c2\d6d927c632e6e5247ae048b8eec850
+ケルクンド,Kelkundo,en_r02_gd_kic_ba.ice,92\f2cf94bceb6518a726c34af62d60eb
+ケルクンド,Kelkundo,en_r02_gd_kic_ba_ag.ice,73\b9eb20e086cfcc50a9430d29fe6a8b,ベテラン,Veteran
+en_gd_kic_common.ice,26\569845c87ce73725a7578ac6481b88
+イクサブジン,Ikusa Bujin,en_r02_gd_kpy_ba.ice,64\2b54639c955f5e5b8e2700b95b59a5
+en_gd_kpy_common.ice,b2\cdd80041098337510e5f2fb543f3de
+メティウス,Metius,en_r02_gd_mtl_ba.ice,51\c39cb558e65cbd6d00f1e472530849
+en_gd_mtl_common.ice,8c\811ca3eb428975f67a8a1d451bca2d
+サンドティノス,Sand Tinos,en_r02_gd_pyc_ba.ice,a9\3b86b9e6bccbd3d6f143a0763015d8
+en_gd_pyc_common.ice,81\92a7560f76d3554c8fd796d1494f42
+リゼントス,Lizentos,en_r02_gd_sip_ba.ice,b6\4de3e2a4cc2158ca5854fd88482c86
+リゼントス,Lizentos,en_r02_gd_sip_ba_ag.ice,73\b753dff387e4bb97f8ff1bb15cd4bc,ベテラン,Veteran
+en_gd_sip_common.ice,34\9a678d303835d9d10b2a3fc2fd6676
+レヌス・リテム,Renus Retem,en_r02_gd_sna_ba.ice,a3\2dc701b923850bf601b4ed872c1067
+レヌス・リテム,Renus Retem,en_r02_gd_sna_ba_ag.ice,52\53f2c9963957654a14f9a8a77a1f84,ベテラン,Veteran
+レヌス・ヴェラ,Renus Vera,en_r02_gd_sna_rai.ice,f3\6910903e3820ad990d8f7d882c7eb0
+en_gd_sna_common.ice,19\13fe9f18bab54a9781bde4adfceebb
+デザス・スラッシュ,Deser Gunblade,en_r02_gd_sol_gs.ice,d4\8ebdeb9931f1b9fd52a329c5dbdf2d
+デザス・ランチャー,Deser Launcher,en_r02_gd_sol_lu.ice,4b\a9ef02d42919ab2e23ee3cf8d0e429
+デザス・ガン,Deser Gun,en_r02_gd_sol_ri.ice,a7\5b72edb8522d51ea6e7adcb82e5a86
+デザス・ソード,Deser Sword,en_r02_gd_sol_sw.ice,07\099b0b4d38fec6c5425c8b72db5bb4
+en_gd_sol_common.ice,3f\374d3ce809469e3666c4571719e017
+アルマロンゴ,Alma Rongo,en_r02_nat_armma_ba.ice,bb\fc356206a5b3e807672cfe7eacfc38
+en_nat_armma_common.ice,d5\da138f5d9ff25cfce478e0cb381edb
+デューンベア,Dune Bear,en_r02_nat_bea_ba.ice,14\bf804df4b8fbaffaba3f555c4ce5d3
+デューンベア,Dune Bear,en_r02_nat_bea_ba_ag.ice,49\4162b06dcf73ff94c45a45209ca87a,ベテラン,Veteran
+en_nat_bea_common.ice,95\2b8045f0ff0233f4bf8c3a4d65b97f
+アギニス・デロア,Agnis Delore,en_r02_nat_bir_ba.ice,e0\f8a487197c89930b9c21ee3cc671c9
+en_nat_bir_common.ice,be\96a6f7ae396db1cdbf4b7491909676
+シグノガン・ロア,Signogun Lore,en_r02_nat_can_gu.ice,6e\3e767ad77401ae4cbdd7786ef5a896
+en_nat_can_common.ice,e9\07948b9f4766984fb51db711deccaf
+ガーディナン・ロア,Guardinan Lore,en_r02_nat_gdn_ba.ice,ea\81fce471e54bb3830eef21d5890b56
+en_nat_gdn_common.ice,75\4cdc61ca1f14244faa04679c1cc4e4
+スパルダンＡ・ロア,Spardun A Lore,en_r02_nat_gma_ba.ice,a8\e769cd2f192491c92510a53994ec21
+スパルザイル・ロア,Sparzile Lore,en_r02_nat_gma_bo.ice,9e\fe6f86e0282d1841c577d6ef82a25f
+スパルガン・ロア,Spargun A Lore,en_r02_nat_gma_gu.ice,5e\1e2ef5f1642e0e2a1977f417d213d5
+en_nat_gma_common.ice,e1\f5ff02d4bfbcb3fc11d90e20eb964b
+ディンゲール・ロア,Dingale Lore,en_r02_nat_hmc_ba.ice,16\cfdefef8b7c0ab63c6197cd06241b8
+en_nat_hmc_common.ice,6d\175c78f084bdbba60ddd5a88e26bd3
+グランマイザー,Granmizer,en_r02_nat_trf_ba.ice,40\65a65227087cbcd528362b1ec1daaf
+グランマイザー,Granmizer,en_r02_nat_trf_ba_ag.ice,3e\26ba02bf71a98329d044ffad4641f3,ベテラン,Veteran
+en_nat_trf_common.ice,df\ec401c9b1a8197dcc29f414896b9d2
+フォンガルフ・デロア,Phongrulf Delore,en_r02_nat_wol_bi.ice,e7\21b9070247132fa3024ed5426cab14
+ガルフ・デロア,Grulf Delore,en_r02_nat_wol_sm.ice,30\e564c041e4f775f046185a1c5563c4
+en_nat_wol_common.ice,84\fdd28ce421ad3073b55e409c28c1dd
+ギルナッチ・ロア,Gillnach Lore,en_r02_nat_zmr_rs.ice,27\5e448f5a68006933f3284e570ec1d7
+en_nat_zmr_common.ice,08\c9a2ec93a19074025b833001f5a9f5
+サヴァキュリオ,Svacurio,en_r02_alt_cli_ba.ice,82\d38db8ceb4d02be45bb85603f5be32
+サヴァキュリオ,Svacurio,en_r02_alt_cli_ba_ag.ice,1e\9f5b37cad4906af7e4f6e8bb5c6b87,ベテラン,Veteran
+en_alt_cli_common.ice,56\7b7aee02c7d024856ebf57342f54f1
+ケロゲロ,Kerogero,en_r02_alt_dks_ba.ice,c6\658b044485abebbc2ddd1b4aa443d6
+en_alt_dks_common.ice,59\1c9fe83d316bcf90827198d3e8f643
+サヴァルーク,Svaruc,en_r02_alt_dwf_ba.ice,e9\c53b764002bf738ed1d949b3a551bc
+en_alt_dwf_common.ice,a2\1092650cda2a4d88d550302e75249a
+バブルクラッブ,Bubble Snapper,en_r02_alt_dvs_ba.ice,54\07a45e99f4e49d969b30940a0620f8
+バブルクラッブ,Bubble Snapper,en_r02_alt_dvs_ba_ag.ice,f9\087425fd8f445d5aadaa9be0b5be2b,ベテラン,Veteran
+en_alt_dvs_common.ice,b6\74b9739036b81045cb1b9651972c5d
+バブルクラッブ,Bubble Snapper,en_r02_alt_dvs_ba.ice,54\07a45e99f4e49d969b30940a0620f8
+バブルクラッブ,Bubble Snapper,en_r02_alt_dvs_ba_ag.ice,f9\087425fd8f445d5aadaa9be0b5be2b,ベテラン,Veteran
+en_alt_dvs_common.ice,b6\74b9739036b81045cb1b9651972c5d
+サヴァインホッグ,Savinehog,en_r02_alt_hog_ba.ice,36\c65cd267b5b20f2c00d5ecafa0da5c
+en_alt_hog_common.ice,ef\a76da129ae8db1d2a0b84dad205ee7
+サヴァルアンジェ,Sval Angelo,en_r02_alt_hrp_ba.ice,4e\134ffe34c98996454fda7f4093b3f0
+en_alt_hrp_common.ice,0f\8cd4d3385e25a3686d9f77c0620474
+マミィドッグ,Mumidog,en_r02_alt_sin_ba.ice,27\f0e9fdb241e3f15f8de826ec0c23df
+en_alt_sin_common.ice,27\2643f093f7dcc613d063aafab922a3
+ガラスネッグ,Glasneg,en_r02_alt_snk_ba.ice,1b\67f27d4424d5d34ec39e8b3ceede90
+en_alt_snk_common.ice,10\ecc543d80f54407a87485d5e6028fc
+クロウパー,Crowpa,en_r02_alt_tig_ba.ice,5a\117674a6c420257c953c1267650003
+en_alt_tig_common.ice,b5\6fe04f57a10ccb6071447430fce148
+サヴディサイズ,Svadi Scythe,en_r02_alt_tis_ba.ice,f5\a71e6ff1ad0f5112e60ba34ded3084
+サヴディサイズ,Svadi Scythe,en_r02_alt_tis_ba_ag.ice,34\c66f00885299d1cef894b78755f2c1,ベテラン,Veteran
+en_alt_tis_common.ice,4d\382018cb76419bb36d83a011ca15da
+ラフィンベアル,Roufinbear,en_r02_alt_tkm_ba.ice,e2\130235cf5c09a504f8a8b745db651f
+en_alt_tkm_common.ice,d2\9af1ffa6449cf28219e02816ab1b6c
+サヴァウロン,Svaulon,en_r02_alt_wlf_ba.ice,ab\99420064456d983a406e55b6e52264
+サヴァウロン,Svaulon,en_r02_alt_wlf_ba_ag.ice,3b\31f691c3142bb3867439067c13fa84,ベテラン,Veteran
+en_alt_wlf_common.ice,19\ebabbd9f5cb9cd602ff8311de783d4
+ラムルバーディ,Lamur Birdoth,en_r02_ani_bir_b.ice,5d\c87af592226eb2eddac524606554c9
+en_ani_bir_common.ice,fd\3d5faaf8952fb16ab6cf5e4e7fff03
+ラムルパット,Lamur Patt,en_r02_ani_bis_a.ice,8b\67a0715e75ea9be1866ff3f7381419
+ラムルパッティ,Lamur Patti,en_r02_ani_bis_b.ice,99\73dde144311b199439ac255cb9f015
+en_ani_bis_common.ice,77\8525f2bcf1f4443d8e36aa4f5a019e
+ラムルノッシ,Lamur Noxxi,en_r02_ani_boa_a.ice,19\15ed83043215d94179487ce2c5b8f6
+en_ani_boa_common.ice,b7\21e7fa321480dbeb53e2f5d4ac4811
+キャメリオ,Camelio,en_r02_ani_cam_a.ice,9b\30e89ac67fe471d03b6388efe88fd5
+キャメリア,Camelia,en_r02_ani_cam_b.ice,25\c4120f56408a55d564a8d9a59dae6a
+en_ani_cam_common.ice,81\0c16ad082d5d65b02954dccefa2768
+ピポタン,Pippotam,en_r02_ani_hip_a.ice,71\3642b1382913b1d3d6a5c1d4f79371
+ヒポッコ,Pippoko,en_r02_ani_hip_b.ice,80\94a2ba00fb8ea9121b8fe94676a6db
+en_ani_hip_common.ice,96\b57893e7e71e0b0e7afd0c6331b62a
+ラムルフォクス,Lamur Voks,en_r02_ani_kit_a.ice,d1\f997ef5f9de6e4c0368d9ac4993947
+en_ani_kit_common.ice,38\417d4e27cc742966c52c024df601c6
+ラムルサニィ,Lamur Sunny,en_r02_ani_rbt_a.ice,12\f7b7c8636c24091df3f41a767050ee
+en_ani_rbt_common.ice,25\af964afa2d5a73dfaaa063d050ce30
+ラムルオタリカ,Lamur Otarica,en_r02_ani_sli_a.ice,98\e879dadb84d0b6c98d5583c75bd70d
+en_ani_sli_common.ice,ae\94378ef003b6395b5a42b865834697
+プロクタス・エアル,Proctys Ael,en_r03_gd_abn_ba.ice,2e\18e7414efe495dba3b36156a1e5f5d
+プロクタス・リテナ,Proctys Retem,en_r03_gd_abn_ba2.ice,ef\a7ac0e9a922a548ce67ba86b45b954
+en_gd_abn_common.ice,6b\697dafe4e933a40f8bdeeb83f59e1c
+リンシャン,Rinshan,en_r03_gd_bkt_ba.ice,f7\e870933d424ba5909c2f4f0a65d74f
+en_gd_bkt_common.ice,93\aca8166df9dc0f6c94216240457e3b
+スノウフワン,Snow Fuwan,en_r03_gd_flo_th.ice,9e\4f79c41145da81768b4215a8228d51
+en_gd_flo_common.ice,c2\9e34669c8ec1f2462da713a0e12b0b
+フリッツ,Freeztts,en_r03_gd_for_ba.ice,4c\b24374c247751c74f7bb7e14edc047
+en_gd_for_common.ice,fa\62dbc6550503ddf84c93b353513d54
+レイダル・ソード,Frostyl Sword,en_r03_gd_gia_ice.ice,a6\9992a53a0860e9a6351bbed52170a2
+レイダル・ソード,Frostyl Sword,en_r03_gd_gia_ice_ag.ice,a6\b8bb2d2fc111858a84f19f82d0bd68,ベテラン,Veteran
+en_gd_gia_common.ice,11\3ad631180178bacf461021b9a9a637
+スノウロロン,Snororon,en_r03_gd_gor_ba.ice,5d\d536f95343461e6b6f51f2808fff28
+スノウロロクス,Snow Rorox,en_r03_gd_gor_bald.ice,70\0fcb40a65403380182487c15853542
+en_gd_gor_common.ice,42\b1bba7ca2e1d2461269f93edf2b8f7
+アムス・クヴァリス,Ams Kvaris,en_r03_gd_hum_ba.ice,c1\fe5626689097bad20d69901db757b6
+アムス・クヴァリス,Ams Kvaris,en_r03_gd_hum_ba_ag.ice,46\7ed198f76475a1e83d2b68ce6534ee,ベテラン,Veteran
+アムス・クローネ,Ams Krone,en_r03_gd_hum_cl.ice,e4\2772a15e70de1586b21ac692b3a519
+アムス・ヴェラ,Ams Vera,en_r03_gd_hum_rai.ice,1a\832765f416500d65279f61c1fbf0f7
+en_gd_hum_common.ice,b8\6303459792b19f2fcbb4422cb3464e
+ヴァーディアス,Vardias,en_r03_gd_ksg_ba.ice,c5\30d33d2b67579d927ef58bcbabc807
+en_gd_ksg_common.ice,eb\cd5536625275248dad6f6ad7565baf
+リモータス,Remotus,en_r03_gd_mrt_ba.ice,e5\961b188f64e51ed6deb5dbfe95d10a
+en_gd_mrt_common.ice,01\31790aef243ba58ca1d69bddabe92a
+パンゴラン,Pangolan,en_r03_gd_pan_ba.ice,b3\8146e946326b3c28cdc987bd605d0a
+パンゴラン,Pangolan,en_r03_gd_pan_ba_ag.ice,6f\6978ebca1a41cc37ba76684f69a3cd,ベテラン,Veteran
+en_gd_pan_common.ice,55\f4fe58f735b1d6fed0b2ffa04a3794
+スノルク,Snoruq,en_r03_gd_phe_ba.ice,1c\34b50ba69c410afbc4c7f49437af25
+スノルク,Snoruq,en_r03_gd_phe_ba_ag.ice,a2\3d7ab9dec982cdabd050ae8c72ccb3,ベテラン,Veteran
+en_gd_phe_common.ice,c0\f859059ee6f4236649181f8ed435c5
+スノウティノス,Snow Tinos,en_r03_gd_pyc_ba.ice,89\6c0354021cccaa9f65393e9dbe4225
+en_gd_pyc_common.ice,81\92a7560f76d3554c8fd796d1494f42
+ビッツ,Bitts,en_r03_gd_rkt_ba.ice,74\ed56188783979bdac67fe1a9d8e685
+en_gd_rkt_common.ice,f3\27b225635655f04163051069c62e85
+ザムス・スラッシュ,Zams Gunblade,en_r03_gd_sol_gs.ice,7e\8a2072658bfb8036b570a3c6b89886
+ザムス・ランチャー,Zams Launcher,en_r03_gd_sol_lu.ice,c2\c16fb61a9f12f1134ac79c200d1bdf
+ザムス・ガン,Zams Gun,en_r03_gd_sol_ri.ice,ee\876358b885df85344cdcab34efec0b
+ボルザムス・ガン,Bol Zams Gun,en_r03_gd_sol_ribo.ice,78\d9493d106558115c6b48987bfa7552
+ザムス・ソード,Zams Sword,en_r03_gd_sol_sw.ice,8a\1aadd29662031a6302db4734233c0a
+ボルザムス・ソード,Bol Zams Sword,en_r03_gd_sol_swbo.ice,cb\f2e51e677d84cac498f6d8d5e651bf
+en_gd_sol_common.ice,3f\374d3ce809469e3666c4571719e017
+クロコダラス,Crocodylis,en_r03_gd_tur_ba.ice,3f\c42da11c880d9e8069b82ad11475a9
+クロコダラス,Crocodylis,en_r03_gd_tur_ba_ag.ice,5e\94b4dcf068cc2c5ef3bb0cae88fe47,ベテラン,Veteran
+クロコダラス・ヴェラ,Crocodylis Vera,en_r03_gd_tur_rai.ice,c2\37a9482b38a0005380fbd6d13796ad
+en_gd_tur_common.ice,9b\30d0b15b1bfce1258d092e7b4c991e
+ジャンゲス,Jangis,en_r03_gd_tyu_ba.ice,13\bdd1d088839bebc4eeb7a5030572b5
+en_gd_tyu_common.ice,9f\9ef45c54c3592e9700cf4124773eb5
+レリーヌ,Relyn,en_r03_gd_wic_ba.ice,8f\d22b4e2697dc43c4d9427c7db6978f
+レリーヌ,Relyn,en_r03_gd_wic_ba_ag.ice,8b\7ce2622708bb6ce3f38adb527ae2c5,ベテラン,Veteran
+en_gd_wic_common.ice,f0\b722570f06f39aa9dd8213d1c95798
+ブリザロンゴ,Blizza Rongo,en_r03_nat_armma_ba.ice,ba\33991d6a43b2003c6d02a0c1c9f75c
+en_nat_armma_common.ice,d5\da138f5d9ff25cfce478e0cb381edb
+ケーニヒスイエーデ,Konigssee Yedi,en_r03_nat_bea_ice.ice,af\92d206f8d6662ca23c34d3872fee5a
+ケーニヒスイエーデ,Konigssee Yedi,en_r03_nat_bea_ice_ag.ice,c6\522faf5334bd09cb6c30507917c94b,ベテラン,Veteran
+イエーデ・ロア,Yedi Lore,en_r03_nat_bea_mon.ice,1e\e033a41098a96e8fe4150d03e0d1dc
+ケーニヒスイエーデ・ジオ,Konigssee Yedi Geo,en_r03_nat_bea_icbi.ice,38\9b72ec4f32cac3ce42753e13c28ea1
+en_nat_bea_common.ice,95\2b8045f0ff0233f4bf8c3a4d65b97f
+アギニス・ザロア,Agnis Zalore,en_r03_nat_bir_ba.ice,e3\a9827d6bd29668267d21ededb517dc
+en_nat_bir_common.ice,be\96a6f7ae396db1cdbf4b7491909676
+アイスバンサー,Ice Banser,en_r03_nat_fan_icem.ice,92\cf893c266012c3cf85461fd7e50372
+アイスバンサー,Ice Banser,en_r03_nat_fan_icem_ag.ice,87\6df7bc93248b4c711812f3e570fa6d,ベテラン,Veteran
+アイスバンシー,Ice Banshee,en_r03_nat_fan_icef.ice,39\b5b33603b54ef9c872f4bac5616361
+アイスバンシー,Ice Banshee,en_r03_nat_fan_icef_ag.ice,99\33efa05d2f7574c0ea704b1c381ec7,ベテラン,Veteran
+en_nat_fan_common.ice,03\ebc66ad51eb0fd7b41e43bcaa998a1
+ゾ・マルモス,Zo Marmoth,en_r03_nat_mam_de.ice,3e\59474851f161fb0bb67f49bc30aae1
+ゾ・マルモス,Zo Marmoth,en_r03_nat_mam_de_ag.ice,14\93302d6b75c2985331c1aad52183ac,ベテラン,Veteran
+マルモス・ロア,Marmoth Lore,en_r03_nat_mam_sm.ice,c3\a2d200d211d3b18e8565dc0c54feaf
+en_nat_mam_common.ice,13\632b1e7638a46507ac7652e8211b70
+ファンガルフル・ロア,Phangrulfer Lore,en_r03_nat_wol_bi.ice,cc\4375c38bcd16a259cae7be0dd6dbf6
+ガルフル・ロア,Grulfer Lore,en_r03_nat_wol_sm.ice,6d\6475f759942cba6025ea1dc4e72794
+en_nat_wol_common.ice,84\fdd28ce421ad3073b55e409c28c1dd
+チルディキュリオ,Chillycurio,en_r03_alt_cli_ba.ice,14\60260352578b05a634f9903b5eb6dd
+en_alt_cli_common.ice,56\7b7aee02c7d024856ebf57342f54f1
+ヒエルゲロ,Arctigero,en_r03_alt_dks_ba.ice,6d\5ce3acb3d571584485bb0635cc523e
+en_alt_dks_common.ice,59\1c9fe83d316bcf90827198d3e8f643
+チルディンホッグ,Chillyhog,en_r03_alt_hog_ba.ice,d9\24ff013d575534e2462a6f34a52a53
+チルディンヘッジ,Chillyhedge,en_r03_alt_hog_sm.ice,06\ec266ceeb41d6ae6f81954e54f2d66
+en_alt_hog_common.ice,ef\a76da129ae8db1d2a0b84dad205ee7
+チルディドッグ,Chillydog,en_r03_alt_sin_ba.ice,cb\279ac6b7c6a09238af1ebd504ffb18
+en_alt_sin_common.ice,27\2643f093f7dcc613d063aafab922a3
+チルディスネッグ,Chillysneg,en_r03_alt_snk_ba.ice,c2\c218925bfe0d9b05f25d17ddfd2c48
+en_alt_snk_common.ice,10\ecc543d80f54407a87485d5e6028fc
+マーカライド,Malachroid,en_r03_alt_tao_ba.ice,b0\656547b41474d3b78f3a27f305bd0d
+マーカライド,Malachroid,en_r03_alt_tao_ba_ag.ice,b5\e6a6520f65cbf7101f9b4fe288bb4b,ベテラン,Veteran
+マーカライダ,Malachride,en_r03_alt_tao_ba2_ag.ice,8b\09b2df7715cd47047ec77c81fa2da0,ベテラン,Veteran
+en_alt_tao_common.ice,66\f779632fc755a43de2323d072d0862
+チルディロウパー,Chillyrowpa,en_r03_alt_tig_ba.ice,b4\810b24672e2b6ee65906ac97ddab79
+en_alt_tig_common.ice,b5\6fe04f57a10ccb6071447430fce148
+チルディロン,Chillyron,en_r03_alt_wlf_ba.ice,d1\c872aedfc2e89dbecfe4ee7be199cd
+チルディロン,Chillyron,en_r03_alt_wlf_ba_ag.ice,bd\9d4f28dbeb70a22a31d6a80cbfdca7,ベテラン,Veteran
+en_alt_wlf_common.ice,19\ebabbd9f5cb9cd602ff8311de783d4
+ルミィバーディ,Lumi Birdoth,en_r03_ani_bir_a.ice,11\cb481230f28267e86bfd489b32bf48
+en_ani_bir_common.ice,fd\3d5faaf8952fb16ab6cf5e4e7fff03
+ルミィパット,Lumi Patt,en_r03_ani_bis_a.ice,c2\db3e37d201fad1e71eb655982c248d
+en_ani_bis_common.ice,77\8525f2bcf1f4443d8e36aa4f5a019e
+コマンタ,Comanta,en_r03_ani_fih_a.ice,3a\de31c579f3278753deb2359dea9be3
+en_ani_fih_common.ice,14\905af3916081489bc755fad4b43b7b
+ルミィフォクス,Lumi Voks,en_r03_ani_kit_a.ice,07\9818d405dd5396eea432cee384bef8
+en_ani_kit_common.ice,38\417d4e27cc742966c52c024df601c6
+ルミィサニィ,Lumi Sunny,en_r03_ani_rbt_a.ice,09\637c18775afaf1bebaf3778410503a
+en_ani_rbt_common.ice,25\af964afa2d5a73dfaaa063d050ce30
+ポロロ,Poloro,en_r03_ani_rei_a.ice,d0\6d8efd13c3df9400631a26d9b53f80
+en_ani_rei_common.ice,9f\9b802339f6fa5d95430a87b4acf490
+ルミィオタリカ,Lumi Otarica,en_r03_ani_sli_a.ice,8d\26c7ae3c91fbe1b28347043b6bac1c
+en_ani_sli_common.ice,ae\94378ef003b6395b5a42b865834697
+ホーバック,Hovac,en_r03_non_rob_a.ice,13\c42ecc90a42fedadcf51d91d9f651b
+,,en_r03_non_rob_b.ice,8d\8c133ba4e186c42f8299952dc40023
+en_non_rob_common.ice,29\75c096f2b727ed37eb750cf6979fc0
+ダークマギルス,Dark Magilz,en_r04_gd_akm_ba.ice,91\394a8d6016a401d48bdc675de87688
+ダークマギルス,Dark Magilz,en_r04_gd_akm_ba_ag.ice,85\17db5d00e1582cbe0519a0f347a8eb,ベテラン,Veteran
+en_gd_akm_common.ice,49\762fd93a10d6ac6240f1adf1fd01fd
+ブレズナグルス,Blaze Nogleth,en_r04_gd_box_ba.ice,5b\df04b581d53028d2775d2b8c40a6ae
+ブレズナグルス,Blaze Nogleth,en_r04_gd_box_ba_ag.ice,7f\4872334df11d2e3beb542b6cfe927e,ベテラン,Veteran
+en_gd_box_common.ice,14\7400f545dbf5a0f2ef5662b8162532
+ラーヴァフワン,Lava Fuwan,en_r04_gd_flo_fl.ice,c3\0ca48b76e5444acacb761925702950
+en_gd_flo_common.ice,c2\9e34669c8ec1f2462da713a0e12b0b
+ヴァニッツ,Vanizz,en_r04_gd_for_ba.ice,02\46f55147a6964da0e8b71e2931f829
+en_gd_for_common.ice,fa\62dbc6550503ddf84c93b353513d54
+フレイダル・ソード,Flamedyl Sword,en_r04_gd_gia_fl.ice,05\a180ab26985a9d9702575c8595352d
+フレイダル・ソード,Flamedyl Sword,en_r04_gd_gia_fl_ag.ice,6d\1eb2067ea5491198386f2064f40227,ベテラン,Veteran
+en_gd_gia_common.ice,11\3ad631180178bacf461021b9a9a637
+ダークファルス・エイジス,Dark Falz Aegis,en_r04_gd_god3_ba.ice,39\75511efe2423ab871d5086e83a3efa
+,,en_r04_gd_god3_ex.ice,56\f7da7da9e4c6e2abef75091fccc506
+ダークファルス・エイジス,Dark Falz Aegis,en_r04_gd_god3_str.ice,73\1b7f9fcd8d68b5f1b7bdf27e760711
+en_gd_god3_common.ice,44\95731f98cf1e9755232c8003c59fd2
+ラーヴァロロン,Lava Roron,en_r04_gd_gor_ba.ice,10\3881d3b1bd1dfa1be26061d98a3128
+ラーヴァロロクス,Lava Rorox,en_r04_gd_gor_bald.ice,aa\4c37216f5c845e17a60da6c2812e48
+en_gd_gor_common.ice,42\b1bba7ca2e1d2461269f93edf2b8f7
+ストラディス,Stratis,en_r04_gd_leg_ba.ice,24\2b4e0894bb0c813cda8d89f608646a
+en_gd_leg_common.ice,65\ab8e1fbd727aa0abcefd33fef4b34e
+ドルドリス,Doldoris,en_r04_gd_mog_ba.ice,03\52262a72f8ca4d7506567cf5df14aa
+ドルドリス,Doldoris,en_r04_gd_mog_ba_ag.ice,5f\ddb66ec813f5f994be79ebcd8895a3,ベテラン,Veteran
+ドルドリス・ヴェラ,Doldoris Vera,en_r04_gd_mog_rai.ice,08\be4a1bdf35a4cd816a28256c6f9657
+en_gd_mog_common.ice,3c\cbdc3c26084f0267613e04be703db2
+ラーヴァメティウス,Lava Metius,en_r04_gd_mtl_ba.ice,80\3b46ee05b142bddafdba525c63d6d6
+en_gd_mtl_common.ice,8c\811ca3eb428975f67a8a1d451bca2d
+エンゴウク,Engouku,en_r04_gd_nyb_ba.ice,f0\d713f546e9dd1f94784f8522728c04
+エンゴウク,Engouku,en_r04_gd_nyb_ba_ag.ice,83\178b226966b46e2846eeca076c216c,ベテラン,Veteran
+イクサエンゴウク,Ikusa Engouku,en_r04_gd_nyb_ex.ice,ac\0290a59a7c28643e75a3afc44ef453
+en_gd_nyb_common.ice,51\c76204c733f9a562684eb64abcecd8
+ブースタス,Boostas,en_r04_gd_pun_ba.ice,d8\72c3432d12f17c040ee480a52ed1a4
+en_gd_pun_common.ice,4e\a86d303fd47be7b7dc33b3898bd9f9
+ラーヴァティノス,Lava Tinos,en_r04_gd_pyc_ba.ice,57\2557581e60e7afe7f448a0122a157e
+en_gd_pyc_common.ice,81\92a7560f76d3554c8fd796d1494f42
+ブレゼントス,Blazentos,en_r04_gd_sip_ba.ice,7e\eda9516ed9653ce9516171f1470cae
+ブレゼントス,Blazentos,en_r04_gd_sip_ba_ag.ice,a4\dbb0bbe367df934e97a798146cc3b1,ベテラン,Veteran
+en_gd_sip_common.ice,34\9a678d303835d9d10b2a3fc2fd6676
+ガザス・アックス,Gazzas Axe,en_r04_gd_sol_ax.ice,8f\f7a59490746633c0c6c51318fb6409
+ガザス・スラッシュ,Gazzas Gunblade,en_r04_gd_sol_gs.ice,d6\55e6fa824c130478739d236eb4bbf2
+ガザス・ランチャー,Gazzas Launcher,en_r04_gd_sol_lu.ice,43\dde1e7b7eb58eb0ef7de4b2e39d8bf
+ガザス・ガン,Gazzas Gun,en_r04_gd_sol_ri.ice,1c\2fa3536a4bed2bdd6277aeab130056
+en_gd_sol_common.ice,3f\374d3ce809469e3666c4571719e017
+ダーレット・シューター,Darlett Shooter,en_r04_gd_ufo_fl.ice,28\eb90f0eeb8ca7751b422e79cfa2039
+ダーレット・アタッカー,Darlett Attacker,en_r04_gd_ufo_gr.ice,54\da76d738b56a270ed94918ef7fd950
+en_gd_ufo_common.ice,df\ccc95a5d3cf8ed0ac8073cfdb8a8c0
+ニルス・スティア,Nils Stia,en_r04_gd_zrf_ba.ice,8e\f922cbd6ee359fa00266e918d91f3e
+ニルス・スティア,Nils Stia,en_r04_gd_zrf_ba_ag.ice,28\2e274e35b1b5b8e4b6f6d7d53827ec,ベテラン,Veteran
+ニルス・ヴェラ,Nils Vera,en_r04_gd_zrf_rai.ice,2e\118c13495423b01502e722f11fac50
+en_gd_zrf_common.ice,dd\88022374eb9c8f10e83720ec4ae68c
+ヴォルガロンゴ,Vol Garongo,en_r04_nat_armma_ba.ice,fd\c93739900a80c98874d40b62432ba6
+en_nat_armma_common.ice,d5\da138f5d9ff25cfce478e0cb381edb
+ヴォルグベア,Volg Bear,en_r04_nat_bea_ba.ice,0c\3e47e0969b85afbf0505b728b4a65d
+ヴォルグベア,Volg Bear,en_r04_nat_bea_ba_ag.ice,bf\4be0d0ad2d89ceb54ce7867e02ea5c,ベテラン,Veteran
+en_nat_bea_common.ice,95\2b8045f0ff0233f4bf8c3a4d65b97f
+アギニス・ヴォロア,Agnis Volore,en_r04_nat_bir_ba.ice,55\719b01a9e7718fd28076e1900c0926
+en_nat_bir_common.ice,be\96a6f7ae396db1cdbf4b7491909676
+シグノガン・ヴォロア,Signogun Volore,en_r04_nat_can_gu.ice,c2\93cb65fb144a00a2d4639eae74f69e
+en_nat_can_common.ice,e9\07948b9f4766984fb51db711deccaf
+ガーディナン・ヴォロア,Guardinan Volore,en_r04_nat_gdn_ba.ice,d0\7705fe08c3f400e58a397d294f3841
+en_nat_gdn_common.ice,75\4cdc61ca1f14244faa04679c1cc4e4
+スパルダンＡ・ヴォロア,Spardun A Volore,en_r04_nat_gma_ba.ice,94\366895cf42ef14d507924e7fda5d99
+スパルガン・ヴォロア,Spargun Volore,en_r04_nat_gma_gu.ice,79\61b93ad60624c99372e0b1440fd720
+en_nat_gma_common.ice,e1\f5ff02d4bfbcb3fc11d90e20eb964b
+ディッグ・ロア,Deeg Lore,en_r04_nat_rpt_ba.ice,e1\5c5579fcfdfbb3f3e17b825dfe5808
+en_nat_rpt_common.ice,7b\178d37d484c614b0fe316110fc596d
+フォンガルフ・ヴォロア,Phongrulf Volore,en_r04_nat_wol_bi.ice,10\6af7e98da5770eee8e907aa56e7e18
+ガルフ・ヴォロア,Grulf Volore,en_r04_nat_wol_sm.ice,2b\e2a30eec9deecc2a10f45093fb7be7
+en_nat_wol_common.ice,84\fdd28ce421ad3073b55e409c28c1dd
+ソル・ディガーラ・ロア,Sol Deegahla Lore,en_r04_nat_frp_sh.ice,d8\d43c52bef3b4175b9bd896636ce12f
+en_nat_frp_common.ice,9f\289e451ee20f7ec475c7a787544fd2
+フォードラン・ロア,Fodran Lore,en_r04_nat_dwl_ba.ice,2d\528de441c114050bb915294a0ef02c
+ノーディラン・ロア,Nordeeran Lore,en_r04_nat_dwl_sm.ice,02\4a63702555ec66894d140b2da09e85
+en_nat_dwl_common.ice,42\a73e8291e5946d442e3bec5399756e
+バリドラン・ロア,Baridran Lore,en_r04_nat_dbt_ba.ice,9c\33461714d2724b4b07cdfd4c58b4c6
+en_nat_dbt_common.ice,ca\ebd96bf221e0454ab5fa135e14799d
+クォーツ・スコーディン,Quartz Skodin,en_r04_nat_cry_ba.ice,49\7821315a131b504535bc4faaf31d89
+en_nat_cry_common.ice,d6\4e26fed70309da53df804062af1615
+フレイレイ,Flayray,en_r04_alt_bat_ba.ice,a3\d0da2ec546b28cf0a72fc589a85511
+サンダレイ,Thunderay,en_r04_alt_bat_ba2.ice,00\72715d280ae1a1abf0bc3b64e74777
+en_alt_bat_common.ice,85\f97e4c0e3e0569759df20863ef2231
+コワードリ,Koadori,en_r04_alt_chk_ba.ice,f5\cfd9f544ad80b1e28653e9923f961f
+en_alt_chk_common.ice,75\ac3afc69207ec19523a6998cba93ae
+バサルピオン,Basalpion,en_r04_alt_crb_ba.ice,e6\9c499bbba026365bcd1f48ca3d310b
+en_alt_crb_common.ice,4b\16c3f5ccee62a8545b3cb8a9964c87
+ダスククラッブ,Dusk Snapper,en_r04_alt_dvs_ba.ice,bc\cc36485b9ebef4c5274a6af18ac5a8
+ダスククラッブ,Dusk Snapper,en_r04_alt_dvs_ba_ag.ice,05\c5a0e5b35c45cd5262181e955569b1,ベテラン,Veteran
+en_alt_dvs_common.ice,b6\74b9739036b81045cb1b9651972c5d
+ダスククラッブ,Dusk Snapper,en_r04_alt_dvs_ba.ice,bc\cc36485b9ebef4c5274a6af18ac5a8
+ダスククラッブ,Dusk Snapper,en_r04_alt_dvs_ba_ag.ice,05\c5a0e5b35c45cd5262181e955569b1,ベテラン,Veteran
+en_alt_dvs_common.ice,b6\74b9739036b81045cb1b9651972c5d
+スラグヘッド,Slug Head,en_r04_alt_nod_ba.ice,f7\810b37ad5af54274a10901cebfece4
+en_alt_nod_common.ice,ac\6e485b4d7875a1f57463f6e3c2fd8f
+ロックハウンド,Rock Hound,en_r04_alt_shp_ba.ice,80\57aab8ccb97c73821ad7eedd95b56f
+en_alt_shp_common.ice,e7\4090048ae5985070ffcc5d8cff8e2b
+ボワークロウル,Boa Clore,en_r04_alt_slm_ba.ice,e9\f779baa1514ad3c7612d7956eaaaa6
+en_alt_slm_common.ice,93\c7c7c6b487de939023eada7ac156c8
+クリスナクル,Krisnukl,en_r04_alt_tat_ba.ice,02\f219d82249d4a6a9033d9454688319
+en_alt_tat_common.ice,6b\84b2b0a0da2d0ed087d5cfb2a93718
+ダスクディサイズ,Duskdi Scythe,en_r04_alt_tis_ba.ice,34\97cd6f9fb5de98721f04c815074e2f
+ダスクディサイズ,Duskdi Scythe,en_r04_alt_tis_ba_ag.ice,76\8b7262cc639142f941a2775c130639,ベテラン,Veteran
+en_alt_tis_common.ice,4d\382018cb76419bb36d83a011ca15da
+グリンベアル,Grinbear,en_r04_alt_tkm_ba.ice,f9\6b59409983076c38ff753c97d4390d
+en_alt_tkm_common.ice,d2\9af1ffa6449cf28219e02816ab1b6c
+ダークレムナス,Dark Lemnas,en_r04_alt_vdr_ba.ice,43\5cf3ec3b540a28fdd081cbafe58968
+ダークレムナス,Dark Lemnas,en_r04_alt_vdr_ba_ag.ice,c1\e66b107382cca9e941ae026ff463c6,ベテラン,Veteran
+ボルトレムナス,Volt Lemnas,en_r04_alt_vdr_ba2.ice,ef\61741263acdae1bc8050ec58fd3c3f
+ボルトレムナス,Volt Lemnas,en_r04_alt_vdr_ba2_ag.ice,01\d5f298c4f5cd0506ef16d960005c59,ベテラン,Veteran
+en_alt_vdr_common.ice,63\7a55447f8a452c9eba26f00c301d44
+ダスクロン,Dusklon,en_r04_alt_wlf_ba.ice,a5\313a77a18820ff331fabda5bb80c4c
+ダスクロン,Dusklon,en_r04_alt_wlf_ba_ag.ice,ed\d6864fafa6486d9e340f0fdffab50c,ベテラン,Veteran
+en_alt_wlf_common.ice,19\ebabbd9f5cb9cd602ff8311de783d4
+フラムバーディ,Flamm Birdoth,en_r04_ani_bir_a.ice,9d\fc81078ad973ccb5823f91ac86c8b9
+en_ani_bir_common.ice,fd\3d5faaf8952fb16ab6cf5e4e7fff03
+フラムパット,Flamm Patt,en_r04_ani_brs_a.ice,ac\f8c5f8b09faecf396b07750c12b0d4
+en_ani_brs_common.ice,ba\f4894b055569b92fa0c9001e14403b
+フラムコマンタ,Flamm Comanta,en_r04_ani_fih_a.ice,95\0510f81b9d9b5bddeb1fe9edb02f90
+en_ani_fih_common.ice,14\905af3916081489bc755fad4b43b7b
+フラムフォクス,Flamm Voks,en_r04_ani_kit_a.ice,54\83f82b8c267fdaa40fe131501e9715
+en_ani_kit_common.ice,38\417d4e27cc742966c52c024df601c6
+フラムサニィ,Flamm Sunny,en_r04_ani_rbt_a.ice,f9\8fa847bbbb7c92625158953d0f3455
+en_ani_rbt_common.ice,25\af964afa2d5a73dfaaa063d050ce30
+フラムポロロ,Flamm Poloro,en_r04_ani_rei_a.ice,3d\13df81394a7ef1923da1a3aac1b60f
+en_ani_rei_common.ice,9f\9b802339f6fa5d95430a87b4acf490
+フラムオタリカ,Flamm Otarica,en_r04_ani_sli_a.ice,fc\1cd4d55bacae76097e4b8ad82eaaaf
+en_ani_sli_common.ice,ae\94378ef003b6395b5a42b865834697
+ハイドローム,Hydrome,en_r04_non_dro_a.ice,57\52717a8b5b533dae3b15ce4077bfbe
+,,en_r04_non_dro_b.ice,a8\2ff66f91dc56c8c288a721131b205e
+en_non_dro_common.ice,f9\27bf8bd8717d02da844940ed7ab6cb
+スカウトワスプ,Scout Wasp,en_r04_non_scr_a.ice,97\57f23a1c911746d60ae79a33b422b5
+en_non_scr_common.ice,73\37ca90e05f232fb7a604edf8072af2
+ビーハイヴＥ,Beehivo E,en_r04_non_trt_a.ice,a1\c39c39e37fcf5a1ef593959e48a763
+en_non_trt_common.ice,68\6aa7d24905ea09a6441e7a9c102431
+,,en_s01_9av_01.ice,cf\cd103cd43873ad15bafa8c2dd95ac5
+,,en_s01_hal_01.ice,63\7372455251f3cf4de0a1cd2c661ba4
+,,en_s01_mon_01.ice,6c\fb7827ac59b36662550f938eeb4c7a
+,,en_gd_nyb_ex.ice,5f\8b2ac6cdeaa4ea1088b7f2a4513d8c
+en_gd_nyb_common.ice,51\c76204c733f9a562684eb64abcecd8
+マリオネス,Marioness,en_r05_gd_gho_ba.ice,a9\28d67c967835bf41eb177ff496f365
+en_gd_gho_common.ice,70\01215589d9b3360d46094a45705f8a
+ヴェノギア,Venogia,en_r05_gd_zft_ba.ice,ad\363b43e405da5c0c24da048e757eb2
+ヴェノギア・ヴェラ,Venogia Vera,en_r05_gd_zft_rai.ice,0e\ac7b2c4a5ab56f38709bccdb779ef5
+ゼフェット・ヴェノギア,Zephetto Venogia,en_r05_gd_zft_str.ice,a2\3911821f1df4cbce997b727cbc60a9
+en_gd_zft_common.ice,2e\8202a869344df24699527b96ef2b8d
+ボルガリス,Volgris,en_r05_non_myt_a.ice,d9\2bbb7a41a5cc2d9782270828a6b016
+en_non_myt_common.ice,d6\cc96ec78b2f3328190a77a42babd66
+グラッジボーン,Grudgeborne,en_r05_stl_bkt_ba1.ice,d6\e3a42413c61f0d9e08e8e90a7058fa
+ラヴィード,Raveed,en_r05_stl_box_ba1.ice,c6\a95c434bba98f8aa805c9276e44dad
+ヴァルザッガ,Val Zagga,en_r05_stl_cas_el1.ice,f5\3a12b0ad30f3dbfab3d42c7e845c4d
+ヘルジーグ,Herzig,en_r05_stl_gia_ba1.ice,46\a937967cce51909f83fd4e508748db
+エリミネイダ,Elimineda,en_r05_stl_ins_ba1.ice,c0\c29a1bb138471c9537a52ed7918607
+リングウェッジ,Ringwedge,en_r05_stl_kic_ba1.ice,53\49fb14cee669f9cf91209970d61e4a
+ラセツ,Rasetsu,en_r05_stl_ktn_ba1.ice,64\824183743f24089468564d26d94f63
+ドゥランゲラド,Duran Gerad,en_r05_stl_leg_ba1.ice,a4\39ecf6ea7cd8218f48d57daf89226c
+バルブレッダ,Val Bredda,en_r05_stl_mrt_ba1.ice,56\30b5a6a4153675c952bb9f75d6c4b3
+ディンド,Dindo,en_r05_stl_mtl_ba1.ice,dd\242f0659d3f68ebcfde00bbf9c497e
+ギルゼイヴァ,Gil Zaver,en_r05_stl_pan_ba1.ice,6b\e7725fee7f3a0d26fa86195ca1ad5d
+ヴォルガ,Volga,en_r05_stl_pyc_ba.ice,b0\eff4225aad4b29031e9df8590a6f8f
+マクスヴァング,Max Vang,en_r05_stl_sip_ba1.ice,87\6cc2dfd03e55b4987fe63fc2c9bb65
+,,en_r05_stl_sol_ba.ice,80\ccc3624ffc9a17d923231ed41413b0
+en_stl_sol_common.ice,cf\b7ad5fd232812252c462bf3db98b95
+プルティネーデ,Plutineide,en_r05_stl_wic_ba1.ice,08\ab01642af28a6ff6854737221adff2
+ダークファルス・ソウラス,Dark Falz Solus,en_r05_stl_sls_ba.ice,d8\882838f67e66673e9136122546c400
+en_stl_sls_common.ice,6e\4e4f4eab90defa97725a45c14471a3
+バロウグ・ガン,Balrog Gun,en_r05_stl_solri_ba.ice,bc\26cf073c3582191583351fd76d711e
+en_stl_solri_common.ice,03\fcd6136a152e46212cd60036119137
+バロウグ・ソード,Balrog Sword,en_r05_stl_solsw_ba.ice,17\fc1dd8d5dee2869000bc8bd356d68e
+en_stl_solsw_common.ice,4e\975ec113c2b32384f68709940acf19
+ハルヴァルディ,Halvaldi,en_r05_stl_pnr_ba.ice,71\c4e03a9acbbe2c9ee787a21e7ed75b
+ハルヴァルディ・ヴェラ,Halvaldi Vera,en_r05_stl_pnr_rai.ice,aa\0c56ed6d9d8f0ef873817d91889f56
+アーンズゥ,Arnz,en_r05_stl_bbd_ba.ice,ad\5dd09d6885cd04949cce9521e71f21
+en_stl_bbd_common.ice,9e\28c10e7e704b9678698f7d849b7b10
+ゼレヴィン,Zelvin,en_r05_stl_mzc_ba.ice,7e\05983c856c7990aeb583a3f6a0eb14
+en_stl_mzc_common.ice,53\d32c80a3be14e5d9ceee5b0d89aff8
+ドライヴェルズ,Dryverus,en_r05_stl_krb_ba.ice,8a\f85c810cbdbce07407f9f7f0e19bce
+en_stl_krb_common.ice,f6\ae5dd3152d1418aabaecea0ed1f18c
+ルイノ・ラグネ,Ruine Ragne,en_r05_rem_spi_ba.ice,d1\301cef273dc1ad92487085fb85b935
+en_rem_spi_common.ice,ea\3bfcf0141800b0100e8f840a6cdcec
+ルイノ・ヒューナル,Ruine Hyunal,en_r05_rem_dhu_ba.ice,7f\d6abd21f781683336f82cc35a483d6
+en_rem_dhu_common.ice,25\86d6076b555de8e488cf0304c5c635
+ルイノ・アンゲル,Ruine Angel,en_r05_rem_bhu_ba.ice,31\e3365e002d16f24ae024c50aa97174
+en_rem_bhu_common.ice,0d\66f2137bc6905ce4d410982e32f28a
+ルイノ・リンガーダ,Ruine Ringahda,en_r05_rem_ctl_ba.ice,f2\81770faf4908a4597bf2e8ff5f12cb
+en_rem_ctl_common.ice,08\fbde10151d35883476d53621318d9e
+en_gd_flo_eff.ice,a8\42fb661ed8319ab2349b0be5578eee
+en_gd_gia_eff.ice,f8\3bab9cbdd38b0641a47a91a4dd7cb4
+en_gd_kpy_eff.ice,6e\0d8a1df8942306521ab87ef7027c80
+en_gd_ktn_eff.ice,19\1132b23aecf14ff22715a3580ed07c
+en_gd_leg_eff.ice,c9\619617289e6bf510c3dcb1c3ba2c70
+en_gd_tur_eff.ice,70\bdb90dd366a9919846e9bb7a237214
+en_nat_monki_eff.ice,78\e331fc47a8801d101db40ee9bdd6a7
+en_alt_lzd_eff.ice,c7\ae7798137c5611dde1c187d7e41c7a
+en_alt_tis_eff.ice,19\2c3ca4f0402100946f022c41f0a6bb
+en_stl_kic_eff.ice,cb\95d94632a259948feeaa80d6143a3c
+en_stl_ktn_eff.ice,46\5720e14d245c3f45049cb4c55df4e0
+en_stl_leg_eff.ice,04\04d43ca2e43894b4ba0a630b16afc6
+en_stl_sol_eff.ice,53\ee7b7fa328adc68f78bab7188a0a03

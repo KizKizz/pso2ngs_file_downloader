@@ -1,0 +1,231 @@
+﻿ワイヤードランス,Wired Lance,item/weapon/it_wp_02_001.ice,fe5839f9ad3945ea8c365e20bf7534f2
+アルバランス,Alba Lance,item/weapon/it_wp_02_002.ice,ff3839e3c790f229fc949a80d30b1c9f
+ヴィタランス,Vita Lance,item/weapon/it_wp_02_003.ice,66b0cdc19030cd2672477c7b80701097
+ワイヤードゲイン,Wired Gain,item/weapon/it_wp_02_004.ice,ad8de0631c3b36da954b8b8d550b87a3
+アルバゲイン,Alba Gain,item/weapon/it_wp_02_005.ice,4190c0d92b9d1d41195fb1907252496a
+ヴィタゲイン,Vita Gain,item/weapon/it_wp_02_006.ice,eb77cd2edc1173b8f5199bb4fd236282
+ワイヤードオーバー,Wired Over,item/weapon/it_wp_02_007.ice,e2ae9fe8ec5ce06626aa23a34f405eee
+アルバオーバー,Alba Over,item/weapon/it_wp_02_008.ice,756057dab4b2733071c59d27e490e2c6
+ヴィタオーバー,Vita Over,item/weapon/it_wp_02_009.ice,0b7f31a9497222ac4baed68bb3eacb87
+ワイヤードアーチ,Wired Arch,item/weapon/it_wp_02_010.ice,09b4967ca6a8680fd2212637b1ea3e52
+アルバアーチ,Alba Arch,item/weapon/it_wp_02_011.ice,d102ac463480fd8da93a3ad4ccde4d03
+ヴィタアーチ,Vita Arch,item/weapon/it_wp_02_012.ice,fe8724e112d174a2360c71120532194b
+ワイヤードトライ,Wired Tri,item/weapon/it_wp_02_013.ice,12d57cbb270249af1bddbfe53f1bd0f8
+アルバトライ,Alba Tri,item/weapon/it_wp_02_014.ice,0e2ed684801d33e803d6bc4ff1c03c3c
+ヴィタトライ,Vita Tri,item/weapon/it_wp_02_015.ice,ca69efbd0637787f5b0781ceb2898e31
+クシャネビュラ,Kuscha Nebula,item/weapon/it_wp_02_016.ice,d1a4e9b669a531fbf0a6f7be21c91521
+ラムダジャグリアス,Lambda Jagriath,item/weapon/it_wp_02_017.ice,1a3d0370a50d39929f8d061efc52a5db
+ディオジャグリアス,Dio Jagriath,item/weapon/it_wp_02_018.ice,38cb0b98caa1793982a5d419092f029b
+ジャグリアス,Jagriath,item/weapon/it_wp_02_019.ice,29891a6a6560ae1fbcba29131e79d237
+ベルカード,Belcard,item/weapon/it_wp_02_020.ice,aeed7d3cd08d5f5963e68a347833fa19
+ハイペリオン,Hyperion,item/weapon/it_wp_02_021.ice,d68dd7ea9e06dbcdf62bdaa3c7356271
+デイライトスカー,Daylight Scar,item/weapon/it_wp_02_022.ice,d353587356802b089fc7b8e74ae50c94
+ファルクロー,Falclaw,item/weapon/it_wp_02_023.ice,5d77534a19d12758294171f2f8ec4bca
+ギガススピナー,Gigas Spinner,item/weapon/it_wp_02_024.ice,d40447e8d2d514bc5b725bd5623e39fb
+ディアボリックガント,Diabolic Gauntlet,item/weapon/it_wp_02_025.ice,70621012cfab1e70220d38cd45e1754a
+アサシンクロー,Assassin Claw,item/weapon/it_wp_02_026.ice,fbc99bac2f5cb75e9a4bdf9564afc018
+ネイクロー,Neiclaw,item/weapon/it_wp_02_027.ice,c4db9b372c604590da5a0cb0c67397a0
+ロケットパンチ,Rocket Punch,item/weapon/it_wp_02_028.ice,32114522277103079c6a1dc3c363c96c
+ファティウーマ,Phyteuma,item/weapon/it_wp_02_029.ice,f51696f4a94e37f6be9957f7424a6868
+グッダスケラ,Gudda Skela,item/weapon/it_wp_02_030.ice,c1b28c195a1e3ea732d3d9137c055a87
+ディオクシャネビュラ,Dio Kuscha Nebula,item/weapon/it_wp_02_031.ice,ec5a0184bdcfc6321b85a62f4be1abc3
+ラムダクシャネビュラ,Lambda Kuscha Nebula,item/weapon/it_wp_02_032.ice,b4008c8b8c958e9fac7a6f9dabf4e051
+ラムダベルカード,Lambda Belcard,item/weapon/it_wp_02_033.ice,4840783d408426c61c6b8fd8fa883861
+ディオベルカード,Dio Belcard,item/weapon/it_wp_02_034.ice,1e37ba326316d6b03bd883479c9965e9
+ディオハイペリオン,Dio Hyperion,item/weapon/it_wp_02_035.ice,ce94c0e77f697d7571aba7e121e8ce2d
+ラムダハイペリオン,Lambda Hyperion,item/weapon/it_wp_02_036.ice,1b13d08d7c84b3e92de92f730e47f5c5
+マルモスファング,Malmoth Fang,item/weapon/it_wp_02_037.ice,c8004447530c3431daf57aca7359c28a
+ダルマルファング,Dal Mal Fang,item/weapon/it_wp_02_038.ice,bca1927a4f18ee05a35087d33bd53d64
+ブレイド・ボール,Blade Ball,item/weapon/it_wp_02_039.ice,d260218335c17ea495fd73027e3445ce
+ロケットパンチ／ナハト,Rocket Punch / Nacht,item/weapon/it_wp_02_040.ice,d98cff21cb09023453b0426919c480c2
+ベルクヴェルカー,Berk Valger,item/weapon/it_wp_02_041.ice,d8cf0201ead03bafb58149f50ab1db44
+ラズライル,Razrail,item/weapon/it_wp_02_042.ice,f123fb29250989060c676964b2b92669
+カールドランサー,Curldranser,item/weapon/it_wp_02_043.ice,6efd1a0c3b7cf52b2177052b7db52c4a
+カタドランサー,Catadranser,item/weapon/it_wp_02_044.ice,7ff1cde53087e7c2615170bf2d841d96
+クリスライル,Crysrail,item/weapon/it_wp_02_045.ice,d378991714b2c42256cf6664c3b5112f
+ブルートギフト,Brute Gift,item/weapon/it_wp_02_046.ice,733e06f647c1f06d07ac04664a5467c0
+ブレイド・ボール ?,Blade Ball ?,item/weapon/it_wp_02_048.ice,8a0debad7ae7d4f21ac9374999687609
+＊クール・ボール,* Cool Ball,item/weapon/it_wp_02_049.ice,d179361668e6186fba63b58477da26ab
+ネイクロー／ナハト,Neiclaw / Nacht,item/weapon/it_wp_02_050.ice,bf48c56d10bc367424f52b94ad130ae7
+タイドヴァルガー,Tide Valger,item/weapon/it_wp_02_051.ice,e401b538b29bde5b24c7b3d252d4d512
+ロッソヴァルガー,Rosso Valger,item/weapon/it_wp_02_052.ice,4f869add9eb729e62d7ceadb865e7f92
+ブルートカース,Brute Curse,item/weapon/it_wp_02_053.ice,e497dcc78eef2e3b2d3804dd99da6f23
+ブルートネグロ,Brute Negro,item/weapon/it_wp_02_054.ice,42ca197dc05beff7da3e73fbc41dc370
+刃鞭パラティーゼル,Whipblade Paratizel,item/weapon/it_wp_02_055.ice,15cfcc326c4fc1cdca8a10c2fd33ec3f
+アーレスランス,Ares Lance,item/weapon/it_wp_02_058.ice,b931ae95694137514f40e3135db14093
+嵐魔,Ranma,item/weapon/it_wp_02_059.ice,7ef34c50907adbe476f48b4816788740
+ヘレティックエンド,Heretic End,item/weapon/it_wp_02_060.ice,86dd423babb63cce5eda2caccb48b194
+ヴァイスビュート,Weiss Butte,item/weapon/it_wp_02_061.ice,b6e3ab2a14638847b6f50b5d194f482f
+エナジーヒューザー,Energy Huezer,item/weapon/it_wp_02_062.ice,2eb8bb9288544be7f1552a883fe8d72d
+グワナーダランス,Gwanahda Lance,item/weapon/it_wp_02_063.ice,5c1407ec757da06e8c9331785e0ba646
+Ｇネロランス,G Nero Lance,item/weapon/it_wp_02_064.ice,1e75d57a7d51f400aa2f579a7a6e04d6
+イミディエイトフェザー,Immediate Feather,item/weapon/it_wp_02_066.ice,f88a6cccace97555456abe857ef1d4cd
+＊シン・ジ・オピュクス,* Sin the Ophiuchus,item/weapon/it_wp_02_067.ice,f1d18693d70a123910d857a17f15c9af
+フルキュリオ,Full Curio,item/weapon/it_wp_02_068.ice,168c64e20fbe894525dc6ebf0cf5d301
+グロリアスウィング,Glorious Wing,item/weapon/it_wp_02_070.ice,3b33dca4c1b20e6401d8eeeb855cddd7
+赤のワイヤードランス,Red Wired Lance,item/weapon/it_wp_02_074.ice,9303d7f8045588bbec86f7b2c3172092
+青のワイヤードランス,Blue Wired Lance,item/weapon/it_wp_02_075.ice,beceea4a71d3bcb244f338adfb361779
+バードケージ,Bird Cage,item/weapon/it_wp_02_078.ice,4254465f71c52a5d07cde00ee8898257
+＊ラッピーケージ,* Rappy Cage,item/weapon/it_wp_02_080.ice,8e6ff7a5caebda7c7b36e4a988b3a7dc
+＊オバケハット,* Monster Hats,item/weapon/it_wp_02_083.ice,01bf80e7dc67ff8207fae5e1396e6374
+ゴーストハット,Ghost Hats,item/weapon/it_wp_02_084.ice,e04dcfd310cd4889332ae1499c331735
+ファントムハット,Phantom Hats,item/weapon/it_wp_02_085.ice,d47bbfc67df1d35c7c8d212f9f38d0b1
+ヤサカニノマガタマ,Yaskani No Magatama,item/weapon/it_wp_02_093.ice,be1955daa0637c37163c002cf3c5ee3d
+ククノチノマガタマ,Kukonochi No Magatama,item/weapon/it_wp_02_094.ice,1aa1c472e34f99ebbeebf1101952ab4e
+セイントラスター,Saint Luster,item/weapon/it_wp_02_096.ice,5a33ea0573d8283f14099b957bb4de42
+セイントグロス,Saint Gloss,item/weapon/it_wp_02_097.ice,ea8da1e58145ddbcc2a1c334cf57eb06
+リリカ用イデアルシザーズ,Lilika's Ideal Scissors,item/weapon/it_wp_02_099.ice,c60a23cc0d83f7ee6a3bea19685713db
+ファティウーマ／リヒト,Phyteuma / Licht,item/weapon/it_wp_02_102.ice,6f94a9fab07e1f08c1d38cdd12c80e8e
+シェルオプス,Shell Opus,item/weapon/it_wp_02_103.ice,862c7f663bbf204ee9c5525fd5a9e4f9
+シェルガイア,Shell Gaia,item/weapon/it_wp_02_104.ice,05de8779c7c1501dc1d7e8bffbd6646c
+シェルクロノス,Shell Chronos,item/weapon/it_wp_02_105.ice,54cf5a03589b6ad6fdf40e823d1c51c6
+マークキュリオ,Mark Curio,item/weapon/it_wp_02_106.ice,957d45fcc80d46767cafdd4dbb3e1f1b
+ウィールローレン,Wheel Rolen,item/weapon/it_wp_02_108.ice,1e63120717601ed7fc82f9375a2bfab8
+バイオレードル,Bio Radle,item/weapon/it_wp_02_109.ice,a1c32f304f6d0541608ee846a5297c82
+ライブレードル,Live Radle,item/weapon/it_wp_02_110.ice,35c87d6c24cf88d33786fcda40c27af2
+ブラッドレードル,Blood Radle,item/weapon/it_wp_02_111.ice,64bc1834fd5f3622370081304ff83b15
+＊ストロングパフェ,* Strong Parfait,item/weapon/it_wp_02_112.ice,5ea6d168277d569484764a96af2ed7dd
+ダールワイグル,Darl Weigle,item/weapon/it_wp_02_114.ice,2f0e8f4ce326c7cb365dce27d3bd10f5
+クラテルネイルス,Crater Nails,item/weapon/it_wp_02_115.ice,fc24a640891e51fd76544615a7d3a0ad
+ラミアスロイアー,Lamia Slawyer,item/weapon/it_wp_02_116.ice,a849d4e2d1d100fa2ef8489c2b6154f0
+ヒュリオランサー,Hurio Lancer,item/weapon/it_wp_02_117.ice,a1dd9272b1433a6bd28b54509c4c0937
+グロリアスパフェ,Glorious Parfait,item/weapon/it_wp_02_120.ice,16f412f44566df774af475be0fefaa6a
+クラテルブロウス,Crater Blows,item/weapon/it_wp_02_121.ice,3756f0fafeea7231fe8d49a30a5d35c0
+ラミアスラウナー,Lamia Slauner,item/weapon/it_wp_02_123.ice,be5db5e267142188bde4c54a87e1f66c
+ラミアスレイダー,Lamia Slider,item/weapon/it_wp_02_124.ice,e194d1396654aa52a9e684640433f730
+ヒュリオランシヴ,Hurio Lanshiv,item/weapon/it_wp_02_126.ice,a0807111386fad93928ace06bd32acc4
+グラスクライン,Glass Klein,item/weapon/it_wp_02_127.ice,2635534ceb7b8e121285d6f1c46366dd
+ファーレントリッガー,Fahrentrigger,item/weapon/it_wp_02_130.ice,4ad13f65551532dd7e45570c09e7ddb3
+＊レイゲンリアーム,* Reigan Rearm,item/weapon/it_wp_02_131.ice,cb4ed57f26886fcc679bc38bab91c95d
+ビブラスランス,Vibras Lance,item/weapon/it_wp_02_133.ice,776405d44923cdbe751b2aa29a52f35b
+＊チェインドワイヤー,* Wired Saws,item/weapon/it_wp_02_134.ice,77ee394624dfd8878e8db299fe3cf0a6
+＊超硬質ブレード,* Ultrahard Blades,item/weapon/it_wp_02_135.ice,43afbc905d811d4d494f95d042e81b68
+リムリーゼ,Rimliese,item/weapon/it_wp_02_136.ice,0b71bffe329d5ef82b29bcf22a447a30
+グルーアリーゼ,Glualiese,item/weapon/it_wp_02_138.ice,0f3526bd28d0ae7b397fe28c7fd1a06d
+アンジャクゥーリ,Anjakuhri,item/weapon/it_wp_02_140.ice,474fc5ed40587bc2b5caca9b36cf2d18
+ネメシスチェイン,Nemesis Chain,item/weapon/it_wp_02_142.ice,40cf7e410893adae31072c1b47e12c3a
+スレイヴチェイン,Raven Chain,item/weapon/it_wp_02_143.ice,6cb88af9ed818a87b1588622cd8cca43
+ネプトアンカー,Nepto Anchor,item/weapon/it_wp_02_144.ice,defc7504b583727be3a981bf165d1c82
+風霞,Kaze Kasumi,item/weapon/it_wp_02_146.ice,7dc55f18fcfcf5776398d7fafc51ea23
+イデアルシザーズ,Ideal Scissors,item/weapon/it_wp_02_147.ice,8685d29198fa63bb5085eb18b774e92b
+アウェイクシザーズ,Awake Scissors,item/weapon/it_wp_02_148.ice,91af431f6cf94bce76dbfeb7f04bb95d
+＊蛇腹クリュソス,* Bellows Crucious,item/weapon/it_wp_02_150.ice,cbee6b840fb17155921a8c5a00c08e64
+蛇腹グリゴロス,Serpent Grigoros,item/weapon/it_wp_02_151.ice,1577f51ae8a43f858f062a408d8a75b2
+レザルコレト,Rezar Colette,item/weapon/it_wp_02_152.ice,b3fedf1d0a3a76349c6ffa317b1e48d1
+禍矛ユクカ,Evil Yukuka,item/weapon/it_wp_02_155.ice,9748a3a852c9ce76affb640404c617e3
+＊パンクシェイク,Punk Shaker,item/weapon/it_wp_02_158.ice,f2d0b682adb5fa21dccab7217126f45c
+サギタレオーネ,Sagita Leone,item/weapon/it_wp_02_160.ice,870c09793d64149f69bb64a7ea8d4e0f
+エルデトロス,Eldetross,item/weapon/it_wp_02_162.ice,ce0976da3bb01994d2dfd3e0862da729
+ケイモストロス,Keimostross,item/weapon/it_wp_02_163.ice,3ce2f482433ec119dbe7b18df58154c6
+,,item/weapon/it_wp_02_164.ice,7c38d7d31b9e826ad6ec764d64b2f6a6
+＊荊,* Thorn,item/weapon/it_wp_02_168.ice,379301c110c5347f0a170d35e7a6aa2f
+＊ペンデュラム,* Pendulum,item/weapon/it_wp_02_169.ice,b34d608be5f78daa2867e4ff6844af2c
+＊ブーストランサー,* Boost Lancers,item/weapon/it_wp_02_170.ice,d3818118eca778da7f5fbf3c6c7e5ffe
+ノクスジラーク,Nox Jirac,item/weapon/it_wp_02_173.ice,e8831b715746886a4fb7cc8661fe3417
+レーテジラーク,Raete Jirac,item/weapon/it_wp_02_174.ice,79738dab5200ee7a464fb75ba5f5e6e9
+ジラークアリオン,Jirac Arion,item/weapon/it_wp_02_175.ice,25366db9b901134e38b8aee4e5d8bdab
+ディアギルミナド,Dia Gilminadu,item/weapon/it_wp_02_176.ice,506629cd1a36ec02f9bd6d657a318c77
+グラテスギルミナド,Grates Gilminadu,item/weapon/it_wp_02_177.ice,8ba844e9d865fed0f860d6da1d06b962
+ギクスギルミナド,Gix Gilminadu,item/weapon/it_wp_02_178.ice,9cc28eeda903f78d733452ae05ab3fc2
+＊レトロフウセン,* Retro Balloons,item/weapon/it_wp_02_179.ice,e169e4e1bd0f1a04396b6c23473abd43
+ラッピーフウセン,* Rappy Balloons,item/weapon/it_wp_02_181.ice,53ee3b3886cd7bc2386ea62a5a49f2be
+バジリスリディスト,Basilisk Ridist,item/weapon/it_wp_02_183.ice,22ef721f325cf8fa8387ec712bceb7d1
+ネブロスリディスト,Nebros Redist,item/weapon/it_wp_02_184.ice,75a3f08ebe5970e8d14a8584c7726c73
+インヴェイドウィング,Invade Wing,item/weapon/it_wp_02_185.ice,772bbb0bcd8cc7a497267f4244e11033
+オフスティアウィング,Ophistia Wing,item/weapon/it_wp_02_186.ice,5a4f2232c4d574f2444af3b840e31644
+セイガーシールド,Seiga Shield,item/weapon/it_wp_02_187.ice,df4656b4310c97620f26a5b0a4ff8558
+セイカイザーシールド,Seikaiser Shield,item/weapon/it_wp_02_188.ice,da89868b5a5fa284a558469c60b310e6
+＊六刃合体ゴッドセイガー,* Six-blade Gottsieger,item/weapon/it_wp_02_189.ice,aaba6a8c10a463b70c98fec5fb0b1bc9
+＊スラストヘビーハート,* Heavy-Hearted Thrusters,item/weapon/it_wp_02_190.ice,127b63c76acd449bf66a91d911324b57
+ランスレボルシオ,Lance Revolsio,item/weapon/it_wp_02_196.ice,66ba6f0150cf105b055323f2edd35623
+ランスドミナシオ,Lance Dominacio,item/weapon/it_wp_02_197.ice,7d7e7293c858c98fbeaa6b3120bd24d3
+ランスインクルシオ,Lance Inclusio,item/weapon/it_wp_02_198.ice,e8b4a7f54090d9a03d69928f86fec282
+リグガイラー,Rig Gaira,item/weapon/it_wp_02_199.ice,420fb77f80aca76088cf6523eb74d895
+＊グラムガイラー,* Gram Gaira,item/weapon/it_wp_02_200.ice,d876a1b4f248f9359b854e70ddbacb8f
+シグマガイラー,Sigma Gaira,item/weapon/it_wp_02_201.ice,0a1ea8845518669b2c5cedb10b1e1984
+アウラデルウォッグ,Aura Delacque,item/weapon/it_wp_02_202.ice,5e5ebffa2bb2f98ee59e0cf79c37921e
+マルスデルウォッグ,Mars Delacque,item/weapon/it_wp_02_204.ice,6c89eea72a30bca66ed46dc118f9a669
+＊レッツゴーサマー,* Let's Go Summer,item/weapon/it_wp_02_205.ice,f869408dd2a06faf960bf0983474f2df
+＊レッツゴーオーシャン,* Let's Go Ocean,item/weapon/it_wp_02_206.ice,a3a921f7e811ddf94d13f1ae030adf58
+レッツゴーシャイニー,Let's Go Shiny,item/weapon/it_wp_02_207.ice,652b91c25e6e6e89d40c189b31b22f7c
+＊十束剣,* Totsuka-no-Tsurugi,item/weapon/it_wp_02_208.ice,265e05732d3b60645193a7f52bf3d554
+フロウレイザー,Flow Razor,item/weapon/it_wp_02_209.ice,f80172a1b3ca864a6c745f9a26429cab
+イヴリダハダート,Ivleda Haddat,item/weapon/it_wp_02_212.ice,d00609eaaef08b6d8060d3bac2a3c4d2
+クリシスハダート,Cleasis Haddat,item/weapon/it_wp_02_213.ice,be8e00c3cf168c0041f266678263cc75
+シュベルハダート,Schvelle Haddat,item/weapon/it_wp_02_214.ice,c8aaeb228053a2bea87bdebb7eb32dcd
+,,item/weapon/it_wp_02_215.ice,8fab4aec5d5d4041b437278e5956ac44
+フォルニスグルズ,Fornis Gulz,item/weapon/it_wp_02_218.ice,8774fb36862fbd86a6e7b9fdcba53897
+アクルドグルズ,Aculd Gulz,item/weapon/it_wp_02_219.ice,d7a761e269d3b683822d3f9cc8593645
+＊レムのモーニングスター,* Rem's Morning Star,item/weapon/it_wp_02_220.ice,193eb449f9b289a38a7f7e6f9b89970c
+レイランス,Ray Lance,item/weapon/it_wp_02_221.ice,93e9fed08c6c7aa83f3c1e3aa399a022
+ユニオンランス,Union Lance,item/weapon/it_wp_02_222.ice,d43f9f880f31577bb6b8ef94e52f41d2
+レイニールオービット,Reinier Orbit,item/weapon/it_wp_02_223.ice,77ea33ab5517540b04c5c3c6fe2e9b0f
+レイニールミラージュ,Reinier Mirage,item/weapon/it_wp_02_224.ice,e0d2a868de5a7d3eda9a7ea6994aae15
+レイニールノヴァ,Reinier Nova,item/weapon/it_wp_02_225.ice,3a65ba210d601056709989b0f8dff57e
+ラズライルVer2,Razrail Ver2,item/weapon/it_wp_02_226.ice,556dccda00f348f903d92d89ed6ffe12
+雪凪,Yukinagi,item/weapon/it_wp_02_227.ice,efe1bc32d1706fa47a2ae605097b2f65
+ボクスドビュール,Box Dobule,item/weapon/it_wp_02_228.ice,f1b16aae02c98d2065a2dfe9fef9c506
+＊ジラドメイデ,* Girad Meide,item/weapon/it_wp_02_230.ice,2f41615e2d35c45be515f4421ad0f7df
+,,item/weapon/it_wp_02_231.ice,38526e1325b51edd26e766b68e6cfcc9
+ゼイネシスランス,Zeinesis Lance,item/weapon/it_wp_02_234.ice,d75471c8ed16620e4dc5c880ccd5b4ab
+クリファドランス,Clifard Lance,item/weapon/it_wp_02_235.ice,c07c88c78c25d91fe89b89f3561f69ac
+アストラアドム,Astra Adom,item/weapon/it_wp_02_236.ice,3ccb303bc64b5893d05d2d752c08233e
+リュミエルクリス,Lumiere Crys,item/weapon/it_wp_02_237.ice,015fcfd1e22b1bc2ec43b06bb622d91f
+ジュティスクリス,Jutus Crys,item/weapon/it_wp_02_238.ice,f8cdbb89d2f651a5b86b7d58914513d8
+アレティアクリス,Aletheia Crys,item/weapon/it_wp_02_239.ice,2fcab4e989b089f50a1138d8cf705659
+クリーサウルミー,Krisa Urumi,item/weapon/it_wp_02_240.ice,34dd96f950ef5d686030de2b6573b4d5
+ミリオンウルミー,Million Urumi,item/weapon/it_wp_02_241.ice,e14fcb8981c2dbe476ac3c66fc16044a
+クヴェレグリッター,Quelle Glitter,item/weapon/it_wp_02_242.ice,fefa9f28b159972139413cc1bfd506b0
+＊アングスグリッター,* Angs Glitter,item/weapon/it_wp_02_243.ice,2d4fd4cc1e197159ba33709062149c3f
+＊ヴィタオーバー,* Vita Over,item/weapon/it_wp_02_244.ice,5eab15345e0dadef254baeae4bfc1362
+ボンバゴレムバルン,Bomber Golem Barn,item/weapon/it_wp_02_245.ice,342b09ecc914122c515ff8e6755e80e4
+ボンバゴレムスデッド,Bomber Golem Stead,item/weapon/it_wp_02_246.ice,dce894f41dd65bd359d12b6432eda3c9
+ゲノンズィーバ,Genon Ziva,item/weapon/it_wp_02_247.ice,5e62fd4944d1fd51de16c24740241b07
+＊バトルランス,* Battle Lance,item/weapon/it_wp_02_249.ice,ca7b4cee97fb0c3f8608415314f2cec9
+＊ウォリアーランス,* Warrior Lance,item/weapon/it_wp_02_250.ice,ebf72c4e79738c807e6aec2e680a682e
+ノヴェルランス,Novel Lance,item/weapon/it_wp_02_251.ice,04909418f617be56f5b5e81afa92b9f0
+リバレイトランス,Rivalate Lance,item/weapon/it_wp_02_252.ice,2d537b92eff5609a5d5e483029ae45af
+バルヴェイス,Val Weiss,item/weapon/it_wp_02_253.ice,c596cff3d4b6ae14e4447a6b5b924b28
+アトラヴェイス,Atlas Weiss,item/weapon/it_wp_02_254.ice,29c79a66575866fea0dc77993793e1ab
+アトラヴェイス・イクス,Atlas Weiss Ex,item/weapon/it_wp_02_255.ice,7fc51ccf64c56999cefb3200d6ccdc46
+＊プラフタの駆動機兵,* Plachta Drive,item/weapon/it_wp_02_256.ice,9d934063671820ca3efe09bf206a484f
+＊ウロボロス,* Ouroboros,item/weapon/it_wp_02_257.ice,befab304b8c3c8a55cae39bd13861321
+ネイクロー ?,NeiClaw ?,item/weapon/it_wp_02_258.ice,76e9ffee3a160793c88d052eeac4c2f7
+＊レヴァティーン,* Laevateinn,item/weapon/it_wp_02_259.ice,3d4e5f3d720d52f56e80b0e51dc4fca8
+フォボスサイカード,Phobos Scycard,item/weapon/it_wp_02_260.ice,52426b74c996cd641f4540d7ffcd7f76
+ニーケサイカード,Nike Scycard,item/weapon/it_wp_02_261.ice,28f092c461a8837ff25bbc09e0ea8d18
+ネメシスチェイン-NT,Nemesis Chain-NT,item/weapon/it_wp_02_262.ice,1175797c842fa3413e8eb9414c5c0f7e
+スレイヴチェイン-NT,Raven Chain-NT,item/weapon/it_wp_02_263.ice,c69cd9f1669af2475d4e6e7980e07f84
+クルヴァスティル,Cruva Stil,item/weapon/it_wp_02_264.ice,d7d3b7cad102d8b4a444aefc62f5386d
+クルヴァピュラス,Cruva Puras,item/weapon/it_wp_02_265.ice,f5661a5094f431500d9324f7b48f960f
+グレンノテッシン,Guren no Tesshin,item/weapon/it_wp_02_266.ice,aec2e34a36dbcb8fd084f90e097fa260
+深遠鞭アルシオン,Profound Alluxion,item/weapon/it_wp_02_267.ice,56ea59b42a51259eac91d7ba36edbb37
+星震鞭アルシオン,Celestial Alluxion,item/weapon/it_wp_02_268.ice,e6268b8b95e810e135c8d2be67d285da
+光跡鞭アルシオン,Lightstream Alluxion,item/weapon/it_wp_02_269.ice,c80d72f87ec43b04397bd8531513c3bf
+シャライラカプリス,Chalyra Caprice,item/weapon/it_wp_02_270.ice,235d7c352cd81fe8c727fb3ba894d6d2
+＊ブロマペトレーマ,* Broma Petriema,item/weapon/it_wp_02_271.ice,f1b004d338aef8b29bd2685120abfb97
+ホムラノテッシン,Homura no Tesshin,item/weapon/it_wp_02_272.ice,1ab9b9b9d2ec7e004384f853c753fd97
+シエンノテッシン,Shien no Tesshin,item/weapon/it_wp_02_273.ice,fb13f7803d46aef70cf5b5cdb08aa431
+＊対王ファムファタル,* Twin Queens Femme Fatale,item/weapon/it_wp_02_274.ice,368ca1e5b2aaccb5983e12e9e58ba5b1
+セレアグラトル,Ceres Agrator,item/weapon/it_wp_02_275.ice,f6c32b977d33fa6b17c47959209b9004
+セレアグラトル・ザラ,Ceres Agrator Zara,item/weapon/it_wp_02_276.ice,2e8ac4ed06835eb9feac5712a8ea391e
+＊ショコラブエンペ,* Chocolate Emblem,item/weapon/it_wp_02_281.ice,4a62a35fe041abb5b7373b7298ba9bb9
+＊ステルスウェポン,* Weapon Stealthing,item/weapon/it_wp_02_282.ice,ddb1f9f38652bd4d9d112db5addd5e73
+ディムランス,Dim Lance,item/weapon/it_wp_02_283.ice,1b39049bff6cbcda191ae5596b77f2ea
+アキュレハーリス,Acure Charis,item/weapon/it_wp_02_284.ice,916804ec97f7094756d9a6a935da321c
+アトゥスハーリス,Atus Charis,item/weapon/it_wp_02_285.ice,63d1a613e1ebd1d6cb3a6fe5a3ad2646
+＊オヴァルプリベラ,* Oval Privella,item/weapon/it_wp_02_286.ice,3368a9c632b8dab3d436d68020ccc2c0
+シホウセイリュウ,Shihou Seiryu,item/weapon/it_wp_02_287.ice,5f2f3f30f5f1860c2f85b817c787c3c4
+＊シコウレイジュウ,* Shikou Reiju,item/weapon/it_wp_02_288.ice,7d58a2edc1809f3e51a3499929f7ec39
+エルデトロス-NT,Eldetross-NT,item/weapon/it_wp_02_289.ice,f294828abfecb4945608adfb221ac1d3
+光纏鞭クラースアンカー,Lightweave Klauz Anchor,item/weapon/it_wp_02_290.ice,6b25a10df621b7b1ad2fb1e4820b75e5
+＊オースエッジ,* Oath Edge,item/weapon/it_wp_02_293.ice,2ef1d25086dd50a71b37965becc9c199
+＊プラズマ・ハンド,* Plasma Hand,item/weapon/it_wp_02_297.ice,28e2e449e7ab5b247d86540f61dce216
+＊ターキーレッグ,* Turkey Leg,item/weapon/it_wp_02_298.ice,3663aa0c9c791ad3635e41394dbb0e32
+＊荒風十七葉,* Tempest Leaves,item/weapon/it_wp_02_299.ice,a1424738b96a42f54eb999fbc11b70e4
+フルクシオウェイヴ,Fluxio Wave,item/weapon/it_wp_02_301.ice,d6406bc7b259c3e4b3b03d6fc41941ef
+リンザーウェイヴ,Rinser Wave,item/weapon/it_wp_02_302.ice,0a17d6136fb041539120dd519fe2758e
+闇征鞭アジェルアンカー,Darkweave Agile Anchor,item/weapon/it_wp_02_303.ice,88a23cfc34d6bd037fcd9215626decff
+＊雪泉の扇子,* Yumi Folding Fans,item/weapon/it_wp_02_304.ice,5943765660de4f1f4bfa73ab9da37342
+＊ソニックリング,* Sonic Ring,item/weapon/it_wp_02_305.ice,f89e322378af4ece802acf69e2c91943
+デバッグウェポン,Debug Weapon,item/weapon/it_wp_02_999.ice,27d491706cd9f0cbfa93b8805b58386b

@@ -1,0 +1,213 @@
+﻿Shader Playground (デバッグ),Shader Playground (Debug) template,stage/ln_area_template_0007.ice,80ac2b14e9ae87c75b01befe42631da8
+Playground (デバッグ),Playground (Debug) template,stage/ln_area_template_0009.ice,e45d22c9610b517ed60a9d8c66b316cc
+青,Blue template,stage/ln_area_template_0010.ice,d3a45164b01c85bd9bf280917a2f8838
+ロッビ (アルファ),Lobby (Alpha) template,stage/ln_area_template_0101.ice,586517b64e3ec7acec207879c4ee3b7c
+ロッビ (Ep1),Lobby (Ep1) template,stage/ln_area_template_0102.ice,19ee9fef1210b64073f0acd421e6df9f
+チャレンジモードロッビ,Challenge Mode Lobby template,stage/ln_area_template_0103.ice,3ec18aa37a29b1218a7976a8d77d19de
+カジノ,Casino template,stage/ln_area_template_0104.ice,484487282f1a340b21c7754f468a0bac
+カジノメセタンシューター,Casino Mesetan Shooter template,stage/ln_area_template_0105.ice,453649e2c435f3dc3afdeea362505e8e
+ロッビ (Ep3),Lobby (Ep3) template,stage/ln_area_template_0106.ice,ce11db6793aa2035c9218f4d66f904eb
+船橋,Ship Bridge template,stage/ln_area_template_0107.ice,63ac09cbc22da33f2549cf760fc92da6
+バトルモードロッビ,Battle Mode Lobby template,stage/ln_area_template_0108.ice,3c9495189330ae9efbef1db4e42ad823
+ロッビ (Ep3 コピ),Lobby (Ep3 Copy) template,stage/ln_area_template_0109.ice,d7870f3349e8c79b387adb591078a7d2
+キャンプシップ,Campship template,stage/ln_area_template_0150.ice,5875d051ddeabee0fc9d729d44d1c4ee
+フランカ’s カフェ,Franka's Cafe template,stage/ln_area_template_0160.ice,e5d204cd081f7c97c8fd46e16fd4c896
+海のカフェ,Franka's Cafe (Coast) template,stage/ln_area_template_0161.ice,d6f7729ad4473eba323ca978df9abffe
+夜のカフェ,Franka's Cafe (Night View) template,stage/ln_area_template_0162.ice,74216cfb5b43392b41300eaf9907d933
+雪のカフェ,Franka's Cafe (Tundra) template,stage/ln_area_template_0163.ice,eb440154333e9a635284e007488daadb
+桜のカフェ,Franka's Cafe (Shironia) template,stage/ln_area_template_0164.ice,ce95447af44c161bb2cc94448a346705
+病室／カットシーンの水の背景,Hospital Room／Cutscene Water Background template,stage/ln_area_template_0170.ice,c47735822fb5bc4cc86d7f84b4287832
+Ep3 クレジット,Ep3 Credits template,stage/ln_area_template_0171.ice,31f1419d31d32660fa4d571ce0beecf2
+Ep4 オープニング,Ep4 Opening Sequence template,stage/ln_area_template_0172.ice,766dde86f2dbcd950c3a0b103756905d
+外宇宙 (Ep5),Outer Space (Ep5 Rift) template,stage/ln_area_template_0173.ice,b173632adedf81fee3dac81aa26ca779
+カシナ／カットシーンの水の背景,Kashina Central Core／Cutscene Water Background template,stage/ln_area_template_0174.ice,3fcd66087fc2c11381aa6697f03ccce8
+_,_ template,stage/ln_area_template_0175.ice,879d9d106c963a70ef77bbfd427c52a2
+クロマキー,Chroma Key template,stage/ln_area_template_0176.ice,6591a2eab9c7cd98dbdbad4b5a1df5c6
+船橋 (コピ),Ship Bridge (Copy) template,stage/ln_area_template_0177.ice,944c5a0c8eda49fafbafb15c17577624
+チームルーム (初期ルーム),Team Room (Default) template,stage/ln_area_template_0180.ice,c8c35037e9a61989e4a60b43afa47c0c
+チームルーム (森林),Team Room (Forest) template,stage/ln_area_template_0181.ice,d2a5ff8a6a970f4262adfdc409781b1e
+チームルーム (温泉),Team Room (Hot Springs) template,stage/ln_area_template_0182.ice,473de97ec137e2712ad0239fec1d3c8e
+チームルーム (砂漠),Team Room (Desert) template,stage/ln_area_template_0183.ice,92db82eace8520cf4cdb834472ef6bf8
+チームルーム (海岸),Team Room (Coast) template,stage/ln_area_template_0184.ice,d4f2c8eec31498a1b849b36bc9d34165
+チームルーム (夜景),Team Room (Night View) template,stage/ln_area_template_0185.ice,9215a3ddf13aecbbcc8a9c3aa942553d
+チームルーム (凍土),Team Room (Tundra) template,stage/ln_area_template_0186.ice,c7ea97757668a1529f1bb5c2ce998f04
+チームルーム (浮遊),Team Room (Floating) template,stage/ln_area_template_0187.ice,14a4effb9ea9f766bc99b546f21b88a6
+チームルーム (和風),Team Room (Japanese-Style) template,stage/ln_area_template_0188.ice,198100ecb2626e3dc14b4e2e5239ec11
+チームルーム (水上遺跡),Team Room (Water Ruins) template,stage/ln_area_template_0189.ice,c938845c03eab384d315746e01b361ed
+チームルーム (パイオニア2),Team Room (Pioneer II) template,stage/ln_area_template_0190.ice,e826ceaca4fcb95aea53ca92dcfe909b
+チームルーム (妖精の尻尾のギルド),Team Room (Fairy Tail Guild) template,stage/ln_area_template_0191.ice,1aad9a883fb3184ae72cba5ce03b4d77
+チームルーム (東京),Team Room (Tokyo) template,stage/ln_area_template_0192.ice,b6bd62cafc07921230ba4802cac83896
+チームルーム (戦艦),Team Room (Battleship) template,stage/ln_area_template_0193.ice,a94bdbf3c42beb06891c19f2ddae79bc
+チームルーム (月面),Team Room (Moon Surface) template,stage/ln_area_template_0194.ice,33498965445011aaa70878d46d721513
+チームルーム (渓流),Team Room (Mountain Stream) template,stage/ln_area_template_0195.ice,c95f0a687392a23b4a4408479066fb1c
+市街地 (エリア１),Urban Streets (Area 1) template,stage/ln_area_template_0211.ice,2983bc1cf2de5b0d650dc88f14b8b602
+市街地 (エリア２),Urban Streets (Area 2) template,stage/ln_area_template_0212.ice,be4676fc202110c7b920efaee3d82b2e
+星芒喰らう闇の狂宴 (ボス),Dark Revelry Consumes Starlight (Boss) template,stage/ln_area_template_0213.ice,e2193caaec6f28101a3675dc7987f635
+第６使徒殲滅作戦,Operation To Eliminate the 6th Angel template,stage/ln_area_template_0214.ice,5e7f4bc7096c4b7e22871c4ba261e20e
+ダーカーの巣窟 (エリア１),Darker Nest (Area 1) template,stage/ln_area_template_0220.ice,bbb5e7d4095c32ff2b59be0ca4ab65da
+ダーカーの巣窟 (エリア２),Darker Nest (Area 2) template,stage/ln_area_template_0221.ice,739d1c738d51f63e7a74708cffbe6821
+マザーシップ (エリア１),Mothership (Area 1) template,stage/ln_area_template_0230.ice,ab7c48de8ab2b34e126f3bf51f9ee388
+マザーシップ (エリア２),Mothership (Area 2) template,stage/ln_area_template_0231.ice,a234555118a5ff0f8baa1e79ceb2ab85
+マザーシップ (シャオ),Mothership (Xiao) template,stage/ln_area_template_0232.ice,42b121e5cb55b380705e43c29633b56b
+マザーシップ (シバ),Mothership (Shiva) template,stage/ln_area_template_0233.ice,51594884a09e5525ae4ecd5b4cdd1f93
+内的宇宙,Double's Inner Universe template,stage/ln_area_template_0240.ice,323b0a59ee295eaee10d195bc2d1db1f
+市街地 (ボス),Urban Streets (Boss) template,stage/ln_area_template_0290.ice,0cc2d7a1310a66ad454a6660c0617a04
+ダークファルス・ルーサー,Dark Falz Loser template,stage/ln_area_template_0291.ice,d189251c3b63b54e9a3a97f2ab6dc224
+マザーシップ (シバ),Mothership (Shiva) template,stage/ln_area_template_0292.ice,8205127809bbb65a903cb9384f5c0a47
+森林 (エリア１／ボス),Forest (Area 1／Boss) template,stage/ln_area_template_0310.ice,47806174dfdb1946988f946215cec3ee
+森林 (エリア２),Forest (Area 2) template,stage/ln_area_template_0311.ice,f683e32f43254bb03b00ecd9330d7efd
+凍土 (エリア２／ボス),Tundra (Area 2／Boss) template,stage/ln_area_template_0320.ice,4f254622ac27462a80ae27f4f46a90fe
+凍土 (エリア１),Tundra (Area 1) template,stage/ln_area_template_0321.ice,9530427e10df6698130d69a541061d2f
+遺跡,Ruins template,stage/ln_area_template_0330.ice,937a2a5ab5ed009310fac96fe2abb0b9
+ダークファルスアーム,Dark Falz Arms template,stage/ln_area_template_0390.ice,1709290aaa3660cc6960d30b56f7d158
+ダークファルスエルダ,Dark Falz Elder template,stage/ln_area_template_0391.ice,4a40c399c497df872973901c97b1e48d
+ダークファルスダブル,Dark Falz Double template,stage/ln_area_template_0392.ice,257bd185addd1e48d3c207cb1138907d
+深遠なる闇,Profound Darkness template,stage/ln_area_template_0393.ice,10121a255ea72869ddf3384b3f0362e1
+砂漠 (エリア２／ボス),Desert (Area 2／Boss) template,stage/ln_area_template_0410.ice,055da243970d2057ce86c56a422cec86
+砂漠 (エリア１),Desert (Area 1) template,stage/ln_area_template_0411.ice,17448c2a9f27b0fe4b1b6372aaee1441
+地下坑道 (エリア１),Underground Shafts (Area 1) template,stage/ln_area_template_0420.ice,e906c6ce54c64c7b2fc574dacb19a3d2
+地下坑道 (エリア２),Underground Shafts (Area 2) template,stage/ln_area_template_0421.ice,da5fb8c46e799daa1254053d9b010a98
+採掘場跡 (エリア１),Abandoned Mine (Area 1) template,stage/ln_area_template_0430.ice,b7bd256daae0f50b93a41a76ac7a660f
+採掘場跡 (エリア２／ボス),Abandoned Mine (Area 2／Boss) template,stage/ln_area_template_0431.ice,934cacaf2b0706ed0558361f1981f2e1
+地下坑道 (ボス),Underground Shafts (Boss) template,stage/ln_area_template_0490.ice,53fb7803820bd0d0670432bab2194a3c
+砂漠 (ビッグヴァーダー１),Desert (Big Varder 1) template,stage/ln_area_template_0491.ice,f9530a0f8b37b22d9688f003a989e1b2
+砂漠 (ビッグヴァーダー２),Desert (Big Varder 2) template,stage/ln_area_template_0492.ice,32135d2d20ae73f958519c8777764567
+砂漠 (ビッグヴァーダー３),Desert (Big Varder 3) template,stage/ln_area_template_0493.ice,a714885349474a4f4b6256617d1e8f67
+砂漠 (ビッグヴァーダー４),Desert (Big Varder 4) template,stage/ln_area_template_0494.ice,9f89e22b297755b224703a79b93e17d7
+火山洞窟 (エリア１),Volcanic Caves (Area 1) template,stage/ln_area_template_0510.ice,3049453bd843597196316baa13ab114c
+火山洞窟 (エリア２／ボス),Volcanic Caves (Area 2／Boss) template,stage/ln_area_template_0511.ice,b6789e43bee569d82ad224529452dbc6
+浮遊大陸 (エリア２),Floating Continent (Area 2) template,stage/ln_area_template_0520.ice,5b97de8d6912829bc24fbbbdc3304dff
+浮遊大陸 (エリア１),Floating Continent (Area 1) template,stage/ln_area_template_0521.ice,85f928c853b7ed990ccdf44cd034a117
+龍祭壇,Dragon Altar template,stage/ln_area_template_0530.ice,a17617a092c96c4704cd39fcdcf663e6
+浮遊大陸 (ボス),Floating Continent (Boss) template,stage/ln_area_template_0590.ice,2a63bb00294ddcb390450d6b87daf794
+クローム・ドラゴン,Chrome Dragon template,stage/ln_area_template_0591.ice,03ee40f9544103c7b8ed74b42ca1d7b8
+海岸 (エリア１),Coast (Area 1) template,stage/ln_area_template_0610.ice,e67f16378a5486c26c4be268d00a72ec
+海岸 (エリア２),Coast (Area 2) template,stage/ln_area_template_0611.ice,3bc0588bf178d3b35249f8f393eb030a
+海底 (エリア１),Seabed (Area 1) template,stage/ln_area_template_0620.ice,99373fe39f484d02b6aaf2930fc2f88c
+海底 (エリア２／ボス),Seabed (Area 2／Boss) template,stage/ln_area_template_0621.ice,44362229a2a6b6f74b4c3a29d3152cd8
+浮上施設,Floating Facility template,stage/ln_area_template_0630.ice,ee1e4cbeecc0340cf1287895bb996cf1
+海岸 (ボス),Coast (Boss) template,stage/ln_area_template_0690.ice,8af322655e8b9ca2b931905e88c21f52
+白ノ領域,Daybreak Province template,stage/ln_area_template_0710.ice,31b84226ccc62f9e6747179053fd8536
+天地を葬る災禍の凶神 (エリア１),,Death, Destroyer of Worlds (Area 1) template,stage/ln_area_template_0711.ice,22d26bda288e2024f6e6dce235d968d2
+黒ノ領域,Nightfall Province template,stage/ln_area_template_0720.ice,6d89a11f00519d29256b140ddd26ec9f
+白ノ領域 (ボス),Daybreak Province (Boss) template,stage/ln_area_template_0790.ice,9a708248fd36c0455e3e6a9adacf46eb
+マガツ印鑑,Magatsu Seal template,stage/ln_area_template_0791.ice,46f400b23e1ef1d74ebd1b04418da1bc
+幽世,Kakuriyo template,stage/ln_area_template_0792.ice,88642eb49a7ed1b7fef97044ddb6b8c7
+東京,Tokyo template,stage/ln_area_template_0810.ice,74f39f190e73fb8c8a09b60f4bc8abb0
+ラスベガス (パリホテル),Las Vegas (Paris Hotel) template,stage/ln_area_template_0820.ice,f8418d14afeff45d007b029e449dc7c9
+ラスベガス (ニューヨーク・ニューヨーク・ホテル),Las Vegas (New York New York Hotel) template,stage/ln_area_template_0821.ice,9e0193254a6b5c46ff8a38a2cf8d9503
+ラスベガス (フリーモントストリート),Las Vegas (Fremont Street) template,stage/ln_area_template_0822.ice,0a078f518eb08d812b63fe377c0162be
+月駆ける幻創の母 (エリア１),Esca Falz Mother (Area 1) template,stage/ln_area_template_0830.ice,3c4b5d668c85b3d79bbf6760968a4f56
+衛星・月 放棄施設,The Moon Abandoned Facility template,stage/ln_area_template_0831.ice,f37eea432e710a7a7ec77c4a66f538b3
+月駆ける幻創の母 (エリア２),Esca Falz Mother (Area 2) template,stage/ln_area_template_0832.ice,ef3fc25ffaddb1ee5f707734d964dbc8
+衛星・月 地下中枢施設,The Moon Underground Nexus template,stage/ln_area_template_0833.ice,11b5398d6b5c820aeba4d1eb8251cc1e
+衛星・月 地下中枢施設 (ボス),The Moon Underground Nexus (Boss) template,stage/ln_area_template_0834.ice,71c47d474504a9a2fdedd3664e7cf66c
+新世を成す幻創の造神 (エリア１),Deus Esca (Area 1) template,stage/ln_area_template_0840.ice,611870ecafca45f320eeea4652ac040a
+新世を成す幻創の造神 (エリア２),Deus Esca (Area 2) template,stage/ln_area_template_0841.ice,c668e9f8d4d5b2cff2c050c887c5d00f
+惑星・地球アースガイド本部地下,Earth - Earth Guide Headquarters Basement Level template,stage/ln_area_template_0842.ice,b35627870cfa1df7d9489f6b60c238fc
+惑星・地球 幻創園,Earth - Phantasm Park template,stage/ln_area_template_0843.ice,2e403662679831d0fb52700d99e7c339
+新世を成す幻創の造神 (エリア３),Deus Esca (Area 3) template,stage/ln_area_template_0844.ice,cc58d85f623ee91cae24fa6dcbd0fcec
+東京 (ボス),Tokyo (Boss) template,stage/ln_area_template_0890.ice,0b489795b756a6f29155176d64ea43ea
+幻創戦艦・大和 (エリア１),Phantom Battleship Yamato (Area 1) template,stage/ln_area_template_0891.ice,b7cc1aa032e3bb348a7307651e578cc5
+幻創戦艦・大和 (エリア２),Phantom Battleship Yamato (Area 2) template,stage/ln_area_template_0892.ice,619956811cb6c877d11159f077fadf4e
+東京ドミトリー／浴場,Tokyo Dormitory／Bathhouse template,stage/ln_area_template_0893.ice,8136dbef5729e82965d51d54a1f49042
+東京陸上競技場,Tokyo Athletic Field template,stage/ln_area_template_0894.ice,0c29df5d22f181fcad8388dc9e0860d0
+惑星・地球アースガイド本部,Earth - Earth Guide Headquarters template,stage/ln_area_template_0895.ice,b5e8baf618f5cfa891f581e3ffe2216d
+幻創戦艦・大和 (ストリ),Phantom Battleship Yamato (Story) template,stage/ln_area_template_0896.ice,adf3c68788397da1c82fbf145b461795
+東京校入学式 (夜),Tokyo School Entrance (Night) template,stage/ln_area_template_0897.ice,99d1312a831e5e208dec0f33908f1f0b
+ロンドン,London template,stage/ln_area_template_0898.ice,188d084c86e7cd746ac0cc64263648ca
+パラレルエリア;　森林,Parallel Area; Forest template,stage/ln_area_template_0900.ice,79d2cf8b620a7e6b2d03702b13ed5ba6
+パラレルエリア;　凍土,Parallel Area; Tundra template,stage/ln_area_template_0901.ice,e71d5e9a6f934ff318b668f31e6d9bb9
+パラレルエリア;　砂漠,Parallel Area; Desert template,stage/ln_area_template_0902.ice,d48b0ef70abd5a98c804dd92f79b7f86
+パラレルエリア;　海岸,Parallel Area; Coast template,stage/ln_area_template_0903.ice,41489ae54b3e122dfb372325a6faea10
+ガル・ダ・バル,Gal Da Val template,stage/ln_area_template_0904.ice,7b8037a890d1e7f1db6e147225fa01b3
+The Black Shroud; Urth's Fount,The Black Shroud; Urth's Fount template,stage/ln_area_template_0905.ice,176b2478d3835a4d0b38cc5bb97d9b8e
+パラレルエリア;　森林 (ボーナスクエスト),Parallel Area; Forest (Bonus Quest) template,stage/ln_area_template_0906.ice,1fa49819a7df14d02ea0f311e5872813
+____ 古塔 (エルゼリオン),____ Old Tower (Eruzerion) template,stage/ln_area_template_0907.ice,64134e8672f6e12a5bf39d7e5cd5677a
+シーナリーパス・市街地,Scenery Pass; City template,stage/ln_area_template_1000.ice,c00b62c7edb29aabe218323f95f4c1b3
+シーナリーパス・森林,Scenery Pass; Forest template,stage/ln_area_template_1001.ice,c16fe9e58b06bceccc5e834f39e688f2
+シーナリーパス・宇宙,Scenery Pass; Space template,stage/ln_area_template_1002.ice,c6464d0502e822efdb5092ed4191c95b
+シーナリーパス・砂漠,Scenery Pass; Desert template,stage/ln_area_template_1003.ice,595db19fcb1231e4d4ccd48297d9b539
+シーナリーパス・凍土,Scenery Pass; Tundra template,stage/ln_area_template_1004.ice,e11fe23fadad727b51864f0b1bc2ecba
+シーナリーパス・火山洞窟,Scenery Pass; Volcanic Caves template,stage/ln_area_template_1005.ice,ccd8bee33a5812b58db8f7a41bc362a2
+シーナリーパス・浮遊大陸,Scenery Pass; Float. Continent template,stage/ln_area_template_1006.ice,3ca174fca7230557f16d9dc56579ccf7
+シーナリーパス・遺跡,Scenery Pass; Ruins template,stage/ln_area_template_1007.ice,8c3f86a7fb8b96b643e26972e691da87
+シーナリーパス・地下坑道,Scenery Pass; Undergrnd Shafts template,stage/ln_area_template_1008.ice,9ddca0f92894875cbec7217300282bcd
+シーナリーパス・龍祭壇,Scenery Pass; Dragon Altar template,stage/ln_area_template_1009.ice,4e4f09bf4283b70905879b5267574c86
+シーナリーパス・海岸,Scenery Pass; Coast template,stage/ln_area_template_1010.ice,6e6e9f1a89291ff567a16bb077c86688
+シーナリーパス・採掘場跡,Scenery Pass; Abandoned Mine template,stage/ln_area_template_1011.ice,89054ee1055e33676d5f205dc41c65e2
+シーナリーパス・海底,Scenery Pass; Seabed template,stage/ln_area_template_1012.ice,4cedbd9064dd03b2e6a13a62ffc7e2a0
+シーナリーパス・Mシップ,Scenery Pass; Mothership template,stage/ln_area_template_1013.ice,0a6c40766fe955d0c30f59aa298b69ad
+シーナリーパス・巨人,Scenery Pass; Titan template,stage/ln_area_template_1014.ice,040c76ba941bdf95a8ca33187b3c8b16
+シーナリーパス・UBW,Scenery Pass; Unlimited Blade Works template,stage/ln_area_template_1015.ice,adef171c19b7589187277d11726c5ca7
+シーナリーパス・白ノ領域,Scenery Pass; Daybreak Prov. template,stage/ln_area_template_1016.ice,a095e99bc4001cb4475b095211b6b312
+シーナリーパス・浮上施設,Scenery Pass; Floating Facility template,stage/ln_area_template_1017.ice,24d26bb9ae495d6316c113112f686e16
+シーナリーパス・ヤマト,Scenery Pass; Yamato template,stage/ln_area_template_1018.ice,ce803c04506ae77f293a0e23c5f9090f
+シーナリーパス・黒ノ領域,Scenery Pass; Nightfall Province template,stage/ln_area_template_1019.ice,b68c940c05fccc873c68c839c7d8f4be
+シーナリーパス・内的宇宙,Scenery Pass; Inner Universe template,stage/ln_area_template_1020.ice,d86060f2a6ad3776f99c930aa1bfbb46
+シーナリーパス・幽世,Scenery Pass; Kakuriyo template,stage/ln_area_template_1024.ice,f4aff49ff468e66ea7865cade661022d
+ミニルーム,Mini Room template,stage/ln_area_template_1500.ice,6f89124086dbb13957c4211e0fd4167d
+極限訓練：森林と龍,Extreme Training; Forest and Dragons template,stage/ln_area_template_2000.ice,6756ea3287c3671851f58ecbabfd12b6
+極限訓練：凍土と機甲,Extreme Training; Tundra & Automata template,stage/ln_area_template_2001.ice,b3af013d387f767258af8b3958934f3a
+極限訓練：遺跡と海王,Extreme Training; Ruins & Oceanids template,stage/ln_area_template_2002.ice,0dbb276952512790193c487a93bb5475
+練習クエスト,Practice Quest template,stage/ln_area_template_2010.ice,08e52c66d661a8e0253a7f0df931c873
+採掘基地防衛戦 (１-３),Mining Base Defense (1-3) template,stage/ln_area_template_2100.ice,bd62a27cd0619ea39e43fdb6b5352862
+採掘基地防衛戦 (4),Mining Base Defense (4) template,stage/ln_area_template_2110.ice,e5594ccc82e1b0fefd80cddfbd036343
+壊世調査：ナベリウス,Corruption Investigation; Naverius template,stage/ln_area_template_2200.ice,189696444dcb4f4717e8ab552a43bd69
+壊世調査：リリーパ,Corruption Investigation; Lilipa template,stage/ln_area_template_2210.ice,077edf248d9a34c60d057b07620abe2e
+壊世調査：遺跡,Corruption Investigation; Ruins template,stage/ln_area_template_2220.ice,57dde98cb181c120792892ee9a971adb
+壊世調査：アムドゥスキア,Corruption Investigation; Amduskia template,stage/ln_area_template_2230.ice,623bbe4df86d56df28e0e3f81eedb27f
+惑星アムドゥスキア磁獄龍墓最奥・入口,Amduskia - Hellwyrm's Grave Inner Sanctum Entrance template,stage/ln_area_template_2231.ice,17bc4c70e9b5dd9fd64d222a5b8adb87
+カシナ　コア,Kashina Core template,stage/ln_area_template_2232.ice,7c2ac4a7d126a64a4b624836b3d68db4
+マガツ (エリア１),Magatsu (Area 1) template,stage/ln_area_template_2300.ice,2569636b06bd0dc4fa4c805410144014
+マガツ (エリア２),Magatsu (Area 2) template,stage/ln_area_template_2310.ice,8e7d100a032a64374ab06e95ededf89a
+天地を葬る災禍の凶神 (エリア２),Death, Destroyer of Worlds (Area 2) template,stage/ln_area_template_2320.ice,57fa700004d665d3ed2c1dec9eea5416
+バトルアリーナ; 森林,Battle Arena; Forest template,stage/ln_area_template_3000.ice,5cba3552effe8cc03d61beab4315d4b2
+バトルアリーナ; 火山洞窟,Battle Arena; Caves template,stage/ln_area_template_3001.ice,c3db8408de803537ea7ea999d0374de6
+バトルアリーナ; 東京,Battle Arena; Tokyo template,stage/ln_area_template_3002.ice,40ee76353555854275454d3703cd03bc
+バトルアリーナ; 森林 (雨),Battle Arena; Forest (Rain) template,stage/ln_area_template_3004.ice,54283fe689e0ef7788de53fce5046558
+バトルアリーナ; 火山洞窟 (夜),Battle Arena; Volcanic Caves (Night) template,stage/ln_area_template_3005.ice,1d36fb651925fe0a5eb85da84ebf7111
+クエント プレーリー,Cuento Prairie template,stage/ln_area_template_3100.ice,3bed93794481fca9ff7b4288481aa2fa
+イス＝アルス 国堺,Ys Artia Border template,stage/ln_area_template_3101.ice,8779606355bfafa49a0de70e8e0ec03d
+クエント 中央プレーリー,Cuento Central Prairie template,stage/ln_area_template_3102.ice,4c243355924eb26de002dbd96fc7153b
+クエント 荒れ地,Cuent Wasteland template,stage/ln_area_template_3110.ice,06149bbf6d09564f86e61521fe95dcce
+魔神城戦：不尽の狂気,Castrum Demonica; Madness template,stage/ln_area_template_3120.ice,9e573afee6412a9fb01de2270b57cfc9
+クエント峡谷,Cuento Canyon Caldera template,stage/ln_area_template_3121.ice,d450dc200468a4e1074e898b48718591
+クエント城跡,Cuento Castle Ruins template,stage/ln_area_template_3130.ice,2300c2ce342ff79cf9934657f3b11968
+幻惑の森,Bewitched Woods template,stage/ln_area_template_3140.ice,c0b9ab2796b4bb84781c06b02c79470b
+エルガマスカレーダ,Elga Masquerade template,stage/ln_area_template_3141.ice,65de63041ff89f70af70472078c5fa84
+エピック砂漠,Epyk Desert template,stage/ln_area_template_3150.ice,435b9d725f5f3d2bc34f8b038557accc
+イス＝アルス 城下町／実験室,Ys Artia Castle Town and Laboratory template,stage/ln_area_template_3160.ice,eb6097ab1930121d2683aaaf0605148a
+イス＝アルスキャピタル／エンブレムの部屋,Ys Artia Capital and Emblem Chamber template,stage/ln_area_template_3161.ice,9adec4b22b30c244622767f4e34f9186
+地底を染めし女王の悪夢 (エリア１),Queen's Nightmare; Earth Depths (Area 1) template,stage/ln_area_template_3170.ice,242fc3f3992775bfc6cf4220a73604e6
+地底を染めし女王の悪夢 (エリア２),Queen's Nightmare; Earth Depths (Area 2) template,stage/ln_area_template_3171.ice,96e7a40e4c08cb5fc4fa5cf7ba98cda3
+エピック首都圏 (城),Epyk Capital City (Castle) template,stage/ln_area_template_3180.ice,2d0749a3f95d803cd6a4f344ca94e99e
+エピック首都圏,Epyk Capital City template,stage/ln_area_template_3181.ice,d361858a5189c01f3a5298f3531dad8b
+東砦・北砦・南砦,East Fort, North Fort, and South Fort template,stage/ln_area_template_3182.ice,a09b42e59f6ff7aeab9d445ee4e24c18
+クエントキャニオン内部,Cuento Canyon Interior template,stage/ln_area_template_3183.ice,0c212009a84ee5f01386c8d5bb297dd3
+ルイーザの湖畔,Lakeside of Luisa template,stage/ln_area_template_3184.ice,e9e4781240785bd18594f85a22a91b7f
+黒き繭 内部,Inside the Dark Cocoon template,stage/ln_area_template_3188.ice,b2baf2e7b68f417acabd6fd31135e5f1
+オラクル外宇宙,Oracle Space template,stage/ln_area_template_3189.ice,9bd4eb92ad29e67f005af1b1d09bf2eb
+クエント王都玉座の間,Cuento Royal Capital Throne Room template,stage/ln_area_template_3190.ice,c49bb5be4754ada9d52f4ab8c1a420b2
+オメガ南市,Omega Southern City template,stage/ln_area_template_3191.ice,d4e4ec0594b8e5e09db2ac5ad4e15dde
+ネオクエント王都,Neo Cuento Royal Capital template,stage/ln_area_template_3192.ice,176ecf1748259d206bfad0bf0cb3e867
+クエント民兵隊,Cuento Militia Camp template,stage/ln_area_template_3193.ice,26a2affaf3f025b35462ac675384df02
+ヴェルン御座所,Weyland Throne Room template,stage/ln_area_template_3194.ice,8f178a6df1bb65de32f77560b700007b
+ヴェルン南村,Weyland Souther Village template,stage/ln_area_template_3195.ice,93c74696bcafb7f646ff3eb07c2086a4
+オメガダークファルス・ルーサー,Omega Dark Falz Loser template,stage/ln_area_template_3196.ice,0407fa2486bd0e484058a12ff0fa162d
+クエント王都 (夜),Cuento Royal Capital (Night) template,stage/ln_area_template_3197.ice,df129d11f40e9a7f257ae054dcc4acd2
+ルーサーの研究施設,Luther's Research Facility template,stage/ln_area_template_3198.ice,c5f9b7593f3815bef4abbb17e1a9cffa
+ルイーザの湖畔,Lakeside of Luisa template,stage/ln_area_template_3199.ice,6280f28a0bec9d6ae03a7381df8dca79
+オラクル宇宙,Oracle Sector template,stage/ln_area_template_3200.ice,15529faf2cbe92e413b6a9f82bca823d
+破滅の艦隊 セクター3（戦艦解体編）,Armada of Demise Sector 3 (Battleship Demolition) template,stage/ln_area_template_3202.ice,db8789703713e9bde63f66e603d835a2
+艦隊迎撃戦：味方救援,Fleet Intercept; Allied Relief template,stage/ln_area_template_3210.ice,73df02d7a0589fc96075782fbd352ae2
+艦隊迎撃戦：敵艦襲撃,Fleet Intercept; Enemy Ship Assault template,stage/ln_area_template_3211.ice,428bc63d402957c549db77a00c7e2615
+アルマダ・バトルスフィア待機場所,Armada Battlesphere Waiting Area template,stage/ln_area_template_3221.ice,fe82020b80bf790326faf74c8b5eb79f
+アルマダ・バトルスフィア内部,Armada Battlesphere Interior template,stage/ln_area_template_3230.ice,09f4429649c530bf6414bbb81ba65cf4
+破滅の艦隊 セクター3（首都圏侵攻作戦）,Armada of Demise Sector 3 (Capital Ship Invasion) template,stage/ln_area_template_3240.ice,949d8dcc4b96ebea2b078932ccc2a11e
+虚無より睨む原初の闇 (エリア１),Primordial Darkness (Area 1) template,stage/ln_area_template_3250.ice,ebd8f09060f4e443fa03b77ae95c9390
+虚無より睨む原初の闇 (エリア２),Primordial Darkness (Area 2) template,stage/ln_area_template_3251.ice,efce425d2c708a5be36c978ae332baea
+マザーシップ コア(シバ),Mothership Core (Shiva) template,stage/ln_area_template_3260.ice,bc03839efb1cabdcf2d5609ea4d17184
+アークスシップ司令部, Arks Ship Command Center template,stage/ln_area_template_3290.ice,3fd5162788324379b26773ba7108fdf7
+A.I.S.開発室,A.I.S. Development Room template,stage/ln_area_template_3291.ice,bab78e7187a5ee6142be20f7d0952765
+_,_ template,stage/ln_area_template_9000.ice,17529fbbdd6f769b2446633da709a3d6

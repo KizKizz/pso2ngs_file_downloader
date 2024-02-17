@@ -5,12 +5,7 @@ import 'package:flutter/material.dart';
 
 Future<(String, String, String, String)> getPatchServerLinks(String managementLink) async {
   Dio dio = Dio();
-  // dio.options.headers = {
-  //   "Access-Control-Allow-Credentials": "true",
-  //   "Access-Control-Allow-Headers": "*",
-  //   "Access-Control-Allow-Methods": "*",
-  //   "Access-Control-Allow-Origin": "*"
-  // };
+  
   try {
     final response = await dio.get(Uri.parse(managementLink).toString());
     if (response.statusCode == 200) {

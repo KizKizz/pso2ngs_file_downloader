@@ -1,4 +1,5 @@
-import 'package:another_flutter_splash_screen/another_flutter_splash_screen.dart';
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/data_loaders/server_file_list.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
@@ -48,10 +49,58 @@ class Splash extends StatefulWidget {
 
 class _SplashState extends State<Splash> {
   bool isDarkMode = true;
+  String loadingStatus = '';
 
   @override
   void initState() {
     themeModeCheck();
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      setState(() {
+        loadingStatus = 'Fetching Server List';
+      });
+      var (mURL, pURL, bkMURL, bkPURL) = await getPatchServerLinks(managementLink);
+      if (mURL.isNotEmpty) {
+        setState(() {
+          loadingStatus = 'Master Server Found';
+        });
+        masterURL = mURL;
+        await Future.delayed(const Duration(milliseconds: 100));
+      }
+      if (pURL.isNotEmpty) {
+        setState(() {
+          loadingStatus = 'Patch Server Found';
+        });
+        patchURL = pURL;
+        await Future.delayed(const Duration(milliseconds: 100));
+      }
+      if (bkMURL.isNotEmpty) {
+        setState(() {
+          loadingStatus = 'Master Backup Server Found';
+        });
+        backupMasterURL = bkMURL;
+        await Future.delayed(const Duration(milliseconds: 100));
+      }
+      if (bkPURL.isNotEmpty) {
+        setState(() {
+          loadingStatus = 'Patch Backup Server Found';
+        });
+        backupPatchURL = bkPURL;
+        await Future.delayed(const Duration(milliseconds: 100));
+      }
+
+      if (masterURL.isNotEmpty && patchURL.isNotEmpty) {
+        setState(() {
+          loadingStatus = 'Done';
+        });
+        await Future.delayed(const Duration(milliseconds: 100));
+        Navigator.pushReplacementNamed(context, '/home');
+      } else {
+        setState(() {
+          loadingStatus = 'Failed to get server list\nPlease check your internet connection and try again later';
+        });
+        await Future.delayed(const Duration(milliseconds: 100));
+      }
+    });
     super.initState();
   }
 
@@ -68,49 +117,12 @@ class _SplashState extends State<Splash> {
 
   @override
   Widget build(BuildContext context) {
-    String loadingStatus = '';
-    return FlutterSplashScreen(
-      //duration: const Duration(milliseconds: 2000),
-      asyncNavigationCallback: () async {
-        loadingStatus = 'Fetching Server List';
-        //setState(() {});
-        var (mURL, pURL, bkMURL, bkPURL) = await getPatchServerLinks(managementLink);
-        if (mURL.isNotEmpty) {
-          loadingStatus = 'Master Server Found';
-          //setState(() {});
-          masterURL = mURL;
-        }
-        if (pURL.isNotEmpty) {
-          loadingStatus = 'Patch Server Found';
-          //setState(() {});
-          patchURL = pURL;
-        }
-        if (bkMURL.isNotEmpty) {
-          loadingStatus = 'Master Backup Server Found';
-          //setState(() {});
-          backupMasterURL = bkMURL;
-        }
-        if (bkPURL.isNotEmpty) {
-          loadingStatus = 'Patch Backup Server Found';
-          //setState(() {});
-          backupPatchURL = bkPURL;
-        }
-
-        if (masterURL.isNotEmpty && patchURL.isNotEmpty) {
-          loadingStatus = 'Done';
-          //setState(() {});
-          Navigator.pushReplacementNamed(context, '/home');
-        } else {
-          loadingStatus = 'Failed to get server list\nPlease check your internet connection and try again later';
-          //setState(() {});
-        }
-      },
-      //nextScreen: const HomePage(),
-      backgroundColor: Theme.of(context).canvasColor,
-      splashScreenBody: Center(
+    return Scaffold(
+      body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
             SizedBox(
               width: 200,
