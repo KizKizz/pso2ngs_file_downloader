@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:pso2ngs_file_locator/classes.dart';
 
 String appTitle = 'PSO2NGS File Locator';
@@ -7,4 +9,8 @@ String masterURL = '';
 String patchURL = '';
 String backupMasterURL = '';
 String backupPatchURL = '';
+//List<String> fileListFromServer = [];
+List<String> masterFileList = [];
+List<String> patchFileList = [];
 List<Item> items = [];
+String tempDirPath = Uri.file('${Directory.current.path}/temp').toFilePath();

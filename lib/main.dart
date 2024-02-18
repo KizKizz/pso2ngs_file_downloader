@@ -1,5 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
+
 import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/data_loaders/ref_sheets.dart';
 import 'package:pso2ngs_file_locator/data_loaders/server_file_list.dart';
@@ -55,6 +56,7 @@ class _SplashState extends State<Splash> {
   @override
   void initState() {
     themeModeCheck();
+    
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       setState(() {
         loadingStatus = 'Fetching Server List';
@@ -91,6 +93,19 @@ class _SplashState extends State<Splash> {
 
       if (masterURL.isNotEmpty && patchURL.isNotEmpty) {
         setState(() {
+          loadingStatus = 'Loading Files From Server';
+        });
+        List<String> mList = [], pList = [];
+        (mList, pList) = await getOfficialFileList(await fetchOfficialPatchFileList());
+        masterFileList = mList;
+        patchFileList = pList;
+
+        setState(() {
+          loadingStatus = 'Loading Items';
+        });
+        items = await populateItemList();
+
+        setState(() {
           loadingStatus = 'Done';
         });
         await Future.delayed(const Duration(milliseconds: 100));
@@ -101,8 +116,6 @@ class _SplashState extends State<Splash> {
         });
         await Future.delayed(const Duration(milliseconds: 100));
       }
-
-      items = await populateItemList();
     });
     super.initState();
   }
