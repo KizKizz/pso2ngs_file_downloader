@@ -1,9 +1,12 @@
 // ignore_for_file: use_build_context_synchronously
 
+import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/data_loaders/ref_sheets.dart';
 import 'package:pso2ngs_file_locator/data_loaders/server_file_list.dart';
+import 'package:pso2ngs_file_locator/functions/icon_load.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 import 'package:pso2ngs_file_locator/pages/home_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -56,7 +59,7 @@ class _SplashState extends State<Splash> {
   @override
   void initState() {
     themeModeCheck();
-    
+
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       setState(() {
         loadingStatus = 'Fetching Server List';
@@ -95,15 +98,34 @@ class _SplashState extends State<Splash> {
         setState(() {
           loadingStatus = 'Loading Files From Server';
         });
-        List<String> mList = [], pList = [];
-        (mList, pList) = await getOfficialFileList(await fetchOfficialPatchFileList());
+        List<String> mList = [], pList = [], mxList = [];
+        (mList, pList, mxList) = await getOfficialFileList(await fetchOfficialPatchFileList());
         masterFileList = mList;
         patchFileList = pList;
+        mixedFileList = mxList;
 
         setState(() {
           loadingStatus = 'Loading Items';
         });
         items = await populateItemList();
+        List<Item> jsonItems = [];
+        var jsonData = jsonDecode(itemDataJson.readAsStringSync());
+        for (var data in jsonData) {
+          jsonItems.add(Item.fromJson(data));
+        }
+
+        for (var item in items) {
+          final matchedItem = jsonItems.firstWhere(
+            (element) => element.compare(item),
+            orElse: () => Item({}, ''),
+          );
+          if (matchedItem.infos.isNotEmpty && matchedItem.iconImageData.isNotEmpty) {
+            item.iconImageData = matchedItem.iconImageData;
+          } else {
+            await setIconImage(item);
+          }
+        }
+        //await setIconImageData();
 
         setState(() {
           loadingStatus = 'Done';

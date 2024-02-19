@@ -10,13 +10,14 @@ Future<List<Item>> populateItemList() async {
   List<Item> itemList = [];
   final csvFiles = Directory(curRefDirPath).listSync(recursive: true).whereType<File>().where((file) => p.extension(file.path) == '.csv');
   for (var file in csvFiles) {
-    List<String> headers = ['Game'];
+    List<String> headers = ['Csv', 'Game'];
     List<String> infos = [];
     List<String> csvContent = [];
 
     String filePathInCsvDir = file.path.split('ref_sheets').last;
     final filePathParts = p.split(filePathInCsvDir);
 
+    infos.add(p.basename(file.path));
     filePathInCsvDir.contains('NGS') ? infos.add('NGS') : infos.add('PSO2');
 
     await File(file.path).openRead().transform(utf8.decoder).transform(const LineSplitter()).forEach((line) => csvContent.add(line));
@@ -36,12 +37,12 @@ Future<List<Item>> populateItemList() async {
     }
 
     for (var line in csvContent) {
-      if (line.isNotEmpty) {
+      if (line.split(',').isNotEmpty) {
         infos.addAll(line.split(','));
-        if (filePathParts[1] == 'Player') {
+        if (p.basename(file.path) == 'Accessories.csv') {
           itemList.add(await itemFromCsv(headers, infos));
         }
-        infos.removeRange(1, infos.length);
+        infos.removeRange(2, infos.length);
       }
     }
   }

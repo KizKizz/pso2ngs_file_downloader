@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, unused_import, duplicate_ignore
 
 import 'dart:io';
 import 'dart:typed_data';
@@ -35,9 +35,9 @@ class _HomePageState extends State<HomePage> {
         body: Padding(
           padding: const EdgeInsets.symmetric(vertical: 5),
           child: ResponsiveGridList(
-              desiredItemWidth: 150,
+              desiredItemWidth: 100,
               minSpacing: 5,
-              children: List.generate(items.length - 1, (index) => index + 1).map((i) {
+              children: List.generate(items.length, (index) => index).map((i) {
                 return itemBox(items[i]);
               }).toList()),
         ));
@@ -51,34 +51,28 @@ class _HomePageState extends State<HomePage> {
         nameStrings.add(value);
       }
     });
-    Uint8List imgFile = Uint8List(0);
-    item.infos.forEach((key, value) async {
-      if (key.contains('Icon')) {
-        File imgFile = await downloadIceFromOfficial(value, tempDirPath);
-        if (imgFile.existsSync()) {
-          await getIconData(imgFile);
-        }
-      }
-    });
     return Container(
-        height: 250,
+        constraints: BoxConstraints(maxHeight: 200),
         decoration: BoxDecoration(color: Theme.of(context).cardColor, border: Border.all(color: Theme.of(context).primaryColorLight), borderRadius: const BorderRadius.all(Radius.circular(5))),
         child: Padding(
           padding: const EdgeInsets.all(2),
           child: Column(
             children: [
-              imgFile.isNotEmpty
-                  ? Image.memory(imgFile)
+              item.iconImageData.isNotEmpty
+                  ? Image.memory(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, iconImageConvert(item.iconImageData))
                   : Image.asset(
+                      width: double.infinity,
                       'assets/images/logo.png',
-                      filterQuality: FilterQuality.none,
-                      fit: BoxFit.fitWidth,
+                      filterQuality: FilterQuality.high,
+                      fit: BoxFit.contain,
                     ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [for (int i = 0; i < nameStrings.length; i++) Text(nameStrings[i], textAlign: TextAlign.center)],
-              ),
+              Expanded(
+              child: Center(
+                child: Text(
+                  nameStrings.join('\n'),
+                  textAlign: TextAlign.center,
+                ),
+              )),
             ],
           ),
         ));
