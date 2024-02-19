@@ -118,11 +118,10 @@ Future<List<String>> fetchOfficialPatchFileList() async {
   return patchFileList;
 }
 
-Future<(List<String>, List<String>, List<String>)> getOfficialFileList(List<String> fileList) async {
+Future<(List<String>, List<String>)> getOfficialFileList(List<String> fileList) async {
   //File(Uri.file('$tempDirPath/fileList.txt').toFilePath()).writeAsStringSync(fileList.join('\n'));
   List<String> returnMasterFiles = [];
   List<String> returnPatchFiles = [];
-  List<String> returnMixedFiles = [];
 
   for (var line in fileList) {
     if (line.isNotEmpty) {
@@ -130,11 +129,9 @@ Future<(List<String>, List<String>, List<String>)> getOfficialFileList(List<Stri
         returnMasterFiles.add(line.split('.pat').first);
       } else if (line.trim().substring(line.length - 2, line.length - 1) == 'p') {
         returnPatchFiles.add(line.split('.pat').first);
-      } else {
-        returnMixedFiles.add(line.split('.pat').first);
-      }
+      } 
     }
   }
 
-  return (returnMasterFiles, returnPatchFiles, returnMixedFiles);
+  return (returnMasterFiles, returnPatchFiles);
 }

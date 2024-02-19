@@ -16,3 +16,5 @@ List<String> mixedFileList = [];
 List<Item> items = [];
 Directory tempDir = Directory(Uri.file('${Directory.current.path}/temp').toFilePath());
 File itemDataJson = File(Uri.file('${Directory.current.path}/json/itemData.json').toFilePath());
+Directory iconsDir = Directory(Uri.file('${Directory.current.path}/icons').toFilePath());
+String githubIconPath = '';

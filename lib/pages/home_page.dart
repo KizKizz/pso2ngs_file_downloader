@@ -3,6 +3,7 @@
 import 'dart:io';
 import 'dart:typed_data';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/functions/ice_download.dart';
@@ -58,8 +59,10 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.all(2),
           child: Column(
             children: [
-              item.iconImageData.isNotEmpty
-                  ? Image.memory(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, iconImageConvert(item.iconImageData))
+              item.iconImagePath.isNotEmpty
+                  ? kDebugMode
+                      ? Image.file(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, File(Uri.file(iconsDir.path + item.iconImagePath).toFilePath()))
+                      : Image.network(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, githubIconPath + item.iconImagePath)
                   : Image.asset(
                       width: double.infinity,
                       'assets/images/logo.png',
@@ -67,7 +70,7 @@ class _HomePageState extends State<HomePage> {
                       fit: BoxFit.contain,
                     ),
               Expanded(
-              child: Center(
+                  child: Center(
                 child: Text(
                   nameStrings.join('\n'),
                   textAlign: TextAlign.center,

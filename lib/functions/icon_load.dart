@@ -12,7 +12,9 @@ import 'package:pso2ngs_file_locator/global_vars.dart';
 
 String ddsToPngExePath = Uri.file('${Directory.current.path}/png_dds_converter/png_dds_converter.exe').toFilePath();
 
-Future<Uint8List> getIconData(File iconIceFile) async {
+Future<File> getIconData(
+  File iconIceFile,
+) async {
   Directory extractedIceDir = await extractIce(iconIceFile, iconIceFile.parent.path);
   if (extractedIceDir.existsSync()) {
     File ddsItemIcon = extractedIceDir.listSync(recursive: true).whereType<File>().firstWhere((element) => p.extension(element.path) == '.dds', orElse: () => File(''));
@@ -20,11 +22,11 @@ Future<Uint8List> getIconData(File iconIceFile) async {
       File newItemIcon = File(Uri.file('${p.dirname(ddsItemIcon.path)}/${p.basenameWithoutExtension(ddsItemIcon.path)}.png').toFilePath());
       await Process.run(ddsToPngExePath, [ddsItemIcon.path, newItemIcon.path, '-ddstopng']);
       if (newItemIcon.existsSync()) {
-        return await newItemIcon.readAsBytes();
+        return newItemIcon;
       }
     }
   }
-  return Uint8List(0);
+  return File('');
 }
 
 Future<void> setIconImageData() async {
@@ -33,8 +35,10 @@ Future<void> setIconImageData() async {
       String iconIceName = item.infos.entries.firstWhere((element) => element.key == 'Icon').value;
       File downloadedImageIce = await downloadIceFromOfficial(iconIceName, tempDir.path);
       if (downloadedImageIce.existsSync()) {
-        final iconImageValue = await getIconData(downloadedImageIce);
-        item.iconImageData = String.fromCharCodes(iconImageValue);
+        final iconImage = await getIconData(downloadedImageIce);
+        if (iconImage.path.isNotEmpty && iconImage.existsSync()) {
+          item.iconImagePath = iconImage.path.replaceFirst(Uri.file(Directory.current.path).toFilePath(), '');
+        }
       }
     }
   }
@@ -51,8 +55,10 @@ Future<void> setIconImage(Item item) async {
     if (iconIceName.isNotEmpty) {
       File downloadedImageIce = await downloadIceFromOfficial(iconIceName, tempDir.path);
       if (downloadedImageIce.existsSync()) {
-        final iconImageValue = await getIconData(downloadedImageIce);
-        item.iconImageData = String.fromCharCodes(iconImageValue);
+        final iconImage = await getIconData(downloadedImageIce);
+        if (iconImage.path.isNotEmpty && iconImage.existsSync()) {
+          item.iconImagePath = iconImage.path.replaceFirst(Uri.file(Directory.current.path).toFilePath(), '');
+        }
       }
     }
   }

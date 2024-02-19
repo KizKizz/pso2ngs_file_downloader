@@ -98,12 +98,11 @@ class _SplashState extends State<Splash> {
         setState(() {
           loadingStatus = 'Loading Files From Server';
         });
-        List<String> mList = [], pList = [], mxList = [];
-        (mList, pList, mxList) = await getOfficialFileList(await fetchOfficialPatchFileList());
+        List<String> mList = [], pList = [];
+        (mList, pList) = await getOfficialFileList(await fetchOfficialPatchFileList());
         masterFileList = mList;
         patchFileList = pList;
-        mixedFileList = mxList;
-
+        
         setState(() {
           loadingStatus = 'Loading Items';
         });
@@ -117,12 +116,12 @@ class _SplashState extends State<Splash> {
         for (var item in items) {
           final matchedItem = jsonItems.firstWhere(
             (element) => element.compare(item),
-            orElse: () => Item({}, ''),
+            orElse: () => Item('', '', '', [], '', {}),
           );
-          if (matchedItem.infos.isNotEmpty && matchedItem.iconImageData.isNotEmpty) {
-            item.iconImageData = matchedItem.iconImageData;
+          if (matchedItem.infos.isNotEmpty && matchedItem.iconImagePath.isNotEmpty) {
+            item.iconImagePath = matchedItem.iconImagePath;
           } else {
-            await setIconImage(item);
+            //await setIconImage(item);
           }
         }
         //await setIconImageData();
