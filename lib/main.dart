@@ -2,6 +2,8 @@
 
 import 'dart:convert';
 
+import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/data_loaders/ref_sheets.dart';
@@ -109,6 +111,15 @@ class _SplashState extends State<Splash> {
         });
         items = await populateItemList();
         List<Item> jsonItems = [];
+        if (!itemDataJson.existsSync()) {
+          if (kDebugMode) {
+            itemDataJson.createSync(recursive: true);
+          } else {
+            Dio dio = Dio();
+            await dio.download(githubItemJsonLink, itemDataJson);
+            dio.close();
+          }
+        }
         if (itemDataJson.existsSync()) {
           final dataFromJson = itemDataJson.readAsStringSync();
           if (dataFromJson.isNotEmpty) {
@@ -117,25 +128,24 @@ class _SplashState extends State<Splash> {
               jsonItems.add(Item.fromJson(data));
             }
           }
-        } else {
-          itemDataJson.createSync(recursive: true);
         }
 
-        for (var item in items) {
-          final matchedItem = jsonItems.firstWhere(
-            (element) => element.compare(item),
-            orElse: () => Item('', '', '', [], '', {}),
-          );
-          if (matchedItem.iconImagePath.isNotEmpty) {
-            item.iconImagePath = matchedItem.iconImagePath;
-          } else {
-            final jpItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('Japan'), orElse: () => const MapEntry('null', 'null'));
-            final enItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('English'), orElse: () => const MapEntry('null', 'null'));
-            if (!jpItemNameEntry.value.toLowerCase().contains('unnamed') && !enItemNameEntry.value.contains('unnamed')) {
-              await setIconImage(item);
+        if (kDebugMode) {
+          for (var item in items) {
+            final matchedItem = jsonItems.firstWhere(
+              (element) => element.compare(item),
+              orElse: () => Item('', '', '', [], '', {}),
+            );
+            if (matchedItem.iconImagePath.isNotEmpty) {
+              item.iconImagePath = matchedItem.iconImagePath;
+            } else {
+              final jpItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('Japan'), orElse: () => const MapEntry('null', 'null'));
+              final enItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('English'), orElse: () => const MapEntry('null', 'null'));
+              if (!jpItemNameEntry.value.toLowerCase().contains('unnamed') && !enItemNameEntry.value.contains('unnamed')) {
+                await setIconImage(item);
+              }
             }
           }
-          
         }
         itemDataSave();
         //await setIconImageData();
