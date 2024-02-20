@@ -1,7 +1,10 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'dart:convert';
+import 'dart:io';
 
+import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/data_loaders/ref_sheets.dart';
@@ -107,38 +110,54 @@ class _SplashState extends State<Splash> {
         setState(() {
           loadingStatus = 'Loading Items';
         });
-        items = await populateItemList();
-        List<Item> jsonItems = [];
-        if (itemDataJson.existsSync()) {
-          final dataFromJson = itemDataJson.readAsStringSync();
-          if (dataFromJson.isNotEmpty) {
-            var jsonData = jsonDecode(dataFromJson);
-            for (var data in jsonData) {
-              jsonItems.add(Item.fromJson(data));
-            }
-          }
-        } else {
-          itemDataJson.createSync(recursive: true);
-        }
 
-        for (var item in items) {
-          final matchedItem = jsonItems.firstWhere(
-            (element) => element.compare(item),
-            orElse: () => Item('', '', '', [], '', {}),
-          );
-          if (matchedItem.iconImagePath.isNotEmpty) {
-            item.iconImagePath = matchedItem.iconImagePath;
-          } else {
-            final jpItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('Japan'), orElse: () => const MapEntry('null', 'null'));
-            final enItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('English'), orElse: () => const MapEntry('null', 'null'));
-            if (!jpItemNameEntry.value.toLowerCase().contains('unnamed') && !enItemNameEntry.value.contains('unnamed')) {
-              await setIconImage(item);
+        if (kDebugMode) {
+          items = await populateItemList();
+          if (!itemDataJson.existsSync()) {
+            await itemDataJson.create(recursive: true);
+          }
+          List<Item> jsonItems = [];
+          if (itemDataJson.existsSync()) {
+            final dataFromJson = itemDataJson.readAsStringSync();
+            if (dataFromJson.isNotEmpty) {
+              var jsonData = jsonDecode(dataFromJson);
+              for (var data in jsonData) {
+                jsonItems.add(Item.fromJson(data));
+              }
             }
           }
-          
+          // pulls and index icons
+          for (var item in items) {
+            final matchedItem = jsonItems.firstWhere(
+              (element) => element.compare(item),
+              orElse: () => Item('', '', '', [], '', {}),
+            );
+            if (matchedItem.iconImagePath.isNotEmpty) {
+              item.iconImagePath = matchedItem.iconImagePath;
+            } else {
+              final jpItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('Japan'), orElse: () => const MapEntry('null', 'null'));
+              final enItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('English'), orElse: () => const MapEntry('null', 'null'));
+              if (!jpItemNameEntry.value.toLowerCase().contains('unnamed') && !enItemNameEntry.value.contains('unnamed')) {
+                await setIconImage(item);
+              }
+            }
+          }
+          itemDataSave();
+        } else {
+          Directory(itemDataJson.parent.path).createSync(recursive: true);
+          Dio dio = Dio();
+          await dio.download(githubItemJsonLink, itemDataJson.path);
+          dio.close();
+          if (itemDataJson.existsSync()) {
+            final dataFromJson = itemDataJson.readAsStringSync();
+            if (dataFromJson.isNotEmpty) {
+              var jsonData = jsonDecode(dataFromJson);
+              for (var data in jsonData) {
+                items.add(Item.fromJson(data));
+              }
+            }
+          } 
         }
-        itemDataSave();
-        //await setIconImageData();
 
         setState(() {
           loadingStatus = 'Done';
