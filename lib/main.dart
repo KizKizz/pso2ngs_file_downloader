@@ -1,7 +1,12 @@
 // ignore_for_file: use_build_context_synchronously
 
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:pso2ngs_file_locator/classes.dart';
+import 'package:pso2ngs_file_locator/data_loaders/ref_sheets.dart';
 import 'package:pso2ngs_file_locator/data_loaders/server_file_list.dart';
+import 'package:pso2ngs_file_locator/functions/icon_load.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 import 'package:pso2ngs_file_locator/pages/home_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -53,7 +58,9 @@ class _SplashState extends State<Splash> {
 
   @override
   void initState() {
+    iconsDir.createSync(recursive: true);
     themeModeCheck();
+
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       setState(() {
         loadingStatus = 'Fetching Server List';
@@ -89,6 +96,50 @@ class _SplashState extends State<Splash> {
       }
 
       if (masterURL.isNotEmpty && patchURL.isNotEmpty) {
+        setState(() {
+          loadingStatus = 'Loading Files From Server';
+        });
+        List<String> mList = [], pList = [];
+        (mList, pList) = await getOfficialFileList(await fetchOfficialPatchFileList());
+        masterFileList = mList;
+        patchFileList = pList;
+
+        setState(() {
+          loadingStatus = 'Loading Items';
+        });
+        items = await populateItemList();
+        List<Item> jsonItems = [];
+        if (itemDataJson.existsSync()) {
+          final dataFromJson = itemDataJson.readAsStringSync();
+          if (dataFromJson.isNotEmpty) {
+            var jsonData = jsonDecode(dataFromJson);
+            for (var data in jsonData) {
+              jsonItems.add(Item.fromJson(data));
+            }
+          }
+        } else {
+          itemDataJson.createSync(recursive: true);
+        }
+
+        for (var item in items) {
+          final matchedItem = jsonItems.firstWhere(
+            (element) => element.compare(item),
+            orElse: () => Item('', '', '', [], '', {}),
+          );
+          if (matchedItem.iconImagePath.isNotEmpty) {
+            item.iconImagePath = matchedItem.iconImagePath;
+          } else {
+            final jpItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('Japan'), orElse: () => const MapEntry('null', 'null'));
+            final enItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('English'), orElse: () => const MapEntry('null', 'null'));
+            if (!jpItemNameEntry.value.toLowerCase().contains('unnamed') && !enItemNameEntry.value.contains('unnamed')) {
+              await setIconImage(item);
+            }
+          }
+          
+        }
+        itemDataSave();
+        //await setIconImageData();
+
         setState(() {
           loadingStatus = 'Done';
         });
