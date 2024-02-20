@@ -1,6 +1,7 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
@@ -109,28 +110,23 @@ class _SplashState extends State<Splash> {
         setState(() {
           loadingStatus = 'Loading Items';
         });
-        items = await populateItemList();
-        List<Item> jsonItems = [];
-        if (!itemDataJson.existsSync()) {
-          if (kDebugMode) {
-            itemDataJson.createSync(recursive: true);
-          } else {
-            Dio dio = Dio();
-            await dio.download(githubItemJsonLink, itemDataJson);
-            dio.close();
-          }
-        }
-        if (itemDataJson.existsSync()) {
-          final dataFromJson = itemDataJson.readAsStringSync();
-          if (dataFromJson.isNotEmpty) {
-            var jsonData = jsonDecode(dataFromJson);
-            for (var data in jsonData) {
-              jsonItems.add(Item.fromJson(data));
-            }
-          }
-        }
 
         if (kDebugMode) {
+          items = await populateItemList();
+          if (!itemDataJson.existsSync()) {
+            await itemDataJson.create(recursive: true);
+          }
+          List<Item> jsonItems = [];
+          if (itemDataJson.existsSync()) {
+            final dataFromJson = itemDataJson.readAsStringSync();
+            if (dataFromJson.isNotEmpty) {
+              var jsonData = jsonDecode(dataFromJson);
+              for (var data in jsonData) {
+                jsonItems.add(Item.fromJson(data));
+              }
+            }
+          }
+          // pulls and index icons
           for (var item in items) {
             final matchedItem = jsonItems.firstWhere(
               (element) => element.compare(item),
@@ -146,9 +142,22 @@ class _SplashState extends State<Splash> {
               }
             }
           }
+          itemDataSave();
+        } else {
+          Directory(itemDataJson.parent.path).createSync(recursive: true);
+          Dio dio = Dio();
+          await dio.download(githubItemJsonLink, itemDataJson.path);
+          dio.close();
+          if (itemDataJson.existsSync()) {
+            final dataFromJson = itemDataJson.readAsStringSync();
+            if (dataFromJson.isNotEmpty) {
+              var jsonData = jsonDecode(dataFromJson);
+              for (var data in jsonData) {
+                items.add(Item.fromJson(data));
+              }
+            }
+          } 
         }
-        itemDataSave();
-        //await setIconImageData();
 
         setState(() {
           loadingStatus = 'Done';
