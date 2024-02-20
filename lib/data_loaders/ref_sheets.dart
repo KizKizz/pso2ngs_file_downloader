@@ -10,7 +10,7 @@ Future<List<Item>> populateItemList() async {
   List<Item> itemList = [];
   final csvFiles = Directory(curRefDirPath).listSync(recursive: true).whereType<File>().where((file) => p.extension(file.path) == '.csv');
   for (var file in csvFiles) {
-    List<String> headers = ['Csv', 'CsvPath', 'Game'];
+    List<String> headers = [];
     List<String> infos = [];
     List<String> csvContent = [];
 
@@ -43,7 +43,7 @@ Future<List<Item>> populateItemList() async {
           itemList.add(
               await itemFromCsv(p.basename(file.path), p.dirname(filePathInCsvDir), filePathInCsvDir.contains('NGS') ? 'NGS' : 'PSO2', [p.basenameWithoutExtension(file.path)], '', headers, infos));
         }
-        infos.removeRange(2, infos.length);
+        infos.clear();
       }
     }
   }

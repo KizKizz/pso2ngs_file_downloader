@@ -16,13 +16,15 @@ Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
       await dio.download('$patchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
       debugPrint('patch');
       downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
-    } on DioException {
+    } on Exception {
       try {
         await dio.download('$backupPatchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
         downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
       } catch (e) {
         debugPrint(e.toString());
       }
+    } catch (e) {
+      debugPrint(e.toString());
     }
   } else if (patchFileList.where((element) => element.split('/').last == iceName).isNotEmpty) {
     String webLinkPath = patchFileList.firstWhere((element) => element.contains(iceName));
@@ -30,42 +32,49 @@ Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
       await dio.download('$masterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
       debugPrint('master');
       downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
-    } on DioException {
+    } on Exception {
       try {
         await dio.download('$backupMasterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
         downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
       } catch (e) {
         debugPrint(e.toString());
       }
+    } catch (e) {
+      debugPrint(e.toString());
     }
   } else {
-      String webLinkPath = 'data/win32/$iceName';
-      if (webLinkPath.isNotEmpty) {
+    String webLinkPath = 'data/win32/$iceName';
+    if (webLinkPath.isNotEmpty) {
+      try {
+        await dio.download('$patchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
+        //debugPrint('patch ${file.statusCode}');
+        downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
+      } on Exception {
         try {
-          await dio.download('$patchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
-          //debugPrint('patch ${file.statusCode}');
+          await dio.download('$backupPatchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
           downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
-        } on DioException {
+        } on Exception {
           try {
-            await dio.download('$backupPatchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
+            await dio.download('$masterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
+            //debugPrint('master ${file.statusCode}');
             downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
-          } on DioException {
+          } on Exception {
             try {
-              await dio.download('$masterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
-              //debugPrint('master ${file.statusCode}');
+              await dio.download('$backupMasterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
               downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
-            } on DioException {
-              try {
-                await dio.download('$backupMasterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
-                downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
-              } catch (e) {
-                debugPrint(e.toString());
-              }
+            } catch (e) {
+              debugPrint(e.toString());
             }
+          } catch (e) {
+            debugPrint(e.toString());
           }
+        } catch (e) {
+          debugPrint(e.toString());
         }
+      } catch (e) {
+        debugPrint(e.toString());
       }
-    
+    }
   }
 
   dio.close();

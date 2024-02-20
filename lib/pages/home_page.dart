@@ -61,11 +61,11 @@ class _HomePageState extends State<HomePage> {
             children: [
               item.iconImagePath.isNotEmpty
                   ? kDebugMode
-                      ? Image.file(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, File(Uri.file(iconsDir.path + item.iconImagePath).toFilePath()))
+                      ? Image.file(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, File(Uri.file(Directory.current.path + item.iconImagePath).toFilePath()))
                       : Image.network(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, githubIconPath + item.iconImagePath)
                   : Image.asset(
                       width: double.infinity,
-                      'assets/images/logo.png',
+                      'assets/images/unknown.png',
                       filterQuality: FilterQuality.high,
                       fit: BoxFit.contain,
                     ),

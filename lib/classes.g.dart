@@ -19,7 +19,7 @@ Item _$ItemFromJson(Map<String, dynamic> json) => Item(
 
 Map<String, dynamic> _$ItemToJson(Item instance) => <String, dynamic>{
       'csvFileName': instance.csvFileName,
-      'cvsFilePath': instance.cvsFilePath,
+      'cvsFilePath': instance.csvFilePath,
       'itemType': instance.itemType,
       'itemCategories': instance.itemCategories,
       'iconImagePath': instance.iconImagePath,

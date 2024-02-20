@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:flutter/foundation.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 
@@ -8,10 +7,10 @@ part 'classes.g.dart';
 
 @JsonSerializable()
 class Item {
-  Item(this.csvFileName, this.cvsFilePath, this.itemType, this.itemCategories, this.iconImagePath, this.infos);
+  Item(this.csvFileName, this.csvFilePath, this.itemType, this.itemCategories, this.iconImagePath, this.infos);
 
   String csvFileName;
-  String cvsFilePath;
+  String csvFilePath;
   String itemType;
   List<String> itemCategories;
   String iconImagePath;
@@ -19,10 +18,10 @@ class Item {
 
   bool compare(Item bItem) {
     if (csvFileName != bItem.csvFileName ||
-        cvsFilePath != bItem.cvsFilePath ||
+        csvFilePath != bItem.csvFilePath ||
         itemType != bItem.itemType ||
         itemCategories.length != bItem.itemCategories.length ||
-        iconImagePath != bItem.iconImagePath ||
+        //iconImagePath != bItem.iconImagePath ||
         infos.entries.length != bItem.infos.entries.length) {
       return false;
     } else {

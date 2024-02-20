@@ -58,6 +58,7 @@ class _SplashState extends State<Splash> {
 
   @override
   void initState() {
+    iconsDir.createSync(recursive: true);
     themeModeCheck();
 
     WidgetsBinding.instance.addPostFrameCallback((_) async {
@@ -102,15 +103,22 @@ class _SplashState extends State<Splash> {
         (mList, pList) = await getOfficialFileList(await fetchOfficialPatchFileList());
         masterFileList = mList;
         patchFileList = pList;
-        
+
         setState(() {
           loadingStatus = 'Loading Items';
         });
         items = await populateItemList();
         List<Item> jsonItems = [];
-        var jsonData = jsonDecode(itemDataJson.readAsStringSync());
-        for (var data in jsonData) {
-          jsonItems.add(Item.fromJson(data));
+        if (itemDataJson.existsSync()) {
+          final dataFromJson = itemDataJson.readAsStringSync();
+          if (dataFromJson.isNotEmpty) {
+            var jsonData = jsonDecode(dataFromJson);
+            for (var data in jsonData) {
+              jsonItems.add(Item.fromJson(data));
+            }
+          }
+        } else {
+          itemDataJson.createSync(recursive: true);
         }
 
         for (var item in items) {
@@ -118,12 +126,18 @@ class _SplashState extends State<Splash> {
             (element) => element.compare(item),
             orElse: () => Item('', '', '', [], '', {}),
           );
-          if (matchedItem.infos.isNotEmpty && matchedItem.iconImagePath.isNotEmpty) {
+          if (matchedItem.iconImagePath.isNotEmpty) {
             item.iconImagePath = matchedItem.iconImagePath;
           } else {
-            //await setIconImage(item);
+            final jpItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('Japan'), orElse: () => const MapEntry('null', 'null'));
+            final enItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('English'), orElse: () => const MapEntry('null', 'null'));
+            if (!jpItemNameEntry.value.toLowerCase().contains('unnamed') && !enItemNameEntry.value.contains('unnamed')) {
+              await setIconImage(item);
+            }
           }
+          
         }
+        itemDataSave();
         //await setIconImageData();
 
         setState(() {
