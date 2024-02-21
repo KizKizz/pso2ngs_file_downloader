@@ -52,6 +52,10 @@ class _HomePageState extends State<HomePage> {
         nameStrings.add(value);
       }
     });
+
+    if (kDebugMode) {
+      imageSizeCheck(item);
+    }
     return Container(
         constraints: BoxConstraints(maxHeight: 200),
         decoration: BoxDecoration(color: Theme.of(context).cardColor, border: Border.all(color: Theme.of(context).primaryColorLight), borderRadius: const BorderRadius.all(Radius.circular(5))),

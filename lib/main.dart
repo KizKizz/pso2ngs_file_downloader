@@ -61,7 +61,9 @@ class _SplashState extends State<Splash> {
 
   @override
   void initState() {
-    iconsDir.createSync(recursive: true);
+    if (kDebugMode) {
+      iconsDir.createSync(recursive: true);
+    }
     themeModeCheck();
 
     WidgetsBinding.instance.addPostFrameCallback((_) async {

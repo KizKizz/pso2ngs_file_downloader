@@ -1,5 +1,7 @@
 // ignore_for_file: unused_import
 
+import 'dart:async';
+import 'dart:ffi';
 import 'dart:io';
 import 'dart:typed_data';
 
@@ -83,9 +85,18 @@ Future<void> setIconImage(Item item) async {
     }
     tempDir.deleteSync(recursive: true);
   }
+}
 
-  //itemDataSave();
-  
+void imageSizeCheck(Item item) {
+  if (item.iconImagePath.isNotEmpty) {
+    Image image = Image.file(File(Uri.file(Directory.current.path + item.iconImagePath).toFilePath()));
+    image.image.resolve(const ImageConfiguration()).addListener((ImageStreamListener((image, synchronousCall) {
+          if (image.image.width > 64 && image.image.height > 64) {
+            item.itemType = 'NGS';
+            itemDataSave();
+          }
+        })));
+  }
 }
 
 Uint8List iconImageConvert(String uint8String) {
