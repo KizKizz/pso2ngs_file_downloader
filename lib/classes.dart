@@ -19,7 +19,7 @@ class Item {
   bool compare(Item bItem) {
     if (csvFileName != bItem.csvFileName ||
         csvFilePath != bItem.csvFilePath ||
-        itemType != bItem.itemType ||
+        // itemType != bItem.itemType ||
         itemCategories.length != bItem.itemCategories.length ||
         //iconImagePath != bItem.iconImagePath ||
         infos.entries.length != bItem.infos.entries.length) {

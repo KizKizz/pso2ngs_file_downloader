@@ -41,7 +41,7 @@ Future<List<Item>> populateItemList() async {
         infos.addAll(line.split(','));
         if (p.basename(file.path) == 'Accessories.csv') {
           itemList.add(
-              await itemFromCsv(p.basename(file.path), p.dirname(filePathInCsvDir), filePathInCsvDir.contains('NGS') ? 'NGS' : 'PSO2', [p.basenameWithoutExtension(file.path)], '', headers, infos));
+              await itemFromCsv(p.basename(file.path), p.dirname(filePathInCsvDir), filePathInCsvDir.contains('NGS') ? 'NGS' : filePathInCsvDir.contains('PSO2') ? 'PSO2' : '', [p.basenameWithoutExtension(file.path)], '', headers, infos));
         }
         infos.clear();
       }

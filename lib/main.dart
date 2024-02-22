@@ -61,8 +61,11 @@ class _SplashState extends State<Splash> {
 
   @override
   void initState() {
-    iconsDir.createSync(recursive: true);
+    if (kDebugMode) {
+      iconsDir.createSync(recursive: true);
+    }
     themeModeCheck();
+    filtersCheck();
 
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       setState(() {
@@ -111,7 +114,7 @@ class _SplashState extends State<Splash> {
           loadingStatus = 'Loading Items';
         });
 
-        if (kDebugMode) {
+        if (kDebugMode && !overrideDebugMode) {
           items = await populateItemList();
           if (!itemDataJson.existsSync()) {
             await itemDataJson.create(recursive: true);
@@ -133,7 +136,11 @@ class _SplashState extends State<Splash> {
               orElse: () => Item('', '', '', [], '', {}),
             );
             if (matchedItem.iconImagePath.isNotEmpty) {
+              item.itemType = matchedItem.itemType;
               item.iconImagePath = matchedItem.iconImagePath;
+              if (item.itemType == '') {
+                await imageSizeCheck(item);
+              }
             } else {
               final jpItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('Japan'), orElse: () => const MapEntry('null', 'null'));
               final enItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('English'), orElse: () => const MapEntry('null', 'null'));
@@ -156,7 +163,7 @@ class _SplashState extends State<Splash> {
                 items.add(Item.fromJson(data));
               }
             }
-          } 
+          }
         }
 
         setState(() {
@@ -182,7 +189,11 @@ class _SplashState extends State<Splash> {
     } else {
       MyApp.themeNotifier.value = ThemeMode.light;
     }
-    setState(() {});
+  }
+
+  Future<void> filtersCheck() async {
+    final prefs = await SharedPreferences.getInstance();
+    filterBoxShow = (prefs.getBool('filterBoxShow') ?? true);
   }
 
   @override

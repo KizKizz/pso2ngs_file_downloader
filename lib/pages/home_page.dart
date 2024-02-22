@@ -3,6 +3,7 @@
 import 'dart:io';
 import 'dart:typed_data';
 
+import 'package:choice/choice.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
@@ -23,6 +24,17 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List<Item> filteredItems = [];
+
+  @override
+  void initState() {
+    if (itemFilters.isEmpty) {
+      itemFilters.addAll([itemFilterChoices[0], itemFilterChoices[1]]);
+    }
+    filteredItems = items.where((element) => itemFilters.contains(element.itemType)).toList();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,18 +42,30 @@ class _HomePageState extends State<HomePage> {
           backgroundColor: Theme.of(context).primaryColor,
           toolbarHeight: 30,
           elevation: 10,
-          //title: Text('PSO2NGS File Locator'),
-          actions: [lightDarkModeBtn()],
+          title: searchBox(),
+          actions: [filterBoxBtn(), lightDarkModeBtn()],
         ),
-        body: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 5),
-          child: ResponsiveGridList(
-              desiredItemWidth: 100,
-              minSpacing: 5,
-              children: List.generate(items.length, (index) => index).map((i) {
-                return itemBox(items[i]);
-              }).toList()),
-        ));
+        body: Row(children: [
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 5),
+              child: ResponsiveGridList(desiredItemWidth: 100, minSpacing: 5, children: filteredItems.map((e) => itemBox(e)).toList()),
+            ),
+          ),
+          Visibility(
+            visible: filterBoxShow,
+            child: SizedBox(
+              width: 200,
+              child: Card(
+                  margin: EdgeInsets.only(top: 5, bottom: 5, left: 0, right: 5),
+                  elevation: 10,
+                  shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
+                  child: Column(
+                    children: [gameTypeChoices()],
+                  )),
+            ),
+          ),
+        ]));
   }
 
   //Item Box
@@ -52,54 +76,129 @@ class _HomePageState extends State<HomePage> {
         nameStrings.add(value);
       }
     });
+
     return Container(
         constraints: BoxConstraints(maxHeight: 200),
-        decoration: BoxDecoration(color: Theme.of(context).cardColor, border: Border.all(color: Theme.of(context).primaryColorLight), borderRadius: const BorderRadius.all(Radius.circular(5))),
-        child: Padding(
-          padding: const EdgeInsets.all(2),
-          child: Column(
-            children: [
-              item.iconImagePath.isNotEmpty
-                  ? kDebugMode
-                      ? Image.file(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, File(Uri.file(Directory.current.path + item.iconImagePath).toFilePath()))
-                      : Image.network(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, githubIconPath + item.iconImagePath)
-                  : Image.asset(
-                      width: double.infinity,
-                      'assets/images/unknown.png',
-                      filterQuality: FilterQuality.high,
-                      fit: BoxFit.contain,
+        child: Card(
+          shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
+          elevation: 10,
+          margin: EdgeInsets.all(0),
+          clipBehavior: Clip.hardEdge,
+          child: InkWell(
+            onTap: () {},
+            child: Padding(
+              padding: const EdgeInsets.all(2),
+              child: Column(
+                children: [
+                  item.iconImagePath.isNotEmpty
+                      ? kDebugMode
+                          ? Image.file(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, File(Uri.file(Directory.current.path + item.iconImagePath).toFilePath()))
+                          : Image.network(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, githubIconPath + item.iconImagePath.replaceAll('\\', '/'))
+                      : Image.asset(
+                          width: double.infinity,
+                          'assets/images/unknown.png',
+                          filterQuality: FilterQuality.high,
+                          fit: BoxFit.contain,
+                        ),
+                  Expanded(
+                      child: Center(
+                    child: Text(
+                      nameStrings.join('\n'),
+                      textAlign: TextAlign.center,
                     ),
-              Expanded(
-                  child: Center(
-                child: Text(
-                  nameStrings.join('\n'),
-                  textAlign: TextAlign.center,
-                ),
-              )),
-            ],
+                  )),
+                ],
+              ),
+            ),
           ),
         ));
+  }
+
+  //Search box
+  Widget searchBox() {
+    return SearchBar(
+        leading: Icon(Icons.search),
+        hintText: 'Enter item\'s name, ice file\'s name to search',
+        padding: MaterialStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
+        constraints: BoxConstraints(minHeight: 25, maxHeight: 25, maxWidth: double.infinity),
+        side: MaterialStatePropertyAll(BorderSide(width: 1.5, color: Theme.of(context).hoverColor)));
+  }
+
+  //Drop downs
+  Widget gameTypeChoices() {
+    return InlineChoice<String>.multiple(
+      value: itemFilters,
+      onChanged: (value) {
+        setState(() {
+          itemFilters = value;
+          filteredItems = items.where((element) => itemFilters.contains(element.itemType)).toList();
+        });
+      },
+      itemCount: itemFilterChoices.length,
+      itemBuilder: (state, i) {
+        return ChoiceChip(
+          selected: state.selected(itemFilterChoices[i]),
+          onSelected: state.onSelected(itemFilterChoices[i]),
+          label: Text(itemFilterChoices[i]),
+          elevation: 5,
+        );
+      },
+      listBuilder: ChoiceList.createGrid(
+        spacing: 2,
+        padding: const EdgeInsets.symmetric(
+          horizontal: 2,
+          vertical: 2,
+        ),
+      ),
+    );
   }
 
   //Buttons
   Widget lightDarkModeBtn() {
     return MaterialButton(
-      minWidth: 25,
-      onPressed: MyApp.themeNotifier.value == ThemeMode.dark
-          ? () async {
-              final prefs = await SharedPreferences.getInstance();
-              MyApp.themeNotifier.value = ThemeMode.light;
-              prefs.setBool('isDarkMode', false);
-              //setState(() {});
-            }
-          : () async {
-              final prefs = await SharedPreferences.getInstance();
-              prefs.setBool('isDarkMode', true);
-              MyApp.themeNotifier.value = ThemeMode.dark;
-              //setState(() {});
-            },
-      child: MyApp.themeNotifier.value == ThemeMode.dark ? const Icon(Icons.light_mode) : const Icon(Icons.dark_mode),
-      //label: MyApp.themeNotifier.value == ThemeMode.dark ? 'Dark Mode' : 'Light Mode',
-    );
+        minWidth: 30,
+        onPressed: MyApp.themeNotifier.value == ThemeMode.dark
+            ? () async {
+                final prefs = await SharedPreferences.getInstance();
+                MyApp.themeNotifier.value = ThemeMode.light;
+                prefs.setBool('isDarkMode', false);
+                //setState(() {});
+              }
+            : () async {
+                final prefs = await SharedPreferences.getInstance();
+                prefs.setBool('isDarkMode', true);
+                MyApp.themeNotifier.value = ThemeMode.dark;
+                //setState(() {});
+              },
+        child: Row(
+          children: [
+            MyApp.themeNotifier.value == ThemeMode.dark ? const Icon(Icons.light_mode) : const Icon(Icons.dark_mode),
+            SizedBox(
+              width: 5,
+            ),
+            //Text(MyApp.themeNotifier.value == ThemeMode.dark ? 'Dark Mode' : 'Light Mode')
+          ],
+        ));
+  }
+
+  Widget filterBoxBtn() {
+    return MaterialButton(
+        minWidth: 160,
+        onPressed: filterBoxShow
+            ? () async {
+                final prefs = await SharedPreferences.getInstance();
+                filterBoxShow = false;
+                prefs.setBool('filterBoxShow', false);
+                setState(() {});
+              }
+            : () async {
+                final prefs = await SharedPreferences.getInstance();
+                prefs.setBool('filterBoxShow', true);
+                filterBoxShow = true;
+                setState(() {});
+              },
+        child: Row(
+          children: [filterBoxShow ? Icon(Icons.filter_alt_outlined) : Icon(Icons.filter_list_alt), SizedBox(width: 5), Text(filterBoxShow ? 'Hide Filters' : 'Show Filters')],
+        ));
   }
 }
