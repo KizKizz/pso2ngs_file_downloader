@@ -20,3 +20,6 @@ File itemDataJson = File(Uri.file('${Directory.current.path}/json/itemData.json'
 Directory iconsDir = Directory(Uri.file('${Directory.current.path}/icons').toFilePath());
 String githubIconPath = 'https://raw.githubusercontent.com/KizKizz/pso2ngs_file_locator/main';
 String charToReplace = '[\\/:*?"<>|]';
+bool overrideDebugMode = true;
+bool filterBoxShow = true;
+String gameType = '';
