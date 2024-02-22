@@ -136,7 +136,11 @@ class _SplashState extends State<Splash> {
               orElse: () => Item('', '', '', [], '', {}),
             );
             if (matchedItem.iconImagePath.isNotEmpty) {
+              item.itemType = matchedItem.itemType;
               item.iconImagePath = matchedItem.iconImagePath;
+              if (item.itemType == 'PSO2') {
+                await imageSizeCheck(item);
+              }
             } else {
               final jpItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('Japan'), orElse: () => const MapEntry('null', 'null'));
               final enItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('English'), orElse: () => const MapEntry('null', 'null'));

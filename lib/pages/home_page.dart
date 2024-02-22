@@ -3,6 +3,7 @@
 import 'dart:io';
 import 'dart:typed_data';
 
+import 'package:choice/choice.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
@@ -23,6 +24,17 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List<Item> filteredItems = [];
+
+  @override
+  void initState() {
+    if (itemFilters.isEmpty) {
+      itemFilters.addAll([itemFilterChoices[0], itemFilterChoices[1]]);
+    }
+    filteredItems = items.where((element) => itemFilters.contains(element.itemType)).toList();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,15 +49,9 @@ class _HomePageState extends State<HomePage> {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 5),
-              child: ResponsiveGridList(
-                  desiredItemWidth: 100,
-                  minSpacing: 5,
-                  children: List.generate(items.length, (index) => index).map((i) {
-                    return itemBox(items[i]);
-                  }).toList()),
+              child: ResponsiveGridList(desiredItemWidth: 100, minSpacing: 5, children: filteredItems.map((e) => itemBox(e)).toList()),
             ),
           ),
-          
           Visibility(
             visible: filterBoxShow,
             child: SizedBox(
@@ -55,7 +61,7 @@ class _HomePageState extends State<HomePage> {
                   elevation: 10,
                   shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
                   child: Column(
-                    children: [],
+                    children: [gameTypeChoices()],
                   )),
             ),
           ),
@@ -71,9 +77,6 @@ class _HomePageState extends State<HomePage> {
       }
     });
 
-    if (kDebugMode && !overrideDebugMode) {
-      imageSizeCheck(item);
-    }
     return Container(
         constraints: BoxConstraints(maxHeight: 200),
         child: Card(
@@ -122,27 +125,29 @@ class _HomePageState extends State<HomePage> {
   }
 
   //Drop downs
-  Widget gameTypeDropDown() {
-    List<String> options = ['Both', 'PSO2', 'NGS'];
-    if (gameType.isEmpty) {
-      gameType = options.first;
-    }
-
-    return SizedBox(
-      height: 25,
-      child: Expanded(
-        child: DropdownButton(
-          underline: SizedBox(),
-          padding: EdgeInsets.all(5),
-          items: options.map((e) {
-            return DropdownMenuItem<String>(value: e, child: Text(e));
-          }).toList(),
-          value: gameType,
-          onChanged: (value) {
-            setState(() {
-              gameType = value!;
-            });
-          },
+  Widget gameTypeChoices() {
+    return InlineChoice<String>.multiple(
+      value: itemFilters,
+      onChanged: (value) {
+        setState(() {
+          itemFilters = value;
+          filteredItems = items.where((element) => itemFilters.contains(element.itemType)).toList();
+        });
+      },
+      itemCount: itemFilterChoices.length,
+      itemBuilder: (state, i) {
+        return ChoiceChip(
+          selected: state.selected(itemFilterChoices[i]),
+          onSelected: state.onSelected(itemFilterChoices[i]),
+          label: Text(itemFilterChoices[i]),
+          elevation: 5,
+        );
+      },
+      listBuilder: ChoiceList.createGrid(
+        spacing: 2,
+        padding: const EdgeInsets.symmetric(
+          horizontal: 2,
+          vertical: 2,
         ),
       ),
     );
@@ -168,7 +173,9 @@ class _HomePageState extends State<HomePage> {
         child: Row(
           children: [
             MyApp.themeNotifier.value == ThemeMode.dark ? const Icon(Icons.light_mode) : const Icon(Icons.dark_mode),
-            SizedBox(width: 5,),
+            SizedBox(
+              width: 5,
+            ),
             //Text(MyApp.themeNotifier.value == ThemeMode.dark ? 'Dark Mode' : 'Light Mode')
           ],
         ));
@@ -191,10 +198,7 @@ class _HomePageState extends State<HomePage> {
                 setState(() {});
               },
         child: Row(
-          children: [filterBoxShow ? Icon(Icons.filter_alt_outlined) : Icon(Icons.filter_list_alt), 
-          SizedBox(width: 5),
-          Text(filterBoxShow ? 'Hide Filters' : 'Show Filters')],
-        )
-        );
+          children: [filterBoxShow ? Icon(Icons.filter_alt_outlined) : Icon(Icons.filter_list_alt), SizedBox(width: 5), Text(filterBoxShow ? 'Hide Filters' : 'Show Filters')],
+        ));
   }
 }

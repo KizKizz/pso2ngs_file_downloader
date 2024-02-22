@@ -87,13 +87,13 @@ Future<void> setIconImage(Item item) async {
   }
 }
 
-void imageSizeCheck(Item item) {
+Future<void> imageSizeCheck(Item item) async {
   if (item.iconImagePath.isNotEmpty) {
     Image image = Image.file(File(Uri.file(Directory.current.path + item.iconImagePath).toFilePath()));
     image.image.resolve(const ImageConfiguration()).addListener((ImageStreamListener((image, synchronousCall) {
           if (image.image.width > 64 && image.image.height > 64) {
             item.itemType = 'NGS';
-            itemDataSave();
+            //itemDataSave();
           }
         })));
   }
