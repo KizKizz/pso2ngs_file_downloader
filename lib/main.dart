@@ -138,7 +138,7 @@ class _SplashState extends State<Splash> {
             if (matchedItem.iconImagePath.isNotEmpty) {
               item.itemType = matchedItem.itemType;
               item.iconImagePath = matchedItem.iconImagePath;
-              if (item.itemType == 'PSO2') {
+              if (item.itemType == '') {
                 await imageSizeCheck(item);
               }
             } else {
