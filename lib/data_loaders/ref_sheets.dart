@@ -16,32 +16,89 @@ Future<List<Item>> populateItemList() async {
     String filePathInCsvDir = file.path.split('ref_sheets').last;
     final filePathParts = p.split(filePathInCsvDir);
 
-    //infos.add(p.basename(file.path));
-    // filePathInCsvDir.contains('NGS') ? infos.add('NGS') : infos.add('PSO2');
-
     await File(file.path).openRead().transform(utf8.decoder).transform(const LineSplitter()).forEach((line) => csvContent.add(line));
 
     switch (filePathParts[1]) {
-      case 'Player':
-        headers.addAll(csvContent[0].split(','));
+      case 'Enemies':
+        if (filePathParts.last == 'EnemiesClassic.csv' || filePathParts.last == 'EnemyBaseStats.csv') {
+          headers.addAll(['English Name', 'Japanese Name', 'Path', 'Ice Hash']);
+        } else if (filePathParts.last == 'EnemiesNGS Miscellaneous.csv') {
+          headers.addAll(['English Name', 'Japanese Name', 'Path', 'Ice Hash']);
+          for (var line in csvContent) {
+            csvContent[csvContent.indexOf(line)] = ',,$line';
+          }
+        } else {
+          headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash']);
+        }
+      case 'Music':
+        headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash']);
+        for (var line in csvContent) {
+          int fields = line.split(',').length;
+          if (fields < 4) {
+            for (int i = fields; i < 4; i++) {
+              csvContent[csvContent.indexOf(line)] = ',$line';
+            }
+          }
+        }
+      case 'NPC':
+        headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash']);
+        break;
+      case 'Objects':
+        if (filePathParts.last == 'Room Goods.csv') {
+          headers.addAll(csvContent[1].split(','));
+          csvContent.removeRange(0, 2);
+        } else {
+          headers.addAll(csvContent[0].split(','));
+          csvContent.removeAt(0);
+        }
+        break;
+      case 'Pets':
+        headers.addAll(['English Name', 'Japanese Name', 'Path', 'Ice Hash']);
         csvContent.removeAt(0);
+        break;
+      case 'Player':
+        List<String> headerlessFiles = ['CasealVoices.csv', 'CastVoices.csv', 'DarkBlasts_DrivableVehicles.csv', 'FemaleVoices.csv', 'MaleVoices.csv'];
+        if (headerlessFiles.contains(filePathParts.last)) {
+          headers.addAll(['Japanese Name', 'English Name', 'Ice Hash']);
+        } else if (filePathParts.last == 'DarkBlasts_DrivableVehiclesNGS.csv') {
+          headers.addAll(['English Name', 'Japanese Name', 'Ice Hash']);
+        } else if (filePathParts.last == 'Mags.csv' || filePathParts.last == 'MagsNGS.csv') {
+          headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash']);
+        } else {
+          headers.addAll(csvContent[0].split(','));
+          csvContent.removeAt(0);
+        }
         break;
       case 'Units':
         headers.addAll(csvContent[1].split(','));
-        csvContent.removeAt(0);
+        csvContent.removeRange(0, 2);
         break;
       default:
-        headers.addAll(['Type', 'Subtype', 'JP Name', 'EN Name', 'Icon']);
+        headers.addAll(['Japanese Name', 'English Name', 'Icon']);
         break;
     }
 
     for (var line in csvContent) {
       if (line.split(',').isNotEmpty) {
-        infos.addAll(line.split(','));
-        if (p.basename(file.path) == 'Accessories.csv') {
-          itemList.add(
-              await itemFromCsv(p.basename(file.path), p.dirname(filePathInCsvDir), filePathInCsvDir.contains('NGS') ? 'NGS' : filePathInCsvDir.contains('PSO2') ? 'PSO2' : '', [p.basenameWithoutExtension(file.path)], '', headers, infos));
+        List<String> fields = line.split(',');
+        for (var element in fields) {
+          fields[fields.indexOf(element)] = element.trim();
         }
+        infos.addAll(fields);
+        //if (p.basename(file.path) == 'Accessories.csv') {
+        itemList.add(await itemFromCsv(
+            p.basename(file.path),
+            p.dirname(filePathInCsvDir),
+            filePathInCsvDir.contains('NGS')
+                ? 'NGS'
+                : filePathInCsvDir.contains('PSO2')
+                    ? 'PSO2'
+                    : '',
+            [p.basenameWithoutExtension(file.path)],
+            '',
+            headers,
+            infos));
+        //}
         infos.clear();
       }
     }

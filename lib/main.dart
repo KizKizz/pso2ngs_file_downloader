@@ -130,6 +130,7 @@ class _SplashState extends State<Splash> {
           itemFilterChoices.addAll(tempChoices);
           itemFilterListJson.writeAsStringSync(itemFilterChoices.join('\n'));
 
+          //fetch items
           items = await populateItemList();
           if (!itemDataJson.existsSync()) {
             await itemDataJson.create(recursive: true);
