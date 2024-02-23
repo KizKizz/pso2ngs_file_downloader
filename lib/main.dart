@@ -9,10 +9,12 @@ import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/data_loaders/ref_sheets.dart';
 import 'package:pso2ngs_file_locator/data_loaders/server_file_list.dart';
+import 'package:pso2ngs_file_locator/functions/helpers.dart';
 import 'package:pso2ngs_file_locator/functions/icon_load.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 import 'package:pso2ngs_file_locator/pages/home_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:path/path.dart' as p;
 
 void main() {
   runApp(const MyApp());
@@ -115,6 +117,19 @@ class _SplashState extends State<Splash> {
         });
 
         if (kDebugMode && !overrideDebugMode) {
+          // get filter choices from sheets
+          itemFilterListJson.createSync(recursive: true);
+          List<String> tempChoices = [];
+          for (var file in refSheetsDir.listSync(recursive: true).whereType<File>().where((element) => p.extension(element.path) == '.csv')) {
+            String fileName = p.basenameWithoutExtension(file.path).replaceAll('NGS', '').replaceAll('PSO2', '').trim();
+            if (!tempChoices.contains(fileName) && !isNumeric(fileName[0])) {
+              tempChoices.add(fileName);
+            }
+          }
+          tempChoices.sort((a, b) => a.compareTo(b));
+          itemFilterChoices.addAll(tempChoices);
+          itemFilterListJson.writeAsStringSync(itemFilterChoices.join('\n'));
+
           items = await populateItemList();
           if (!itemDataJson.existsSync()) {
             await itemDataJson.create(recursive: true);
@@ -138,7 +153,7 @@ class _SplashState extends State<Splash> {
             if (matchedItem.iconImagePath.isNotEmpty) {
               item.itemType = matchedItem.itemType;
               item.iconImagePath = matchedItem.iconImagePath;
-              if (item.itemType == '') {
+              if (matchedItem.itemType == '') {
                 await imageSizeCheck(item);
               }
             } else {
@@ -167,7 +182,7 @@ class _SplashState extends State<Splash> {
         }
 
         setState(() {
-          loadingStatus = 'Done';
+          loadingStatus = 'Finished!';
         });
         await Future.delayed(const Duration(milliseconds: 100));
         Navigator.pushReplacementNamed(context, '/home');
@@ -194,6 +209,7 @@ class _SplashState extends State<Splash> {
   Future<void> filtersCheck() async {
     final prefs = await SharedPreferences.getInstance();
     filterBoxShow = (prefs.getBool('filterBoxShow') ?? true);
+    itemFilters = (prefs.getStringList('itemFilters') ?? [itemFilterChoices[0], itemFilterChoices[1]]);
   }
 
   @override
@@ -212,6 +228,7 @@ class _SplashState extends State<Splash> {
             const Spacer(),
             Text(
               loadingStatus,
+              textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 20),
             ),
             const SizedBox(

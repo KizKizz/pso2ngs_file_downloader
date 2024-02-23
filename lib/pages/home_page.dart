@@ -28,10 +28,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    if (itemFilters.isEmpty) {
-      itemFilters.addAll([itemFilterChoices[0], itemFilterChoices[1]]);
-    }
-    filteredItems = items.where((element) => itemFilters.contains(element.itemType)).toList();
+    filteredItems = items.where((element) => itemFilters.contains(element.itemType) && element.containsCategory(itemFilters)).toList();
     super.initState();
   }
 
@@ -58,10 +55,12 @@ class _HomePageState extends State<HomePage> {
               width: 200,
               child: Card(
                   margin: EdgeInsets.only(top: 5, bottom: 5, left: 0, right: 5),
-                  elevation: 10,
+                  elevation: 5,
                   shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
-                  child: Column(
-                    children: [gameTypeChoices()],
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [gameTypeChoices()],
+                    ),
                   )),
             ),
           ),
@@ -81,7 +80,7 @@ class _HomePageState extends State<HomePage> {
         constraints: BoxConstraints(maxHeight: 200),
         child: Card(
           shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
-          elevation: 10,
+          elevation: 5,
           margin: EdgeInsets.all(0),
           clipBehavior: Clip.hardEdge,
           child: InkWell(
@@ -124,15 +123,17 @@ class _HomePageState extends State<HomePage> {
         side: MaterialStatePropertyAll(BorderSide(width: 1.5, color: Theme.of(context).hoverColor)));
   }
 
-  //Drop downs
+  //Filters
   Widget gameTypeChoices() {
     return InlineChoice<String>.multiple(
       value: itemFilters,
-      onChanged: (value) {
+      onChanged: (value) async {
         setState(() {
           itemFilters = value;
-          filteredItems = items.where((element) => itemFilters.contains(element.itemType)).toList();
+          filteredItems = items.where((element) => itemFilters.contains(element.itemType) && element.containsCategory(itemFilters)).toList();
         });
+        final prefs = await SharedPreferences.getInstance();
+        prefs.setStringList('itemFilters', itemFilters);
       },
       itemCount: itemFilterChoices.length,
       itemBuilder: (state, i) {
@@ -143,8 +144,10 @@ class _HomePageState extends State<HomePage> {
           elevation: 5,
         );
       },
-      listBuilder: ChoiceList.createGrid(
-        spacing: 2,
+      listBuilder: ChoiceList.createWrapped(
+        spacing: 5,
+        runSpacing: 5,
+        alignment: WrapAlignment.center,
         padding: const EdgeInsets.symmetric(
           horizontal: 2,
           vertical: 2,
