@@ -3,12 +3,11 @@ import 'dart:io';
 
 import 'package:path/path.dart' as p;
 import 'package:pso2ngs_file_locator/classes.dart';
-
-String curRefDirPath = Uri.file('${Directory.current.path}/ref_sheets').toFilePath();
+import 'package:pso2ngs_file_locator/global_vars.dart';
 
 Future<List<Item>> populateItemList() async {
   List<Item> itemList = [];
-  final csvFiles = Directory(curRefDirPath).listSync(recursive: true).whereType<File>().where((file) => p.extension(file.path) == '.csv');
+  final csvFiles = refSheetsDir.listSync(recursive: true).whereType<File>().where((file) => p.extension(file.path) == '.csv');
   for (var file in csvFiles) {
     List<String> headers = [];
     List<String> infos = [];

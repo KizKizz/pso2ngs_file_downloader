@@ -16,6 +16,15 @@ class Item {
   String iconImagePath;
   Map<String, String> infos = {};
 
+  bool containsCategory(List<String> filters) {
+    for (var cateName in itemCategories) {
+      if (filters.contains(cateName)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   bool compare(Item bItem) {
     if (csvFileName != bItem.csvFileName ||
         csvFilePath != bItem.csvFilePath ||
