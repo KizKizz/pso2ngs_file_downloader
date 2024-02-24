@@ -54,14 +54,55 @@ Future<List<Item>> populateItemList() async {
         csvContent.removeAt(0);
         break;
       case 'Player':
-        List<String> headerlessFiles = ['CasealVoices.csv', 'CastVoices.csv', 'DarkBlasts_DrivableVehicles.csv', 'FemaleVoices.csv', 'MaleVoices.csv'];
-        if (headerlessFiles.contains(filePathParts.last)) {
+        List<String> threeFieldsFiles = ['CasealVoices.csv', 'CastVoices.csv', 'DarkBlasts_DrivableVehicles.csv', 'FemaleVoices.csv', 'MaleVoices.csv', 'PhotonBlastCreatures.csv'];
+        List<String> fourFieldsFiles = ['Mags.csv', 'MagsNGS.csv', 'General Character Animations.csv', 'General Character Effects.csv', 'General Character Animations NGS.csv', 'General Reboot Character Effects.csv'];
+
+        if (threeFieldsFiles.contains(filePathParts.last)) {
           headers.addAll(['Japanese Name', 'English Name', 'Ice Hash']);
-        } else if (filePathParts.last == 'DarkBlasts_DrivableVehiclesNGS.csv') {
+          for (var element in csvContent) {element.replaceAll(', (Not found)', '').trim();}
+          for (var line in csvContent) {
+            int fields = line.split(',').length;
+            if (fields < 3) {
+              String commas = '';
+              for (int i = fields; i < 3; i++) {
+                commas += ',';
+              }
+              csvContent[csvContent.indexOf(line)] = '$commas$line';
+            } else if (fields > 3) {
+              final tempFields = line.split(',');
+              List<String> temp = [];
+              temp.add(tempFields[0]);
+              temp.add(tempFields.getRange(1, tempFields.length - 2).join(' ').trim());
+              temp.addAll(tempFields.getRange(tempFields.length - 2, tempFields.length));
+              csvContent[csvContent.indexOf(line)] = temp.join(',');
+            }
+          }
+        } else if (fourFieldsFiles.contains(filePathParts.last)) {
+          headers.addAll(['Japanese Name', 'English Name', 'Ice Hash']);
+          for (var element in csvContent) {element.replaceAll(', (Not found)', '').trim();}
+          for (var line in csvContent) {
+            int fields = line.split(',').length;
+            if (fields < 4) {
+              String commas = '';
+              for (int i = fields; i < 4; i++) {
+                commas += ',';
+              }
+              csvContent[csvContent.indexOf(line)] = '$commas$line';
+            } else if (fields > 4) {
+              final tempFields = line.split(',');
+              List<String> temp = [];
+              temp.add(tempFields[0]);
+              temp.add(tempFields.getRange(1, tempFields.length - 2).join(' ').trim());
+              temp.addAll(tempFields.getRange(tempFields.length - 2, tempFields.length));
+              csvContent[csvContent.indexOf(line)] = temp.join(',');
+            }
+          }
+        }
+        
+        
+        else if (filePathParts.last == 'DarkBlasts_DrivableVehiclesNGS.csv') {
           headers.addAll(['English Name', 'Japanese Name', 'Ice Hash']);
-        } else if (filePathParts.last == 'Mags.csv' || filePathParts.last == 'MagsNGS.csv') {
-          headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash']);
-        } else {
+        }  else {
           headers.addAll(csvContent[0].split(','));
           csvContent.removeAt(0);
         }
