@@ -16,7 +16,9 @@ Future<List<Item>> populateItemList() async {
     String filePathInCsvDir = file.path.split('ref_sheets').last;
     final filePathParts = p.split(filePathInCsvDir);
 
-    await File(file.path).openRead().transform(utf8.decoder).transform(const LineSplitter()).forEach((line) => csvContent.add(line));
+    await File(file.path).openRead().transform(utf8.decoder).transform(const LineSplitter()).forEach((line) {
+      if (line.isNotEmpty) csvContent.add(line);
+    });
 
     switch (filePathParts[1]) {
       case 'Enemies':
@@ -25,7 +27,7 @@ Future<List<Item>> populateItemList() async {
         } else if (filePathParts.last == 'EnemiesNGS Miscellaneous.csv') {
           headers.addAll(['English Name', 'Japanese Name', 'Path', 'Ice Hash']);
           for (var line in csvContent) {
-            csvContent[csvContent.indexOf(line)] = ',,$line';
+            csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 4);
           }
         } else {
           headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash']);
@@ -33,12 +35,7 @@ Future<List<Item>> populateItemList() async {
       case 'Music':
         headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash']);
         for (var line in csvContent) {
-          int fields = line.split(',').length;
-          if (fields < 4) {
-            for (int i = fields; i < 4; i++) {
-              csvContent[csvContent.indexOf(line)] = ',$line';
-            }
-          }
+          csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 4);
         }
       case 'NPC':
         headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash']);
@@ -69,12 +66,85 @@ Future<List<Item>> populateItemList() async {
           csvContent.removeAt(0);
         }
         break;
-      case 'Units':
-        headers.addAll(csvContent[1].split(','));
-        csvContent.removeRange(0, 2);
+      case 'Stage':
+        if (filePathParts.last == 'Classic') {
+          headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash']);
+          for (var line in csvContent) {
+            csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 4);
+          }
+        } else if (filePathParts.last == 'NGS') {
+          headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash']);
+          for (var line in csvContent) {
+            int fields = line.split(',').length;
+            if (fields < 4) {
+              String commas = '';
+              for (int i = fields; i < 4; i++) {
+                commas += ',';
+              }
+              csvContent[csvContent.indexOf(line)] = '$commas$line';
+            }
+          }
+        } else {
+          headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash']);
+          for (var line in csvContent) {
+            int fields = line.split(',').length;
+            if (fields < 4) {
+              String commas = '';
+              for (int i = fields; i < 4; i++) {
+                commas += ',';
+              }
+              csvContent[csvContent.indexOf(line)] = '$commas$line';
+            } else if (fields > 4) {
+              final tempFields = line.split(',');
+              List<String> temp = [];
+              temp.add(tempFields[0]);
+              temp.add(tempFields.getRange(1, tempFields.length - 2).join(' ').trim());
+              temp.addAll(tempFields.getRange(tempFields.length - 2, tempFields.length));
+              csvContent[csvContent.indexOf(line)] = temp.join(',');
+            }
+          }
+        }
         break;
+      case 'UI':
+        if (filePathParts.last == 'Stamps') {
+          headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash - Image']);
+          for (var line in csvContent) {
+            csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 4);
+          }
+        } else if (filePathParts.last == 'Vital Gauge') {
+          headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash - Image']);
+          for (var line in csvContent) {
+            csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 4);
+          }
+        } else {
+          headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash']);
+          for (var line in csvContent) {
+            csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 4);
+          }
+        }
+        break;
+      case 'Units':
+        headers.addAll(['Japanese Name', 'English Name', '1st model attach bone', '2nd model attach bone', 'Extra model attach bone', 'Object unhashed name', 'Object hashed name']);
+        csvContent.removeRange(0, 2);
+        for (var line in csvContent) {
+          csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 7);
+        }
+        break;
+      case 'Weapons':
+        headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash']);
+        for (var line in csvContent) {
+          csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 4);
+        }
       default:
-        headers.addAll(['Japanese Name', 'English Name', 'Icon']);
+        headers.addAll(['Japanese Name', 'English Name']);
+        for (var line in csvContent) {
+          int numMissingHeaders = line.split(',').length - headers.length;
+          String commas = '';
+          while (numMissingHeaders-- > 0) {
+            commas += ',';
+          }
+          csvContent[csvContent.indexOf(line)] = '$commas$line';
+        }
         break;
     }
 
@@ -120,4 +190,17 @@ Future<Item> itemFromCsv(String csvFileName, String csvFilePath, String itemType
 
   final infoMap = Map.fromIterables(headers, infos);
   return Item.fromMap(csvFileName, csvFilePath, itemType, itemCategories, iconImagePath, infoMap);
+}
+
+//Helpers
+
+String itemInfoLineFieldPad(String line, int fieldNum) {
+  int fields = line.split(',').length;
+  String commas = '';
+  if (fields < fieldNum) {
+    for (int i = fields; i < fieldNum; i++) {
+      commas += ',';
+    }
+  }
+  return commas + line;
 }
