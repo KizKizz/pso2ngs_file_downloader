@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                   shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
                   child: SingleChildScrollView(
                     child: Column(
-                      children: [gameTypeChoices()],
+                      children: [filters()],
                     ),
                   )),
             ),
@@ -124,7 +124,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   //Filters
-  Widget gameTypeChoices() {
+  Widget filters() {
     return InlineChoice<String>.multiple(
       value: itemFilters,
       onChanged: (value) async {
