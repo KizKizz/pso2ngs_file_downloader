@@ -158,6 +158,8 @@ class _SplashState extends State<Splash> {
                 await imageSizeCheck(item);
               } else if (matchedItem.itemType == '' && (matchedItem.csvFileName.toLowerCase().contains('classic') && matchedItem.csvFilePath.toLowerCase().contains('classic'))) {
                 item.itemType = 'PSO2';
+              } else if (item.csvFilePath.contains('Stamps') || item.csvFilePath.contains('Vital Gauge')) {
+                item.itemType = 'NGS';
               }
             } else {
               final jpItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('Japan'), orElse: () => const MapEntry('null', 'null'));
