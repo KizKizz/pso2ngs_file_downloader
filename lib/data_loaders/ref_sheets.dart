@@ -97,10 +97,7 @@ Future<List<Item>> populateItemList() async {
               csvContent[csvContent.indexOf(line)] = temp.join(',');
             }
           }
-        }
-        
-        
-        else if (filePathParts.last == 'DarkBlasts_DrivableVehiclesNGS.csv') {
+        } else if (filePathParts.last == 'DarkBlasts_DrivableVehiclesNGS.csv') {
           headers.addAll(['English Name', 'Japanese Name', 'Ice Hash']);
         }  else {
           headers.addAll(csvContent[0].split(','));
@@ -147,12 +144,7 @@ Future<List<Item>> populateItemList() async {
         }
         break;
       case 'UI':
-        if (filePathParts.last == 'Stamps') {
-          headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash - Image']);
-          for (var line in csvContent) {
-            csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 4);
-          }
-        } else if (filePathParts.last == 'Vital Gauge') {
+        if (filePathParts.last == 'stamps.csv' || filePathParts.last == 'stampsNA.csv' || filePathParts.last == 'Vital_Gauge.csv') {
           headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash - Image']);
           for (var line in csvContent) {
             csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 4);
@@ -202,7 +194,7 @@ Future<List<Item>> populateItemList() async {
             p.dirname(filePathInCsvDir),
             filePathInCsvDir.contains('NGS')
                 ? 'NGS'
-                : filePathInCsvDir.contains('PSO2')
+                : filePathInCsvDir.contains('PSO2') || filePathInCsvDir.contains('Classic') || filePathInCsvDir.contains('classic')
                     ? 'PSO2'
                     : '',
             [p.basenameWithoutExtension(file.path)],
