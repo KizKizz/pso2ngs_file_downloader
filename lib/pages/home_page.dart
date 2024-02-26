@@ -38,6 +38,10 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    double gridItemWidth = 100;
+    if (filteredItems.indexWhere((element) => element.csvFilePath.contains('Stamps') || element.csvFilePath.contains('Vital Gauge')) != -1) {
+      gridItemWidth = 300;
+    }
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).primaryColor,
@@ -50,7 +54,7 @@ class _HomePageState extends State<HomePage> {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 5),
-              child: ResponsiveGridList(desiredItemWidth: 100, minSpacing: 5, children: filteredItems.map((e) => itemBox(e)).toList()),
+              child: ResponsiveGridList(desiredItemWidth: gridItemWidth, minSpacing: 5, children: filteredItems.map((e) => itemBox(e)).toList()),
             ),
           ),
           Visibility(

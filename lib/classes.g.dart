@@ -8,7 +8,7 @@ part of 'classes.dart';
 
 Item _$ItemFromJson(Map<String, dynamic> json) => Item(
       json['csvFileName'] as String,
-      json['cvsFilePath'] as String,
+      json['csvFilePath'] as String,
       json['itemType'] as String,
       (json['itemCategories'] as List<dynamic>)
           .map((e) => e as String)
@@ -19,7 +19,7 @@ Item _$ItemFromJson(Map<String, dynamic> json) => Item(
 
 Map<String, dynamic> _$ItemToJson(Item instance) => <String, dynamic>{
       'csvFileName': instance.csvFileName,
-      'cvsFilePath': instance.csvFilePath,
+      'csvFilePath': instance.csvFilePath,
       'itemType': instance.itemType,
       'itemCategories': instance.itemCategories,
       'iconImagePath': instance.iconImagePath,
