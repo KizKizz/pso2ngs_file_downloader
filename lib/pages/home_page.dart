@@ -28,7 +28,11 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    filteredItems = items.where((element) => itemFilters.contains(element.itemType) && element.containsCategory(itemFilters)).toList();
+    if (itemFilters.contains('PSO2') && itemFilters.contains('NGS') && itemFilters.length == 2) {
+      filteredItems = items;
+    } else {
+      filteredItems = items.where((element) => itemFilters.contains(element.itemType) && element.containsCategory(itemFilters)).toList();
+    }
     super.initState();
   }
 
@@ -130,7 +134,11 @@ class _HomePageState extends State<HomePage> {
       onChanged: (value) async {
         setState(() {
           itemFilters = value;
-          filteredItems = items.where((element) => itemFilters.contains(element.itemType) && element.containsCategory(itemFilters)).toList();
+          if (itemFilters.contains('PSO2') && itemFilters.contains('NGS') && itemFilters.length == 2) {
+            filteredItems = items;
+          } else {
+            filteredItems = items.where((element) => itemFilters.contains(element.itemType) && element.containsCategory(itemFilters)).toList();
+          }
         });
         final prefs = await SharedPreferences.getInstance();
         prefs.setStringList('itemFilters', itemFilters);
