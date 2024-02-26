@@ -26,3 +26,4 @@ bool overrideDebugMode = false;
 bool filterBoxShow = true;
 List<String> itemFilterChoices = ['PSO2', 'NGS'];
 List<String> itemFilters = [];
+String searchingItem = '';

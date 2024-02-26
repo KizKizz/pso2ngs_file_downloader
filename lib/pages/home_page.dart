@@ -39,8 +39,19 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     double gridItemWidth = 100;
-    if (filteredItems.indexWhere((element) => element.csvFilePath.contains('Stamps') || element.csvFilePath.contains('Vital Gauge')) != -1) {
+    double gridItemHeight = 200;
+    if (itemFilters.contains('PSO2') && itemFilters.contains('NGS') && itemFilters.length == 2) {
+      gridItemWidth = 100;
+      gridItemHeight = 200;
+    } else if (filteredItems.indexWhere((element) => element.csvFilePath.contains('Stamps')) != -1) {
       gridItemWidth = 300;
+      gridItemHeight = 400;
+    } else if (filteredItems.indexWhere((element) => element.csvFilePath.contains('Vital Gauge')) != -1) {
+      gridItemWidth = 300;
+      gridItemHeight = 200;
+    } else {
+      gridItemWidth = 100;
+      gridItemHeight = 200;
     }
     return Scaffold(
         appBar: AppBar(
@@ -54,7 +65,7 @@ class _HomePageState extends State<HomePage> {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 5),
-              child: ResponsiveGridList(desiredItemWidth: gridItemWidth, minSpacing: 5, children: filteredItems.map((e) => itemBox(e)).toList()),
+              child: ResponsiveGridList(desiredItemWidth: gridItemWidth, minSpacing: 5, children: filteredItems.map((e) => itemBox(e, gridItemHeight)).toList()),
             ),
           ),
           Visibility(
@@ -76,16 +87,22 @@ class _HomePageState extends State<HomePage> {
   }
 
   //Item Box
-  Widget itemBox(Item item) {
+  Widget itemBox(Item item, double maxHeight) {
     List<String> nameStrings = [];
     item.infos.forEach((key, value) {
       if (key.contains('Name')) {
         nameStrings.add(value);
       }
     });
+    if (nameStrings.isEmpty) {
+      nameStrings.add(item.infos.values.firstWhere(
+        (element) => element.isNotEmpty,
+        orElse: () => 'Unknown',
+      ));
+    }
 
     return Container(
-        constraints: BoxConstraints(maxHeight: 200),
+        constraints: BoxConstraints(maxHeight: maxHeight),
         child: Card(
           shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
           elevation: 5,
@@ -124,11 +141,24 @@ class _HomePageState extends State<HomePage> {
   //Search box
   Widget searchBox() {
     return SearchBar(
-        leading: Icon(Icons.search),
-        hintText: 'Enter item\'s name, ice file\'s name to search',
-        padding: MaterialStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
-        constraints: BoxConstraints(minHeight: 25, maxHeight: 25, maxWidth: double.infinity),
-        side: MaterialStatePropertyAll(BorderSide(width: 1.5, color: Theme.of(context).hoverColor)));
+      leading: Icon(Icons.search),
+      hintText: 'Enter item\'s name, ice file\'s name to search',
+      padding: MaterialStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
+      constraints: BoxConstraints(minHeight: 25, maxHeight: 25, maxWidth: double.infinity),
+      side: MaterialStatePropertyAll(BorderSide(width: 1.5, color: Theme.of(context).hoverColor)),
+      onChanged: (value) {
+        if (value.isNotEmpty) {
+          filteredItems = filteredItems.where((element) => element.infos.values.contains(value)).toList();
+        } else {
+          if (itemFilters.contains('PSO2') && itemFilters.contains('NGS') && itemFilters.length == 2) {
+            filteredItems = items;
+          } else {
+            filteredItems = items.where((element) => itemFilters.contains(element.itemType) && element.containsCategory(itemFilters)).toList();
+          }
+        }
+        setState(() {});
+      },
+    );
   }
 
   //Filters
