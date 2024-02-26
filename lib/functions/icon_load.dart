@@ -71,8 +71,8 @@ Future<void> setIconImage(Item item) async {
   if (File(iconImageFilePath).existsSync()) {
     item.iconImagePath = iconImageFilePath.replaceFirst(Uri.file(Directory.current.path).toFilePath(), '');
   } else {
-    if (item.infos.entries.where((element) => element.key == 'Icon').isNotEmpty && item.infos.entries.firstWhere((element) => element.key == 'Icon').value.isNotEmpty) {
-      String iconIceName = item.infos.entries.firstWhere((element) => element.key == 'Icon').value;
+    if (item.infos.entries.where((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).isNotEmpty && item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).value.isNotEmpty) {
+      String iconIceName = item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).value;
       if (iconIceName.isNotEmpty) {
         File downloadedImageIce = await downloadIceFromOfficial(iconIceName, tempDir.path);
         if (downloadedImageIce.existsSync()) {

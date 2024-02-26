@@ -18,7 +18,7 @@ class Item {
 
   bool containsCategory(List<String> filters) {
     for (var cateName in itemCategories) {
-      if (filters.contains(cateName)) {
+      if (filters.contains(cateName.replaceAll('NGS', '').replaceAll('PSO2', '').trim())) {
         return true;
       }
     }

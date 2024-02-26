@@ -43,7 +43,12 @@ Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
       debugPrint(e.toString());
     }
   } else {
-    String webLinkPath = 'data/win32/$iceName';
+    String webLinkPath = '';
+    if (iceName.split('\\').length > 1) {
+      webLinkPath = 'data/win32reboot/${iceName.replaceAll('\\', '/')}';
+    } else {
+      webLinkPath = 'data/win32/$iceName';
+    }
     if (webLinkPath.isNotEmpty) {
       try {
         await dio.download('$patchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());

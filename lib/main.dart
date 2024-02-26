@@ -130,6 +130,7 @@ class _SplashState extends State<Splash> {
           itemFilterChoices.addAll(tempChoices);
           itemFilterListJson.writeAsStringSync(itemFilterChoices.join('\n'));
 
+          //fetch items
           items = await populateItemList();
           if (!itemDataJson.existsSync()) {
             await itemDataJson.create(recursive: true);
@@ -153,8 +154,14 @@ class _SplashState extends State<Splash> {
             if (matchedItem.iconImagePath.isNotEmpty) {
               item.itemType = matchedItem.itemType;
               item.iconImagePath = matchedItem.iconImagePath;
-              if (matchedItem.itemType == '') {
+              if (matchedItem.itemType == '' && (matchedItem.csvFileName.toLowerCase().contains('classic') || matchedItem.csvFilePath.toLowerCase().contains('classic'))) {
+                item.itemType = 'PSO2';
+              } else if (matchedItem.itemType == '' && !matchedItem.csvFileName.toLowerCase().contains('classic') && !matchedItem.csvFilePath.toLowerCase().contains('classic')) {
                 await imageSizeCheck(item);
+              } else if (matchedItem.iconImagePath.isEmpty && (item.csvFilePath.contains('Stamps') || item.csvFilePath.contains('Vital Gauge'))) {
+                item.itemType = 'NGS';
+              } else if (matchedItem.iconImagePath.isEmpty) {
+                item.itemType == 'PSO2 | NGS';
               }
             } else {
               final jpItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('Japan'), orElse: () => const MapEntry('null', 'null'));
@@ -182,7 +189,7 @@ class _SplashState extends State<Splash> {
         }
 
         setState(() {
-          loadingStatus = 'Finished!';
+          loadingStatus = 'Finish!';
         });
         await Future.delayed(const Duration(milliseconds: 100));
         Navigator.pushReplacementNamed(context, '/home');
