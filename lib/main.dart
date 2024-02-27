@@ -186,6 +186,10 @@ class _SplashState extends State<Splash> {
               }
             }
           }
+          //load filters
+          if (itemFilterListJson.existsSync()) {
+            itemFilterChoices = itemFilterListJson.readAsLinesSync();
+          }
         }
 
         setState(() {

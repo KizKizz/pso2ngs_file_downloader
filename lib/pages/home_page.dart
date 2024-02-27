@@ -11,6 +11,7 @@ import 'package:pso2ngs_file_locator/functions/ice_download.dart';
 import 'package:pso2ngs_file_locator/functions/icon_load.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 import 'package:pso2ngs_file_locator/main.dart';
+import 'package:pso2ngs_file_locator/pages/info_popup.dart';
 // ignore: unused_import
 import 'package:pso2ngs_file_locator/widgets/buttons.dart';
 import 'package:responsive_grid/responsive_grid.dart';
@@ -109,7 +110,9 @@ class _HomePageState extends State<HomePage> {
           margin: EdgeInsets.all(0),
           clipBehavior: Clip.hardEdge,
           child: InkWell(
-            onTap: () {},
+            onTap: () {
+              itemInfoDialog(context, item);
+            },
             child: Padding(
               padding: const EdgeInsets.all(2),
               child: Column(
