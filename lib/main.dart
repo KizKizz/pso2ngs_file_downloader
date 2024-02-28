@@ -18,12 +18,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:path/path.dart' as p;
 
 void main() {
-  MultiProvider(
-    providers: [
-      ChangeNotifierProvider(create: (_) => StateProvider()),
-    ],
-    child: const MyApp(),
-  );
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(create: (_) => StateProvider()),
+  ], child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -156,7 +153,7 @@ class _SplashState extends State<Splash> {
           // pulls and index icons
           for (var item in items) {
             setState(() {
-              loadingStatus = 'Loading\n${item.infos.values.first}\n${item.infos.values.elementAt(1)}';
+              loadingStatus = 'Loading\n${item.csvFileName}\n${items.indexOf(item)}/${items.length}\n${item.infos.values.first}\n${item.infos.values.elementAt(1)}';
             });
             await Future.delayed(const Duration(milliseconds: 50));
 

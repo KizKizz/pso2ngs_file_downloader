@@ -103,7 +103,20 @@ Future<void> filesDownload(context, Item item) async {
   if (downloadDir.existsSync()) {
     for (var entry in item.infos.entries) {
       if (downloadableKeys.where((element) => entry.key.toString().toLowerCase().contains(element.toLowerCase())).isNotEmpty) {
-        String dlSavePath = entry.value.split('\\').length < 2 ? Uri.file('${downloadDir.path}/win32reboot').toFilePath() : Uri.file('${downloadDir.path}/win32').toFilePath();
+        List<String> nameStrings = [];
+        item.infos.forEach((key, value) {
+          if (key.toLowerCase().contains('name') && value.isNotEmpty) {
+            nameStrings.add(value);
+          }
+        });
+        if (nameStrings.isEmpty) {
+          nameStrings.add(item.infos.values.firstWhere(
+            (element) => element.isNotEmpty,
+            orElse: () => 'Unknown',
+          ));
+        }
+        String dlSavePath =
+            entry.value.split('\\').length < 2 ? Uri.file('${downloadDir.path}/${nameStrings.join(' - ')}/win32reboot').toFilePath() : Uri.file('${downloadDir.path}/win32').toFilePath();
         Directory subDir = await Directory(dlSavePath).create(recursive: true);
         if (subDir.existsSync()) {
           downloadIceFromOfficial(context, entry.value, subDir.path);

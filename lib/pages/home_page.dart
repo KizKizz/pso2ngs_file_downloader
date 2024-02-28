@@ -134,7 +134,7 @@ class _HomePageState extends State<HomePage> {
   Widget itemBox(Item item, double maxHeight) {
     List<String> nameStrings = [];
     item.infos.forEach((key, value) {
-      if (key.contains('Name') && value.isNotEmpty) {
+      if (key.toLowerCase().contains('name') && value.isNotEmpty) {
         nameStrings.add(value);
       }
     });
