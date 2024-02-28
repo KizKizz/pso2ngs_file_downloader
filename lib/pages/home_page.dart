@@ -29,10 +29,10 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    if (itemFilters.contains('PSO2') && itemFilters.contains('NGS') && itemFilters.length == 2) {
+    if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
       filteredItems = items;
     } else {
-      filteredItems = items.where((element) => itemFilters.contains(element.itemType) && element.containsCategory(itemFilters)).toList();
+      filteredItems = items.where((element) => selectedItemFilters.contains(element.itemType) && element.containsCategory(selectedItemFilters)).toList();
     }
     super.initState();
   }
@@ -41,15 +41,15 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     double gridItemWidth = 100;
     double gridItemHeight = 200;
-    if (itemFilters.contains('PSO2') && itemFilters.contains('NGS') && itemFilters.length == 2) {
+    if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && itemFilters.length == 2) {
       gridItemWidth = 100;
       gridItemHeight = 200;
-    } else if (filteredItems.indexWhere((element) => element.csvFilePath.contains('Stamps')) != -1) {
-      gridItemWidth = 300;
-      gridItemHeight = 400;
-    } else if (filteredItems.indexWhere((element) => element.csvFilePath.contains('Vital Gauge')) != -1) {
-      gridItemWidth = 300;
-      gridItemHeight = 200;
+      // } else if (filteredItems.indexWhere((element) => element.csvFilePath.contains('Stamps')) != -1) {
+      //   gridItemWidth = 300;
+      //   gridItemHeight = 400;
+      // } else if (filteredItems.indexWhere((element) => element.csvFilePath.contains('Vital Gauge')) != -1) {
+      //   gridItemWidth = 300;
+      //   gridItemHeight = 200;
     } else {
       gridItemWidth = 100;
       gridItemHeight = 200;
@@ -72,14 +72,45 @@ class _HomePageState extends State<HomePage> {
           Visibility(
             visible: filterBoxShow,
             child: SizedBox(
-              width: 200,
+              width: 250,
+              height: double.infinity,
               child: Card(
                   margin: EdgeInsets.only(top: 5, bottom: 5, left: 0, right: 5),
                   elevation: 5,
                   shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
                   child: SingleChildScrollView(
                     child: Column(
-                      children: [filters()],
+                      children: [
+                        ListView.builder(
+                          padding: EdgeInsets.symmetric(vertical: 2),
+                          shrinkWrap: true,
+                          physics: NeverScrollableScrollPhysics(),
+                          itemCount: itemFilters.length,
+                          itemBuilder: (context, index) {
+                            int appliedFilters = selectedItemFilters.where((element) => itemFilters[index].fileFilters.contains(element)).length;
+                            return ExpansionTile(
+                              dense: true,
+                              title: Wrap(
+                                alignment: WrapAlignment.spaceBetween,
+                                runAlignment: WrapAlignment.center,
+                                spacing: 5,
+                                children: [
+                                  Text(
+                                    itemFilters[index].mainCategory,
+                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                  Container(
+                                      margin: EdgeInsets.symmetric(vertical: 0),
+                                      padding: const EdgeInsets.only(left: 2, right: 2),
+                                      decoration: BoxDecoration(border: Border.all(color: Theme.of(context).primaryColorLight), borderRadius: const BorderRadius.all(Radius.circular(5.0))),
+                                      child: Text('$appliedFilters / ${itemFilters[index].fileFilters.length}')),
+                                ],
+                              ),
+                              children: [filters(itemFilters[index])],
+                            );
+                          },
+                        )
+                      ],
                     ),
                   )),
             ),
@@ -91,7 +122,7 @@ class _HomePageState extends State<HomePage> {
   Widget itemBox(Item item, double maxHeight) {
     List<String> nameStrings = [];
     item.infos.forEach((key, value) {
-      if (key.contains('Name')) {
+      if (key.contains('Name') && value.isNotEmpty) {
         nameStrings.add(value);
       }
     });
@@ -153,10 +184,10 @@ class _HomePageState extends State<HomePage> {
         if (value.isNotEmpty) {
           filteredItems = filteredItems.where((element) => element.infos.values.contains(value)).toList();
         } else {
-          if (itemFilters.contains('PSO2') && itemFilters.contains('NGS') && itemFilters.length == 2) {
+          if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
             filteredItems = items;
           } else {
-            filteredItems = items.where((element) => itemFilters.contains(element.itemType) && element.containsCategory(itemFilters)).toList();
+            filteredItems = items.where((element) => selectedItemFilters.contains(element.itemType) && element.containsCategory(selectedItemFilters)).toList();
           }
         }
         setState(() {});
@@ -165,33 +196,42 @@ class _HomePageState extends State<HomePage> {
   }
 
   //Filters
-  Widget filters() {
+  Widget filters(Filter filter) {
     return InlineChoice<String>.multiple(
-      value: itemFilters,
+      value: selectedItemFilters,
       onChanged: (value) async {
         setState(() {
-          itemFilters = value;
-          if (itemFilters.contains('PSO2') && itemFilters.contains('NGS') && itemFilters.length == 2) {
+          selectedItemFilters = value;
+          if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && itemFilters.length == 2) {
             filteredItems = items;
           } else {
-            filteredItems = items.where((element) => itemFilters.contains(element.itemType) && element.containsCategory(itemFilters)).toList();
+            filteredItems = items.where((element) => selectedItemFilters.contains(element.itemType) && element.containsCategory(selectedItemFilters)).toList();
           }
         });
         final prefs = await SharedPreferences.getInstance();
-        prefs.setStringList('itemFilters', itemFilters);
+        prefs.setStringList('selectedItemFilters', selectedItemFilters);
       },
-      itemCount: itemFilterChoices.length,
+      itemCount: filter.fileFilters.length,
       itemBuilder: (state, i) {
         return ChoiceChip(
-          selected: state.selected(itemFilterChoices[i]),
-          onSelected: state.onSelected(itemFilterChoices[i]),
-          label: Text(itemFilterChoices[i]),
+          selected: state.selected(filter.fileFilters[i]),
+          onSelected: state.onSelected(filter.fileFilters[i]),
+          label: Text(filter.fileFilters[i]),
           elevation: 5,
         );
       },
+      // groupBuilder: ChoiceList.createWrapped(
+      //   spacing: 2,
+      //   runSpacing: 2,
+      //   alignment: WrapAlignment.center,
+      //   padding: const EdgeInsets.symmetric(
+      //     horizontal: 2,
+      //     vertical: 2,
+      //   ),
+      // ),
       listBuilder: ChoiceList.createWrapped(
-        spacing: 5,
-        runSpacing: 5,
+        spacing: 2,
+        runSpacing: 2,
         alignment: WrapAlignment.center,
         padding: const EdgeInsets.symmetric(
           horizontal: 2,
@@ -203,30 +243,36 @@ class _HomePageState extends State<HomePage> {
 
   //Buttons
   Widget lightDarkModeBtn() {
-    return MaterialButton(
-        minWidth: 30,
-        onPressed: MyApp.themeNotifier.value == ThemeMode.dark
-            ? () async {
-                final prefs = await SharedPreferences.getInstance();
-                MyApp.themeNotifier.value = ThemeMode.light;
-                prefs.setBool('isDarkMode', false);
-                //setState(() {});
-              }
-            : () async {
-                final prefs = await SharedPreferences.getInstance();
-                prefs.setBool('isDarkMode', true);
-                MyApp.themeNotifier.value = ThemeMode.dark;
-                //setState(() {});
-              },
-        child: Row(
-          children: [
-            MyApp.themeNotifier.value == ThemeMode.dark ? const Icon(Icons.light_mode) : const Icon(Icons.dark_mode),
-            SizedBox(
-              width: 5,
-            ),
-            //Text(MyApp.themeNotifier.value == ThemeMode.dark ? 'Dark Mode' : 'Light Mode')
-          ],
-        ));
+    return Tooltip(
+      message: MyApp.themeNotifier.value == ThemeMode.dark ? 'Light Mode' : 'Dark Mode',
+      textStyle: TextStyle(fontSize: 14, color: Theme.of(context).buttonTheme.colorScheme!.primary),
+      decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.background),
+      enableTapToDismiss: true,
+      child: MaterialButton(
+          minWidth: 30,
+          onPressed: MyApp.themeNotifier.value == ThemeMode.dark
+              ? () async {
+                  final prefs = await SharedPreferences.getInstance();
+                  MyApp.themeNotifier.value = ThemeMode.light;
+                  prefs.setBool('isDarkMode', false);
+                  //setState(() {});
+                }
+              : () async {
+                  final prefs = await SharedPreferences.getInstance();
+                  prefs.setBool('isDarkMode', true);
+                  MyApp.themeNotifier.value = ThemeMode.dark;
+                  //setState(() {});
+                },
+          child: Row(
+            children: [
+              MyApp.themeNotifier.value == ThemeMode.dark ? const Icon(Icons.light_mode) : const Icon(Icons.dark_mode),
+              SizedBox(
+                width: 5,
+              ),
+              //Text(MyApp.themeNotifier.value == ThemeMode.dark ? 'Dark Mode' : 'Light Mode')
+            ],
+          )),
+    );
   }
 
   Widget filterBoxBtn() {

@@ -1,9 +1,11 @@
 import 'dart:io';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 Future<bool> itemInfoDialog(context, Item item) async {
   List<String> nameStrings = [];
@@ -19,11 +21,18 @@ Future<bool> itemInfoDialog(context, Item item) async {
     ));
   }
 
-  List<String> infos = item.infos.entries.where((element) => !element.key.toString().toLowerCase().contains('name')).map((e) => "${e.key}: ${e.value}").toList();
+  List<String> infos = [];
+  if (showEmptyInfoFields) {
+    infos = item.infos.entries.where((element) => !element.key.toString().toLowerCase().contains('name')).map((e) => "${e.key}: ${e.value}").toList();
+  } else {
+    infos = item.infos.entries.where((element) => !element.key.toString().toLowerCase().contains('name') && element.value.isNotEmpty).map((e) => "${e.key}: ${e.value}").toList();
+  }
   return await showDialog(
       barrierDismissible: true,
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (BuildContext context) {
+        return StatefulBuilder(builder: (dialogContext, setState) {
+          return AlertDialog(
               shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).primaryColorLight), borderRadius: const BorderRadius.all(Radius.circular(5))),
               backgroundColor: Color(Theme.of(context).canvasColor.value).withOpacity(0.8),
               titlePadding: const EdgeInsets.only(top: 10, bottom: 15, left: 16, right: 16),
@@ -32,7 +41,7 @@ Future<bool> itemInfoDialog(context, Item item) async {
                 children: [
                   Text(nameStrings.join('\n'), textAlign: TextAlign.center, style: const TextStyle(fontWeight: FontWeight.w700)),
                   Padding(
-                    padding: const EdgeInsets.only(top: 10),
+                    padding: const EdgeInsets.only(top: 0),
                     child: SizedBox(
                         width: 150,
                         height: 150,
@@ -63,16 +72,43 @@ Future<bool> itemInfoDialog(context, Item item) async {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     for (int i = 0; i < infos.length; i++)
-                    Wrap(
-                      children: [
-                        Text('${infos[i].split(':').first}:', style: const TextStyle(fontWeight: FontWeight.w500),),
-                        Text(infos[i].split(':').last)
-                      ],
-                    )
+                      Wrap(
+                        children: [
+                          Text(
+                            '${infos[i].split(':').first}:',
+                            style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 14),
+                          ),
+                          Text(infos[i].split(':').last)
+                        ],
+                      )
                   ],
                 ),
               ),
+              actionsPadding: const EdgeInsets.only(bottom: 10, left: 16, right: 16),
               actions: <Widget>[
+                Tooltip(
+                  message: showEmptyInfoFields ? 'Hide Empty Fields' : 'Show Empty Fields',
+                  textStyle: TextStyle(fontSize: 14, color: Theme.of(context).buttonTheme.colorScheme!.primary),
+                  decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.background),
+                  enableTapToDismiss: true,
+                  child: CupertinoCheckbox(
+                    value: showEmptyInfoFields,
+                    onChanged: (value) async {
+                      if (showEmptyInfoFields) {
+                        showEmptyInfoFields = false;
+                        infos = item.infos.entries.where((element) => !element.key.toString().toLowerCase().contains('name') && element.value.isNotEmpty).map((e) => "${e.key}: ${e.value}").toList();
+                      } else {
+                        showEmptyInfoFields = true;
+                        infos = item.infos.entries.where((element) => !element.key.toString().toLowerCase().contains('name')).map((e) => "${e.key}: ${e.value}").toList();
+                      }
+                      final prefs = await SharedPreferences.getInstance();
+                      prefs.setBool('showEmptyInfoFields', showEmptyInfoFields);
+                      setState(
+                        () {},
+                      );
+                    },
+                  ),
+                ),
                 ElevatedButton(
                     child: const Text('Close'),
                     onPressed: () async {
@@ -83,5 +119,7 @@ Future<bool> itemInfoDialog(context, Item item) async {
                       Navigator.pop(context, true);
                     },
                     child: const Text('Download'))
-              ]));
+              ]);
+        });
+      });
 }

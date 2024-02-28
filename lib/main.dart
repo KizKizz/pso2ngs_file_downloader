@@ -119,16 +119,18 @@ class _SplashState extends State<Splash> {
         if (kDebugMode && !overrideDebugMode) {
           // get filter choices from sheets
           itemFilterListJson.createSync(recursive: true);
-          List<String> tempChoices = [];
-          for (var file in refSheetsDir.listSync(recursive: true).whereType<File>().where((element) => p.extension(element.path) == '.csv')) {
-            String fileName = p.basenameWithoutExtension(file.path).replaceAll('NGS', '').replaceAll('PSO2', '').trim();
-            if (!tempChoices.contains(fileName) && !isNumeric(fileName[0])) {
-              tempChoices.add(fileName);
+          itemFilters.add(Filter('Item Type', ['PSO2', 'NGS']));
+          for (var mainDir in refSheetsDir.listSync().whereType<Directory>()) {
+            final allFilesInMainDir = mainDir.listSync(recursive: true).whereType<File>().where((element) => p.extension(element.path) == '.csv');
+            if (allFilesInMainDir.isNotEmpty) {
+              List<String> fileNameFilters = allFilesInMainDir.map((e) => p.basenameWithoutExtension(e.path).replaceAll('NGS', '').replaceAll('PSO2', '').trim()).toSet().toList();
+              fileNameFilters.sort((a, b) => a.compareTo(b));
+              Filter newFilter = Filter(p.basenameWithoutExtension(mainDir.path), fileNameFilters);
+              itemFilters.add(newFilter);
             }
           }
-          tempChoices.sort((a, b) => a.compareTo(b));
-          itemFilterChoices.addAll(tempChoices);
-          itemFilterListJson.writeAsStringSync(itemFilterChoices.join('\n'));
+          itemFilters.sort((a, b) => a.mainCategory.compareTo(b.mainCategory));
+          filterDataSave();
 
           //fetch items
           items = await populateItemList();
@@ -188,7 +190,17 @@ class _SplashState extends State<Splash> {
           }
           //load filters
           if (itemFilterListJson.existsSync()) {
-            itemFilterChoices = itemFilterListJson.readAsLinesSync();
+            final dataFromJson = itemFilterListJson.readAsStringSync();
+            if (dataFromJson.isNotEmpty) {
+              var jsonData = jsonDecode(dataFromJson);
+              for (var data in jsonData) {
+                if (Filter.fromJson(data).mainCategory == 'Item Type') {
+                  itemFilters.insert(0, Filter.fromJson(data));
+                } else {
+                  itemFilters.add(Filter.fromJson(data));
+                }
+              }
+            }
           }
         }
 
@@ -220,7 +232,12 @@ class _SplashState extends State<Splash> {
   Future<void> filtersCheck() async {
     final prefs = await SharedPreferences.getInstance();
     filterBoxShow = (prefs.getBool('filterBoxShow') ?? true);
-    itemFilters = (prefs.getStringList('itemFilters') ?? [itemFilterChoices[0], itemFilterChoices[1]]);
+    selectedItemFilters = (prefs.getStringList('selectedItemFilters') ?? ['PSO2', 'NGS']);
+  }
+
+  Future<void> miscSettingsCheck() async {
+    final prefs = await SharedPreferences.getInstance();
+    showEmptyInfoFields = (prefs.getBool('showEmptyInfoFields') ?? false);
   }
 
   @override

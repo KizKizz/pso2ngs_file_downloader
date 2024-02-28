@@ -55,6 +55,16 @@ class Item {
   Map<String, dynamic> toJson() => _$ItemToJson(this);
 }
 
+@JsonSerializable()
+class Filter {
+  Filter(this.mainCategory, this.fileFilters);
+  String mainCategory;
+  List<String> fileFilters;
+
+  factory Filter.fromJson(Map<String, dynamic> json) => _$FilterFromJson(json);
+  Map<String, dynamic> toJson() => _$FilterToJson(this);
+}
+
 void itemDataSave() {
   if (!itemDataJson.existsSync()) {
     itemDataJson.createSync(recursive: true);
@@ -62,4 +72,13 @@ void itemDataSave() {
   items.map((item) => item.toJson()).toList();
   const JsonEncoder encoder = JsonEncoder.withIndent('  ');
   itemDataJson.writeAsStringSync(encoder.convert(items));
+}
+
+void filterDataSave() {
+  if (!itemFilterListJson.existsSync()) {
+    itemFilterListJson.createSync(recursive: true);
+  }
+  itemFilters.map((filter) => filter.toJson()).toList();
+  const JsonEncoder encoder = JsonEncoder.withIndent('  ');
+  itemFilterListJson.writeAsStringSync(encoder.convert(itemFilters));
 }
