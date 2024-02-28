@@ -4,6 +4,7 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:choice/choice.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
@@ -78,40 +79,52 @@ class _HomePageState extends State<HomePage> {
                   margin: EdgeInsets.only(top: 5, bottom: 5, left: 0, right: 5),
                   elevation: 5,
                   shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        ListView.builder(
-                          padding: EdgeInsets.symmetric(vertical: 2),
-                          shrinkWrap: true,
-                          physics: NeverScrollableScrollPhysics(),
-                          itemCount: itemFilters.length,
-                          itemBuilder: (context, index) {
-                            int appliedFilters = selectedItemFilters.where((element) => itemFilters[index].fileFilters.contains(element)).length;
-                            return ExpansionTile(
-                              dense: true,
-                              title: Wrap(
-                                alignment: WrapAlignment.spaceBetween,
-                                runAlignment: WrapAlignment.center,
-                                spacing: 5,
-                                children: [
-                                  Text(
-                                    itemFilters[index].mainCategory,
-                                    style: TextStyle(fontWeight: FontWeight.bold),
-                                  ),
-                                  Container(
-                                      margin: EdgeInsets.symmetric(vertical: 0),
-                                      padding: const EdgeInsets.only(left: 2, right: 2),
-                                      decoration: BoxDecoration(border: Border.all(color: Theme.of(context).primaryColorLight), borderRadius: const BorderRadius.all(Radius.circular(5.0))),
-                                      child: Text('$appliedFilters / ${itemFilters[index].fileFilters.length}')),
-                                ],
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                        child: SingleChildScrollView(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              ListView.builder(
+                                padding: EdgeInsets.symmetric(vertical: 2),
+                                shrinkWrap: true,
+                                physics: NeverScrollableScrollPhysics(),
+                                itemCount: itemFilters.length,
+                                itemBuilder: (context, index) {
+                                  int appliedFilters = selectedItemFilters.where((element) => itemFilters[index].fileFilters.contains(element)).length;
+                                  return ExpansionTile(
+                                    dense: true,
+                                    title: Wrap(
+                                      alignment: WrapAlignment.spaceBetween,
+                                      runAlignment: WrapAlignment.center,
+                                      spacing: 5,
+                                      children: [
+                                        Text(
+                                          itemFilters[index].mainCategory,
+                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                        ),
+                                        Container(
+                                            margin: EdgeInsets.symmetric(vertical: 0),
+                                            padding: const EdgeInsets.only(left: 2, right: 2),
+                                            decoration: BoxDecoration(border: Border.all(color: Theme.of(context).primaryColorLight), borderRadius: const BorderRadius.all(Radius.circular(5.0))),
+                                            child: Text('$appliedFilters / ${itemFilters[index].fileFilters.length}')),
+                                      ],
+                                    ),
+                                    children: [filters(itemFilters[index])],
+                                  );
+                                },
                               ),
-                              children: [filters(itemFilters[index])],
-                            );
-                          },
-                        )
-                      ],
-                    ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(5),
+                        child: SizedBox(width: double.infinity, child: clearAllFiltersBtn()),
+                      ),
+                    ],
                   )),
             ),
           ),
@@ -182,7 +195,7 @@ class _HomePageState extends State<HomePage> {
       side: MaterialStatePropertyAll(BorderSide(width: 1.5, color: Theme.of(context).hoverColor)),
       onChanged: (value) {
         if (value.isNotEmpty) {
-          filteredItems = filteredItems.where((element) => element.infos.values.contains(value)).toList();
+          filteredItems = filteredItems.where((element) => element.infos.values.where((element) => element.toLowerCase().contains(value.toLowerCase())).isNotEmpty).toList();
         } else {
           if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
             filteredItems = items;
@@ -294,5 +307,17 @@ class _HomePageState extends State<HomePage> {
         child: Row(
           children: [filterBoxShow ? Icon(Icons.filter_alt_outlined) : Icon(Icons.filter_list_alt), SizedBox(width: 5), Text(filterBoxShow ? 'Hide Filters' : 'Show Filters')],
         ));
+  }
+
+  Widget clearAllFiltersBtn() {
+    return ElevatedButton(
+        child: const Text('Clear All Filter'),
+        onPressed: () async {
+          final prefs = await SharedPreferences.getInstance();
+          selectedItemFilters = ['PSO2', 'NGS'];
+          prefs.setStringList('selectedItemFilters', selectedItemFilters);
+          filteredItems = items;
+          setState(() {});
+        });
   }
 }
