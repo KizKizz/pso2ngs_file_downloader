@@ -310,7 +310,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget clearAllFiltersBtn() {
     return ElevatedButton(
-        child: const Text('Clear All Filter'),
+        child: const Text('Clear All Filters'),
         onPressed: () async {
           final prefs = await SharedPreferences.getInstance();
           selectedItemFilters = ['PSO2', 'NGS'];
