@@ -202,7 +202,7 @@ class _HomePageState extends State<HomePage> {
       onChanged: (value) async {
         setState(() {
           selectedItemFilters = value;
-          if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && itemFilters.length == 2) {
+          if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
             filteredItems = items;
           } else {
             filteredItems = items.where((element) => selectedItemFilters.contains(element.itemType) && element.containsCategory(selectedItemFilters)).toList();
