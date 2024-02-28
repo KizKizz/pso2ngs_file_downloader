@@ -63,7 +63,7 @@ IDI_APP_ICON            ICON                    "resources\\app_icon.ico"
 #if defined(FLUTTER_VERSION_MAJOR) && defined(FLUTTER_VERSION_MINOR) && defined(FLUTTER_VERSION_PATCH) && defined(FLUTTER_VERSION_BUILD)
 #define VERSION_AS_NUMBER FLUTTER_VERSION_MAJOR,FLUTTER_VERSION_MINOR,FLUTTER_VERSION_PATCH,FLUTTER_VERSION_BUILD
 #else
-#define VERSION_AS_NUMBER 1,0,0,0
+#define VERSION_AS_NUMBER 1,0,0
 #endif
 
 #if defined(FLUTTER_VERSION)
@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "pso2ngs_file_locator" "\0"
+            VALUE "CompanyName", "" "\0"
+            VALUE "FileDescription", "PSO2NGS File Downloader" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "pso2ngs_file_locator" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "pso2ngs_file_locator.exe" "\0"
-            VALUE "ProductName", "pso2ngs_file_locator" "\0"
+            VALUE "InternalName", "PSO2NGS File Downloader" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2022 - KizKizz. All rights reserved." "\0"
+            VALUE "OriginalFilename", "PSO2NGSFileDownloader.exe" "\0"
+            VALUE "ProductName", "PSO2NGS File Downloader" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

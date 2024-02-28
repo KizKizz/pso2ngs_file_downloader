@@ -1,109 +1,390 @@
-PSO2
-NGS
-Accessories
-AdaptiveList
-AllFaces
-AllHair
-BowNames
-CasealArms
-CasealBodies
-CasealBodyPaint
-CasealFaces_Heads
-CasealHair
-CasealLegs
-CasealVoices
-CastArms
-CastBodies
-CastBodyPaint
-CastFaces_Heads
-CastLegs
-CastVoices
-CharacterCreator_LoginRoom
-ClassicObjects
-DarkBlasts_DrivableVehicles
-DoubleSaberNames
-DualBladesNames
-Ears
-Enemies
-Enemies Miscellaneous
-EnemiesClassic
-EnemyBaseStats
-Eyebrows
-Eyelashes
-Eyes
-FaceMotions
-FacePaint
-FaceTextures
-FemaleBasewear
-FemaleBodyPaint
-FemaleCostumes
-FemaleDeumanFaces
-FemaleHair
-FemaleHumanFaces
-FemaleInnerwear
-FemaleLayeredBodyPaint
-FemaleNewmanFaces
-FemaleOuters
-FemaleVoices
-GenderlessBasewear
-GenderlessBodyPaint
-General Character Animations
-General Character Effects
-General Reboot Character Effects
-GunslashNames
-Horns
-JetBootsNames
-KatanaNames
-KnucklesNames
-LauncherNames
-LoadTunnels
-LobbyActions
-LobbyActions_HandPoses
-Mags
-MaleBasewear
-MaleBodyPaint
-MaleCostumes
-MaleDeumanFaces
-MaleHair
-MaleHumanFaces
-MaleInnerwear
-MaleLayeredBodyPaint
-MaleNewmanFaces
-MaleOuters
-MaleVoices
-MySpace Goods
-NPC Battle Voices
-NPC Battle Voices NA
-Objects
-PartizanNames
-PetsClassic
-PhotonBlastCreatures
-RifleNames
-RodNames
-Room Goods
-Rooms
-Skins
-StageTemplates
-Stickers
-StreamList
-SubstituteMotionGlide
-SubstituteMotionJump
-SubstituteMotionLanding
-SubstituteMotionPhotonDash
-SubstituteMotionRun
-SubstituteMotionStandby
-SubstituteMotionSwim
-SwordNames
-TactNames
-TalisNames
-Teeth
-TwinDaggerNames
-TwinMachineGunNames
-Units
-UnknownOutfits
-Vital_Gauge
-WandNames
-WeaponDefaults
-WiredLanceNames
-stamps
-stampsNA
+[
+  {
+    "mainCategory": "Enemies",
+    "fileFilters": [
+      "Enemies",
+      "Enemies Miscellaneous",
+      "EnemiesClassic",
+      "EnemyBaseStats"
+    ]
+  },
+  {
+    "mainCategory": "Item Type",
+    "fileFilters": [
+      "PSO2",
+      "NGS"
+    ]
+  },
+  {
+    "mainCategory": "Music",
+    "fileFilters": [
+      "AdaptiveList",
+      "StreamList"
+    ]
+  },
+  {
+    "mainCategory": "NPC",
+    "fileFilters": [
+      "NPC Battle Voices",
+      "NPC Battle Voices NA"
+    ]
+  },
+  {
+    "mainCategory": "Objects",
+    "fileFilters": [
+      "ClassicObjects",
+      "MySpace Goods",
+      "Objects",
+      "Room Goods",
+      "Rooms"
+    ]
+  },
+  {
+    "mainCategory": "Pets",
+    "fileFilters": [
+      "PetsClassic"
+    ]
+  },
+  {
+    "mainCategory": "Player",
+    "fileFilters": [
+      "Accessories",
+      "AllFaces",
+      "AllHair",
+      "CasealArms",
+      "CasealBodies",
+      "CasealBodyPaint",
+      "CasealFaces_Heads",
+      "CasealHair",
+      "CasealLegs",
+      "CasealVoices",
+      "CastArms",
+      "CastBodies",
+      "CastBodyPaint",
+      "CastFaces_Heads",
+      "CastLegs",
+      "CastVoices",
+      "DarkBlasts_DrivableVehicles",
+      "Ears",
+      "Eyebrows",
+      "Eyelashes",
+      "Eyes",
+      "FaceMotions",
+      "FacePaint",
+      "FaceTextures",
+      "FemaleBasewear",
+      "FemaleBodyPaint",
+      "FemaleCostumes",
+      "FemaleDeumanFaces",
+      "FemaleHair",
+      "FemaleHumanFaces",
+      "FemaleInnerwear",
+      "FemaleLayeredBodyPaint",
+      "FemaleNewmanFaces",
+      "FemaleOuters",
+      "FemaleVoices",
+      "GenderlessBasewear",
+      "GenderlessBodyPaint",
+      "General Character Animations",
+      "General Character Effects",
+      "General Reboot Character Effects",
+      "Horns",
+      "LobbyActions",
+      "LobbyActions_HandPoses",
+      "Mags",
+      "MaleBasewear",
+      "MaleBodyPaint",
+      "MaleCostumes",
+      "MaleDeumanFaces",
+      "MaleHair",
+      "MaleHumanFaces",
+      "MaleInnerwear",
+      "MaleLayeredBodyPaint",
+      "MaleNewmanFaces",
+      "MaleOuters",
+      "MaleVoices",
+      "PhotonBlastCreatures",
+      "Skins",
+      "Stickers",
+      "SubstituteMotionGlide",
+      "SubstituteMotionJump",
+      "SubstituteMotionLanding",
+      "SubstituteMotionPhotonDash",
+      "SubstituteMotionRun",
+      "SubstituteMotionStandby",
+      "SubstituteMotionSwim",
+      "Teeth",
+      "UnknownOutfits"
+    ]
+  },
+  {
+    "mainCategory": "Stage",
+    "fileFilters": [
+      "0007_Shader Playground (デバッグ),Shader Playground (Debug)_StageData",
+      "0010_青,Blue_StageData",
+      "0050__,__EnlightenDataList",
+      "0101_ロッビ (アルファ),Lobby (Alpha)_StageData",
+      "0102_ロッビ (Ep1),Lobby (Ep1)_StageData",
+      "0103_チャレンジモードロッビ,Challenge Mode Lobby_StageData",
+      "0104_カジノ,Casino_StageData",
+      "0105_カジノメセタンシューター,Casino Mesetan Shooter_StageData",
+      "0106_ロッビ (Ep3),Lobby (Ep3)_StageData",
+      "0107_船橋,Ship Bridge_StageData",
+      "0108_バトルモードロッビ,Battle Mode Lobby_StageData",
+      "0109_ロッビ (Ep3 コピ),Lobby (Ep3 Copy)_StageData",
+      "0150_キャンプシップ,Campship_StageData",
+      "0160_フランカ’s カフェ,Franka's Cafe_StageData",
+      "0161_海のカフェ,Franka's Cafe (Coast)_StageData",
+      "0162_夜のカフェ,Franka's Cafe (Night View)_StageData",
+      "0163_雪のカフェ,Franka's Cafe (Tundra)_StageData",
+      "0164_桜のカフェ,Franka's Cafe (Shironia)_StageData",
+      "0170_病室／カットシーンの水の背景,Hospital Room／Cutscene Water Background_StageData",
+      "0171_Ep3 クレジット,Ep3 Credits_StageData",
+      "0172_Ep4 オープニング,Ep4 Opening Sequence_StageData",
+      "0173_外宇宙 (Ep5),Outer Space (Ep5 Rift)_StageData",
+      "0174_カシナ／カットシーンの水の背景,Kashina Central Core／Cutscene Water Background_StageData",
+      "0175__,__StageData",
+      "0176_クロマキー,Chroma Key_StageData",
+      "0177_船橋 (コピ),Ship Bridge (Copy)_StageData",
+      "0180_チームルーム (初期ルーム),Team Room (Default)_StageData",
+      "0181_チームルーム (森林),Team Room (Forest)_StageData",
+      "0182_チームルーム (温泉),Team Room (Hot Springs)_StageData",
+      "0183_チームルーム (砂漠),Team Room (Desert)_StageData",
+      "0184_チームルーム (海岸),Team Room (Coast)_StageData",
+      "0185_チームルーム (夜景),Team Room (Night View)_StageData",
+      "0186_チームルーム (凍土),Team Room (Tundra)_StageData",
+      "0187_チームルーム (浮遊),Team Room (Floating)_StageData",
+      "0188_チームルーム (和風),Team Room (Japanese-Style)_StageData",
+      "0189_チームルーム (水上遺跡),Team Room (Water Ruins)_StageData",
+      "0190_チームルーム (パイオニア2),Team Room (Pioneer II)_StageData",
+      "0191_チームルーム (妖精の尻尾のギルド),Team Room (Fairy Tail Guild)_StageData",
+      "0192_チームルーム (東京),Team Room (Tokyo)_StageData",
+      "0193_チームルーム (戦艦),Team Room (Battleship)_StageData",
+      "0194_チームルーム (月面),Team Room (Moon Surface)_StageData",
+      "0195_チームルーム (渓流),Team Room (Mountain Stream)_StageData",
+      "0211_市街地 (エリア１),Urban Streets (Area 1)_StageData",
+      "0212_市街地 (エリア２),Urban Streets (Area 2)_StageData",
+      "0213_星芒喰らう闇の狂宴 (ボス),Dark Revelry Consumes Starlight (Boss)_StageData",
+      "0214_第６使徒殲滅作戦,Operation To Eliminate the 6th Angel_StageData",
+      "0220_ダーカーの巣窟 (エリア１),Darker Nest (Area 1)_StageData",
+      "0221_ダーカーの巣窟 (エリア２),Darker Nest (Area 2)_StageData",
+      "0230_マザーシップ (エリア１),Mothership (Area 1)_StageData",
+      "0231_マザーシップ (エリア２),Mothership (Area 2)_StageData",
+      "0232_マザーシップ (シャオ),Mothership (Xiao)_StageData",
+      "0233_マザーシップ (シバ),Mothership (Shiva)_StageData",
+      "0240_内的宇宙,Double's Inner Universe_StageData",
+      "0290_市街地 (ボス),Urban Streets (Boss)_StageData",
+      "0291_ダークファルス・ルーサー,Dark Falz Loser_StageData",
+      "0292_マザーシップ (シバ),Mothership (Shiva)_StageData",
+      "0310_森林 (エリア１／ボス),Forest (Area 1／Boss)_StageData",
+      "0311_森林 (エリア２),Forest (Area 2)_StageData",
+      "0320_凍土 (エリア２／ボス),Tundra (Area 2／Boss)_StageData",
+      "0321_凍土 (エリア１),Tundra (Area 1)_StageData",
+      "0330_遺跡,Ruins_StageData",
+      "0390_ダークファルスアーム,Dark Falz Arms_StageData",
+      "0391_ダークファルスエルダ,Dark Falz Elder_StageData",
+      "0392_ダークファルスダブル,Dark Falz Double_StageData",
+      "0393_深遠なる闇,Profound Darkness_StageData",
+      "0410_砂漠 (エリア２／ボス),Desert (Area 2／Boss)_StageData",
+      "0411_砂漠 (エリア１),Desert (Area 1)_StageData",
+      "0420_地下坑道 (エリア１),Underground Shafts (Area 1)_StageData",
+      "0421_地下坑道 (エリア２),Underground Shafts (Area 2)_StageData",
+      "0430_採掘場跡 (エリア１),Abandoned Mine (Area 1)_StageData",
+      "0431_採掘場跡 (エリア２／ボス),Abandoned Mine (Area 2／Boss)_StageData",
+      "0490_地下坑道 (ボス),Underground Shafts (Boss)_StageData",
+      "0491_砂漠 (ビッグヴァーダー１),Desert (Big Varder 1)_StageData",
+      "0492_砂漠 (ビッグヴァーダー２),Desert (Big Varder 2)_StageData",
+      "0493_砂漠 (ビッグヴァーダー３),Desert (Big Varder 3)_StageData",
+      "0494_砂漠 (ビッグヴァーダー４),Desert (Big Varder 4)_StageData",
+      "0510_火山洞窟 (エリア１),Volcanic Caves (Area 1)_StageData",
+      "0511_火山洞窟 (エリア２／ボス),Volcanic Caves (Area 2／Boss)_StageData",
+      "0520_浮遊大陸 (エリア２),Floating Continent (Area 2)_StageData",
+      "0521_浮遊大陸 (エリア１),Floating Continent (Area 1)_StageData",
+      "0530_龍祭壇,Dragon Altar_StageData",
+      "0590_浮遊大陸 (ボス),Floating Continent (Boss)_StageData",
+      "0591_クローム・ドラゴン,Chrome Dragon_StageData",
+      "0610_海岸 (エリア１),Coast (Area 1)_StageData",
+      "0611_海岸 (エリア２),Coast (Area 2)_StageData",
+      "0620_海底 (エリア１),Seabed (Area 1)_StageData",
+      "0621_海底 (エリア２／ボス),Seabed (Area 2／Boss)_StageData",
+      "0630_浮上施設,Floating Facility_StageData",
+      "0690_海岸 (ボス),Coast (Boss)_StageData",
+      "0710_白ノ領域,Daybreak Province_StageData",
+      "0711_天地を葬る災禍の凶神 (エリア１),,Death, Destroyer of Worlds (Area 1)_StageData",
+      "0720_黒ノ領域,Nightfall Province_StageData",
+      "0790_白ノ領域 (ボス),Daybreak Province (Boss)_StageData",
+      "0791_マガツ印鑑,Magatsu Seal_StageData",
+      "0792_幽世,Kakuriyo_StageData",
+      "0810_東京,Tokyo_StageData",
+      "0820_ラスベガス (パリホテル),Las Vegas (Paris Hotel)_StageData",
+      "0821_ラスベガス (ニューヨーク・ニューヨーク・ホテル),Las Vegas (New York New York Hotel)_StageData",
+      "0822_ラスベガス (フリーモントストリート),Las Vegas (Fremont Street)_StageData",
+      "0830_月駆ける幻創の母 (エリア１),Esca Falz Mother (Area 1)_StageData",
+      "0831_衛星・月 放棄施設,The Moon Abandoned Facility_StageData",
+      "0832_月駆ける幻創の母 (エリア２),Esca Falz Mother (Area 2)_StageData",
+      "0833_衛星・月 地下中枢施設,The Moon Underground Nexus_StageData",
+      "0834_衛星・月 地下中枢施設 (ボス),The Moon Underground Nexus (Boss)_StageData",
+      "0840_新世を成す幻創の造神 (エリア１),Deus Esca (Area 1)_StageData",
+      "0841_新世を成す幻創の造神 (エリア２),Deus Esca (Area 2)_StageData",
+      "0842_惑星・地球アースガイド本部地下,Earth - Earth Guide Headquarters Basement Level_StageData",
+      "0843_惑星・地球 幻創園,Earth - Phantasm Park_StageData",
+      "0844_新世を成す幻創の造神 (エリア３),Deus Esca (Area 3)_StageData",
+      "0890_東京 (ボス),Tokyo (Boss)_StageData",
+      "0891_幻創戦艦・大和 (エリア１),Phantom Battleship Yamato (Area 1)_StageData",
+      "0892_幻創戦艦・大和 (エリア２),Phantom Battleship Yamato (Area 2)_StageData",
+      "0893_東京ドミトリー／浴場,Tokyo Dormitory／Bathhouse_StageData",
+      "0894_東京陸上競技場,Tokyo Athletic Field_StageData",
+      "0895_惑星・地球アースガイド本部,Earth - Earth Guide Headquarters_StageData",
+      "0896_幻創戦艦・大和 (ストリ),Phantom Battleship Yamato (Story)_StageData",
+      "0897_東京校入学式 (夜),Tokyo School Entrance (Night)_StageData",
+      "0898_ロンドン,London_StageData",
+      "0900_パラレルエリア;　森林,Parallel Area; Forest_StageData",
+      "0901_パラレルエリア;　凍土,Parallel Area; Tundra_StageData",
+      "0902_パラレルエリア;　砂漠,Parallel Area; Desert_StageData",
+      "0903_パラレルエリア;　海岸,Parallel Area; Coast_StageData",
+      "0904_ガル・ダ・バル,Gal Da Val_StageData",
+      "0905_The Black Shroud; Urth's Fount,The Black Shroud; Urth's Fount_StageData",
+      "0906_パラレルエリア;　森林 (ボーナスクエスト),Parallel Area; Forest (Bonus Quest)_StageData",
+      "0907_____ 古塔 (エルゼリオン),____ Old Tower (Eruzerion)_StageData",
+      "1000_シーナリーパス・市街地,Scenery Pass; City_StageData",
+      "1001_シーナリーパス・森林,Scenery Pass; Forest_StageData",
+      "1002_シーナリーパス・宇宙,Scenery Pass; Space_StageData",
+      "1003_シーナリーパス・砂漠,Scenery Pass; Desert_StageData",
+      "1004_シーナリーパス・凍土,Scenery Pass; Tundra_StageData",
+      "1005_シーナリーパス・火山洞窟,Scenery Pass; Volcanic Caves_StageData",
+      "1006_シーナリーパス・浮遊大陸,Scenery Pass; Float. Continent_StageData",
+      "1007_シーナリーパス・遺跡,Scenery Pass; Ruins_StageData",
+      "1008_シーナリーパス・地下坑道,Scenery Pass; Undergrnd Shafts_StageData",
+      "1009_シーナリーパス・龍祭壇,Scenery Pass; Dragon Altar_StageData",
+      "1010_シーナリーパス・海岸,Scenery Pass; Coast_StageData",
+      "1011_シーナリーパス・採掘場跡,Scenery Pass; Abandoned Mine_StageData",
+      "1012_シーナリーパス・海底,Scenery Pass; Seabed_StageData",
+      "1013_シーナリーパス・Mシップ,Scenery Pass; Mothership_StageData",
+      "1014_シーナリーパス・巨人,Scenery Pass; Titan_StageData",
+      "1015_シーナリーパス・UBW,Scenery Pass; Unlimited Blade Works_StageData",
+      "1016_シーナリーパス・白ノ領域,Scenery Pass; Daybreak Prov._StageData",
+      "1017_シーナリーパス・浮上施設,Scenery Pass; Floating Facility_StageData",
+      "1018_シーナリーパス・ヤマト,Scenery Pass; Yamato_StageData",
+      "1019_シーナリーパス・黒ノ領域,Scenery Pass; Nightfall Province_StageData",
+      "1020_シーナリーパス・内的宇宙,Scenery Pass; Inner Universe_StageData",
+      "1024_シーナリーパス・幽世,Scenery Pass; Kakuriyo_StageData",
+      "1500_ミニルーム,Mini Room_StageData",
+      "2000_極限訓練：森林と龍,Extreme Training; Forest and Dragons_StageData",
+      "2001_極限訓練：凍土と機甲,Extreme Training; Tundra & Automata_StageData",
+      "2002_極限訓練：遺跡と海王,Extreme Training; Ruins & Oceanids_StageData",
+      "2010_練習クエスト,Practice Quest_StageData",
+      "2100_採掘基地防衛戦 (１-３),Mining Base Defense (1-3)_StageData",
+      "2110_採掘基地防衛戦 (4),Mining Base Defense (4)_StageData",
+      "2200_壊世調査：ナベリウス,Corruption Investigation; Naverius_StageData",
+      "2210_壊世調査：リリーパ,Corruption Investigation; Lilipa_StageData",
+      "2220_壊世調査：遺跡,Corruption Investigation; Ruins_StageData",
+      "2230_壊世調査：アムドゥスキア,Corruption Investigation; Amduskia_StageData",
+      "2231_惑星アムドゥスキア磁獄龍墓最奥・入口,Amduskia - Hellwyrm's Grave Inner Sanctum Entrance_StageData",
+      "2232_カシナ　コア,Kashina Core_StageData",
+      "2300_マガツ (エリア１),Magatsu (Area 1)_StageData",
+      "2310_マガツ (エリア２),Magatsu (Area 2)_StageData",
+      "2320_天地を葬る災禍の凶神 (エリア２),Death, Destroyer of Worlds (Area 2)_StageData",
+      "3000_バトルアリーナ; 森林,Battle Arena; Forest_StageData",
+      "3001_バトルアリーナ; 火山洞窟,Battle Arena; Caves_StageData",
+      "3002_バトルアリーナ; 東京,Battle Arena; Tokyo_StageData",
+      "3004_バトルアリーナ; 森林 (雨),Battle Arena; Forest (Rain)_StageData",
+      "3005_バトルアリーナ; 火山洞窟 (夜),Battle Arena; Volcanic Caves (Night)_StageData",
+      "3100_クエント プレーリー,Cuento Prairie_StageData",
+      "3101_イス＝アルス 国堺,Ys Artia Border_StageData",
+      "3102_クエント 中央プレーリー,Cuento Central Prairie_StageData",
+      "3110_クエント 荒れ地,Cuent Wasteland_StageData",
+      "3120_魔神城戦：不尽の狂気,Castrum Demonica; Madness_StageData",
+      "3121_クエント峡谷,Cuento Canyon Caldera_StageData",
+      "3130_クエント城跡,Cuento Castle Ruins_StageData",
+      "3140_幻惑の森,Bewitched Woods_StageData",
+      "3141_エルガマスカレーダ,Elga Masquerade_StageData",
+      "3150_エピック砂漠,Epyk Desert_StageData",
+      "3160_イス＝アルス 城下町／実験室,Ys Artia Castle Town and Laboratory_StageData",
+      "3161_イス＝アルスキャピタル／エンブレムの部屋,Ys Artia Capital and Emblem Chamber_StageData",
+      "3170_地底を染めし女王の悪夢 (エリア１),Queen's Nightmare; Earth Depths (Area 1)_StageData",
+      "3171_地底を染めし女王の悪夢 (エリア２),Queen's Nightmare; Earth Depths (Area 2)_StageData",
+      "3180_エピック首都圏 (城),Epyk Capital City (Castle)_StageData",
+      "3181_エピック首都圏,Epyk Capital City_StageData",
+      "3182_東砦・北砦・南砦,East Fort, North Fort, and South Fort_StageData",
+      "3183_クエントキャニオン内部,Cuento Canyon Interior_StageData",
+      "3184_ルイーザの湖畔,Lakeside of Luisa_StageData",
+      "3188_黒き繭 内部,Inside the Dark Cocoon_StageData",
+      "3189_オラクル外宇宙,Oracle Space_StageData",
+      "3190_クエント王都玉座の間,Cuento Royal Capital Throne Room_StageData",
+      "3191_オメガ南市,Omega Southern City_StageData",
+      "3192_ネオクエント王都,Neo Cuento Royal Capital_StageData",
+      "3193_クエント民兵隊,Cuento Militia Camp_StageData",
+      "3194_ヴェルン御座所,Weyland Throne Room_StageData",
+      "3195_ヴェルン南村,Weyland Souther Village_StageData",
+      "3196_オメガダークファルス・ルーサー,Omega Dark Falz Loser_StageData",
+      "3197_クエント王都 (夜),Cuento Royal Capital (Night)_StageData",
+      "3198_ルーサーの研究施設,Luther's Research Facility_StageData",
+      "3199_ルイーザの湖畔,Lakeside of Luisa_StageData",
+      "3200_オラクル宇宙,Oracle Sector_StageData",
+      "3202_破滅の艦隊 セクター3（戦艦解体編）,Armada of Demise Sector 3 (Battleship Demolition)_StageData",
+      "3210_艦隊迎撃戦：味方救援,Fleet Intercept; Allied Relief_StageData",
+      "3211_艦隊迎撃戦：敵艦襲撃,Fleet Intercept; Enemy Ship Assault_StageData",
+      "3221_アルマダ・バトルスフィア待機場所,Armada Battlesphere Waiting Area_StageData",
+      "3230_アルマダ・バトルスフィア内部,Armada Battlesphere Interior_StageData",
+      "3240_破滅の艦隊 セクター3（首都圏侵攻作戦）,Armada of Demise Sector 3 (Capital Ship Invasion)_StageData",
+      "3250_虚無より睨む原初の闇 (エリア１),Primordial Darkness (Area 1)_StageData",
+      "3251_虚無より睨む原初の闇 (エリア２),Primordial Darkness (Area 2)_StageData",
+      "3260_マザーシップ コア(シバ),Mothership Core (Shiva)_StageData",
+      "3290_アークスシップ司令部, Arks Ship Command Center_StageData",
+      "3291_A.I.S.開発室,A.I.S. Development Room_StageData",
+      "5000_ハルファ,Halpha_DetailObjectList",
+      "5000_ハルファ,Halpha_EnlightenDataList",
+      "5000_ハルファ,Halpha_NavMeshList",
+      "5000_ハルファ,Halpha_StageData",
+      "5001_ハルファ (エアリオタウン),Halpha (Aelio Town)_DetailObjectList",
+      "5001_ハルファ (エアリオタウン),Halpha (Aelio Town)_EnlightenDataList",
+      "5001_ハルファ (エアリオタウン),Halpha (Aelio Town)_NavMeshList",
+      "5001_ハルファ (エアリオタウン),Halpha (Aelio Town)_StageData",
+      "5100_トレイニア,Trainia_StageData",
+      "5101_トレイニア,Trainia_StageData",
+      "5202_5202_StageData",
+      "6000__,__StageData",
+      "CharacterCreator_LoginRoom",
+      "StageTemplates"
+    ]
+  },
+  {
+    "mainCategory": "UI",
+    "fileFilters": [
+      "LoadTunnels",
+      "Vital Gauge",
+      "stamps",
+      "stampsNA"
+    ]
+  },
+  {
+    "mainCategory": "Units",
+    "fileFilters": [
+      "Units"
+    ]
+  },
+  {
+    "mainCategory": "Weapons",
+    "fileFilters": [
+      "BowNames",
+      "DoubleSaberNames",
+      "DualBladesNames",
+      "GunslashNames",
+      "JetBootsNames",
+      "KatanaNames",
+      "KnucklesNames",
+      "LauncherNames",
+      "PartizanNames",
+      "RifleNames",
+      "RodNames",
+      "SwordNames",
+      "TactNames",
+      "TalisNames",
+      "TwinDaggerNames",
+      "TwinMachineGunNames",
+      "WandNames",
+      "WeaponDefaults",
+      "WiredLanceNames"
+    ]
+  }
+]

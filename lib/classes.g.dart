@@ -25,3 +25,13 @@ Map<String, dynamic> _$ItemToJson(Item instance) => <String, dynamic>{
       'iconImagePath': instance.iconImagePath,
       'infos': instance.infos,
     };
+
+Filter _$FilterFromJson(Map<String, dynamic> json) => Filter(
+      json['mainCategory'] as String,
+      (json['fileFilters'] as List<dynamic>).map((e) => e as String).toList(),
+    );
+
+Map<String, dynamic> _$FilterToJson(Filter instance) => <String, dynamic>{
+      'mainCategory': instance.mainCategory,
+      'fileFilters': instance.fileFilters,
+    };

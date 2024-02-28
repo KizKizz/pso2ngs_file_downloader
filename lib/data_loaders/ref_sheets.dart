@@ -144,7 +144,7 @@ Future<List<Item>> populateItemList() async {
         }
         break;
       case 'UI':
-        if (filePathParts.last == 'stamps.csv' || filePathParts.last == 'stampsNA.csv' || filePathParts.last == 'Vital_Gauge.csv') {
+        if (filePathParts.last == 'stamps.csv' || filePathParts.last == 'stampsNA.csv' || filePathParts.last == 'Vital Gauge.csv') {
           headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash - Image']);
           for (var line in csvContent) {
             csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 4);
