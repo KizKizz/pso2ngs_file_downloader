@@ -41,7 +41,7 @@ Future<bool> itemInfoDialog(context, Item item) async {
                 children: [
                   Text(nameStrings.join('\n'), textAlign: TextAlign.center, style: const TextStyle(fontWeight: FontWeight.w700)),
                   Padding(
-                    padding: const EdgeInsets.only(top: 0),
+                    padding: const EdgeInsets.only(top: 15),
                     child: SizedBox(
                         width: 150,
                         height: 150,

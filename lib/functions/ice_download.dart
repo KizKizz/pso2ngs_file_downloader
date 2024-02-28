@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 
 Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
@@ -84,4 +85,20 @@ Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
 
   dio.close();
   return downloadedIce;
+}
+
+Future<void> filesDownload(Item item) async {
+  List<String> downloadableKeys = ['Icon', 'Normal Quality', 'High Quality', 'Ice Hash', 'Hash', 'Sounds', 'Linked Inner'];
+  await downloadDir.create(recursive: true);
+  if (downloadDir.existsSync()) {
+    for (var entry in item.infos.entries) {
+      if (downloadableKeys.where((element) => entry.key.toString().toLowerCase().contains(element.toLowerCase())).isNotEmpty) {
+        String dlSavePath = entry.value.split('\\').length < 2 ? Uri.file('${downloadDir.path}/win32reboot').toFilePath() : Uri.file('${downloadDir.path}/win32').toFilePath();
+        Directory subDir = await Directory(dlSavePath).create(recursive: true);
+        if (subDir.existsSync()) {
+          downloadIceFromOfficial(entry.value, subDir.path);
+        }
+      }
+    }
+  }
 }

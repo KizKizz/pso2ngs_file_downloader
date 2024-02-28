@@ -148,29 +148,64 @@ class _SplashState extends State<Splash> {
           }
           // pulls and index icons
           for (var item in items) {
+            setState(() {
+              loadingStatus = 'Loading\n${item.infos.values.first}\n${item.infos.values.elementAt(1)}';
+            });
+            await Future.delayed(const Duration(milliseconds: 50));
+
             final matchedItem = jsonItems.firstWhere(
               (element) => element.compare(item),
-              orElse: () => Item('', '', '', [], '', {}),
+              orElse: () => Item('null', '', '', [], '', {}),
             );
-            if (matchedItem.iconImagePath.isNotEmpty) {
-              item.itemType = matchedItem.itemType;
-              item.iconImagePath = matchedItem.iconImagePath;
-              if (matchedItem.itemType == '' && (matchedItem.csvFileName.toLowerCase().contains('classic') || matchedItem.csvFilePath.toLowerCase().contains('classic'))) {
-                item.itemType = 'PSO2';
-              } else if (matchedItem.itemType == '' && !matchedItem.csvFileName.toLowerCase().contains('classic') && !matchedItem.csvFilePath.toLowerCase().contains('classic')) {
-                await imageSizeCheck(item);
-              } else if (matchedItem.iconImagePath.isEmpty && (item.csvFilePath.contains('Stamps') || item.csvFilePath.contains('Vital Gauge'))) {
-                item.itemType = 'NGS';
-              } else if (matchedItem.iconImagePath.isEmpty) {
-                item.itemType == 'PSO2 | NGS';
+
+            if (matchedItem.csvFileName != 'null') {
+              //set icons
+              if (matchedItem.iconImagePath.isNotEmpty) {
+                item.iconImagePath = matchedItem.iconImagePath;
+              } else {
+                if (item.infos.keys.where((element) => element.toString().toLowerCase().contains('icon') || element.toString().toLowerCase().contains('image')).isNotEmpty) {
+                  await setIconImage(item);
+                }
               }
-            } else {
-              final jpItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('Japan'), orElse: () => const MapEntry('null', 'null'));
-              final enItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('English'), orElse: () => const MapEntry('null', 'null'));
-              if (!jpItemNameEntry.value.toLowerCase().contains('unnamed') && !enItemNameEntry.value.contains('unnamed')) {
-                await setIconImage(item);
+
+              //set type
+              if (matchedItem.itemType.isNotEmpty) {
+                item.itemType = matchedItem.itemType;
+              } else {
+                if (matchedItem.csvFileName.toLowerCase().contains('classic') || matchedItem.csvFilePath.toLowerCase().contains('classic')) {
+                  item.itemType = 'PSO2';
+                } else if (!matchedItem.csvFileName.toLowerCase().contains('classic') && !matchedItem.csvFilePath.toLowerCase().contains('classic')) {
+                  await imageSizeCheck(item);
+                } else if (matchedItem.iconImagePath.isEmpty && (item.csvFilePath.contains('Stamps') || item.csvFilePath.contains('Vital Gauge'))) {
+                  item.itemType = 'NGS';
+                } else if (item.iconImagePath.isEmpty) {
+                  item.itemType = 'PSO2 | NGS';
+                }
               }
             }
+
+            // if (matchedItem.iconImagePath.isNotEmpty) {
+            //   item.itemType = matchedItem.itemType;
+            //   item.iconImagePath = matchedItem.iconImagePath;
+            //   if (matchedItem.itemType == '' && (matchedItem.csvFileName.toLowerCase().contains('classic') || matchedItem.csvFilePath.toLowerCase().contains('classic'))) {
+            //     item.itemType = 'PSO2';
+            //   } else if (matchedItem.itemType == '' && !matchedItem.csvFileName.toLowerCase().contains('classic') && !matchedItem.csvFilePath.toLowerCase().contains('classic')) {
+            //     await imageSizeCheck(item);
+            //   } else if (matchedItem.iconImagePath.isEmpty && (item.csvFilePath.contains('Stamps') || item.csvFilePath.contains('Vital Gauge'))) {
+            //     item.itemType = 'NGS';
+            //   } else if (item.iconImagePath.isEmpty) {
+            //     item.itemType = 'PSO2 | NGS';
+            //   }
+            // } else {
+            //   final jpItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('Japan'), orElse: () => const MapEntry('null', 'null'));
+            //   final enItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('English'), orElse: () => const MapEntry('null', 'null'));
+            //   if (!jpItemNameEntry.value.toLowerCase().contains('unnamed') && !enItemNameEntry.value.contains('unnamed')) {
+            //     await setIconImage(item);
+            //   }
+            //   if (item.iconImagePath.isEmpty) {
+            //     item.itemType = 'PSO2 | NGS';
+            //   }
+            // }
           }
           itemDataSave();
         } else {
