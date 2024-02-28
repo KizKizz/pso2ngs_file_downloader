@@ -2,10 +2,12 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
+import 'package:pso2ngs_file_locator/state_provider.dart';
 
-Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
+Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave) async {
   Dio dio = Dio();
   dio.options.headers = {"User-Agent": "AQUA_HTTP"};
 
@@ -14,7 +16,15 @@ Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
   if (patchFileList.where((element) => element.split('/').last == iceName).isNotEmpty) {
     String webLinkPath = patchFileList.firstWhere((element) => element.contains(iceName));
     try {
-      await dio.download('$patchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
+      await dio.download(
+        '$patchURL$webLinkPath.pat',
+        Uri.file('$pathToSave/$webLinkPath').toFilePath(),
+        onReceiveProgress: (count, total) {
+          if (total != -1) {
+            Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total * 100);
+          }
+        },
+      );
       debugPrint('patch');
       downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
     } on Exception {
@@ -87,7 +97,7 @@ Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
   return downloadedIce;
 }
 
-Future<void> filesDownload(Item item) async {
+Future<void> filesDownload(context, Item item) async {
   List<String> downloadableKeys = ['Icon', 'Normal Quality', 'High Quality', 'Ice Hash', 'Hash', 'Sounds', 'Linked Inner'];
   await downloadDir.create(recursive: true);
   if (downloadDir.existsSync()) {
@@ -96,7 +106,7 @@ Future<void> filesDownload(Item item) async {
         String dlSavePath = entry.value.split('\\').length < 2 ? Uri.file('${downloadDir.path}/win32reboot').toFilePath() : Uri.file('${downloadDir.path}/win32').toFilePath();
         Directory subDir = await Directory(dlSavePath).create(recursive: true);
         if (subDir.existsSync()) {
-          downloadIceFromOfficial(entry.value, subDir.path);
+          downloadIceFromOfficial(context, entry.value, subDir.path);
         }
       }
     }

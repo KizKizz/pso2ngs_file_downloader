@@ -6,17 +6,24 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/data_loaders/ref_sheets.dart';
 import 'package:pso2ngs_file_locator/data_loaders/server_file_list.dart';
 import 'package:pso2ngs_file_locator/functions/icon_load.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 import 'package:pso2ngs_file_locator/pages/home_page.dart';
+import 'package:pso2ngs_file_locator/state_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:path/path.dart' as p;
 
 void main() {
-  runApp(const MyApp());
+  MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (_) => StateProvider()),
+    ],
+    child: const MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -164,7 +171,7 @@ class _SplashState extends State<Splash> {
                 item.iconImagePath = matchedItem.iconImagePath;
               } else {
                 if (item.infos.keys.where((element) => element.toString().toLowerCase().contains('icon') || element.toString().toLowerCase().contains('image')).isNotEmpty) {
-                  await setIconImage(item);
+                  await setIconImage(context, item);
                 }
               }
 
