@@ -9,7 +9,6 @@ import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/data_loaders/ref_sheets.dart';
 import 'package:pso2ngs_file_locator/data_loaders/server_file_list.dart';
-import 'package:pso2ngs_file_locator/functions/helpers.dart';
 import 'package:pso2ngs_file_locator/functions/icon_load.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 import 'package:pso2ngs_file_locator/pages/home_page.dart';
