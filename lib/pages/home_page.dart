@@ -6,7 +6,7 @@ import 'dart:typed_data';
 import 'package:choice/choice.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/functions/ice_download.dart';
@@ -19,8 +19,6 @@ import 'package:pso2ngs_file_locator/state_provider.dart';
 import 'package:pso2ngs_file_locator/widgets/buttons.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-  late AnimationController progressBarController;
-
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -34,11 +32,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
 
   @override
   void initState() {
-    progressBarController = AnimationController(value: 0, lowerBound: 0, upperBound: 100, vsync: this, duration: const Duration(seconds: 5))
-      ..addListener(() {
-        setState(() {});
-      });
-    progressBarController.repeat(reverse: true);
     if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
       filteredItems = items;
     } else {
@@ -330,22 +323,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   }
 
   Widget downloadingBar() {
-    return SizedBox(
-      width: 300,
-      height: 30,
-      child: Row(
-        children: [
-          Text(context.watch<StateProvider>().downloadFileName),
-          SizedBox(
-            width: 100,
-            height: 20,
-            child: LinearProgressIndicator(
-              value: progressBarController.value,
-              semanticsLabel: 'Linear progress indicator',
-            ),
-          ),
-        ],
-      ),
+    return LinearPercentIndicator(
+      width: MediaQuery.of(context).size.width /2,
+      animation: true,
+      lineHeight: 26.0,
+      animationDuration: 2500,
+      percent: context.watch<StateProvider>().downloadPercentage,
+      center: Text(context.watch<StateProvider>().downloadPercentage.toStringAsFixed(0)),
+      //progressColor: Colors.green,
     );
   }
 }
