@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         toolbarHeight: 30,
         elevation: 10,
         title: searchBox(),
-        actions: [downloadingBar(), filterBoxBtn(), lightDarkModeBtn()],
+        actions: [Visibility(visible: context.watch<StateProvider>().downloadFileName.isNotEmpty, child: downloadingBar()), filterBoxBtn(), lightDarkModeBtn()],
       ),
       body: Padding(
         padding: EdgeInsets.all(5),
@@ -190,10 +190,12 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   Widget searchBox() {
     return SearchBar(
       leading: Icon(Icons.search),
-      hintText: 'Enter item\'s name, ice file\'s name to search',
+      hintText: 'Search',
       padding: MaterialStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
       constraints: BoxConstraints(minHeight: 25, maxHeight: 25, maxWidth: double.infinity),
       side: MaterialStatePropertyAll(BorderSide(width: 1.5, color: Theme.of(context).hoverColor)),
+      backgroundColor: MaterialStatePropertyAll(Theme.of(context).canvasColor),
+      elevation: MaterialStatePropertyAll(0),
       onChanged: (value) {
         if (value.isNotEmpty) {
           filteredItems = filteredItems.where((element) => element.infos.values.where((element) => element.toLowerCase().contains(value.toLowerCase())).isNotEmpty).toList();
@@ -323,14 +325,19 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   }
 
   Widget downloadingBar() {
-    return LinearPercentIndicator(
-      width: MediaQuery.of(context).size.width /2,
-      animation: true,
-      lineHeight: 26.0,
-      animationDuration: 2500,
-      percent: context.watch<StateProvider>().downloadPercentage,
-      center: Text(context.watch<StateProvider>().downloadPercentage.toStringAsFixed(0)),
-      //progressColor: Colors.green,
+    return Padding(
+      padding: EdgeInsets.only(right: 10),
+      child: LinearPercentIndicator(
+        width: MediaQuery.of(context).size.width / 2,
+        animation: true,
+        lineHeight: 22.0,
+        animationDuration: 2500,
+        barRadius: Radius.circular(13),
+        backgroundColor: Theme.of(context).canvasColor,
+        percent: context.watch<StateProvider>().downloadPercentage,
+        center: Text('[${context.watch<StateProvider>().downloadFileName}] ${(context.watch<StateProvider>().downloadPercentage * 100).toStringAsFixed(1)}%'),
+        progressColor: Theme.of(context).progressIndicatorTheme.linearTrackColor,
+      ),
     );
   }
 }

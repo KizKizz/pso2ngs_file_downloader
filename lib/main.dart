@@ -155,7 +155,7 @@ class _SplashState extends State<Splash> {
             setState(() {
               loadingStatus = 'Loading\n${item.csvFileName}\n${items.indexOf(item)}/${items.length}\n${item.infos.values.first}\n${item.infos.values.elementAt(1)}';
             });
-            await Future.delayed(const Duration(milliseconds: 50));
+            await Future.delayed(const Duration(milliseconds: 10));
 
             final matchedItem = jsonItems.firstWhere(
               (element) => element.compare(item),
@@ -182,7 +182,8 @@ class _SplashState extends State<Splash> {
                   await imageSizeCheck(item);
                 } else if (matchedItem.iconImagePath.isEmpty && (item.csvFilePath.contains('Stamps') || item.csvFilePath.contains('Vital Gauge'))) {
                   item.itemType = 'NGS';
-                } else if (item.iconImagePath.isEmpty) {
+                } 
+                if (item.iconImagePath.isEmpty) {
                   item.itemType = 'PSO2 | NGS';
                 }
               }

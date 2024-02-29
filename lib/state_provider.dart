@@ -7,7 +7,7 @@ class StateProvider with ChangeNotifier {
   double get downloadPercentage => _downloadPercentage;
   String get downloadFileName => _downloadFileName;
 
-  void downloadFileNameageSet(String name) {
+  void downloadFileNameSet(String name) {
     _downloadFileName = name;
     notifyListeners();
   }
