@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
+import 'package:pso2ngs_file_locator/pages/home_page.dart';
 import 'package:pso2ngs_file_locator/state_provider.dart';
 
 Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave) async {
@@ -21,7 +22,8 @@ Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave)
         Uri.file('$pathToSave/$webLinkPath').toFilePath(),
         onReceiveProgress: (count, total) {
           if (total != -1) {
-            Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total * 100);
+            progressBarController.
+            //Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total * 100);
           }
         },
       );

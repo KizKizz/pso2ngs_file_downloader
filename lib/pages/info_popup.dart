@@ -117,6 +117,7 @@ Future<bool> itemInfoDialog(context, Item item) async {
                 ElevatedButton(
                     onPressed: () async {
                       showModalBottomSheet<void>(
+                        isDismissible: false,
                         context: context,
                         builder: (BuildContext context) {
                           return SizedBox(

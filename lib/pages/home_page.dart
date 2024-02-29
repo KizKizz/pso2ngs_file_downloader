@@ -6,16 +6,21 @@ import 'dart:typed_data';
 import 'package:choice/choice.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/functions/ice_download.dart';
 import 'package:pso2ngs_file_locator/functions/icon_load.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 import 'package:pso2ngs_file_locator/main.dart';
 import 'package:pso2ngs_file_locator/pages/info_popup.dart';
+import 'package:pso2ngs_file_locator/state_provider.dart';
 // ignore: unused_import
 import 'package:pso2ngs_file_locator/widgets/buttons.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+  late AnimationController progressBarController;
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -24,11 +29,16 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   List<Item> filteredItems = [];
 
   @override
   void initState() {
+    progressBarController = AnimationController(value: 0, lowerBound: 0, upperBound: 100, vsync: this, duration: const Duration(seconds: 5))
+      ..addListener(() {
+        setState(() {});
+      });
+    progressBarController.repeat(reverse: true);
     if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
       filteredItems = items;
     } else {
@@ -55,20 +65,17 @@ class _HomePageState extends State<HomePage> {
       gridItemHeight = 200;
     }
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Theme.of(context).primaryColor,
-          toolbarHeight: 30,
-          elevation: 10,
-          title: searchBox(),
-          actions: [filterBoxBtn(), lightDarkModeBtn()],
-        ),
-        body: Row(children: [
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 5),
-              child: ResponsiveGridList(desiredItemWidth: gridItemWidth, minSpacing: 5, children: filteredItems.map((e) => itemBox(e, gridItemHeight)).toList()),
-            ),
-          ),
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).primaryColor,
+        toolbarHeight: 30,
+        elevation: 10,
+        title: searchBox(),
+        actions: [downloadingBar(), filterBoxBtn(), lightDarkModeBtn()],
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(5),
+        child: Row(children: [
+          Expanded(child: ResponsiveGridList(desiredItemWidth: gridItemWidth, minSpacing: 5, children: filteredItems.map((e) => itemBox(e, gridItemHeight)).toList())),
           Visibility(
             visible: filterBoxShow,
             child: SizedBox(
@@ -127,7 +134,9 @@ class _HomePageState extends State<HomePage> {
                   )),
             ),
           ),
-        ]));
+        ]),
+      ),
+    );
   }
 
   //Item Box
@@ -289,7 +298,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget filterBoxBtn() {
     return MaterialButton(
-        minWidth: 160,
+        minWidth: 210,
         onPressed: filterBoxShow
             ? () async {
                 final prefs = await SharedPreferences.getInstance();
@@ -318,5 +327,25 @@ class _HomePageState extends State<HomePage> {
           filteredItems = items;
           setState(() {});
         });
+  }
+
+  Widget downloadingBar() {
+    return SizedBox(
+      width: 300,
+      height: 30,
+      child: Row(
+        children: [
+          Text(context.watch<StateProvider>().downloadFileName),
+          SizedBox(
+            width: 100,
+            height: 20,
+            child: LinearProgressIndicator(
+              value: progressBarController.value,
+              semanticsLabel: 'Linear progress indicator',
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
