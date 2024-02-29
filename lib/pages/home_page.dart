@@ -6,12 +6,15 @@ import 'dart:typed_data';
 import 'package:choice/choice.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
+import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/functions/ice_download.dart';
 import 'package:pso2ngs_file_locator/functions/icon_load.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 import 'package:pso2ngs_file_locator/main.dart';
 import 'package:pso2ngs_file_locator/pages/info_popup.dart';
+import 'package:pso2ngs_file_locator/state_provider.dart';
 // ignore: unused_import
 import 'package:pso2ngs_file_locator/widgets/buttons.dart';
 import 'package:responsive_grid/responsive_grid.dart';
@@ -24,7 +27,7 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   List<Item> filteredItems = [];
 
   @override
@@ -55,20 +58,17 @@ class _HomePageState extends State<HomePage> {
       gridItemHeight = 200;
     }
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Theme.of(context).primaryColor,
-          toolbarHeight: 30,
-          elevation: 10,
-          title: searchBox(),
-          actions: [filterBoxBtn(), lightDarkModeBtn()],
-        ),
-        body: Row(children: [
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 5),
-              child: ResponsiveGridList(desiredItemWidth: gridItemWidth, minSpacing: 5, children: filteredItems.map((e) => itemBox(e, gridItemHeight)).toList()),
-            ),
-          ),
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).primaryColor,
+        toolbarHeight: 30,
+        elevation: 10,
+        title: searchBox(),
+        actions: [Visibility(visible: context.watch<StateProvider>().downloadFileName.isNotEmpty, child: downloadingBar()), filterBoxBtn(), lightDarkModeBtn()],
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(5),
+        child: Row(children: [
+          Expanded(child: ResponsiveGridList(desiredItemWidth: gridItemWidth, minSpacing: 5, children: filteredItems.map((e) => itemBox(e, gridItemHeight)).toList())),
           Visibility(
             visible: filterBoxShow,
             child: SizedBox(
@@ -78,51 +78,65 @@ class _HomePageState extends State<HomePage> {
                   margin: EdgeInsets.only(top: 5, bottom: 5, left: 0, right: 5),
                   elevation: 5,
                   shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        ListView.builder(
-                          padding: EdgeInsets.symmetric(vertical: 2),
-                          shrinkWrap: true,
-                          physics: NeverScrollableScrollPhysics(),
-                          itemCount: itemFilters.length,
-                          itemBuilder: (context, index) {
-                            int appliedFilters = selectedItemFilters.where((element) => itemFilters[index].fileFilters.contains(element)).length;
-                            return ExpansionTile(
-                              dense: true,
-                              title: Wrap(
-                                alignment: WrapAlignment.spaceBetween,
-                                runAlignment: WrapAlignment.center,
-                                spacing: 5,
-                                children: [
-                                  Text(
-                                    itemFilters[index].mainCategory,
-                                    style: TextStyle(fontWeight: FontWeight.bold),
-                                  ),
-                                  Container(
-                                      margin: EdgeInsets.symmetric(vertical: 0),
-                                      padding: const EdgeInsets.only(left: 2, right: 2),
-                                      decoration: BoxDecoration(border: Border.all(color: Theme.of(context).primaryColorLight), borderRadius: const BorderRadius.all(Radius.circular(5.0))),
-                                      child: Text('$appliedFilters / ${itemFilters[index].fileFilters.length}')),
-                                ],
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                        child: SingleChildScrollView(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              ListView.builder(
+                                padding: EdgeInsets.symmetric(vertical: 2),
+                                shrinkWrap: true,
+                                physics: NeverScrollableScrollPhysics(),
+                                itemCount: itemFilters.length,
+                                itemBuilder: (context, index) {
+                                  int appliedFilters = selectedItemFilters.where((element) => itemFilters[index].fileFilters.contains(element)).length;
+                                  return ExpansionTile(
+                                    dense: true,
+                                    title: Wrap(
+                                      alignment: WrapAlignment.spaceBetween,
+                                      runAlignment: WrapAlignment.center,
+                                      spacing: 5,
+                                      children: [
+                                        Text(
+                                          itemFilters[index].mainCategory,
+                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                        ),
+                                        Container(
+                                            margin: EdgeInsets.symmetric(vertical: 0),
+                                            padding: const EdgeInsets.only(left: 2, right: 2),
+                                            decoration: BoxDecoration(border: Border.all(color: Theme.of(context).primaryColorLight), borderRadius: const BorderRadius.all(Radius.circular(5.0))),
+                                            child: Text('$appliedFilters / ${itemFilters[index].fileFilters.length}')),
+                                      ],
+                                    ),
+                                    children: [filters(itemFilters[index])],
+                                  );
+                                },
                               ),
-                              children: [filters(itemFilters[index])],
-                            );
-                          },
-                        )
-                      ],
-                    ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(5),
+                        child: SizedBox(width: double.infinity, child: clearAllFiltersBtn()),
+                      ),
+                    ],
                   )),
             ),
           ),
-        ]));
+        ]),
+      ),
+    );
   }
 
   //Item Box
   Widget itemBox(Item item, double maxHeight) {
     List<String> nameStrings = [];
     item.infos.forEach((key, value) {
-      if (key.contains('Name') && value.isNotEmpty) {
+      if (key.toLowerCase().contains('name') && value.isNotEmpty) {
         nameStrings.add(value);
       }
     });
@@ -176,13 +190,15 @@ class _HomePageState extends State<HomePage> {
   Widget searchBox() {
     return SearchBar(
       leading: Icon(Icons.search),
-      hintText: 'Enter item\'s name, ice file\'s name to search',
+      hintText: 'Search',
       padding: MaterialStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
       constraints: BoxConstraints(minHeight: 25, maxHeight: 25, maxWidth: double.infinity),
       side: MaterialStatePropertyAll(BorderSide(width: 1.5, color: Theme.of(context).hoverColor)),
+      backgroundColor: MaterialStatePropertyAll(Theme.of(context).canvasColor),
+      elevation: MaterialStatePropertyAll(0),
       onChanged: (value) {
         if (value.isNotEmpty) {
-          filteredItems = filteredItems.where((element) => element.infos.values.contains(value)).toList();
+          filteredItems = filteredItems.where((element) => element.infos.values.where((element) => element.toLowerCase().contains(value.toLowerCase())).isNotEmpty).toList();
         } else {
           if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
             filteredItems = items;
@@ -202,7 +218,7 @@ class _HomePageState extends State<HomePage> {
       onChanged: (value) async {
         setState(() {
           selectedItemFilters = value;
-          if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && itemFilters.length == 2) {
+          if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
             filteredItems = items;
           } else {
             filteredItems = items.where((element) => selectedItemFilters.contains(element.itemType) && element.containsCategory(selectedItemFilters)).toList();
@@ -277,7 +293,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget filterBoxBtn() {
     return MaterialButton(
-        minWidth: 160,
+        minWidth: 210,
         onPressed: filterBoxShow
             ? () async {
                 final prefs = await SharedPreferences.getInstance();
@@ -294,5 +310,34 @@ class _HomePageState extends State<HomePage> {
         child: Row(
           children: [filterBoxShow ? Icon(Icons.filter_alt_outlined) : Icon(Icons.filter_list_alt), SizedBox(width: 5), Text(filterBoxShow ? 'Hide Filters' : 'Show Filters')],
         ));
+  }
+
+  Widget clearAllFiltersBtn() {
+    return ElevatedButton(
+        child: const Text('Clear All Filters'),
+        onPressed: () async {
+          final prefs = await SharedPreferences.getInstance();
+          selectedItemFilters = ['PSO2', 'NGS'];
+          prefs.setStringList('selectedItemFilters', selectedItemFilters);
+          filteredItems = items;
+          setState(() {});
+        });
+  }
+
+  Widget downloadingBar() {
+    return Padding(
+      padding: EdgeInsets.only(right: 10),
+      child: LinearPercentIndicator(
+        width: MediaQuery.of(context).size.width / 2,
+        animation: true,
+        lineHeight: 22.0,
+        animationDuration: 2500,
+        barRadius: Radius.circular(13),
+        backgroundColor: Theme.of(context).canvasColor,
+        percent: context.watch<StateProvider>().downloadPercentage,
+        center: Text('[${context.watch<StateProvider>().downloadFileName}] ${(context.watch<StateProvider>().downloadPercentage * 100).toStringAsFixed(1)}%'),
+        progressColor: Theme.of(context).progressIndicatorTheme.linearTrackColor,
+      ),
+    );
   }
 }

@@ -35,7 +35,7 @@ Future<File> getIconData(File iconIceFile, String saveLocation, String enItemNam
   return File('');
 }
 
-Future<void> setIconImage(Item item) async {
+Future<void> setIconImage(context, Item item) async {
   await tempDir.create(recursive: true);
   final enItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('English'), orElse: () => const MapEntry('null', 'null'));
   String enItemName = '';
@@ -50,7 +50,7 @@ Future<void> setIconImage(Item item) async {
     if (item.infos.entries.where((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).isNotEmpty && item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).value.isNotEmpty) {
       String iconIceName = item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).value;
       if (iconIceName.isNotEmpty) {
-        File downloadedImageIce = await downloadIceFromOfficial(iconIceName, tempDir.path);
+        File downloadedImageIce = await downloadIceFromOfficial(context, iconIceName, tempDir.path);
         if (downloadedImageIce.existsSync()) {
           final iconImage = await getIconData(downloadedImageIce, Uri.file('${iconsDir.path}${item.csvFilePath}/${p.basenameWithoutExtension(item.csvFileName)}').toFilePath(), enItemName);
           if (iconImage.path.isNotEmpty && iconImage.existsSync()) {

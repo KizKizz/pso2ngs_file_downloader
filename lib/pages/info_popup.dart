@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
+import 'package:pso2ngs_file_locator/functions/ice_download.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -29,6 +30,7 @@ Future<bool> itemInfoDialog(context, Item item) async {
   }
   return await showDialog(
       barrierDismissible: true,
+      barrierColor: Colors.transparent,
       context: context,
       builder: (BuildContext context) {
         return StatefulBuilder(builder: (dialogContext, setState) {
@@ -41,7 +43,7 @@ Future<bool> itemInfoDialog(context, Item item) async {
                 children: [
                   Text(nameStrings.join('\n'), textAlign: TextAlign.center, style: const TextStyle(fontWeight: FontWeight.w700)),
                   Padding(
-                    padding: const EdgeInsets.only(top: 0),
+                    padding: const EdgeInsets.only(top: 15),
                     child: SizedBox(
                         width: 150,
                         height: 150,
@@ -116,7 +118,7 @@ Future<bool> itemInfoDialog(context, Item item) async {
                     }),
                 ElevatedButton(
                     onPressed: () async {
-                      Navigator.pop(context, true);
+                      filesDownload(context, item);
                     },
                     child: const Text('Download'))
               ]);

@@ -2,9 +2,12 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
+import 'package:pso2ngs_file_locator/state_provider.dart';
 
-Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
+Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave) async {
   Dio dio = Dio();
   dio.options.headers = {"User-Agent": "AQUA_HTTP"};
 
@@ -13,12 +16,30 @@ Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
   if (patchFileList.where((element) => element.split('/').last == iceName).isNotEmpty) {
     String webLinkPath = patchFileList.firstWhere((element) => element.contains(iceName));
     try {
-      await dio.download('$patchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
+      await dio.download('$patchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath(), onReceiveProgress: (count, total) {
+        if (total != -1) {
+          Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
+          Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
+        }
+        if (count >= total) {
+          Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
+          Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
+        }
+      });
       debugPrint('patch');
       downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
     } on Exception {
       try {
-        await dio.download('$backupPatchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
+        await dio.download('$backupPatchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath(), onReceiveProgress: (count, total) {
+          if (total != -1) {
+            Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
+            Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
+          }
+          if (count >= total) {
+            Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
+            Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
+          }
+        });
         downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
       } catch (e) {
         debugPrint(e.toString());
@@ -29,12 +50,30 @@ Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
   } else if (patchFileList.where((element) => element.split('/').last == iceName).isNotEmpty) {
     String webLinkPath = patchFileList.firstWhere((element) => element.contains(iceName));
     try {
-      await dio.download('$masterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
+      await dio.download('$masterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath(), onReceiveProgress: (count, total) {
+        if (total != -1) {
+          Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
+          Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
+        }
+        if (count >= total) {
+          Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
+          Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
+        }
+      });
       debugPrint('master');
       downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
     } on Exception {
       try {
-        await dio.download('$backupMasterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
+        await dio.download('$backupMasterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath(), onReceiveProgress: (count, total) {
+          if (total != -1) {
+            Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
+            Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
+          }
+          if (count >= total) {
+            Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
+            Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
+          }
+        });
         downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
       } catch (e) {
         debugPrint(e.toString());
@@ -51,21 +90,57 @@ Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
     }
     if (webLinkPath.isNotEmpty) {
       try {
-        await dio.download('$patchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
+        await dio.download('$patchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath(), onReceiveProgress: (count, total) {
+          if (total != -1) {
+            Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
+            Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
+          }
+          if (count >= total) {
+            Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
+            Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
+          }
+        });
         //debugPrint('patch ${file.statusCode}');
         downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
       } on Exception {
         try {
-          await dio.download('$backupPatchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
+          await dio.download('$backupPatchURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath(), onReceiveProgress: (count, total) {
+            if (total != -1) {
+              Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
+              Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
+            }
+            if (count >= total) {
+              Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
+              Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
+            }
+          });
           downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
         } on Exception {
           try {
-            await dio.download('$masterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
+            await dio.download('$masterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath(), onReceiveProgress: (count, total) {
+              if (total != -1) {
+                Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
+                Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
+              }
+              if (count >= total) {
+                Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
+                Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
+              }
+            });
             //debugPrint('master ${file.statusCode}');
             downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
           } on Exception {
             try {
-              await dio.download('$backupMasterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath());
+              await dio.download('$backupMasterURL$webLinkPath.pat', Uri.file('$pathToSave/$webLinkPath').toFilePath(), onReceiveProgress: (count, total) {
+                if (total != -1) {
+                  Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
+                  Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
+                }
+                if (count >= total) {
+                  Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
+                  Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
+                }
+              });
               downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
             } catch (e) {
               debugPrint(e.toString());
@@ -84,4 +159,36 @@ Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
 
   dio.close();
   return downloadedIce;
+}
+
+Future<void> filesDownload(context, Item item) async {
+  List<String> downloadableKeys = ['Icon', 'Normal Quality', 'High Quality', 'Hash', 'Hash', 'Sounds', 'Linked Inner'];
+  await downloadDir.create(recursive: true);
+  if (downloadDir.existsSync()) {
+    for (var entry in item.infos.entries) {
+      if (downloadableKeys.where((element) => entry.key.toString().toLowerCase().contains(element.toLowerCase())).isNotEmpty && entry.value.isNotEmpty) {
+        List<String> nameStrings = [];
+        item.infos.forEach((key, value) {
+          if (key.toLowerCase().contains('name') && value.isNotEmpty) {
+            nameStrings.add(value);
+          }
+        });
+        if (nameStrings.isEmpty) {
+          nameStrings.add(item.infos.values.firstWhere(
+            (element) => element.isNotEmpty,
+            orElse: () => 'Unknown',
+          ));
+        }
+        String dlSavePath = Uri.file('${downloadDir.path}/${nameStrings.join(' - ')}').toFilePath();
+        Directory subDir = await Directory(dlSavePath).create(recursive: true);
+        if (subDir.existsSync()) {
+          downloadIceFromOfficial(context, entry.value, subDir.path);
+          List<String> infoList = item.infos.entries.map((e) => '${e.key}: ${e.value}').toList();
+          File fileInfo = File(Uri.file('$dlSavePath/files_info.txt').toFilePath());
+          await fileInfo.create(recursive: true);
+          fileInfo.writeAsStringSync(infoList.join('\n'));
+        }
+      }
+    }
+  }
 }
