@@ -16,8 +16,24 @@ import 'package:pso2ngs_file_locator/pages/home_page.dart';
 import 'package:pso2ngs_file_locator/state_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:path/path.dart' as p;
+import 'package:window_manager/window_manager.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await windowManager.ensureInitialized();
+  final prefs = await SharedPreferences.getInstance();
+  appWidth = (prefs.getDouble('appWidth') ?? 1280.0);
+  appHeight = (prefs.getDouble('appHeight') ?? 720.0);
+  WindowOptions windowOptions = WindowOptions(
+    size: Size(appWidth, appHeight),
+    center: true,
+    skipTaskbar: false,
+  );
+  windowManager.waitUntilReadyToShow(windowOptions, () async {
+    await windowManager.show();
+    await windowManager.focus();
+  });
+
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(create: (_) => StateProvider()),
   ], child: const MyApp()));
@@ -63,6 +79,8 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   bool isDarkMode = true;
   String loadingStatus = '';
+
+  
 
   @override
   void initState() {
@@ -272,6 +290,7 @@ class _SplashState extends State<Splash> {
     super.initState();
   }
 
+ 
   Future<void> themeModeCheck() async {
     final prefs = await SharedPreferences.getInstance();
     isDarkMode = (prefs.getBool('isDarkMode') ?? true);
