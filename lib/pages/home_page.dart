@@ -19,6 +19,10 @@ import 'package:pso2ngs_file_locator/state_provider.dart';
 import 'package:pso2ngs_file_locator/widgets/buttons.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:path/path.dart' as p;
+
+MenuController menuAnchorController = MenuController();
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -36,6 +40,28 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       filteredItems = items;
     } else {
       filteredItems = items.where((element) => selectedItemFilters.contains(element.itemType) && element.containsCategory(selectedItemFilters)).toList();
+    }
+
+    downloadedItemList.add(
+      Padding(
+        padding: EdgeInsets.only(top: 10, left: 5, right: 5),
+        child: Center(
+          child: ElevatedButton(
+              child: const Text('Open Download Folder'),
+              onPressed: () async {
+                launchUrl(Uri.directory(downloadDir.path));
+              }),
+        ),
+      ),
+    );
+    final dledItems = downloadDir.listSync().whereType<Directory>().map((e) => p.basenameWithoutExtension(e.path)).toList();
+    if (dledItems.isNotEmpty) {
+      downloadedItemList.add(
+        Divider(thickness: 1, indent: 5, endIndent: 5),
+      );
+      for (var name in dledItems) {
+        downloadedItemList.add(ListTile(title: Text(name), dense: true));
+      }
     }
     super.initState();
   }
@@ -59,11 +85,11 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     }
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).primaryColor,
+        backgroundColor: Theme.of(context).navigationBarTheme.backgroundColor,
         toolbarHeight: 30,
         elevation: 10,
         title: searchBox(),
-        actions: [Visibility(visible: context.watch<StateProvider>().downloadFileName.isNotEmpty, child: downloadingBar()), filterBoxBtn(), lightDarkModeBtn()],
+        actions: [downloadMenuBtn(), filterBoxBtn(), lightDarkModeBtn()],
       ),
       body: Padding(
         padding: EdgeInsets.all(5),
@@ -75,7 +101,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               width: 250,
               height: double.infinity,
               child: Card(
-                  margin: EdgeInsets.only(top: 5, bottom: 5, left: 0, right: 5),
+                  margin: EdgeInsets.zero,
                   elevation: 5,
                   shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
                   child: Column(
@@ -293,7 +319,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
 
   Widget filterBoxBtn() {
     return MaterialButton(
-        minWidth: 210,
+        minWidth: 180,
         onPressed: filterBoxShow
             ? () async {
                 final prefs = await SharedPreferences.getInstance();
@@ -324,20 +350,36 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         });
   }
 
-  Widget downloadingBar() {
-    return Padding(
-      padding: EdgeInsets.only(right: 10),
-      child: LinearPercentIndicator(
-        width: MediaQuery.of(context).size.width / 2,
-        animation: true,
-        lineHeight: 22.0,
-        animationDuration: 2500,
-        barRadius: Radius.circular(13),
-        backgroundColor: Theme.of(context).canvasColor,
-        percent: context.watch<StateProvider>().downloadPercentage,
-        center: Text('[${context.watch<StateProvider>().downloadFileName}] ${(context.watch<StateProvider>().downloadPercentage * 100).toStringAsFixed(1)}%'),
-        progressColor: Theme.of(context).progressIndicatorTheme.linearTrackColor,
-      ),
+  Widget downloadMenuBtn() {
+    return Tooltip(
+      message: 'Downloaded Items',
+      textStyle: TextStyle(fontSize: 14, color: Theme.of(context).buttonTheme.colorScheme!.primary),
+      decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.background),
+      enableTapToDismiss: true,
+      child: MenuAnchor(
+          builder: (BuildContext context, MenuController controller, Widget? child) {
+            return MaterialButton(
+              minWidth: 30,
+              child: const Icon(
+                Icons.download,
+              ),
+              onPressed: () {
+                if (controller.isOpen) {
+                  controller.close();
+                } else {
+                  controller.open();
+                }
+              },
+            );
+          },
+          onOpen: () {
+            setState(() {});
+          },
+          style: MenuStyle(shape: MaterialStateProperty.resolveWith((states) {
+            return RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5)));
+          })),
+          controller: menuAnchorController,
+          menuChildren: downloadedItemList),
     );
   }
 }

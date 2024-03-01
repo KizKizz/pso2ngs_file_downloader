@@ -69,6 +69,8 @@ class _SplashState extends State<Splash> {
     if (kDebugMode) {
       iconsDir.createSync(recursive: true);
     }
+    downloadDir.createSync(recursive: true);
+
     themeModeCheck();
     filtersCheck();
 
@@ -182,7 +184,7 @@ class _SplashState extends State<Splash> {
                   await imageSizeCheck(item);
                 } else if (matchedItem.iconImagePath.isEmpty && (item.csvFilePath.contains('Stamps') || item.csvFilePath.contains('Vital Gauge'))) {
                   item.itemType = 'NGS';
-                } 
+                }
                 if (item.iconImagePath.isEmpty) {
                   item.itemType = 'PSO2 | NGS';
                 }
@@ -214,22 +216,28 @@ class _SplashState extends State<Splash> {
           }
           itemDataSave();
         } else {
-          Directory(itemDataJson.parent.path).createSync(recursive: true);
+          //Directory(itemDataJson.parent.path).createSync(recursive: true);
           Dio dio = Dio();
-          await dio.download(githubItemJsonLink, itemDataJson.path);
-          dio.close();
-          if (itemDataJson.existsSync()) {
-            final dataFromJson = itemDataJson.readAsStringSync();
+          //await dio.download(githubItemJsonLink, itemDataJson.path);
+          final itemDataRespond = await dio.get(githubItemJsonLink);
+          if (itemDataRespond.statusCode == 200) {
+            final dataFromJson = itemDataRespond.data;
             if (dataFromJson.isNotEmpty) {
               var jsonData = jsonDecode(dataFromJson);
               for (var data in jsonData) {
                 items.add(Item.fromJson(data));
               }
             }
+          } else {
+            setState(() {
+              loadingStatus = 'Cannot Get Item Infos From GitHub';
+            });
+            await Future.delayed(const Duration(milliseconds: 100));
           }
           //load filters
-          if (itemFilterListJson.existsSync()) {
-            final dataFromJson = itemFilterListJson.readAsStringSync();
+          final itemFiltersRespond = await dio.get(githubItemFiltersJsonLink);
+          if (itemFiltersRespond.statusCode == 200) {
+            final dataFromJson = itemFiltersRespond.data;
             if (dataFromJson.isNotEmpty) {
               var jsonData = jsonDecode(dataFromJson);
               for (var data in jsonData) {
@@ -240,7 +248,13 @@ class _SplashState extends State<Splash> {
                 }
               }
             }
+          } else {
+            setState(() {
+              loadingStatus = 'Cannot Get Item Filters From GitHub';
+            });
+            await Future.delayed(const Duration(milliseconds: 100));
           }
+          dio.close();
         }
 
         setState(() {

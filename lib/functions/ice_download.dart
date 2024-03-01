@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
+import 'package:pso2ngs_file_locator/pages/info_popup.dart';
 import 'package:pso2ngs_file_locator/state_provider.dart';
 
 Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave) async {
@@ -21,10 +22,6 @@ Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave)
           Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
           Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
         }
-        if (count >= total) {
-          Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
-          Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
-        }
       });
       debugPrint('patch');
       downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
@@ -34,10 +31,6 @@ Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave)
           if (total != -1) {
             Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
             Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
-          }
-          if (count >= total) {
-            Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
-            Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
           }
         });
         downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
@@ -55,10 +48,6 @@ Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave)
           Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
           Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
         }
-        if (count >= total) {
-          Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
-          Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
-        }
       });
       debugPrint('master');
       downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
@@ -68,10 +57,6 @@ Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave)
           if (total != -1) {
             Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
             Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
-          }
-          if (count >= total) {
-            Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
-            Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
           }
         });
         downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
@@ -95,10 +80,6 @@ Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave)
             Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
             Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
           }
-          if (count >= total) {
-            Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
-            Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
-          }
         });
         //debugPrint('patch ${file.statusCode}');
         downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
@@ -109,10 +90,6 @@ Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave)
               Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
               Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
             }
-            if (count >= total) {
-              Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
-              Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
-            }
           });
           downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
         } on Exception {
@@ -121,10 +98,6 @@ Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave)
               if (total != -1) {
                 Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
                 Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
-              }
-              if (count >= total) {
-                Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
-                Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
               }
             });
             //debugPrint('master ${file.statusCode}');
@@ -135,10 +108,6 @@ Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave)
                 if (total != -1) {
                   Provider.of<StateProvider>(context, listen: false).downloadFileNameSet(iceName);
                   Provider.of<StateProvider>(context, listen: false).downloadPercentageSet(count / total);
-                }
-                if (count >= total) {
-                  Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
-                  Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
                 }
               });
               downloadedIce = File(Uri.file('$pathToSave/$webLinkPath').toFilePath());
@@ -163,32 +132,40 @@ Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave)
 
 Future<void> filesDownload(context, Item item) async {
   List<String> downloadableKeys = ['Icon', 'Normal Quality', 'High Quality', 'Hash', 'Hash', 'Sounds', 'Linked Inner'];
-  await downloadDir.create(recursive: true);
   if (downloadDir.existsSync()) {
+    List<String> nameStrings = [];
+    item.infos.forEach((key, value) {
+      if (key.toLowerCase().contains('name') && value.isNotEmpty) {
+        nameStrings.add(value);
+      }
+    });
+    if (nameStrings.isEmpty) {
+      nameStrings.add(item.infos.values.firstWhere(
+        (element) => element.isNotEmpty,
+        orElse: () => 'Unknown',
+      ));
+    }
+    String dlSavePath = Uri.file('${downloadDir.path}/${nameStrings.join(' - ')}').toFilePath();
+    Directory subDir = await Directory(dlSavePath).create(recursive: true);
+
+    itemDownloadingDialog(context, subDir);
     for (var entry in item.infos.entries) {
       if (downloadableKeys.where((element) => entry.key.toString().toLowerCase().contains(element.toLowerCase())).isNotEmpty && entry.value.isNotEmpty) {
-        List<String> nameStrings = [];
-        item.infos.forEach((key, value) {
-          if (key.toLowerCase().contains('name') && value.isNotEmpty) {
-            nameStrings.add(value);
-          }
-        });
-        if (nameStrings.isEmpty) {
-          nameStrings.add(item.infos.values.firstWhere(
-            (element) => element.isNotEmpty,
-            orElse: () => 'Unknown',
-          ));
-        }
-        String dlSavePath = Uri.file('${downloadDir.path}/${nameStrings.join(' - ')}').toFilePath();
-        Directory subDir = await Directory(dlSavePath).create(recursive: true);
         if (subDir.existsSync()) {
-          downloadIceFromOfficial(context, entry.value, subDir.path);
-          List<String> infoList = item.infos.entries.map((e) => '${e.key}: ${e.value}').toList();
-          File fileInfo = File(Uri.file('$dlSavePath/files_info.txt').toFilePath());
-          await fileInfo.create(recursive: true);
-          fileInfo.writeAsStringSync(infoList.join('\n'));
+          await downloadIceFromOfficial(context, entry.value, subDir.path);
         }
       }
+    }
+    if (dlSavePath.isNotEmpty) {
+      List<String> infoList = item.infos.entries.map((e) => '${e.key}: ${e.value}').toList();
+      File fileInfo = File(Uri.file('$dlSavePath/files_info.txt').toFilePath());
+      await fileInfo.create(recursive: true);
+      fileInfo.writeAsStringSync(infoList.join('\n'));
+      Provider.of<StateProvider>(context, listen: false).downloadFileNameSet('Finished!');
+      if (downloadedItemList.length == 1) {
+        downloadedItemList.add(const Divider(thickness: 1, indent: 5, endIndent: 5));
+      }
+      downloadedItemList.insert(2, ListTile(title: Text(nameStrings.join(' - ')), dense: true));
     }
   }
 }
