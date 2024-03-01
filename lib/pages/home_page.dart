@@ -6,6 +6,8 @@ import 'dart:typed_data';
 import 'package:choice/choice.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
@@ -19,6 +21,11 @@ import 'package:pso2ngs_file_locator/state_provider.dart';
 import 'package:pso2ngs_file_locator/widgets/buttons.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:path/path.dart' as p;
+import 'package:window_manager/window_manager.dart';
+
+MenuController menuAnchorController = MenuController();
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -27,17 +34,66 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
+class _HomePageState extends State<HomePage> with WindowListener {
   List<Item> filteredItems = [];
+  TextEditingController searchBarController = TextEditingController();
+  TextEditingController filterSearchBarController = TextEditingController();
 
   @override
   void initState() {
+    windowManager.addListener(this);
     if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
       filteredItems = items;
     } else {
       filteredItems = items.where((element) => selectedItemFilters.contains(element.itemType) && element.containsCategory(selectedItemFilters)).toList();
     }
+
+    final dledItems = downloadDir.listSync().whereType<Directory>().map((e) => p.basenameWithoutExtension(e.path)).toList();
+    downloadedItemList.add(
+      Padding(
+        padding: EdgeInsets.only(top: 10, bottom: 10, left: 5, right: 5),
+        child: Center(
+          child: ElevatedButton(
+              child: const Text('Open Download Folder'),
+              onPressed: () async {
+                launchUrl(Uri.directory(downloadDir.path));
+              }),
+        ),
+      ),
+    );
+    if (dledItems.isNotEmpty) {
+      downloadedItemList.add(
+        Divider(
+          thickness: 1,
+          indent: 5,
+          endIndent: 5,
+          height: 0,
+        ),
+      );
+      for (var name in dledItems) {
+        downloadedItemList.add(ListTile(title: Text(name), dense: true));
+      }
+    }
+    for (var filter in itemFilters) {
+      for (var ff in filter.fileFilters) {
+        allFilterList.add(ff);
+      }
+    }
     super.initState();
+  }
+
+  Future<void> getAppVer() async {
+    PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    appVersion = packageInfo.version;
+    //appVersion = '2.4.10';
+  }
+
+  @override
+  Future<void> onWindowResized() async {
+    Size curWindowSize = await windowManager.getSize();
+    final prefs = await SharedPreferences.getInstance();
+    prefs.setDouble('appWidth', curWindowSize.width);
+    prefs.setDouble('appHeight', curWindowSize.height);
   }
 
   @override
@@ -59,14 +115,18 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     }
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).primaryColor,
+        backgroundColor: Theme.of(context).navigationBarTheme.backgroundColor,
         toolbarHeight: 30,
         elevation: 10,
-        title: searchBox(),
-        actions: [Visibility(visible: context.watch<StateProvider>().downloadFileName.isNotEmpty, child: downloadingBar()), filterBoxBtn(), lightDarkModeBtn()],
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [Expanded(child: searchBox()), itemCounter()],
+        ),
+        actions: [downloadMenuBtn(), filterBoxBtn(), lightDarkModeBtn()],
       ),
+      bottomNavigationBar: context.watch<StateProvider>().isUpdateAvailable ? newVersionBanner() : null,
       body: Padding(
-        padding: EdgeInsets.all(5),
+        padding: EdgeInsets.only(left: 0, right: 5, top: 5, bottom: 5),
         child: Row(children: [
           Expanded(child: ResponsiveGridList(desiredItemWidth: gridItemWidth, minSpacing: 5, children: filteredItems.map((e) => itemBox(e, gridItemHeight)).toList())),
           Visibility(
@@ -75,47 +135,70 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               width: 250,
               height: double.infinity,
               child: Card(
-                  margin: EdgeInsets.only(top: 5, bottom: 5, left: 0, right: 5),
+                  margin: EdgeInsets.zero,
                   elevation: 5,
                   shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Expanded(
-                        child: SingleChildScrollView(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              ListView.builder(
-                                padding: EdgeInsets.symmetric(vertical: 2),
-                                shrinkWrap: true,
-                                physics: NeverScrollableScrollPhysics(),
-                                itemCount: itemFilters.length,
-                                itemBuilder: (context, index) {
-                                  int appliedFilters = selectedItemFilters.where((element) => itemFilters[index].fileFilters.contains(element)).length;
-                                  return ExpansionTile(
-                                    dense: true,
-                                    title: Wrap(
-                                      alignment: WrapAlignment.spaceBetween,
-                                      runAlignment: WrapAlignment.center,
-                                      spacing: 5,
-                                      children: [
-                                        Text(
-                                          itemFilters[index].mainCategory,
-                                          style: TextStyle(fontWeight: FontWeight.bold),
-                                        ),
-                                        Container(
-                                            margin: EdgeInsets.symmetric(vertical: 0),
-                                            padding: const EdgeInsets.only(left: 2, right: 2),
-                                            decoration: BoxDecoration(border: Border.all(color: Theme.of(context).primaryColorLight), borderRadius: const BorderRadius.all(Radius.circular(5.0))),
-                                            child: Text('$appliedFilters / ${itemFilters[index].fileFilters.length}')),
-                                      ],
-                                    ),
-                                    children: [filters(itemFilters[index])],
-                                  );
-                                },
-                              ),
-                            ],
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10, bottom: 5, left: 5, right: 5),
+                        child: filterSearchBox(),
+                      ),
+                      //searched filters
+                      Visibility(
+                        visible: searchedFilterList.isNotEmpty,
+                        child: Expanded(
+                          child: SingleChildScrollView(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [searchedFilters()],
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      //normal filters
+                      Visibility(
+                        visible: searchedFilterList.isEmpty,
+                        child: Expanded(
+                          child: SingleChildScrollView(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                ListView.builder(
+                                  padding: EdgeInsets.symmetric(vertical: 2),
+                                  shrinkWrap: true,
+                                  physics: NeverScrollableScrollPhysics(),
+                                  itemCount: itemFilters.length,
+                                  itemBuilder: (context, index) {
+                                    int appliedFilters = selectedItemFilters.where((element) => itemFilters[index].fileFilters.contains(element)).length;
+                                    return ExpansionTile(
+                                      maintainState: true,
+                                      tilePadding: EdgeInsets.all(10),
+                                      dense: true,
+                                      title: Wrap(
+                                        alignment: WrapAlignment.spaceBetween,
+                                        runAlignment: WrapAlignment.center,
+                                        spacing: 5,
+                                        children: [
+                                          Text(
+                                            itemFilters[index].mainCategory,
+                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                          ),
+                                          Container(
+                                              margin: EdgeInsets.symmetric(vertical: 0),
+                                              padding: const EdgeInsets.only(left: 2, right: 2),
+                                              decoration: BoxDecoration(border: Border.all(color: Theme.of(context).primaryColorLight), borderRadius: const BorderRadius.all(Radius.circular(5.0))),
+                                              child: Text('$appliedFilters / ${itemFilters[index].fileFilters.length}')),
+                                        ],
+                                      ),
+                                      children: [filters(itemFilters[index])],
+                                    );
+                                  },
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -189,15 +272,36 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   //Search box
   Widget searchBox() {
     return SearchBar(
+      controller: searchBarController,
       leading: Icon(Icons.search),
-      hintText: 'Search',
+      hintText: 'Search Items',
       padding: MaterialStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
       constraints: BoxConstraints(minHeight: 25, maxHeight: 25, maxWidth: double.infinity),
       side: MaterialStatePropertyAll(BorderSide(width: 1.5, color: Theme.of(context).hoverColor)),
       backgroundColor: MaterialStatePropertyAll(Theme.of(context).canvasColor),
       elevation: MaterialStatePropertyAll(0),
+      trailing: [
+        Visibility(
+          visible: searchBarController.text.isNotEmpty,
+          child: MaterialButton(
+            minWidth: 10,
+            onPressed: () {
+              searchBarController.clear();
+              filteredItems = items;
+              setState(() {});
+            },
+            child: Icon(Icons.close),
+          ),
+        )
+      ],
       onChanged: (value) {
+        //searchBarController.text = value;
         if (value.isNotEmpty) {
+          if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
+            filteredItems = items;
+          } else {
+            filteredItems = items.where((element) => selectedItemFilters.contains(element.itemType) && element.containsCategory(selectedItemFilters)).toList();
+          }
           filteredItems = filteredItems.where((element) => element.infos.values.where((element) => element.toLowerCase().contains(value.toLowerCase())).isNotEmpty).toList();
         } else {
           if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
@@ -208,6 +312,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         }
         setState(() {});
       },
+    );
+  }
+
+  //Item Count
+  Widget itemCounter() {
+    return Padding(
+      padding: const EdgeInsets.only(left: 10, bottom: 5),
+      child: Text('${filteredItems.length} / ${items.length} Items'),
     );
   }
 
@@ -257,6 +369,166 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     );
   }
 
+  // Filter search
+  Widget filterSearchBox() {
+    return SearchBar(
+      controller: filterSearchBarController,
+      leading: Icon(Icons.search),
+      hintText: 'Search Filters',
+      padding: MaterialStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
+      constraints: BoxConstraints(minHeight: 30, maxHeight: 30, maxWidth: double.infinity),
+      side: MaterialStatePropertyAll(BorderSide(width: 1.5, color: Theme.of(context).hoverColor)),
+      backgroundColor: MaterialStatePropertyAll(Theme.of(context).canvasColor),
+      elevation: MaterialStatePropertyAll(0),
+      trailing: [
+        Visibility(
+          visible: filterSearchBarController.text.isNotEmpty,
+          child: MaterialButton(
+            minWidth: 10,
+            onPressed: () {
+              filterSearchBarController.clear();
+              searchedFilterList.clear();
+              setState(() {});
+            },
+            child: Icon(Icons.close),
+          ),
+        ),
+      ],
+      onChanged: (value) {
+        if (value.isNotEmpty) {
+          searchedFilterList = allFilterList.where((element) => element.toLowerCase().contains(value.toLowerCase())).toList();
+        } else {
+          searchedFilterList.clear();
+        }
+        setState(() {});
+      },
+    );
+  }
+
+  //Searched Filters
+  Widget searchedFilters() {
+    return InlineChoice<String>.multiple(
+      value: selectedItemFilters,
+      onChanged: (value) async {
+        setState(() {
+          selectedItemFilters = value;
+          if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
+            filteredItems = items;
+          } else {
+            filteredItems = items.where((element) => selectedItemFilters.contains(element.itemType) && element.containsCategory(selectedItemFilters)).toList();
+          }
+        });
+        final prefs = await SharedPreferences.getInstance();
+        prefs.setStringList('selectedItemFilters', selectedItemFilters);
+      },
+      itemCount: searchedFilterList.length,
+      itemBuilder: (state, i) {
+        return ChoiceChip(
+          selected: state.selected(searchedFilterList[i]),
+          onSelected: state.onSelected(searchedFilterList[i]),
+          label: Text(searchedFilterList[i]),
+          elevation: 5,
+        );
+      },
+      // groupBuilder: ChoiceList.createWrapped(
+      //   spacing: 2,
+      //   runSpacing: 2,
+      //   alignment: WrapAlignment.center,
+      //   padding: const EdgeInsets.symmetric(
+      //     horizontal: 2,
+      //     vertical: 2,
+      //   ),
+      // ),
+      listBuilder: ChoiceList.createWrapped(
+        spacing: 2,
+        runSpacing: 2,
+        alignment: WrapAlignment.center,
+        padding: const EdgeInsets.symmetric(
+          horizontal: 2,
+          vertical: 2,
+        ),
+      ),
+    );
+  }
+
+  //New update banner
+  Widget newVersionBanner() {
+    return ScaffoldMessenger(
+        child: Padding(
+      padding: const EdgeInsets.only(bottom: 3),
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(color: Theme.of(context).hintColor),
+        ),
+        child: MaterialBanner(
+          backgroundColor: Theme.of(context).canvasColor,
+          elevation: 0,
+          padding: const EdgeInsets.all(0),
+          leadingPadding: const EdgeInsets.only(left: 15, right: 5),
+          leading: Icon(
+            Icons.new_releases,
+            color: MyApp.themeNotifier.value == ThemeMode.light ? Theme.of(context).primaryColorDark : Colors.amberAccent,
+          ),
+          content: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  Text(
+                    'New Update Available',
+                    style: TextStyle(color: MyApp.themeNotifier.value == ThemeMode.light ? Theme.of(context).primaryColorDark : Colors.amberAccent, fontWeight: FontWeight.w500),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 5),
+                    child: Text('New version: $newVersion - Current version: $appVersion'),
+                  ),
+                  // TextButton(
+                  //     onPressed: (() {
+                  //       setState(() {
+                  //         patchNotesDialog(context);
+                  //       });
+                  //     }),
+                  //     child: Text(curLangText!.uiPatchNote)),
+                ],
+              ),
+              Row(
+                children: [
+                  // Padding(
+                  //   padding: const EdgeInsets.only(right: 5),
+                  //   child: ElevatedButton(
+                  //       onPressed: (() async {
+                  //         final prefs = await SharedPreferences.getInstance();
+                  //         prefs.setString('versionToSkipUpdate', appVersion);
+                  //         versionToSkipUpdate = appVersion;
+                  //         Provider.of<StateProvider>(context, listen: false).isUpdateAvailableFalse();
+                  //         setState(() {});
+                  //       }),
+                  //       child: Text(curLangText!.uiSkipMMUpdate)),
+                  // ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 5),
+                    child: ElevatedButton(
+                        onPressed: (() {
+                          Provider.of<StateProvider>(context, listen: false).isUpdateAvailableFalse();
+                          setState(() {});
+                        }),
+                        child: Text('Close')),
+                  ),
+                  ElevatedButton(
+                      onPressed: (() {
+                        //patchNotesDialog(context);
+                      }),
+                      child: Text('Update')),
+                ],
+              )
+            ],
+          ),
+          actions: const [SizedBox()],
+        ),
+      ),
+    ));
+  }
+
   //Buttons
   Widget lightDarkModeBtn() {
     return Tooltip(
@@ -293,7 +565,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
 
   Widget filterBoxBtn() {
     return MaterialButton(
-        minWidth: 210,
+        minWidth: 180,
         onPressed: filterBoxShow
             ? () async {
                 final prefs = await SharedPreferences.getInstance();
@@ -324,20 +596,36 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         });
   }
 
-  Widget downloadingBar() {
-    return Padding(
-      padding: EdgeInsets.only(right: 10),
-      child: LinearPercentIndicator(
-        width: MediaQuery.of(context).size.width / 2,
-        animation: true,
-        lineHeight: 22.0,
-        animationDuration: 2500,
-        barRadius: Radius.circular(13),
-        backgroundColor: Theme.of(context).canvasColor,
-        percent: context.watch<StateProvider>().downloadPercentage,
-        center: Text('[${context.watch<StateProvider>().downloadFileName}] ${(context.watch<StateProvider>().downloadPercentage * 100).toStringAsFixed(1)}%'),
-        progressColor: Theme.of(context).progressIndicatorTheme.linearTrackColor,
-      ),
+  Widget downloadMenuBtn() {
+    return Tooltip(
+      message: 'Downloaded Items',
+      textStyle: TextStyle(fontSize: 14, color: Theme.of(context).buttonTheme.colorScheme!.primary),
+      decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.background),
+      enableTapToDismiss: true,
+      child: MenuAnchor(
+          builder: (BuildContext context, MenuController controller, Widget? child) {
+            return MaterialButton(
+              minWidth: 30,
+              child: const Icon(
+                Icons.download,
+              ),
+              onPressed: () {
+                if (controller.isOpen) {
+                  controller.close();
+                } else {
+                  controller.open();
+                }
+              },
+            );
+          },
+          onOpen: () {
+            setState(() {});
+          },
+          style: MenuStyle(shape: MaterialStateProperty.resolveWith((states) {
+            return RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5)));
+          })),
+          controller: menuAnchorController,
+          menuChildren: downloadedItemList),
     );
   }
 }

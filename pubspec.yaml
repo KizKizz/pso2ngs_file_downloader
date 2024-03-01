@@ -39,6 +39,9 @@ dependencies:
   choice: ^2.3.0
   provider: ^6.1.1
   percent_indicator: ^4.2.3
+  url_launcher: ^6.2.5
+  window_manager: ^0.3.8
+  package_info_plus: ^5.0.1
 
 
   # The following adds the Cupertino Icons font to your application.
