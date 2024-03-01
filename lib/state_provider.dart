@@ -3,22 +3,22 @@ import 'package:flutter/material.dart';
 class StateProvider with ChangeNotifier {
   double _downloadPercentage = 0;
   String _downloadFileName = '';
-  String _downloadedItemDirPath = '';
+  bool _isUpdateAvailable = false;
 
   double get downloadPercentage => _downloadPercentage;
   String get downloadFileName => _downloadFileName;
-  String get downloadedItemDirPath => _downloadedItemDirPath;
-  
-   void downloadedItemDirPathSet(String path) {
-    _downloadedItemDirPath = path;
+  bool get isUpdateAvailable => _isUpdateAvailable;
+
+  void isUpdateAvailableTrue() {
+    _isUpdateAvailable = true;
     notifyListeners();
   }
 
-  void downloadedItemDirPathReset() {
-    _downloadedItemDirPath = '';
+  void isUpdateAvailableFalse() {
+    _isUpdateAvailable = false;
     notifyListeners();
   }
-  
+
   void downloadFileNameSet(String name) {
     _downloadFileName = name;
     notifyListeners();

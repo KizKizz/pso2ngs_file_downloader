@@ -4,6 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 
 String appTitle = 'PSO2NGS File Locator';
+double appWidth = 0;
+double appHeight = 0;
+String appVersion = '';
+String newVersion = '';
+String patchNotes = '';
+List<String> patchNoteSplit = [];
 String curPageTitle = '';
 String managementLink = 'http://patch01.pso2gs.net/patch_prod/patches/management_beta.txt';
 String masterURL = '';
@@ -31,3 +37,5 @@ List<Filter> itemFilters = [];
 List<String> selectedItemFilters = [];
 bool showEmptyInfoFields = false;
 List<Widget> downloadedItemList = [];
+List<String> searchedFilterList = [];
+List<String> allFilterList = [];

@@ -132,6 +132,7 @@ Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave)
 
 Future<void> filesDownload(context, Item item) async {
   List<String> downloadableKeys = ['Icon', 'Normal Quality', 'High Quality', 'Hash', 'Hash', 'Sounds', 'Linked Inner'];
+  downloadDir.createSync(recursive: true);
   if (downloadDir.existsSync()) {
     List<String> nameStrings = [];
     item.infos.forEach((key, value) {
@@ -163,7 +164,7 @@ Future<void> filesDownload(context, Item item) async {
       fileInfo.writeAsStringSync(infoList.join('\n'));
       Provider.of<StateProvider>(context, listen: false).downloadFileNameSet('Finished!');
       if (downloadedItemList.length == 1) {
-        downloadedItemList.add(const Divider(thickness: 1, indent: 5, endIndent: 5, height: 10,));
+        downloadedItemList.add(const Divider(thickness: 1, indent: 5, endIndent: 5, height: 0,));
       }
       downloadedItemList.insert(2, ListTile(title: Text(nameStrings.join(' - ')), dense: true));
     }
