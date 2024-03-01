@@ -42,9 +42,10 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       filteredItems = items.where((element) => selectedItemFilters.contains(element.itemType) && element.containsCategory(selectedItemFilters)).toList();
     }
 
+    final dledItems = downloadDir.listSync().whereType<Directory>().map((e) => p.basenameWithoutExtension(e.path)).toList();
     downloadedItemList.add(
       Padding(
-        padding: EdgeInsets.only(top: 10, left: 5, right: 5),
+        padding: EdgeInsets.only(top: 10, bottom: dledItems.isEmpty ? 10 : 0, left: 5, right: 5),
         child: Center(
           child: ElevatedButton(
               child: const Text('Open Download Folder'),
@@ -54,10 +55,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         ),
       ),
     );
-    final dledItems = downloadDir.listSync().whereType<Directory>().map((e) => p.basenameWithoutExtension(e.path)).toList();
     if (dledItems.isNotEmpty) {
       downloadedItemList.add(
-        Divider(thickness: 1, indent: 5, endIndent: 5),
+        Divider(
+          thickness: 1,
+          indent: 5,
+          endIndent: 5,
+          height: 10,
+        ),
       );
       for (var name in dledItems) {
         downloadedItemList.add(ListTile(title: Text(name), dense: true));

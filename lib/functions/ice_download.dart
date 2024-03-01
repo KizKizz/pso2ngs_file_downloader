@@ -163,7 +163,7 @@ Future<void> filesDownload(context, Item item) async {
       fileInfo.writeAsStringSync(infoList.join('\n'));
       Provider.of<StateProvider>(context, listen: false).downloadFileNameSet('Finished!');
       if (downloadedItemList.length == 1) {
-        downloadedItemList.add(const Divider(thickness: 1, indent: 5, endIndent: 5));
+        downloadedItemList.add(const Divider(thickness: 1, indent: 5, endIndent: 5, height: 10,));
       }
       downloadedItemList.insert(2, ListTile(title: Text(nameStrings.join(' - ')), dense: true));
     }
