@@ -6,6 +6,7 @@ import 'dart:typed_data';
 import 'package:choice/choice.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:provider/provider.dart';
@@ -123,6 +124,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
         ),
         actions: [downloadMenuBtn(), filterBoxBtn(), lightDarkModeBtn()],
       ),
+      bottomNavigationBar: context.watch<StateProvider>().isUpdateAvailable ? newVersionBanner() : null,
       body: Padding(
         padding: EdgeInsets.only(left: 0, right: 5, top: 5, bottom: 5),
         child: Row(children: [
@@ -447,6 +449,84 @@ class _HomePageState extends State<HomePage> with WindowListener {
         ),
       ),
     );
+  }
+
+  //New update banner
+  Widget newVersionBanner() {
+    return ScaffoldMessenger(
+        child: Padding(
+      padding: const EdgeInsets.only(bottom: 3),
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(color: Theme.of(context).hintColor),
+        ),
+        child: MaterialBanner(
+          backgroundColor: Theme.of(context).canvasColor,
+          elevation: 0,
+          padding: const EdgeInsets.all(0),
+          leadingPadding: const EdgeInsets.only(left: 15, right: 5),
+          leading: Icon(
+            Icons.new_releases,
+            color: MyApp.themeNotifier.value == ThemeMode.light ? Theme.of(context).primaryColorDark : Colors.amberAccent,
+          ),
+          content: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  Text(
+                    'New Update Available',
+                    style: TextStyle(color: MyApp.themeNotifier.value == ThemeMode.light ? Theme.of(context).primaryColorDark : Colors.amberAccent, fontWeight: FontWeight.w500),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 5),
+                    child: Text('New version: $newVersion - Current version: $appVersion'),
+                  ),
+                  // TextButton(
+                  //     onPressed: (() {
+                  //       setState(() {
+                  //         patchNotesDialog(context);
+                  //       });
+                  //     }),
+                  //     child: Text(curLangText!.uiPatchNote)),
+                ],
+              ),
+              Row(
+                children: [
+                  // Padding(
+                  //   padding: const EdgeInsets.only(right: 5),
+                  //   child: ElevatedButton(
+                  //       onPressed: (() async {
+                  //         final prefs = await SharedPreferences.getInstance();
+                  //         prefs.setString('versionToSkipUpdate', appVersion);
+                  //         versionToSkipUpdate = appVersion;
+                  //         Provider.of<StateProvider>(context, listen: false).isUpdateAvailableFalse();
+                  //         setState(() {});
+                  //       }),
+                  //       child: Text(curLangText!.uiSkipMMUpdate)),
+                  // ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 5),
+                    child: ElevatedButton(
+                        onPressed: (() {
+                          Provider.of<StateProvider>(context, listen: false).isUpdateAvailableFalse();
+                          setState(() {});
+                        }),
+                        child: Text('Close')),
+                  ),
+                  ElevatedButton(
+                      onPressed: (() {
+                        //patchNotesDialog(context);
+                      }),
+                      child: Text('Update')),
+                ],
+              )
+            ],
+          ),
+          actions: const [SizedBox()],
+        ),
+      ),
+    ));
   }
 
   //Buttons
