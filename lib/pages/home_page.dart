@@ -6,7 +6,6 @@ import 'dart:typed_data';
 import 'package:choice/choice.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:provider/provider.dart';
@@ -17,6 +16,7 @@ import 'package:pso2ngs_file_locator/global_vars.dart';
 import 'package:pso2ngs_file_locator/main.dart';
 import 'package:pso2ngs_file_locator/pages/info_popup.dart';
 import 'package:pso2ngs_file_locator/state_provider.dart';
+import 'package:pso2ngs_file_locator/version_check.dart';
 // ignore: unused_import
 import 'package:pso2ngs_file_locator/widgets/buttons.dart';
 import 'package:responsive_grid/responsive_grid.dart';
@@ -41,6 +41,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
 
   @override
   void initState() {
+    checkForUpdates(context);
     windowManager.addListener(this);
     if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
       filteredItems = items;
@@ -175,7 +176,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
                                     int appliedFilters = selectedItemFilters.where((element) => itemFilters[index].fileFilters.contains(element)).length;
                                     return ExpansionTile(
                                       maintainState: true,
-                                      tilePadding: EdgeInsets.all(10),
+                                      //tilePadding: EdgeInsets.all(10),
                                       dense: true,
                                       title: Wrap(
                                         alignment: WrapAlignment.spaceBetween,
@@ -455,7 +456,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
   Widget newVersionBanner() {
     return ScaffoldMessenger(
         child: Padding(
-      padding: const EdgeInsets.only(bottom: 3),
+      padding: const EdgeInsets.only(bottom: 5, left: 5, right: 5),
       child: Container(
         decoration: BoxDecoration(
           border: Border.all(color: Theme.of(context).hintColor),
