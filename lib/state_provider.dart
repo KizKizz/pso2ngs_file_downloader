@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class StateProvider with ChangeNotifier {
   double _downloadPercentage = 0;
   String _downloadFileName = '';
-  bool _isUpdateAvailable = true;
+  bool _isUpdateAvailable = false;
 
   double get downloadPercentage => _downloadPercentage;
   String get downloadFileName => _downloadFileName;
