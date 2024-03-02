@@ -41,6 +41,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
 
   @override
   void initState() {
+    getAppVer();
     checkForUpdates(context);
     windowManager.addListener(this);
     if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
@@ -119,11 +120,8 @@ class _HomePageState extends State<HomePage> with WindowListener {
         backgroundColor: Theme.of(context).navigationBarTheme.backgroundColor,
         toolbarHeight: 30,
         elevation: 10,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [Expanded(child: searchBox()), itemCounter()],
-        ),
-        actions: [downloadMenuBtn(), filterBoxBtn(), lightDarkModeBtn()],
+        title: searchBox(),
+        actions: [itemCounter(), downloadMenuBtn(), filterBoxBtn(), lightDarkModeBtn()],
       ),
       bottomNavigationBar: context.watch<StateProvider>().isUpdateAvailable ? newVersionBanner() : null,
       body: Padding(
@@ -278,7 +276,9 @@ class _HomePageState extends State<HomePage> with WindowListener {
       hintText: 'Search Items',
       padding: MaterialStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
       constraints: BoxConstraints(minHeight: 25, maxHeight: 25, maxWidth: double.infinity),
-      side: MaterialStatePropertyAll(BorderSide(width: 1.5, color: Theme.of(context).hoverColor)),
+      shape: MaterialStateProperty.resolveWith((states) {
+        return RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).primaryColor), borderRadius: const BorderRadius.all(Radius.circular(15)));
+      }),
       backgroundColor: MaterialStatePropertyAll(Theme.of(context).canvasColor),
       elevation: MaterialStatePropertyAll(0),
       trailing: [
@@ -318,10 +318,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
 
   //Item Count
   Widget itemCounter() {
-    return Padding(
-      padding: const EdgeInsets.only(left: 10, bottom: 5),
-      child: Text('${filteredItems.length} / ${items.length} Items'),
-    );
+    return Padding(padding: const EdgeInsets.only(bottom: 2, right: 5), child: Text('${filteredItems.length} / ${items.length} Items', style: TextStyle(fontSize: 16)));
   }
 
   //Filters
@@ -378,7 +375,9 @@ class _HomePageState extends State<HomePage> with WindowListener {
       hintText: 'Search Filters',
       padding: MaterialStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
       constraints: BoxConstraints(minHeight: 30, maxHeight: 30, maxWidth: double.infinity),
-      side: MaterialStatePropertyAll(BorderSide(width: 1.5, color: Theme.of(context).hoverColor)),
+      shape: MaterialStateProperty.resolveWith((states) {
+        return RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).primaryColor), borderRadius: const BorderRadius.all(Radius.circular(15)));
+      }),
       backgroundColor: MaterialStatePropertyAll(Theme.of(context).canvasColor),
       elevation: MaterialStatePropertyAll(0),
       trailing: [
@@ -565,8 +564,13 @@ class _HomePageState extends State<HomePage> with WindowListener {
   }
 
   Widget filterBoxBtn() {
-    return MaterialButton(
-        minWidth: 180,
+    return Tooltip(
+      message: filterBoxShow ? 'Hide Filter Box' : 'Show Filter Box',
+      textStyle: TextStyle(fontSize: 14, color: Theme.of(context).buttonTheme.colorScheme!.primary),
+      decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.background),
+      enableTapToDismiss: true,
+      child: MaterialButton(
+        minWidth: 30,
         onPressed: filterBoxShow
             ? () async {
                 final prefs = await SharedPreferences.getInstance();
@@ -580,9 +584,9 @@ class _HomePageState extends State<HomePage> with WindowListener {
                 filterBoxShow = true;
                 setState(() {});
               },
-        child: Row(
-          children: [filterBoxShow ? Icon(Icons.filter_alt_outlined) : Icon(Icons.filter_list_alt), SizedBox(width: 5), Text(filterBoxShow ? 'Hide Filters' : 'Show Filters')],
-        ));
+        child: filterBoxShow ? Icon(Icons.filter_alt_outlined) : Icon(Icons.filter_list_alt),
+      ),
+    );
   }
 
   Widget clearAllFiltersBtn() {
