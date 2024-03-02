@@ -44,7 +44,7 @@ Future<void> patchNotesDialog(context) async {
             child: const Text('Download Update'),
             onPressed: () {
               Navigator.of(context).pop();
-              //appDownloadDialog(context);
+              appDownloadDialog(context);
             },
           ),
         ],
@@ -63,14 +63,14 @@ Future<void> appDownloadDialog(context) async {
         WidgetsBinding.instance.addPostFrameCallback((_) async {
           if (_downloadPercent <= 0 && _downloadErrorMsg.isEmpty) {
             try {
-              await dio.download('https://github.com/KizKizz/pso2ngs_file_downloader/releases/download/v$newVersion/PSO2NGSModManager_v$newVersion.zip',
+              await dio.download('https://github.com/KizKizz/pso2ngs_file_downloader/releases/download/v$newVersion/PSO2NGSFileDownloader_v$newVersion.zip',
                   Uri.file('${Directory.current.path}/appUpdate/PSO2NGSFileDownloader_v$newVersion.zip').toFilePath(), options: Options(headers: {HttpHeaders.acceptEncodingHeader: "*"}),
                   onReceiveProgress: (received, total) async {
                 if (total != -1) {
                   _downloadPercent = received / total * 100;
                   if (_downloadPercent >= 100) {
                     await Future.delayed(const Duration(milliseconds: 100)); 
-                    await extractFileToDisk(Uri.file('${Directory.current.path}/appUpdate/PSO2NGSModManager_v$newVersion.zip').toFilePath(),
+                    await extractFileToDisk(Uri.file('${Directory.current.path}/appUpdate/PSO2NGSFileDownloader_v$newVersion.zip').toFilePath(),
                         Uri.file('${Directory.current.path}/appUpdate/PSO2NGSFileDownloader_v$newVersion').toFilePath(),
                         asyncWrite: false);
                     try {
