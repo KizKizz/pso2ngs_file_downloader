@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:provider/provider.dart';
+import 'package:pso2ngs_file_locator/app_update.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/functions/ice_download.dart';
 import 'package:pso2ngs_file_locator/functions/icon_load.dart';
@@ -482,44 +483,40 @@ class _HomePageState extends State<HomePage> with WindowListener {
                     padding: const EdgeInsets.only(left: 5),
                     child: Text('New version: $newVersion - Current version: $appVersion'),
                   ),
-                  // TextButton(
-                  //     onPressed: (() {
-                  //       setState(() {
-                  //         patchNotesDialog(context);
-                  //       });
-                  //     }),
-                  //     child: Text(curLangText!.uiPatchNote)),
                 ],
               ),
-              Row(
-                children: [
-                  // Padding(
-                  //   padding: const EdgeInsets.only(right: 5),
-                  //   child: ElevatedButton(
-                  //       onPressed: (() async {
-                  //         final prefs = await SharedPreferences.getInstance();
-                  //         prefs.setString('versionToSkipUpdate', appVersion);
-                  //         versionToSkipUpdate = appVersion;
-                  //         Provider.of<StateProvider>(context, listen: false).isUpdateAvailableFalse();
-                  //         setState(() {});
-                  //       }),
-                  //       child: Text(curLangText!.uiSkipMMUpdate)),
-                  // ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 5),
-                    child: ElevatedButton(
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: Row(
+                  children: [
+                    // Padding(
+                    //   padding: const EdgeInsets.only(right: 5),
+                    //   child: ElevatedButton(
+                    //       onPressed: (() async {
+                    //         final prefs = await SharedPreferences.getInstance();
+                    //         prefs.setString('versionToSkipUpdate', appVersion);
+                    //         versionToSkipUpdate = appVersion;
+                    //         Provider.of<StateProvider>(context, listen: false).isUpdateAvailableFalse();
+                    //         setState(() {});
+                    //       }),
+                    //       child: Text(curLangText!.uiSkipMMUpdate)),
+                    // ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 5),
+                      child: ElevatedButton(
+                          onPressed: (() {
+                            Provider.of<StateProvider>(context, listen: false).isUpdateAvailableFalse();
+                            setState(() {});
+                          }),
+                          child: Text('Close')),
+                    ),
+                    ElevatedButton(
                         onPressed: (() {
-                          Provider.of<StateProvider>(context, listen: false).isUpdateAvailableFalse();
-                          setState(() {});
+                          patchNotesDialog(context);
                         }),
-                        child: Text('Close')),
-                  ),
-                  ElevatedButton(
-                      onPressed: (() {
-                        //patchNotesDialog(context);
-                      }),
-                      child: Text('Update')),
-                ],
+                        child: Text('Update')),
+                  ],
+                ),
               )
             ],
           ),
