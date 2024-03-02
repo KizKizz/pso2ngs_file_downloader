@@ -1,16 +1,17 @@
-# pso2ngs_file_locator
+# PSO2NGS File Downloader
+An app to search, view and download PSO2NGS original game files
 
-A new Flutter project.
+![image](https://github.com/KizKizz/pso2ngs_file_downloader/assets/101075148/ed121015-16fa-40bc-9bb2-936b9793bd51)
 
-## Getting Started
+## Plans
+More improvements and bug fixes
 
-This project is a starting point for a Flutter application.
+## Built With
 
-A few resources to get you started if this is your first Flutter project:
+Flutter and various libraries from [pub.dev](https://pub.dev/packages)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+[Zamboni](https://github.com/Shadowth117/Zamboni)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Found a bug? [Leave a message here](https://github.com/KizKizz/pso2ngs_file_downloader/issues)
+
+Made by キス★ (KizKizz)
