@@ -6,6 +6,7 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/data_loaders/ref_sheets.dart';
@@ -80,10 +81,10 @@ class _SplashState extends State<Splash> {
   bool isDarkMode = true;
   String loadingStatus = '';
 
-  
-
   @override
   void initState() {
+    getAppVer();
+
     if (kDebugMode) {
       iconsDir.createSync(recursive: true);
     }
@@ -290,7 +291,12 @@ class _SplashState extends State<Splash> {
     super.initState();
   }
 
- 
+  Future<void> getAppVer() async {
+    PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    appVersion = packageInfo.version;
+    //appVersion = '2.4.10';
+  }
+
   Future<void> themeModeCheck() async {
     final prefs = await SharedPreferences.getInstance();
     isDarkMode = (prefs.getBool('isDarkMode') ?? true);
@@ -316,25 +322,25 @@ class _SplashState extends State<Splash> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            SizedBox(
-              width: 200,
-              child: Image.asset('assets/images/logo.png'),
-            ),
-            const Spacer(),
-            Text(
-              loadingStatus,
-              textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 20),
-            ),
-            const SizedBox(
-              height: 100,
-            ),
-          ],
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: MediaQuery.of(context).size.height / 4),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SizedBox(
+                width: 200,
+                child: Image.asset('assets/images/logo.png'),
+              ),
+              const Spacer(),
+              Text(
+                loadingStatus,
+                textAlign: TextAlign.center,
+                style: const TextStyle(fontSize: 20),
+              ),
+            ],
+          ),
         ),
       ),
     );

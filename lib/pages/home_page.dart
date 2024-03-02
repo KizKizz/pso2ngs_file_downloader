@@ -42,7 +42,6 @@ class _HomePageState extends State<HomePage> with WindowListener {
 
   @override
   void initState() {
-    getAppVer();
     checkForUpdates(context);
     windowManager.addListener(this);
     if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
@@ -85,12 +84,6 @@ class _HomePageState extends State<HomePage> with WindowListener {
     super.initState();
   }
 
-  Future<void> getAppVer() async {
-    PackageInfo packageInfo = await PackageInfo.fromPlatform();
-    appVersion = packageInfo.version;
-    //appVersion = '2.4.10';
-  }
-
   @override
   Future<void> onWindowResized() async {
     Size curWindowSize = await windowManager.getSize();
@@ -122,7 +115,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
         toolbarHeight: 30,
         elevation: 10,
         title: searchBox(),
-        actions: [itemCounter(), downloadMenuBtn(), filterBoxBtn(), lightDarkModeBtn()],
+        actions: [itemCounter(), downloadMenuBtn(), filterBoxBtn(), lightDarkModeBtn(), aboutBtn()],
       ),
       bottomNavigationBar: context.watch<StateProvider>().isUpdateAvailable ? newVersionBanner() : null,
       body: Padding(
@@ -472,6 +465,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
           ),
           content: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Row(
                 children: [
@@ -486,7 +480,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 10),
+                padding: EdgeInsets.zero,
                 child: Row(
                   children: [
                     // Padding(
@@ -628,6 +622,44 @@ class _HomePageState extends State<HomePage> with WindowListener {
           })),
           controller: menuAnchorController,
           menuChildren: downloadedItemList),
+    );
+  }
+
+  Widget aboutBtn() {
+    return Tooltip(
+      message: 'About',
+      textStyle: TextStyle(fontSize: 14, color: Theme.of(context).buttonTheme.colorScheme!.primary),
+      decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.background),
+      enableTapToDismiss: true,
+      child: MenuAnchor(
+          builder: (BuildContext context, MenuController controller, Widget? child) {
+            return MaterialButton(
+              minWidth: 30,
+              child: const Icon(
+                Icons.info_outline,
+              ),
+              onPressed: () {
+                if (controller.isOpen) {
+                  controller.close();
+                } else {
+                  controller.open();
+                }
+              },
+            );
+          },
+          style: MenuStyle(shape: MaterialStateProperty.resolveWith((states) {
+            return RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5)));
+          })),
+          menuChildren: [
+            Padding(
+              padding: const EdgeInsets.only(top: 5, bottom: 5, left: 5, right: 5),
+              child: Text('Version: $appVersion'),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 0, bottom: 5, left: 5, right: 5),
+              child: Text('Made by キス★ (KizKizz)'),
+            )
+          ]),
     );
   }
 }
