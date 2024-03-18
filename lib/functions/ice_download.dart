@@ -137,7 +137,7 @@ Future<void> filesDownload(context, Item item) async {
     List<String> nameStrings = [];
     item.infos.forEach((key, value) {
       if (key.toLowerCase().contains('name') && value.isNotEmpty) {
-        nameStrings.add(value);
+        nameStrings.add(value.replaceAll(RegExp(charToReplace), '_').trim());
       }
     });
     if (nameStrings.isEmpty) {

@@ -1,8 +1,8 @@
 {
     "name": "PSO2NGS File Downloader",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": [
-        "Initial release"
+        "Bug fixes"
     ],
     "windows_file": "",
     "linux_file": ""
