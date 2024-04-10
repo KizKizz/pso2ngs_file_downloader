@@ -1,4 +1,5 @@
-﻿＊ソウル・オブ・ウォパル,* Soul of Vopar,item/weapon/it_wp_14_100.ice,e6\2968426e0fbeacef42dce1a3fd80d0
+﻿,,item/weapon/it_wp_14_044.ice,1a\6785dd6dc6b2a1a6c9fd6fdb722cb8
+＊ソウル・オブ・ウォパル,* Soul of Vopar,item/weapon/it_wp_14_100.ice,e6\2968426e0fbeacef42dce1a3fd80d0
 カザミノタチ,Kazami-no-tachi,item/weapon/it_wp_14_169.ice,47\4f667b35575606c034f84122586f77
 サイカレボルシオ,Saika Revolsio,item/weapon/it_wp_14_210.ice,c1\453e96a2a1144cf93f054dbbb73d67
 サイカドミナシオ,Saika Dominacio,item/weapon/it_wp_14_211.ice,be\462556ae3f856e9136c1e2d7b0f70e
@@ -7,6 +8,7 @@
 ,,item/weapon/it_wp_14_325.ice,3b\460eb4569bd22b6dcaff1715e2daf4
 プリムカタナ,Primm Katana,item/weapon/it_wp_14_501.ice,6f\c88300a328b78c32b136b62acc1917
 リサージュカタナ,Resurgir Katana,item/weapon/it_wp_14_502.ice,ad\1a1f9baed02f5030008a537e17702a
+,,item/weapon/it_wp_14_503.ice,c3\2fd535053d92d6888b2aeb4c6d85eb
 ロクス・ラグフェンウォンド,Rokz Roughewn Katana,item/weapon/it_wp_14_504.ice,a7\c976a8312c4b6c8a21e6018a8674f3
 トロワーデカタナ,Trois De Katana,item/weapon/it_wp_14_505.ice,7b\7a57e3a2114e7d0603e302a37a97d6
 フォーシスカタナ,Foursis Katana,item/weapon/it_wp_14_506.ice,0d\3f28b5ca3086e78f5779eccdfd54f0
@@ -54,6 +56,7 @@
 ,,item/weapon/it_wp_14_549.ice,d8\28e4d9ef05cda053c7a46a6953e0d0
 ,,item/weapon/it_wp_14_550.ice,4c\8e0ca0275c9f054e7bb0ee521ab13d
 ,,item/weapon/it_wp_14_551.ice,ad\a34f3e7bb89e440d9a6f978bdee56c
+,,item/weapon/it_wp_14_552.ice,48\164d993255d720e3943ee7df423da1
 ,,item/weapon/it_wp_14_555.ice,06\3bc6586735acea390e911d2bb730ae
 ,,item/weapon/it_wp_14_556.ice,de\5467d4c7d1a2f16a4925cdda9afb00
 ,,item/weapon/it_wp_14_558.ice,d2\30a4b261f715b8df4c5b329448d671
@@ -68,3 +71,6 @@
 ,,item/weapon/it_wp_14_572.ice,68\e5e8ec71179f1bde2a12119e57a2a1
 ,,item/weapon/it_wp_14_573.ice,74\dda409dc0d810fa00bf3304ab2726e
 ,,item/weapon/it_wp_14_574.ice,f5\58b614326c93aae9266e357a9ab2b1
+,,item/weapon/it_wp_14_576.ice,36\56ed9fda96b9ff67a21e4d1174d33e
+,,item/weapon/it_wp_14_577.ice,d6\169a684561fc399c681cab326465d7
+,,item/weapon/it_wp_14_580.ice,c3\89dd27dfcdb70e17b926cc64ce04d2

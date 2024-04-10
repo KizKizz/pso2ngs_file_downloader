@@ -12,6 +12,7 @@
 プリムロッド,Primm Rod,item/weapon/it_wp_11_501.ice,8e\32477b9862b9c523401980ad21bdc5
 リサージュロッド,Resurgir Rod,item/weapon/it_wp_11_502.ice,32\3888223c6bfe16e738d425d32b5e0a
 トロワーデロッド,Trois De Rod,item/weapon/it_wp_11_503.ice,d7\31bbd8a29fe041c995b86c9d188cfc
+?,?,item/weapon/it_wp_11_504.ice,df\ad59d3df93b90487a42300fcf16bbb
 ＊マノフィーマルテ,* Manophi Marte,item/weapon/it_wp_11_505.ice,7c\269001e65a4477ab979a2503a24b8e
 サンクエイムロッド,Cinquem Rod,item/weapon/it_wp_11_506.ice,ac\ae247c538a241cfc9ca8edaad90238
 ゴルシカロッド,Gothica Rod,item/weapon/it_wp_11_507.ice,9c\b1e3ab5c0b584b384b2a79ea035ec1
@@ -53,6 +54,7 @@
 ,,item/weapon/it_wp_11_543.ice,17\030335558f236754d00969fae88582
 ,,item/weapon/it_wp_11_544.ice,7c\06527233af325ffe8e4d89698595ce
 ,,item/weapon/it_wp_11_545.ice,17\e5cba0f609b5798f0f84beecf98491
+,,item/weapon/it_wp_11_546.ice,2c\81770d9a3e7f5ec990759e96645668
 ,,item/weapon/it_wp_11_547.ice,90\6afa71a32c87115a44c0de43eb0816
 ,,item/weapon/it_wp_11_548.ice,5e\9e4db7e91e9bafdaa70bbc650cacbc
 ,,item/weapon/it_wp_11_549.ice,e1\c610d45c6668446b9fb6fa44072a7d
@@ -85,3 +87,9 @@
 ,,item/weapon/it_wp_11_584.ice,ff\a5dd51119cc82922df594b381d4e7a
 ,,item/weapon/it_wp_11_585.ice,93\19f45b20e13cda360e202df9e777a8
 ,,item/weapon/it_wp_11_586.ice,ed\d80d082f51f0067960c8a1d7d42d38
+,,item/weapon/it_wp_11_588.ice,49\1c89cbdd49804f9b77d3d9d1c267ec
+,,item/weapon/it_wp_11_589.ice,79\df47e1870536772aa054cded5845d4
+,,item/weapon/it_wp_11_590.ice,67\8af5674bff667bad1250169a07861d
+,,item/weapon/it_wp_11_591.ice,72\907f88885f69dffeae13e022254788
+,,item/weapon/it_wp_11_592.ice,10\b0982451511f6ece739e02bb8ab3da
+,,item/weapon/it_wp_11_593.ice,db\31198f872f7852736e93f243bc599d
