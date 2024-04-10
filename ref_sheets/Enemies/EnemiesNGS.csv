@@ -72,8 +72,10 @@ en_nat_month_common.ice,09\4283b93cc6a63c2dde5177f3b1507f
 フォンガルフ・ロア,Phongrulf Lore,en_r01_nat_wol_bi.ice,58\61fd2ac88593e0288f26d09e3a7dd2
 ガルフ・ロア,Grulf Lore,en_r01_nat_wol_sm.ice,29\0427f1ae7a58777cba63128ae32d0e
 en_nat_wol_common.ice,84\fdd28ce421ad3073b55e409c28c1dd
+アニバ・エンペラッピー,Anni Emperappy,en_r01_unk_emp_1ng.ice,96\de970b05eddca817a49b705717c0b4
 セレモ・エンペラッピー,Ceremo Emperappy,en_r01_unk_emp_10av.ice,4a\a14d0495ebdf0aba19f0b0171a1240
 セレモ・グレトラッピー,Ceremo Great Rappy,en_r01_unk_emp_10avbi.ice,f8\62cff7910b6d29076cd1113771fc29
+アニバ・エンペラッピー,Anni Emperappy,en_r01_unk_emp_1ng.ice,96\de970b05eddca817a49b705717c0b4
 ヤオロ・エンペラッピー,Yaolo Emperappy,en_r01_unk_emp_atm.ice,cf\0bd7af72fbf2808ab665ca58a32752
 ヤオロ・グレトラッピー,Yaolo Great Rappy,en_r01_unk_emp_atmbi.ice,cb\c5a464adab978f7f4a05914aaab85c
 エンペ・ラッピー,Emperappy,en_r01_unk_emp_ba.ice,99\cb335371269aeddc2c8fd273cc412a
@@ -90,6 +92,7 @@ en_nat_wol_common.ice,84\fdd28ce421ad3073b55e409c28c1dd
 トリト・グレトラッピー,Trickertreat Great Rappy,en_r01_unk_emp_habi.ice,c4\13db6e852b882b6c9a0dafb2b5120b
 スノム・エンペラッピー,Snome Emperappy,en_r01_unk_emp_wi2.ice,92\f567634143c6b4686212d834f06640
 スノム・グレトラッピー,Snome Great Rappy,en_r01_unk_emp_wi2bi.ice,ae\f87c8959437c955600861b2fe73b99
+アニバ・グレトラッピー,Anni Great Rappy,en_r01_unk_emp_1ngbi.ice,e1\f5c4b7bd5707f4263fb93b79fe8521
 en_unk_emp_common.ice,d6\dc27fc7e6818459ec7fd2797a30ecd
 アニバ・ラッピー,Anni Rappy,en_r01_unk_rap_1ng.ice,7d\6adda32907e5aa403c1fcdc7027de8
 セレモ・ラッピー,Ceremo Rappy,en_r01_unk_rap_9av.ice,d8\0a9922ca42e21542a84081216f2491
@@ -523,6 +526,7 @@ en_non_trt_common.ice,68\6aa7d24905ea09a6441e7a9c102431
 ,,en_gd_nyb_ex.ice,5f\8b2ac6cdeaa4ea1088b7f2a4513d8c
 en_gd_nyb_common.ice,51\c76204c733f9a562684eb64abcecd8
 マリオネス,Marioness,en_r05_gd_gho_ba.ice,a9\28d67c967835bf41eb177ff496f365
+ギルーヴァ,Giruva,en_r05_gd_gho_ch.ice,0f\1299e727a09000590258ad421f7c95
 en_gd_gho_common.ice,70\01215589d9b3360d46094a45705f8a
 ヴェノギア,Venogia,en_r05_gd_zft_ba.ice,ad\363b43e405da5c0c24da048e757eb2
 ヴェノギア・ヴェラ,Venogia Vera,en_r05_gd_zft_rai.ice,0e\ac7b2c4a5ab56f38709bccdb779ef5
@@ -558,6 +562,8 @@ en_stl_solsw_common.ice,4e\975ec113c2b32384f68709940acf19
 en_stl_bbd_common.ice,9e\28c10e7e704b9678698f7d849b7b10
 ゼレヴィン,Zelvin,en_r05_stl_mzc_ba.ice,7e\05983c856c7990aeb583a3f6a0eb14
 en_stl_mzc_common.ice,53\d32c80a3be14e5d9ceee5b0d89aff8
+ダークファルス・ダリオン,Dark Falz Dalion,en_r05_stl_dnt_ba.ice,5b\c2154e75afa47441f78c812c8f78ab
+en_stl_dnt_common.ice,54\de46f7b421fbea5b7c0927d178552c
 ドライヴェルズ,Dryverus,en_r05_stl_krb_ba.ice,8a\f85c810cbdbce07407f9f7f0e19bce
 en_stl_krb_common.ice,f6\ae5dd3152d1418aabaecea0ed1f18c
 ルイノ・ラグネ,Ruine Ragne,en_r05_rem_spi_ba.ice,d1\301cef273dc1ad92487085fb85b935
@@ -568,6 +574,9 @@ en_rem_dhu_common.ice,25\86d6076b555de8e488cf0304c5c635
 en_rem_bhu_common.ice,0d\66f2137bc6905ce4d410982e32f28a
 ルイノ・リンガーダ,Ruine Ringahda,en_r05_rem_ctl_ba.ice,f2\81770faf4908a4597bf2e8ff5f12cb
 en_rem_ctl_common.ice,08\fbde10151d35883476d53621318d9e
+ルイノ・ビブラス,Ruine Vibras,en_r05_rem_btl_ba.ice,e6\581965094775a2c259d8f54a6c1134
+ルイノ・エクゼクル,Ruine Exegul,en_r05_rem_des_ba.ice,34\56616d2e28b02d7518a2130dd88481
+en_rem_des_common.ice,22\c9e3106aad08b1883ed8e364335f87
 en_gd_flo_eff.ice,a8\42fb661ed8319ab2349b0be5578eee
 en_gd_gia_eff.ice,f8\3bab9cbdd38b0641a47a91a4dd7cb4
 en_gd_kpy_eff.ice,6e\0d8a1df8942306521ab87ef7027c80
