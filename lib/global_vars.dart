@@ -24,6 +24,7 @@ List<String> patchFileList = [];
 List<String> mixedFileList = [];
 List<Item> items = [];
 Directory refSheetsDir = Directory(Uri.file('${Directory.current.path}/ref_sheets').toFilePath());
+Directory refSheetsJPDir = Directory(Uri.file('${Directory.current.path}/ref_sheets_jp').toFilePath());
 Directory tempDir = Directory(Uri.file('${Directory.current.path}/temp').toFilePath());
 File itemDataJson = File(Uri.file('${Directory.current.path}/json/itemData.json').toFilePath());
 File itemFilterListJson = File(Uri.file('${Directory.current.path}/json/itemFilterList.json').toFilePath());
