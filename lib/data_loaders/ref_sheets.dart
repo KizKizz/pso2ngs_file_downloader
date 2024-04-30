@@ -227,7 +227,7 @@ Future<List<Item>> populateItemList() async {
     List<String> infos = [];
     List<String> csvContent = [];
 
-    String filePathInCsvDir = file.path.split('ref_sheets').last;
+    String filePathInCsvDir = file.path.split('ref_sheets_jp').last;
     final filePathParts = p.split(filePathInCsvDir);
 
     await File(file.path).openRead().transform(utf8.decoder).transform(const LineSplitter()).forEach((line) {
@@ -426,7 +426,8 @@ Future<List<Item>> populateItemList() async {
             '',
             headers,
             infos);
-        if (itemList.where((element) => element.compareJPName(newItem)).isEmpty) {
+        int matchedIndex = itemList.indexWhere((element) => element.compareNames(newItem));
+        if (matchedIndex == -1) {
           itemList.add(newItem);
         }
         //}

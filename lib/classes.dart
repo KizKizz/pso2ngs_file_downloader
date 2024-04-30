@@ -25,14 +25,55 @@ class Item {
     return false;
   }
 
-  bool compareJPName(Item bItem) {
-    String jpName = infos.entries.firstWhere((element) => element.key == 'Japanese Name', orElse: () => const MapEntry('null', 'null')).value;
-    String bItemJPName = bItem.infos.entries.firstWhere((element) => element.key == 'Japanese Name', orElse: () => const MapEntry('null', 'null')).value;
-    if (jpName == 'null' || bItemJPName == 'null') return false;
-    if (jpName == bItemJPName) {
-      return true;
-    } else {
+  // bool compareNames(Item bItem) {
+  //   String jpName = infos.entries.firstWhere((element) => element.key == 'Japanese Name', orElse: () => const MapEntry('null', 'null')).value;
+  //   String bItemJPName = bItem.infos.entries.firstWhere((element) => element.key == 'Japanese Name', orElse: () => const MapEntry('null', 'null')).value;
+  //   if (jpName == 'null' || bItemJPName == 'null') return false;
+  //   if (jpName == bItemJPName && jpName.isNotEmpty && bItemJPName.isNotEmpty) {
+  //     return true;
+  //   } else if (jpName.isEmpty && bItemJPName.isEmpty) {
+  //     String enName = infos.entries.firstWhere((element) => element.key == 'English Name', orElse: () => const MapEntry('null', 'null')).value;
+  //     String bItemENName = bItem.infos.entries.firstWhere((element) => element.key == 'English Name', orElse: () => const MapEntry('null', 'null')).value;
+  //     if (enName == 'null' || bItemENName == 'null' || enName.isEmpty || bItemENName.isEmpty) return false;
+  //     if (enName == bItemENName) return true;
+  //   }
+  //   return false;
+  // }
+
+  bool compareNames(Item bItem) {
+    if (csvFileName != bItem.csvFileName ||
+        csvFilePath != bItem.csvFilePath ||
+        // itemType != bItem.itemType ||
+        itemCategories.length != bItem.itemCategories.length 
+        //iconImagePath != bItem.iconImagePath ||
+        // infos.entries.length != bItem.infos.entries.length
+        ) {
       return false;
+    } else {
+      for (int i = 0; i < itemCategories.length; i++) {
+        if (itemCategories[i] != bItem.itemCategories[i]) {
+          return false;
+        }
+      }
+      String jpName = infos.entries.firstWhere((element) => element.key == 'Japanese Name', orElse: () => const MapEntry('null', 'null')).value;
+      String bItemJPName = bItem.infos.entries.firstWhere((element) => element.key == 'Japanese Name', orElse: () => const MapEntry('null', 'null')).value;
+      String enName = infos.entries.firstWhere((element) => element.key == 'English Name', orElse: () => const MapEntry('null', 'null')).value;
+      String bItemENName = bItem.infos.entries.firstWhere((element) => element.key == 'English Name', orElse: () => const MapEntry('null', 'null')).value;
+      if (jpName != bItemJPName && (jpName != 'null' || bItemJPName != 'null') && jpName.isNotEmpty && bItemJPName.isNotEmpty) {
+        return false;
+      }
+      if (enName != bItemENName && (enName != 'null' || bItemENName != 'null') && enName.isNotEmpty && bItemENName.isNotEmpty) {
+        return false;
+      }
+
+      if (infos.entries.length == bItem.infos.entries.length && infos.entries.length > 2 && bItem.infos.entries.length > 2) {
+        for (int i = 2; i < infos.entries.length; i++) {
+          if (infos.entries.elementAt(i).key != bItem.infos.entries.elementAt(i).key || infos.entries.elementAt(i).value != bItem.infos.entries.elementAt(i).value) {
+            return false;
+          }
+        }
+      }
+      return true;
     }
   }
 
