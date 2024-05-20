@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:flutter/material.dart';
 import 'package:path/path.dart' as p;
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
@@ -114,6 +115,9 @@ Future<List<Item>> populateItemList() async {
         } else if (filePathParts.last == 'DarkBlasts_DrivableVehiclesNGS.csv') {
           headers.addAll(['English Name', 'Japanese Name', 'Ice Hash']);
         } else {
+          if (filePathParts.last == 'MaleBodyPaint.csv') {
+            debugPrint('test');
+          }
           headers.addAll(csvContent[0].split(','));
           csvContent.removeAt(0);
         }
