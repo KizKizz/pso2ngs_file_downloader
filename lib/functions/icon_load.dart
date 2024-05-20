@@ -38,24 +38,31 @@ Future<File> getIconData(File iconIceFile, String saveLocation, String enItemNam
 Future<void> setIconImage(context, Item item) async {
   await tempDir.create(recursive: true);
   final enItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('English'), orElse: () => const MapEntry('null', 'null'));
-  String enItemName = '';
-  if (enItemNameEntry.key != 'null') {
-    enItemName = enItemNameEntry.value;
+  String itemName = '';
+  if (enItemNameEntry.key != 'null' && enItemNameEntry.value != '' && enItemNameEntry.value != ' ') {
+    itemName = enItemNameEntry.value;
+  } else {
+    final jpItemNameEntry = item.infos.entries.firstWhere((element) => element.key.contains('Japanese'), orElse: () => const MapEntry('null', 'null'));
+    if (jpItemNameEntry.key != 'null' && jpItemNameEntry.value != '' && jpItemNameEntry.value != ' ') {
+      itemName = jpItemNameEntry.value;
+    }
   }
-  String iconImageFilePath =
-      Uri.file('${iconsDir.path}${item.csvFilePath}/${p.basenameWithoutExtension(item.csvFileName)}/${enItemName.replaceAll(RegExp(charToReplace), '_').trim()}.png').toFilePath();
+  String iconImageFilePath = Uri.file('${iconsDir.path}${item.csvFilePath}/${p.basenameWithoutExtension(item.csvFileName)}/${itemName.replaceAll(RegExp(charToReplace), '_').trim()}.png').toFilePath();
   if (File(iconImageFilePath).existsSync()) {
     item.iconImagePath = iconImageFilePath.replaceFirst(Uri.file(Directory.current.path).toFilePath(), '');
   } else {
-    if (item.infos.entries.where((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).isNotEmpty && item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).value.isNotEmpty) {
+    if (item.infos.entries.where((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).isNotEmpty &&
+        item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).value.isNotEmpty) {
       String iconIceName = item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).value;
       if (iconIceName.isNotEmpty) {
         File downloadedImageIce = await downloadIceFromOfficial(context, iconIceName, tempDir.path);
         if (downloadedImageIce.existsSync()) {
-          final iconImage = await getIconData(downloadedImageIce, Uri.file('${iconsDir.path}${item.csvFilePath}/${p.basenameWithoutExtension(item.csvFileName)}').toFilePath(), enItemName);
+          final iconImage = await getIconData(downloadedImageIce, Uri.file('${iconsDir.path}${item.csvFilePath}/${p.basenameWithoutExtension(item.csvFileName)}').toFilePath(), itemName);
           if (iconImage.path.isNotEmpty && iconImage.existsSync()) {
             item.iconImagePath = iconImage.path.replaceFirst(Uri.file(Directory.current.path).toFilePath(), '');
           }
+        } else {
+          debugPrint('Cannot fetch icon for ${item.csvFileName} > $itemName');
         }
       }
     }
