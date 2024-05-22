@@ -42,9 +42,9 @@ class Item {
 
   bool compareNames(Item bItem) {
     if (csvFileName != bItem.csvFileName ||
-        csvFilePath != bItem.csvFilePath ||
-        // itemType != bItem.itemType ||
-        itemCategories.length != bItem.itemCategories.length 
+            csvFilePath != bItem.csvFilePath ||
+            // itemType != bItem.itemType ||
+            itemCategories.length != bItem.itemCategories.length
         //iconImagePath != bItem.iconImagePath ||
         // infos.entries.length != bItem.infos.entries.length
         ) {
@@ -124,6 +124,15 @@ void itemDataSave() {
   items.map((item) => item.toJson()).toList();
   const JsonEncoder encoder = JsonEncoder.withIndent('  ');
   itemDataJson.writeAsStringSync(encoder.convert(items));
+
+  //separate data and save for mod manager
+  if (!playerItemDataJson.existsSync()) {
+    playerItemDataJson.createSync(recursive: true);
+  }
+  final playerItems = items.where((element) => element.csvFilePath.contains('\\Player') || element.csvFilePath.contains('\\UI\\Vital Gauge')).toList();
+  playerItems.map((item) => item.toJson()).toList();
+  const JsonEncoder encoder2 = JsonEncoder.withIndent('  ');
+  playerItemDataJson.writeAsStringSync(encoder2.convert(playerItems));
 }
 
 void filterDataSave() {

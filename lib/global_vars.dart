@@ -27,6 +27,7 @@ Directory refSheetsDir = Directory(Uri.file('${Directory.current.path}/ref_sheet
 Directory refSheetsJPDir = Directory(Uri.file('${Directory.current.path}/ref_sheets_jp').toFilePath());
 Directory tempDir = Directory(Uri.file('${Directory.current.path}/temp').toFilePath());
 File itemDataJson = File(Uri.file('${Directory.current.path}/json/itemData.json').toFilePath());
+File playerItemDataJson = File(Uri.file('${Directory.current.path}/json/playerItemData.json').toFilePath());
 File itemFilterListJson = File(Uri.file('${Directory.current.path}/json/itemFilterList.json').toFilePath());
 Directory iconsDir = Directory(Uri.file('${Directory.current.path}/icons').toFilePath());
 Directory downloadDir = Directory(Uri.file('${Directory.current.path}/Downloaded Items').toFilePath());
