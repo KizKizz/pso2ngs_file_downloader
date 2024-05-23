@@ -182,7 +182,7 @@ class _SplashState extends State<Splash> {
 
             final matchedItem = jsonItems.firstWhere(
               (element) => element.compare(item),
-              orElse: () => Item('null', '', '', [], '', {}),
+              orElse: () => Item('null', '', '', [], '', -1, '', {}),
             );
 
             if (matchedItem.csvFileName != 'null') {
@@ -318,6 +318,7 @@ class _SplashState extends State<Splash> {
   Future<void> miscSettingsCheck() async {
     final prefs = await SharedPreferences.getInstance();
     showEmptyInfoFields = (prefs.getBool('showEmptyInfoFields') ?? false);
+    extractIceFilesAfterDownload = (prefs.getBool('extractIceFilesAfterDownload') ?? false);
   }
 
   @override

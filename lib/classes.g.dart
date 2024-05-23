@@ -13,6 +13,8 @@ Item _$ItemFromJson(Map<String, dynamic> json) => Item(
       (json['itemCategories'] as List<dynamic>)
           .map((e) => e as String)
           .toList(),
+      json['category'] as String?,
+      json['categoryIndex'] as int?,
       json['iconImagePath'] as String,
       Map<String, String>.from(json['infos'] as Map),
     );
@@ -22,6 +24,8 @@ Map<String, dynamic> _$ItemToJson(Item instance) => <String, dynamic>{
       'csvFilePath': instance.csvFilePath,
       'itemType': instance.itemType,
       'itemCategories': instance.itemCategories,
+      'category': instance.category,
+      'categoryIndex': instance.categoryIndex,
       'iconImagePath': instance.iconImagePath,
       'infos': instance.infos,
     };
