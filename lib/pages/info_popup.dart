@@ -1,8 +1,8 @@
 import 'dart:io';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
@@ -91,41 +91,87 @@ Future<bool> itemInfoDialog(context, Item item) async {
               ),
               actionsPadding: const EdgeInsets.only(bottom: 10, left: 16, right: 16),
               actions: <Widget>[
-                Tooltip(
-                  message: showEmptyInfoFields ? 'Hide Empty Fields' : 'Show Empty Fields',
-                  textStyle: TextStyle(fontSize: 14, color: Theme.of(context).buttonTheme.colorScheme!.primary),
-                  decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.background),
-                  enableTapToDismiss: true,
-                  child: CupertinoCheckbox(
-                    value: showEmptyInfoFields,
-                    onChanged: (value) async {
-                      if (showEmptyInfoFields) {
-                        showEmptyInfoFields = false;
-                        final prefs = await SharedPreferences.getInstance();
-                        prefs.setBool('showEmptyInfoFields', showEmptyInfoFields);
-                        infos = item.infos.entries.where((element) => !element.key.toString().toLowerCase().contains('name') && element.value.isNotEmpty).map((e) => "${e.key}: ${e.value}").toList();
-                      } else {
-                        showEmptyInfoFields = true;
-                        final prefs = await SharedPreferences.getInstance();
-                        prefs.setBool('showEmptyInfoFields', showEmptyInfoFields);
-                        infos = item.infos.entries.where((element) => !element.key.toString().toLowerCase().contains('name')).map((e) => "${e.key}: ${e.value}").toList();
-                      }
-                      setState(
-                        () {},
-                      );
-                    },
-                  ),
-                ),
-                ElevatedButton(
-                    child: const Text('Close'),
-                    onPressed: () async {
-                      Navigator.pop(context, false);
-                    }),
-                ElevatedButton(
-                    onPressed: () async {
-                      filesDownload(context, item);
-                    },
-                    child: const Text('Download'))
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 5),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                            width: 180,
+                            child: ElevatedButton(
+                              onPressed: () async {
+                                if (showEmptyInfoFields) {
+                                  showEmptyInfoFields = false;
+                                  final prefs = await SharedPreferences.getInstance();
+                                  prefs.setBool('showEmptyInfoFields', showEmptyInfoFields);
+                                  infos = item.infos.entries
+                                      .where((element) => !element.key.toString().toLowerCase().contains('name') && element.value.isNotEmpty)
+                                      .map((e) => "${e.key}: ${e.value}")
+                                      .toList();
+                                } else {
+                                  showEmptyInfoFields = true;
+                                  final prefs = await SharedPreferences.getInstance();
+                                  prefs.setBool('showEmptyInfoFields', showEmptyInfoFields);
+                                  infos = item.infos.entries.where((element) => !element.key.toString().toLowerCase().contains('name')).map((e) => "${e.key}: ${e.value}").toList();
+                                }
+                                setState(
+                                  () {},
+                                );
+                              },
+                              child: Text(showEmptyInfoFields ? 'Hide Empty Fields' : 'Show Empty Fields'),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 5),
+                            child: SizedBox(
+                              width: 200,
+                              child: ElevatedButton(
+                                onPressed: () async {
+                                  if (extractIceFilesAfterDownload) {
+                                    extractIceFilesAfterDownload = false;
+                                    final prefs = await SharedPreferences.getInstance();
+                                    prefs.setBool('extractIceFilesAfterDownload', extractIceFilesAfterDownload);
+                                  } else {
+                                    extractIceFilesAfterDownload = true;
+                                    final prefs = await SharedPreferences.getInstance();
+                                    prefs.setBool('extractIceFilesAfterDownload', extractIceFilesAfterDownload);
+                                  }
+                                  setState(
+                                    () {},
+                                  );
+                                },
+                                child: Text(extractIceFilesAfterDownload ? 'Extract Ice Files: ON' : 'Extract Ice Files: OFF'),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 5),
+                          child: ElevatedButton(
+                              child: const Text('Close'),
+                              onPressed: () async {
+                                Navigator.pop(context, false);
+                              }),
+                        ),
+                        ElevatedButton(
+                            onPressed: () async {
+                              filesDownload(context, item);
+                            },
+                            child: const Text('Download'))
+                      ],
+                    )
+                  ],
+                )
               ]);
         });
       });

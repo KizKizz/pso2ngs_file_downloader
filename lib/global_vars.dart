@@ -39,6 +39,7 @@ bool filterBoxShow = true;
 List<Filter> itemFilters = [];
 List<String> selectedItemFilters = [];
 bool showEmptyInfoFields = false;
+bool extractIceFilesAfterDownload = false;
 List<Widget> downloadedItemList = [];
 List<String> searchedFilterList = [];
 List<String> allFilterList = [];

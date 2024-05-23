@@ -318,6 +318,7 @@ class _SplashState extends State<Splash> {
   Future<void> miscSettingsCheck() async {
     final prefs = await SharedPreferences.getInstance();
     showEmptyInfoFields = (prefs.getBool('showEmptyInfoFields') ?? false);
+    extractIceFilesAfterDownload = (prefs.getBool('extractIceFilesAfterDownload') ?? false);
   }
 
   @override

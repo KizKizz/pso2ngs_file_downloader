@@ -154,8 +154,8 @@ Future<void> filesDownload(context, Item item) async {
       if (downloadableKeys.where((element) => entry.key.toString().toLowerCase().contains(element.toLowerCase())).isNotEmpty && entry.value.isNotEmpty) {
         if (subDir.existsSync()) {
           File downloadedFile = await downloadIceFromOfficial(context, entry.value, subDir.path);
-          if (downloadedFile.existsSync()) {
-            await Process.run('$zamboniExePath -outdir "${subDir.path}"', [downloadedFile.path]);
+          if (downloadedFile.existsSync() && extractIceFilesAfterDownload) {
+            await Process.run('$zamboniExePath -outdir "${downloadedFile.parent.path}"', [downloadedFile.path]);
           }
         }
       }
