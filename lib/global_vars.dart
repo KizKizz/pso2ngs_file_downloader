@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 
-String appTitle = 'PSO2NGS File Locator';
+String appTitle = 'PSO2NGS File Downloader';
 double appWidth = 0;
 double appHeight = 0;
 String appVersion = '';
@@ -31,9 +31,10 @@ File playerItemDataJson = File(Uri.file('${Directory.current.path}/json/playerIt
 File itemFilterListJson = File(Uri.file('${Directory.current.path}/json/itemFilterList.json').toFilePath());
 Directory iconsDir = Directory(Uri.file('${Directory.current.path}/icons').toFilePath());
 Directory downloadDir = Directory(Uri.file('${Directory.current.path}/Downloaded Items').toFilePath());
+String zamboniExePath = Uri.file('${Directory.current.path}/Zamboni/Zamboni.exe').toFilePath();
 String githubIconPath = 'https://raw.githubusercontent.com/KizKizz/pso2ngs_file_downloader/main';
 String charToReplace = '[\\/:*?"<>|]';
-bool overrideDebugMode = false;
+bool overrideDebugMode = true;
 bool filterBoxShow = true;
 List<Filter> itemFilters = [];
 List<String> selectedItemFilters = [];
@@ -41,3 +42,22 @@ bool showEmptyInfoFields = false;
 List<Widget> downloadedItemList = [];
 List<String> searchedFilterList = [];
 List<String> allFilterList = [];
+List<String> defaultCategoryDirs = [
+  'Accessories', //0
+  'Basewears', //1
+  'Body Paints', //2
+  'Cast Arm Parts', //3
+  'Cast Body Parts', //4
+  'Cast Leg Parts', //5
+  'Costumes', //6
+  'Emotes', //7
+  'Eyes', //8
+  'Face Paints', //9
+  'Hairs', //10
+  'Innerwears', //11
+  'Mags', //12
+  'Misc', //13
+  'Motions', //14
+  'Outerwears', //15
+  'Setwears' //16
+];
