@@ -7,13 +7,14 @@ part 'classes.g.dart';
 
 @JsonSerializable()
 class Item {
-  Item(this.csvFileName, this.csvFilePath, this.itemType, this.itemCategories, this.category, this.categoryIndex, this.iconImagePath, this.infos);
+  Item(this.csvFileName, this.csvFilePath, this.itemType, this.itemCategories, this.category, this.subCategory, this.categoryIndex, this.iconImagePath, this.infos);
 
   String csvFileName;
   String csvFilePath;
   String itemType;
   List<String> itemCategories;
   String? category;
+  String? subCategory;
   int? categoryIndex;
   String iconImagePath;
   Map<String, String> infos = {};
@@ -102,8 +103,9 @@ class Item {
     }
   }
 
-  Item.fromMap(String csvFileName, String csvFilePath, String itemType, List<String> itemCategories, String category, int categoryIndex, String iconImagePath, Map<String, String> infos)
-      : this(csvFileName = csvFileName, csvFilePath = csvFilePath, itemType = itemType, itemCategories = itemCategories, category = category, categoryIndex = categoryIndex, iconImagePath = iconImagePath, infos = infos);
+  Item.fromMap(String csvFileName, String csvFilePath, String itemType, List<String> itemCategories, String category, String subCategory, int categoryIndex, String iconImagePath, Map<String, String> infos)
+      : this(csvFileName = csvFileName, csvFilePath = csvFilePath, itemType = itemType, itemCategories = itemCategories, category = category, subCategory = subCategory, categoryIndex = categoryIndex,
+            iconImagePath = iconImagePath, infos = infos);
 
   factory Item.fromJson(Map<String, dynamic> json) => _$ItemFromJson(json);
   Map<String, dynamic> toJson() => _$ItemToJson(this);

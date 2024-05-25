@@ -104,20 +104,24 @@ Future<List<Item>> populateItemList() async {
         csvContent.removeAt(0);
         break;
       case 'Player':
-        List<String> threeFieldsFiles = ['CasealVoices.csv', 'CastVoices.csv', 'DarkBlasts_DrivableVehicles.csv', 'FemaleVoices.csv', 'MaleVoices.csv', 'PhotonBlastCreatures.csv'];
-        List<String> fourFieldsFiles = [
-          'Mags.csv',
-          'MagsNGS.csv',
+        List<String> threeFieldsFiles = [
+          'CasealVoices.csv',
+          'CastVoices.csv',
+          'DarkBlasts_DrivableVehicles.csv',
+          'FemaleVoices.csv',
+          'MaleVoices.csv',
+          'PhotonBlastCreatures.csv',
           'General Character Animations.csv',
           'General Character Effects.csv',
           'General Character Animations NGS.csv',
           'General Reboot Character Effects.csv'
         ];
+        List<String> fourFieldsFiles = ['Mags.csv', 'MagsNGS.csv'];
 
         if (threeFieldsFiles.contains(filePathParts.last)) {
           headers.addAll(['Japanese Name', 'English Name', 'Ice Hash']);
           for (var element in csvContent) {
-            element.replaceAll(', (Not found)', '').trim();
+            csvContent[csvContent.indexOf(element)] = element.replaceAll(',(Not found)', '').trim();
           }
           for (var line in csvContent) {
             int fields = line.split(',').length;
@@ -139,7 +143,7 @@ Future<List<Item>> populateItemList() async {
         } else if (fourFieldsFiles.contains(filePathParts.last)) {
           headers.addAll(['Japanese Name', 'English Name', 'Ice Hash']);
           for (var element in csvContent) {
-            element.replaceAll(', (Not found)', '').trim();
+            csvContent[csvContent.indexOf(element)] = element.replaceAll(',(Not found)', '').trim();
           }
           for (var line in csvContent) {
             int fields = line.split(',').length;
@@ -248,12 +252,52 @@ Future<List<Item>> populateItemList() async {
     for (var line in csvContent) {
       if (line.split(',').isNotEmpty) {
         int categoryIndex = csvFileList.indexWhere((element) => element.where((e) => e == p.basename(file.path)).isNotEmpty);
+        String enItemName = '';
+        String jpItemName = '';
         List<String> fields = line.split(',');
         for (var element in fields) {
           fields[fields.indexOf(element)] = element.trim();
         }
         infos.addAll(fields);
-        //if (p.basename(file.path) == 'Accessories.csv') {
+
+        int enItemNameIndex = headers.indexOf('English Name');
+        int jpItemNameIndex = headers.indexOf('Japanese Name');
+        if (enItemNameIndex != -1) {
+          enItemName = infos[enItemNameIndex];
+        }
+        if (jpItemNameIndex != -1) {
+          jpItemName = infos[jpItemNameIndex];
+        }
+
+        String subCategory = '';
+        if (categoryIndex == 1) {
+          //Basewears
+          if (enItemName.contains('[Ba]') || jpItemName.contains('[Ba]')) {
+            subCategory = 'Basewear';
+          } else if (enItemName.contains('[Se]') || jpItemName.contains('[Se]')) {
+            subCategory = 'Setwear';
+          } else if (enItemName.contains('[Fu]') || jpItemName.contains('[Fu]')) {
+            subCategory = 'Full Setwear';
+          }
+        } else if (categoryIndex == 14) {
+          //Motions
+          if (p.basename(file.path) == 'SubstituteMotionGlide.csv') {
+            subCategory = 'Glide Motion';
+          } else if (p.basename(file.path) == 'SubstituteMotionJump.csv') {
+            subCategory = 'Jump Motion';
+          } else if (p.basename(file.path) == 'SubstituteMotionLanding.csv') {
+            subCategory = 'Landing Motion';
+          } else if (p.basename(file.path) == 'SubstituteMotionPhotonDash.csv') {
+            subCategory = 'Dash Motion';
+          } else if (p.basename(file.path) == 'SubstituteMotionRun.csv') {
+            subCategory = 'Run Motion';
+          } else if (p.basename(file.path) == 'SubstituteMotionStandby.csv') {
+            subCategory = 'Standby Motion';
+          } else if (p.basename(file.path) == 'SubstituteMotionSwim.csv') {
+            subCategory = 'Swim Motion';
+          }
+        }
+
         itemList.add(await itemFromCsv(
             p.basename(file.path),
             p.dirname(filePathInCsvDir),
@@ -264,11 +308,11 @@ Future<List<Item>> populateItemList() async {
                     : '',
             [p.basenameWithoutExtension(file.path)],
             categoryIndex != -1 ? defaultCategoryDirs[categoryIndex] : defaultCategoryDirs[13],
+            subCategory,
             categoryIndex,
             '',
             headers,
             infos));
-        //}
         infos.clear();
       }
     }
@@ -321,20 +365,20 @@ Future<List<Item>> populateItemList() async {
         csvContent.removeAt(0);
         break;
       case 'Player':
-        List<String> threeFieldsFiles = ['CasealVoices.csv', 'CastVoices.csv', 'DarkBlasts_DrivableVehicles.csv', 'FemaleVoices.csv', 'MaleVoices.csv', 'PhotonBlastCreatures.csv'];
-        List<String> fourFieldsFiles = [
-          'Mags.csv',
-          'MagsNGS.csv',
+        List<String> threeFieldsFiles = ['CasealVoices.csv', 'CastVoices.csv', 'DarkBlasts_DrivableVehicles.csv', 'FemaleVoices.csv', 'MaleVoices.csv', 'PhotonBlastCreatures.csv',
           'General Character Animations.csv',
           'General Character Effects.csv',
           'General Character Animations NGS.csv',
-          'General Reboot Character Effects.csv'
+          'General Reboot Character Effects.csv'];
+        List<String> fourFieldsFiles = [
+          'Mags.csv',
+          'MagsNGS.csv'
         ];
 
         if (threeFieldsFiles.contains(filePathParts.last)) {
           headers.addAll(['Japanese Name', 'English Name', 'Ice Hash']);
           for (var element in csvContent) {
-            element.replaceAll(', (Not found)', '').trim();
+            csvContent[csvContent.indexOf(element)] = element.replaceAll(',(Not found)', '').trim();
           }
           for (var line in csvContent) {
             int fields = line.split(',').length;
@@ -356,7 +400,7 @@ Future<List<Item>> populateItemList() async {
         } else if (fourFieldsFiles.contains(filePathParts.last)) {
           headers.addAll(['Japanese Name', 'English Name', 'Ice Hash']);
           for (var element in csvContent) {
-            element.replaceAll(', (Not found)', '').trim();
+            csvContent[csvContent.indexOf(element)] = element.replaceAll(',(Not found)', '').trim();
           }
           for (var line in csvContent) {
             int fields = line.split(',').length;
@@ -462,12 +506,52 @@ Future<List<Item>> populateItemList() async {
     for (var line in csvContent) {
       if (line.split(',').isNotEmpty) {
         int categoryIndex = csvFileList.indexWhere((element) => element.where((e) => e == p.basename(file.path)).isNotEmpty);
+        String enItemName = '';
+        String jpItemName = '';
         List<String> fields = line.split(',');
         for (var element in fields) {
           fields[fields.indexOf(element)] = element.trim();
         }
         infos.addAll(fields);
-        //if (p.basename(file.path) == 'Accessories.csv') {
+
+        int enItemNameIndex = headers.indexOf('English Name');
+        int jpItemNameIndex = headers.indexOf('Japanese Name');
+        if (enItemNameIndex != -1) {
+          enItemName = infos[enItemNameIndex];
+        }
+        if (jpItemNameIndex != -1) {
+          jpItemName = infos[jpItemNameIndex];
+        }
+
+        String subCategory = '';
+        if (categoryIndex == 1) {
+          //Basewears
+          if (enItemName.contains('[Ba]') || jpItemName.contains('[Ba]')) {
+            subCategory = 'Basewear';
+          } else if (enItemName.contains('[Se]') || jpItemName.contains('[Se]')) {
+            subCategory = 'Setwear';
+          } else if (enItemName.contains('[Fu]') || jpItemName.contains('[Fu]')) {
+            subCategory = 'Full Setwear';
+          }
+        } else if (categoryIndex == 14) {
+          //Motions
+          if (p.basename(file.path) == 'SubstituteMotionGlide.csv') {
+            subCategory = 'Glide Motion';
+          } else if (p.basename(file.path) == 'SubstituteMotionJump.csv') {
+            subCategory = 'Jump Motion';
+          } else if (p.basename(file.path) == 'SubstituteMotionLanding.csv') {
+            subCategory = 'Landing Motion';
+          } else if (p.basename(file.path) == 'SubstituteMotionPhotonDash.csv') {
+            subCategory = 'Dash Motion';
+          } else if (p.basename(file.path) == 'SubstituteMotionRun.csv') {
+            subCategory = 'Run Motion';
+          } else if (p.basename(file.path) == 'SubstituteMotionStandby.csv') {
+            subCategory = 'Standby Motion';
+          } else if (p.basename(file.path) == 'SubstituteMotionSwim.csv') {
+            subCategory = 'Swim Motion';
+          }
+        }
+
         Item newItem = await itemFromCsv(
             p.basename(file.path),
             p.dirname(filePathInCsvDir),
@@ -478,6 +562,7 @@ Future<List<Item>> populateItemList() async {
                     : '',
             [p.basenameWithoutExtension(file.path)],
             categoryIndex != -1 ? defaultCategoryDirs[categoryIndex] : defaultCategoryDirs[13],
+            subCategory,
             categoryIndex,
             '',
             headers,
@@ -486,7 +571,7 @@ Future<List<Item>> populateItemList() async {
         if (matchedIndex == -1) {
           itemList.add(newItem);
         }
-        //}
+
         infos.clear();
       }
     }
@@ -495,8 +580,8 @@ Future<List<Item>> populateItemList() async {
   return itemList;
 }
 
-Future<Item> itemFromCsv(
-    String csvFileName, String csvFilePath, String itemType, List<String> itemCategories, String category, int categoryIndex, String iconImagePath, List<String> headers, List<String> infos) async {
+Future<Item> itemFromCsv(String csvFileName, String csvFilePath, String itemType, List<String> itemCategories, String category, String subCategory, int categoryIndex, String iconImagePath,
+    List<String> headers, List<String> infos) async {
   if (headers.length > infos.length) {
     for (var i = infos.length; i < headers.length; i++) {
       infos.add('');
@@ -508,7 +593,7 @@ Future<Item> itemFromCsv(
   }
 
   final infoMap = Map.fromIterables(headers, infos);
-  return Item.fromMap(csvFileName, csvFilePath, itemType, itemCategories, category, categoryIndex, iconImagePath, infoMap);
+  return Item.fromMap(csvFileName, csvFilePath, itemType, itemCategories, category, subCategory, categoryIndex, iconImagePath, infoMap);
 }
 
 //Helpers

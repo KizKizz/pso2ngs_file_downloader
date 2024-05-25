@@ -182,7 +182,7 @@ class _SplashState extends State<Splash> {
 
             final matchedItem = jsonItems.firstWhere(
               (element) => element.compare(item),
-              orElse: () => Item('null', '', '', [], '', -1, '', {}),
+              orElse: () => Item('null', '', '', [], '', '', -1, '', {}),
             );
 
             if (matchedItem.csvFileName != 'null') {
