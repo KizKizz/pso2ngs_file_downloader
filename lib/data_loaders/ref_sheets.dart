@@ -365,20 +365,20 @@ Future<List<Item>> populateItemList() async {
         csvContent.removeAt(0);
         break;
       case 'Player':
-        List<String> threeFieldsFiles = ['CasealVoices.csv', 'CastVoices.csv', 'DarkBlasts_DrivableVehicles.csv', 'FemaleVoices.csv', 'MaleVoices.csv', 'PhotonBlastCreatures.csv'];
-        List<String> fourFieldsFiles = [
-          'Mags.csv',
-          'MagsNGS.csv',
+        List<String> threeFieldsFiles = ['CasealVoices.csv', 'CastVoices.csv', 'DarkBlasts_DrivableVehicles.csv', 'FemaleVoices.csv', 'MaleVoices.csv', 'PhotonBlastCreatures.csv',
           'General Character Animations.csv',
           'General Character Effects.csv',
           'General Character Animations NGS.csv',
-          'General Reboot Character Effects.csv'
+          'General Reboot Character Effects.csv'];
+        List<String> fourFieldsFiles = [
+          'Mags.csv',
+          'MagsNGS.csv'
         ];
 
         if (threeFieldsFiles.contains(filePathParts.last)) {
           headers.addAll(['Japanese Name', 'English Name', 'Ice Hash']);
           for (var element in csvContent) {
-            element.replaceAll(', (Not found)', '').trim();
+            csvContent[csvContent.indexOf(element)] = element.replaceAll(',(Not found)', '').trim();
           }
           for (var line in csvContent) {
             int fields = line.split(',').length;
@@ -400,7 +400,7 @@ Future<List<Item>> populateItemList() async {
         } else if (fourFieldsFiles.contains(filePathParts.last)) {
           headers.addAll(['Japanese Name', 'English Name', 'Ice Hash']);
           for (var element in csvContent) {
-            element.replaceAll(', (Not found)', '').trim();
+            csvContent[csvContent.indexOf(element)] = element.replaceAll(',(Not found)', '').trim();
           }
           for (var line in csvContent) {
             int fields = line.split(',').length;
