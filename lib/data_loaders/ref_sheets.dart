@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:csv/csv.dart';
 import 'package:flutter/material.dart';
 import 'package:path/path.dart' as p;
 import 'package:pso2ngs_file_locator/classes.dart';
@@ -70,6 +71,7 @@ Future<List<Item>> populateItemList() async {
       if (line.isNotEmpty) csvContent.add(line);
     });
 
+    //headers and padding
     switch (filePathParts[1]) {
       case 'Enemies':
         if (filePathParts.last == 'EnemiesClassic.csv' || filePathParts.last == 'EnemyBaseStats.csv') {
@@ -249,12 +251,15 @@ Future<List<Item>> populateItemList() async {
         break;
     }
 
+    String emoteChatCommand = '';
+    String emoteENName = '';
+    String emoteJPName = '';
     for (var line in csvContent) {
       if (line.split(',').isNotEmpty) {
         int categoryIndex = csvFileList.indexWhere((element) => element.where((e) => e == p.basename(file.path)).isNotEmpty);
         String enItemName = '';
         String jpItemName = '';
-        List<String> fields = line.split(',');
+        List<String> fields = const CsvToListConverter().convert(line).first.map((e) => e.toString()).toList();
         for (var element in fields) {
           fields[fields.indexOf(element)] = element.trim();
         }
@@ -279,6 +284,22 @@ Future<List<Item>> populateItemList() async {
           } else if (enItemName.contains('[Fu]') || jpItemName.contains('[Fu]')) {
             subCategory = 'Full Setwear';
           }
+        } else if (categoryIndex == 7) {
+          //Emotes
+          int commandHeaderIndex = headers.indexWhere((element) => element == 'Chat Command');
+          if (commandHeaderIndex != -1) {
+            if (emoteENName.isEmpty) emoteENName = enItemName;
+            if (emoteJPName.isEmpty) emoteJPName = jpItemName;
+            if (infos[commandHeaderIndex].isEmpty && emoteChatCommand.isNotEmpty && (emoteENName == enItemName || emoteJPName == jpItemName)) {
+              infos[commandHeaderIndex] = emoteChatCommand;
+              emoteENName = enItemName;
+              emoteJPName = jpItemName;
+            } else if (infos[commandHeaderIndex] != emoteChatCommand && infos[commandHeaderIndex].isNotEmpty) {
+              emoteChatCommand = infos[commandHeaderIndex];
+              emoteENName = enItemName;
+              emoteJPName = jpItemName;
+            }
+          }
         } else if (categoryIndex == 14) {
           //Motions
           if (p.basename(file.path) == 'SubstituteMotionGlide.csv') {
@@ -298,7 +319,7 @@ Future<List<Item>> populateItemList() async {
           }
         }
 
-        itemList.add(await itemFromCsv(
+        Item newItem = await itemFromCsv(
             p.basename(file.path),
             p.dirname(filePathInCsvDir),
             filePathInCsvDir.contains('NGS')
@@ -312,7 +333,9 @@ Future<List<Item>> populateItemList() async {
             categoryIndex,
             '',
             headers,
-            infos));
+            infos);
+
+        itemList.add(newItem);
         infos.clear();
       }
     }
@@ -365,15 +388,19 @@ Future<List<Item>> populateItemList() async {
         csvContent.removeAt(0);
         break;
       case 'Player':
-        List<String> threeFieldsFiles = ['CasealVoices.csv', 'CastVoices.csv', 'DarkBlasts_DrivableVehicles.csv', 'FemaleVoices.csv', 'MaleVoices.csv', 'PhotonBlastCreatures.csv',
+        List<String> threeFieldsFiles = [
+          'CasealVoices.csv',
+          'CastVoices.csv',
+          'DarkBlasts_DrivableVehicles.csv',
+          'FemaleVoices.csv',
+          'MaleVoices.csv',
+          'PhotonBlastCreatures.csv',
           'General Character Animations.csv',
           'General Character Effects.csv',
           'General Character Animations NGS.csv',
-          'General Reboot Character Effects.csv'];
-        List<String> fourFieldsFiles = [
-          'Mags.csv',
-          'MagsNGS.csv'
+          'General Reboot Character Effects.csv'
         ];
+        List<String> fourFieldsFiles = ['Mags.csv', 'MagsNGS.csv'];
 
         if (threeFieldsFiles.contains(filePathParts.last)) {
           headers.addAll(['Japanese Name', 'English Name', 'Ice Hash']);
@@ -503,12 +530,13 @@ Future<List<Item>> populateItemList() async {
         break;
     }
 
+    String emoteChatCommand = '';
     for (var line in csvContent) {
       if (line.split(',').isNotEmpty) {
         int categoryIndex = csvFileList.indexWhere((element) => element.where((e) => e == p.basename(file.path)).isNotEmpty);
         String enItemName = '';
         String jpItemName = '';
-        List<String> fields = line.split(',');
+        List<String> fields = const CsvToListConverter().convert(line).first.map((e) => e.toString()).toList();
         for (var element in fields) {
           fields[fields.indexOf(element)] = element.trim();
         }
@@ -532,6 +560,16 @@ Future<List<Item>> populateItemList() async {
             subCategory = 'Setwear';
           } else if (enItemName.contains('[Fu]') || jpItemName.contains('[Fu]')) {
             subCategory = 'Full Setwear';
+          }
+        } else if (categoryIndex == 7) {
+          //Emotes
+          int commandHeaderIndex = headers.indexWhere((element) => element == 'Chat Command');
+          if (commandHeaderIndex != -1) {
+            if (infos[commandHeaderIndex].isEmpty && emoteChatCommand.isNotEmpty) {
+              infos[commandHeaderIndex] = emoteChatCommand;
+            } else if (infos[commandHeaderIndex] != emoteChatCommand && infos[commandHeaderIndex].isNotEmpty) {
+              emoteChatCommand = infos[commandHeaderIndex];
+            }
           }
         } else if (categoryIndex == 14) {
           //Motions
