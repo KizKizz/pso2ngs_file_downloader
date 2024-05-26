@@ -49,31 +49,32 @@ class _HomePageState extends State<HomePage> with WindowListener {
     } else {
       filteredItems = items.where((element) => selectedItemFilters.contains(element.itemType) && element.containsCategory(selectedItemFilters)).toList();
     }
-
-    final dledItems = downloadDir.listSync().whereType<Directory>().map((e) => p.basenameWithoutExtension(e.path)).toList();
-    downloadedItemList.add(
-      Padding(
-        padding: EdgeInsets.only(top: 10, bottom: 10, left: 5, right: 5),
-        child: Center(
-          child: ElevatedButton(
-              child: const Text('Open Download Folder'),
-              onPressed: () async {
-                launchUrl(Uri.directory(downloadDir.path));
-              }),
-        ),
-      ),
-    );
-    if (dledItems.isNotEmpty) {
+    if (downloadDir.existsSync()) {
+      final dledItems = downloadDir.listSync().whereType<Directory>().map((e) => p.basenameWithoutExtension(e.path)).toList();
       downloadedItemList.add(
-        Divider(
-          thickness: 1,
-          indent: 5,
-          endIndent: 5,
-          height: 0,
+        Padding(
+          padding: EdgeInsets.only(top: 10, bottom: 10, left: 5, right: 5),
+          child: Center(
+            child: ElevatedButton(
+                child: const Text('Open Download Folder'),
+                onPressed: () async {
+                  launchUrl(Uri.directory(downloadDir.path));
+                }),
+          ),
         ),
       );
-      for (var name in dledItems) {
-        downloadedItemList.add(ListTile(title: Text(name), dense: true));
+      if (dledItems.isNotEmpty) {
+        downloadedItemList.add(
+          Divider(
+            thickness: 1,
+            indent: 5,
+            endIndent: 5,
+            height: 0,
+          ),
+        );
+        for (var name in dledItems) {
+          downloadedItemList.add(ListTile(title: Text(name), dense: true));
+        }
       }
     }
     for (var filter in itemFilters) {
@@ -282,7 +283,11 @@ class _HomePageState extends State<HomePage> with WindowListener {
             minWidth: 10,
             onPressed: () {
               searchBarController.clear();
-              filteredItems = items;
+              if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
+                filteredItems = items;
+              } else {
+                filteredItems = items.where((element) => selectedItemFilters.contains(element.itemType) && element.containsCategory(selectedItemFilters)).toList();
+              }
               setState(() {});
             },
             child: Icon(Icons.close),
