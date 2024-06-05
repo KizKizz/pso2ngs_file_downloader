@@ -539,7 +539,12 @@ en_non_myt_common.ice,d6\cc96ec78b2f3328190a77a42babd66
 グラッジボーン,,,,,,,,,,en_r05_stl_bkt_ba1.ice,d6\e3a42413c61f0d9e08e8e90a7058fa
 ラヴィード,,,,,,,,,,en_r05_stl_box_ba1.ice,c6\a95c434bba98f8aa805c9276e44dad
 ヴァルザッガ,,,,,,,,,,en_r05_stl_cas_el1.ice,f5\3a12b0ad30f3dbfab3d42c7e845c4d
+グラティガル,,,,,,,,,,en_r05_stl_fan_ba1.ice,9f\be18999146dab158c376455f716251
+グラティガル,,,,,,,,,,en_r05_stl_fan_ba1_ag.ice,1c\8eb5957fdc94d651209d74785b4817,ベテラン,Veteran
+レヴィーデ,,,,,,,,,,en_r05_stl_flo_ba.ice,b5\68b9b2e6d221ec10b04e8e85693268
 ヘルジーグ,,,,,,,,,,en_r05_stl_gia_ba1.ice,46\a937967cce51909f83fd4e508748db
+ペイヴル,,,,,,,,,,en_r05_stl_gos_ba.ice,bb\a9681a0271f4b8679347d663b1984d
+パヴォリム,,,,,,,,,,en_r05_stl_hrp_ba1.ice,b3\47e33b5166b1fe7f93ba5d6442ff15
 エリミネイダ,,,,,,,,,,en_r05_stl_ins_ba1.ice,c0\c29a1bb138471c9537a52ed7918607
 リングウェッジ,,,,,,,,,,en_r05_stl_kic_ba1.ice,53\49fb14cee669f9cf91209970d61e4a
 ラセツ,,,,,,,,,,en_r05_stl_ktn_ba1.ice,64\824183743f24089468564d26d94f63
@@ -551,8 +556,10 @@ en_non_myt_common.ice,d6\cc96ec78b2f3328190a77a42babd66
 マクスヴァング,,,,,,,,,,en_r05_stl_sip_ba1.ice,87\6cc2dfd03e55b4987fe63fc2c9bb65
 ,,,,,,,,,,en_r05_stl_sol_ba.ice,80\ccc3624ffc9a17d923231ed41413b0
 en_stl_sol_common.ice,cf\b7ad5fd232812252c462bf3db98b95
+アグネド,,,,,,,,,,en_r05_stl_tig_ba1.ice,f8\7bd9f26e2e30ad849d66542508708e
 プルティネーデ,,,,,,,,,,en_r05_stl_wic_ba1.ice,08\ab01642af28a6ff6854737221adff2
 ダークファルス・ソウラス,,,,,,,,,,en_r05_stl_sls_ba.ice,d8\882838f67e66673e9136122546c400
+ダークファルス・ソウラス,,,,,,,,,,en_r05_stl_sls_ex.ice,3d\a93f128035fa82e4faecdc56b8e4bd
 en_stl_sls_common.ice,6e\4e4f4eab90defa97725a45c14471a3
 バロウグ・ガン,,,,,,,,,,en_r05_stl_solri_ba.ice,bc\26cf073c3582191583351fd76d711e
 en_stl_solri_common.ice,03\fcd6136a152e46212cd60036119137
@@ -569,6 +576,8 @@ en_stl_mzc_common.ice,53\d32c80a3be14e5d9ceee5b0d89aff8
 en_stl_dnt_common.ice,54\de46f7b421fbea5b7c0927d178552c
 ドライヴェルズ,,,,,,,,,,en_r05_stl_krb_ba.ice,8a\f85c810cbdbce07407f9f7f0e19bce
 en_stl_krb_common.ice,f6\ae5dd3152d1418aabaecea0ed1f18c
+ヴァルヴィラン・アクス,,,,,,,,,,en_r05_stl_ars_ax.ice,c1\0ef2a80bb70ffa93e8301938285396
+ヴァルヴィラン・ウォンド,,,,,,,,,,en_r05_stl_ars_st.ice,1d\6f70726d9a2501915302c86f33d5b4
 ルイノ・ラグネ,,,,,,,,,,en_r05_rem_spi_ba.ice,d1\301cef273dc1ad92487085fb85b935
 en_rem_spi_common.ice,ea\3bfcf0141800b0100e8f840a6cdcec
 ルイノ・ヒューナル,,,,,,,,,,en_r05_rem_dhu_ba.ice,7f\d6abd21f781683336f82cc35a483d6
@@ -580,6 +589,8 @@ en_rem_ctl_common.ice,08\fbde10151d35883476d53621318d9e
 ルイノ・ビブラス,,,,,,,,,,en_r05_rem_btl_ba.ice,e6\581965094775a2c259d8f54a6c1134
 ルイノ・エクゼクル,,,,,,,,,,en_r05_rem_des_ba.ice,34\56616d2e28b02d7518a2130dd88481
 en_rem_des_common.ice,22\c9e3106aad08b1883ed8e364335f87
+ルイノ・グリフォン,,,,,,,,,,en_r05_rem_ggr_ba.ice,09\91ec98369d6ab3c8e9446e1ba7cb5d
+en_rem_ggr_common.ice,d2\2ee27be2ea67cd16c497f6a9de1474
 en_gd_flo_eff.ice,a8\42fb661ed8319ab2349b0be5578eee
 en_gd_gia_eff.ice,f8\3bab9cbdd38b0641a47a91a4dd7cb4
 en_gd_kpy_eff.ice,6e\0d8a1df8942306521ab87ef7027c80
