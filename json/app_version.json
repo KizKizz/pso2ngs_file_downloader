@@ -1,8 +1,8 @@
 {
     "name": "PSO2NGS File Downloader",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": [
-        "Added an option to auto extract ice files with zamboni after downloading"
+        "Bug fixes"
     ],
     "windows_file": "",
     "linux_file": ""

@@ -343,6 +343,8 @@
       "5100_トレイニア,Trainia_StageData",
       "5101_トレイニア,Trainia_StageData",
       "5202_5202_StageData",
+      "5300_5300_NavMeshList",
+      "5300_5300_StageData",
       "6000__,__StageData",
       "CharacterCreator_LoginRoom",
       "StageTemplates"
