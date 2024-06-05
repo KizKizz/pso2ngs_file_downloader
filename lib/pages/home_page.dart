@@ -269,13 +269,13 @@ class _HomePageState extends State<HomePage> with WindowListener {
       controller: searchBarController,
       leading: Icon(Icons.search),
       hintText: 'Search Items',
-      padding: MaterialStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
+      padding: WidgetStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
       constraints: BoxConstraints(minHeight: 25, maxHeight: 25, maxWidth: double.infinity),
-      shape: MaterialStateProperty.resolveWith((states) {
+      shape: WidgetStateProperty.resolveWith((states) {
         return RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).primaryColor), borderRadius: const BorderRadius.all(Radius.circular(15)));
       }),
-      backgroundColor: MaterialStatePropertyAll(Theme.of(context).canvasColor),
-      elevation: MaterialStatePropertyAll(0),
+      backgroundColor: WidgetStatePropertyAll(Theme.of(context).canvasColor),
+      elevation: WidgetStatePropertyAll(0),
       trailing: [
         Visibility(
           visible: searchBarController.text.isNotEmpty,
@@ -372,13 +372,13 @@ class _HomePageState extends State<HomePage> with WindowListener {
       controller: filterSearchBarController,
       leading: Icon(Icons.search),
       hintText: 'Search Filters',
-      padding: MaterialStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
+      padding: WidgetStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
       constraints: BoxConstraints(minHeight: 30, maxHeight: 30, maxWidth: double.infinity),
-      shape: MaterialStateProperty.resolveWith((states) {
+      shape: WidgetStateProperty.resolveWith((states) {
         return RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).primaryColor), borderRadius: const BorderRadius.all(Radius.circular(15)));
       }),
-      backgroundColor: MaterialStatePropertyAll(Theme.of(context).canvasColor),
-      elevation: MaterialStatePropertyAll(0),
+      backgroundColor: WidgetStatePropertyAll(Theme.of(context).canvasColor),
+      elevation: WidgetStatePropertyAll(0),
       trailing: [
         Visibility(
           visible: filterSearchBarController.text.isNotEmpty,
@@ -530,7 +530,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
     return Tooltip(
       message: MyApp.themeNotifier.value == ThemeMode.dark ? 'Light Mode' : 'Dark Mode',
       textStyle: TextStyle(fontSize: 14, color: Theme.of(context).buttonTheme.colorScheme!.primary),
-      decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.background),
+      decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.surface),
       enableTapToDismiss: true,
       child: MaterialButton(
           minWidth: 30,
@@ -563,7 +563,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
     return Tooltip(
       message: filterBoxShow ? 'Hide Filter Box' : 'Show Filter Box',
       textStyle: TextStyle(fontSize: 14, color: Theme.of(context).buttonTheme.colorScheme!.primary),
-      decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.background),
+      decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.surface),
       enableTapToDismiss: true,
       child: MaterialButton(
         minWidth: 30,
@@ -601,7 +601,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
     return Tooltip(
       message: 'Downloaded Items',
       textStyle: TextStyle(fontSize: 14, color: Theme.of(context).buttonTheme.colorScheme!.primary),
-      decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.background),
+      decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.surface),
       enableTapToDismiss: true,
       child: MenuAnchor(
           builder: (BuildContext context, MenuController controller, Widget? child) {
@@ -622,7 +622,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
           onOpen: () {
             setState(() {});
           },
-          style: MenuStyle(shape: MaterialStateProperty.resolveWith((states) {
+          style: MenuStyle(shape: WidgetStateProperty.resolveWith((states) {
             return RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5)));
           })),
           controller: menuAnchorController,
@@ -634,7 +634,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
     return Tooltip(
       message: 'About',
       textStyle: TextStyle(fontSize: 14, color: Theme.of(context).buttonTheme.colorScheme!.primary),
-      decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.background),
+      decoration: BoxDecoration(color: Theme.of(context).buttonTheme.colorScheme!.surface),
       enableTapToDismiss: true,
       child: MenuAnchor(
           builder: (BuildContext context, MenuController controller, Widget? child) {
@@ -652,7 +652,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
               },
             );
           },
-          style: MenuStyle(shape: MaterialStateProperty.resolveWith((states) {
+          style: MenuStyle(shape: WidgetStateProperty.resolveWith((states) {
             return RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5)));
           })),
           menuChildren: [
