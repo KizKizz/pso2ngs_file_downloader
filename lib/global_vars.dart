@@ -60,5 +60,6 @@ List<String> defaultCategoryDirs = [
   'Misc', //13
   'Motions', //14
   'Outerwears', //15
-  'Setwears' //16
+  'Setwears', //16
+  'Weapons' //17
 ];
