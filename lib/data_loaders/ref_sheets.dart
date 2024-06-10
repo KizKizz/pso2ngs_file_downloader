@@ -32,6 +32,50 @@ List<String> motionCsv = [
   'SubstituteMotionStandby.csv',
   'SubstituteMotionSwim.csv'
 ];
+List<String> weaponCsv = [
+  //NGS
+  'BowNGSNames.csv',
+  'DoubleSaberNGSNames.csv',
+  'DualBladesNGSNames.csv',
+  'GunslashNGSNames.csv',
+  'JetBootsNGSNames.csv',
+  'KatanaNGSNames.csv',
+  'KnucklesNGSNames.csv',
+  'LauncherNGSNames.csv',
+  'PartizanNGSNames.csv',
+  'RifleNGSNames.csv',
+  'RodNGSNames.csv',
+  'SwordNGSNames.csv',
+  'TactNGSNames.csv',
+  'TalisNGSNames.csv',
+  'TwinDaggerNGSNames.csv',
+  'TwinMachineGunNGSNames.csv',
+  'WandNGSNames.csv',
+  'WeaponDefaults.csv',
+  'WeaponDefaultsNGS.csv',
+  'WiredLanceNGSNames.csv'
+  //PSO2
+  'BowNames.csv',
+  'DoubleSaberNames.csv',
+  'DualBladesNames.csv',
+  'GunslashNames.csv',
+  'JetBootsNames.csv',
+  'KatanaNames.csv',
+  'KnucklesNames.csv',
+  'LauncherNames.csv',
+  'PartizanNames.csv',
+  'RifleNames.csv',
+  'RodNames.csv',
+  'SwordNames.csv',
+  'TactNames.csv',
+  'TalisNames.csv',
+  'TwinDaggerNames.csv',
+  'TwinMachineGunNames.csv',
+  'WandNames.csv',
+  'WeaponDefaults.csv',
+  'WeaponDefaults.csv',
+  'WiredLanceNames.csv'
+];
 
 List<List<String>> csvFileList = [
   accessoriesCsv,
@@ -50,7 +94,8 @@ List<List<String>> csvFileList = [
   [],
   motionCsv,
   outerwearCsv,
-  basewearCsv
+  basewearCsv,
+  weaponCsv
 ];
 
 Future<List<Item>> populateItemList() async {
@@ -316,6 +361,70 @@ Future<List<Item>> populateItemList() async {
             subCategory = 'Standby Motion';
           } else if (p.basename(file.path) == 'SubstituteMotionSwim.csv') {
             subCategory = 'Swim Motion';
+          }
+        } else if (categoryIndex == 17) {
+          if (enItemName.isNotEmpty && enItemName.characters.first == '*' || jpItemName.isNotEmpty && jpItemName.characters.first == '*') {
+            subCategory = 'Weapon Camo';
+          } else {
+            switch (p.basename(file.path)) {
+              case 'BowNGSNames.csv' || 'BowNames.csv':
+                subCategory = 'Bow';
+                break;
+              case 'DoubleSaberNGSNames.csv' || 'DoubleSaberNames.csv':
+                subCategory = 'Double Saber';
+                break;
+              case 'DualBladesNGSNames.csv' || 'DualBladesNames.csv':
+                subCategory = 'Dual Blades';
+                break;
+              case 'GunslashNGSNames.csv' || 'GunslashNames.csv':
+                subCategory = 'Gunslash';
+                break;
+              case 'JetBootsNGSNames.csv' || 'JetBootsNames.csv':
+                subCategory = 'Jet Boots';
+                break;
+              case 'KatanaNGSNames.csv' || 'KatanaNames.csv':
+                subCategory = 'Katana';
+                break;
+              case 'KnucklesNGSNames.csv' || 'KnucklesNames.csv':
+                subCategory = 'Knuckles';
+                break;
+              case 'LauncherNGSNames.csv' || 'LauncherNames.csv':
+                subCategory = 'Launcher';
+                break;
+              case 'PartizanNGSNames.csv' || 'PartizanNames.csv':
+                subCategory = 'Partizan';
+                break;
+              case 'RifleNGSNames.csv' || 'RifleNames.csv':
+                subCategory = 'Rifle';
+                break;
+              case 'RodNGSNames.csv' || 'RodNames.csv':
+                subCategory = 'Rod';
+                break;
+              case 'SwordNGSNames.csv' || 'SwordNames.csv':
+                subCategory = 'Sword';
+                break;
+              case 'TactNGSNames.csv' || 'TactNames.csv':
+                subCategory = 'Tact';
+                break;
+              case 'TalisNGSNames.csv' || 'TalisNames.csv':
+                subCategory = 'Talis';
+                break;
+              case 'TwinDaggerNGSNames.csv' || 'TwinDaggerNames.csv':
+                subCategory = 'Twin Dagger';
+                break;
+              case 'TwinMachineGunNGSNames.csv' || 'TwinMachineGunNames.csv':
+                subCategory = 'Twin Machine Gun';
+                break;
+              case 'WandNGSNames.csv' || 'WandNames.csv':
+                subCategory = 'Wand';
+                break;
+              case 'WiredLanceNGSNames.csv' || 'WiredLanceNames.csv':
+                subCategory = 'Wired Lance';
+                break;
+              default:
+                subCategory = 'Unknown Weapon';
+                break;
+            }
           }
         }
 
@@ -587,6 +696,70 @@ Future<List<Item>> populateItemList() async {
             subCategory = 'Standby Motion';
           } else if (p.basename(file.path) == 'SubstituteMotionSwim.csv') {
             subCategory = 'Swim Motion';
+          }
+        } else if (categoryIndex == 17) {
+          if (enItemName.isNotEmpty && enItemName.characters.first == '*' || jpItemName.isNotEmpty && jpItemName.characters.first == '*') {
+            subCategory = 'Weapon Camo';
+          } else {
+            switch (p.basename(file.path)) {
+              case 'BowNGSNames.csv' || 'BowNames.csv':
+                subCategory = 'Bow';
+                break;
+              case 'DoubleSaberNGSNames.csv' || 'DoubleSaberNames.csv':
+                subCategory = 'Double Saber';
+                break;
+              case 'DualBladesNGSNames.csv' || 'DualBladesNames.csv':
+                subCategory = 'Dual Blades';
+                break;
+              case 'GunslashNGSNames.csv' || 'GunslashNames.csv':
+                subCategory = 'Gunslash';
+                break;
+              case 'JetBootsNGSNames.csv' || 'JetBootsNames.csv':
+                subCategory = 'Jet Boots';
+                break;
+              case 'KatanaNGSNames.csv' || 'KatanaNames.csv':
+                subCategory = 'Katana';
+                break;
+              case 'KnucklesNGSNames.csv' || 'KnucklesNames.csv':
+                subCategory = 'Knuckles';
+                break;
+              case 'LauncherNGSNames.csv' || 'LauncherNames.csv':
+                subCategory = 'Launcher';
+                break;
+              case 'PartizanNGSNames.csv' || 'PartizanNames.csv':
+                subCategory = 'Partizan';
+                break;
+              case 'RifleNGSNames.csv' || 'RifleNames.csv':
+                subCategory = 'Rifle';
+                break;
+              case 'RodNGSNames.csv' || 'RodNames.csv':
+                subCategory = 'Rod';
+                break;
+              case 'SwordNGSNames.csv' || 'SwordNames.csv':
+                subCategory = 'Sword';
+                break;
+              case 'TactNGSNames.csv' || 'TactNames.csv':
+                subCategory = 'Tact';
+                break;
+              case 'TalisNGSNames.csv' || 'TalisNames.csv':
+                subCategory = 'Talis';
+                break;
+              case 'TwinDaggerNGSNames.csv' || 'TwinDaggerNames.csv':
+                subCategory = 'Twin Dagger';
+                break;
+              case 'TwinMachineGunNGSNames.csv' || 'TwinMachineGunNames.csv':
+                subCategory = 'Twin Machine Gun';
+                break;
+              case 'WandNGSNames.csv' || 'WandNames.csv':
+                subCategory = 'Wand';
+                break;
+              case 'WiredLanceNGSNames.csv' || 'WiredLanceNames.csv':
+                subCategory = 'Wired Lance';
+                break;
+              default:
+                subCategory = 'Unknown Weapon';
+                break;
+            }
           }
         }
 

@@ -133,7 +133,7 @@ void itemDataSave() {
   if (!playerItemDataJson.existsSync()) {
     playerItemDataJson.createSync(recursive: true);
   }
-  final playerItems = items.where((element) => element.csvFilePath.contains('\\Player') || element.csvFilePath.contains('\\UI\\Vital Gauge')).toList();
+  final playerItems = items.where((element) => element.csvFilePath.contains('\\Player') || element.csvFilePath.contains('\\UI\\Vital Gauge') || element.csvFilePath.contains('\\Weapons')).toList();
   playerItems.map((item) => item.toJson()).toList();
   const JsonEncoder encoder2 = JsonEncoder.withIndent('  ');
   playerItemDataJson.writeAsStringSync(encoder2.convert(playerItems));
