@@ -368,61 +368,61 @@ Future<List<Item>> populateItemList() async {
           }
           switch (p.basename(file.path)) {
             case 'BowNGSNames.csv' || 'BowNames.csv':
-              subCategory += 'Bow';
+              subCategory += 'Bows';
               break;
             case 'DoubleSaberNGSNames.csv' || 'DoubleSaberNames.csv':
-              subCategory += 'Double Saber';
+              subCategory += 'Double Sabers';
               break;
             case 'DualBladesNGSNames.csv' || 'DualBladesNames.csv':
-              subCategory += 'Dual Blades';
+              subCategory += 'Soaring Blades';
               break;
             case 'GunslashNGSNames.csv' || 'GunslashNames.csv':
-              subCategory += 'Gunslash';
+              subCategory += 'Gunblades';
               break;
             case 'JetBootsNGSNames.csv' || 'JetBootsNames.csv':
               subCategory += 'Jet Boots';
               break;
             case 'KatanaNGSNames.csv' || 'KatanaNames.csv':
-              subCategory += 'Katana';
+              subCategory += 'Katanas';
               break;
             case 'KnucklesNGSNames.csv' || 'KnucklesNames.csv':
               subCategory += 'Knuckles';
               break;
             case 'LauncherNGSNames.csv' || 'LauncherNames.csv':
-              subCategory += 'Launcher';
+              subCategory += 'Launchers';
               break;
             case 'PartizanNGSNames.csv' || 'PartizanNames.csv':
-              subCategory += 'Partizan';
+              subCategory += 'Partisans';
               break;
             case 'RifleNGSNames.csv' || 'RifleNames.csv':
-              subCategory += 'Rifle';
+              subCategory += 'Assault Rifles';
               break;
             case 'RodNGSNames.csv' || 'RodNames.csv':
-              subCategory += 'Rod';
+              subCategory += 'Rods';
               break;
             case 'SwordNGSNames.csv' || 'SwordNames.csv':
-              subCategory += 'Sword';
+              subCategory += 'Swords';
               break;
             case 'TactNGSNames.csv' || 'TactNames.csv':
-              subCategory += 'Tact';
+              subCategory += 'Harmonizers';
               break;
             case 'TalisNGSNames.csv' || 'TalisNames.csv':
-              subCategory += 'Talis';
+              subCategory += 'Talises';
               break;
             case 'TwinDaggerNGSNames.csv' || 'TwinDaggerNames.csv':
-              subCategory += 'Twin Dagger';
+              subCategory += 'Twin Daggers';
               break;
             case 'TwinMachineGunNGSNames.csv' || 'TwinMachineGunNames.csv':
-              subCategory += 'Twin Machine Gun';
+              subCategory += 'Twin Machine Guns';
               break;
             case 'WandNGSNames.csv' || 'WandNames.csv':
-              subCategory += 'Wand';
+              subCategory += 'Wands';
               break;
             case 'WiredLanceNGSNames.csv' || 'WiredLanceNames.csv':
-              subCategory += 'Wired Lance';
+              subCategory += 'Wired Lances';
               break;
             default:
-              subCategory += 'Unknown Weapon';
+              subCategory += 'Unknown Weapons';
               break;
           }
         }
@@ -702,61 +702,61 @@ Future<List<Item>> populateItemList() async {
           } else {
             switch (p.basename(file.path)) {
               case 'BowNGSNames.csv' || 'BowNames.csv':
-                subCategory = 'Bow';
+                subCategory += 'Bows';
                 break;
               case 'DoubleSaberNGSNames.csv' || 'DoubleSaberNames.csv':
-                subCategory = 'Double Saber';
+                subCategory += 'Double Sabers';
                 break;
               case 'DualBladesNGSNames.csv' || 'DualBladesNames.csv':
-                subCategory = 'Dual Blades';
+                subCategory += 'Soaring Blades';
                 break;
               case 'GunslashNGSNames.csv' || 'GunslashNames.csv':
-                subCategory = 'Gunslash';
+                subCategory += 'Gunblades';
                 break;
               case 'JetBootsNGSNames.csv' || 'JetBootsNames.csv':
-                subCategory = 'Jet Boots';
+                subCategory += 'Jet Boots';
                 break;
               case 'KatanaNGSNames.csv' || 'KatanaNames.csv':
-                subCategory = 'Katana';
+                subCategory += 'Katanas';
                 break;
               case 'KnucklesNGSNames.csv' || 'KnucklesNames.csv':
-                subCategory = 'Knuckles';
+                subCategory += 'Knuckles';
                 break;
               case 'LauncherNGSNames.csv' || 'LauncherNames.csv':
-                subCategory = 'Launcher';
+                subCategory += 'Launchers';
                 break;
               case 'PartizanNGSNames.csv' || 'PartizanNames.csv':
-                subCategory = 'Partizan';
+                subCategory += 'Partisans';
                 break;
               case 'RifleNGSNames.csv' || 'RifleNames.csv':
-                subCategory = 'Rifle';
+                subCategory += 'Assault Rifles';
                 break;
               case 'RodNGSNames.csv' || 'RodNames.csv':
-                subCategory = 'Rod';
+                subCategory += 'Rods';
                 break;
               case 'SwordNGSNames.csv' || 'SwordNames.csv':
-                subCategory = 'Sword';
+                subCategory += 'Swords';
                 break;
               case 'TactNGSNames.csv' || 'TactNames.csv':
-                subCategory = 'Tact';
+                subCategory += 'Harmonizers';
                 break;
               case 'TalisNGSNames.csv' || 'TalisNames.csv':
-                subCategory = 'Talis';
+                subCategory += 'Talises';
                 break;
               case 'TwinDaggerNGSNames.csv' || 'TwinDaggerNames.csv':
-                subCategory = 'Twin Dagger';
+                subCategory += 'Twin Daggers';
                 break;
               case 'TwinMachineGunNGSNames.csv' || 'TwinMachineGunNames.csv':
-                subCategory = 'Twin Machine Gun';
+                subCategory += 'Twin Machine Guns';
                 break;
               case 'WandNGSNames.csv' || 'WandNames.csv':
-                subCategory = 'Wand';
+                subCategory += 'Wands';
                 break;
               case 'WiredLanceNGSNames.csv' || 'WiredLanceNames.csv':
-                subCategory = 'Wired Lance';
+                subCategory += 'Wired Lances';
                 break;
               default:
-                subCategory = 'Unknown Weapon';
+                subCategory += 'Unknown Weapons';
                 break;
             }
           }
