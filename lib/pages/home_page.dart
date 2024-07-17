@@ -18,7 +18,6 @@ import 'package:pso2ngs_file_locator/main.dart';
 import 'package:pso2ngs_file_locator/pages/info_popup.dart';
 import 'package:pso2ngs_file_locator/state_provider.dart';
 import 'package:pso2ngs_file_locator/version_check.dart';
-// ignore: unused_import
 import 'package:pso2ngs_file_locator/widgets/buttons.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -624,6 +623,50 @@ class _HomePageState extends State<HomePage> with WindowListener {
                 if (controller.isOpen) {
                   controller.close();
                 } else {
+                  if (downloadDir.existsSync()) {
+                    final dledItems = downloadDir.listSync().whereType<Directory>().map((e) => p.basenameWithoutExtension(e.path)).toList();
+                    downloadedItemList.clear();
+                    downloadedItemList.add(
+                      Padding(
+                        padding: EdgeInsets.only(top: 10, bottom: 10, left: 5, right: 5),
+                        child: Center(
+                          child: ElevatedButton(
+                              child: const Text('Open Download Folder'),
+                              onPressed: () async {
+                                launchUrl(Uri.directory(downloadDir.path));
+                              }),
+                        ),
+                      ),
+                    );
+                    if (dledItems.isNotEmpty) {
+                      downloadedItemList.add(
+                        Divider(
+                          thickness: 1,
+                          indent: 5,
+                          endIndent: 5,
+                          height: 0,
+                        ),
+                      );
+                      for (var name in dledItems) {
+                        downloadedItemList.add(ListTile(title: Text(name), dense: true));
+                      }
+                    }
+                  } else {
+                    downloadedItemList.clear();
+                    downloadedItemList.add(
+                      Padding(
+                        padding: EdgeInsets.only(top: 10, bottom: 10, left: 5, right: 5),
+                        child: Center(
+                          child: ElevatedButton(
+                              child: const Text('Open Download Folder'),
+                              onPressed: () async {
+                                downloadDir.createSync();
+                                launchUrl(Uri.directory(downloadDir.path));
+                              }),
+                        ),
+                      ),
+                    );
+                  }
                   controller.open();
                 }
               },
