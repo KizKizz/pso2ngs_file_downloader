@@ -7,6 +7,7 @@ import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 import 'package:pso2ngs_file_locator/pages/info_popup.dart';
 import 'package:pso2ngs_file_locator/state_provider.dart';
+import 'package:path/path.dart' as p;
 
 Future<File> downloadIceFromOfficial(context, String iceName, String pathToSave) async {
   Dio dio = Dio();
@@ -146,7 +147,7 @@ Future<void> filesDownload(context, Item item) async {
         orElse: () => 'Unknown',
       ));
     }
-    String dlSavePath = Uri.file('${downloadDir.path}/${nameStrings.join(' - ')}').toFilePath();
+    String dlSavePath = Uri.file('${downloadDir.path}/${p.basenameWithoutExtension(item.csvFileName)}/${nameStrings.join(' - ')}').toFilePath();
     Directory subDir = await Directory(dlSavePath).create(recursive: true);
 
     itemDownloadingDialog(context, subDir);
@@ -167,7 +168,12 @@ Future<void> filesDownload(context, Item item) async {
       fileInfo.writeAsStringSync(infoList.join('\n'));
       Provider.of<StateProvider>(context, listen: false).downloadFileNameSet('Finished!');
       if (downloadedItemList.length == 1) {
-        downloadedItemList.add(const Divider(thickness: 1, indent: 5, endIndent: 5, height: 0,));
+        downloadedItemList.add(const Divider(
+          thickness: 1,
+          indent: 5,
+          endIndent: 5,
+          height: 0,
+        ));
       }
       downloadedItemList.insert(2, ListTile(title: Text(nameStrings.join(' - ')), dense: true));
     }

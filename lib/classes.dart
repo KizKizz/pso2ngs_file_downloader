@@ -20,8 +20,16 @@ class Item {
   Map<String, String> infos = {};
 
   bool filteredItem(List<String> filters) {
-    if (filters.where((element) => itemType.contains(element)).isNotEmpty) {
+    if (filters.contains('PSO2') && filters.contains('NGS') && filters.length == 2) {
       return true;
+    } else if (filters.where((element) => itemType.contains(element)).isNotEmpty && filters.length == 1) {
+      return true;
+    } else {
+      if (filters.where((element) => itemType.contains(element)).isNotEmpty && filters.where((e) => itemCategories.contains(e)).isNotEmpty) {
+        return true;
+      } else if (filters.where((element) => itemType.contains(element)).isNotEmpty && itemCategories.where((e) => filters.contains(e.replaceAll('PSO2', '').replaceAll('NGS', ''))).isNotEmpty) {
+        return true;
+      }
     }
     return false;
   }
