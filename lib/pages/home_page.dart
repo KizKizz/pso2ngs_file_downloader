@@ -332,6 +332,9 @@ class _HomePageState extends State<HomePage> with WindowListener {
           } else {
             filteredItems = items.where((element) => element.filteredItem(selectedItemFilters)).toList();
           }
+          if (searchBarController.text.isNotEmpty) {
+            filteredItems = filteredItems.where((element) => element.infos.values.where((element) => element.toLowerCase().contains(searchBarController.text.toLowerCase())).isNotEmpty).toList();
+          }
         });
         final prefs = await SharedPreferences.getInstance();
         prefs.setStringList('selectedItemFilters', selectedItemFilters);
@@ -415,6 +418,9 @@ class _HomePageState extends State<HomePage> with WindowListener {
             filteredItems = items;
           } else {
             filteredItems = items.where((element) => element.filteredItem(selectedItemFilters)).toList();
+          }
+          if (searchBarController.text.isNotEmpty) {
+            filteredItems = filteredItems.where((element) => element.infos.values.where((element) => element.toLowerCase().contains(searchBarController.text.toLowerCase())).isNotEmpty).toList();
           }
         });
         final prefs = await SharedPreferences.getInstance();
@@ -592,8 +598,11 @@ class _HomePageState extends State<HomePage> with WindowListener {
           final prefs = await SharedPreferences.getInstance();
           selectedItemFilters = ['PSO2', 'NGS'];
           prefs.setStringList('selectedItemFilters', selectedItemFilters);
-          filteredItems = items;
-          searchBarController.clear();
+          if (searchBarController.text.isEmpty) {
+            filteredItems = items;
+          } else {
+            filteredItems = filteredItems.where((element) => element.infos.values.where((element) => element.toLowerCase().contains(searchBarController.text.toLowerCase())).isNotEmpty).toList();
+          }
           setState(() {});
         });
   }
