@@ -27,6 +27,8 @@ class Item {
     } else {
       if (filters.where((element) => itemType.contains(element)).isNotEmpty && filters.where((e) => itemCategories.contains(e)).isNotEmpty) {
         return true;
+      } else if (filters.where((element) => itemType.contains(element)).isNotEmpty && itemCategories.where((e) => filters.contains(e.replaceAll('PSO2', '').replaceAll('NGS', ''))).isNotEmpty) {
+        return true;
       }
     }
     return false;
