@@ -19,16 +19,9 @@ class Item {
   String iconImagePath;
   Map<String, String> infos = {};
 
-  bool containsCategory(List<String> filters) {
-    for (var cateName in itemCategories) {
-      if (filters.contains(cateName.trim())) {
-        return true;
-      }
-    }
-    for (var filter in filters) {
-      if (itemCategories.contains(filter)) {
-        return true;
-      }
+  bool filteredItem(List<String> filters) {
+    if (filters.where((element) => itemType.contains(element)).isNotEmpty) {
+      return true;
     }
     return false;
   }
@@ -141,10 +134,7 @@ void itemDataSave() {
   }
   final playerItems = items
       .where((element) =>
-          element.csvFilePath.contains('\\Player') ||
-          element.csvFilePath.contains('\\UI\\Vital Gauge') ||
-          element.csvFilePath.contains('\\UI\\Line Duel') ||
-          element.csvFilePath.contains('\\Weapons'))
+          element.csvFilePath.contains('\\Player') || element.csvFilePath.contains('\\UI\\Vital Gauge') || element.csvFilePath.contains('\\UI\\Line Duel') || element.csvFilePath.contains('\\Weapons'))
       .toList();
   playerItems.map((item) => item.toJson()).toList();
   const JsonEncoder encoder2 = JsonEncoder.withIndent('  ');

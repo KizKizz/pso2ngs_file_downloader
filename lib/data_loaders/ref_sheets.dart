@@ -809,7 +809,7 @@ Future<List<Item>> populateItemList() async {
                 ? 'NGS'
                 : filePathInCsvDir.contains('PSO2') || filePathInCsvDir.contains('Classic') || filePathInCsvDir.contains('classic')
                     ? 'PSO2'
-                    : '',
+                    : 'PSO2 | NGS',
             [p.basenameWithoutExtension(file.path)],
             categoryIndex != -1 ? defaultCategoryDirs[categoryIndex] : defaultCategoryDirs[13],
             subCategory,

@@ -205,8 +205,7 @@ class _SplashState extends State<Splash> {
                   await imageSizeCheck(item);
                 } else if (matchedItem.iconImagePath.isEmpty && (item.csvFilePath.contains('Stamps') || item.csvFilePath.contains('Vital Gauge'))) {
                   item.itemType = 'NGS';
-                }
-                if (item.iconImagePath.isEmpty) {
+                } else {
                   item.itemType = 'PSO2 | NGS';
                 }
               }
