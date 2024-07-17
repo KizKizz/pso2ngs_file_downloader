@@ -46,7 +46,6 @@
 ログベルトナックル,Rogbelt Knuckle,item/weapon/it_wp_06_046.ice,b6fdb6b2e91abd35c7de07efc430924f
 ダークファルスナックル,Dark Falz Knuckle,item/weapon/it_wp_06_047.ice,f7832d67e5c8aa58f988270996e19e15
 エルダーフィスト,Elder Fist,item/weapon/it_wp_06_048.ice,1aff6449f4372ef770c606c7cbbe938c
-＊ニャックル,* Nyackles,item/weapon/it_wp_06_049.ice,871162efc32f4a2c38d3308a1edbc08d
 ドリルナックル／ナハト,Drill Knuckle / Nacht,item/weapon/it_wp_06_050.ice,51c36643728eaae6dc928b6d84416396
 ＊ブーストランサー,* Boost Lancer,item/weapon/it_wp_06_051.ice,9bb83e2310aa2f34d43a8c5950fb0c5a
 獅子咬,Shishigami,item/weapon/it_wp_06_052.ice,27868a2df9a894bdd44772e6dd4c5751
@@ -139,8 +138,6 @@
 グレイヤーノヴァ,Glayer Nova,item/weapon/it_wp_06_184.ice,49ffb0b98cd668cda01561f163cffa39
 クオツヴィディヤ,Quotz Vidya,item/weapon/it_wp_06_185.ice,a1b8a2ffd6af2ce3f58353099b267920
 グリシナヴィディヤ,Glycina Vidya,item/weapon/it_wp_06_187.ice,a4e7cd451f24ad32310895b62dfcb7a3
-＊スファライ,* Sphairai,item/weapon/it_wp_06_188.ice,616155796fd597965b5443386bd2c852
-＊火竜の鉄拳,* Fire Dragon's Iron Fist,item/weapon/it_wp_06_189.ice,9fb07cbf493ac5a8565e2cbd9f951643
 雷咬タガミコウガ,Thunder Bite Tagamikouga,item/weapon/it_wp_06_190.ice,1b43eeca9038348e80d7920b2a766d3b
 ＊雷装イザネカヅチ,* Lightning Izanekazuchi,item/weapon/it_wp_06_191.ice,b98e15ea4e8d314f21d4b923435693f2
 ＊ティルクルレプーレ,* Tillkle Lepure,item/weapon/it_wp_06_193.ice,a5a2f5fb8a3fd8b91476a94cd4a7115e
@@ -189,7 +186,6 @@
 ＥＰ５ゲッテム拳 (NPC),EP5 Gettem Fist (NPC),item/weapon/it_wp_06_248.ice,867a3c8fa54f8374e6ec8a61d81544c0
 バトルナックルＬｖ３,Battle Knuckle Lv.3,item/weapon/it_wp_06_249.ice,6b7876782eef44d956fe966bd724bb94
 ＊ウォリアーナックル,* Warrior Knuckle,item/weapon/it_wp_06_250.ice,e9052c8cdee3731e370bf56b55280530
-＊プラフタの駆動機兵,* Plachta Drive,item/weapon/it_wp_06_251.ice,0e80360b7bd0ceaaa7230e3dadc25474
 バルバディ,Val Body,item/weapon/it_wp_06_252.ice,ab5301052e84cc39041b377a41b9fb7c
 アトラバディ,Atlas Body,item/weapon/it_wp_06_253.ice,5a984ef5c22712038092d25083d279e6
 アトラバディ・イクス,Atlas Body Ex,item/weapon/it_wp_06_254.ice,95d661bced02625f27fde6fa301a616e
@@ -231,6 +227,5 @@
 フルクシオヴォルナ,Fluxio Volna,item/weapon/it_wp_06_303.ice,be235534ea0c021d5803626d0d545856
 リンザーヴォルナ,Rinser Volna,item/weapon/it_wp_06_304.ice,1ad1b47e744ef1760afbee95840a8011
 闇征拳アジェルノッカー,Darkweave Agile Knocker,item/weapon/it_wp_06_305.ice,106f41c691dc6b25c289522140b7943f
-＊焔の六刀,* Homura Six Swords,item/weapon/it_wp_06_307.ice,af599607a01bd016d5afa0b9467ae080
 ＊ソニックリング,* Sonic Ring,item/weapon/it_wp_06_308.ice,5d1ecac45c2820256b264462f7305213
 デバッグウェポン,Debug Weapon,item/weapon/it_wp_06_999.ice,8f7c7aa7412e5fadebf0ce902840ec6b

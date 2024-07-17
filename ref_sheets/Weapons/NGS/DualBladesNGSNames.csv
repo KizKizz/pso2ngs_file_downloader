@@ -2,7 +2,7 @@
 ブレードドミナシオ,Blade Dominacio,item/weapon/it_wp_17_216.ice,65\54e8b31c9b1ca50f636ecd32fd2d62
 ブレードインクルシオ,Blade Inclusio,item/weapon/it_wp_17_217.ice,de\4700991da05cfadc5b982993f98ebf
 ＊レヴァティーン,* Laevateinn,item/weapon/it_wp_17_271.ice,f4\0cfdb2e860a070c9edbc5f6e735625
-,,item/weapon/it_wp_17_320.ice,b0\64ae436ba6d274b9e8566816d7630d
+＊シッドストリッド,* Cydstrid,item/weapon/it_wp_17_320.ice,b0\64ae436ba6d274b9e8566816d7630d
 プリムブレード,Primm Blade,item/weapon/it_wp_17_501.ice,cc\bba34f035238e3ea872412ddd7d76a
 リサージュブレード,Resurgir Blade,item/weapon/it_wp_17_502.ice,7e\712c7ad170afc740899c9f2582ee31
 キャトリアブレード,Cattleya Blade,item/weapon/it_wp_17_503.ice,81\580eacdff1431449bdf9e8a4e00fd2
@@ -73,6 +73,7 @@
 ,,item/weapon/it_wp_17_580.ice,07\2a6e2a92243419496275a4cce32d63
 ,,item/weapon/it_wp_17_581.ice,d3\bc32202d21c03d4dc86ead8c218d77
 ,,item/weapon/it_wp_17_582.ice,78\0a2c038f2c9c1449a078518c7d1500
+,,item/weapon/it_wp_17_583.ice,b3\ef61803d5d4927baa785c5bc2106a2
 ,,item/weapon/it_wp_17_584.ice,10\a6361672a466ff888f3c507a9cec50
 ,,item/weapon/it_wp_17_585.ice,1e\b4056c80372476261afca8bf7ca7cf
 ,,item/weapon/it_wp_17_586.ice,e6\ba981b65e5fb4210fa5318817107d6
