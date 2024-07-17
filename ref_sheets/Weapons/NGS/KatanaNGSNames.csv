@@ -1,11 +1,11 @@
-﻿,,item/weapon/it_wp_14_044.ice,1a\6785dd6dc6b2a1a6c9fd6fdb722cb8
-＊ソウル・オブ・ウォパル,* Soul of Vopar,item/weapon/it_wp_14_100.ice,e6\2968426e0fbeacef42dce1a3fd80d0
-カザミノタチ,Kazami-no-tachi,item/weapon/it_wp_14_169.ice,47\4f667b35575606c034f84122586f77
+﻿ヤミガラス,Yamigarasu,item/weapon/it_wp_14_044.ice,1a\6785dd6dc6b2a1a6c9fd6fdb722cb8
+ソウル・オブ・ウォパル,Soul of Wopal,item/weapon/it_wp_14_100.ice,e6\2968426e0fbeacef42dce1a3fd80d0
+カザミノタチ,Kazami no Tachi,item/weapon/it_wp_14_169.ice,47\4f667b35575606c034f84122586f77
 サイカレボルシオ,Saika Revolsio,item/weapon/it_wp_14_210.ice,c1\453e96a2a1144cf93f054dbbb73d67
 サイカドミナシオ,Saika Dominacio,item/weapon/it_wp_14_211.ice,be\462556ae3f856e9136c1e2d7b0f70e
 サイカインクルシオ,Saika Inclusio,item/weapon/it_wp_14_212.ice,b2\27d1e712e29a881953f540cd38849a
 ＊レヴァティーン,* Laevateinn,item/weapon/it_wp_14_291.ice,06\3129783243e025004313ad3484d487
-,,item/weapon/it_wp_14_325.ice,3b\460eb4569bd22b6dcaff1715e2daf4
+＊シッドストリッド,* Sid Strid,item/weapon/it_wp_14_325.ice,3b\460eb4569bd22b6dcaff1715e2daf4
 プリムカタナ,Primm Katana,item/weapon/it_wp_14_501.ice,6f\c88300a328b78c32b136b62acc1917
 リサージュカタナ,Resurgir Katana,item/weapon/it_wp_14_502.ice,ad\1a1f9baed02f5030008a537e17702a
 ,,item/weapon/it_wp_14_503.ice,c3\2fd535053d92d6888b2aeb4c6d85eb
@@ -74,6 +74,7 @@
 ,,item/weapon/it_wp_14_575.ice,80\9b54c76d96f9f4166daa4d0ff5fd73
 ,,item/weapon/it_wp_14_576.ice,36\56ed9fda96b9ff67a21e4d1174d33e
 ,,item/weapon/it_wp_14_577.ice,d6\169a684561fc399c681cab326465d7
+,,item/weapon/it_wp_14_578.ice,d8\288bbf5678e5f0bd1a20697571a76e
 ,,item/weapon/it_wp_14_579.ice,2c\e7247a886fe4809dd1105713fe74b0
 ,,item/weapon/it_wp_14_580.ice,c3\89dd27dfcdb70e17b926cc64ce04d2
 ,,item/weapon/it_wp_14_581.ice,ba\96a92a4c8bdcc7f60bf2689304781d

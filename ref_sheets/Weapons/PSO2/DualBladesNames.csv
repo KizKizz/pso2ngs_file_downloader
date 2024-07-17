@@ -219,8 +219,6 @@
 オルゲイマリス,Orgei Malice,item/weapon/it_wp_17_321.ice,90a65112a5e1839533fd7d9fa34b0ef1
 ＊エクディクマリス,* Equdic Malice,item/weapon/it_wp_17_322.ice,eb9819326424e378588035a2a116311e
 ＊コートウェポンD,* Coated Edge D,item/weapon/it_wp_17_324.ice,a6cbdb814eb98701b4771cc68c5c5935
-＊プログレッシブ・ナイフ,* Progressive Knife,item/weapon/it_wp_17_325.ice,18d22e40bb77559f9a3ba7ee9de521f2
-＊ヴァリアブル・ソード,* Variable Sword,item/weapon/it_wp_17_326.ice,a842f1837a602ce6daf0b4790d5bf7e4
 ＊エールスターライト,* Aile Starlight,item/weapon/it_wp_17_327.ice,bf495d2c6cda5c446e8861f1d44ce6e1
 シホウスザク,Shihou Suzaku,item/weapon/it_wp_17_329.ice,b5fe6ab17d29deac53b86276efa4a825
 ＊シコウレイジュウ,* Shikou Reiju,item/weapon/it_wp_17_330.ice,d774681ebab74ce13274d4c9ef0eabed
@@ -251,10 +249,7 @@
 イグニス-NT,Ignis-NT,item/weapon/it_wp_17_362.ice,fdfdca40d835f8a036859bdd1eb1a3c5
 ＊キリトの双剣,* Kirito Dual Blades,item/weapon/it_wp_17_363.ice,ca95426b59b84ea3b3fdf063a355761d
 ＊紅斬,* Benikiri,item/weapon/it_wp_17_364.ice,05e0d7f88547f6e9aa002c36252c624e
-＊飛鳥の双刀,* Asuka Twin Swords,item/weapon/it_wp_17_365.ice,092abb3b94f08b1dd07e2d3e19c50130
-＊焔の六刀,* Homura Six Swords,item/weapon/it_wp_17_366.ice,1eadd6ae78247413c1b6182f8e76401c
 ＊フォトンほうき,* Photon Broom,item/weapon/it_wp_17_367.ice,f8622b3a97cd41c718f28178a23b1e05
-＊雪泉の扇子,* Yumi Folding Fans,item/weapon/it_wp_17_368.ice,1c3bdc38f7a46c73d4c796f8eb3cd07d
 ＊テイルススパナ,* Tails Wrench,item/weapon/it_wp_17_369.ice,04710d37e2ffe7c13a16f56d26cfc70c
 ＊勇者の聖剣,* The Hero’s Holy Sword,item/weapon/it_wp_17_370.ice,fd00bc0b2cabd7e901eb5570707c6513
 デバッグウェポン,Debug Weapon,item/weapon/it_wp_17_999.ice,a9fe256fb65cdba18199dbe022d9c985

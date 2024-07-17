@@ -1,7 +1,7 @@
 ﻿＊ジャンクヤード・ドッグ,* Junkyard Dog,item/weapon/it_wp_13_066.ice,5e\667f400306165bca500b26505c7498
-エッジレボルシオ,Saika Revolsio,item/weapon/it_wp_13_253.ice,67\d0abf7b57f43a4edbb8e5cabb21906
-エッジドミナシオ,Saika Dominacio,item/weapon/it_wp_13_254.ice,77\3a4338c64515bfb8639c6bfad4e6d8
-エッジインクルシオ,Saika Inclusio,item/weapon/it_wp_13_255.ice,c3\93cc2c8f66c5a5a5c69beb18f3212b
+エッジレボルシオ,Edge Revolsio,item/weapon/it_wp_13_253.ice,67\d0abf7b57f43a4edbb8e5cabb21906
+エッジドミナシオ,Edge Dominacio,item/weapon/it_wp_13_254.ice,77\3a4338c64515bfb8639c6bfad4e6d8
+エッジインクルシオ,Edge Inclusio,item/weapon/it_wp_13_255.ice,c3\93cc2c8f66c5a5a5c69beb18f3212b
 ＊レヴァティーン,* Laevateinn,item/weapon/it_wp_13_354.ice,0a\51bc0e03927d844504d5fcd99a4b05
 プリムウォンド,Primm Wand,item/weapon/it_wp_13_501.ice,11\94fb20da710ee80c61aa3764fe59d9
 リサージュウォンド,Resurgir Wand,item/weapon/it_wp_13_502.ice,79\2ebde7a55b13bfcc242dce9a634f1f
@@ -86,6 +86,8 @@ DEBUG - プリムウォンド,Steel Primm Wand,item/weapon/it_wp_13_527.ice,93\5
 ,,item/weapon/it_wp_13_597.ice,82\734ea0270af07fa40d074b3f3188c4
 ,,item/weapon/it_wp_13_598.ice,8c\64a6089bd8a056a69e48d879803ad9
 ,,item/weapon/it_wp_13_599.ice,c4\16ad43e01d64487a0aa1c236f1f0d5
+,,item/weapon/it_wp_13_600.ice,c1\bd948e104b5c23a17475b40a8df7c7
+,,item/weapon/it_wp_13_601.ice,6f\5906ca054660e9e1c477f6b09cf210
 ,,item/weapon/it_wp_13_602.ice,33\94e40b870939261e5d1b5730fe3d3e
 ,,item/weapon/it_wp_13_603.ice,69\b38ada76eab8ae171652204e658484
 ,,item/weapon/it_wp_13_604.ice,6f\c2ef10709ed2c6b76036afb2cefeb3

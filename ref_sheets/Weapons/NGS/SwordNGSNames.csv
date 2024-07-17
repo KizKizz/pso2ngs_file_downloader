@@ -1,16 +1,16 @@
 ﻿＊ブラッドサイズ,* Blood Scythe,item/weapon/it_wp_01_022.ice,54\b6b0bf0aaba2bf4fb278051ab479f3
-＊スペース・ツナ,* Space Tuna,item/weapon/it_wp_01_044.ice,84\2a56566c58460784b1a21517bd1032
+スペース・ツナ,Space Tuna,item/weapon/it_wp_01_044.ice,84\2a56566c58460784b1a21517bd1032
 紅葉姫,Momijihime,item/weapon/it_wp_01_053.ice,62\0da5446bd0a69d26ad35c1f4fa6236
 ＊零織・イザヨイ,* Zero-type Izayoi,item/weapon/it_wp_01_098.ice,f2\886b9b8ffcc82deb501e425ce7bf98
 ＊フロウウェンの大剣,* Flowen's Sword,item/weapon/it_wp_01_104.ice,51\5df6abbd8b9efc844c303a34465050
 ＊ジャンクヤード・ドッグ,* Junkyard Dog,item/weapon/it_wp_01_106.ice,4d\8e4f9f384c4d35bf098a7ef9d24393
 ＊霊刀雪姫,* Soul Blade Yukihime,item/weapon/it_wp_01_188.ice,e2\4e6795981742d8c83c2123256e5bff
-,,item/weapon/it_wp_01_203.ice,96\d54eba44cdb1e823defe70db49338b
+朔桜,Saku Sakura,item/weapon/it_wp_01_203.ice,96\d54eba44cdb1e823defe70db49338b
 ソードレボルシオ,Sword Revolsio,item/weapon/it_wp_01_256.ice,2d\f0ca2267fa289eb67436d39ef644fe
 ソードドミナシオ,Sword Dominacio,item/weapon/it_wp_01_257.ice,02\6b020215656075084636fc9da806cd
 ソードインクルシオ,Sword Inclusio,item/weapon/it_wp_01_258.ice,ff\fb418561dbebcafe4948d1aff3ad1c
 ＊レヴァティーン,* Laevateinn,item/weapon/it_wp_01_333.ice,53\2aacdf4fab601b3a7be71fab4a0db7
-,,item/weapon/it_wp_01_402.ice,92\549db7da8bb8c2738fc8e38fb8ff20
+＊シッドストリッド,* Cydstrid,item/weapon/it_wp_01_402.ice,92\549db7da8bb8c2738fc8e38fb8ff20
 プリムソード,Primm Sword,item/weapon/it_wp_01_501.ice,ab\2efc1c5a777fae109fcdda3d00c540
 リサージュソード,Resurgir Sword,item/weapon/it_wp_01_505.ice,6c\a6e6fb3ba51f60a53ddd06d5329b7d
 ,,item/weapon/it_wp_01_507.ice,94\d9e9df4cdca5a3e5559051ff35f3ff
@@ -70,7 +70,7 @@
 ,,item/weapon/it_wp_01_564.ice,c4\d7bb01709a13a1e0af6afe7a27d6c1
 ,,item/weapon/it_wp_01_565.ice,23\7d0f05240c99c6b6774a93cb460524
 ,,item/weapon/it_wp_01_566.ice,65\39dff9c48ba9bf57b748ab3cf21fb1
-,,item/weapon/it_wp_01_567.ice,f6\94fe8cb74305648208fe7e1b076ed7
+コルボ・ラルースRe-Lソード,Xover Laluz Re-L Sword,item/weapon/it_wp_01_567.ice,f6\94fe8cb74305648208fe7e1b076ed7
 ,,item/weapon/it_wp_01_570.ice,98\9c51408cc834f66a7414e712bdc64c
 ,,item/weapon/it_wp_01_572.ice,56\26fe51e82f769bdaaade611b4df34e
 ,,item/weapon/it_wp_01_573.ice,2a\760d556399e0dd81f9764d5f52d8d8
@@ -93,6 +93,7 @@
 ,,item/weapon/it_wp_01_599.ice,07\58249ba4a75a6f2b655c4000d19d9a
 ,,item/weapon/it_wp_01_600.ice,0d\2d8e2b4f2721c64f504eb9140f92cc
 ,,item/weapon/it_wp_01_601.ice,7f\1cd14b58d8c439986f37167906faa0
+,,item/weapon/it_wp_01_602.ice,40\c0595a6e55a568bd63fb1917616741
 ,,item/weapon/it_wp_01_603.ice,85\dc6fbde7a981bfd6df69fc96c11b26
 ,,item/weapon/it_wp_01_604.ice,3c\15a7d5a4a55d152a865361e351c799
 ,,item/weapon/it_wp_01_606.ice,30\a87a7c3108d0453979400a7d4a11d6

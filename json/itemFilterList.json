@@ -353,7 +353,18 @@
   {
     "mainCategory": "UI",
     "fileFilters": [
+      "Arks Card BG",
+      "Arks Card Ticket BG",
+      "Enemy Icons",
+      "Line Duel Boards",
+      "Line Duel Cards",
+      "Line Duel Common",
+      "Line Duel Icons",
+      "Line Duel Sleeves",
       "LoadTunnels",
+      "Reboot Enemy Icons",
+      "Reboot General UI",
+      "UIWorldMapTextures",
       "Vital Gauge",
       "stamps",
       "stampsNA"
