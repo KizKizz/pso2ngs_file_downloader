@@ -21,7 +21,12 @@ class Item {
 
   bool containsCategory(List<String> filters) {
     for (var cateName in itemCategories) {
-      if (filters.contains(cateName.replaceAll('NGS', '').replaceAll('PSO2', '').trim())) {
+      if (filters.contains(cateName.trim())) {
+        return true;
+      }
+    }
+    for (var filter in filters) {
+      if (itemCategories.contains(filter)) {
         return true;
       }
     }
@@ -103,7 +108,8 @@ class Item {
     }
   }
 
-  Item.fromMap(String csvFileName, String csvFilePath, String itemType, List<String> itemCategories, String category, String subCategory, int categoryIndex, String iconImagePath, Map<String, String> infos)
+  Item.fromMap(
+      String csvFileName, String csvFilePath, String itemType, List<String> itemCategories, String category, String subCategory, int categoryIndex, String iconImagePath, Map<String, String> infos)
       : this(csvFileName = csvFileName, csvFilePath = csvFilePath, itemType = itemType, itemCategories = itemCategories, category = category, subCategory = subCategory, categoryIndex = categoryIndex,
             iconImagePath = iconImagePath, infos = infos);
 
@@ -133,7 +139,13 @@ void itemDataSave() {
   if (!playerItemDataJson.existsSync()) {
     playerItemDataJson.createSync(recursive: true);
   }
-  final playerItems = items.where((element) => element.csvFilePath.contains('\\Player') || element.csvFilePath.contains('\\UI\\Vital Gauge') || element.csvFilePath.contains('\\Weapons')).toList();
+  final playerItems = items
+      .where((element) =>
+          element.csvFilePath.contains('\\Player') ||
+          element.csvFilePath.contains('\\UI\\Vital Gauge') ||
+          element.csvFilePath.contains('\\UI\\Line Duel') ||
+          element.csvFilePath.contains('\\Weapons'))
+      .toList();
   playerItems.map((item) => item.toJson()).toList();
   const JsonEncoder encoder2 = JsonEncoder.withIndent('  ');
   playerItemDataJson.writeAsStringSync(encoder2.convert(playerItems));

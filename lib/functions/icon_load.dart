@@ -51,9 +51,22 @@ Future<void> setIconImage(context, Item item) async {
   if (File(iconImageFilePath).existsSync()) {
     item.iconImagePath = iconImageFilePath.replaceFirst(Uri.file(Directory.current.path).toFilePath(), '');
   } else {
-    if (item.infos.entries.where((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).isNotEmpty &&
-        item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).value.isNotEmpty) {
-      String iconIceName = item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Image')).value;
+    if (item.csvFileName == 'Line Duel Cards.csv') {
+      String iconIceName = item.infos.entries.firstWhere((element) => element.key.toString() == 'Ice Hash').value;
+      if (iconIceName.isNotEmpty) {
+        File downloadedImageIce = await downloadIceFromOfficial(context, iconIceName, tempDir.path);
+        if (downloadedImageIce.existsSync()) {
+          final iconImage = await getIconData(downloadedImageIce, Uri.file('${iconsDir.path}${item.csvFilePath}/${p.basenameWithoutExtension(item.csvFileName)}').toFilePath(), itemName);
+          if (iconImage.path.isNotEmpty && iconImage.existsSync()) {
+            item.iconImagePath = iconImage.path.replaceFirst(Uri.file(Directory.current.path).toFilePath(), '');
+          }
+        } else {
+          debugPrint('Cannot fetch icon for ${item.csvFileName} > $itemName');
+        }
+      }
+    } else if (item.infos.entries.where((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Ice Hash - Image')).isNotEmpty &&
+        item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Ice Hash - Image')).value.isNotEmpty) {
+      String iconIceName = item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Ice Hash - Image')).value;
       if (iconIceName.isNotEmpty) {
         File downloadedImageIce = await downloadIceFromOfficial(context, iconIceName, tempDir.path);
         if (downloadedImageIce.existsSync()) {

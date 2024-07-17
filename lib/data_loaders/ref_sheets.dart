@@ -269,17 +269,15 @@ Future<List<Item>> populateItemList() async {
           for (var line in csvContent) {
             csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 4);
           }
-        }
-        if (filePathParts.last == 'Arks Card Ticket BG.csv' ||
+        } else if (filePathParts.last == 'Arks Card Ticket BG.csv' ||
             filePathParts.last == 'Line Duel Boards.csv' ||
             filePathParts.last == 'Line Duel Cards.csv' ||
             filePathParts.last == 'Line Duel Sleeves.csv') {
-          headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash', 'Path', 'Ice Hash - Image', 'Path', 'Ice Hash - Image64']);
+          headers.addAll(['Japanese Name', 'English Name', 'IcePath', 'Ice Hash', 'ImagePath', 'Ice Hash - Image', 'Iamge64Path', 'Ice Hash - Image64']);
           for (var line in csvContent) {
             csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 8);
           }
-        }
-        if (filePathParts.last == 'Line Duel Common.csv' || filePathParts.last == 'Reboot General UI.csv' || filePathParts.last == 'UIWorldMapTextures.csv') {
+        } else if (filePathParts.last == 'Line Duel Common.csv' || filePathParts.last == 'Reboot General UI.csv' || filePathParts.last == 'UIWorldMapTextures.csv') {
           headers.addAll(['Japanese Name', 'English Name', 'Filler', 'Path', 'Ice Hash - Image']);
           for (var line in csvContent) {
             csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 5);
@@ -631,17 +629,15 @@ Future<List<Item>> populateItemList() async {
           for (var line in csvContent) {
             csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 4);
           }
-        }
-        if (filePathParts.last == 'Arks Card Ticket BG.csv' ||
+        } else if (filePathParts.last == 'Arks Card Ticket BG.csv' ||
             filePathParts.last == 'Line Duel Boards.csv' ||
             filePathParts.last == 'Line Duel Cards.csv' ||
             filePathParts.last == 'Line Duel Sleeves.csv') {
-          headers.addAll(['Japanese Name', 'English Name', 'Path', 'Ice Hash', 'Path', 'Ice Hash - Image', 'Path', 'Ice Hash - Image64']);
+          headers.addAll(['Japanese Name', 'English Name', 'IcePath', 'Ice Hash', 'ImagePath', 'Ice Hash - Image', 'Iamge64Path', 'Ice Hash - Image64']);
           for (var line in csvContent) {
             csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 8);
           }
-        }
-        if (filePathParts.last == 'Line Duel Common.csv' || filePathParts.last == 'Reboot General UI.csv' || filePathParts.last == 'UIWorldMapTextures.csv') {
+        } else if (filePathParts.last == 'Line Duel Common.csv' || filePathParts.last == 'Reboot General UI.csv' || filePathParts.last == 'UIWorldMapTextures.csv') {
           headers.addAll(['Japanese Name', 'English Name', 'Filler', 'Path', 'Ice Hash - Image']);
           for (var line in csvContent) {
             csvContent[csvContent.indexOf(line)] = itemInfoLineFieldPad(line, 5);
@@ -801,6 +797,10 @@ Future<List<Item>> populateItemList() async {
             }
           }
         }
+
+        // if (p.basename(file.path) == 'Line Duel Cards.csv') {
+        //   debugPrint('stop');
+        // }
 
         Item newItem = await itemFromCsv(
             p.basename(file.path),
