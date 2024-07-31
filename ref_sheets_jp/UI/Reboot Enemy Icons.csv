@@ -1,5 +1,5 @@
-﻿large_icon/ui_enemy_nodata_0000.ice,eb\05390b987e3660a628fcbae599fb02
-large_icon/ui_enemy_unknown_0000.ice,6b\e11e7ed23562f1f7f651aea4908641
+﻿,large_icon/ui_enemy_nodata_0000.ice,eb\05390b987e3660a628fcbae599fb02
+,large_icon/ui_enemy_unknown_0000.ice,6b\e11e7ed23562f1f7f651aea4908641
 large_icon/ui_enemy_normal_3101.ice,ef\8c0bd9938fbb29e0b435d446d3d4e3
 large_icon/ui_enemy_normal_3102.ice,5b\5d9f56e1a91927cf72e1f26fdca18a
 large_icon/ui_enemy_normal_3103.ice,58\093ccd735614f2738573c6fd5535b3
@@ -93,6 +93,8 @@ large_icon/ui_enemy_normal_3191.ice,91\ce12a9022f76fc9c2da4bf6316349f
 large_icon/ui_enemy_normal_3192.ice,b1\e4c1ac7bcc9d24773938f94f516c3b
 large_icon/ui_enemy_normal_3193.ice,bf\3d121ee7e61606ba5f1e1382555404
 large_icon/ui_enemy_normal_3194.ice,8f\94d97a8e88c273bab5bc14dec7d453
+large_icon/ui_enemy_normal_3195.ice,48\37714dacd800f9ad74f756aefa8dad
+large_icon/ui_enemy_normal_3198.ice,1e\e2d3d415c183ebdaf2e3f5d46fbe1b
 large_icon/ui_enemy_normal_4001.ice,00\25ca5672fd405a07de358fbd98b528
 large_icon/ui_enemy_normal_4002.ice,a7\40e922a16de31304bb52463e60c4c8
 large_icon/ui_enemy_normal_4003.ice,ad\235948546fc5b3f3471fc1d4518a5f
@@ -220,6 +222,7 @@ large_icon/ui_enemy_normal_4143.ice,1e\d9e6a05f19e172748c3f081c613b99
 large_icon/ui_enemy_normal_4148.ice,fb\5ab423e97e951ed2a1882151d7e330
 large_icon/ui_enemy_normal_4151.ice,12\b056b6ac9b25ff9624e13723287b3c
 large_icon/ui_enemy_normal_4152.ice,da\d854647f2fa5200b4f81c81cca7663
+large_icon/ui_enemy_normal_4153.ice,ce\a0f7b3fdd922ded55868413daa2927
 large_icon/ui_enemy_normal_4501.ice,69\43978bee44dcbd25ba3a679bfb5928
 large_icon/ui_enemy_normal_4502.ice,d8\e6d6ef28f32e907bf6a745bfdd1126
 large_icon/ui_enemy_normal_4503.ice,4b\5392bdc2f3e4214744cb6c0f620192

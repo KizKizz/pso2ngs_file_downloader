@@ -573,6 +573,7 @@ en_stl_bbd_common.ice,9e\28c10e7e704b9678698f7d849b7b10
 ゼレヴィン,,,,,,,,,,en_r05_stl_mzc_ba.ice,7e\05983c856c7990aeb583a3f6a0eb14
 en_stl_mzc_common.ice,53\d32c80a3be14e5d9ceee5b0d89aff8
 ダークファルス・ダリオン,,,,,,,,,,en_r05_stl_dnt_ba.ice,5b\c2154e75afa47441f78c812c8f78ab
+ダークファルス・ダリオン,,,,,,,,,,en_r05_stl_dnt_ex.ice,3a\72e88a59c962902100c5fcd11319a0
 en_stl_dnt_common.ice,54\de46f7b421fbea5b7c0927d178552c
 ドライヴェルズ,,,,,,,,,,en_r05_stl_krb_ba.ice,8a\f85c810cbdbce07407f9f7f0e19bce
 en_stl_krb_common.ice,f6\ae5dd3152d1418aabaecea0ed1f18c
@@ -591,6 +592,10 @@ en_rem_ctl_common.ice,08\fbde10151d35883476d53621318d9e
 en_rem_des_common.ice,22\c9e3106aad08b1883ed8e364335f87
 ルイノ・グリフォン,,,,,,,,,,en_r05_rem_ggr_ba.ice,09\91ec98369d6ab3c8e9446e1ba7cb5d
 en_rem_ggr_common.ice,d2\2ee27be2ea67cd16c497f6a9de1474
+ルイノ・グンネガム,,,,,,,,,,en_r05_rem_yor_ba.ice,da\d5215d583b45fa00e1fccdca00f2fd
+en_rem_yor_common.ice,8c\1a5ea9ed4ccb54bdcdda6cbe430d30
+ルイノ・アンジュール,,,,,,,,,,en_r05_rem_ace_ba.ice,dd\5fa6891c15bdb8b5a7455f223bf6f5
+en_rem_ace_common.ice,f7\db0db3bdad7166302d68dba5321d64
 en_gd_flo_eff.ice,a8\42fb661ed8319ab2349b0be5578eee
 en_gd_gia_eff.ice,f8\3bab9cbdd38b0641a47a91a4dd7cb4
 en_gd_kpy_eff.ice,6e\0d8a1df8942306521ab87ef7027c80
