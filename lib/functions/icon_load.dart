@@ -53,7 +53,7 @@ Future<void> setIconImage(context, Item item) async {
   } else {
     if (item.csvFileName == 'Line Duel Cards.csv') {
       String iconIceName = item.infos.entries.firstWhere((element) => element.key.toString() == 'Ice Hash').value;
-      if (iconIceName.isNotEmpty) {
+      if (iconIceName.isNotEmpty && !itemName.contains('Unnamed')) {
         File downloadedImageIce = await downloadIceFromOfficial(context, iconIceName, tempDir.path);
         if (downloadedImageIce.existsSync()) {
           final iconImage = await getIconData(downloadedImageIce, Uri.file('${iconsDir.path}${item.csvFilePath}/${p.basenameWithoutExtension(item.csvFileName)}').toFilePath(), itemName);
@@ -67,7 +67,7 @@ Future<void> setIconImage(context, Item item) async {
     } else if (item.infos.entries.where((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Ice Hash - Image')).isNotEmpty &&
         item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Ice Hash - Image')).value.isNotEmpty) {
       String iconIceName = item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Ice Hash - Image')).value;
-      if (iconIceName.isNotEmpty) {
+      if (iconIceName.isNotEmpty && !itemName.contains('Unnamed')) {
         File downloadedImageIce = await downloadIceFromOfficial(context, iconIceName, tempDir.path);
         if (downloadedImageIce.existsSync()) {
           final iconImage = await getIconData(downloadedImageIce, Uri.file('${iconsDir.path}${item.csvFilePath}/${p.basenameWithoutExtension(item.csvFileName)}').toFilePath(), itemName);
