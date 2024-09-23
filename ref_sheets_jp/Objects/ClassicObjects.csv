@@ -1,5 +1,5 @@
 ﻿Object Name JP,Object Name EN,Object ID,Object Path,Object Path Tier 6 Textures,Object Hash,Object Hash Tier 6 Textures
-,,ob_0000_0000,object/map_object/ob_0000_0000.ice,object/map_object/ob_0000_0000_ex.ice,,
+,,ob_0000_0000,object/map_object/ob_0000_0000.ice,object/map_object/ob_0000_0000_ex.ice,ad5954d56e55c9c80d81a9440410c119,
 ,,ob_0000_0001,object/map_object/ob_0000_0001.ice,object/map_object/ob_0000_0001_ex.ice,,
 ,,ob_0000_0002,object/map_object/ob_0000_0002.ice,object/map_object/ob_0000_0002_ex.ice,,
 ,,ob_0000_0003,object/map_object/ob_0000_0003.ice,object/map_object/ob_0000_0003_ex.ice,,
@@ -27,7 +27,7 @@
 ,,ob_0100_0011,object/map_object/ob_0100_0011.ice,object/map_object/ob_0100_0011_ex.ice,592e1faa10b3114ec789a7e5e933cc40,ec26b72e10d5b4721653d002651ece08
 ,,ob_0100_0012,object/map_object/ob_0100_0012.ice,object/map_object/ob_0100_0012_ex.ice,47a632f1812e7e062f1b4cd7deb15af9,2364778cf197ffacc5b0d4938b703351
 ,,ob_0100_0013,object/map_object/ob_0100_0013.ice,object/map_object/ob_0100_0013_ex.ice,24ccdb21a740aad1776e124a9625110a,7a92832fa58bbc31aeaca6d2732817b4
-,,ob_0100_0015,object/map_object/ob_0100_0015.ice,object/map_object/ob_0100_0015_ex.ice,9895769b8b0ee561015ad8f5e53587d3,
+,,ob_0100_0015,object/map_object/ob_0100_0015.ice,object/map_object/ob_0100_0015_ex.ice,,
 ,,ob_0100_0016,object/map_object/ob_0100_0016.ice,object/map_object/ob_0100_0016_ex.ice,1278c38143255ad47427ca63d9e7b69d,2c1914e62704171ba57ebeafc3b4c39d
 ,,ob_0100_0017,object/map_object/ob_0100_0017.ice,object/map_object/ob_0100_0017_ex.ice,d95e1b67439866ea4ab5c0d8460a18bf,3754e71421420deebcb5c1c3e93cdc94
 ,,ob_0100_0018,object/map_object/ob_0100_0018.ice,object/map_object/ob_0100_0018_ex.ice,e7edb7015a020e7b4e5d73398cdb9f32,6dd698b0eedd1cfd1cbc086cebbbf926
@@ -910,15 +910,15 @@
 ,,ob_0310_0075,object/map_object/ob_0310_0075.ice,object/map_object/ob_0310_0075_ex.ice,53687a240a439bf926fda485836ac92f,91949af60a80244cd888ce14510d3a9a
 ,,ob_0310_0076,object/map_object/ob_0310_0076.ice,object/map_object/ob_0310_0076_ex.ice,b67f7c89beba6d87ed85e656a23e10ef,2e7d01f57207dcbf356dac58373f9ee4
 ,,ob_0310_0077,object/map_object/ob_0310_0077.ice,object/map_object/ob_0310_0077_ex.ice,54a81d93e9e3a049e97d51f39a201a8c,b1d9e7400820b61811f63d4fe20382f2
-,,ob_0310_0078,object/map_object/ob_0310_0078.ice,object/map_object/ob_0310_0078_ex.ice,9d6e7b5991b18ae482ec1265d083f7bb,
-,,ob_0310_0079,object/map_object/ob_0310_0079.ice,object/map_object/ob_0310_0079_ex.ice,68bb8583d0b59d931ee8900de852aca2,
-,,ob_0310_0080,object/map_object/ob_0310_0080.ice,object/map_object/ob_0310_0080_ex.ice,10983e60a386d569a13f0f9f368a9443,
-,,ob_0310_0081,object/map_object/ob_0310_0081.ice,object/map_object/ob_0310_0081_ex.ice,676c7ed2ab7d99f632594a40094b04f0,
-,,ob_0310_0082,object/map_object/ob_0310_0082.ice,object/map_object/ob_0310_0082_ex.ice,eec25d027e1d48e78eaec992072b2c97,
-,,ob_0310_0083,object/map_object/ob_0310_0083.ice,object/map_object/ob_0310_0083_ex.ice,7b1ab318895a3f93d845d2531daf91fe,
-,,ob_0310_0084,object/map_object/ob_0310_0084.ice,object/map_object/ob_0310_0084_ex.ice,9b19ae490d3248182f5f34d252da0b8b,
-,,ob_0310_0085,object/map_object/ob_0310_0085.ice,object/map_object/ob_0310_0085_ex.ice,6c2ee25428e857a47c19d63059c6e820,
-,,ob_0310_0086,object/map_object/ob_0310_0086.ice,object/map_object/ob_0310_0086_ex.ice,d0ed02692e0e6e5aad1731968526afed,
+,,ob_0310_0078,object/map_object/ob_0310_0078.ice,object/map_object/ob_0310_0078_ex.ice,,
+,,ob_0310_0079,object/map_object/ob_0310_0079.ice,object/map_object/ob_0310_0079_ex.ice,,
+,,ob_0310_0080,object/map_object/ob_0310_0080.ice,object/map_object/ob_0310_0080_ex.ice,,
+,,ob_0310_0081,object/map_object/ob_0310_0081.ice,object/map_object/ob_0310_0081_ex.ice,,
+,,ob_0310_0082,object/map_object/ob_0310_0082.ice,object/map_object/ob_0310_0082_ex.ice,,
+,,ob_0310_0083,object/map_object/ob_0310_0083.ice,object/map_object/ob_0310_0083_ex.ice,,
+,,ob_0310_0084,object/map_object/ob_0310_0084.ice,object/map_object/ob_0310_0084_ex.ice,,
+,,ob_0310_0085,object/map_object/ob_0310_0085.ice,object/map_object/ob_0310_0085_ex.ice,,
+,,ob_0310_0086,object/map_object/ob_0310_0086.ice,object/map_object/ob_0310_0086_ex.ice,,
 ,,ob_0310_0087,object/map_object/ob_0310_0087.ice,object/map_object/ob_0310_0087_ex.ice,ec9894a2e664e92ad34dd267cda5507e,626e825a4064df7f6448e62ebde880a6
 ,,ob_0311_0000,object/map_object/ob_0311_0000.ice,object/map_object/ob_0311_0000_ex.ice,b356db14a14c3beff65afef454957734,6e0d55bee1dfc2f1e16d0620cd2843e3
 ,,ob_0311_0001,object/map_object/ob_0311_0001.ice,object/map_object/ob_0311_0001_ex.ice,f013081a21998f9f4b337344f3c8ab9d,a8b014cc967cfcfe33532b3420a883ac
@@ -3290,9 +3290,9 @@
 ,,ob_1000_1808,object/map_object/ob_1000_1808.ice,object/map_object/ob_1000_1808_ex.ice,053313615d44bb2f69013167e5fb905a,
 ,,ob_1000_1809,object/map_object/ob_1000_1809.ice,object/map_object/ob_1000_1809_ex.ice,,
 ,,ob_1000_1810,object/map_object/ob_1000_1810.ice,object/map_object/ob_1000_1810_ex.ice,9a81572a189002dcf64a89af192511a4,
-,,ob_1000_1811,object/map_object/ob_1000_1811.ice,object/map_object/ob_1000_1811_ex.ice,,
+,,ob_1000_1811,object/map_object/ob_1000_1811.ice,object/map_object/ob_1000_1811_ex.ice,22ad1919660a09353e09217ef4ea22c2,
 ,,ob_1000_1812,object/map_object/ob_1000_1812.ice,object/map_object/ob_1000_1812_ex.ice,,
-,,ob_1000_1813,object/map_object/ob_1000_1813.ice,object/map_object/ob_1000_1813_ex.ice,,
+,,ob_1000_1813,object/map_object/ob_1000_1813.ice,object/map_object/ob_1000_1813_ex.ice,29fc3659ae6716c1bdad5710ea241fad,
 ,,ob_1000_1814,object/map_object/ob_1000_1814.ice,object/map_object/ob_1000_1814_ex.ice,467498cf4f294f2bad006e564fefd6d9,
 ,,ob_1000_1815,object/map_object/ob_1000_1815.ice,object/map_object/ob_1000_1815_ex.ice,7c6d4ac1983dc4b2f2b038724ef7f7d3,
 ,,ob_1000_1816,object/map_object/ob_1000_1816.ice,object/map_object/ob_1000_1816_ex.ice,40fd8689c9671a9ee533fbebc001d711,
@@ -3306,7 +3306,7 @@
 ,,ob_1000_1824,object/map_object/ob_1000_1824.ice,object/map_object/ob_1000_1824_ex.ice,9715af735cee260f6442f908e6280703,
 ,,ob_1000_1825,object/map_object/ob_1000_1825.ice,object/map_object/ob_1000_1825_ex.ice,d4d3a2bc8d675de42bd70d89b9df8be6,
 ,,ob_1000_1826,object/map_object/ob_1000_1826.ice,object/map_object/ob_1000_1826_ex.ice,ac759c91a16ead558306f1249efb424c,
-,,ob_1000_1827,object/map_object/ob_1000_1827.ice,object/map_object/ob_1000_1827_ex.ice,,
+,,ob_1000_1827,object/map_object/ob_1000_1827.ice,object/map_object/ob_1000_1827_ex.ice,18eece84135c78769723e377fc8e6571,
 ,,ob_1000_1828,object/map_object/ob_1000_1828.ice,object/map_object/ob_1000_1828_ex.ice,104595f234b621ac417e4b3e7e802c1d,
 ,,ob_1000_1829,object/map_object/ob_1000_1829.ice,object/map_object/ob_1000_1829_ex.ice,728e6f1a83917e2b0e39d088a30b57f2,
 ,,ob_1000_1830,object/map_object/ob_1000_1830.ice,object/map_object/ob_1000_1830_ex.ice,283fb13a1740124611436727f7e78b3e,
@@ -3340,7 +3340,7 @@
 ,,ob_1000_1858,object/map_object/ob_1000_1858.ice,object/map_object/ob_1000_1858_ex.ice,729245bf3e19c367bd703279d2a58091,
 ,,ob_1000_1859,object/map_object/ob_1000_1859.ice,object/map_object/ob_1000_1859_ex.ice,c16181f215170522cce3f922e00cd700,
 ,,ob_1000_1860,object/map_object/ob_1000_1860.ice,object/map_object/ob_1000_1860_ex.ice,f1e7de634c33a729a8891f2068a7857b,
-,,ob_1000_1861,object/map_object/ob_1000_1861.ice,object/map_object/ob_1000_1861_ex.ice,,
+,,ob_1000_1861,object/map_object/ob_1000_1861.ice,object/map_object/ob_1000_1861_ex.ice,1ce8cbdd1c472edfb45f73d9619bfb05,
 ,,ob_1000_1862,object/map_object/ob_1000_1862.ice,object/map_object/ob_1000_1862_ex.ice,c2343b0e34c09bcb1e68e13a345ae0d8,
 ,,ob_1000_1863,object/map_object/ob_1000_1863.ice,object/map_object/ob_1000_1863_ex.ice,9b1d02f53ac8084f92c646bcbafa4a28,a8e6d5e45b79982a342c1fb4241c77b1
 ,,ob_1000_1864,object/map_object/ob_1000_1864.ice,object/map_object/ob_1000_1864_ex.ice,822b43f6ae99ddb05eada73f29dc9ce3,d6292af846d5f1a25f70d3c66a5e7666
@@ -3426,7 +3426,7 @@
 ,,ob_1000_1944,object/map_object/ob_1000_1944.ice,object/map_object/ob_1000_1944_ex.ice,,
 ,,ob_1000_1945,object/map_object/ob_1000_1945.ice,object/map_object/ob_1000_1945_ex.ice,,
 ,,ob_1000_1946,object/map_object/ob_1000_1946.ice,object/map_object/ob_1000_1946_ex.ice,,
-,,ob_1000_2051,object/map_object/ob_1000_2051.ice,object/map_object/ob_1000_2051_ex.ice,,
+,,ob_1000_2051,object/map_object/ob_1000_2051.ice,object/map_object/ob_1000_2051_ex.ice,110f8487b0b04478712d5215ba7e4698,
 ,,ob_1000_2052,object/map_object/ob_1000_2052.ice,object/map_object/ob_1000_2052_ex.ice,,
 ,,ob_1000_2053,object/map_object/ob_1000_2053.ice,object/map_object/ob_1000_2053_ex.ice,,
 ベーシック・テーマ,,ob_1001_0000,object/map_object/ob_1001_0000.ice,object/map_object/ob_1001_0000_ex.ice,a9bcf383f24a793fcdf6e0d6f5d5a2a7,3663d06e26f6b976c0b553809d64e72a
@@ -4592,7 +4592,7 @@
 ,,ob_9900_0471,object/map_object/ob_9900_0471.ice,object/map_object/ob_9900_0471_ex.ice,5acc84b81ec051e4a065dfa016ea8cfa,
 ,,ob_9900_0472,object/map_object/ob_9900_0472.ice,object/map_object/ob_9900_0472_ex.ice,05a461fc29730e8c4978a6fd1a013ab8,
 ,,oa_darker_helicopter_db,object/map_object/oa_darker_helicopter_db.ice,,18bb0985be9ef9e925e6d6f1d64e869a,
-,,oa_darker_helicopter_n,,,,
+,,oa_darker_helicopter_n,object/map_object/oa_darker_helicopter_n.ice,,57170aa1d799de1749103d61d72480cc,
 ,,oa_helicopter_g_defense_other,object/map_object/oa_helicopter_g_defense_other.ice,,3260d5d61e61b72eab7d5b1d47402c21,
 ,,oa_helicopter_g_defense,object/map_object/oa_helicopter_g_defense.ice,,88bbba193e020fde3bb645d65c63cfe3,
 ,,oa_helicopter_g_drop_other,object/map_object/oa_helicopter_g_drop_other.ice,,58d34f3c828362ef943166a998c7aa1f,
@@ -4997,7 +4997,7 @@
 ,,oa_umincyu_kiki1patu_e,,,,
 ,,oa_umincyu_kiki1patu_f,,,,
 ,,oa_under_construction,,,,
-,,oa_velocity_effect_collision,,,,
+,,oa_velocity_effect_collision,object/map_object/oa_velocity_effect_collision.ice,,0184530129863d8bc3145ef47ae7b3ce,
 ,,oa_volcano_drop_item,object/map_object/oa_volcano_drop_item.ice,,cdbf13149ef93e12127a235a08f884f5,
 ,,oa_volcano_drop_tail,object/map_object/oa_volcano_drop_tail.ice,,a255fc380712ffef347882441af5724a,
 ,,oa_volume_controller,object/map_object/oa_volume_controller.ice,,ceae65ca2602b3d9a9af87eb4d6aaa84,
@@ -5008,7 +5008,7 @@
 ,,oc_annihilation_mge,object/map_object/oc_annihilation_mge.ice,,5c7d0b081d06a46fa2b80dffdd963e46,
 ,,oc_annihilation_phantom_ship,object/map_object/oc_annihilation_phantom_ship.ice,,0a744fe998de0466d1926f480ae7300d,
 ,,oc_annihilation_rd,object/map_object/oc_annihilation_rd.ice,,d0225cad9f2078c216129a15389170d8,
-,,oc_annihilation,,,,
+,,oc_annihilation,object/map_object/oc_annihilation.ice,,813edae17129a71743e318712f896cc9,
 ,,oc_area_boss_abd_clone,object/map_object/oc_area_boss_abd_clone.ice,,00f2d0b44cc83269adc1b113c4634d8c,
 ,,oc_area_boss_ap,object/map_object/oc_area_boss_ap.ice,,28a15a11c5f37228b2b3ce68a4960227,
 ,,oc_area_boss_c3_f,object/map_object/oc_area_boss_c3_f.ice,,78b4411feeaaf324a0adb01e9342f999,

@@ -1672,6 +1672,8 @@ Object Name JP (if known),Object Name EN (if known),Object Function,Animation ty
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1807.ice,ce34940e947d04e5ac87edce68b03f3c
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1808.ice,053313615d44bb2f69013167e5fb905a
 ,,jukebox,motion_none,wall,ground,object/map_object/ob_1000_1810.ice,9a81572a189002dcf64a89af192511a4
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1811.ice,22ad1919660a09353e09217ef4ea22c2
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1813.ice,29fc3659ae6716c1bdad5710ea241fad
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1814.ice,467498cf4f294f2bad006e564fefd6d9
 ,,none,motion_none,wall,ground,object/map_object/ob_1000_1815.ice,7c6d4ac1983dc4b2f2b038724ef7f7d3
 ,,none,motion_none,wall,ground,object/map_object/ob_1000_1816.ice,40fd8689c9671a9ee533fbebc001d711
@@ -1685,6 +1687,7 @@ Object Name JP (if known),Object Name EN (if known),Object Function,Animation ty
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1824.ice,9715af735cee260f6442f908e6280703
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1825.ice,d4d3a2bc8d675de42bd70d89b9df8be6
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1826.ice,ac759c91a16ead558306f1249efb424c
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1827.ice,18eece84135c78769723e377fc8e6571
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1828.ice,104595f234b621ac417e4b3e7e802c1d
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1829.ice,728e6f1a83917e2b0e39d088a30b57f2
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1830.ice,283fb13a1740124611436727f7e78b3e
@@ -1716,6 +1719,7 @@ Object Name JP (if known),Object Name EN (if known),Object Function,Animation ty
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1858.ice,729245bf3e19c367bd703279d2a58091
 ,,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_1859.ice,c16181f215170522cce3f922e00cd700
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1860.ice,f1e7de634c33a729a8891f2068a7857b
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1861.ice,1ce8cbdd1c472edfb45f73d9619bfb05
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1862.ice,c2343b0e34c09bcb1e68e13a345ae0d8
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_1863.ice,9b1d02f53ac8084f92c646bcbafa4a28,a8e6d5e45b79982a342c1fb4241c77b1
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_1864.ice,822b43f6ae99ddb05eada73f29dc9ce3,d6292af846d5f1a25f70d3c66a5e7666
@@ -1797,3 +1801,4 @@ Object Name JP (if known),Object Name EN (if known),Object Function,Animation ty
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1941.ice,27f31a606a1251c3842f373302dddc83
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1942.ice,cc22c3cdc28c9a4965ce00b6d25450fe
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1943.ice,1a1b10fb083147578b1fc20bd41ebaa7
+,,none,motion_none,wall,poster,object/map_object/ob_1000_2051.ice,110f8487b0b04478712d5215ba7e4698
