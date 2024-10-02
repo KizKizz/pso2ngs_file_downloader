@@ -1,5 +1,5 @@
 ﻿Japanese Name,English Name,Id,Adjusted Id,Icon,Normal Quality,High Quality,Normal Quality RP,High Quality RP,Linked Inner,HQ Linked Inner,Sounds,Cast Sounds,Material Anim,Material Anim Ex,Hand Textures,HQ Hand Textures,Hair Model,High Quality Hair Model,Face Model,High Quality Face Model
-,,400000,400000,,af3398ed565848a20c6123d728bd9276,17e00e817bbbba076371ac12084e97e2,,,cec6555edfaeb1eaf449d99ec2cee89f,d5bf86c74c57bf959b97736f0d889749,,,,,,,,,,
+,,400000,400000,,,,,,cec6555edfaeb1eaf449d99ec2cee89f,d5bf86c74c57bf959b97736f0d889749,,,,,,,,,,
 ディアーレ・アーム,Di Allez Arms,400010,400010,ea0f41d992d0e7f6a2da3b2ac8ca09f4,343f7608868f47a3d8391599dc3129c6,46ef4938ed7d4dc4521a8ca89c798b99,,,cec6555edfaeb1eaf449d99ec2cee89f,d5bf86c74c57bf959b97736f0d889749,,,,,,,,,,
 ディアーレ・アーム/2,Di Allez Arms/2,400011,400011,76a6a3f70d457cb04aac4d0800b7788d,dc83651a9b6741a7fb45045b8db644a4,594f893358869064e0811d3597a7d7e2,,,5ef947a591d1448cea7d51aed586617b,957dc2a13858412f2796639f178a58fd,,,,,,,,,,
 コルセロ・アーム,Corsero Arms,400020,400020,a63b6dfec9cf2ad3d51d9a3f00b38abc,78f475b0acd8272c65efc23a619aea48,6dcd611392ff0cc266b53ebbc3114f92,,,d4a3bcba240aca99454ce410a10f18c2,77c93d15dec0923870aff2df25334c6d,,,,,,,,,,
@@ -72,5 +72,8 @@ N-アリスリーパー・アーム/B,N-Alice Reaper Arms/B,400660,400660,6072b1
 ベルタスレイ・アーム/B,Belta Slay Arms/B,400710,400710,9e08641182dfc16686449054c9d03ab4,e971f1703af1428ae929af12100dbce1,480dfdbf2e7e152f922c3969777fcc88,,,53e778951fd7ffce1335125adec45793,a05bd3a243dd66627da6a2d2b29d8266,,,,,,,,,,
 ヘリーファルーテ・アーム/B,Gerifalte Arms/B,400720,400720,6ef35ab2ca5eb177cefa82b45086318b,40cecbccf0fe96ddfc086b55511b88c3,5213ed31adff983487c7bbcb40f6a29c,,,,,,,,,,,,,,
 イフェスティー・アームUC,Investig Arms UC,400730,400730,e422a0be56bc0c04d6dd29a61478b3c5,6f08d30c1d64ff4dbb069422041e9c3b,b7f02a3c9d9690d722eb630a024a6669,,,44412aab2e1046c7167a2e8dacee1fb0,3dc62f762aa5355e5763564dae31a244,,,,,,,,,,
+ドゥルガーⅠG・アーム,Durga IG Arms,400740,400740,6fe3860634e17ddaa5654db0b0c6b004,dbfe86c2ff6194f6d2d976434d642de3,b8a934265befdcf81e6e9227eb788461,,,80c1c3affb3687376cacac871f970df2,30123774dad7ad0c1eda42e086e25ef7,,,,,,,,,,
+フロリアーネ・アーム/B,Florial Arms/B,400760,400760,a5e23497ce1fa187997736b5b81b9f66,365c441649e03c08461feb1a8740766a,998629eb6ddde183a0381844ec562ab0,,,7e6667c3dfe41c03e1556369f21d2b8e,0062719f451975fbdb74ec4eaaddcb30,,,,,,,,,,
+ドゥルガーⅠG-DQV・アーム,Durga IG-DQV Arms,400770,400770,0ab17cb3dea17e3c8cd83c954a7e9f9c,d2018b938a0aea5d60b29384e896a627,9fdebd4582360e701d12d1600d9e4758,,,80c1c3affb3687376cacac871f970df2,30123774dad7ad0c1eda42e086e25ef7,,,,,,,,,,
 ,,499900,499900,,d72f1fbd1a095561938a850bf315a09f,3f40c9e0c1862457fcfe421d270797e0,,,,,,,,,,,,,,
 ,,499910,499910,,,,,,,,,,,,,,,,,
