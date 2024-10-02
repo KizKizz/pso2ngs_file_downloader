@@ -536,6 +536,7 @@ en_gd_gho_common.ice,70\01215589d9b3360d46094a45705f8a
 en_gd_zft_common.ice,2e\8202a869344df24699527b96ef2b8d
 ボルガリス,,,,,,,,,,en_r05_non_myt_a.ice,d9\2bbb7a41a5cc2d9782270828a6b016
 en_non_myt_common.ice,d6\cc96ec78b2f3328190a77a42babd66
+カオスザヴェル,,,,,,,,,,en_r05_stl_akm_ba1.ice,84\84bab196db237325bf889af2156a9a
 グラッジボーン,,,,,,,,,,en_r05_stl_bkt_ba1.ice,d6\e3a42413c61f0d9e08e8e90a7058fa
 ラヴィード,,,,,,,,,,en_r05_stl_box_ba1.ice,c6\a95c434bba98f8aa805c9276e44dad
 ヴァルザッガ,,,,,,,,,,en_r05_stl_cas_el1.ice,f5\3a12b0ad30f3dbfab3d42c7e845c4d
@@ -551,6 +552,7 @@ en_non_myt_common.ice,d6\cc96ec78b2f3328190a77a42babd66
 ドゥランゲラド,,,,,,,,,,en_r05_stl_leg_ba1.ice,a4\39ecf6ea7cd8218f48d57daf89226c
 バルブレッダ,,,,,,,,,,en_r05_stl_mrt_ba1.ice,56\30b5a6a4153675c952bb9f75d6c4b3
 ディンド,,,,,,,,,,en_r05_stl_mtl_ba1.ice,dd\242f0659d3f68ebcfde00bbf9c497e
+ハヌマッド,,,,,,,,,,en_r05_stl_nyb_ba1.ice,bc\ae18cf415949491f7505aaed4d9f59
 ギルゼイヴァ,,,,,,,,,,en_r05_stl_pan_ba1.ice,6b\e7725fee7f3a0d26fa86195ca1ad5d
 ヴォルガ,,,,,,,,,,en_r05_stl_pyc_ba.ice,b0\eff4225aad4b29031e9df8590a6f8f
 マクスヴァング,,,,,,,,,,en_r05_stl_sip_ba1.ice,87\6cc2dfd03e55b4987fe63fc2c9bb65
@@ -567,6 +569,7 @@ en_stl_solri_common.ice,03\fcd6136a152e46212cd60036119137
 en_stl_solsw_common.ice,4e\975ec113c2b32384f68709940acf19
 ハルヴァルディ,,,,,,,,,,en_r05_stl_pnr_ba.ice,71\c4e03a9acbbe2c9ee787a21e7ed75b
 ハルヴァルディ・ヴェラ,,,,,,,,,,en_r05_stl_pnr_rai.ice,aa\0c56ed6d9d8f0ef873817d91889f56
+en_stl_pnr_common.ice,95\0b535f4d6095e3095a59812111b352
 アーンズゥ,,,,,,,,,,en_r05_stl_bbd_ba.ice,ad\5dd09d6885cd04949cce9521e71f21
 en_stl_bbd_common.ice,9e\28c10e7e704b9678698f7d849b7b10
 ゼレヴィン,,,,,,,,,,en_r05_stl_mzc_ba.ice,7e\05983c856c7990aeb583a3f6a0eb14

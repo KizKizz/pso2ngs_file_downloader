@@ -1,6 +1,4 @@
-﻿＊マジカルサファイア,* Magical Sapphire,item/weapon/it_wp_13_055.ice,66\56aef6c7f98ac3233213421b1a7407
-＊ジャンクヤード・ドッグ,* Junkyard Dog,item/weapon/it_wp_13_066.ice,5e\667f400306165bca500b26505c7498
-＊マジカルルビー,* Magical Ruby,item/weapon/it_wp_13_139.ice,1c\c46edd6be4d7eb33fa585044650952
+﻿＊ジャンクヤード・ドッグ,* Junkyard Dog,item/weapon/it_wp_13_066.ice,5e\667f400306165bca500b26505c7498
 エッジレボルシオ,Edge Revolsio,item/weapon/it_wp_13_253.ice,67\d0abf7b57f43a4edbb8e5cabb21906
 エッジドミナシオ,Edge Dominacio,item/weapon/it_wp_13_254.ice,77\3a4338c64515bfb8639c6bfad4e6d8
 エッジインクルシオ,Edge Inclusio,item/weapon/it_wp_13_255.ice,c3\93cc2c8f66c5a5a5c69beb18f3212b
@@ -98,3 +96,8 @@ DEBUG - プリムウォンド,Steel Primm Wand,item/weapon/it_wp_13_527.ice,93\5
 ,,item/weapon/it_wp_13_604.ice,6f\c2ef10709ed2c6b76036afb2cefeb3
 ,,item/weapon/it_wp_13_605.ice,4f\fa1d77ab0226ff31e468bccacf1c1d
 ,,item/weapon/it_wp_13_609.ice,a3\864c51d31eb31677abc52e045e9723
+,,item/weapon/it_wp_13_610.ice,9b\2a9730324b4f170c81e9139f157865
+,,item/weapon/it_wp_13_611.ice,a6\81ce56ecd6ca40a1d8032b3a079afc
+,,item/weapon/it_wp_13_613.ice,de\608e770869aa82a08ad97ffbdf81b3
+,,item/weapon/it_wp_13_614.ice,a7\a816cb3c973d413ad6e85df1e06731
+,,item/weapon/it_wp_13_615.ice,4e\1af9f543d02390cbd7f924284f08df

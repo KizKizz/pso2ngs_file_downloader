@@ -67,7 +67,6 @@
 ヒュリオサンジン,Hurio Sanjin,item/weapon/it_wp_14_078.ice,22a177eb8a9e9c93971c2024ff7e3484
 カルサネス,Calzanes,item/weapon/it_wp_14_079.ice,204a39b60647738367e97fe58b5a12c0
 アーレスリュウガ,Ares Ryuuga,item/weapon/it_wp_14_080.ice,b97d59c0c4f39dc5ae0f2e92a9ec8ce7
-＊約束された勝利の剣,* The Sword of Promised Victory,item/weapon/it_wp_14_083.ice,6f56b76cd3f75a061586642cc95f7807
 ヴェクサネス,Vekusanes,item/weapon/it_wp_14_084.ice,c50fd19af988a60a4da5a81206d3bb4b
 フィルフシンドウ,Filfushindo,item/weapon/it_wp_14_088.ice,ba10bad23a4e411b83d9da666b30e392
 エレヌバティナ,Helen Bathina,item/weapon/it_wp_14_090.ice,089bbdf17b4b887c2c67d8218b4bb11b
@@ -113,7 +112,6 @@
 レンゴクトウ・エンサ,Rengokuto Ensa,item/weapon/it_wp_14_162.ice,876b349d7df654b07bf80c5a70e52c6c
 レンゴクトウ・グレン,Rengokuto Guren,item/weapon/it_wp_14_163.ice,c949e118fbb1a94919eb73897adf6b36
 ＊サクラ・ランドセル,* Sakura Backpack,item/weapon/it_wp_14_164.ice,1a05e3dd4b0ee06ca52cfe2757651816
-＊儀礼剣,* Ceremonial Sword,item/weapon/it_wp_14_168.ice,a604d5af1dbb6824e5b5d47212aa8233
 カザミノタチ,Kazami no Tachi,item/weapon/it_wp_14_169.ice,474f667b35575606c034f84122586f77
 ディアバシュト,Dia Bascht,item/weapon/it_wp_14_172.ice,8e1f30b2c14b3e2add9208f31c2aa04b
 グラテスバシュト,Gratis Bascht,item/weapon/it_wp_14_173.ice,2dd9bacb982c2e2df65e6eeb594a8bf4
@@ -137,7 +135,6 @@
 天羽々斬,Ame-no-Habakiri,item/weapon/it_wp_14_197.ice,ac900458a34186280df65153a1331dcd
 雷閃タガミコウガ,Lightning Flash Tagami Kouga,item/weapon/it_wp_14_198.ice,d89025a4f87b74a6809f8bd6e2e5aacf
 ＊雷装イザネカヅチ,* Lightning Izanekazuchi,item/weapon/it_wp_14_199.ice,f2e552efe6ca620986ad9464242a45b6
-＊リィンの太刀,* Rean's Katana,item/weapon/it_wp_14_201.ice,9b31a464e531be8cda26591343c32eb1
 ＊終刀・創世,* Blade of Genesis,item/weapon/it_wp_14_202.ice,603293d9f2ae4a223846e70e04669a48
 ＊世果・封,* Yonohate Fu,item/weapon/it_wp_14_203.ice,e6b9fc4e991059db461223598973c630
 リグセイガン,Rig Seigan,item/weapon/it_wp_14_204.ice,ced59ca8cf6cfe0f79e17753967e5f26
@@ -170,7 +167,6 @@
 ＊アルテミス＆レイピア,* Artemis & Rapier,item/weapon/it_wp_14_241.ice,98527150691fa7924add88b33cddc633
 ゼイネシスシース,Zeinesis Sheath,item/weapon/it_wp_14_242.ice,1e30a832a15ff755151f4d479d4d2202
 クリファドシース,Clifard Sheath,item/weapon/it_wp_14_243.ice,de9934051ada9864ad150590159acef5
-＊魔法の派・エクスカリバー,* Sorcery King Excalibur,item/weapon/it_wp_14_244.ice,b5f790424b1f71b7a772ee1b26e2212f
 アストラリープ,Astra Reap,item/weapon/it_wp_14_247.ice,e545caa67730edf16416ce3225e167d6
 ヤミガラス-NT,Yamigarasu,item/weapon/it_wp_14_248.ice,093e0d0b28f433bcf4a816db7c6446e8
 ＊ジラドコウベ,* Girad Koube,item/weapon/it_wp_14_249.ice,0ddecb8a80cb1217864d8f9d04680c5c
@@ -203,13 +199,11 @@
 アトラバルア・イクス,Atlas Valua Ex,item/weapon/it_wp_14_278.ice,99b5a987e8f24c1c721471ad29a0e667
 ノヴェルカタナ,Novel Katana,item/weapon/it_wp_14_279.ice,60c677698c44dbd396affc92ba89646d
 リバレイトカタナ,Rivalate Katana,item/weapon/it_wp_14_280.ice,3bcffbfec3c941883189e47f7fe5faf2
-＊龍剣,* Dragon Sword,item/weapon/it_wp_14_281.ice,1ed2f976cffcae17f81178a9b3e1c690
 ＊バトルカタナ,* Battle Katana,item/weapon/it_wp_14_282.ice,6d55014cfccccb60cc49851e7b8fd123
 ＊ウォリアーカタナ,* Warrior Katana,item/weapon/it_wp_14_283.ice,66e97b646c241370541d328602c7310e
 ＊義士刀志閃,* Romantacist Katana,item/weapon/it_wp_14_284.ice,47e7e90def0bb410c9b15789c2ff0375
 ＊ファーストコンタクト,* First Contact,item/weapon/it_wp_14_285.ice,a11993b82d775a410438ac2d17fc5e63
 ＊ブルークリスタルソード,* Blue Crystal Sword,item/weapon/it_wp_14_288.ice,5a3f32fc8421723c980c4a869570f99f
-＊マスターソード,* Master Sword,item/weapon/it_wp_14_289.ice,a0c4f44c9378dde643a91cc418b6c22b
 ＊ネイソードＲＦ,* Nei Sword RF,item/weapon/it_wp_14_290.ice,9fb6e090115b7cfc4333e52ebe428bec
 ＊レヴァティーン,* Laevateinn,item/weapon/it_wp_14_291.ice,063129783243e025004313ad3484d487
 フォボスジンラン,Phobos Jinran,item/weapon/it_wp_14_292.ice,969b1942f7e1d94ebe427b3a81f01778
@@ -222,7 +216,6 @@
 スレイヴクーガ-NT,Raven Cougar-NT,item/weapon/it_wp_14_299.ice,0da8ee344fa46c45aec06b009aade171
 ＊ファーストアプローチ,* First Approach,item/weapon/it_wp_14_300.ice,d41ff249fb15a434868cc2be6bde88b6
 ヤシャ-NT,Yasha-NT,item/weapon/it_wp_14_303.ice,ccb4ffc6036cbe74f269f501dc7afdda
-＊灼零エルゼスパーダ,* Burning Zero Elze Spada,item/weapon/it_wp_14_304.ice,31ae45dc7e97a3ebdde07f9643f09b2e
 ホムラノベニレンゲ,Homura no Benirenge,item/weapon/it_wp_14_305.ice,d86ad51e949fd35e3554857f256631ef
 シエンノベニレンゲ,Xien no Benirenge,item/weapon/it_wp_14_306.ice,0f09a234d7d18ee7ea3459a347eeb0d2
 セレダーサウロ,Ceres Dasauro,item/weapon/it_wp_14_307.ice,ad19b36d5131e4d7360029fff172e0d8
@@ -233,8 +226,6 @@
 ＊メガスラッシュエッジ,* Mega Slash Edge,item/weapon/it_wp_14_312.ice,16b42c328219f460486c5c836b3ebef3
 ＊グリムアサシン,* Grim Assassin,item/weapon/it_wp_14_313.ice,adc23936375b1b33242ec4983ffd4786
 ＊ミラキュルマジック,* Miracle Magic,item/weapon/it_wp_14_314.ice,f245d03070ad68d6420163797e3ff8f4
-＊デスペレート,* Deathblade,item/weapon/it_wp_14_316.ice,c623f53e0df21b7a1453aa2ae7f45655
-＊皆琉神威,* Minaru Kamui,item/weapon/it_wp_14_317.ice,5b3bb76f10908fe78ec3f0a8e17774b9
 ＊フェリシテエーデル,* Felicity Edel,item/weapon/it_wp_14_318.ice,1cab63474279b7421ca24218e849fae6
 ＊淑花春遊,* Shukuka Shunyuu,item/weapon/it_wp_14_319.ice,7dfcd5a7b2b963072d1106d5452e65ca
 ＊ステルスウェポン,* Weapon Stealthing,item/weapon/it_wp_14_320.ice,2bf522ee79695c6f5990de83785db117
@@ -244,8 +235,6 @@
 ＊シッドストリッド,* Sid Strid,item/weapon/it_wp_14_325.ice,3b460eb4569bd22b6dcaff1715e2daf4
 レゾナントタルメイ,Resonant Talmei,item/weapon/it_wp_14_326.ice,238ea706c69d17851e2c00bfdbcbce92
 ＊コートサーベル,* Coated Sabre,item/weapon/it_wp_14_327.ice,199b0514c3c9c8e112f9bf39ed6a6e3e
-＊ヴァリアブル・ソード,* Variable Sword,item/weapon/it_wp_14_328.ice,f509ed1f4901c23cbac3007078d1cbe6
-＊日本帝国標準兵装,* Imperial Army Std. Equipment,item/weapon/it_wp_14_329.ice,85136c8984eca91513256d0fc7e93a2d
 ＊憑依器サンガモリ,* Sangamori the Possessed,item/weapon/it_wp_14_330.ice,abd24514a8b2dfe51510e4c4c4abc7d3
 ＊カリエンテオーブ・メギス,* Caliente Orb Megis,item/weapon/it_wp_14_331.ice,17ee0675c3c9ae571d20828a4033198c
 ＊イルテオンダスク・メギス,* Iltheon Dusk Megis,item/weapon/it_wp_14_332.ice,a1f0f2303f0409a3eb75bca2411ac04a
@@ -273,7 +262,6 @@
 ＊スウィートジュエル,* Sweet Jewel,item/weapon/it_wp_14_360.ice,fc2d31835e77bece99c2b0d75564edfa
 ＊アスナの細剣,* Asuna's Rapier,item/weapon/it_wp_14_361.ice,423b1459ffccb92a090fb84da328b253
 ＊キリトの双剣,* Kirito Dual Blades,item/weapon/it_wp_14_362.ice,f350e2922886a33407ed8ec703ec419b
-＊雅緋の黒刀,* Miyabi Black Sword,item/weapon/it_wp_14_365.ice,02c39a7a7e8f41b58bbc0ca866228a00
 ＊テイルススパナ,* Tails Wrench,item/weapon/it_wp_14_366.ice,7e3a0fd27706d41092ce08b2756df119
 ＊コートウェポンD,* Coated Edge D,item/weapon/it_wp_14_367.ice,a0c87745049394b274afe513c1ce54ea
 デバッグウェポン,Debug Weapon,item/weapon/it_wp_14_999.ice,e25f5cf6f3c185fcfb16f5c8f81eeff3

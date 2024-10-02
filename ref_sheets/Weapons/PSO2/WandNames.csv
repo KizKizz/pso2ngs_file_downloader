@@ -51,7 +51,6 @@
 無月大幣,Mugetsu Ounusa,item/weapon/it_wp_13_052.ice,7026e5ca1291e55300f5a7680e092afe
 トレイターピーク,Traitor Peak,item/weapon/it_wp_13_053.ice,d5b1566f99f53cb8d87522cbe42a4cc4
 ヴォルカノメイス,Volcano Mace,item/weapon/it_wp_13_054.ice,03d535132f3ab0cbb3541c5cecc2d5ac
-＊マジカルサファイア,* Magical Sapphire,item/weapon/it_wp_13_055.ice,6656aef6c7f98ac3233213421b1a7407
 バリドランウォンド,Baridran Wand,item/weapon/it_wp_13_056.ice,e875462caf5a88c9d6fc0d76df543cb6
 スウィートキャンディ,Sweet Candy,item/weapon/it_wp_13_059.ice,17b97b95149cb51352e5f3f72cf8dcc8
 ＊ディー・ジ・アリエス,* Dee Gi Aries,item/weapon/it_wp_13_060.ice,b11d7c5cca75ae0c87c43f5eee647f19
@@ -81,10 +80,7 @@
 無杖ライノルト,Reinhold,item/weapon/it_wp_13_092.ice,99b007240f16606cddb13a26577a49be
 マジカルピース,Magical Piece,item/weapon/it_wp_13_093.ice,80108f5dbc710195875d6b1875d31be7
 サミットムーン,Summit Moon,item/weapon/it_wp_13_094.ice,24affa6178725b4b20d12d283feb86fb
-＊ドリームメガホン,* Dream Megaphone,item/weapon/it_wp_13_095.ice,dc3bd1341e06669b645240fccdcd21b4
 ＊ガラティーン,* Galatine,item/weapon/it_wp_13_097.ice,d45bdde05efa7df5b16e7c41f8c5d46a
-＊対偶の法杖「慈愛」,* Staff of Replicant [Affection],item/weapon/it_wp_13_099.ice,d671ce3b14c6b25a6bcc5d40b4a53946
-＊対偶の法杖「慈愛」Ｒ,* Staff of Replicant [Affection] R,item/weapon/it_wp_13_100.ice,d3c14e5b9eb36e53d3ee8ed7a8a8223a
 ＊錨,* Anchor,item/weapon/it_wp_13_103.ice,b9a76bf1b6295745c9ce162c792baf14
 ラムダレガリア,Lambda Regalia,item/weapon/it_wp_13_104.ice,5aeb802ade895a880dee03674ab8db3a
 ディオレガリア,Dio Regalia,item/weapon/it_wp_13_105.ice,141ca89c9fa79bb7062c73ee2264c277
@@ -111,8 +107,6 @@
 ＊リュミピリオン,* Lumipillion,item/weapon/it_wp_13_134.ice,376b7a858e7ee46e3ea93fd616d3fe36
 ＊リュミプレオン,* Lumipureon,item/weapon/it_wp_13_135.ice,54aa45aed666838ce658b4ac4c1d2562
 アクルボクト,Acru Bokuto,item/weapon/it_wp_13_136.ice,bb937ba7976ca2b8f1e1a3134d1877fb
-＊宝石剣ゼルレッチ,* Jewel Sword Zelretch,item/weapon/it_wp_13_138.ice,c76c03e5f6bf4f16e67f8b90c9565851
-＊マジカルルビー,* Magical Ruby,item/weapon/it_wp_13_139.ice,1cc46edd6be4d7eb33fa585044650952
 ヘルマウォール,Helmawall,item/weapon/it_wp_13_142.ice,bb167a9722fb1911dea83bbf9a7fbad5
 ヘルマウォービー,Helmawarby,item/weapon/it_wp_13_143.ice,920dd595c14ee7a151e78fd96a3d3286
 ラミアテリオ,Lamia Terio,item/weapon/it_wp_13_144.ice,8eb8a234203036076ce5438fa98f2bd5
@@ -133,10 +127,7 @@
 ＊真島吾朗バット,* Goro Majima's Bat,item/weapon/it_wp_13_169.ice,fb2a7032460a6b2195c0b79f2677b496
 ＊テンションマイク,* Tension Mic,item/weapon/it_wp_13_170.ice,7aaf614a1a54bb87f0cb9bc6173c51ef
 ＊アルマゲスト,* Almagest,,item/weapon/it_wp_13_171.ice,cc18841c22ab56f86178f30801c2047b
-＊ビビッド・ハート,* Vivid Heart,item/weapon/it_wp_13_172.ice,bd99f75ff341977a917fcc4014003453
 ＊携帯端末型ＣＡＤ,* Mobile Terminal CAD,item/weapon/it_wp_13_173.ice,23bfceb229bda92948196e3361fd42cb
-＊ビビッド・ハートＤ,* Vivid Heart D,item/weapon/it_wp_13_174.ice,c4d7718bed01ba52aca838716732cea0
-＊ビビッド・ハートＲ,* Vivid Heart R,item/weapon/it_wp_13_175.ice,2a9c1c0b636af60372dad99e55fb9e4b
 ユピテラー,Jupiteller,item/weapon/it_wp_13_176.ice,d24d57c9d99ca86899ffe12eca4223cd
 ハクセンジョウ,Haku Senjou,item/weapon/it_wp_13_179.ice,f824d47df8d76293baff0b3c8fbdecde
 クレヒジョウ,Kurehijou,item/weapon/it_wp_13_180.ice,9f4e80df8313f2484964ce1c8699d1e8
@@ -153,8 +144,6 @@
 ＊メセタンクラウン,* Mesetan Crown,item/weapon/it_wp_13_198.ice,3e00c645207fb3f3539692dadb6848a6
 ＊パンクシェイク 赤?,* Punk Shaker Red?,item/weapon/it_wp_13_204.ice,1b3f1fd5a8bd4475d1fd3b3b7f015228
 ＊パンクシェイク,Punk Shaker,item/weapon/it_wp_13_205.ice,3af22702f76364fb9b7dd11c43d4abb9
-＊ミラクるんステッキ,* Mirakurun Wand,item/weapon/it_wp_13_207.ice,27cfefaa2d66d505615d7396eca9580c
-＊ドリームブレード,* Dream Blade,item/weapon/it_wp_13_208.ice,e806156b06b5bac5a34c028c9fa4037c
 ＊アズールパピヨン,* Azure Papillon,item/weapon/it_wp_13_209.ice,cdf51d6ea457c46f248d48e0a797c2c0
 ノクスキュクロス,Nox Qucross,item/weapon/it_wp_13_210.ice,baca61fe9c68e3987d19c286f75f8fa4
 レーテキュクロス,Raete Qucross,item/weapon/it_wp_13_211.ice,6044ec4035c24c47d7e516e7a9a7768e
@@ -184,8 +173,6 @@
 グリシナケアン,Glycina Cane,item/weapon/it_wp_13_246.ice,ad1e6a63076aa31e4ca4ef608c1c19e6
 ＊レイグリッター,* Radiant Glitter,item/weapon/it_wp_13_247.ice,a7fbb719cf46262ce06da33a8761c542
 ＊龍鱗爪剣テンペリオン,* Dragonscale Sword Temperion,item/weapon/it_wp_13_250.ice,ca112afc30b3802046e4228b6237d6e3
-＊スターダストロッド,* Stardust Rod,item/weapon/it_wp_13_251.ice,8471e7197ff0651064c10f8bdf494a04
-＊タイラス,* Thyrus,item/weapon/it_wp_13_252.ice,beef557ee22e6a6d6fce278c28142cf0
 エッジレボルシオ,Edge Revolsio,item/weapon/it_wp_13_253.ice,67d0abf7b57f43a4edbb8e5cabb21906
 エッジドミナシオ,Edge Dominacio,item/weapon/it_wp_13_254.ice,773a4338c64515bfb8639c6bfad4e6d8
 エッジインクルシオ,Edge Inclusio,item/weapon/it_wp_13_255.ice,c393cc2c8f66c5a5a5c69beb18f3212b
@@ -218,8 +205,6 @@
 ＊ジラドメテオ,* Girad Meteor,item/weapon/it_wp_13_292.ice,ee0d4be6688b7a1e7bd059d88218f90b
 ,,item/weapon/it_wp_13_293.ice,3f5db9453803e41a9dab66235d1c1e4e
 寒覇,Kanpa,item/weapon/it_wp_13_294.ice,f482bafc0bde2b65290be0ab9437a48e
-＊魔法の派・エクスカリバー,* Sorcery King Excalibur,item/weapon/it_wp_13_295.ice,3a1a500c94ac43f88443bda9a9d0dcf7
-＊盗賊・エクスカリバー,* Theif Excalibur,item/weapon/it_wp_13_296.ice,63f83b55f646e3d1a4c44f22070f9bb4
 アストラデプリ,Astra Depri,item/weapon/it_wp_13_297.ice,de6987142fecc371b87debbde8a3354b
 ハリエットの剣,Hariette's Sword,item/weapon/it_wp_13_298.ice,461279fd22847e5c32297e0d201d5499
 ゼイネシスセプター,Zeinesis Scepter,item/weapon/it_wp_13_299.ice,c3be18c86844c657f5ee6354388c7e52
@@ -250,9 +235,6 @@
 ＊ウォリアーウォンド,* Warrior Wand,item/weapon/it_wp_13_333.ice,f940fce2acb7d08eb4928fe192e85844
 ディトネションゴア,Detonation Gore,item/weapon/it_wp_13_334.ice,3697c68853a1d5f59e285d664cafc965
 ＊カムラディオアモク,* Camradio Amok,item/weapon/it_wp_13_335.ice,fcfdb803ab17f64875dd130a94a3e9d8
-＊ソフィーの杖,* Sophie Staff,item/weapon/it_wp_13_336.ice,242dbb3a18799ff856463fba411e9030
-＊エスカの杖,* Escha Staff,item/weapon/it_wp_13_337.ice,147373e2bdc35960662df94dcccf4420
-＊ロジーの錬金剣,* Logy Alchemic Sword,item/weapon/it_wp_13_338.ice,46cbaa13d7707bd8fd2c241733d4c70a
 ＊ヤミガラス・マクラ,* Yamigarasu Pillow,item/weapon/it_wp_13_339.ice,7f6d92b7328da7bc821b4e2f224ad65b
 ＊キャロルホリネス,* Carol Holiness,item/weapon/it_wp_13_340.ice,0486205efcc8ffba9d4211091322ac7b
 ＊キャロルホワイシア,* Carol Whithia,item/weapon/it_wp_13_341.ice,983046d4e74f729c5419252c781744ce
@@ -265,7 +247,6 @@
 ヴァニアピュラス,Vania Puras,item/weapon/it_wp_13_348.ice,0e75680d076fa7e67675340ce35267ad
 ＊ブルークリスタルソード,* Blue Crystal Sword,item/weapon/it_wp_13_349.ice,0d7240fb8c19a2ecad5c2cb14b6cab61
 ＊ソロソウルレニックス,* Solo Soul Lennox,item/weapon/it_wp_13_350.ice,7b3b9c8bfc9bea16f727d50ecaa935cf
-＊マスターソード,* Master Sword,item/weapon/it_wp_13_351.ice,2a863c169f974b0a197941584125994b
 ＊ネイソードＲＦ,* Nei Sword RF,item/weapon/it_wp_13_352.ice,097686e1d9f552ad77b71104cb1a873b
 ＊ネイクローRF,* Nei Claws RF,item/weapon/it_wp_13_353.ice,527fff1298d2dd3efcbc167ce8e776c2
 ＊レヴァティーン,* Laevateinn,item/weapon/it_wp_13_354.ice,0a51bc0e03927d844504d5fcd99a4b05
@@ -281,17 +262,12 @@
 深遠棍アスピラシオン,Profound Aspiraxion,item/weapon/it_wp_13_370.ice,9f8a83c6871edd9834680b6cf37354df
 星震棍アスピラシオン,Celestial Aspiraxion,item/weapon/it_wp_13_371.ice,023a6c54635f351f8b5db63c44a20a8e
 光跡棍アスピラシオン,Trailblazer Aspiraxion,item/weapon/it_wp_13_372.ice,5ac1dae16ab90ffe133a6897e1243443
-＊ホープネコソード,* Hope Neko Sword,item/weapon/it_wp_13_373.ice,83f2b8a2f8839a96fc6a8683038bdb6d
-＊灼零エルゼソード,* Burning Zero Elze Sword,item/weapon/it_wp_13_374.ice,1adcee808b2fae684c816c52ca6c0750
-＊灼零エルゼスパーダ,* Burning Zero Elze Spada,item/weapon/it_wp_13_375.ice,3cda89d490a2c21634fe5c4eba06f588
 ホムラノトモシビ,Homura no Tomoshibi,item/weapon/it_wp_13_376.ice,58c0fc049aed6ac445e99671abdd1f1b
 シエンノトモシビ,Shien no Tomoshibi,item/weapon/it_wp_13_377.ice,befcc31fd0548b6b8715de2ba403bfd9
 ＊メガスラッシュエッジ,* Mega Slash Edge,item/weapon/it_wp_13_378.ice,8e6ea0316cd8b2f14ee76de2d0818df6
 セレイグナトス,Ceres Ignatos,item/weapon/it_wp_13_379.ice,512e5176e5940350276282f09ef24bfc
 セレイグナトス・ザラ,Ceres Ignatos Zara,item/weapon/it_wp_13_380.ice,3b2d1d62538ecdf1db81894cc62f2c27
 ＊ミラキュルマジック,* Miracle Magic,item/weapon/it_wp_13_381.ice,07e77f96bfdb6986de76abdfdfd49e18
-＊デスペレート,* Deathblade,item/weapon/it_wp_13_383.ice,074a7a063ed618aebe9147a028478ecc
-＊ヘスティア・ナイフ,* Hestia Knife,item/weapon/it_wp_13_384.ice,9e749dabf5ab0aad93c9b2984b21a53b
 ＊フェリシテエーデル,* Felicity Edel,item/weapon/it_wp_13_385.ice,48f3b28f7bab803139ab6da775d1bcc3
 ＊淑花春遊,* Shukuka Shunyuu,item/weapon/it_wp_13_386.ice,63542a292a94b08fecba5e2044034ea4
 ＊ショコラブエンペ,* Chocolate Emblem,item/weapon/it_wp_13_387.ice,65341ce6c60f02b95f4f98e62b659c42
@@ -304,16 +280,11 @@
 ディムウォンド,Dim Wand,item/weapon/it_wp_13_394.ice,0e12f2778ecac3cea3372030df047f7f
 クラルテドルチェ,Clarte Dolce,item/weapon/it_wp_13_397.ice,96799a6bc0d6fd4169cf58fc186fbf82
 ＊アドホルムマリノフ,* Adholm Malinov,item/weapon/it_wp_13_399.ice,fb910c3a08e417d46c5cbc9a123e3481
-＊ＲＨ・エストレア,* RH Estrea,item/weapon/it_wp_13_401.ice,6737fecd41e6c43bd3c95ca22bf2660c
-＊ＢＤ・ホーネット,* BD Hornet,item/weapon/it_wp_13_402.ice,e92d2dd3cf49792e48a1b093b28a0f2b
-＊ロッド（はやて機）,* Rod (Hayate),item/weapon/it_wp_13_403.ice,3729fc4133382a87d5f2cb89ddccaf5e
 ＊アフタル・マクラ,* Aphtal Pillow,item/weapon/it_wp_13_404.ice,1dbdd092609b9eb524fefbe431059286
 ＊リーン・マクラ,* Lin Pillow,item/weapon/it_wp_13_405.ice,fdaa6ddef2e6dbb321af61208e542486
 ＊アルテミス＆レイピア,* Artemis & Rapier,item/weapon/it_wp_13_406.ice,daad3cf73f757fa27b41981c6a108ae5
 ＊カザロドウ,* Kazarod,item/weapon/it_wp_13_407.ice,a2fb54306bb1ef69392696e761e44343
-＊プログレッシブ・ナイフ,* Progressive Knife,item/weapon/it_wp_13_408.ice,203719accf612d483de17202e9d58037
 ＊エールスターライト,* Aile Starlight,item/weapon/it_wp_13_409.ice,8cb4c77abbe9a8ac37ae4f43daf7c947
-＊日本帝国標準兵装,* Imperial Army Std. Equipment,item/weapon/it_wp_13_410.ice,2b9bee26e3e9917423506e1a6fe190bc
 ＊コートウェポンD,* Coated Edge D,item/weapon/it_wp_13_412.ice,a444ce943c41607d866ec8c97f6e7560
 ＊コートヴァージ,* Coat Verge,item/weapon/it_wp_13_413.ice,5612d067ec54a7053f3205ef478e669b
 プロメサパージナ,Promessa Pagina,item/weapon/it_wp_13_414.ice,986712a77b14797e1b5d39055e3893b5
@@ -345,14 +316,12 @@
 リンザーキューマ,Rinser Cyuma,item/weapon/it_wp_13_450.ice,f86263a193cf92c0777780ecc0e662b2
 闇征棍アジェルヴァージ,Darkweave Agile Virge,item/weapon/it_wp_13_451.ice,b1c6369f964a4dd34f247db0be815751
 ＊Ｌ４Ｄフライパン,* L4D Frying Pan,item/weapon/it_wp_13_452.ice,bbbd596613bfb0580c665b92aa06c054
-＊グリッドマンキャリバー,* Gridman Calibur,item/weapon/it_wp_13_453.ice,e27643f369060b15b147a21080a9726f
 ＊ビクシュサンジコウ,* Bix Sanjiko,item/weapon/it_wp_13_454.ice,d9e9881ddfdf207e94c7af61ca36c9ae
 ＊艶武麗護刀,* Glorious Sentinel,item/weapon/it_wp_13_455.ice,7e146005ae31ab2599c1e895f4c8f8d0
 ＊スウィートジュエル,* Sweet Jewel,item/weapon/it_wp_13_459.ice,19aa57566a2401e80aaf661b886a5068
 ＊アスナの細剣,* Asuna's Rapier,item/weapon/it_wp_13_460.ice,3dd57c2378a95c0c2801e3ffdbfa896c
 ＊キリトの双剣,* Kirito Dual Blades,item/weapon/it_wp_13_461.ice,07670e9452dcddd84e51ed24c083dfd1
 ＊フォトンほうき,* Photon Broom,item/weapon/it_wp_13_464.ice,6893649aa7a7bbd2d9620d8090f18c31
-＊飛鳥の双刀,* Asuka Twin Swords,item/weapon/it_wp_13_465.ice,409aeb710b26cc02b6f03338aa194688
 ＊A.I.Sヴェガアームズ,* AIS Vega Arms,item/weapon/it_wp_13_466.ice,3f5f93f1cdcb8787fdf4d61bef521596
 ＊テイルススパナ,* Tails Wrench,item/weapon/it_wp_13_467.ice,4b66e92b33a2830ab7205621f6225974
 ＊勇者の聖剣,* The Hero’s Holy Sword,item/weapon/it_wp_13_468.ice,44855f4562383ce91193037ec64a63c6

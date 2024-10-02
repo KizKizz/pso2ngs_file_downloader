@@ -525,8 +525,6 @@ en_non_trt_common.ice,68\6aa7d24905ea09a6441e7a9c102431
 ,,en_s01_mon_01.ice,6c\fb7827ac59b36662550f938eeb4c7a
 ,,en_gd_nyb_ex.ice,5f\8b2ac6cdeaa4ea1088b7f2a4513d8c
 en_gd_nyb_common.ice,51\c76204c733f9a562684eb64abcecd8
-ガラガロンゴ,Gara Garongo,en_nat_armma_ba.ice,0f\b6076b4176cdf61ea3839a9271d955
-en_nat_armma_common.ice,d5\da138f5d9ff25cfce478e0cb381edb
 マリオネス,Marioness,en_r05_gd_gho_ba.ice,a9\28d67c967835bf41eb177ff496f365
 ギルーヴァ,Giruva,en_r05_gd_gho_ch.ice,0f\1299e727a09000590258ad421f7c95
 en_gd_gho_common.ice,70\01215589d9b3360d46094a45705f8a
@@ -536,6 +534,7 @@ en_gd_gho_common.ice,70\01215589d9b3360d46094a45705f8a
 en_gd_zft_common.ice,2e\8202a869344df24699527b96ef2b8d
 ボルガリス,Volgris,en_r05_non_myt_a.ice,d9\2bbb7a41a5cc2d9782270828a6b016
 en_non_myt_common.ice,d6\cc96ec78b2f3328190a77a42babd66
+カオスザヴェル,Chaos Xaver,en_r05_stl_akm_ba1.ice,84\84bab196db237325bf889af2156a9a
 グラッジボーン,Grudgeborne,en_r05_stl_bkt_ba1.ice,d6\e3a42413c61f0d9e08e8e90a7058fa
 ラヴィード,Raveed,en_r05_stl_box_ba1.ice,c6\a95c434bba98f8aa805c9276e44dad
 ヴァルザッガ,Val Zagga,en_r05_stl_cas_el1.ice,f5\3a12b0ad30f3dbfab3d42c7e845c4d
@@ -551,6 +550,7 @@ en_non_myt_common.ice,d6\cc96ec78b2f3328190a77a42babd66
 ドゥランゲラド,Duran Gerad,en_r05_stl_leg_ba1.ice,a4\39ecf6ea7cd8218f48d57daf89226c
 バルブレッダ,Val Bredda,en_r05_stl_mrt_ba1.ice,56\30b5a6a4153675c952bb9f75d6c4b3
 ディンド,Dindo,en_r05_stl_mtl_ba1.ice,dd\242f0659d3f68ebcfde00bbf9c497e
+ハヌマッド,Hanumad,en_r05_stl_nyb_ba1.ice,bc\ae18cf415949491f7505aaed4d9f59
 ギルゼイヴァ,Gil Zaver,en_r05_stl_pan_ba1.ice,6b\e7725fee7f3a0d26fa86195ca1ad5d
 ヴォルガ,Volga,en_r05_stl_pyc_ba.ice,b0\eff4225aad4b29031e9df8590a6f8f
 マクスヴァング,Max Vang,en_r05_stl_sip_ba1.ice,87\6cc2dfd03e55b4987fe63fc2c9bb65
