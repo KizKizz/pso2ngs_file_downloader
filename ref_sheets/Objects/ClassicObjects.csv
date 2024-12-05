@@ -1561,7 +1561,7 @@
 ,,ob_1000_0079,object/map_object/ob_1000_0079.ice,object/map_object/ob_1000_0079_ex.ice,dd7c5214fde8d8aaa0abc9893ecb1185,d5de4b7ec9a224d2413dd292cc1677e5
 ,,ob_1000_0080,object/map_object/ob_1000_0080.ice,object/map_object/ob_1000_0080_ex.ice,f53b2c6f74b7a59b616cf0831a948d11,97bc4f168c8bf16e05472891b89c09e6
 ,,ob_1000_0081,object/map_object/ob_1000_0081.ice,object/map_object/ob_1000_0081_ex.ice,220f5920c763659b58b87cca79c59955,64883a278e10d65eaf082d6ba35d190b
-,,ob_1000_0082,object/map_object/ob_1000_0082.ice,object/map_object/ob_1000_0082_ex.ice,29bb09b501c4eaf5c4972b0e0e95a6a1,a0a574ef7354bcbba5bb6d191deb4dab
+カガミモチ,Rice Cake Display,ob_1000_0082,object/map_object/ob_1000_0082.ice,object/map_object/ob_1000_0082_ex.ice,29bb09b501c4eaf5c4972b0e0e95a6a1,a0a574ef7354bcbba5bb6d191deb4dab
 ,,ob_1000_0083,object/map_object/ob_1000_0083.ice,object/map_object/ob_1000_0083_ex.ice,e489ca667189f79fad24ddba4af2629e,c329ceca4eba15d10c2e2ad204679f6a
 ,,ob_1000_0084,object/map_object/ob_1000_0084.ice,object/map_object/ob_1000_0084_ex.ice,7070109292b47cb32df6a9910da99029,383ded64287033ae7900a92dfba99988
 ,,ob_1000_0085,object/map_object/ob_1000_0085.ice,object/map_object/ob_1000_0085_ex.ice,be0fc1ef8076d571930ef31f41f37ac2,41bd73560d9c4205dfe8973fe86a2f41
@@ -1665,7 +1665,7 @@
 プレゼバコウラ,Gift Box Stack,ob_1000_0183,object/map_object/ob_1000_0183.ice,object/map_object/ob_1000_0183_ex.ice,d0ee5a9413579460ee882a3b8026c1b5,e0ae1670fafe44f9d4f2305b180ff723
 プレ・プレ・ボッカス,Sturdy Chest,ob_1000_0184,object/map_object/ob_1000_0184.ice,object/map_object/ob_1000_0184_ex.ice,a7ddf692b74a29669905b3d22be6456b,b2d095e78b9fc13a865a74d67ffd1d2c
 ,,ob_1000_0185,object/map_object/ob_1000_0185.ice,object/map_object/ob_1000_0185_ex.ice,cda7dd96e30b9f9b8baf3e06627e54cd,3f87953db349f728ef6d9b446b71fbec
-,,ob_1000_0186,object/map_object/ob_1000_0186.ice,object/map_object/ob_1000_0186_ex.ice,f7036268f4fd8c54a97d6513dbe1eefe,f992e94d285a56631bcf95c5eff928cd
+ツマラナイモノ,A Little Something,ob_1000_0186,object/map_object/ob_1000_0186.ice,object/map_object/ob_1000_0186_ex.ice,f7036268f4fd8c54a97d6513dbe1eefe,f992e94d285a56631bcf95c5eff928cd
 ,,ob_1000_0187,object/map_object/ob_1000_0187.ice,object/map_object/ob_1000_0187_ex.ice,4fa7e104b981c22d8805c5e569028e79,ea3d507bc89f35c88aca2e524e4ed7f2
 ,,ob_1000_0188,object/map_object/ob_1000_0188.ice,object/map_object/ob_1000_0188_ex.ice,fef8a17081d2e037e43415af32d6a1f3,c13e14751232d7c91b47c54854e2ca40
 ,,ob_1000_0189,object/map_object/ob_1000_0189.ice,object/map_object/ob_1000_0189_ex.ice,3875e751a9be6e40f9ca9e4b957038a0,39f2fd92339f5ab532ac85c554db02fa
@@ -1940,8 +1940,8 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_0458,object/map_object/ob_1000_0458.ice,object/map_object/ob_1000_0458_ex.ice,3ea6dd80b8fbadded3c9e340c6d0da0f,55d7e6f05876c548890b4004e7a4bddb
 シュトーレン,Stollen,ob_1000_0459,object/map_object/ob_1000_0459.ice,object/map_object/ob_1000_0459_ex.ice,0afcc1079219734a299047d0477e644c,cac3b810e59549232d1a97f3d4c96f77
 ホリデーツリー,Christmas Tree,ob_1000_0460,object/map_object/ob_1000_0460.ice,object/map_object/ob_1000_0460_ex.ice,0ad4f03f46f98beb4d0d978debe566f6,8b496bafa9819714eb0eba06dc309847
-,,ob_1000_0461,object/map_object/ob_1000_0461.ice,object/map_object/ob_1000_0461_ex.ice,3ec9cb345b4beec206a098632eb56d2c,0dc153afe0a84cd895e38259640ff30b
-,,ob_1000_0462,object/map_object/ob_1000_0462.ice,object/map_object/ob_1000_0462_ex.ice,1740b0f441ccce6773030e0b84bb701c,b9b8fdeee2bf00e7d300b963ffd1f8b2
+イルミネーションボード,Christmas Light Display,ob_1000_0461,object/map_object/ob_1000_0461.ice,object/map_object/ob_1000_0461_ex.ice,3ec9cb345b4beec206a098632eb56d2c,0dc153afe0a84cd895e38259640ff30b
+ホリデーリース,Merry Wreath,ob_1000_0462,object/map_object/ob_1000_0462.ice,object/map_object/ob_1000_0462_ex.ice,1740b0f441ccce6773030e0b84bb701c,b9b8fdeee2bf00e7d300b963ffd1f8b2
 ホールケーキ,Strawberry Cake,ob_1000_0463,object/map_object/ob_1000_0463.ice,object/map_object/ob_1000_0463_ex.ice,2077fb854e2d10d4894e984b1512a186,14a5ebdeb27524ef2a11d11d65c24c8b
 いちごのショートケーキ,Strawberry Shortcake,ob_1000_0464,object/map_object/ob_1000_0464.ice,object/map_object/ob_1000_0464_ex.ice,e8f939a9cbe148dc8234535a246df69d,958411d27cadbe217b5994e27fb8a9b0
 チョコのショートケーキ,Chocolate Shortcake,ob_1000_0465,object/map_object/ob_1000_0465.ice,object/map_object/ob_1000_0465_ex.ice,1c7c824e8f6c14f403c09f000cdeae31,f93acb584143853eb2c775ce8eb0acc1
@@ -2082,26 +2082,26 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 オールドキッチンB,Retro Kitchen B,ob_1000_0600,object/map_object/ob_1000_0600.ice,object/map_object/ob_1000_0600_ex.ice,217e44932b59951c6d83a6e5ed5bfd7b,98d3ef259962cb1595b2bc487b280245
 オールドガスポンプB,Retro Gas Pump B,ob_1000_0601,object/map_object/ob_1000_0601.ice,object/map_object/ob_1000_0601_ex.ice,8e482e2bfb19894fd2947d216a67d357,577432b267d88b550ceb4eefd5380f3e
 オールドリフリジレイターB,Retro Refrigerator B,ob_1000_0602,object/map_object/ob_1000_0602.ice,object/map_object/ob_1000_0602_ex.ice,d37320ced6042305237c71da9cbeda56,e26574037fd0221e0bc682de66d51a47
-,,ob_1000_0603,object/map_object/ob_1000_0603.ice,object/map_object/ob_1000_0603_ex.ice,66038cfa71d9921653d54fd11f2fcac6,c6689a9d0ff3a692fef7c706a6ea8e11
-,,ob_1000_0604,object/map_object/ob_1000_0604.ice,object/map_object/ob_1000_0604_ex.ice,688743f268cf21170433687d5774f91f,0f36a1dcd8190e9dbad9d13f78dca598
-,,ob_1000_0605,object/map_object/ob_1000_0605.ice,object/map_object/ob_1000_0605_ex.ice,d30c0cd361d7801286aa231ae3f0b36a,a2ca44290ec7dacf23a663d20218c446
-,,ob_1000_0606,object/map_object/ob_1000_0606.ice,object/map_object/ob_1000_0606_ex.ice,16948a20b0824960329bf5cb0ac61466,3f518af1b3b84d0f74f5cf3f118b3e9c
-,,ob_1000_0607,object/map_object/ob_1000_0607.ice,object/map_object/ob_1000_0607_ex.ice,a818b48f276b2c806ee37c76b263fefd,2ea65b9cc792eeab16b1eb70d59e5c34
-,,ob_1000_0608,object/map_object/ob_1000_0608.ice,object/map_object/ob_1000_0608_ex.ice,e3fa5babd484de33ded83509560d302f,c23657788c66022cc3f56ce02e9ea31e
-,,ob_1000_0609,object/map_object/ob_1000_0609.ice,object/map_object/ob_1000_0609_ex.ice,9d7bdaebc53bbc821db9dccc38d5afe1,37246ba6f7a3b698a84034eeb6b9408e
-,,ob_1000_0610,object/map_object/ob_1000_0610.ice,object/map_object/ob_1000_0610_ex.ice,65346c0e860bf181c358e093bc5f9582,ee207aa895596198b3058e541c9cbb55
-,,ob_1000_0611,object/map_object/ob_1000_0611.ice,object/map_object/ob_1000_0611_ex.ice,9f2d4d46237aff88c2bcfd9a936ea7a2,82fb05c744f226b256c569d86d6a98a7
-,,ob_1000_0612,object/map_object/ob_1000_0612.ice,object/map_object/ob_1000_0612_ex.ice,8c7eab4c52fc2886cb46ae562b22fd74,32113470d5009186e9f97888815559e0
+オールドベッドC,Retro Bed C,ob_1000_0603,object/map_object/ob_1000_0603.ice,object/map_object/ob_1000_0603_ex.ice,66038cfa71d9921653d54fd11f2fcac6,c6689a9d0ff3a692fef7c706a6ea8e11
+オールドテーブルC,Retro Table C,ob_1000_0604,object/map_object/ob_1000_0604.ice,object/map_object/ob_1000_0604_ex.ice,688743f268cf21170433687d5774f91f,0f36a1dcd8190e9dbad9d13f78dca598
+オールドチェアC,Retro Chair C,ob_1000_0605,object/map_object/ob_1000_0605.ice,object/map_object/ob_1000_0605_ex.ice,d30c0cd361d7801286aa231ae3f0b36a,a2ca44290ec7dacf23a663d20218c446
+オールドシェルフC,Retro Shelf C,ob_1000_0606,object/map_object/ob_1000_0606.ice,object/map_object/ob_1000_0606_ex.ice,16948a20b0824960329bf5cb0ac61466,3f518af1b3b84d0f74f5cf3f118b3e9c
+オールドライトC,Retro Lighting C,ob_1000_0607,object/map_object/ob_1000_0607.ice,object/map_object/ob_1000_0607_ex.ice,a818b48f276b2c806ee37c76b263fefd,2ea65b9cc792eeab16b1eb70d59e5c34
+オールドベンチC,Retro Bench C,ob_1000_0608,object/map_object/ob_1000_0608.ice,object/map_object/ob_1000_0608_ex.ice,e3fa5babd484de33ded83509560d302f,c23657788c66022cc3f56ce02e9ea31e
+オールドテレビC,Retro TV C,ob_1000_0609,object/map_object/ob_1000_0609.ice,object/map_object/ob_1000_0609_ex.ice,9d7bdaebc53bbc821db9dccc38d5afe1,37246ba6f7a3b698a84034eeb6b9408e
+オールドキッチンC,Retro Kitchen C,ob_1000_0610,object/map_object/ob_1000_0610.ice,object/map_object/ob_1000_0610_ex.ice,65346c0e860bf181c358e093bc5f9582,ee207aa895596198b3058e541c9cbb55
+オールドガスポンプC,Retro Gas Pump C,ob_1000_0611,object/map_object/ob_1000_0611.ice,object/map_object/ob_1000_0611_ex.ice,9f2d4d46237aff88c2bcfd9a936ea7a2,82fb05c744f226b256c569d86d6a98a7
+オールドリフリジレイターC,Retro Refrigerator C,ob_1000_0612,object/map_object/ob_1000_0612.ice,object/map_object/ob_1000_0612_ex.ice,8c7eab4c52fc2886cb46ae562b22fd74,32113470d5009186e9f97888815559e0
 オールドラジオ,Retro Radio,ob_1000_0613,object/map_object/ob_1000_0613.ice,object/map_object/ob_1000_0613_ex.ice,ac5b82d16008c430de9fc69fa68f9400,7c7613b9687b86b68fbcbd33e964cbc5
 オールドローラースケート,Retro Roller Skates,ob_1000_0614,object/map_object/ob_1000_0614.ice,object/map_object/ob_1000_0614_ex.ice,43f7ca3acf49dde8fb1353ebff045f9f,9d99f68a31f4a804f6448e2c35ca5763
 オールドパフェ,Retro Sundae,ob_1000_0615,object/map_object/ob_1000_0615.ice,object/map_object/ob_1000_0615_ex.ice,3d78f5255f2e0b87194b60e8aabd8407,1e57daa6153081916ad9945610eb30ae
-,,ob_1000_0616,object/map_object/ob_1000_0616.ice,object/map_object/ob_1000_0616_ex.ice,31a4e8a98f00b04d09c2d979b80d2db6,388fa8b12ca9f652104d8d737136abd0
+フラミンゴの置物,Pink Flamingo Ornament,ob_1000_0616,object/map_object/ob_1000_0616.ice,object/map_object/ob_1000_0616_ex.ice,31a4e8a98f00b04d09c2d979b80d2db6,388fa8b12ca9f652104d8d737136abd0
 オールドフォン,Retro Phone,ob_1000_0617,object/map_object/ob_1000_0617.ice,object/map_object/ob_1000_0617_ex.ice,5fe53c3ee12dae0aae275c8ab63fa96a,2082f40b116a2f3313260df76f9b4b4c
-,,ob_1000_0618,object/map_object/ob_1000_0618.ice,object/map_object/ob_1000_0618_ex.ice,3ea445e46fb941b27854a14eb6484515,a6d8d5c642ae45c26b7bacbce4b2a0bc
+オールドスーパーカー,Retro Super Car,ob_1000_0618,object/map_object/ob_1000_0618.ice,object/map_object/ob_1000_0618_ex.ice,3ea445e46fb941b27854a14eb6484515,a6d8d5c642ae45c26b7bacbce4b2a0bc
 オールドタイプライター,Retro Typewriter,ob_1000_0619,object/map_object/ob_1000_0619.ice,object/map_object/ob_1000_0619_ex.ice,c857d91d485e139cc43b5acff239205d,fd16b00c582fb4369ff13bc4705493d8
-,,ob_1000_0620,object/map_object/ob_1000_0620.ice,object/map_object/ob_1000_0620_ex.ice,29f6d9109b1da55ba65e9ba555621eff,7fb36b54b08ad40efd1d6842a619fc64
+トランク型レコード,Suitcase Record Player,ob_1000_0620,object/map_object/ob_1000_0620.ice,object/map_object/ob_1000_0620_ex.ice,29f6d9109b1da55ba65e9ba555621eff,7fb36b54b08ad40efd1d6842a619fc64
 ネオンサインスタンド,Neon Sign Stand,ob_1000_0621,object/map_object/ob_1000_0621.ice,object/map_object/ob_1000_0621_ex.ice,924b2c540c9caacd655ce2e0a887710d,ff05c2cb6e9827cd984585f85bf963df
-,,ob_1000_0622,object/map_object/ob_1000_0622.ice,object/map_object/ob_1000_0622_ex.ice,c774b5ef1e280d95fa6ca09e2817add0,cc639ccb77b4ce3914ee594ff3da396b
+オールドランプ,Retro Lamp,ob_1000_0622,object/map_object/ob_1000_0622.ice,object/map_object/ob_1000_0622_ex.ice,c774b5ef1e280d95fa6ca09e2817add0,cc639ccb77b4ce3914ee594ff3da396b
 トロピカルフラワー,Tropical Flower,ob_1000_0623,object/map_object/ob_1000_0623.ice,object/map_object/ob_1000_0623_ex.ice,f7487321b63ea2fdcbb045247737366b,5f5deb220649c741a662eba96e15de0a
 パームツリー,Palm Tree,ob_1000_0624,object/map_object/ob_1000_0624.ice,object/map_object/ob_1000_0624_ex.ice,08bc674dbd088089a3182fc3fde6d137,d8ad5342307084e69b7710c3d29b2498
 ウォパルピラー,Wopal Pillar,ob_1000_0625,object/map_object/ob_1000_0625.ice,object/map_object/ob_1000_0625_ex.ice,c5c54525852078b4ae6a4e981811cea0,fcf36682c47646fbe4ee9cf3c3795025
@@ -2395,7 +2395,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 学校の教卓,School Teacher Desk,ob_1000_0913,object/map_object/ob_1000_0913.ice,object/map_object/ob_1000_0913_ex.ice,8dcfb922217a874933ffa1e762478154,3e40c2f0afb9e1b31e8b88b32b4f9311
 鉛筆削り,Pencil Sharpener,ob_1000_0914,object/map_object/ob_1000_0914.ice,object/map_object/ob_1000_0914_ex.ice,439261722437372b50a7ad16ec97de30,9aa6c36a1546e9f9f0d74f144a57eef7
 学校の教壇,School Podium,ob_1000_0915,object/map_object/ob_1000_0915.ice,object/map_object/ob_1000_0915_ex.ice,a348557b2a37fb8fb099bd0ecce98198,da7abba2994b31c61f0c63e90f5c5276
-,,ob_1000_0916,object/map_object/ob_1000_0916.ice,object/map_object/ob_1000_0916_ex.ice,5e3a89f96aea267144cc72d98420ab6e,e18edf14c7a9becd43392b091fd56895
+ファイトリング,Boxing Ring,ob_1000_0916,object/map_object/ob_1000_0916.ice,object/map_object/ob_1000_0916_ex.ice,5e3a89f96aea267144cc72d98420ab6e,e18edf14c7a9becd43392b091fd56895
 ,,ob_1000_0917,object/map_object/ob_1000_0917.ice,object/map_object/ob_1000_0917_ex.ice,0979a72c349aaec40701e104fc0e9737,13e1460fc045b5d7b2ee135220bd566e
 スマートテレビ,Smart TV,ob_1000_0918,object/map_object/ob_1000_0918.ice,object/map_object/ob_1000_0918_ex.ice,fb0b692f48e1fcd2dd7524189d2fc749,9254b25a045c01675c82d2b341bea461
 ポストスタンド,Mailbox,ob_1000_0919,object/map_object/ob_1000_0919.ice,object/map_object/ob_1000_0919_ex.ice,129f5601e25f81ede50306c68af60362,3e9e0638fe576278951f24261912c58d
@@ -2519,9 +2519,9 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1037,object/map_object/ob_1000_1037.ice,object/map_object/ob_1000_1037_ex.ice,72d63d26cadc8ec93daa10b4d146571d,23825c0040e01c3e4008d7efe845f28c
 ,,ob_1000_1038,object/map_object/ob_1000_1038.ice,object/map_object/ob_1000_1038_ex.ice,d658bcd7ff778d49855b96e79c003d3d,43ead6505f37b115dd689a318a27d661
 ,,ob_1000_1039,object/map_object/ob_1000_1039.ice,object/map_object/ob_1000_1039_ex.ice,,
-,,ob_1000_1040,object/map_object/ob_1000_1040.ice,object/map_object/ob_1000_1040_ex.ice,2e0b8eb9c43c09e9a1be6f0ef5f0fbf9,b3db41750d3073ee12f2360cf89754dd
-,,ob_1000_1041,object/map_object/ob_1000_1041.ice,object/map_object/ob_1000_1041_ex.ice,c757571245a9a2d34a379ab2f071430f,35900b9d2fbc42311868208e5a79a4fb
-,,ob_1000_1042,object/map_object/ob_1000_1042.ice,object/map_object/ob_1000_1042_ex.ice,6284f9bfbff9ede288f996e3244c58fc,c9d7516193d33526349b8a30be031aa8
+黄金色の彫像,Golden Idol,ob_1000_1040,object/map_object/ob_1000_1040.ice,object/map_object/ob_1000_1040_ex.ice,2e0b8eb9c43c09e9a1be6f0ef5f0fbf9,b3db41750d3073ee12f2360cf89754dd
+朱色の巨大門,Great Vermilion Gate,ob_1000_1041,object/map_object/ob_1000_1041.ice,object/map_object/ob_1000_1041_ex.ice,c757571245a9a2d34a379ab2f071430f,35900b9d2fbc42311868208e5a79a4fb
+四灯天吊灯,Four Hanging Lanterns,ob_1000_1042,object/map_object/ob_1000_1042.ice,object/map_object/ob_1000_1042_ex.ice,6284f9bfbff9ede288f996e3244c58fc,c9d7516193d33526349b8a30be031aa8
 『PSO2』設定資料集表紙ポスター,PSO2 Design DoBP - Poster,ob_1000_1043,object/map_object/ob_1000_1043.ice,object/map_object/ob_1000_1043_ex.ice,0b51d9088a7d53c44daa452de78a989d,
 ,,ob_1000_1044,object/map_object/ob_1000_1044.ice,object/map_object/ob_1000_1044_ex.ice,d95af43fd088c11184fd7fc919875498,
 ,,ob_1000_1045,object/map_object/ob_1000_1045.ice,object/map_object/ob_1000_1045_ex.ice,cd1f1201529483f5746888e386caa31a,
@@ -2591,9 +2591,9 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 黒ランドセル,Backpack - Black,ob_1000_1109,object/map_object/ob_1000_1109.ice,object/map_object/ob_1000_1109_ex.ice,854a21eb1276fe23453393853ca1fb2b,0ef5260ceb810bfb71883a00f5309bfc
 スクールバッグ,Satchel,ob_1000_1110,object/map_object/ob_1000_1110.ice,object/map_object/ob_1000_1110_ex.ice,59058722f0164b0fbdbd365a943d0ccd,3dc0cb793472a6ae94ec8007a5655e96
 学校の給食,School Lunch,ob_1000_1111,object/map_object/ob_1000_1111.ice,object/map_object/ob_1000_1111_ex.ice,4fe9d3e2033846104346a90e0a02777b,576c3d952ca2c14482c770f6871e6799
-,,ob_1000_1112,object/map_object/ob_1000_1112.ice,object/map_object/ob_1000_1112_ex.ice,a8b646562d969ab45bb369414b96ba07,
-,,ob_1000_1113,object/map_object/ob_1000_1113.ice,object/map_object/ob_1000_1113_ex.ice,6b0eb4d34e608f609b904317636a17e6,
-,,ob_1000_1114,object/map_object/ob_1000_1114.ice,object/map_object/ob_1000_1114_ex.ice,71478c80f3df35dbdeeea2e76dc4a5bf,
+保健室のベッドB,Nurse's Office Bed B,ob_1000_1112,object/map_object/ob_1000_1112.ice,object/map_object/ob_1000_1112_ex.ice,a8b646562d969ab45bb369414b96ba07,
+学校の机C,School Desk C,ob_1000_1113,object/map_object/ob_1000_1113.ice,object/map_object/ob_1000_1113_ex.ice,6b0eb4d34e608f609b904317636a17e6,
+学校の椅子C,School Chair C,ob_1000_1114,object/map_object/ob_1000_1114.ice,object/map_object/ob_1000_1114_ex.ice,71478c80f3df35dbdeeea2e76dc4a5bf,
 パイプ椅子B,Folding Chair B,ob_1000_1115,object/map_object/ob_1000_1115.ice,object/map_object/ob_1000_1115_ex.ice,012c2915442b60b3a87bbce3ba703739,
 学校のロッカーB,School Locker B,ob_1000_1116,object/map_object/ob_1000_1116.ice,object/map_object/ob_1000_1116_ex.ice,95c8b698d9dd0a5539938b84eb7f28f0,
 学校の大型掲示板B,Large School Message Board B,ob_1000_1117,object/map_object/ob_1000_1117.ice,object/map_object/ob_1000_1117_ex.ice,85cd61b6ae209d4123a79f60b18feb78,
@@ -2602,7 +2602,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 教科書セットB,Textbook Set B,ob_1000_1120,object/map_object/ob_1000_1120.ice,object/map_object/ob_1000_1120_ex.ice,e0b358c3855e9422c15cf495aa4b81c1,
 ,,ob_1000_1121,object/map_object/ob_1000_1121.ice,object/map_object/ob_1000_1121_ex.ice,1d16f3abad32ff01e6b111437085c988,
 ,,ob_1000_1122,object/map_object/ob_1000_1122.ice,object/map_object/ob_1000_1122_ex.ice,3e60fc8ba663cdbe801c5ed03852fbdb,
-,,ob_1000_1123,object/map_object/ob_1000_1123.ice,object/map_object/ob_1000_1123_ex.ice,994042dd67c971ab35e20f868c3feeb8,
+学校の給食B,School Lunch B,ob_1000_1123,object/map_object/ob_1000_1123.ice,object/map_object/ob_1000_1123_ex.ice,994042dd67c971ab35e20f868c3feeb8,
 掃除用具入れ,Janitor's Closet,ob_1000_1124,object/map_object/ob_1000_1124.ice,object/map_object/ob_1000_1124_ex.ice,c774894f3c58a83208d4cb22ea88a177,b0bc49fedbbdd6a3257e6019d93c410e
 学校の下駄箱,School Shoe Rack,ob_1000_1125,object/map_object/ob_1000_1125.ice,object/map_object/ob_1000_1125_ex.ice,8ccbf947f95198e8c1595d51d8df4482,4bc0bd31523038c9a738a009a35005e9
 学校の本棚,School Bookshelf,ob_1000_1126,object/map_object/ob_1000_1126.ice,object/map_object/ob_1000_1126_ex.ice,aba4e95382e449545945cddf4e7b367a,b23826dc3fa9d6fe5dcae5a5d6177501
@@ -2728,7 +2728,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 スモッグメーカー,Li'l Barbecue,ob_1000_1246,object/map_object/ob_1000_1246.ice,object/map_object/ob_1000_1246_ex.ice,5517f6356693ac3c620e68d2ca366c6f,
 ,,ob_1000_1247,object/map_object/ob_1000_1247.ice,object/map_object/ob_1000_1247_ex.ice,bc352ccbb9518bd44eae855f861c1683,
 マツタケ,Matsutake Mushrooms,ob_1000_1248,object/map_object/ob_1000_1248.ice,object/map_object/ob_1000_1248_ex.ice,55bd59e60e183378e81f17398d6e28a5,
-,,ob_1000_1249,object/map_object/ob_1000_1249.ice,object/map_object/ob_1000_1249_ex.ice,283557b5544bfaa139961cb00252b452,
+クツチタキャロル,Festive Holiday Sock,ob_1000_1249,object/map_object/ob_1000_1249.ice,object/map_object/ob_1000_1249_ex.ice,283557b5544bfaa139961cb00252b452,
 ,,ob_1000_1250,object/map_object/ob_1000_1250.ice,object/map_object/ob_1000_1250_ex.ice,f74661e5b5b1ff5bee793b360583bc30,0d6d680d2e919e3b74274f144c08477b
 ,,ob_1000_1251,object/map_object/ob_1000_1251.ice,object/map_object/ob_1000_1251_ex.ice,54c10ba9d8d28271615dbaeadbf5bc48,32ad3e69d66412eddbcd6d74abadaaca
 ,,ob_1000_1252,object/map_object/ob_1000_1252.ice,object/map_object/ob_1000_1252_ex.ice,70b87ca62766a658978db26213c189ba,ff67779135b93c125567cc0350f7a888
@@ -3087,7 +3087,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 モアパネル,Moa Panel,ob_1000_1605,object/map_object/ob_1000_1605.ice,object/map_object/ob_1000_1605_ex.ice,94b5e145310bf2efbe31079df8d72617,
 ,,ob_1000_1606,object/map_object/ob_1000_1606.ice,object/map_object/ob_1000_1606_ex.ice,fbf83e3fa763e5b560ceb1ec4ca734e8,
 『PSO2es』：ポスターB,PSO2es - Poster B,ob_1000_1607,object/map_object/ob_1000_1607.ice,object/map_object/ob_1000_1607_ex.ice,0322291906695448678d84f9a7953477,
-,,ob_1000_1608,object/map_object/ob_1000_1608.ice,object/map_object/ob_1000_1608_ex.ice,b78c72f84ebb8f60f43fa8875d2cd5d0,
+オメガフクロウ,Omega Owl,ob_1000_1608,object/map_object/ob_1000_1608.ice,object/map_object/ob_1000_1608_ex.ice,b78c72f84ebb8f60f43fa8875d2cd5d0,
 オメガコウモリ,Omega Bat,ob_1000_1609,object/map_object/ob_1000_1609.ice,object/map_object/ob_1000_1609_ex.ice,6c19a64ca31434c99bfac93b80af2b26,
 オメガモノリス,Omega Monolith,ob_1000_1610,object/map_object/ob_1000_1610.ice,object/map_object/ob_1000_1610_ex.ice,beb5ed4d73fc0c4a202afc27b7071cec,
 ,,ob_1000_1611,object/map_object/ob_1000_1611.ice,object/map_object/ob_1000_1611_ex.ice,,
@@ -3125,10 +3125,10 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1643,object/map_object/ob_1000_1643.ice,object/map_object/ob_1000_1643_ex.ice,1c13ae0718d66c47ea876631dece5a76,
 ,,ob_1000_1644,object/map_object/ob_1000_1644.ice,object/map_object/ob_1000_1644_ex.ice,,
 ,,ob_1000_1645,object/map_object/ob_1000_1645.ice,object/map_object/ob_1000_1645_ex.ice,,
-,,ob_1000_1646,object/map_object/ob_1000_1646.ice,object/map_object/ob_1000_1646_ex.ice,25045d0b85b0690fbd1c469475d32b0d,
+アドベントカレンダー,Advent Calendar,ob_1000_1646,object/map_object/ob_1000_1646.ice,object/map_object/ob_1000_1646_ex.ice,25045d0b85b0690fbd1c469475d32b0d,
 ,,ob_1000_1647,object/map_object/ob_1000_1647.ice,object/map_object/ob_1000_1647_ex.ice,,
 ,,ob_1000_1648,object/map_object/ob_1000_1648.ice,object/map_object/ob_1000_1648_ex.ice,dc66066fc5481687745d921e84014630,
-,,ob_1000_1649,object/map_object/ob_1000_1649.ice,object/map_object/ob_1000_1649_ex.ice,7395a5a9cb62224f67096bcd4d5d2e0d,
+ファーストバーガー,Fast Burger,ob_1000_1649,object/map_object/ob_1000_1649.ice,object/map_object/ob_1000_1649_ex.ice,7395a5a9cb62224f67096bcd4d5d2e0d,
 ,,ob_1000_1650,object/map_object/ob_1000_1650.ice,object/map_object/ob_1000_1650_ex.ice,,
 ,,ob_1000_1651,object/map_object/ob_1000_1651.ice,object/map_object/ob_1000_1651_ex.ice,,
 ,,ob_1000_1652,object/map_object/ob_1000_1652.ice,object/map_object/ob_1000_1652_ex.ice,f4a062c8f6e0e6997d1a456e19f894b3,
