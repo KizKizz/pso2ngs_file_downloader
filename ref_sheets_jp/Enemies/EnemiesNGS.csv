@@ -129,6 +129,7 @@ en_alt_hrp_common.ice,0f\8cd4d3385e25a3686d9f77c0620474
 en_alt_lzd_common.ice,43\fcacc9f9b2633bb4048d18d9a9b86c
 エルディサイズ,,,,,,,,,,en_r01_alt_tis_ba.ice,8d\e507aa04ef8685af61af0cfdf50eaa
 エルディサイズ,,,,,,,,,,en_r01_alt_tis_ba_ag.ice,a5\65ecde8120cd2360807ca7e6f079a0,ベテラン,Veteran
+エルディサイズ,,,,,,,,,,en_r01_alt_tis_tra.ice,4f\4373ae2ace54332f5cb1c32b9e8639
 en_alt_tis_common.ice,4d\382018cb76419bb36d83a011ca15da
 ワウロン,,,,,,,,,,en_r01_alt_wlf_ba.ice,e7\cdc3bbf09961b6036fcc8d414d1066
 ワウロン,,,,,,,,,,en_r01_alt_wlf_ba_ag.ice,52\a9290a77550b2e442ef38402006f85,ベテラン,Veteran
@@ -598,6 +599,7 @@ en_rem_ggr_common.ice,d2\2ee27be2ea67cd16c497f6a9de1474
 en_rem_yor_common.ice,8c\1a5ea9ed4ccb54bdcdda6cbe430d30
 ルイノ・アンジュール,,,,,,,,,,en_r05_rem_ace_ba.ice,dd\5fa6891c15bdb8b5a7455f223bf6f5
 en_rem_ace_common.ice,f7\db0db3bdad7166302d68dba5321d64
+ルイノ・マスカレーダ,,,,,,,,,,en_r05_rem_akk_ba.ice,73\7ba2df8e82258205f83ba100557f14
 en_gd_flo_eff.ice,a8\42fb661ed8319ab2349b0be5578eee
 en_gd_gia_eff.ice,f8\3bab9cbdd38b0641a47a91a4dd7cb4
 en_gd_kpy_eff.ice,6e\0d8a1df8942306521ab87ef7027c80
