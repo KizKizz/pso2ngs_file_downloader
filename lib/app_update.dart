@@ -16,7 +16,7 @@ Future<void> patchNotesDialog(context) async {
     builder: (BuildContext context) {
       return AlertDialog(
         shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).primaryColorLight), borderRadius: const BorderRadius.all(Radius.circular(5))),
-        backgroundColor: Theme.of(context).canvasColor.withOpacity(0.8),
+        backgroundColor: Theme.of(context).canvasColor.withAlpha(150),
         titlePadding: const EdgeInsets.only(top: 10),
         title: const Center(child: Text('Patch Notes')),
         contentPadding: const EdgeInsets.all(10),
@@ -106,7 +106,7 @@ Future<void> appDownloadDialog(context) async {
         });
         return AlertDialog(
           shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).primaryColorLight), borderRadius: const BorderRadius.all(Radius.circular(5))),
-          backgroundColor: Theme.of(context).canvasColor.withOpacity(0.8),
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor.withAlpha(150),
           titlePadding: const EdgeInsets.only(top: 10),
           title: Center(child: _downloadErrorMsg.isEmpty ? const Text('Downloading Update') : const Text('Downloading Error')),
           contentPadding: const EdgeInsets.all(10),
