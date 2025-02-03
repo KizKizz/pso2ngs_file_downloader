@@ -49,6 +49,17 @@ class Item {
   //   return false;
   // }
 
+  bool compareItem(Item bItem) {
+    String jpName = infos.entries.firstWhere((element) => element.key == 'Japanese Name', orElse: () => const MapEntry('', '')).value;
+    String bItemJPName = bItem.infos.entries.firstWhere((element) => element.key == 'Japanese Name', orElse: () => const MapEntry('', '')).value;
+
+    if (category == bItem.category && jpName == bItemJPName) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   bool compareNames(Item bItem) {
     if (csvFileName != bItem.csvFileName ||
             csvFilePath != bItem.csvFilePath ||
