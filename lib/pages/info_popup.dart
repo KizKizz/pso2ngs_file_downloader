@@ -38,7 +38,7 @@ Future<bool> itemInfoDialog(context, Item item) async {
         return StatefulBuilder(builder: (dialogContext, setState) {
           return AlertDialog(
               shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
-              backgroundColor: Color(Theme.of(context).canvasColor.value).withOpacity(0.8),
+              backgroundColor: Theme.of(context).scaffoldBackgroundColor.withAlpha(150),
               titlePadding: const EdgeInsets.only(top: 10, bottom: 15, left: 16, right: 16),
               title: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -184,7 +184,7 @@ Future<bool> itemDownloadingDialog(context, Directory fileDownloadedDir) async {
         return StatefulBuilder(builder: (dialogContext, setState) {
           return AlertDialog(
               shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
-              backgroundColor: Color(Theme.of(context).canvasColor.value).withOpacity(0.8),
+              backgroundColor: Theme.of(context).scaffoldBackgroundColor.withAlpha(150),
               titlePadding: const EdgeInsets.only(top: 10, bottom: 15, left: 16, right: 16),
               title: const Text('Downloading'),
               contentPadding: const EdgeInsets.only(left: 16, right: 16, bottom: 10),

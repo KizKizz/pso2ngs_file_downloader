@@ -817,7 +817,7 @@ Future<List<Item>> populateItemList() async {
             '',
             headers,
             infos);
-        int matchedIndex = itemList.indexWhere((element) => element.compareNames(newItem));
+        int matchedIndex = itemList.indexWhere((element) => element.compareItem(newItem));
         if (matchedIndex == -1) {
           itemList.add(newItem);
         }

@@ -69,7 +69,7 @@ Future<void> setIconImage(context, Item item) async {
       String iconIceName = item.infos.entries.firstWhere((element) => element.key.toString().contains('Icon') || element.key.toString().contains('Ice Hash - Image')).value;
       if (iconIceName.isNotEmpty && !itemName.contains('Unnamed')) {
         File downloadedImageIce = await downloadIceFromOfficial(context, iconIceName, tempDir.path);
-        if (downloadedImageIce.existsSync()) {
+        if (downloadedImageIce.path.isNotEmpty && downloadedImageIce.existsSync()) {
           final iconImage = await getIconData(downloadedImageIce, Uri.file('${iconsDir.path}${item.csvFilePath}/${p.basenameWithoutExtension(item.csvFileName)}').toFilePath(), itemName);
           if (iconImage.path.isNotEmpty && iconImage.existsSync()) {
             item.iconImagePath = iconImage.path.replaceFirst(Uri.file(Directory.current.path).toFilePath(), '');

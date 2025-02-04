@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
-import 'package:pso2ngs_file_locator/pages/info_popup.dart';
 import 'package:pso2ngs_file_locator/state_provider.dart';
 import 'package:path/path.dart' as p;
 
@@ -150,7 +149,7 @@ Future<void> filesDownload(context, Item item) async {
     String dlSavePath = Uri.file('${downloadDir.path}/${p.basenameWithoutExtension(item.csvFileName)}/${nameStrings.join(' - ')}').toFilePath();
     Directory subDir = await Directory(dlSavePath).create(recursive: true);
 
-    itemDownloadingDialog(context, subDir);
+    // itemDownloadingDialog(context, subDir);
     for (var entry in item.infos.entries) {
       if (downloadableKeys.where((element) => entry.key.toString().toLowerCase().contains(element.toLowerCase())).isNotEmpty && entry.value.isNotEmpty) {
         if (subDir.existsSync()) {
