@@ -8,7 +8,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/app_update.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/functions/ice_download.dart';
@@ -16,11 +15,11 @@ import 'package:pso2ngs_file_locator/functions/icon_load.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 import 'package:pso2ngs_file_locator/main.dart';
 import 'package:pso2ngs_file_locator/pages/info_popup.dart';
-import 'package:pso2ngs_file_locator/state_provider.dart';
 import 'package:pso2ngs_file_locator/version_check.dart';
 import 'package:pso2ngs_file_locator/widgets/buttons.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:signals/signals_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:path/path.dart' as p;
 import 'package:window_manager/window_manager.dart';
@@ -41,41 +40,46 @@ class _HomePageState extends State<HomePage> with WindowListener {
 
   @override
   void initState() {
-    checkForUpdates(context);
-    windowManager.addListener(this);
+    if (!kIsWeb) {
+      checkForUpdates(context);
+      windowManager.addListener(this);
+
+      if (downloadDir.existsSync()) {
+        final dledItems = downloadDir.listSync().whereType<Directory>().map((e) => p.basenameWithoutExtension(e.path)).toList();
+        downloadedItemList.add(
+          Padding(
+            padding: EdgeInsets.only(top: 10, bottom: 10, left: 5, right: 5),
+            child: Center(
+              child: ElevatedButton(
+                  child: const Text('Open Download Folder'),
+                  onPressed: () async {
+                    launchUrl(Uri.directory(downloadDir.path));
+                  }),
+            ),
+          ),
+        );
+        if (dledItems.isNotEmpty) {
+          downloadedItemList.add(
+            Divider(
+              thickness: 1,
+              indent: 5,
+              endIndent: 5,
+              height: 0,
+            ),
+          );
+          for (var name in dledItems) {
+            downloadedItemList.add(ListTile(title: Text(name), dense: true));
+          }
+        }
+      }
+    }
+
     if (selectedItemFilters.isEmpty) {
       filteredItems = items;
     } else {
       filteredItems = items.where((element) => element.filteredItem(selectedItemFilters)).toList();
     }
-    if (downloadDir.existsSync()) {
-      final dledItems = downloadDir.listSync().whereType<Directory>().map((e) => p.basenameWithoutExtension(e.path)).toList();
-      downloadedItemList.add(
-        Padding(
-          padding: EdgeInsets.only(top: 10, bottom: 10, left: 5, right: 5),
-          child: Center(
-            child: ElevatedButton(
-                child: const Text('Open Download Folder'),
-                onPressed: () async {
-                  launchUrl(Uri.directory(downloadDir.path));
-                }),
-          ),
-        ),
-      );
-      if (dledItems.isNotEmpty) {
-        downloadedItemList.add(
-          Divider(
-            thickness: 1,
-            indent: 5,
-            endIndent: 5,
-            height: 0,
-          ),
-        );
-        for (var name in dledItems) {
-          downloadedItemList.add(ListTile(title: Text(name), dense: true));
-        }
-      }
-    }
+
     for (var filter in itemFilters) {
       for (var ff in filter.fileFilters) {
         allFilterList.add(ff);
@@ -117,7 +121,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
         title: searchBox(),
         actions: [itemCounter(), downloadMenuBtn(), filterBoxBtn(), lightDarkModeBtn(), aboutBtn()],
       ),
-      bottomNavigationBar: context.watch<StateProvider>().isUpdateAvailable ? newVersionBanner() : null,
+      bottomNavigationBar: isUpdateAvailable.watch(context) ? newVersionBanner() : null,
       body: Padding(
         padding: EdgeInsets.only(left: 0, right: 5, top: 5, bottom: 5),
         child: Row(children: [
@@ -239,7 +243,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
               child: Column(
                 children: [
                   item.iconImagePath.isNotEmpty
-                      ? kDebugMode
+                      ? kDebugMode && !kIsWeb
                           ? Image.file(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, File(Uri.file(Directory.current.path + item.iconImagePath).toFilePath()))
                           : Image.network(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, githubIconPath + item.iconImagePath.replaceAll('\\', '/'))
                       : Image.asset(
@@ -509,7 +513,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
                       padding: const EdgeInsets.only(right: 5),
                       child: ElevatedButton(
                           onPressed: (() {
-                            Provider.of<StateProvider>(context, listen: false).isUpdateAvailableFalse();
+                            isUpdateAvailable.value = false;
                             setState(() {});
                           }),
                           child: Text('Close')),

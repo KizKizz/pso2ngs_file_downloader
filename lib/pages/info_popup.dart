@@ -3,13 +3,15 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/functions/ice_download.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
-import 'package:pso2ngs_file_locator/state_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:signals/signals_flutter.dart';
+import 'package:url_launcher/url_launcher_string.dart';
+
+Signal<String> downloadStatus = Signal('');
+Signal<double> downloadProgress = Signal(0.0);
 
 Future<bool> itemInfoDialog(context, Item item) async {
   List<String> nameStrings = [];
@@ -55,7 +57,7 @@ Future<bool> itemInfoDialog(context, Item item) async {
                           margin: const EdgeInsets.all(0),
                           clipBehavior: Clip.hardEdge,
                           child: item.iconImagePath.isNotEmpty
-                              ? kDebugMode
+                              ? kDebugMode && !kIsWeb
                                   ? Image.file(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, File(Uri.file(Directory.current.path + item.iconImagePath).toFilePath()))
                                   : Image.network(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, githubIconPath + item.iconImagePath.replaceAll('\\', '/'))
                               : Image.asset(
@@ -164,7 +166,7 @@ Future<bool> itemInfoDialog(context, Item item) async {
                         ),
                         ElevatedButton(
                             onPressed: () async {
-                              filesDownload(context, item);
+                              itemDownloadingDialog(context, item);
                             },
                             child: const Text('Download'))
                       ],
@@ -176,7 +178,8 @@ Future<bool> itemInfoDialog(context, Item item) async {
       });
 }
 
-Future<bool> itemDownloadingDialog(context, Directory fileDownloadedDir) async {
+Future<bool> itemDownloadingDialog(context, Item item) async {
+  String? outputDirPath;
   return await showDialog(
       barrierDismissible: false,
       context: context,
@@ -186,49 +189,96 @@ Future<bool> itemDownloadingDialog(context, Directory fileDownloadedDir) async {
               shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).hintColor), borderRadius: const BorderRadius.all(Radius.circular(5))),
               backgroundColor: Theme.of(context).scaffoldBackgroundColor.withAlpha(150),
               titlePadding: const EdgeInsets.only(top: 10, bottom: 15, left: 16, right: 16),
-              title: const Text('Downloading'),
+              title: Center(child: const Text('Downloading')),
               contentPadding: const EdgeInsets.only(left: 16, right: 16, bottom: 10),
-              content: Column(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    context.watch<StateProvider>().downloadFileName.isEmpty ? 'Connecting...' : context.watch<StateProvider>().downloadFileName,
-                    style: const TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(
-                    height: 5,
-                  ),
-                  LinearPercentIndicator(
-                    //width: MediaQuery.of(context).size.width / 2,
-                    animation: true,
-                    lineHeight: 22.0,
-                    // animationDuration: 2500,
-                    barRadius: const Radius.circular(13),
-                    backgroundColor: Theme.of(context).canvasColor,
-                    percent: context.watch<StateProvider>().downloadPercentage,
-                    center: Text('${(context.watch<StateProvider>().downloadPercentage * 100).toStringAsFixed(1)}%'),
-                    progressColor: Theme.of(context).progressIndicatorTheme.linearTrackColor,
-                  ),
-                ],
+              content: SizedBox(
+                width: 250,
+                height: 100,
+                child: FutureBuilder(
+                  future: kIsWeb ? filesDownloadWeb(item) : filesDownload(context, item),
+                  builder: (BuildContext context, AsyncSnapshot snapshot) {
+                    if (snapshot.connectionState != ConnectionState.done) {
+                      if (!kIsWeb) {
+                        return Column(
+                          spacing: 5,
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            LinearPercentIndicator(
+                              //width: MediaQuery.of(context).size.width / 2,
+                              animation: true,
+                              lineHeight: 22.0,
+                              // animationDuration: 2500,
+                              barRadius: const Radius.circular(13),
+                              backgroundColor: Theme.of(context).canvasColor,
+                              percent: downloadProgress.watch(context),
+                              center: Text('${(downloadProgress.watch(context) * 100).round()}%'),
+                              progressColor: Theme.of(context).progressIndicatorTheme.linearTrackColor,
+                            ),
+                            Text(
+                              downloadStatus.watch(context),
+                              style: const TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        );
+                      } else {
+                        return SizedBox();
+                      }
+                    } else if (snapshot.connectionState == ConnectionState.done && snapshot.hasError) {
+                      return Column(
+                        spacing: 20,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            snapshot.error.toString(),
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(fontSize: 20),
+                          ),
+                        ],
+                      );
+                    } else {
+                      outputDirPath = snapshot.data;
+                      return Column(
+                        spacing: 5,
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          LinearPercentIndicator(
+                            //width: MediaQuery.of(context).size.width / 2,
+                            animation: true,
+                            lineHeight: 22.0,
+                            // animationDuration: 2500,
+                            barRadius: const Radius.circular(13),
+                            backgroundColor: Theme.of(context).canvasColor,
+                            percent: downloadProgress.watch(context),
+                            center: Text('${(downloadProgress.watch(context) * 100).round()}%'),
+                            progressColor: Theme.of(context).progressIndicatorTheme.linearTrackColor,
+                          ),
+                          Text(
+                            downloadStatus.watch(context),
+                            style: const TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      );
+                    }
+                  },
+                ),
               ),
               actionsPadding: const EdgeInsets.only(bottom: 10, left: 16, right: 16),
               actions: <Widget>[
                 ElevatedButton(
                     child: const Text('Close'),
                     onPressed: () {
-                      Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
-                      Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
                       Navigator.pop(context, false);
                     }),
                 ElevatedButton(
-                    onPressed: Provider.of<StateProvider>(context, listen: false).downloadFileName != 'Finished!'
+                    onPressed: outputDirPath != null && Directory(outputDirPath!).existsSync() && !kIsWeb
                         ? null
                         : () {
-                            Navigator.pop(context, false);
-                            Provider.of<StateProvider>(context, listen: false).downloadFileNameReset();
-                            Provider.of<StateProvider>(context, listen: false).downloadPercentageReset();
-                            launchUrl(Uri.directory(downloadDir.path));
+                            Navigator.pop(context, true);
+                            launchUrlString(outputDirPath!);
                           },
                     child: const Text('Open'))
               ]);
