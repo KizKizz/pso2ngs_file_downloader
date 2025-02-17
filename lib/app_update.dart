@@ -71,8 +71,7 @@ Future<void> appDownloadDialog(context) async {
                   if (_downloadPercent >= 100) {
                     await Future.delayed(const Duration(milliseconds: 100)); 
                     await extractFileToDisk(Uri.file('${Directory.current.path}/appUpdate/PSO2NGSFileDownloader_v$newVersion.zip').toFilePath(),
-                        Uri.file('${Directory.current.path}/appUpdate/PSO2NGSFileDownloader_v$newVersion').toFilePath(),
-                        asyncWrite: false);
+                        Uri.file('${Directory.current.path}/appUpdate/PSO2NGSFileDownloader_v$newVersion').toFilePath());
                     try {
                       await dio.download("https://github.com/KizKizz/pso2ngs_file_downloader/raw/main/updater/updater.exe", Uri.file('${Directory.current.path}/appUpdate/updater.exe').toFilePath());
                     } catch (e) {

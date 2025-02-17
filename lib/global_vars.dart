@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
+import 'package:signals/signals.dart';
 
 String appTitle = 'PSO2NGS File Downloader';
 double appWidth = 0;
@@ -9,6 +10,8 @@ double appHeight = 0;
 String appVersion = '';
 String newVersion = '';
 String patchNotes = '';
+Signal<String> loadingStatus = Signal('');
+Signal<bool> isUpdateAvailable = Signal(false);
 List<String> patchNoteSplit = [];
 String curPageTitle = '';
 String managementLink = 'http://patch01.pso2gs.net/patch_prod/patches/management_beta.txt';
@@ -25,6 +28,8 @@ List<String> mixedFileList = [];
 List<Item> items = [];
 Directory refSheetsDir = Directory(Uri.file('${Directory.current.path}/ref_sheets').toFilePath());
 Directory refSheetsJPDir = Directory(Uri.file('${Directory.current.path}/ref_sheets_jp').toFilePath());
+Directory webDataDir = Directory(Uri.file('${Directory.current.path}/web_data').toFilePath());
+File webURLFile = File(Uri.file('${Directory.current.path}/web_data/webURL.txt').toFilePath());
 Directory tempDir = Directory(Uri.file('${Directory.current.path}/temp').toFilePath());
 File itemDataJson = File(Uri.file('${Directory.current.path}/json/itemData.json').toFilePath());
 File playerItemDataJson = File(Uri.file('${Directory.current.path}/json/playerItemData.json').toFilePath());
@@ -34,7 +39,7 @@ Directory downloadDir = Directory(Uri.file('${Directory.current.path}/Downloaded
 String zamboniExePath = Uri.file('${Directory.current.path}/Zamboni/Zamboni.exe').toFilePath();
 String githubIconPath = 'https://raw.githubusercontent.com/KizKizz/pso2ngs_file_downloader/main';
 String charToReplace = '[\\/:*?"<>|]';
-bool overrideDebugMode = false;
+bool overrideDebugMode = true;
 bool filterBoxShow = true;
 List<Filter> itemFilters = [];
 List<String> selectedItemFilters = [];

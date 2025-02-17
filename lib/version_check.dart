@@ -5,9 +5,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
-import 'package:pso2ngs_file_locator/state_provider.dart';
 
 List<String> currentVersionValues = appVersion.split('.');
 Future<void> checkForUpdates(context) async {
@@ -29,21 +27,21 @@ Future<void> checkForUpdates(context) async {
       patchNotes = tempPatchNote.replaceFirst('[', '', 0).replaceFirst(']', '', patchNotes.length);
       patchNoteSplit = patchNotes.split(', ');
       //debugPrint('Response: ${patchNotes.first}');
-      Provider.of<StateProvider>(context, listen: false).isUpdateAvailableTrue();
+      isUpdateAvailable.value = true;
     } else if (newPatch <= curPatch && newMinor > curMinor && newMajor >= curMajor) {
       newVersion = newVersionValue;
       String tempPatchNote = jsonVal.entries.firstWhere((element) => element.key == 'description').value.toString();
       patchNotes = tempPatchNote.replaceFirst('[', '', 0).replaceFirst(']', '', patchNotes.length);
       patchNoteSplit = patchNotes.split(', ');
       //debugPrint('Response: ${patchNotes.first}');
-      Provider.of<StateProvider>(context, listen: false).isUpdateAvailableTrue();
+      isUpdateAvailable.value = true;
     } else if (newPatch <= curPatch && newMinor <= curMinor && newMajor > curMajor) {
       newVersion = newVersionValue;
       String tempPatchNote = jsonVal.entries.firstWhere((element) => element.key == 'description').value.toString();
       patchNotes = tempPatchNote.replaceFirst('[', '', 0).replaceFirst(']', '', patchNotes.length);
       patchNoteSplit = patchNotes.split(', ');
       //debugPrint('Response: ${patchNotes.first}');
-      Provider.of<StateProvider>(context, listen: false).isUpdateAvailableTrue();
+      isUpdateAvailable.value = true;
     }
   }
 }
