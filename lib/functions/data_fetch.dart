@@ -195,8 +195,16 @@ Future<bool> itemDataFetch() async {
 }
 
 Future<bool> itemDataFetchForWeb() async {
-  
-
+  final response = await http.get(Uri.parse('https://raw.githubusercontent.com/KizKizz/pso2ngs_file_downloader/refs/heads/main/web_data/webURL.txt'));
+  if (response.statusCode == 200) {
+    final urls = response.body.split('\n');
+    if (urls.length > 3) {
+      masterURL = urls[0];
+      patchURL = urls[1];
+      backupMasterURL = urls[2];
+      backupPatchURL = urls[3];
+    }
+  }
 
   loadingStatus.value = 'Loading Item Data';
   await Future.delayed(const Duration(microseconds: 10));
