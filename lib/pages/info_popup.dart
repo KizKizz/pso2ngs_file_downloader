@@ -131,20 +131,22 @@ Future<bool> itemInfoDialog(context, Item item) async {
                             child: SizedBox(
                               width: 200,
                               child: ElevatedButton(
-                                onPressed: () async {
-                                  if (extractIceFilesAfterDownload) {
-                                    extractIceFilesAfterDownload = false;
-                                    final prefs = await SharedPreferences.getInstance();
-                                    prefs.setBool('extractIceFilesAfterDownload', extractIceFilesAfterDownload);
-                                  } else {
-                                    extractIceFilesAfterDownload = true;
-                                    final prefs = await SharedPreferences.getInstance();
-                                    prefs.setBool('extractIceFilesAfterDownload', extractIceFilesAfterDownload);
-                                  }
-                                  setState(
-                                    () {},
-                                  );
-                                },
+                                onPressed: !kIsWeb
+                                    ? () async {
+                                        if (extractIceFilesAfterDownload) {
+                                          extractIceFilesAfterDownload = false;
+                                          final prefs = await SharedPreferences.getInstance();
+                                          prefs.setBool('extractIceFilesAfterDownload', extractIceFilesAfterDownload);
+                                        } else {
+                                          extractIceFilesAfterDownload = true;
+                                          final prefs = await SharedPreferences.getInstance();
+                                          prefs.setBool('extractIceFilesAfterDownload', extractIceFilesAfterDownload);
+                                        }
+                                        setState(
+                                          () {},
+                                        );
+                                      }
+                                    : null,
                                 child: Text(extractIceFilesAfterDownload ? 'Extract Ice Files: ON' : 'Extract Ice Files: OFF'),
                               ),
                             ),
