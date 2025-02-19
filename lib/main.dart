@@ -142,7 +142,7 @@ class _SplashState extends State<Splash> {
             );
           } else if (snapshot.connectionState == ConnectionState.done && snapshot.hasError) {
             return Column(
-              spacing: 20,
+              spacing: 40,
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
