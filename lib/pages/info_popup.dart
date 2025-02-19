@@ -165,9 +165,11 @@ Future<bool> itemInfoDialog(context, Item item) async {
                               }),
                         ),
                         ElevatedButton(
-                            onPressed: () async {
-                              itemDownloadingDialog(context, item);
-                            },
+                            onPressed: !kIsWeb
+                                ? () async {
+                                    itemDownloadingDialog(context, item);
+                                  }
+                                : null,
                             child: const Text('Download'))
                       ],
                     )
