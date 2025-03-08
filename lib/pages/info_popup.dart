@@ -167,11 +167,9 @@ Future<bool> itemInfoDialog(context, Item item) async {
                               }),
                         ),
                         ElevatedButton(
-                            onPressed: !kIsWeb
-                                ? () async {
-                                    itemDownloadingDialog(context, item);
-                                  }
-                                : null,
+                            onPressed: () async {
+                              itemDownloadingDialog(context, item);
+                            },
                             child: const Text('Download'))
                       ],
                     )
@@ -184,6 +182,8 @@ Future<bool> itemInfoDialog(context, Item item) async {
 
 Future<bool> itemDownloadingDialog(context, Item item) async {
   String? outputDirPath;
+  late final webDownload = filesDownloadWeb(item);
+  late final pcDownload = filesDownload(context, item);
   return await showDialog(
       barrierDismissible: false,
       context: context,
@@ -199,7 +199,7 @@ Future<bool> itemDownloadingDialog(context, Item item) async {
                 width: 250,
                 height: 100,
                 child: FutureBuilder(
-                  future: kIsWeb ? filesDownloadWeb(item) : filesDownload(context, item),
+                  future: kIsWeb ? webDownload : pcDownload,
                   builder: (BuildContext context, AsyncSnapshot snapshot) {
                     if (snapshot.connectionState != ConnectionState.done) {
                       if (!kIsWeb) {
@@ -215,7 +215,7 @@ Future<bool> itemDownloadingDialog(context, Item item) async {
                               // animationDuration: 2500,
                               barRadius: const Radius.circular(13),
                               backgroundColor: Theme.of(context).canvasColor,
-                              percent: downloadProgress.watch(context),
+                              percent: downloadProgress.watch(context) < 0.0 ? 0.0 : downloadProgress.watch(context),
                               center: Text('${(downloadProgress.watch(context) * 100).round()}%'),
                               progressColor: Theme.of(context).progressIndicatorTheme.linearTrackColor,
                             ),
@@ -256,7 +256,7 @@ Future<bool> itemDownloadingDialog(context, Item item) async {
                             // animationDuration: 2500,
                             barRadius: const Radius.circular(13),
                             backgroundColor: Theme.of(context).canvasColor,
-                            percent: downloadProgress.watch(context),
+                            percent: downloadProgress.watch(context) < 0.0 ? 0.0 : downloadProgress.watch(context),
                             center: Text('${(downloadProgress.watch(context) * 100).round()}%'),
                             progressColor: Theme.of(context).progressIndicatorTheme.linearTrackColor,
                           ),
