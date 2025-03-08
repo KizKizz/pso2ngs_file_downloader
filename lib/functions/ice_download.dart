@@ -153,27 +153,62 @@ Future<String?> filesDownload(context, Item item) async {
     // itemDownloadingDialog(context, subDir);
     for (var entry in item.infos.entries) {
       if (downloadableKeys.where((element) => entry.key.toString().toLowerCase().contains(element.toLowerCase())).isNotEmpty && entry.value.isNotEmpty) {
-        if (subDir.existsSync()) {
-          final serverURLs = [masterURL, patchURL, backupMasterURL, backupPatchURL];
+        final fileFromPatchList = patchFileList.firstWhere(
+          (e) => e.contains(p.basename(entry.value)),
+          orElse: () => '',
+        );
+        if (fileFromPatchList.isNotEmpty && subDir.existsSync()) {
+          Directory(subDir.path + p.separator + p.dirname(fileFromPatchList).replaceAll('/', p.separator)).createSync(recursive: true);
+          final serverURLs = [patchURL, backupPatchURL];
           for (var url in serverURLs) {
             final task = DownloadTask(
-                url: '$url${entry.value}',
+                url: '$url$fileFromPatchList.pat',
                 filename: p.basenameWithoutExtension(entry.value),
                 headers: {"User-Agent": "AQUA_HTTP"},
-                directory: subDir.path,
+                directory: subDir.path + p.separator + p.dirname(fileFromPatchList).replaceAll('/', p.separator),
                 retries: 0,
                 updates: Updates.statusAndProgress,
                 allowPause: false);
 
-            await FileDownloader().download(task, onStatus: (status) => downloadStatus.value = status.name, onProgress: (progress) => downloadProgress.value = progress);
+            final result = await FileDownloader().download(task, onStatus: (status) => downloadStatus.value = status.name, onProgress: (progress) => downloadProgress.value = progress);
+            if (result.status == TaskStatus.complete) {
+              break;
+            }
+          }
+        } else {
+          final fileFromMasterList = masterFileList.firstWhere(
+            (e) => e.contains(p.basename(entry.value)),
+            orElse: () => '',
+          );
+
+          if (fileFromMasterList.isNotEmpty && subDir.existsSync()) {
+            Directory(subDir.path + p.separator + p.dirname(fileFromMasterList).replaceAll('/', p.separator)).createSync(recursive: true);
+            final serverURLs = [masterURL, backupMasterURL];
+            for (var url in serverURLs) {
+              final task = DownloadTask(
+                  url: '$url$fileFromMasterList.pat',
+                  filename: p.basenameWithoutExtension(entry.value),
+                  headers: {"User-Agent": "AQUA_HTTP"},
+                  directory: subDir.path + p.separator + p.dirname(fileFromMasterList).replaceAll('/', p.separator),
+                  retries: 0,
+                  updates: Updates.statusAndProgress,
+                  allowPause: false);
+
+              final result = await FileDownloader().download(task, onStatus: (status) => downloadStatus.value = status.name, onProgress: (progress) => downloadProgress.value = progress);
+              if (result.status == TaskStatus.complete) {
+                break;
+              }
+            }
           }
         }
       }
     }
 
     if (dlSavePath.isNotEmpty) {
-      for (var iceFile in Directory(dlSavePath).listSync(recursive: true).whereType<File>().where((e) => p.extension(e.path) == '')) {
-        await Process.run('$zamboniExePath -outdir "${iceFile.parent.path}"', [iceFile.path]);
+      if (extractIceFilesAfterDownload) {
+        for (var iceFile in Directory(dlSavePath).listSync(recursive: true).whereType<File>().where((e) => p.extension(e.path) == '')) {
+          await Process.run('$zamboniExePath -outdir "${iceFile.parent.path}"', [iceFile.path]);
+        }
       }
 
       List<String> infoList = item.infos.entries.map((e) => '${e.key}: ${e.value}').toList();
@@ -218,12 +253,28 @@ Future<String?> filesDownloadWeb(Item item) async {
   for (var entry in item.infos.entries) {
     if (downloadableKeys.where((element) => entry.key.toString().toLowerCase().contains(element.toLowerCase())).isNotEmpty && entry.value.isNotEmpty) {
       // if (subDir.existsSync()) {
-      final serverURLs = [masterURL, patchURL, backupMasterURL, backupPatchURL];
+
+      List<String> serverURLs = [];
+      final fileFromPatchList = patchFileList.firstWhere(
+        (e) => e.contains(p.basename(entry.value)),
+        orElse: () => '',
+      );
+      final fileFromMasterList = masterFileList.firstWhere(
+        (e) => e.contains(p.basename(entry.value)),
+        orElse: () => '',
+      );
+
+      if (fileFromPatchList.isNotEmpty) {
+        serverURLs = [patchURL, backupPatchURL];
+      } else if (fileFromMasterList.isNotEmpty) {
+        serverURLs = [masterURL, backupMasterURL];
+      }
+
       for (var url in serverURLs) {
         await FileSaver.instance.saveFile(
             name: p.basenameWithoutExtension(entry.value),
             link: LinkDetails(
-              link: '$url${entry.value}',
+              link: fileFromPatchList.isNotEmpty ? '$url$fileFromPatchList.pat' : '$url$fileFromMasterList.pat',
               headers: {"User-Agent": "AQUA_HTTP"},
             ));
       }

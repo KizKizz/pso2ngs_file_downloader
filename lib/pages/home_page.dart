@@ -22,6 +22,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:signals/signals_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:path/path.dart' as p;
+import 'package:url_launcher/url_launcher_string.dart';
 import 'package:window_manager/window_manager.dart';
 
 MenuController menuAnchorController = MenuController();
@@ -628,7 +629,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
                   controller.close();
                 } else {
                   if (downloadDir.existsSync()) {
-                    final dledItems = downloadDir.listSync().whereType<Directory>().map((e) => p.basenameWithoutExtension(e.path)).toList();
+                    final dledItems = downloadDir.listSync().whereType<Directory>().toList();
                     downloadedItemList.clear();
                     downloadedItemList.add(
                       Padding(
@@ -637,7 +638,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
                           child: ElevatedButton(
                               child: const Text('Open Download Folder'),
                               onPressed: () async {
-                                launchUrl(Uri.directory(downloadDir.path));
+                                launchUrlString(downloadDir.path);
                               }),
                         ),
                       ),
@@ -651,8 +652,11 @@ class _HomePageState extends State<HomePage> with WindowListener {
                           height: 0,
                         ),
                       );
-                      for (var name in dledItems) {
-                        downloadedItemList.add(ListTile(title: Text(name), dense: true));
+                      for (var dir in dledItems) {
+                        for (var itemDir in dir.listSync().whereType<Directory>()) {
+                          downloadedItemList.add(ListTile(title: Text(p.basename(itemDir.path)), dense: true, onTap: () => launchUrlString(itemDir.path),));
+                        }
+                        
                       }
                     }
                   } else {
@@ -665,7 +669,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
                               child: const Text('Open Download Folder'),
                               onPressed: () async {
                                 downloadDir.createSync();
-                                launchUrl(Uri.directory(downloadDir.path));
+                                launchUrlString(downloadDir.path);
                               }),
                         ),
                       ),
