@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:pso2ngs_file_locator/classes.dart';
 import 'package:pso2ngs_file_locator/functions/ice_download.dart';
@@ -78,13 +79,23 @@ Future<bool> itemInfoDialog(context, Item item) async {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     for (int i = 0; i < infos.length; i++)
-                      Wrap(
+                      Row(
                         children: [
                           Text(
                             '${infos[i].split(':').first}:',
                             style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 14),
                           ),
-                          Text(infos[i].split(':').last)
+                          Text(infos[i].split(':').last),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 5),
+                            child: IconButton(
+                                visualDensity: VisualDensity.adaptivePlatformDensity,
+                                iconSize: 14,
+                                onPressed: () async {
+                                  await Clipboard.setData(ClipboardData(text: infos[i].split(':').last.trim()));
+                                },
+                                icon: Icon(Icons.copy), ),
+                          )
                         ],
                       )
                   ],
@@ -167,9 +178,11 @@ Future<bool> itemInfoDialog(context, Item item) async {
                               }),
                         ),
                         ElevatedButton(
-                            onPressed: () async {
-                              itemDownloadingDialog(context, item);
-                            },
+                            onPressed: !kIsWeb
+                                ? () async {
+                                    itemDownloadingDialog(context, item);
+                                  }
+                                : null,
                             child: const Text('Download'))
                       ],
                     )
