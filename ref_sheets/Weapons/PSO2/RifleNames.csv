@@ -52,6 +52,7 @@
 グリズライフル,Grizz Rifle,item/weapon/it_wp_08_055.ice,855da42a9a9f252c6c1d62c3b9917278
 ＊炸薬狙撃銃・連式,* Blast Sniper Renshiki,item/weapon/it_wp_08_056.ice,f583bab9b0277979737881ba6f185d20
 シグノヘッドガン,Signo Head Gun,item/weapon/it_wp_08_057.ice,022c333b7f1d113f9674dc93b72850df
+＊レブナント３,* Revenant 3,item/weapon/it_wp_08_058.ice,38c3e3bd9f638e922ae71c0141316084
 ＊Ｍｉｓｓトラヴァイエ,* Miss Traviller,item/weapon/it_wp_08_059.ice,0b2763a84b462e1f1225e97b311cfc9c
 ヴァイスフェニクス,Weisse Fenix,item/weapon/it_wp_08_060.ice,e329a0d1fab23773e454955261c24479
 シェリーフィード,Cheripheed,item/weapon/it_wp_08_062.ice,e2c566a9607b72ab668743e397e7ee33
@@ -69,7 +70,10 @@
 ＊スネークギターケース,* Snake Guitar Case,item/weapon/it_wp_08_080.ice,81628c20a63223b2d6ff044dd1ff347e
 ＊パインスナイパー,* Pine Sniper,item/weapon/it_wp_08_082.ice,77959c56d640140a11c437b1fe35a69f
 パインキラー,Pine Killer,item/weapon/it_wp_08_083.ice,248c7158ebaedd54f45e51726c9577f0
+＊ドリームメガホン,* Dream Megaphone,item/weapon/it_wp_08_085.ice,971f677a9cca9c73275876c156c65cd2
 ＊Ｍ２５ＳＥミズーリ,* M25SE Missouri,item/weapon/it_wp_08_086.ice,c269e389a20ccb3f5fbcfe58f5d06964
+＊レブナント３Ｄ,* Revenant 3D,item/weapon/it_wp_08_092.ice,5d8ab359f3e0abf10a56993159cdb200
+＊レブナント３Ｒ,* Revenant 3R,item/weapon/it_wp_08_093.ice,6a70c2f741d9860c0a3f2d3cdfda9034
 シャブダベルガ,Shabda Belga,item/weapon/it_wp_08_094.ice,5f9e9383801dedec71f08d3c1b43762d
 マーリーベルガ,Marley Belga,item/weapon/it_wp_08_095.ice,f8b99253e21c829cfa8639e48d3430d0
 ＊ブラックバルズ,* Blackbull,item/weapon/it_wp_08_097.ice,a13ee958e2c3ad2164bfa560255f13dd
@@ -158,9 +162,11 @@
 ワルキューレＡ３０Ｓ,Valkyrie A30S,item/weapon/it_wp_08_218.ice,c71731efd8739db868d275251f1bec7b
 ,,item/weapon/it_wp_08_219.ice,f502ad611d74f6417b665ff767216481
 ＊フレイフィオーラ,* Freifi Aura,item/weapon/it_wp_08_220.ice,b81ee847829171223693af0a7fd46546
+＊あかりの短機関銃,* Akari's Micro Uzi,item/weapon/it_wp_08_223.ice,9ab20aff51660119f33830c543e2b3ae
 ショットレボルシオ,Shot Revolsio,item/weapon/it_wp_08_224.ice,1588aaf489719e84c2498d2b45097589
 ショットドミナシオ,Shot Dominacio,item/weapon/it_wp_08_225.ice,a987e9c3881dc4a005055804e4d6be1c
 ショットインクルシオ,Shot Inclusio,item/weapon/it_wp_08_226.ice,b62ba281bb7e900761ad720bc9b8c9bb
+＊絢爛砲ブリュンヒルデ,* Gorgeous Guns Brunhilde,item/weapon/it_wp_08_227.ice,950e873167e557c61f5b483856260714
 リグファーガン,Rig Fagan,item/weapon/it_wp_08_228.ice,485cffe53480055b5c063a5be9692bbb
 ＊グラムファーガン,* Gram Fagan,item/weapon/it_wp_08_229.ice,c97778001deac7b466ad6854699725a8
 ジグマファーガン,Sigma Fagan,item/weapon/it_wp_08_230.ice,e85f6acbb890470265074020c9e02a50
@@ -223,8 +229,13 @@
 ニーケラクエウス,Nike Laqueus,item/weapon/it_wp_08_302.ice,ca3daa0bbd08a577c072d5999faef2ab
 ネメシスシューター-NT,Nemesis Shooter-NT,item/weapon/it_wp_08_303.ice,5d7001ee5bbd346b706d77472925050a
 スレイヴシューター-NT,Raven Shooter-NT,item/weapon/it_wp_08_304.ice,d56ffd24339121138ac70df2909b005e
+Ｚｉｇ　ランチャーＬｖ３,Zig Launcher Lv3,item/weapon/it_wp_08_305.ice,5328387054776d115286eb9727bf0a72
+＊Ｚｉｇ　ランチャー,* Zig Launcher,item/weapon/it_wp_08_306.ice,f7a5319037d4799f1f04789476500e24
+＊東郷美森の銃,* Mimori Togo's Gun,item/weapon/it_wp_08_307.ice,c63f9a267247134e7a58544c893f018d
 アリュールキロス,Allure Kilos,item/weapon/it_wp_08_308.ice,c18160989ab07213bea1d395fb8069bd
 ＊アディクトシャルム,* Addict Charme,item/weapon/it_wp_08_309.ice,37e6c5e93d665eb9a3700b8c313b7e32
+＊上条専用スライプナー,* Sleipnir for Kamijo,item/weapon/it_wp_08_312.ice,299866033f2dce6f87b18009b79c7ed1
+＊スライプナー,* Sleipnir,item/weapon/it_wp_08_313.ice,aaa90c0cfb1cefa3ba01565c29a71a56
 ＊サイレントバイオレット,* Silent Violet,item/weapon/it_wp_08_314.ice,55ca6e175a0a4b0624746fe0cee9af08
 グレンノトウシ,Guren no Toushi,item/weapon/it_wp_08_315.ice,480f001df1e3f38ebdb6b0b9c040186b
 ＊スムレラ投射長銃・刻,* Sumrera,item/weapon/it_wp_08_318.ice,3fe902d2f6412108f509262dc0b1f7ed
@@ -242,6 +253,7 @@
 アハトイエン,Acht Ien,item/weapon/it_wp_08_333.ice,9372ecb36e5e5b68a2465d3416c7d78f
 ＊グリムアサシン,* Grim Assassin,item/weapon/it_wp_08_336.ice,e523f134547bcfd8f3e6be8adb3d280a
 ＊カイ・シュレンの狙撃銃,* Kai Schulen's Sniper Rifle,item/weapon/it_wp_08_337.ice,48f8be31454cc63cfce92e208bee6c28
+＊日本帝国標準兵装,* Imperial Army Std. Equipment,item/weapon/it_wp_08_338.ice,ed431931dedc5c62f7f428366dc54ecb
 ＊ステルスウェポン,* Weapon Stealthing,item/weapon/it_wp_08_341.ice,e7a8e73ff9917465be48f7ece284060e
 ＊トリミンドライビット,* Trimind Rybitt,item/weapon/it_wp_08_342.ice,450decd791eaa02d7fa18723af53e49c
 ＊コートウェポンD,* Coated Edge D,item/weapon/it_wp_08_344.ice,21b9d1e4adcf226ee937944e559ff970
@@ -249,6 +261,8 @@
 ＊シッドレクヴィット,* Sid Lechwitt,item/weapon/it_wp_08_346.ice,5cb9c2fa2d084028cc2521e6bab8eec6
 レゾナントオルコス,Resonant Horkos,item/weapon/it_wp_08_347.ice,46e0b24b7d4fd549069fb61a44244d50
 ＊コートアサルト,* Coat Assault,item/weapon/it_wp_08_348.ice,cbaa3e914e9b94497e6c4c0e0bd6837b
+＊パレットライフル,* Pallet Rifle,item/weapon/it_wp_08_349.ice,11fde7af1aa627a0c0f942b6d5a2411f
+＊陽電子砲,* Positron Rifle,item/weapon/it_wp_08_350.ice,46ede82952b9b9180f484aef14237916
 サテライトスターマイン,Satellite Starmine,item/weapon/it_wp_08_351.ice,ea3f873dc1e32fa22d209b79c8415a22
 ＊カリエンテオーブ・メギス,* Caliente Orb Megis,item/weapon/it_wp_08_352.ice,06d1dea2d95b7bb5984d644c313cee65
 ＊イルテオンダスク・メギス,* Iltheon Dusk Megis,item/weapon/it_wp_08_353.ice,d17ac48db750de5b3e6c7a268efa80e8
