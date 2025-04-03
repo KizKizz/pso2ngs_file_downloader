@@ -38,7 +38,7 @@ Object Name JP (if known),Object Name EN (if known),Object Function,Animation ty
 プライベートプール,Private Pool,none,motion_none,ground,ground,object/map_object/ob_1000_0038.ice,996511b0e6a9592ae019a5cd70b5d975,d7b0ada339ec376ef93a51fe389ea2a8
 シーベイジングセット,Sunbathing Set,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_0039.ice,8626ec7be9403d4f3018beece1eb0489,718a3f5aaaf4afd1a5144283f6549aec
 ,,motion,motion_darts,ground,ground,object/map_object/ob_1000_0044.ice,3e2203af7420dbe341705a6809210c82,ca22c8dcf4162880e3285ec148190e46
-,,none,motion_none,ground,ground,object/map_object/ob_1000_0050.ice,40257623a0f3b3e43df69ec5ade9f7e2,29f702210795793480fe4030ab37027b
+オリジナルトレイン,Original Train,none,motion_none,ground,ground,object/map_object/ob_1000_0050.ice,40257623a0f3b3e43df69ec5ade9f7e2,29f702210795793480fe4030ab37027b
 ,,motion,motion_instrument,ground,ground,object/map_object/ob_1000_0052.ice,a811ecfe45647c8fc4b23cd71acc1e69
 ,,motion,motion_instrument,ground,ground,object/map_object/ob_1000_0053.ice,cdf4761206a2bfbc91af591b3dd8416c,c3e34608a85f4c9d30c530eda0864e84
 ,,motion,motion_instrument,ground,ground,object/map_object/ob_1000_0054.ice,19697a3cfa0bd6326c229364f31b6ab8,fa3f9312e0a9b2c9e019f4bb9e749ac8
@@ -189,7 +189,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 アクアボックス,Aqua Tank,none,motion_none,ground,ground,object/map_object/ob_1000_0206.ice,7c7ccb40d0d588e0153179f84fc3e27c,47c6e7bd8a021a150eb4066c8c3175a1
 フルーティーギフト,Fruit Basket,none,motion_none,ground,deco,object/map_object/ob_1000_0207.ice,6f852e9790146b910e3d76eb680dccf3,40949ddd2e595fced2ce1b6b360bbd88
 モッド・バタフライ,Butterfly Collection,none,motion_none,wall,ground,object/map_object/ob_1000_0208.ice,c491cd9140a7e3df496e50e748a94b62,ee49f8c44054f5454af5a99db29765ad
-,,none,motion_none,ground,deco,object/map_object/ob_1000_0209.ice,663f088e44e1359b0ee63cc9cfb8731c,4750afeaaa8c382a7f5c68b33b4908ef
+ミステリーエッグ,Mystery Egg,none,motion_none,ground,deco,object/map_object/ob_1000_0209.ice,663f088e44e1359b0ee63cc9cfb8731c,4750afeaaa8c382a7f5c68b33b4908ef
 マグマクッカー,Magma Cooker,none,motion_none,ground,deco,object/map_object/ob_1000_0210.ice,890928ae7228fab9c61fbec27dd4e0d3,2cb60535b5be6f9a8d1d6221b2980d78
 レジェンドリング,Legendary Ring,none,motion_none,ground,deco,object/map_object/ob_1000_0211.ice,3df48717e8159b970a5ec5060ec18f7b,a98ea46126da0bcc203d5afed3dffbd9
 ミスティックプラント,Mystic Plant,none,motion_none,ground,ground,object/map_object/ob_1000_0212.ice,5fc9007bde93613aee82f1ed8cc073f5,344193c62e82cfe4c15dcd0edba29bab
@@ -287,7 +287,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_0304.ice,4ce15e63dcc462b09d22191c471f98df,21a856835f8ea88797ca6b2f14f3ac45
 ゴシックテーブル,Gothic Table,custmize,motion_none,ground,ground,object/map_object/ob_1000_0305.ice,32e538e5668ce67948f3c8fe37fbafc9,ed341072ce5485ea2f4484eb9ee92300
 ゴシックテーブルC,Gothic Table C,custmize,motion_none,ground,ground,object/map_object/ob_1000_0306.ice,e2c80a244a2e4d187830ea42eb888440,6250d7b5dc2b3361a901e8dc6fdc676b
-,,custmize,motion_none,ground,ground,object/map_object/ob_1000_0307.ice,1debd3041dc18dc58ec77dfa1e36f892,c0159a34aba06179b904052305f2b252
+クラシックテーブルC,Classic Table C,custmize,motion_none,ground,ground,object/map_object/ob_1000_0307.ice,1debd3041dc18dc58ec77dfa1e36f892,c0159a34aba06179b904052305f2b252
 クラシックテーブルB,Classic Table B,custmize,motion_none,ground,ground,object/map_object/ob_1000_0308.ice,da2662bcded2d132427942f4ccfab3f1,1cad1e8677498da0fcf03244e7529b7b
 ラピスレプリカ,Lapis Replica,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_0309.ice,478e8a3c79b69c1d50d3806e3c19d571,af2fc299fedd40b7406ac94cd1f36fc1
 フォレストフラワー,Forest Flower,none,motion_none,ground,deco,object/map_object/ob_1000_0310.ice,0ada790e15bd673e6b028fbd84efb1ba,7aea9ec19c1a6742a5cb2dffbb09d44a
@@ -391,6 +391,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_0412.ice,e6933f757028afa0740216ae2503f120
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_0413.ice,d712ae878c25dbb471b231d33318fa04
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_0414.ice,4d02e2ad6b53f7175c07b0c224f15270
+,,none,motion_none,wall,poster,object/map_object/ob_1000_0415.ice,eba6d59b6ae3acfe983d45071f28818a
 ,,mikiri,motion_none,ground,ground,object/map_object/ob_1000_0417.ice,7c298ead3c6b0b0fbce4d4cf34b80dea,4ebe895aa691b4fce58b7ace45a3866e
 ,,support_partner,motion_none,ground,ground,object/map_object/ob_1000_0418.ice,d2e9496e28094d497f84660aeeacfa32,3a890b242d0fb80cd27dd0a4f0306ff0
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_0419.ice,8757f5ea695d21fdfc0772292d737eaf
@@ -414,6 +415,9 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_0437.ice,838a7d1f0d4023d7be8580dc74d42fd1,e286b7973371521ad5fe5dc1ea7fcb55
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_0438.ice,f6ae89a5f26404e79890c26f656c3e07,21a29de83d6f7da76128ae41179dbdd2
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_0439.ice,ff0c74aac14dca318b0de5628c755265
+,,none,motion_none,ground,deco,object/map_object/ob_1000_0440.ice,66ade7b679e619f93688534dbb7561ba
+,,none,motion_none,ground,deco,object/map_object/ob_1000_0441.ice,2942dd0824f69b3abdf6b7ad65d06018
+,,none,motion_none,ground,deco,object/map_object/ob_1000_0442.ice,88c4ec669b580908ae8f9d2dc24cb98f
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_0443.ice,84d5fabeae36abc959104dfdd41b7184
 ,,dice,motion_none,ground,ground,object/map_object/ob_1000_0444.ice,03977fa6abef48b3477473a025d2fda2,6ff5cafa23c7c2a83daad1f966efd2bc
 スペースシップチェア,Spaceship Chair,support_partner,motion_none,ground,ground,object/map_object/ob_1000_0445.ice,d9fa7b9fc95b80ab8fcbf50988ba1882,62d78d86ffbf9f7252907fd88b1f1b9d
@@ -436,15 +440,23 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ハッポウドリンク,Pilsner,none,motion_none,ground,deco,object/map_object/ob_1000_0468.ice,f8dd3bb9d7247c6bb6852fd8fcab36fd,3115d760d1000ed545268722da8f3137
 丸焼きチキン,Roasted Chicken,none,motion_none,ground,deco,object/map_object/ob_1000_0471.ice,8284d142585e6ac417a3e970f245eaca
 囲炉裏,Sunken Fireplace,none,motion_none,ground,ground,object/map_object/ob_1000_0472.ice,4c13f1e71eda0717b760527a8e668894,b8662a6b5a6e521394c16987123dd8d1
-,,none,motion_none,ground,deco,object/map_object/ob_1000_0473.ice,4668ccd191d3a54cdbae2e625c79aad3,445915e6093d0854d5a032fe4e64f65b
-,,none,motion_none,ground,deco,object/map_object/ob_1000_0474.ice,84a160350bea7db10162c15df4228594,1cc1613ca5630a489092c5635e2feb59
+一升瓶,Two Liter Bottle,none,motion_none,ground,deco,object/map_object/ob_1000_0473.ice,4668ccd191d3a54cdbae2e625c79aad3,445915e6093d0854d5a032fe4e64f65b
+とっくり＆おちょこ,Japanese Carafe & Cup,none,motion_none,ground,deco,object/map_object/ob_1000_0474.ice,84a160350bea7db10162c15df4228594,1cc1613ca5630a489092c5635e2feb59
 ,,cashbox,motion_none,ground,ground,object/map_object/ob_1000_0475.ice,11d91e4131612ed64d894710f20b3471,5a62cba4c70cabe02e5d982073817940
 ,,camera,motion_none,ground,ground,object/map_object/ob_1000_0476.ice,3d61785bb85e0ddf3871622f2182799a,b98387b8b1c881a4c102540f49fd245c
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0477.ice,2384cf8468ca76c4b6ad8b2e5c9a847e,1884163a401f1f38614891706dc14cb1
 ,,room_runner,motion_none,ground,ground,object/map_object/ob_1000_0478.ice,bbc273060db7bfea1897179ab97b3912,06efefd86e3190ac4146703bf22e812d
+,,none,motion_none,wall,poster,object/map_object/ob_1000_0479.ice,075ef970719feae97a53d36efd0cc60d
+,,none,motion_none,wall,poster,object/map_object/ob_1000_0480.ice,e58c68174341fba93d0851292b9cd6c1
 ,,motion,motion_rice_cake_making,ground,ground,object/map_object/ob_1000_0481.ice,57a9093ffd156087692cb66c09003202,7c66232d093a83c19697a5b1f2053408
 おせちセット,New Year's Food Set,none,motion_none,ground,deco,object/map_object/ob_1000_0482.ice,fb4c8866794d91e34a81c670c9ee83f1,2bb7dde26a759df0f4b1c353b93cf59b
 カドマツ,New Year's Decoration,none,motion_none,ground,ground,object/map_object/ob_1000_0483.ice,8fd3601e9fdf809ceea2956dc6081deb,d76893a4a2fad46f9e4e3103c6f1bd89
+,,myshop,motion_none,ground,ground,object/map_object/ob_1000_0484.ice,ecd1fba59be5bb19bd78812167a090bc
+,,none,motion_none,ground,ground,object/map_object/ob_1000_0485.ice,ca61fdea41440404a2e4f5f7e2038b3f
+,,none,motion_none,ground,deco,object/map_object/ob_1000_0486.ice,2f8464cb5420d6c2ef955f14a805004f
+,,none,motion_none,ground,ground,object/map_object/ob_1000_0487.ice,85e4ae1623f1d2fb3d1a63cc309180b3
+,,none,motion_none,wall,ground,object/map_object/ob_1000_0488.ice,19a04e769a5f03d4737c7b692c9b10c2
+,,custmize,motion_none,ground,ground,object/map_object/ob_1000_0489.ice,78431731f58bdd4aa430e01c2677297b
 シェルライト,Shell Light,none,motion_none,ground,ground,object/map_object/ob_1000_0490.ice,5ee2557a127c696d08e64eec456e17c4,6e6c444f352cdb1d35ba252395534067
 ディープファウンテン,Deep Fountain,none,motion_none,ground,ground,object/map_object/ob_1000_0491.ice,5309564c1e5b0c8fc3d490f9d0822870,e079e027b74e347000a0b35b7fb90fd9
 シーアネモネ,Sea Anemone,none,motion_none,ground,deco,object/map_object/ob_1000_0492.ice,63ca83a5de8e0862a6660cefaa0ef5bc,44d66a94b54ebc1c404fd94f31724e73
@@ -625,7 +637,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ハートラッピー,Heart Rappy,none,motion_none,ground,ground,object/map_object/ob_1000_0679.ice,c58ac5a3f240d845ac0bf41a9f8276d4
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0680.ice,7d64bb2b63daac537dd94e3f2169a50d
 ,,none,motion_none,wall,ground,object/map_object/ob_1000_0681.ice,54a6b15553220cea051b18bd5c0aefb7
-,,none,motion_none,ground,ground,object/map_object/ob_1000_0682.ice,db3de512a1cdf8623d8b821964f25a9f,cda3ef64aa749f18350292b4b9486370
+象の噴水,Elephant Fountain,none,motion_none,ground,ground,object/map_object/ob_1000_0682.ice,db3de512a1cdf8623d8b821964f25a9f,cda3ef64aa749f18350292b4b9486370
 ,,race_machine,motion_none,ground,ground,object/map_object/ob_1000_0684.ice,f4785f8d0e33dfd079012d03ade7b66d,3b7c393ccb529c2ef130bc1cd72c6bb1
 ,,race_machine,motion_none,ground,ground,object/map_object/ob_1000_0685.ice,734f7fa97c6211ddac57c62928174af6,5f34f1890520b62f1ceb3a55bc6ec70b
 ,,race_machine,motion_none,ground,ground,object/map_object/ob_1000_0686.ice,e06e8df8094d49beb329babaa6c62f21,3b3d024e274bc7893bd41098678aeeb0
@@ -668,6 +680,11 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0726.ice,3f6cad4eb9c14dd700a9fec71aa3f609,49aa66ea3252786f9af6b8d490aea65c
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_0727.ice,b9e4e8bfdce114441cf03becf50b6916
 ,,message_inout,motion_none,ground,ground,object/map_object/ob_1000_0728.ice,34f07f4b562de6e094b199cc3b833a25
+,,none,motion_none,ground,deco,object/map_object/ob_1000_0729.ice,c2e692a1599fff60ce1edb793b6c391d
+,,none,motion_none,ground,deco,object/map_object/ob_1000_0730.ice,6aa200cd054f4ac1e6a6efcb6872a481
+,,none,motion_none,ground,deco,object/map_object/ob_1000_0731.ice,860f480d811ddc0ab29a8489cb55c4ad
+,,none,motion_none,ground,deco,object/map_object/ob_1000_0732.ice,cae5e7833fa1d30f1026e8cbe37d8afe
+,,none,motion_none,ground,deco,object/map_object/ob_1000_0733.ice,5f7eb3c5aa0e40cb5e16d7ae7ad8af49
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0734.ice,48d9596ed9c1d8c378a0384aa0f04552,2362846e5a0f08d34bf5dfa5a289199a
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_0735.ice,fbcd38dc821768e1e8cda0f22e74f2ad
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_0736.ice,a0277e12769868ddd7be4022f1df50de
@@ -685,13 +702,14 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,jukebox,motion_none,ground,ground,object/map_object/ob_1000_0748.ice,ac3814725527105f736e1a108b2bc803
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0749.ice,f6020bb1ebcd0976d2e5cac6b93cecfe,e9fea373a3c0d28c61622f0ba6a9c903
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0750.ice,f1dd6c4b332dc94deb332eda53409faa
+,,none,motion_none,ground,ground,object/map_object/ob_1000_0751.ice,8536478f06111fec7fa350ac42e1de47,1a677ff9058fa6d5cee700ff575187ca
 ,,present_box,motion_none,ground,ground,object/map_object/ob_1000_0752.ice,33ada3e05c100eb698cd2cee6e294ec0,6ba1bab11f6d8624c815e49ebc52f18d
 シーベイジングセットB,Sunbathing Set B,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_0753.ice,e9f1c493917ef7a1352f6feb972d8c64
 プライベートプールB,Private Pool B,none,motion_none,ground,ground,object/map_object/ob_1000_0754.ice,2164d7bfe1d9b5bb27dd789c7fae2315
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0756.ice,e3ab8960420ae46692f89ecbedc677a8,ee070646307e15f5949d292b983ac28d
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0757.ice,0196b56abf8a3683ff78c13bf00949d0,c1c7deddb856f814f82055e14010f9e8
-,,none,motion_none,ground,deco,object/map_object/ob_1000_0758.ice,75117234738c9a4263a3ccc177865381,1b5712b90e89b6189ccb652b3e4fecd2
-,,none,motion_none,ground,deco,object/map_object/ob_1000_0759.ice,917e403188aec587450989a591e496ca,fb60de041877158259cbe5643119e4b9
+ミニミニ大砲蔵,Mini Mini Cannon Battery,none,motion_none,ground,deco,object/map_object/ob_1000_0758.ice,75117234738c9a4263a3ccc177865381,1b5712b90e89b6189ccb652b3e4fecd2
+ミニミニ大八車,Mini Mini Combat Wagon,none,motion_none,ground,deco,object/map_object/ob_1000_0759.ice,917e403188aec587450989a591e496ca,fb60de041877158259cbe5643119e4b9
 壁掛け提灯,Wall Lantern,none,motion_none,wall,ground,object/map_object/ob_1000_0760.ice,bb6e8e517f6ce2daaa311e844a217c75,8dafdd214db7e6b876a004bc87669019
 ,,motion,motion_use,ground,ground,object/map_object/ob_1000_0761.ice,3850c7a06c2ade14c5f585b9a2cc6203,eb93576cc1b4d858756cdc387c88e965
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0762.ice,89543bdbcc60653c5f5dc99c4d35dea0
@@ -707,7 +725,13 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,jukebox,motion_none,ground,ground,object/map_object/ob_1000_0772.ice,9bbc571315ef6dbd2255eea283b3231b,32a6ca43a70d0d8408aa2152353e049e
 ミニミニラッピーレース,Mini Mini Rappy Race,none,motion_none,ground,deco,object/map_object/ob_1000_0773.ice,1677603a647611c72e83ac3529d85a9d,16e72828879028e3cb1c9e45e070e26a
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_0774.ice,268fdd260db23c94da3f74a47a3a885d
+,,none,motion_none,wall,poster,object/map_object/ob_1000_0775.ice,9848a991fb1271bad423112b376b428f
+,,none,motion_none,wall,poster,object/map_object/ob_1000_0776.ice,3a77061d96cab198bba6d0b36e29f92f
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0777.ice,7174a2aec266110c5e766131347fe6fc
+,,none,motion_none,wall,poster,object/map_object/ob_1000_0778.ice,cbbd281c5a20692253c061e336cd2146
+,,none,motion_none,wall,ground,object/map_object/ob_1000_0779.ice,f4aa90e315207c087c85f129ef69845b
+,,custmize,motion_none,ground,ground,object/map_object/ob_1000_0780.ice,0f2c9b71c41c467e7e5fc596df724a4b,126d33c17d2c87fbc4047635e3034ab8
+,,none,motion_none,ground,deco,object/map_object/ob_1000_0781.ice,9c145df7ec14e92e84d114bf156c7a38,e9dea7ce98878df686464f466a127e57
 アシンメトリーソファB,Asymmetrical Sofa B,support_partner,motion_none,ground,ground,object/map_object/ob_1000_0782.ice,04ecccea534ce8ff7d6821d3eaf0d518,d68eafc45e0cac3f05b8a55679f52b16
 アシンメトリーソファ,Asymmetrical Sofa,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_0783.ice,178368ac36795ddffbe6163065a426d4,44357a0d0bc1733840bca0ba4f2bac29
 ,,craft_common,motion_none,ground,ground,object/map_object/ob_1000_0784.ice,6f1a5474082cb0a89aa6fa0784be686f,958398bdbc68d41f2bc06dbe8c007262
@@ -719,6 +743,12 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ロードプレート,Road Plate,none,motion_none,ground,ground,object/map_object/ob_1000_0790.ice,ba2ab1cf12b91db529f1a8ccd6af7b68,5ce47d26817c76549558121173005683
 ロードプレートB,Road Plate B,none,motion_none,ground,ground,object/map_object/ob_1000_0791.ice,043ee8cef7463ef485d472e387e21df7,8d1ac8720fd229c5453a7058997d44b8
 ,,none,motion_none,ceiling,ground,object/map_object/ob_1000_0792.ice,01aaa5dafc00acc9d616f1e4f8e92b35
+,,none,motion_none,wall,poster,object/map_object/ob_1000_0793.ice,5a9b1f5577ab07f16f7cf95bf4aa5be7
+,,none,motion_none,ground,ground,object/map_object/ob_1000_0794.ice,cc8236ba4a6ae282973dd84cd1949e60
+,,none,motion_none,wall,ground,object/map_object/ob_1000_0795.ice,b7721a01adaf309cb633c487941a05ee
+,,none,motion_none,ground,deco,object/map_object/ob_1000_0796.ice,3de72692c54fdb09a478d8737f41835d
+,,none,motion_none,ground,ground,object/map_object/ob_1000_0797.ice,4db74db43325d892a265f39d14377ff1
+,,custmize,motion_none,wall,ground,object/map_object/ob_1000_0798.ice,7fe60e250a64665ac0184e4857792760
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0799.ice,a274830c0160b7e2f17c11e8dd67c5d0,2b4d58df0c32adbcf95ba59b4b3ec274
 エレガントシャンデリア,Elegant Chandelier,none,motion_none,ceiling,ground,object/map_object/ob_1000_0800.ice,15fbecd20b5215a9d4a5c64bfa19fc2b,5b72835c59d62cf3ad91bb7543a8e2de
 エレガントマット,Elegant Mat,none,motion_none,ground,ground,object/map_object/ob_1000_0801.ice,a6cf92999ad8200c631e4ffa60c9862f,42c3fd37c2068c7da5f80dc70ff394b6
@@ -842,11 +872,11 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ポストスタンド,Mailbox,none,motion_none,ground,ground,object/map_object/ob_1000_0919.ice,129f5601e25f81ede50306c68af60362,3e9e0638fe576278951f24261912c58d
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0920.ice,66589adb38277dfa765829bea674b7c0,8634c020dbfaf2ac452f530c7d5f2293
 フタ付きゴミ箱,Lidded Trash Can,none,motion_none,ground,ground,object/map_object/ob_1000_0921.ice,e4997bcbd4cda4e9f7c65e917be519c1,cfcec64efe676b54d4b116434d47a010
-,,motion,motion_sleeping,ground,ground,object/map_object/ob_1000_0922.ice,617cb2ae450945087dc4d81643c72f4c,6b6a31b507f26943502c1caea699911a
+二段ベッド,Bunk Bed,motion,motion_sleeping,ground,ground,object/map_object/ob_1000_0922.ice,617cb2ae450945087dc4d81643c72f4c,6b6a31b507f26943502c1caea699911a
 コフィンベッド,Coffin Bed,motion,motion_sleeping,ground,ground,object/map_object/ob_1000_0923.ice,56c798374228a35073942103ca91baf9,7e5ed7e576a2cef3be85c993e1b40c03
 警告標識,Warning Sign,none,motion_none,ground,ground,object/map_object/ob_1000_0924.ice,857f9b40c01581799bf8cde2136fd352,98fda969ea37447db6c759e7e524e94b
 矢印板,Arrow Sign,none,motion_none,ground,ground,object/map_object/ob_1000_0925.ice,8bf508bfcbfc143b0c5f3b67c851b658,15367160be5cb0f44794b6a836883c5d
-,,none,motion_none,ground,deco,object/map_object/ob_1000_0926.ice,77caeb2772d5d44c945b375400b9d6b1,40af009efe96f4cf9a8b1cea1a2a9ed6
+カチカチダマ,Kachikachi-Dama,none,motion_none,ground,deco,object/map_object/ob_1000_0926.ice,77caeb2772d5d44c945b375400b9d6b1,40af009efe96f4cf9a8b1cea1a2a9ed6
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0927.ice,48bf5faf82ac80c5660fc9364b150f06,236e19e24049df2f353ec66a95d69823
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0928.ice,c80cf0c0aac65c699999cd11b69d13bf,c7096e2e213e95eee7fab9fcf2d3bca3
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0929.ice,70a6da6c95b2d712fcad1d978a8791d7,88e4c069537aa3ad0346227ca1b20233
@@ -861,7 +891,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ヤキソバ,Yakisoba,none,motion_none,ground,deco,object/map_object/ob_1000_0938.ice,07c47fc6791d08617f91019f8f792a3a,7e0f90845ef5b37a1507f881bb0ffec1
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0939.ice,d841177695a9add5fac2898b2b6b2eb3,335cf9e5e50e81e4131b5bf688e976f2
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0940.ice,339e8a9869eff17b7d64b052442a0b65,bebaa580632621954d1854d7ed04dd5a
-,,none,motion_none,ground,deco,object/map_object/ob_1000_0941.ice,85a952c922c1774ddd85f304f0961b4d,5af79e3848f628a2fab47d29f8555070
+チョコチップクッキー,Chocolate Chip Cookies,none,motion_none,ground,deco,object/map_object/ob_1000_0941.ice,85a952c922c1774ddd85f304f0961b4d,5af79e3848f628a2fab47d29f8555070
 ポップアップトースター,Pop-Up Toaster,none,motion_none,ground,deco,object/map_object/ob_1000_0942.ice,557d16573ac5d517963960a41134f127,ea7c990edb9dc9676c25e5108e8ff27d
 ユキダルマ,Snowman,none,motion_none,ground,ground,object/map_object/ob_1000_0943.ice,21c90e5004422973bbb5a742c9c82311,553530295fa2d77f7ce7a7738fd8de0f
 ピクニックシート,Picnic Blanket,none,motion_none,ground,ground,object/map_object/ob_1000_0944.ice,dbb2736969709ff0197ba787fabf866b,9885d28dabf5754fc2ea5392cd45a692
@@ -900,9 +930,12 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,motion,motion_instrument,ground,ground,object/map_object/ob_1000_0978.ice,21a4267c09c245bdd8b025cfc68b2a46,86ff2c10e3dc4291ad5a1446eec39f0e
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0979.ice,ca39f93bad5d17d0bc327d2d96c16256
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0983.ice,244ca2f6cf6bbbbe62f107fc5cc3922a
+,,none,motion_none,wall,poster,object/map_object/ob_1000_0984.ice,6d9ceb28d144038c627f613b3b571d5e
+,,none,motion_none,wall,poster,object/map_object/ob_1000_0985.ice,c019f9a0290c8d441015fea867d91e62
 ,,race_machine,motion_none,ground,ground,object/map_object/ob_1000_0986.ice,23e25a6bce33f2881ac21403ffdde3e8,4fdfa206007c47b5552e86f8294fcba9
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0987.ice,255fb232cde42d82f1140dfe87b459d9
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_0988.ice,07374e7f69535c279abed93aa2d0002c
+,,none,motion_none,wall,poster,object/map_object/ob_1000_0989.ice,302ac9c26f414337a27ceb08a0c88f2d
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_0990.ice,61690c7fea7e722ac83d6631f7bc52b2
 トンネルライト,Tunnel Light,none,motion_none,ground,ground,object/map_object/ob_1000_0991.ice,2eb1b89fdf631d5486dbd03f870b2272,06fb7d415f73c1c3fd7a36df7c4f8d31
 メンテナンスハンガー,Maintenance Hangar,none,motion_none,ground,ground,object/map_object/ob_1000_0992.ice,7fa64ea4e3ef14f681779b9417c07f74,29a3ec46a4ffb66aa714288692e7763b
@@ -918,6 +951,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,diorama,motion_none,ground,ground,object/map_object/ob_1000_1002.ice,0491f0cd15cbfadb7549ee1814050e37,953002174a6ecfb62101d6f7769a0fae
 ジオラマベースタイル,Diorama Base Tile,none,motion_none,ground,ground,object/map_object/ob_1000_1003.ice,efa27ebde409471d600b5a6acf249205,1796bfdd4ab179a7720ce59573a410b9
 ,,tanzaku,motion_none,ground,ground,object/map_object/ob_1000_1004.ice,5d239440c3b544a858120cb0e323b18b,e12c3cbd713577c87e26032827fe9f87
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1005.ice,5c19b667d67a13b41f04a53e6db7f940
 ,,race_machine,motion_none,ground,ground,object/map_object/ob_1000_1006.ice,f28ef7801d607cc4407652016521d957,bf5d105e4246db747de079333e8b62c4
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_1007.ice,9e4a0027888f3b28f608a9b28d24ce8e
 ビクトリースタンド,Victory Stand,custmize,motion_none,ground,ground,object/map_object/ob_1000_1008.ice,99daf7e2782bbc1286bd0fa5990790a1,d0696e1cc4216444fa8b8a43a7f34087
@@ -941,6 +975,9 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,myroom_console,motion_none,ground,ground,object/map_object/ob_1000_1026.ice,723c89074a3cb0a1d34fff89800b44d1,0a3d679485873c94eea040c37d66059b
 ,,visiphone,motion_none,ground,ground,object/map_object/ob_1000_1027.ice,26b365bd235ab066a3c6058b71a4acc5,746958336cc655ba515742e04aec47cf
 ,,warehouse,motion_none,ground,ground,object/map_object/ob_1000_1028.ice,f16d77833aaaa2d18a5d6557a7b878db,cff465fec6d71e9c4f71d18b8f3de12d
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1029.ice,4097fa09b35a34e67c6bed08ccd46fc7,2db4c6d9db227f1f96756714657a6086
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1030.ice,002913f568a1de9094bb1fbe798203a0,a56462554f9243f635ca6054b867613b
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1031.ice,f2278b54f816a09b05eea431ba801573,beaeba168b27066a49d0b8c7f0dff8e6
 ブルー撮影ブース,Photo Booth - Blue,none,motion_none,ground,ground,object/map_object/ob_1000_1032.ice,69a748057c48431e4e912ca43efe31f2
 グリーン撮影ブース,Photo Booth - Green,none,motion_none,ground,ground,object/map_object/ob_1000_1033.ice,5c3f140d29fbbf08095e75b549db1a89,91a0e60c13070249bdb071c82d18f887
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1034.ice,991856a67ba5b0bd5c3a443611224d7b,d8e3cdb970d3f2bbf44e7e6ddadc3ebe
@@ -948,6 +985,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_1036.ice,24652a33cd036ec572a2b6a2e4bc2609,ea40614a0e36cd1f89717560ca5f54c7
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_1037.ice,72d63d26cadc8ec93daa10b4d146571d,23825c0040e01c3e4008d7efe845f28c
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_1038.ice,d658bcd7ff778d49855b96e79c003d3d,43ead6505f37b115dd689a318a27d661
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1039.ice,576a0f28719b6d4e892bd0244ca8fa49
 黄金色の彫像,Golden Idol,none,motion_none,ground,ground,object/map_object/ob_1000_1040.ice,2e0b8eb9c43c09e9a1be6f0ef5f0fbf9,b3db41750d3073ee12f2360cf89754dd
 朱色の巨大門,Great Vermilion Gate,none,motion_none,ground,ground,object/map_object/ob_1000_1041.ice,c757571245a9a2d34a379ab2f071430f,35900b9d2fbc42311868208e5a79a4fb
 四灯天吊灯,Four Hanging Lanterns,none,motion_none,ceiling,ground,object/map_object/ob_1000_1042.ice,6284f9bfbff9ede288f996e3244c58fc,c9d7516193d33526349b8a30be031aa8
@@ -956,6 +994,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1045.ice,cd1f1201529483f5746888e386caa31a
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1046.ice,cf31b25d8d583e0e23d6b313fe4fe7ab
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1047.ice,474b0c6ac9683508dd8eb35229d329fe
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1048.ice,ea235a90505bfbd4ce2f7f0a6f7c0bd9
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1049.ice,783ab110d0bf3c60d38cad714e606500
 マトイポスター,Matoi Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1050.ice,cc2b06dd26b2676affa76ed668fa2008
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1051.ice,432f6a837b7b6c78d314cd72bda898e4
@@ -969,15 +1008,27 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1059.ice,bd395708ead37d91b8f1da6bad617099
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1060.ice,631e128ffef8fa47d3e58f29ebbc2276
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1061.ice,1ca37aa3157820e31ef3cf14fc1f2850
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1062.ice,bef9b451a637dcb0067bda10d85e5205
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1063.ice,af905958244fba53ed7ba96787fe8b69
+,,none,motion_none,ground,deco,object/map_object/ob_1000_1064.ice,a74374ffd9ab88b0c6531fe0aeb62767
+,,none,motion_none,ground,deco,object/map_object/ob_1000_1065.ice,31fe7851544097172b03c939c33b1f7e
+,,none,motion_none,ground,deco,object/map_object/ob_1000_1066.ice,1f0ca8cf3b276777b7d618762849bf1a
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1067.ice,4f7fcd402f4f879ac590abd087b884a4,0448f674f6fd5b0ad6abccd8d78d6dbe
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1068.ice,2e138504ab3ac734aaf29a09087f1b33,b9c5c40b1051cafed15abc8edbac4353
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1069.ice,fc708ca242589ad6d893fbdc3f006d63,b9f4352d1abf5826b3018abf280134fe
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1070.ice,8f28baed65e8a992eb663fbc297a8c16
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1071.ice,3dda30dca2b4f88e167e29ffd6d3988e
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1072.ice,935bea57c0e569260b9e2ffb1f117854
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1073.ice,a88912e4ddbe92689e746d4e070826d8
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1074.ice,01b48afdc17319164de37a43a606a726
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1075.ice,e8bb3dc998f55531f739d983ee9ce873
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1076.ice,a1ba34169119ccb22699445a3e04a5bd,0824fc1c501bc35c48bbd02bf7802911
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1077.ice,7db474d7ab6d9e504584bf93f6e1cd81,d465ee5dadf9becaf50334c3d07d152d
 ,,drumpad,motion_none,ground,ground,object/map_object/ob_1000_1078.ice,573dafa1f68472e9c30f873ba09f560f,88cb80270adfd551fcdaf899777deaff
 ,,lightsource,motion_none,ground,ground,object/map_object/ob_1000_1079.ice,06101d87c43ec068c2b487b1ebe026d9,8f2c747fd475d871b3f866fda0f84586
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1080.ice,cea52d0a7f280de38d889c20668d06e6
+,,none,motion_none,ground,deco,object/map_object/ob_1000_1081.ice,5c3452335cbe4136a048bb28767e7020
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1082.ice,7e24b4e89107c9ce01707fbcc336aa5d
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1083.ice,49f1f6eec29f9afcaa750551bdb08061
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1084.ice,4fbd17ad40dce78f3ec814b029731f2a
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1085.ice,80f82d19375a4a58226fa3120e44f5d9
@@ -986,6 +1037,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1088.ice,2e4c0c29fc3c21f8ae29d1f956fe4648
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1089.ice,81a070028ef8c6670af1d698dcc2551e
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1090.ice,4fd46111cb36db44b499c5bdee5f8f7f
+,,custmize,motion_none,wall,ground,object/map_object/ob_1000_1091.ice,1cbfecd53cf94a210d90a55e86df801a
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1092.ice,58262ba3119f901fdb5e1f031dc5d20f
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1093.ice,583987ac6084824f5c208a186a782ad2
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1094.ice,e3596720df298568aa73724a529f9a6b
@@ -1015,8 +1067,8 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 学校の掲示板B,School Message Board B,none,motion_none,wall,ground,object/map_object/ob_1000_1118.ice,8326685a0d6c5a40e8db6865fa84e36a
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1119.ice,01d5cb4c9ba6bfbe4b0d9966531c63ce
 教科書セットB,Textbook Set B,none,motion_none,ground,deco,object/map_object/ob_1000_1120.ice,e0b358c3855e9422c15cf495aa4b81c1
-,,none,motion_none,ground,deco,object/map_object/ob_1000_1121.ice,1d16f3abad32ff01e6b111437085c988
-,,none,motion_none,ground,deco,object/map_object/ob_1000_1122.ice,3e60fc8ba663cdbe801c5ed03852fbdb
+赤ランドセル,Backpack - Red,none,motion_none,ground,deco,object/map_object/ob_1000_1121.ice,1d16f3abad32ff01e6b111437085c988
+スクールバッグB,Satchel B,none,motion_none,ground,deco,object/map_object/ob_1000_1122.ice,3e60fc8ba663cdbe801c5ed03852fbdb
 学校の給食B,School Lunch B,none,motion_none,ground,deco,object/map_object/ob_1000_1123.ice,994042dd67c971ab35e20f868c3feeb8
 掃除用具入れ,Janitor's Closet,none,motion_none,wall,ground,object/map_object/ob_1000_1124.ice,c774894f3c58a83208d4cb22ea88a177,b0bc49fedbbdd6a3257e6019d93c410e
 学校の下駄箱,School Shoe Rack,none,motion_none,ground,ground,object/map_object/ob_1000_1125.ice,8ccbf947f95198e8c1595d51d8df4482,4bc0bd31523038c9a738a009a35005e9
@@ -1065,18 +1117,18 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ビンテージドレッサー,Vintage Dresser,none,motion_none,ground,ground,object/map_object/ob_1000_1180.ice,2e3c62098acfe9eebbc58eacc08f7109,bd03c3668bcc29f4f708797ec99299b3
 ビンテージビューラー,Vintage Bureau,custmize,motion_none,ground,ground,object/map_object/ob_1000_1181.ice,dc30250845d4bc859c4ef04b36fef394,c9e4582dc3446af3b31d74fcfec78104
 ビンテージティーセット,Vintage Tea Set,none,motion_none,ground,deco,object/map_object/ob_1000_1182.ice,ed8e67d05a8f846db5e7b6a7b39ddf4b,ae37e7d4ef3b43abcf393d7e4e4d29ab
-,,none,motion_none,wall,ground,object/map_object/ob_1000_1195.ice,ee7c4590977c478a1a58209075a2c483
-,,none,motion_none,wall,ground,object/map_object/ob_1000_1196.ice,20696b9ab29c73c1e9c1933be1e19b71
-,,none,motion_none,ground,ground,object/map_object/ob_1000_1197.ice,8e8f9edf679e2e10bfb5b8dd10fc2ba2
-,,none,motion_none,ground,ground,object/map_object/ob_1000_1198.ice,7a85bc2d2fb3bf05dee052b42068213d
-,,none,motion_none,ground,ground,object/map_object/ob_1000_1199.ice,9dff7440e448558a7d48be5c370c8ef5
-,,none,motion_none,wall,ground,object/map_object/ob_1000_1200.ice,3667a0bacc68f1fe1f54ba6983f32241
-,,none,motion_none,ground,deco,object/map_object/ob_1000_1201.ice,3d5c802ad209fa6bd21a43875969e1b4
-,,none,motion_none,ground,deco,object/map_object/ob_1000_1202.ice,d9fd0437046161b75b0227ab4c730ee9
-,,none,motion_none,ground,deco,object/map_object/ob_1000_1203.ice,273899a5437f17b036d07788b69237b3
-,,none,motion_none,ground,ground,object/map_object/ob_1000_1204.ice,a94c9be8c0f4a72b391a8fe9ab7706c1
-,,none,motion_none,ground,ground,object/map_object/ob_1000_1205.ice,c22d3d79a1a08e43e0b7a4fc2bcd992f
-,,none,motion_none,ground,ground,object/map_object/ob_1000_1206.ice,6a56fedacf893ace43c48c0271899dd3
+ビンテージ振り子時計,Vintage Pendulum Clock,none,motion_none,wall,ground,object/map_object/ob_1000_1195.ice,ee7c4590977c478a1a58209075a2c483
+ビンテージ電話機,Vintage Telephone,none,motion_none,wall,ground,object/map_object/ob_1000_1196.ice,20696b9ab29c73c1e9c1933be1e19b71
+ビンテージカメラ,Vintage Camera,none,motion_none,ground,ground,object/map_object/ob_1000_1197.ice,8e8f9edf679e2e10bfb5b8dd10fc2ba2
+ビンテージミシン,Vintage Sewing Machine,none,motion_none,ground,ground,object/map_object/ob_1000_1198.ice,7a85bc2d2fb3bf05dee052b42068213d
+ビンテージ火鉢,Vintage Brazier,none,motion_none,ground,ground,object/map_object/ob_1000_1199.ice,9dff7440e448558a7d48be5c370c8ef5
+ディスクオルゴール,Disc Music Box,none,motion_none,wall,ground,object/map_object/ob_1000_1200.ice,3667a0bacc68f1fe1f54ba6983f32241
+ビンテージランプ,Vintage Lamp,none,motion_none,ground,deco,object/map_object/ob_1000_1201.ice,3d5c802ad209fa6bd21a43875969e1b4
+ビンテージレジスター,Vintage Register,none,motion_none,ground,deco,object/map_object/ob_1000_1202.ice,d9fd0437046161b75b0227ab4c730ee9
+ビンテージラジオ,Vintage Radio,none,motion_none,ground,deco,object/map_object/ob_1000_1203.ice,273899a5437f17b036d07788b69237b3
+ビンテージガス灯,Vintage Gas Lamp,none,motion_none,ground,ground,object/map_object/ob_1000_1204.ice,a94c9be8c0f4a72b391a8fe9ab7706c1
+人力車,Rickshaw,none,motion_none,ground,ground,object/map_object/ob_1000_1205.ice,c22d3d79a1a08e43e0b7a4fc2bcd992f
+シークケージ,Wild Animal Cage,none,motion_none,ground,ground,object/map_object/ob_1000_1206.ice,6a56fedacf893ace43c48c0271899dd3
 マキバマット,Meadow Mat,none,motion_none,ground,ground,object/map_object/ob_1000_1207.ice,9ea2cfe7d249be66d4f150c60bb25c0c
 ナチュラルマット,Natural Mat,none,motion_none,ground,ground,object/map_object/ob_1000_1208.ice,4087e1a3a082206b87fac8b9a9ebe96d
 サイフォン,Siphon,none,motion_none,ground,deco,object/map_object/ob_1000_1209.ice,12034b9eccd258f430f876fb6e50aed4,5050a62f9770228c0d9bd276ed8cecc0
@@ -1110,8 +1162,8 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,wall,ground,object/map_object/ob_1000_1238.ice,0e6bd51fb33e540d515aef00b8d70a2d
 カマクラ,Snow House,none,motion_none,ground,ground,object/map_object/ob_1000_1239.ice,aae53d4342742f79fa783947024d0a57
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1240.ice,a34b07c0e47d54451be0943e8d81ffe1
-,,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_1241.ice,656ad37ce6f229b319272951f64eff41
-,,none,motion_none,ground,deco,object/map_object/ob_1000_1242.ice,c3c0b75f3f9b2286bf697fdfdeba3838
+ノダテ,Nodate Ceremony Table,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_1241.ice,656ad37ce6f229b319272951f64eff41
+柏餅セット,Kashiwa Mochi Set,none,motion_none,ground,deco,object/map_object/ob_1000_1242.ice,c3c0b75f3f9b2286bf697fdfdeba3838
 アジサイプラント,Hydrangea Plant,none,motion_none,ground,ground,object/map_object/ob_1000_1243.ice,d0daa0f48a82d24e033dc155cc31a383
 カ・ヤリブタ,Clay Pig,none,motion_none,ground,deco,object/map_object/ob_1000_1244.ice,e14816b62f1013124d24024e946c7a80
 冷やし野菜,Chilled Veggies,none,motion_none,ground,ground,object/map_object/ob_1000_1245.ice,f98da63c29cf472829eea94a698a22f3
@@ -1138,20 +1190,25 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1266.ice,e81eea6db8ec862aade6aa4c9b0d2b17,313c380572f0518068276796d2773650
 壁かラッピー,Rappy Wreath,none,motion_none,wall,ground,object/map_object/ob_1000_1267.ice,aedc4bdec3d627d60afc803163284c37,22882876b2bb5ed311d2900dc3d10116
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_1268.ice,b5197705edf2967b57eaec5976960abd,51f09a4d2b3048059c83186924f1f5e9
-,,none,motion_none,wall,ground,object/map_object/ob_1000_1269.ice,7981f076d2188faefe41ae544df7c604,274e068f3965fcb3b3db8585dd03751b
-,,none,motion_none,ground,ground,object/map_object/ob_1000_1270.ice,ff88d76c100d0967b33057d82dd87f4e,a138afae655633ee3d1360f1f3698b52
+四角い窓,Rectangular Window,none,motion_none,wall,ground,object/map_object/ob_1000_1269.ice,7981f076d2188faefe41ae544df7c604,274e068f3965fcb3b3db8585dd03751b
+鳥籠,Decorative Cage,none,motion_none,ground,ground,object/map_object/ob_1000_1270.ice,ff88d76c100d0967b33057d82dd87f4e,a138afae655633ee3d1360f1f3698b52
 ドラム・カンフロ,Oil Drum Bath,none,motion_none,ground,ground,object/map_object/ob_1000_1271.ice,3e9c247a1c57582a513867582e8375d9,3cf67c784572d70ec28b59c394f24354
 ラッピーあげなべ,Rappy Hot Pot,none,motion_none,ground,ground,object/map_object/ob_1000_1272.ice,c433f7beef3ab9d0526920c5de759171,497ea0d72c98de792c20c50801668457
 階段＆ロフト,Stairs & Loft,none,motion_none,ground,ground,object/map_object/ob_1000_1273.ice,031a9516ad5b20fe0b2d8ca353062f37,a0620065f12db80832bd3e63a9370c12
-,,none,motion_none,ground,ground,object/map_object/ob_1000_1274.ice,32029e7173d2e665f933fa7459aa1f39,fc4e4f181459e6e908813f7b00e4ed4c
+キンカイ,Gold Bricks,none,motion_none,ground,ground,object/map_object/ob_1000_1274.ice,32029e7173d2e665f933fa7459aa1f39,fc4e4f181459e6e908813f7b00e4ed4c
 虹箱ルームライト,Rainbow Box Lamp,none,motion_none,ground,deco,object/map_object/ob_1000_1275.ice,a55b7afe658d0c4dcfb2ec8d6ec58fc1,d9d602adc7437181d54d9ffc565e20c3
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_1276.ice,94183b125b2ef9985b168bf1494f532a,4626ea771493a6af01bc09b253769f2c
 ,,none,motion_none,ceiling,ground,object/map_object/ob_1000_1277.ice,a3ee0505b76faedee34c1f26b44b91a6,2908aa3e4e1c0a9f337cfe445e19ace2
 あやしい実験カプセル,Suspicious Experimental Capsule,none,motion_none,ground,ground,object/map_object/ob_1000_1278.ice,983b34ca8f8656d23db5cb4e4043d774,12360ae129b612adcb016859658a8f94
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1279.ice,264afbad1f0901baa5e79eea57c1b151,ebf87cff95fd105c3e2658cbb7d65b54
+,,none,motion_none,ground,deco,object/map_object/ob_1000_1280.ice,21d542247bdaf2b35fd7b14936711b3d,8388a74c3268b67a5f5479279007c2ce
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1282.ice,3b37a3d019d1ffff91788c1af9597566,e573bedfbae67d28c5759e0dcf7b9b17
+,,none,motion_none,wall,ground,object/map_object/ob_1000_1283.ice,be1c310a912c87fc5919ec370dae2995,153429d2336ad7ec11a28f1271dc6213
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1284.ice,ba8b283a36487d8b2187c3e762b40741,4d501157c1a5ee1b05380085923f7e9e
 『PSO2es』：ポスター,PSO2es - Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1285.ice,3b7b4c0f80ada2340180ac40b5c2d764
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1286.ice,a5299304967a74fabb106b0935c0b50e
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1287.ice,07928e99727c4d15f99adbb2a9ec3869
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1288.ice,36fbe196d67fd1645c80ab89fc9455da
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1289.ice,2601ed3fd1c9bdf74ef1286552421457
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1290.ice,5b3b242ef27f4d3f2120316b29ac4dad
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1291.ice,ca9e00f4c23ed38494ffec1740646190
@@ -1191,6 +1248,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1329.ice,3356192b7209be000e76f1b066cf8e2e
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1330.ice,ec364ffe8fca9632e7b7542801faac12
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1331.ice,b1550a37ac754f951e82a3b7a0d21526
+,,none,motion_none,ground,deco,object/map_object/ob_1000_1332.ice,616a0709286cf82902584ccf20139b57,af4a065a7aed26a7a9435567e8c44dae
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1333.ice,c146c8260e67c2e8cac67b71d7a7b605,da7c43fa7deb70c49e4ddfd11c2cd032
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1334.ice,385e4766115a5063fac2809c499ad296,78ecfd3c0a827b09f766d1bad0fd8f26
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1335.ice,ed91fe053b3343916111012ec679831d,cca51f447cb211c32e9e282576f6a2d3
@@ -1201,12 +1259,16 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1340.ice,912759d1e3d34e27f9f41f47121404e7,6dc79f3e8523753c3b2c74ceffd4786e
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1341.ice,a9a542bbbe725c23f073d63e0d0492b4,d0381fba74486a60fc0673df48bd6efe
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1342.ice,7715ec377221f8a697ae9affe477305f,0de816cad066d02306012820b1df13e8
+,,none,motion_none,ground,deco,object/map_object/ob_1000_1343.ice,f3f99fd0c5b5a5ee095f22eb57189293,fd4780d70f40fe4e79c97ee8ab1ec97a
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1344.ice,75b6b7cbb8347103bc42ecac434b9f1e
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1345.ice,4cddc941486ea9c9db9ec14911b8e43c
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1346.ice,472ed9ccde3749cf88f170ede1c5e98d
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1347.ice,3b9074de165e3a7ce30ec6cefee40445,d3abb9f31b1968447b15345b3831bf5c
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1348.ice,ee3ffa3b5640795d67b26fb4d261a508
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1349.ice,7c0ce38dbe622e05c2ef21891cc2a69c
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1350.ice,3fcd87b64f7893b72e089d5afde00079,e02e72f741b7604244cdabd8a7dfa698
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1351.ice,8943f2acec844e2d1647bb224933730d
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1352.ice,76e691c3893db61b38544f31452e83ab
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1353.ice,ac42eb39e08f3e3d5c4febad9198abb0
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1354.ice,a5471bb5620f9d72436460c97100d817
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1355.ice,f8e7af30d0944398316439a3022975f7
@@ -1222,6 +1284,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ユー・エムエー,U.M.A,none,motion_none,ground,ground,object/map_object/ob_1000_1365.ice,5effb75b0d17b57dadf2c959086b401f,0b52cd3cd3ebc12215923bcbb6b0d84c
 ルーレットウィール,Roulette Wheel,none,motion_none,ground,deco,object/map_object/ob_1000_1366.ice,8f52f0af343b3f6db9d27a538a283ebe,106c3ed802fd4482cea4d3f8663e0653
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1367.ice,355240015aac47ae3ad0e933a52f663d
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1368.ice,900f089223ec56fa5794229d27bdcc85
 ,,motion,motion_hug,ground,ground,object/map_object/ob_1000_1369.ice,f59d7a77ddeefd9f5c43a4920adc7072,1663fb5a99eae38e964b04547aed0a4d
 クリスタルオブジェ,Crystal Object,none,motion_none,ground,ground,object/map_object/ob_1000_1370.ice,10a07013b980536a0869d88562cc0b5a,7db895dcf0534012c06952244ca4929e
 クリスタルシャンデリア,Crystal Chandelier,none,motion_none,ceiling,ground,object/map_object/ob_1000_1371.ice,5f4e6074a3d2e076fa196a5c95995578,25c1a7e9c4abc75fa6a2dc41eaab0849
@@ -1230,6 +1293,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,support_partner,motion_none,ground,ground,object/map_object/ob_1000_1374.ice,d7a86521e55142889d0c7c22294bad4d
 ,,support_partner,motion_none,ground,ground,object/map_object/ob_1000_1375.ice,250d63e9c5dac96477d3e49882721e6e,41a2abc5fcfbd3a13aaa791296a52217
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1378.ice,1ad64798a4a9e5184e391f82ed509732
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1379.ice,28d8c01a75d7d57d9ab4aed335a14456
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1380.ice,65e6815fe2fd9a102e206163db935da9
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1381.ice,d2269b4763a0b0c0e787558920067381
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1382.ice,9a1afaef1899f9ce61adfd82f7d98c74
@@ -1242,6 +1306,9 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1389.ice,d16153273320f4b711d22b7ddbd194de
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1390.ice,f3fdaf7fa5612a7a74df48fa6a3327d6
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1391.ice,2977d01538130331bc82023a0f03402b
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1392.ice,0898ef2e66f8efcb0d8b86d76eab0797
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1393.ice,82159500cc62193eef532e0a37028624
+,,none,motion_none,ground,deco,object/map_object/ob_1000_1394.ice,7b52d7ee0b82c40526dfa24f1be258a2
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1395.ice,d8d0dbef660882da1fa119059de31dc2
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1396.ice,c61074a016600e998c8580289f27b430,8b69524895704950c3af8b3fc48d5f72
 オッソリアイス,Ossoria Chair,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_1397.ice,0bbf73c9d1d3c4423200c9a7b15b3808
@@ -1260,6 +1327,8 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 トールツリー,Tall Tree,none,motion_none,ground,ground,object/map_object/ob_1000_1410.ice,de86bda6d83c8df910951e0b84e4d8ab
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_1411.ice,3a89089d274c1b1fd5826ba8c0121a96
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_1412.ice,68a2794678b8831f06dd8f5308aec6d6
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1413.ice,3f3abb865ab7912ec72256fd214c7afd
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1414.ice,6bc53b5604f369e18a6b8722dd887cea
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1415.ice,3ff399819c063732b656023a635c605a
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1416.ice,6416ba284410f32a5fd02af3fffbbc99
 ワイドツリー,Wide Tree,none,motion_none,ground,ground,object/map_object/ob_1000_1417.ice,89d15d487d718e1b638f9d895ab5e005
@@ -1285,7 +1354,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1437.ice,7a3598f1e42f6ec8b117f480e9c2e803
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1438.ice,7478cb015c351c6a48d2242207cb20c4
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1439.ice,291db592e56d76c56894af2105861b68
-,,none,motion_none,ground,ground,object/map_object/ob_1000_1440.ice,62f8a0ae47177cfed40a18fe48a18118
+サクラツリー,Cherry Blossom Tree,none,motion_none,ground,ground,object/map_object/ob_1000_1440.ice,62f8a0ae47177cfed40a18fe48a18118
 マキバフェンス標準型,Farm Fence Standard Shape,none,motion_none,ground,ground,object/map_object/ob_1000_1441.ice,a8e25e6e11cdd3c6d3c74e99ddd4ae85
 マキバフェンスL型,Farm Fence L-Shape,none,motion_none,ground,ground,object/map_object/ob_1000_1442.ice,d59fb6fc0085649058ef85fdd9f4a76f
 ナチュラルフェンス標準型,Natural Fence Standard Shape,none,motion_none,ground,ground,object/map_object/ob_1000_1443.ice,6f20b24b5dc4c9c33b9bf230b2244dfe
@@ -1295,6 +1364,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1447.ice,5c542c7ea544ec0732937e12617ad5e1
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1448.ice,053ed5a2e8c3ece8257b0e7831183997
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1449.ice,4aa028a5bdae7742f33c4a306851a4b4
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1451.ice,8b61616649b5711edeebd725bf35c6f1
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1452.ice,5b3d7217948d3b407a61cc1ca795b0f2
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1453.ice,2cd3e0a4614216bdb4da84238be30530
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1454.ice,b1181b6f9804da7c889cb58a91a588d4
@@ -1312,6 +1382,8 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1466.ice,e66c997adf68fa69986a7f9be241e54e
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1467.ice,63b206d2c002f6edfe9ce3a190a5b7ac
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1468.ice,77b41bbfed60aca026c4b501859611e8
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1469.ice,e6feb77230e394ffb6e9b6bb1edcd46e
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1470.ice,3f50b5f6f3d4e324bd9eb1198012fd44
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1471.ice,1868c05d42b90f45c09a34f4daacf07e
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1472.ice,55059ebe759f986087674fdc80670800
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1473.ice,124d403c2532ce956ed859007f88acb9
@@ -1336,6 +1408,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,craft_enchant,motion_none,ground,ground,object/map_object/ob_1000_1519.ice,b60736bfd7441906de06fe3052a12dc3
 ,,craft_enchant,motion_none,ground,ground,object/map_object/ob_1000_1524.ice,915b996d5d1397687e7966aeacf7166f
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1536.ice,5de998750bf7037d9a2062424eb14649
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1537.ice,4cd12094a0da9b92822ddb84513715aa
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1539.ice,9d418c6f7f2701468c5ff89d01eaf695
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1540.ice,274ebcdb2ef8d9f1cf646d097b2aac12
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1541.ice,2614023ca9cd6b85d301650c29397515
@@ -1347,6 +1420,18 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1547.ice,eb2f487591802d0a0cf330e18f2fc687
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1548.ice,c9fb1a9f47dac0050ae48341d430e1ac
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1549.ice,006a8331381129bf4b3226f90e951df7
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1550.ice,a5dffd4b90d8a6c9d1a66ab646c18af9
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1551.ice,b2a6a76dd22e07ef948c7be48356e6b5
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1552.ice,52fbd23ce4367189a4e5d1e089437719
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1553.ice,7654fc0f14fc67224998248e57c877ab
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1554.ice,a1890e9b9c75561410c26904b7522be6
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1555.ice,054168f541c9849c2a7932f1c5a0edca
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1556.ice,b6a83bc448bf84bd08268c5cc190457a
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1557.ice,82d1bfef02b761e0181aeb2090f5560b
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1558.ice,33c58bfaecf4e5ff033db0d83672e4f4
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1559.ice,a244709585501ba6ff97581a60593f31
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1560.ice,549b484ca19a525b5f46e5616a171e9e
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1561.ice,888f1ec72c1c7a868564e0b005bfb6eb
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1562.ice,f65db5af06b4f7b50e51f7e1f96c10ee
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1563.ice,dabd922bf94ae0b2b81fe0fcd1d5d97a
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1564.ice,30360d5131935e305a35749ab8518ec4
@@ -1365,8 +1450,28 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1577.ice,15ebd38df95dfe6c263939df1eade54b
 ,,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_1578.ice,40f70af7ca1cd99e0f702d119b646ad4
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1579.ice,36ce8d994e8228d48eba7e3b1697d08f
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1580.ice,c16893acf0b93f106963a9d5c4b9546c
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1581.ice,986bc1e4129959ef6751628d02025b8f
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1582.ice,3a7521f77fe0442e079970ab9b06aeee
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1583.ice,15adb15a7af8a509f0e0b91c6f9a57db
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1584.ice,8380e6a9e5ce836d85a424538d503aa4
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1585.ice,2cc9b7b1f145505d88e4fa43fc7e3431
 リリーパライト,Lillipan Lamp,none,motion_none,ground,ground,object/map_object/ob_1000_1586.ice,58ad0a1b8deeb104f70483ee9cd617fb,971ca020e08ec78429d68f37fbd245cd
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1587.ice,e8ff27fd35e5bd7c0c6f466d2580e6b3
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1588.ice,dbdcc64235a13655741d7be46235a116
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1589.ice,99ad7804afbf9194dcd364ac6db4473a
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1590.ice,fab3042c99661695f58ef5a25694e010,bfcca1e220955bb3976d005771a79304
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1591.ice,25aa287a1e740a7692e71cd3642da074,69b5d4cf932b71b92ae76dfcee82f360
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1592.ice,3d8de290ae89a652a9a3339f6def7d0c,7754bd7dd057e734f74285cba84aa0bc
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1593.ice,4387cbadfc13baf5d755d700676cc0a1,2e6c8e139bdcfe98035fa5dd84b640e6
 新年祭2018マット,New Year's 2018 Mat,none,motion_none,ground,ground,object/map_object/ob_1000_1594.ice,6a8b3ad6d7be19df2e2360be0501ba09
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1595.ice,d5676324e6f0789f93c4c7354c99014f
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1596.ice,ef66ffcfb25b333fbd9054c68b021f52
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1597.ice,0dfceb444e87fece73be482ae4c55f8a
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1598.ice,2d91d81ea666ded11537676d0beffd33
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1599.ice,7e9f955141212fae205f9f03115e6f6b
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1600.ice,731588096b4c3d6f0d694845ce8a6930
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1601.ice,19568bafddbbcfd04bb1197e7d34c6e4
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1602.ice,4c5751eb3a37e1201ac7e1386b191652
 ジェネポスター,Gené Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1603.ice,da2e39fe22b1163a902020a754d419a9
 デュナポスター,Duna Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1604.ice,62143ca7f39d8ec9c6027336574fea08
@@ -1376,6 +1481,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 オメガフクロウ,Omega Owl,none,motion_none,ground,ground,object/map_object/ob_1000_1608.ice,b78c72f84ebb8f60f43fa8875d2cd5d0
 オメガコウモリ,Omega Bat,none,motion_none,ceiling,ground,object/map_object/ob_1000_1609.ice,6c19a64ca31434c99bfac93b80af2b26
 オメガモノリス,Omega Monolith,none,motion_none,ground,ground,object/map_object/ob_1000_1610.ice,beb5ed4d73fc0c4a202afc27b7071cec
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1611.ice,0a5d3cfa786068f23669850a463d4f13
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1614.ice,4a07e6d3e5a0141f18b76f3cc22ce21b
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1615.ice,3de66c4d23ecdb592b6d2e0c50571200
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1616.ice,381ab3ce5a04e4adb8cbf6059420f634
@@ -1401,6 +1507,9 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1636.ice,8601a8b6203dc21326ba5ce2846de0a0
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1637.ice,a03f757729b257cc907532deb8660888
 ハリエットパネル,Hariette Panel,none,motion_none,ground,ground,object/map_object/ob_1000_1638.ice,bd535826ccae5445582214567daa847c
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1639.ice,0de2ad5b66c2557c2d0c36cb996caddd
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1640.ice,b9d7fd0415ad6a55323f0c25070592b7
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1641.ice,1ced1b5fe44f38b8aa38a0ea10ff1868
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1642.ice,d5517b24d5f7983e5189a049c0568c83
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1643.ice,1c13ae0718d66c47ea876631dece5a76
 アドベントカレンダー,Advent Calendar,none,motion_none,ground,deco,object/map_object/ob_1000_1646.ice,25045d0b85b0690fbd1c469475d32b0d
@@ -1421,6 +1530,10 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1664.ice,034f73aa81a26fb2cc5aecf6ec2aa235
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1665.ice,dea1c9200fc94324d5ac2e904a536ca9
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1666.ice,b6cae7c741c56a3d401b65aaf13d0a24
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1667.ice,79f31319dbc9a0fc74138415a121119a
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1668.ice,81cc60a35bf9f6317ba30181599ec242
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1669.ice,00d0ab97c421f654d8e6198be69b8297
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1670.ice,58a79b6fa44773c6bf029adf352d9946
 イドラ：ポスター,Idola - Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1671.ice,fc8e7c1b13d183ffd94d6f6e8daf3d3a
 ジュースサーバー,Juice Dispenser,none,motion_none,ground,deco,object/map_object/ob_1000_1672.ice,7ea64417bf0aba25a945c05b9985a54b,e565e00a4ebb8d0572005dda73352b65
 ラージシャーベット,Large Sherbet,none,motion_none,ground,deco,object/map_object/ob_1000_1673.ice,4a5f344335030d0b709ae1d919ff3317,3b9ce601f7ab4329d7fee6c9dcc52e7b
@@ -1432,7 +1545,10 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1679.ice,22029256276dcbc32a1ef3d6ab9f6d63
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1680.ice,fb34b9c94110d9e04d7afd9ba4c7cc7b
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1681.ice,304a0f9b038561aa58b2e1db107ec1c2
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1682.ice,6ec47fe6661ce45a45e85d420ecd7b4d
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1683.ice,f6aec056a0fe36be59a46b6239dd31a3
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1684.ice,894dcd7f1ef594331cf56b9b77b2f596
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1685.ice,2170ca34397b4b55ccc1accb227023c9
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1686.ice,029aa46ca3923a6e8b2c96aa7d3398c4
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1687.ice,84ea6799af5ba01f60c4f7d4c8b76f97
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1688.ice,63e273de78b8952998fbf02f50be2405
@@ -1479,7 +1595,11 @@ PSO2 TCGマットB,PSO2 Trading Card Game Mat B,none,motion_none,ground,ground,o
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1729.ice,ce34ebf507e1834852ed2b6fae142321
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1730.ice,ad5696c84eb3c82abcb7eef6186a4fb0
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1731.ice,40a64650ba8c727967e15e51c3e8b50d
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1732.ice,faf7e853f22bddf968356700591c3b68
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1733.ice,4ba86213dbc49930d8176b92dee8af39
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1734.ice,d07034c488ff1bfd601d9505a79d4972
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1735.ice,dd7782b588fef1bd4dfc35e77b92837e
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1736.ice,5c0d9c020d10acff92c64e6acde88fc1
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1737.ice,cbedd837efcdb90b9f5ed60dfb1bdad5
 『PSO2es』：ポスターC,PSO2es - Poster C,none,motion_none,wall,poster,object/map_object/ob_1000_1738.ice,b99a362ff18b542d25180af99b5fa4ed
 アフタルポスター,Aphtal Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1739.ice,3bfde34dde43303db667714560b9281f
@@ -1490,13 +1610,20 @@ Vラッピートロフィー,V Rappy Trophy,none,motion_none,ground,ground,objec
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1744.ice,95bae7e3ed10dc51e1315e102f0303ed
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1745.ice,d6f8143fee3b7e93334026f2a967f6ca
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1746.ice,e33fd31f67c27d69f02e875809cce673
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1747.ice,bfaea140efd90393c74ad960573206d7
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1748.ice,3b9d041e434378049606c3d076e6b68c
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1749.ice,7576e4682b386e204c6d505714dd816d
 『PSO2』設定資料集表紙ポスターD,PSO2 Design DoBP - Poster D,none,motion_none,wall,poster,object/map_object/ob_1000_1750.ice,10e1e2ca090faaaf7d120166c91c822a
 アリサパネル,Alis Panel,none,motion_none,ground,ground,object/map_object/ob_1000_1752.ice,6c39364373f44429a080e0b9dab9ac27
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1753.ice,5b3d048d841093b443f56c0ca4ce3321
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1754.ice,f294b9175a2fde914c5b4c3ae633c2e5
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1755.ice,3904403f65159c3119d8233895396216
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1756.ice,bcc1e06fbc9b5fefee7be829cb56dced
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1757.ice,92c4ff6ec268e448b96f086b60cb3a00
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1758.ice,ef42cde1a726d4cb03ec0cdcff68c23d
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1759.ice,3bd4cf448218c80704a8814a803e73f1
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1760.ice,186cf84fe5689c11dbc499181959aad3
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1761.ice,65ab162db4a2d11e11373a25b17c20aa
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1762.ice,916e12b9ce5171ac0009902c7049550c
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1763.ice,5226a85e761635ad2eee003645253ba8
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1764.ice,97f925018264f5eb4b6f3e0e5aafe3ae
@@ -1507,6 +1634,8 @@ Vラッピートロフィー,V Rappy Trophy,none,motion_none,ground,ground,objec
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1769.ice,d8fa554b108314c89a59fd6278f8a434
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1770.ice,a6c8b82b5920669d36ea5bd36374ca18
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1771.ice,0e5f27ece79713afd3a04c0f05b3d241
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1772.ice,1053e7e5617210de3d119a24c44cbec0
+,,none,motion_none,ceiling,ground,object/map_object/ob_1000_1773.ice,950b44c76fb4ec02c0b699c5231d1cc0
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1774.ice,9ed189f406f72aa70439d2a68c62e2ae
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1775.ice,518ec46461670c9128e2f24217d74fe9
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1776.ice,803cd453ea12319bd1df59547f96b14e
@@ -1517,6 +1646,8 @@ Vラッピートロフィー,V Rappy Trophy,none,motion_none,ground,ground,objec
 ,,closet,motion_closet,wall,ground,object/map_object/ob_1000_1781.ice,30f871313495cdf9d1fe765cc08ad207,fa7acc402e106aca5fdf357aef9c5bb7
 マルガレータの胸像,Margareta Portrait,none,motion_none,ground,ground,object/map_object/ob_1000_1782.ice,3c8d64cefd5caddc82a6c0f7d4b09b52
 ルーサーの胸像,Luther Portrait,none,motion_none,ground,ground,object/map_object/ob_1000_1783.ice,49cb7eb138716a05194a34fd34150b92
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1784.ice,c86aee8a896a6f170c6ba9a5c236f75a
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1785.ice,bd15620095bdeb4fa25cbc136bf97d9e
 イドラ：ポスターC,Idola - Poster C,none,motion_none,wall,poster,object/map_object/ob_1000_1786.ice,ddc28903d5684e5530d25e09e2199247
 イドラ：ソウルシンボルポスター,Idola - Soul Symbol Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1787.ice,8e847434d5d00f15ec2dd4f7158ff293
 イドラ：ソウルシンボルポスターB,Idola - Soul Symbol Poster B,none,motion_none,wall,poster,object/map_object/ob_1000_1788.ice,0c8157f047eeb3db96f7288317e2883a
@@ -1582,6 +1713,7 @@ SEGAロゴB,SEGA Logo B,none,motion_none,ground,ground,object/map_object/ob_1000
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1851.ice,3550cfc05b2ac91c10feddadd51e8fbb
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1852.ice,110fea1d5f5ef7df59feb2875d2c7cdb
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1853.ice,9a425ee25c2aceba60efe9ef1e91ceca
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1854.ice,c1684de97ca2563c44100ad3444bf1f0
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1855.ice,db19ba1fa19c379df86c46afb89d7a70
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1856.ice,0becbba71c5d4e11e4869c7073c86027
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1857.ice,0c180a7e473aa33b6a7b916be28d0833
@@ -1598,8 +1730,21 @@ SEGA GENESIS,SEGA GENESIS,none,motion_none,ground,deco,object/map_object/ob_1000
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1869.ice,8881df4d7c0131ec423403d6f92fe891
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1870.ice,35eb86d071678ac245261becba3d9926
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1871.ice,d18b87cf68ab03e7b1042196e5c68f9f
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1872.ice,a15ea9d83c09ed876fe70267502ae43e
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1873.ice,7981ec38d96768ffe32ef729c19c8476
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1874.ice,bb9e16dfe583952339114a972ad5efa7
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1875.ice,47520b4812d678abfa9ab65ec10b6cee
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1876.ice,38e3fd3130659d40f7a25008e4b19c09
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1877.ice,a4e2f80a4cec1e564f2a72aaf45aca92
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1878.ice,6fea96a965bfe388ac2c9dd152923a69
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1879.ice,dd239f66c4e3ef71eb1a1be646f93964
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1880.ice,37d50eda042ffd4b6c2c1b626fd214d7
+,,none,motion_none,wall,poster,object/map_object/ob_1000_1881.ice,b893732dc52b8fa39e37264eeb331443
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1882.ice,809b3edb0b9a6710f428ca078d7df5e7
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1883.ice,706e01b26d0ed5f477c89cd14f579379
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1884.ice,982eba8d25b27cfd020aed40073893f9
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1885.ice,54f7744af616b055e7b122e178a563f8
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1886.ice,9159cadb601a8513f56d720827db8922
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1887.ice,2ed243cfe65c877f38fb54ac371b3c72
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1888.ice,1c19088fd6563164d1ba1883f1fac880
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1889.ice,5e5168cac87beb3a2987a5dcffc20b33
@@ -1635,6 +1780,7 @@ es炎チップ背景ボックス,es Fire Chip Background Box,none,motion_none,gr
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1919.ice,ef7ab9481e1b2dfd7760570c7fa9ea69
 ルーサーポスター,Luther Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1920.ice,e63157e0af3f8928503c537b9c084a7f
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1921.ice,ea68ed241328e38d9a8c3f1c50fa0274
+,,none,motion_none,ground,ground,object/map_object/ob_1000_1922.ice,10a21e1314c89e8783337e117fe3566b
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1923.ice,714b8280601f5aa1d3c02fd6558dd0dc
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1924.ice,4aca6dfc24cc1190926d0590ddb27773
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1925.ice,be549c6f23592f0d152fc0edd9826ae6

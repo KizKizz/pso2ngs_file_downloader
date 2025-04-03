@@ -526,6 +526,8 @@ en_non_trt_common.ice,68\6aa7d24905ea09a6441e7a9c102431
 ,,en_s01_mon_01.ice,6c\fb7827ac59b36662550f938eeb4c7a
 ,,en_gd_nyb_ex.ice,5f\8b2ac6cdeaa4ea1088b7f2a4513d8c
 en_gd_nyb_common.ice,51\c76204c733f9a562684eb64abcecd8
+ガラガロンゴ,Gara Garongo,en_nat_armma_ba.ice,0f\b6076b4176cdf61ea3839a9271d955
+en_nat_armma_common.ice,d5\da138f5d9ff25cfce478e0cb381edb
 マリオネス,Marioness,en_r05_gd_gho_ba.ice,a9\28d67c967835bf41eb177ff496f365
 ギルーヴァ,Giruva,en_r05_gd_gho_ch.ice,0f\1299e727a09000590258ad421f7c95
 en_gd_gho_common.ice,70\01215589d9b3360d46094a45705f8a
@@ -599,6 +601,7 @@ en_rem_yor_common.ice,8c\1a5ea9ed4ccb54bdcdda6cbe430d30
 ルイノ・アンジュール,Ruine Angele,en_r05_rem_ace_ba.ice,dd\5fa6891c15bdb8b5a7455f223bf6f5
 en_rem_ace_common.ice,f7\db0db3bdad7166302d68dba5321d64
 ルイノ・マスカレーダ,Ruine Masquerader,en_r05_rem_akk_ba.ice,73\7ba2df8e82258205f83ba100557f14
+ルイノ・マスカレーダ,Ruine Masquerader,en_r05_rem_akk_mlt.ice,d6\59c33298da392aa354c84e205f0de4
 en_gd_flo_eff.ice,a8\42fb661ed8319ab2349b0be5578eee
 en_gd_gia_eff.ice,f8\3bab9cbdd38b0641a47a91a4dd7cb4
 en_gd_kpy_eff.ice,6e\0d8a1df8942306521ab87ef7027c80
