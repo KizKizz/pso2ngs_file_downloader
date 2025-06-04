@@ -84,8 +84,6 @@
 ビーチシェード,Beach Shade,item/weapon/it_wp_11_089.ice,e6bb88e24e6734db5a31b85074332c18
 ストームシェード,Storm Shade,item/weapon/it_wp_11_090.ice,42e91889cf5040d94d46b92693fc6220
 ＊スターズフォルジュ,* Stars Forge,item/weapon/it_wp_11_093.ice,ab60b92e3e45156cd81fb6567c745cd3
-＊対偶の法杖「慈愛」,* Staff of Replicant [Affection],item/weapon/it_wp_11_094.ice,da3ced013e8ff6d9e0588383165d3ab9
-＊対偶の法杖「慈愛」Ｒ,* Staff of Replicant [Affection] R,item/weapon/it_wp_11_095.ice,ff02b20e324bc7af25b420206295565d
 カラミティソウル,Calamity Soul,item/weapon/it_wp_11_101.ice,dfe65df6badd47bbb8aeb590f5930ef5
 ヒガンシャク,Higanshaku,item/weapon/it_wp_11_104.ice,b054d7b689196c8d5b32c35e2752f4e7
 スイレンシャク,Suirenshaku,item/weapon/it_wp_11_105.ice,c674095ca657196ebaf069cb09d3aa77
@@ -174,8 +172,6 @@
 グリシナラウラ,Glycina Laura,item/weapon/it_wp_11_250.ice,42f9013cef9039a0651d2bb4302ca37d
 ＊エンジュリーハート,* Angely Heart,item/weapon/it_wp_11_251.ice,59adb8d34131c4a6d107112768926db5
 エンジュリーミスティー,Angely Misty,item/weapon/it_wp_11_252.ice,2a42118c4728f9de3a43d7b0fbb52bfa
-＊スターダストロッド,* Stardust Rod,item/weapon/it_wp_11_254.ice,b3b1c9bd6be5433ffd06a3168f3025ee
-＊タイラス,* Thyrus,item/weapon/it_wp_11_255.ice,62ed5d2cd44883f0836ff9bb7d142098
 シャフトレボルシオ,Shaft Revolsio,item/weapon/it_wp_11_259.ice,e5f7385dc75f819ad71648c61191d543
 シャフトドミナシオ,Shaft Dominacio,item/weapon/it_wp_11_260.ice,5d3a0a0afa3f81071eaae45563eee76e
 シャフトインクルシオ,Shaft Inclusio,item/weapon/it_wp_11_261.ice,4d0532c68526b4084372cc99b655f3e3
@@ -213,7 +209,6 @@
 ＊Liberation,* Liberation,item/weapon/it_wp_11_295.ice,61c016eb330aefbe8cc92f48a9b58b29
 アストラリディ,Astra Ridi,item/weapon/it_wp_11_296.ice,3382219103e9bc0b702896c0bbd5f4fe
 ＊明錫クラリッサⅢ,* Adamant Staff Clarissa III,item/weapon/it_wp_11_297.ice,0a72fbf05ff503b704c9213bcc2713bf
-＊魔法の派・エクスカリバー,* Sorcery King Excalibur,item/weapon/it_wp_11_298.ice,89fbf21738f8c16bd416f94fb97c9854
 ＊ジラドタロン,* Girad Talon,item/weapon/it_wp_11_299.ice,c065d45ff626b01ebf48f17c94c03606
 ,,item/weapon/it_wp_11_300.ice,ce38b4fde03baf6749b079208293049b
 クラーリタ・ヴィサス-NT,Clarita Visas-NT,item/weapon/it_wp_11_301.ice,60ebcf2c4e428dc1094bbe4a7ecb0304
@@ -247,8 +242,6 @@
 ノヴェルロッド,Novel Rod,item/weapon/it_wp_11_334.ice,9ab326c524218f8e53fc9cf309af9673
 リバレイトロッド,Rivalate Rod,item/weapon/it_wp_11_335.ice,a507cc08d5a8ed92514d0e06ed593f96
 ＊ホワイトディザスター,* White Disaster,item/weapon/it_wp_11_336.ice,c940dcfc1d5408dac65d1a544db530b7
-＊ソフィーの杖,* Sophie Staff,item/weapon/it_wp_11_337.ice,7ec79d7f6cfbb6f505c222df72379e1d
-＊エスカの杖,* Escha Staff,item/weapon/it_wp_11_338.ice,065947e0017d3d3a856ae168d064e5f9
 バルゼムス,Val Zemus,item/weapon/it_wp_11_339.ice,11139c0d5358cdcf9c6e4203568a01ce
 アトラゼムス,Atlas Zemus,item/weapon/it_wp_11_340.ice,24a8a3a63774da3123b3cbc0216d3f99
 アトラゼムス・イクス,Atlas Zemus Ex,item/weapon/it_wp_11_341.ice,9a58827e7ecbf9b14f6225b8e7943508
@@ -273,8 +266,6 @@
 マギピュラス,Magi Puras,item/weapon/it_wp_11_366.ice,903255587ac59f3dc37c986fa3ad1667
 シャライラルピエ,Chalyra Lupie,item/weapon/it_wp_11_368.ice,a322881275caa6a1fb9392598984a285
 ＊ブロマペトレーマ,* Broma Petriema,item/weapon/it_wp_11_369.ice,bd3f8695fcc5e85e807fd773424fc5e9
-＊ホープネコソード,* Hope Neko Sword,item/weapon/it_wp_11_370.ice,d9ceb52dcc6b87b80091bed255ad621c
-＊灼零エルゼガンツェ,* Burning Zero Elze Ganze,item/weapon/it_wp_11_371.ice,6a0052cc2e525253e94c01a96e084d64
 ホムラノカシャク,Homura no Kashaku,item/weapon/it_wp_11_372.ice,50070a3433a0d27834f5a824fc11f1b0
 シエンノカシャク,Shien no Kashaku,item/weapon/it_wp_11_373.ice,29e277213ae2965f1a3bda76bf33182e
 ＊白錫クラリッサ・再臨,* Ivory Staff Clarissa Advent II,item/weapon/it_wp_11_374.ice,3eb8fd4636d80b6bdea9646f66d2f337
@@ -293,14 +284,10 @@
 ＊エテルネルディマンシュ,* Eternal Dimanche,item/weapon/it_wp_11_388.ice,58c46a24cf316b8356f71b4081541b3b
 ＊コートウェポンD,* Coated Edge D,item/weapon/it_wp_11_390.ice,8858b9a11022f9ccd288f4d52d7e55d6
 ディムロッド,Dim Rod,item/weapon/it_wp_11_391.ice,65b5b12ad13da3d8368f6480ed722bcd
-＊ＲＨ・エストレア,* RH Estrea,item/weapon/it_wp_11_392.ice,642dd31b2d0d4e34044f5ba85f94db74
 レゾナントテフィラ,Resonant Tephira,item/weapon/it_wp_11_393.ice,6c061d6f2de5d0375d664073f8044435
-＊ＢＤ・ホーネット,* BD Hornet,item/weapon/it_wp_11_396.ice,be71a8734f3ef252b643e608971bf9ac
-＊ロッド（はやて機）,* Rod (Hayate),item/weapon/it_wp_11_397.ice,67231113f08421b1dea4277e60702d43
 ＊コートステッキ,* Coat Stick,item/weapon/it_wp_11_398.ice,61e4c80bc6d140fc9c01cbefac7c2adc
 ＊アフタル・マクラ,* Akhtar Pillow,item/weapon/it_wp_11_399.ice,b2107d085cf434bc4a9408de32c2c6cd
 ＊リーン・マクラ,* Lien Pillow,item/weapon/it_wp_11_400.ice,f419f6d5d2ad4fff715a2e01256543f6
-＊ロンギヌスの槍,* Longinus Lance,item/weapon/it_wp_11_401.ice,1559fc6d4ffbd3bed7e69e3498e75349
 ＊カリエンテオーブ・メギス,* Caliente Orb Megis,item/weapon/it_wp_11_403.ice,b036a67bd3ef979c4eb9d00364b57481
 ＊イルテオンダスク・メギス,* Iltheon Dusk Megis,item/weapon/it_wp_11_404.ice,7749e2de6f7f4bb1c52514ed1085f6c8
 アナカテスロジアーダ,Anacates Logiadar,item/weapon/it_wp_11_405.ice,2be1fc4f900004e2796bf1c618ef8da7

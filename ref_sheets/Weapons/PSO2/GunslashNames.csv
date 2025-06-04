@@ -58,11 +58,7 @@
 ロエリアベロウ,Roelia Bellow,item/weapon/it_wp_07_059.ice,4d9a118744040cb145826db170b37e25
 アーレスバスター,Ares Buster,item/weapon/it_wp_07_060.ice,2f8a875936662f06dca27dc981e545d2
 仲秋丸,Chuushuumaru,item/weapon/it_wp_07_061.ice,94f896bc936a9469ccc437dced48fcf1
-＊レブナント３,* Revenant 3,item/weapon/it_wp_07_062.ice,97ffd8a807e1421dde6884b3c2d74457
-＊レブナント3D,* Revenant 3D,item/weapon/it_wp_07_063.ice,3fa21c5d2d6700d02c3d265e80066f86
-＊レブナント3R,* Revenant 3R,item/weapon/it_wp_07_064.ice,96596a20743de7b95674d0fce6bde288
 ＊Missトラヴァイエ,* Ms. Travailler,item/weapon/it_wp_07_065.ice,57acd5b77de3f5965d8c1a46ced3b6ba
-＊クロのガンスみャッシュ,* Kuro Gunsmyash,item/weapon/it_wp_07_067.ice,3f9ae6d82b75a324293536c1b8b739a5
 ネーロパラソーレ,Nero Parasol,item/weapon/it_wp_07_068.ice,c35adff3419749549c400f42a8aaa449
 ＊ヌン・ザ・スコーピオ,* Nun the Scorpio,item/weapon/it_wp_07_069.ice,44a450d85c5357cc8bdbd230d84d83d3
 ルフネシア,Lufnesia,item/weapon/it_wp_07_070.ice,80b5c1a0cbf1ce297b5ff698733fa699
@@ -78,7 +74,6 @@
 ＊プレイメディック ?,* Play Medic ?,item/weapon/it_wp_07_083.ice,f9abc4cbcfe10c3a89baccb1f759f9cb
 ＊プレイメディック ?,* Play Medic ?,item/weapon/it_wp_07_084.ice,c6a412f470a46a493599bbf1fea1cab8
 戒剣ナナキ,Nanaki,item/weapon/it_wp_07_085.ice,049877c3e2db351f225af8801d33af47
-＊ドリームメガホン,* Dream Megaphone,item/weapon/it_wp_07_087.ice,22eafca62f1b4ff1838024f24a4bfa46
 クイーンヴィエラ,Queen Viera,item/weapon/it_wp_07_089.ice,4d94bc0343060bbad0c3eb9faf3fdc8d
 ＊魔弾ミストルテイン,* Cursed Mistilteinn,item/weapon/it_wp_07_090.ice,8fc605d30627e1680b99363f243dff54
 ブリンガーライフル,Bringer's Rifle,item/weapon/it_wp_07_091.ice,fb9d1977b6d741eec26b2c75833e6cd8
@@ -105,7 +100,6 @@
 リュミグニー,Lumigunny,item/weapon/it_wp_07_124.ice,a4bd4be7455c5e9597428ee6fb00be87
 ＊リュミグノー,* Lumigunno,item/weapon/it_wp_07_125.ice,d272006864f330777e71282b8ed051f0
 カルデリフク,Caldelifuku,item/weapon/it_wp_07_126.ice,e13c6c117ad674d5ff8e828495fd1202
-＊宝石剣ゼルレッチ,* Jewel Sword Zelretch,item/weapon/it_wp_07_128.ice,1a4d565ada204bb40cdfa11cf9c01aae
 ダルスヘイアン,Dalz Heian,item/weapon/it_wp_07_131.ice,af0b8e0e37140de0e81f8cca11980698
 バウカーディン,Baucardin,item/weapon/it_wp_07_132.ice,b45df463fad92e3156f7695c1debceed
 テスロカーディン,Tesro Cadin,item/weapon/it_wp_07_134.ice,0fa0ff58d35f903940ab5d557dbe5cab
@@ -117,13 +111,7 @@
 リグガヴエル,Riggavuel,item/weapon/it_wp_07_147.ice,12eca439e6e993804f5c3b9c64cc5a77
 フラクガヴエル,Flacgavuel,item/weapon/it_wp_07_148.ice,8ed9d4a3602a04e3df7c8dc9d44986a9
 ＊アークマベヨネット,* Arkuma Bayonet,item/weapon/it_wp_07_150.ice,2239e28de0eac8290fdf95cba1909c43
-＊スライプナーＭｋ６,* Sleipnir Mk6,item/weapon/it_wp_07_152.ice,d848d8df8e6f2f4ee243f3b65e8f833b
-＊ビビッド・ハート,* Vivid Heart,item/weapon/it_wp_07_153.ice,58b556964585865ab815e92ccdffcb0e
 ＊SH・トライデント,* SH Trident,item/weapon/it_wp_07_154.ice,e91a05424f5681accf405397b4527a09
-＊スライプナーＭｋ６Ｄ,* Sleipnir Mk6D,item/weapon/it_wp_07_156.ice,96a64ba711e87e36ac1b737f68d92c17
-＊スライプナーＭｋ６Ｒ,* Sleipnir Mk6R,item/weapon/it_wp_07_157.ice,c64104cb069d836fc2c02e8448a99781
-＊ビビッド・ハートＤ,* Vivid Heart D,item/weapon/it_wp_07_158.ice,1ba7eeff4a75a388bd42754801dc83a2
-＊ビビッド・ハートＲ,* Vivid Heart R,item/weapon/it_wp_07_159.ice,147e5cefe0382431aad0be1499744ffb
 ネメシススラッシュ,Nemesis Slash,item/weapon/it_wp_07_160.ice,9435925f78b45b8d1516ce06e99fbc06
 スレイヴスラッシュ,Raven Slash,item/weapon/it_wp_07_161.ice,db2f0800288547ecf830bfd04a4b1f15
 ＊サインヴォルド,* Sign Vold,item/weapon/it_wp_07_162.ice,de0bb8bdda87d020293347b4de0d50a9
@@ -153,9 +141,6 @@
 マーセナリスターロード,Mercenary Starlord,item/weapon/it_wp_07_200.ice,4bc8e321dea708a2692a164c0c25cc8d
 ,,item/weapon/it_wp_07_201.ice,8b692c10b58d0f18d04a4bc67fb3171d
 マーセナリシュバルツ,Mercenary Schwarz,item/weapon/it_wp_07_202.ice,3d7e8a46a1c81b4d9500a46a37d47f3b
-＊あかりの短機関銃,* Akari's Micro Uzi,item/weapon/it_wp_07_203.ice,8f33b918ccb74fe67970f0a53e86026c
-＊フィーの双銃剣,* Fie's Twin Gunswords,item/weapon/it_wp_07_204.ice,4cf5f1cbe6bf5c32b4bb7f0cf6ba6394
-＊絢爛砲ブリュンヒルデ,* Gorgeous Guns Brunhilde,item/weapon/it_wp_07_205.ice,6c1746ed8537e37157683d60c296f028
 ＊戒剣ナナキ,* Guiding Blade Nanaki,item/weapon/it_wp_07_206.ice,df446c619ea2372c6bd586c80671bb2d
 リグジエンザー,Rig Jienzer,item/weapon/it_wp_07_210.ice,94e1e7e8105557083c1b6f0c985a611d
 ＊グラムジエンザー,* Gram Dienzer,item/weapon/it_wp_07_211.ice,95b360ca379788272000e5aaf0607d37
@@ -176,7 +161,6 @@
 アクルドハルーブ,Aculd Halube,item/weapon/it_wp_07_227.ice,b71386e16293a67d67c1433fff7fc0cb
 サーハリングVer2,Sarhaling Ver2,item/weapon/it_wp_07_228.ice,65176a1590e8db859b8689807698ed04
 凍時雨,Ite Shigure,item/weapon/it_wp_07_229.ice,c750063a41adcff36995c495b16ba65c
-＊盗賊・エクスカリバー,* Thief Excalibur,item/weapon/it_wp_07_233.ice,a512e62b6eaf32c62931344d61bb22eb
 アストラディフィ,Astra Diffie,item/weapon/it_wp_07_236.ice,fa3f3af21f7734825f251954afe0bcf3
 ゼイネシスガンシザー,Zeinesis Gunscissor,item/weapon/it_wp_07_238.ice,76d4b94959420392dba5a33035af33a7
 クリファドガンシザー,Clifard Gunscissor,item/weapon/it_wp_07_239.ice,4b83642adac9fd398d538f07d3066ca5
@@ -194,7 +178,6 @@
 ＊ヴィタスレイヤー,* Vita Slayer,item/weapon/it_wp_07_252.ice,23cd8faa0a10bb89173d5a0bdeef853a
 ＊ガンブレードランス,* Gunblade Lance,item/weapon/it_wp_07_253.ice,673ba68b08d86bc3dfc5ecbef9b9b7ff
 ＊トイガルファ,* Toy Galpha,item/weapon/it_wp_07_254.ice,93fc53d12f03f3d5093a4011ab1fc584
-＊ロジーの錬金剣,* Logy Alchemic Sword,item/weapon/it_wp_07_257.ice,1eb578749df691ef25fc8e50b5a2a17a
 ＊バトルスラッシュ,* Battle Slash,item/weapon/it_wp_07_258.ice,5720ecfc46b075a81b53eba57c9aded8
 ＊ウォリアースラッシュ,* Warrior Slash,item/weapon/it_wp_07_259.ice,f0c57bd4a2023befb25bc08c7768b79a
 ノヴェルスラッシュ,Novel Slash,item/weapon/it_wp_07_260.ice,e1b4e47addebaf16ae5e1e56698544a3
@@ -206,11 +189,8 @@
 アトラアルズ・イクス,Atlas Ars Ex,item/weapon/it_wp_07_266.ice,01a5b2ddcae2db88f710175c63cc2f01
 フォボスガンシクル,Phobos Gunsickle,item/weapon/it_wp_07_267.ice,f3452186fdf17f29311d0c06478f05bc
 ニーケガンシクル,Nike Gunsickle,item/weapon/it_wp_07_268.ice,82682bbf4d9888c5fbacb06df77b2a04
-＊マスターソード,* Master Sword,item/weapon/it_wp_07_269.ice,4e05e953caccb583e1b9ad84dfca7d54
-＊上条専用スライプナー,* Sleipnir for Kamijo,item/weapon/it_wp_07_270.ice,ea556e456902981a887488d3ea482b52
 ネメシススラッシュ-NT,Nemesis Slash-NT,item/weapon/it_wp_07_271.ice,a6ea5b1e663033aaf89c901d55cd63fd
 スレイヴスラッシュ-NT,Raven Slash-NT,item/weapon/it_wp_07_272.ice,46ca627fafefb4d8f59e662989b9795e
-＊スライプナー,* Sleipnir,item/weapon/it_wp_07_273.ice,842dc6e452d964a10b659a4187f5dbdf
 ヴレードスティル,Wreid Stil,item/weapon/it_wp_07_274.ice,4d1160044b6040528a5a0c3b0350b202
 ヴレードピュラス,Wreid Puras,item/weapon/it_wp_07_275.ice,bbf2d420cc100d357b1cb266530a0a72
 クラーデムエルピーダ,Clawdem Elpida,item/weapon/it_wp_07_276.ice,486e87dbfdeef2f150de1f97f682ad25

@@ -121,9 +121,7 @@ _,_ template,stage/ln_area_template_0175.ice,879d9d106c963a70ef77bbfd427c52a2
 パラレルエリア;　砂漠,Parallel Area; Desert template,stage/ln_area_template_0902.ice,d48b0ef70abd5a98c804dd92f79b7f86
 パラレルエリア;　海岸,Parallel Area; Coast template,stage/ln_area_template_0903.ice,41489ae54b3e122dfb372325a6faea10
 ガル・ダ・バル,Gal Da Val template,stage/ln_area_template_0904.ice,7b8037a890d1e7f1db6e147225fa01b3
-The Black Shroud; Urth's Fount,The Black Shroud; Urth's Fount template,stage/ln_area_template_0905.ice,176b2478d3835a4d0b38cc5bb97d9b8e
 パラレルエリア;　森林 (ボーナスクエスト),Parallel Area; Forest (Bonus Quest) template,stage/ln_area_template_0906.ice,1fa49819a7df14d02ea0f311e5872813
-____ 古塔 (エルゼリオン),____ Old Tower (Eruzerion) template,stage/ln_area_template_0907.ice,64134e8672f6e12a5bf39d7e5cd5677a
 シーナリーパス・市街地,Scenery Pass; City template,stage/ln_area_template_1000.ice,c00b62c7edb29aabe218323f95f4c1b3
 シーナリーパス・森林,Scenery Pass; Forest template,stage/ln_area_template_1001.ice,c16fe9e58b06bceccc5e834f39e688f2
 シーナリーパス・宇宙,Scenery Pass; Space template,stage/ln_area_template_1002.ice,c6464d0502e822efdb5092ed4191c95b
@@ -139,7 +137,6 @@ ____ 古塔 (エルゼリオン),____ Old Tower (Eruzerion) template,stage/ln_ar
 シーナリーパス・海底,Scenery Pass; Seabed template,stage/ln_area_template_1012.ice,4cedbd9064dd03b2e6a13a62ffc7e2a0
 シーナリーパス・Mシップ,Scenery Pass; Mothership template,stage/ln_area_template_1013.ice,0a6c40766fe955d0c30f59aa298b69ad
 シーナリーパス・巨人,Scenery Pass; Titan template,stage/ln_area_template_1014.ice,040c76ba941bdf95a8ca33187b3c8b16
-シーナリーパス・UBW,Scenery Pass; Unlimited Blade Works template,stage/ln_area_template_1015.ice,adef171c19b7589187277d11726c5ca7
 シーナリーパス・白ノ領域,Scenery Pass; Daybreak Prov. template,stage/ln_area_template_1016.ice,a095e99bc4001cb4475b095211b6b312
 シーナリーパス・浮上施設,Scenery Pass; Floating Facility template,stage/ln_area_template_1017.ice,24d26bb9ae495d6316c113112f686e16
 シーナリーパス・ヤマト,Scenery Pass; Yamato template,stage/ln_area_template_1018.ice,ce803c04506ae77f293a0e23c5f9090f

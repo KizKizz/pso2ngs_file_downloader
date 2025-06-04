@@ -80,7 +80,6 @@
 ハルヴァ・トルナッド,HAlba Tornado,item/weapon/it_wp_03_087.ice,e4427298adb739518ea4f971399c7dcc
 血槍ヴラド・ブラム,Bloodspear Vlad Bram,item/weapon/it_wp_03_088.ice,da25279e93318afc88678de10da8805f
 グランディア,Grandia,item/weapon/it_wp_03_089.ice,b0bfcc8899eaf932f6d784d6b631b57f
-＊守護女神ノ太刀,* Guardian Goddess's L. Sword,item/weapon/it_wp_03_091.ice,70273b5c010c259f570d4def6b183855
 フウガナギナタ,Fuuga Naginata,item/weapon/it_wp_03_092.ice,c7b8e31075408cb7f9c897617bcaecc6
 フラウディア,Flowdia,item/weapon/it_wp_03_095.ice,73710e18676d9971b16032a1957b798c
 フラウディート,Flowdeet,item/weapon/it_wp_03_096.ice,4e56f9891168d38e335c17a2bfafd3cf
@@ -125,11 +124,9 @@
 エトラルシ,Etorarushi,item/weapon/it_wp_03_156.ice,d0ef54e0e4ccb150e4aa93cc46b262e6
 春閃,Shunsen,item/weapon/it_wp_03_159.ice,cdcbe98214764e25f0479feabe82023e
 ＊スターズフォルジュ,* Stars Forge,item/weapon/it_wp_03_162.ice,bdcc9764e5d9aa3cd7681a46ed8392ef
-＊ゲイ・ボルク,* Gae Bolg,item/weapon/it_wp_03_163.ice,e1a83bb01664d4afe0a76f57ff348b33
 イデアルストレイダ,Ideal Strader,item/weapon/it_wp_03_164.ice,4e4db3ae53af999ecb20dc962d4c9e0b
 アウェイクストレイダ,Awake Strader,item/weapon/it_wp_03_165.ice,5e81382e82b3055ee2fd2ed0e74f9b40
 フウリザン,Fuurizan,item/weapon/it_wp_03_166.ice,3e983acbe2938047a80de89387228d90
-＊狂戦士の斧剣,* Berserker's Axe-Sword,item/weapon/it_wp_03_172.ice,14f8d04cfec46495a2b06a6e719b4055
 ルテルテトメア,Rutel Tetomea,item/weapon/it_wp_03_177.ice,12e4feccdf49f208d7c7298fbc49f273
 ＊ルテルテトイラ,* Rute Rute Toira,item/weapon/it_wp_03_178.ice,6aabf3707146115872dee60a2713c1be
 リグシャオロー,Rig Xiaolo,item/weapon/it_wp_03_179.ice,8f811a5c2beb17c76b8a21aa265ac5b9
@@ -151,8 +148,6 @@
 セイカイザージャベリン,Seikaiser Javelin,item/weapon/it_wp_03_196.ice,f08c1da615152fb671c75bfb5db8efc2
 ＊六刃合体ゴッドセイガー,* Six-blade Gottsieger,item/weapon/it_wp_03_197.ice,ebbaaa02c25c557a695939ee17986663
 ＊龍吼魔笛グラビネット,* Magic Dragon Flute Grabinett,item/weapon/it_wp_03_198.ice,6d7dcb6b01adbda374dc7a6e5a40c040
-＊デスブリンガー,* Deathbringer,item/weapon/it_wp_03_199.ice,d7f0317a8dab9253e75b1eadef2052de
-＊斬鉄剣,* Zantetsuken,item/weapon/it_wp_03_200.ice,cdb8d045024955b5bc0421127d13c9cc
 スピアレボルシオ,Spear Revolsio,item/weapon/it_wp_03_201.ice,8f5dab31c97de3a631302171118ce581
 スピアドミナシオ,Spear Dominacio,item/weapon/it_wp_03_202.ice,84cb2eb424759c2cb3be0ec9d85fe65a
 スピアインクルシオ,Spear Inclusio,item/weapon/it_wp_03_203.ice,b3005cfa7a227a473dd00b86b3c45a06
@@ -217,8 +212,6 @@
 ＊ホワイトディザスター,* White Disaster,item/weapon/it_wp_03_277.ice,60cf86959d999309f3e2bc4ea11a4215
 バトルパルチザンＬｖ３,Battle Partizan Lv.3,item/weapon/it_wp_03_278.ice,c3cdaf3d42af3f26d3ec875413d2ca68
 ＊ウォリアーパルチザン,* Warrior Partizan,item/weapon/it_wp_03_279.ice,a340b55fd211522a6f442a01ecbb1394
-＊ソフィーの杖,* Sophie Staff,item/weapon/it_wp_03_280.ice,08cbea685de6efe7bba283b5ce124150
-＊エスカの杖,* Escha Staff,item/weapon/it_wp_03_281.ice,3fc31224b5981a797d7f24b29dc77fa1
 バルヴィクト,Val Vict,item/weapon/it_wp_03_282.ice,243cfcdbbd9669780575ce383672a2a9
 アトラヴィクト,Atlas Vict,item/weapon/it_wp_03_283.ice,1a3bbc3a92f497ce6f026bdce072df4f
 アトラヴィクト・イクス,Atlas Vict Ex,item/weapon/it_wp_03_284.ice,33c79ae5574d064ffd52c6f2a8a5215a
@@ -240,9 +233,6 @@
 ＊アーリー・ブルー,* Airy Blue,item/weapon/it_wp_03_300.ice,0b52f4535aaff2fca28d543410cc29e1
 グレンノオニトオシ,Guren no Onitoshi,item/weapon/it_wp_03_301.ice,37067e4f49e9f9a93cee892a2c27b963
 壊槍エピティミア,Corrupt Spear Epitemia,item/weapon/it_wp_03_304.ice,a40c1cab060afd335fb880598eeaf5f0
-＊ホープネコソード,* Hope Neko Sword,item/weapon/it_wp_03_305.ice,120f4187dc6aa67e6ded52c20e7f8a31
-＊灼零エルゼガンツェ,* Burning Zero Elze Ganze,item/weapon/it_wp_03_306.ice,384132c8131523005df80fa5b27f022c
-＊灼零エルゼアクス,* Burning Zero Elze Axe,item/weapon/it_wp_03_307.ice,850206c6eb729769e44001326ae74c41
 ホムラノオニトオシ,Homura no Onitoshi,item/weapon/it_wp_03_308.ice,6eeced37b3e18ed812ab15986e604f10
 シエンノオニトオシ,Shien no Onitoshi,item/weapon/it_wp_03_309.ice,355d42da8f627b08daaaebfa66c3fb2c
 深遠槍アドラシオン,Profound Adoraxion,item/weapon/it_wp_03_310.ice,6fc5a3d1128fab79c2b4a897fd6d1d40
@@ -252,17 +242,13 @@
 セレクルオニス,Ceres Chronis,item/weapon/it_wp_03_314.ice,85b7e9df5fbbbb4cf5385d5b532988b4
 セレクルオニス・ザラ,Ceres Chronis Zara,item/weapon/it_wp_03_315.ice,40b110e7dc92d17434840e4a0a60e81b
 ＊ミラキュルマジック,* Miracle Magic,item/weapon/it_wp_03_316.ice,c96e8858b2261e01efa76aa14c8162d5
-＊デスペレート,* Deathblade,item/weapon/it_wp_03_318.ice,a3a7e26c27bbd6f533a7b9ac8babdac5
 バルディッシュ-NT,Bardiche-NT,item/weapon/it_wp_03_321.ice,79efb41c5a2e612e9ea94d6c305aea7f
 ＊ステルスウェポン,* Weapon Stealthing,item/weapon/it_wp_03_322.ice,4e8144c6c21e2a63098d9e5f13d5d58f
 ＊アルタードディバイド,* Altered Divide,item/weapon/it_wp_03_323.ice,380c83858266b3889282d7b97bf1ca54
 ディムパルチザン,Dim Partizan,item/weapon/it_wp_03_326.ice,5d329256741fbd9d7da5fb94ba4ea78f
-＊ＲＨ・エストレア,* RH Estrea,item/weapon/it_wp_03_327.ice,01139b60831f231d434053f6462cee97
 ＊アドホルムクロード,* Adholm Claude,item/weapon/it_wp_03_328.ice,46dc5c399b02235cea476c7b4af0ca71
-＊ＢＤ・ホーネット,* BD Hornet,item/weapon/it_wp_03_331.ice,6b2fcd7b9cbebcf79af4d790ec57b245
 ＊アフタル・マクラ,* Aphtal Pillow,item/weapon/it_wp_03_333.ice,cc57c22560a5db85a8654bef5ba348f8
 ＊リーン・マクラ,* Lin Pillow,item/weapon/it_wp_03_334.ice,b7345a0859e92782515c7761f50563b7
-＊ロンギヌスの槍,* Spear of Longinus,item/weapon/it_wp_03_335.ice,82b81de5b2d4beed3b3f804e462e79cb
 ＊カザロドウ,* Kazarod,item/weapon/it_wp_03_336.ice,e59e9a971d317ed2556dea7a4bbbdfd6
 ＊カリエンテオーブ・メギス,* Caliente Orb Megis,item/weapon/it_wp_03_337.ice,c5335961b9bca63f2d68ffd87ef34c6c
 ＊イルテオンダスク・メギス,* Iltheon Dusk Megis,item/weapon/it_wp_03_338.ice,ad5db5b5af234dfe2379ba73c66f18d4

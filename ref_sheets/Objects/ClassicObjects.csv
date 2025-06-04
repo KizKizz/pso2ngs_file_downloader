@@ -77,16 +77,16 @@
 ,,ob_0100_0087,object/map_object/ob_0100_0087.ice,object/map_object/ob_0100_0087_ex.ice,99bf59cc2e96f6369e8325555045699e,
 ,,ob_0100_0088,object/map_object/ob_0100_0088.ice,object/map_object/ob_0100_0088_ex.ice,3ef0dec5c1e8fe991dbf0237f936adb5,
 ,,ob_0100_0089,object/map_object/ob_0100_0089.ice,object/map_object/ob_0100_0089_ex.ice,f26bbcff8b39cec696b271634b1190c5,3a8f5cc3f6daa4ece14b903c4437fa0c
-,,ob_0100_0090,object/map_object/ob_0100_0090.ice,object/map_object/ob_0100_0090_ex.ice,34aa6a6e0668e70331956e678e30499e,
-,,ob_0100_0091,object/map_object/ob_0100_0091.ice,object/map_object/ob_0100_0091_ex.ice,d2140a315131377d1a355b8de08e12a0,
-,,ob_0100_0092,object/map_object/ob_0100_0092.ice,object/map_object/ob_0100_0092_ex.ice,f5d8e75ef915e13029fd9ef3d4e75417,
-,,ob_0100_0093,object/map_object/ob_0100_0093.ice,object/map_object/ob_0100_0093_ex.ice,3a41487241dc72b5bc23ea83fb682901,
-,,ob_0100_0094,object/map_object/ob_0100_0094.ice,object/map_object/ob_0100_0094_ex.ice,c32979992061c79ca3840cd334e6ef6d,
-,,ob_0100_0095,object/map_object/ob_0100_0095.ice,object/map_object/ob_0100_0095_ex.ice,65d8eab48a769aeb67b393604419ce72,6e2114d6e2697f853b4803ac26c26d0e
-,,ob_0100_0096,object/map_object/ob_0100_0096.ice,object/map_object/ob_0100_0096_ex.ice,d06b9ca6ccd630b198e3677f4272f51b,db79293198cc8d53bbbda2e8cdb11273
-,,ob_0100_0097,object/map_object/ob_0100_0097.ice,object/map_object/ob_0100_0097_ex.ice,ed1c5608fc73495973a679e6ba23f1d1,5be4a264f2e8c96c80b2c6bbcb0700f3
-,,ob_0100_0098,object/map_object/ob_0100_0098.ice,object/map_object/ob_0100_0098_ex.ice,1a757908b667c5abd01491e2a3bd9fd2,120f867b9d5a92721397127ef7528796
-,,ob_0100_0099,object/map_object/ob_0100_0099.ice,object/map_object/ob_0100_0099_ex.ice,e330156f02d3d349555d4434f57637ad,3a2fcaaed2984cb39832b51c53d44265
+,,ob_0100_0090,object/map_object/ob_0100_0090.ice,object/map_object/ob_0100_0090_ex.ice,,
+,,ob_0100_0091,object/map_object/ob_0100_0091.ice,object/map_object/ob_0100_0091_ex.ice,,
+,,ob_0100_0092,object/map_object/ob_0100_0092.ice,object/map_object/ob_0100_0092_ex.ice,,
+,,ob_0100_0093,object/map_object/ob_0100_0093.ice,object/map_object/ob_0100_0093_ex.ice,,
+,,ob_0100_0094,object/map_object/ob_0100_0094.ice,object/map_object/ob_0100_0094_ex.ice,,
+,,ob_0100_0095,object/map_object/ob_0100_0095.ice,object/map_object/ob_0100_0095_ex.ice,,
+,,ob_0100_0096,object/map_object/ob_0100_0096.ice,object/map_object/ob_0100_0096_ex.ice,,
+,,ob_0100_0097,object/map_object/ob_0100_0097.ice,object/map_object/ob_0100_0097_ex.ice,,
+,,ob_0100_0098,object/map_object/ob_0100_0098.ice,object/map_object/ob_0100_0098_ex.ice,,
+,,ob_0100_0099,object/map_object/ob_0100_0099.ice,object/map_object/ob_0100_0099_ex.ice,,
 ,,ob_0100_0100,object/map_object/ob_0100_0100.ice,object/map_object/ob_0100_0100_ex.ice,22f87219d165d09721014ebbf0112618,
 ,,ob_0100_0101,object/map_object/ob_0100_0101.ice,object/map_object/ob_0100_0101_ex.ice,fd8714acd423d3b92a74ce38abe5774e,
 ,,ob_0100_0102,object/map_object/ob_0100_0102.ice,object/map_object/ob_0100_0102_ex.ice,4d07d117866cbafcc1c3d0a4795179ec,a7de6d5af83c43c8b259105d99078ca5
@@ -95,9 +95,9 @@
 ,,ob_0100_0105,object/map_object/ob_0100_0105.ice,object/map_object/ob_0100_0105_ex.ice,b76e2fa73521874d4a296eb27318026e,ad81be6046165bfd6a490a8b96aab355
 ,,ob_0100_0106,object/map_object/ob_0100_0106.ice,object/map_object/ob_0100_0106_ex.ice,a9cc015f4063d10107d6171f5e511d84,
 ,,ob_0100_0107,object/map_object/ob_0100_0107.ice,object/map_object/ob_0100_0107_ex.ice,acd7e750a983aeb130af56ccead9b0df,d6d23f289e4c086a9ce30cf62d4a8216
-,,ob_0100_0108,object/map_object/ob_0100_0108.ice,object/map_object/ob_0100_0108_ex.ice,e77b127cd37d3bbe454333f9c9d2d06c,
-,,ob_0100_0109,object/map_object/ob_0100_0109.ice,object/map_object/ob_0100_0109_ex.ice,b57f4279f1ffe6d3e85bf4860d98ba97,
-,,ob_0100_0110,object/map_object/ob_0100_0110.ice,object/map_object/ob_0100_0110_ex.ice,9cce9e72b9f57c0ace1495c5be1759de,
+,,ob_0100_0108,object/map_object/ob_0100_0108.ice,object/map_object/ob_0100_0108_ex.ice,,
+,,ob_0100_0109,object/map_object/ob_0100_0109.ice,object/map_object/ob_0100_0109_ex.ice,,
+,,ob_0100_0110,object/map_object/ob_0100_0110.ice,object/map_object/ob_0100_0110_ex.ice,,
 ,,ob_0100_0111,object/map_object/ob_0100_0111.ice,object/map_object/ob_0100_0111_ex.ice,284e067edbdd11565ebf017428e435ea,f249dce4c7ea1a0aa0778a565b10fc9a
 ,,ob_0100_0112,object/map_object/ob_0100_0112.ice,object/map_object/ob_0100_0112_ex.ice,51c325e778cbb404ab45a75bd75dfe52,d083172de347f077a95ca882b60f6ae8
 ,,ob_0100_0113,object/map_object/ob_0100_0113.ice,object/map_object/ob_0100_0113_ex.ice,23a190762e10d542cd287098dccee515,a64148b87545b3adf73ce1ecdfac4f41
@@ -109,8 +109,8 @@
 ,,ob_0100_0119,object/map_object/ob_0100_0119.ice,object/map_object/ob_0100_0119_ex.ice,fccfa78f95742715bacbd5badd456bcd,f51707b200839d40867af5f5814e1e86
 ,,ob_0100_0120,object/map_object/ob_0100_0120.ice,object/map_object/ob_0100_0120_ex.ice,fc2774acd7cd818ee0180bee8483a76b,5a6c609681a375bc6d00968278454c91
 ,,ob_0100_0121,object/map_object/ob_0100_0121.ice,object/map_object/ob_0100_0121_ex.ice,39e41d0c28a55c4a4ff99894acd550d4,9d625ed6cc7e524142354bafeef2a6c9
-,,ob_0100_0122,object/map_object/ob_0100_0122.ice,object/map_object/ob_0100_0122_ex.ice,457f4e4eaa1cda12128334d73a4e3bf0,8f10ceed2f590e71555b845614b960a5
-,,ob_0100_0123,object/map_object/ob_0100_0123.ice,object/map_object/ob_0100_0123_ex.ice,8f2693aa6a245276eee43145e39b4d6b,d6ef7dbc296ec61e2fd9a23b4b650e72
+,,ob_0100_0122,object/map_object/ob_0100_0122.ice,object/map_object/ob_0100_0122_ex.ice,,
+,,ob_0100_0123,object/map_object/ob_0100_0123.ice,object/map_object/ob_0100_0123_ex.ice,,
 ,,ob_0100_0124,object/map_object/ob_0100_0124.ice,object/map_object/ob_0100_0124_ex.ice,d21a9d9e8122cb241c67f03e186d510a,244333c1fa9fffd0c103c2703abffb0d
 ,,ob_0100_0125,object/map_object/ob_0100_0125.ice,object/map_object/ob_0100_0125_ex.ice,e9f657de95148acdd378a49197234c24,f8fd351489a3dade25d5e092231fd302
 ,,ob_0100_0126,object/map_object/ob_0100_0126.ice,object/map_object/ob_0100_0126_ex.ice,1f2933af2d348784ffb36934b2b34237,
@@ -135,23 +135,23 @@
 ,,ob_0100_0145,object/map_object/ob_0100_0145.ice,object/map_object/ob_0100_0145_ex.ice,f23c9578cb17c044cef1a3ebf737aae3,519a8f858f8d0bb67c07297bab3938be
 ,,ob_0100_0146,object/map_object/ob_0100_0146.ice,object/map_object/ob_0100_0146_ex.ice,61685274ac214782a5f0f8efdda20b09,8e8e8a0fea787544f97af01ba9e00ab1
 ,,ob_0100_0147,object/map_object/ob_0100_0147.ice,object/map_object/ob_0100_0147_ex.ice,a7c40ce76edeedc950ffc0f77486b198,
-,,ob_0100_0148,object/map_object/ob_0100_0148.ice,object/map_object/ob_0100_0148_ex.ice,e721194fac26cd628817c90d6cd0dc9b,
-,,ob_0100_0149,object/map_object/ob_0100_0149.ice,object/map_object/ob_0100_0149_ex.ice,cac126fcafdcaec2ee4254b0f18479fa,
+,,ob_0100_0148,object/map_object/ob_0100_0148.ice,object/map_object/ob_0100_0148_ex.ice,,
+,,ob_0100_0149,object/map_object/ob_0100_0149.ice,object/map_object/ob_0100_0149_ex.ice,,
 ,,ob_0100_0150,object/map_object/ob_0100_0150.ice,object/map_object/ob_0100_0150_ex.ice,0839a4dae336599068b642a02f357722,
-,,ob_0100_0151,object/map_object/ob_0100_0151.ice,object/map_object/ob_0100_0151_ex.ice,b7b519139b7a57d4b773f8b0c45ac912,
-,,ob_0100_0152,object/map_object/ob_0100_0152.ice,object/map_object/ob_0100_0152_ex.ice,64bf421749a9d146d3fda032fcb1a8d8,
-,,ob_0100_0153,object/map_object/ob_0100_0153.ice,object/map_object/ob_0100_0153_ex.ice,7ad88a1607ecc8357dcc8d5c6556e547,
-,,ob_0100_0154,object/map_object/ob_0100_0154.ice,object/map_object/ob_0100_0154_ex.ice,a6ccc52c96cdf46bf1c312ed712c9ac2,70b8350a3284aeea06226b4e000fc203
+,,ob_0100_0151,object/map_object/ob_0100_0151.ice,object/map_object/ob_0100_0151_ex.ice,,
+,,ob_0100_0152,object/map_object/ob_0100_0152.ice,object/map_object/ob_0100_0152_ex.ice,,
+,,ob_0100_0153,object/map_object/ob_0100_0153.ice,object/map_object/ob_0100_0153_ex.ice,,
+,,ob_0100_0154,object/map_object/ob_0100_0154.ice,object/map_object/ob_0100_0154_ex.ice,,
 ,,ob_0100_0155,object/map_object/ob_0100_0155.ice,object/map_object/ob_0100_0155_ex.ice,ddf427f05cca324da8623959f8d1bfd5,efc74f66011d870e0a984fbc31abfd62
 ,,ob_0100_0156,object/map_object/ob_0100_0156.ice,object/map_object/ob_0100_0156_ex.ice,82feb1d2a8dda94e60a05446d7ae6dc8,c90284b6204f4727af5782ed78ea251d
 ,,ob_0100_0157,object/map_object/ob_0100_0157.ice,object/map_object/ob_0100_0157_ex.ice,8dfa2e443530e3e356369c51ac5e90e0,8f7f9957b897155ac75b5b03373dae0c
 ,,ob_0100_0158,object/map_object/ob_0100_0158.ice,object/map_object/ob_0100_0158_ex.ice,69ea195d90803236288dec9055f529da,0669312df52f95371a4fd65b69dedaef
 ,,ob_0100_0159,object/map_object/ob_0100_0159.ice,object/map_object/ob_0100_0159_ex.ice,e8e3dd98ba1055debc8ddfad2c4ecb82,4a42acfa4bd64474534b6ae3d357a6e7
 ,,ob_0100_0160,object/map_object/ob_0100_0160.ice,object/map_object/ob_0100_0160_ex.ice,b3cbb0e22622a98c33a8618e0c7967b1,af172d61c6a3855055eeedf1c350ea43
-,,ob_0100_0161,object/map_object/ob_0100_0161.ice,object/map_object/ob_0100_0161_ex.ice,360efd665f4fe335cb30bbee804a0935,ce041bae99e772506e51caade3c82b22
-,,ob_0100_0162,object/map_object/ob_0100_0162.ice,object/map_object/ob_0100_0162_ex.ice,0ee88bba43ef09cd6a8b8ed78fa0744e,f8ea89c20611fa7ce98b87c7a6e700c4
-,,ob_0100_0163,object/map_object/ob_0100_0163.ice,object/map_object/ob_0100_0163_ex.ice,1b009dd32446d479a867f944e563dd64,
-,,ob_0100_0164,object/map_object/ob_0100_0164.ice,object/map_object/ob_0100_0164_ex.ice,88d0d394512701ee7f6fe8edab0e726b,24f64ead49fc7f89e91e0691280da3f5
+,,ob_0100_0161,object/map_object/ob_0100_0161.ice,object/map_object/ob_0100_0161_ex.ice,,
+,,ob_0100_0162,object/map_object/ob_0100_0162.ice,object/map_object/ob_0100_0162_ex.ice,,
+,,ob_0100_0163,object/map_object/ob_0100_0163.ice,object/map_object/ob_0100_0163_ex.ice,,
+,,ob_0100_0164,object/map_object/ob_0100_0164.ice,object/map_object/ob_0100_0164_ex.ice,,
 ,,ob_0100_0165,object/map_object/ob_0100_0165.ice,object/map_object/ob_0100_0165_ex.ice,8b88505868843f94b04ca1ededac01be,c5d0612bb7f7fdada9167aa97468684d
 ,,ob_0100_0166,object/map_object/ob_0100_0166.ice,object/map_object/ob_0100_0166_ex.ice,cd4ad3d3a3ca59b6dea99d71a4c4cff3,835c082cec0755112c04f1ce9ba32bdd
 ,,ob_0100_0167,object/map_object/ob_0100_0167.ice,object/map_object/ob_0100_0167_ex.ice,ce825e116cde560801d2a8038d5fadc7,6f507a519cfc81e827dbb15e20ba3525
@@ -193,7 +193,7 @@
 ,,ob_0100_1058,object/map_object/ob_0100_1058.ice,object/map_object/ob_0100_1058_ex.ice,f94c6c1320a5bbdb2216ecbbe5f79937,5df626c7c4665b2337794ebb2f600c04
 ,,ob_0100_1059,object/map_object/ob_0100_1059.ice,object/map_object/ob_0100_1059_ex.ice,c8898eae79161e93bc3f865426fcd3d4,5d220253c1f13fbeaf1fb0eafcd6bd0f
 ,,ob_0100_1060,object/map_object/ob_0100_1060.ice,object/map_object/ob_0100_1060_ex.ice,f91a73b310fdf8304d1dd7dfe290a915,956c853d631743a2676604e4e18211c0
-,,ob_0100_1061,object/map_object/ob_0100_1061.ice,object/map_object/ob_0100_1061_ex.ice,7ed1dddea54660ce698ac33989d95a67,
+,,ob_0100_1061,object/map_object/ob_0100_1061.ice,object/map_object/ob_0100_1061_ex.ice,,
 ,,ob_0100_1062,object/map_object/ob_0100_1062.ice,object/map_object/ob_0100_1062_ex.ice,4604eedd538063bfdb42bebe24920906,
 ,,ob_0100_1063,object/map_object/ob_0100_1063.ice,object/map_object/ob_0100_1063_ex.ice,a872c47a59fa90699c3e9235e186b415,a17db427c393f2d4b9a5d174c09075f9
 ,,ob_0100_1064,object/map_object/ob_0100_1064.ice,object/map_object/ob_0100_1064_ex.ice,f0a736e3edd3ef81e5b2eda52c7d1054,0b7b23bf110a7672ac44db6be47df342
@@ -283,17 +283,17 @@
 ,,ob_0102_0137,object/map_object/ob_0102_0137.ice,object/map_object/ob_0102_0137_ex.ice,6d2c7273bf25fe8605315b1d4f5b8a2e,
 ,,ob_0102_0138,object/map_object/ob_0102_0138.ice,object/map_object/ob_0102_0138_ex.ice,816d9c70312cb8b6d4fe8522c2f35e56,
 ,,ob_0102_0139,object/map_object/ob_0102_0139.ice,object/map_object/ob_0102_0139_ex.ice,ab146e363c7cb0d7075e153ca3dc8661,54fe8eb9a926b51e1ef5e9fbfdf0b779
-,,ob_0102_0140,object/map_object/ob_0102_0140.ice,object/map_object/ob_0102_0140_ex.ice,eff3f7227fb3aefa4419dc2fe840b982,
-,,ob_0102_0141,object/map_object/ob_0102_0141.ice,object/map_object/ob_0102_0141_ex.ice,5efa6b5c2f70d547e71aa6a9ac684cb1,
-,,ob_0102_0142,object/map_object/ob_0102_0142.ice,object/map_object/ob_0102_0142_ex.ice,6f3abd512976d5e56ba2e0ae5d048da8,
-,,ob_0102_0143,object/map_object/ob_0102_0143.ice,object/map_object/ob_0102_0143_ex.ice,6be21fd015020070b22fcbf815f7953d,
-,,ob_0102_0144,object/map_object/ob_0102_0144.ice,object/map_object/ob_0102_0144_ex.ice,eaaf04a1771eea41aedf4681455f68e2,
-,,ob_0102_0145,object/map_object/ob_0102_0145.ice,object/map_object/ob_0102_0145_ex.ice,63bf2777c11d46fac130dad21e1f1e7b,
-,,ob_0102_0146,object/map_object/ob_0102_0146.ice,object/map_object/ob_0102_0146_ex.ice,3a2479e5c62a6873e39ef6a6d98917d7,
-,,ob_0102_0147,object/map_object/ob_0102_0147.ice,object/map_object/ob_0102_0147_ex.ice,89a017a72748c89ce033ab3200df654e,
-,,ob_0102_0148,object/map_object/ob_0102_0148.ice,object/map_object/ob_0102_0148_ex.ice,3677bf2a53bc40aca99efb92cd4a6b64,
-,,ob_0102_0149,object/map_object/ob_0102_0149.ice,object/map_object/ob_0102_0149_ex.ice,bd46bd1dfe782388d88b6657df538cd4,6c63261d64e31dcbfc1325c596a52cf9
-,,ob_0102_0150,object/map_object/ob_0102_0150.ice,object/map_object/ob_0102_0150_ex.ice,94d16ae27c31ac3703ae8909bf7abbc7,
+,,ob_0102_0140,object/map_object/ob_0102_0140.ice,object/map_object/ob_0102_0140_ex.ice,,
+,,ob_0102_0141,object/map_object/ob_0102_0141.ice,object/map_object/ob_0102_0141_ex.ice,,
+,,ob_0102_0142,object/map_object/ob_0102_0142.ice,object/map_object/ob_0102_0142_ex.ice,,
+,,ob_0102_0143,object/map_object/ob_0102_0143.ice,object/map_object/ob_0102_0143_ex.ice,,
+,,ob_0102_0144,object/map_object/ob_0102_0144.ice,object/map_object/ob_0102_0144_ex.ice,,
+,,ob_0102_0145,object/map_object/ob_0102_0145.ice,object/map_object/ob_0102_0145_ex.ice,,
+,,ob_0102_0146,object/map_object/ob_0102_0146.ice,object/map_object/ob_0102_0146_ex.ice,,
+,,ob_0102_0147,object/map_object/ob_0102_0147.ice,object/map_object/ob_0102_0147_ex.ice,,
+,,ob_0102_0148,object/map_object/ob_0102_0148.ice,object/map_object/ob_0102_0148_ex.ice,,
+,,ob_0102_0149,object/map_object/ob_0102_0149.ice,object/map_object/ob_0102_0149_ex.ice,,
+,,ob_0102_0150,object/map_object/ob_0102_0150.ice,object/map_object/ob_0102_0150_ex.ice,,
 ,,ob_0102_0151,object/map_object/ob_0102_0151.ice,object/map_object/ob_0102_0151_ex.ice,97ac357663579c8608982f0c2c4c581c,83e720a75a49e206c78b9118e1a7949b
 ,,ob_0102_0152,object/map_object/ob_0102_0152.ice,object/map_object/ob_0102_0152_ex.ice,e4cfb300611960ad0d50e3d54c4d5229,5d318a2e69c619c04431b78d168906de
 ,,ob_0102_0153,object/map_object/ob_0102_0153.ice,object/map_object/ob_0102_0153_ex.ice,83d7f465cdc8808aa5f758167e8eff2c,0c6ac4b29aa70ccbdc6cc318bef725f6
@@ -352,8 +352,8 @@
 ,,ob_0108_0008,object/map_object/ob_0108_0008.ice,object/map_object/ob_0108_0008_ex.ice,ea9d8cd105c78ca04a9dbbde2b6ac22f,
 ,,ob_0108_0009,object/map_object/ob_0108_0009.ice,object/map_object/ob_0108_0009_ex.ice,de881410f6160f98f3fd91613e76b1a2,
 ,,ob_0108_0010,object/map_object/ob_0108_0010.ice,object/map_object/ob_0108_0010_ex.ice,c7d69a1949fff690995b1aced690ac18,
-,,ob_0108_0011,object/map_object/ob_0108_0011.ice,object/map_object/ob_0108_0011_ex.ice,330258ace5feb166b95cad01963d46e8,
-,,ob_0108_0012,object/map_object/ob_0108_0012.ice,object/map_object/ob_0108_0012_ex.ice,263199ee0077b2de98e75b47a6ce2370,
+,,ob_0108_0011,object/map_object/ob_0108_0011.ice,object/map_object/ob_0108_0011_ex.ice,,
+,,ob_0108_0012,object/map_object/ob_0108_0012.ice,object/map_object/ob_0108_0012_ex.ice,,
 ,,ob_0150_0000,object/map_object/ob_0150_0000.ice,object/map_object/ob_0150_0000_ex.ice,d8e189040c3373c276f56ce671ef1c57,903a06d1ec1e714915d5e2af5eeabd40
 ,,ob_0150_0001,object/map_object/ob_0150_0001.ice,object/map_object/ob_0150_0001_ex.ice,efb79dc3aa65fa6c3343b01bdc17b333,a7470551efacc3277c2a7777940835f9
 ,,ob_0150_0002,object/map_object/ob_0150_0002.ice,object/map_object/ob_0150_0002_ex.ice,e174a5515175ac10ff4ef099add42475,
@@ -598,15 +598,15 @@
 ,,ob_0190_0009,object/map_object/ob_0190_0009.ice,object/map_object/ob_0190_0009_ex.ice,c2e6258078592626198724a4f665046e,706d7b033bbee74b6b983a3b009f71f2
 ,,ob_0190_0010,object/map_object/ob_0190_0010.ice,object/map_object/ob_0190_0010_ex.ice,1733af0a42e7c384bd94049c66291c0d,a1537db35ab624c852beb9303e2ccc25
 ,,ob_0190_0011,object/map_object/ob_0190_0011.ice,object/map_object/ob_0190_0011_ex.ice,42e73a5e2f7ff96a49ba1c35bd3ec9e0,75cd7fcfeefab1b35801b9f8af790ffc
-,,ob_0191_0000,object/map_object/ob_0191_0000.ice,object/map_object/ob_0191_0000_ex.ice,688b8ba9fcf6fb7c8b5bf1f4e81c7875,
-,,ob_0191_0001,object/map_object/ob_0191_0001.ice,object/map_object/ob_0191_0001_ex.ice,f3621b46857bbdaabacd9a9b7575b37e,
-,,ob_0191_0002,object/map_object/ob_0191_0002.ice,object/map_object/ob_0191_0002_ex.ice,48702765a6ff564af23e44c7874818a4,
-,,ob_0191_0003,object/map_object/ob_0191_0003.ice,object/map_object/ob_0191_0003_ex.ice,a8641e28019e16506475bc15b5a42e00,
-,,ob_0191_0004,object/map_object/ob_0191_0004.ice,object/map_object/ob_0191_0004_ex.ice,af89ca905cb719bf9508d556fb9c2986,
-,,ob_0191_0005,object/map_object/ob_0191_0005.ice,object/map_object/ob_0191_0005_ex.ice,32e0086ad7fe3f1dd8e5024c8f92c8b9,
-,,ob_0191_0006,object/map_object/ob_0191_0006.ice,object/map_object/ob_0191_0006_ex.ice,274134b4af96e7badc3f72e729dcb8a6,
-,,ob_0191_0007,object/map_object/ob_0191_0007.ice,object/map_object/ob_0191_0007_ex.ice,bc5c3d3370a38b7db3d7813bdd2f8810,
-,,ob_0191_0008,object/map_object/ob_0191_0008.ice,object/map_object/ob_0191_0008_ex.ice,2404d22290fbf103dea7c32f53471445,
+,,ob_0191_0000,object/map_object/ob_0191_0000.ice,object/map_object/ob_0191_0000_ex.ice,,
+,,ob_0191_0001,object/map_object/ob_0191_0001.ice,object/map_object/ob_0191_0001_ex.ice,,
+,,ob_0191_0002,object/map_object/ob_0191_0002.ice,object/map_object/ob_0191_0002_ex.ice,,
+,,ob_0191_0003,object/map_object/ob_0191_0003.ice,object/map_object/ob_0191_0003_ex.ice,,
+,,ob_0191_0004,object/map_object/ob_0191_0004.ice,object/map_object/ob_0191_0004_ex.ice,,
+,,ob_0191_0005,object/map_object/ob_0191_0005.ice,object/map_object/ob_0191_0005_ex.ice,,
+,,ob_0191_0006,object/map_object/ob_0191_0006.ice,object/map_object/ob_0191_0006_ex.ice,,
+,,ob_0191_0007,object/map_object/ob_0191_0007.ice,object/map_object/ob_0191_0007_ex.ice,,
+,,ob_0191_0008,object/map_object/ob_0191_0008.ice,object/map_object/ob_0191_0008_ex.ice,,
 ,,ob_0192_0000,object/map_object/ob_0192_0000.ice,object/map_object/ob_0192_0000_ex.ice,9c61f12b38c6a46bff82868cbbd3d94e,
 ,,ob_0192_0001,object/map_object/ob_0192_0001.ice,object/map_object/ob_0192_0001_ex.ice,6e1fdaece47ab29143aab9a795563f65,
 ,,ob_0192_0002,object/map_object/ob_0192_0002.ice,object/map_object/ob_0192_0002_ex.ice,3fa330a530fa2f23dc103a030e1494f8,
@@ -776,7 +776,7 @@
 ,,ob_0211_0100,object/map_object/ob_0211_0100.ice,object/map_object/ob_0211_0100_ex.ice,61987bbf7392bc423861802fadf437f0,ff09182dcd438c84718c5c29511ca208
 ,,ob_0211_0101,object/map_object/ob_0211_0101.ice,object/map_object/ob_0211_0101_ex.ice,4d8b4002accd30e8b3621dd68ae87c42,6c07cc5ac9a33eda366bf2e76114fcec
 ,,ob_0211_0102,object/map_object/ob_0211_0102.ice,object/map_object/ob_0211_0102_ex.ice,f71ced70f5a69edb5c053e9c18946561,2e84a17e958ab01101651d95b71b6551
-,,ob_0211_0103,object/map_object/ob_0211_0103.ice,object/map_object/ob_0211_0103_ex.ice,9489bab0ef3b7caf1ae2affd77b90771,79e77e0dd1a6288695d3809a5dc052dc
+,,ob_0211_0103,object/map_object/ob_0211_0103.ice,object/map_object/ob_0211_0103_ex.ice,,
 ,,ob_0211_0104,object/map_object/ob_0211_0104.ice,object/map_object/ob_0211_0104_ex.ice,4c504ee5ab245fc6485f8f98c1179a2d,ba34549c960934442eadb45ec7993d2f
 ,,ob_0211_0105,object/map_object/ob_0211_0105.ice,object/map_object/ob_0211_0105_ex.ice,31c33aabe4e9b91268c220ccb7a6c695,083e4e410ab44582dc03cf4a31f17ff1
 ,,ob_0211_0106,object/map_object/ob_0211_0106.ice,object/map_object/ob_0211_0106_ex.ice,d1c10f021024bd13534c9a7058b2da20,361e9439e639dbcd40589ab2f437188d
@@ -1353,7 +1353,7 @@
 ,,ob_0810_0109,object/map_object/ob_0810_0109.ice,object/map_object/ob_0810_0109_ex.ice,ecb028fa79206c6bf7d2d401e229b447,
 ,,ob_0810_0110,object/map_object/ob_0810_0110.ice,object/map_object/ob_0810_0110_ex.ice,6ee501f297e1dda5a96ea254c8d32bc9,
 ,,ob_0810_0111,object/map_object/ob_0810_0111.ice,object/map_object/ob_0810_0111_ex.ice,580f4f7426acdf9102a6cb796914acb6,5aa98f668e03fcd95918f6111c3473b1
-,,ob_0810_0113,object/map_object/ob_0810_0113.ice,object/map_object/ob_0810_0113_ex.ice,d81bda7d15dc6b618027f88ad00b4996,5565ffef9a77faf8cf7123e1eb6fb4eb
+,,ob_0810_0113,object/map_object/ob_0810_0113.ice,object/map_object/ob_0810_0113_ex.ice,,
 ,,ob_0810_0114,object/map_object/ob_0810_0114.ice,object/map_object/ob_0810_0114_ex.ice,14bc03a207501020abd6b3946f96fa37,
 ,,ob_0810_0115,object/map_object/ob_0810_0115.ice,object/map_object/ob_0810_0115_ex.ice,2faf402836fd45096e447e4e2063c668,
 ,,ob_0810_0116,object/map_object/ob_0810_0116.ice,object/map_object/ob_0810_0116_ex.ice,4b17ba1679c01d7202edfa95867eeb0f,
@@ -1362,10 +1362,10 @@
 ,,ob_0810_0119,object/map_object/ob_0810_0119.ice,object/map_object/ob_0810_0119_ex.ice,c07ba39816df27d698d8fe321e809eae,
 ,,ob_0810_0120,object/map_object/ob_0810_0120.ice,object/map_object/ob_0810_0120_ex.ice,5cac20f32f4cc8afddcf640083794e4e,
 ,,ob_0810_0121,object/map_object/ob_0810_0121.ice,object/map_object/ob_0810_0121_ex.ice,bd22508bad16a39ba684a15b5e50f0af,
-,,ob_0810_0122,object/map_object/ob_0810_0122.ice,object/map_object/ob_0810_0122_ex.ice,c203be671ed15e2fba23ac99bd2dbb37,705dc42179192a07e489fef9bc2eb45b
+,,ob_0810_0122,object/map_object/ob_0810_0122.ice,object/map_object/ob_0810_0122_ex.ice,,
 ,,ob_0810_0123,object/map_object/ob_0810_0123.ice,object/map_object/ob_0810_0123_ex.ice,fe3401f9b83deeac51d981dad4241d14,d3feda7544e28b962e250e15e9e43e27
-,,ob_0810_0124,object/map_object/ob_0810_0124.ice,object/map_object/ob_0810_0124_ex.ice,c97e3422dee4d69c8f13cd7b1bff703e,2ab4ad3b39a161ab848456361bc8d004
-,,ob_0810_0125,object/map_object/ob_0810_0125.ice,object/map_object/ob_0810_0125_ex.ice,cbbef020407838b844f1f36aa77c299a,7452556ca5b27776a2efc910609d5128
+,,ob_0810_0124,object/map_object/ob_0810_0124.ice,object/map_object/ob_0810_0124_ex.ice,,
+,,ob_0810_0125,object/map_object/ob_0810_0125.ice,object/map_object/ob_0810_0125_ex.ice,,
 ,,ob_0820_0000,object/map_object/ob_0820_0000.ice,object/map_object/ob_0820_0000_ex.ice,d1a0f001967269ef6675d743200529c9,f36ed357d12fd84ecb6b9e546db4843f
 ,,ob_0820_0001,object/map_object/ob_0820_0001.ice,object/map_object/ob_0820_0001_ex.ice,907d0af7cf82ccc6e56c1684abd8eea4,d54ff4631989dd722e2e73aa1fc7c94b
 ,,ob_0820_0002,object/map_object/ob_0820_0002.ice,object/map_object/ob_0820_0002_ex.ice,eaf0da64a73a25fe0da06db2c128767f,468b6fc6f74e66cf5aa6b0122e0e1b0f
@@ -1477,9 +1477,9 @@
 ,,ob_0904_0001,object/map_object/ob_0904_0001.ice,object/map_object/ob_0904_0001_ex.ice,409a15205704a37f7c76e1bf6bf6cee1,754c5624716af380e1934eecdc23d0de
 ,,ob_0904_0002,object/map_object/ob_0904_0002.ice,object/map_object/ob_0904_0002_ex.ice,6b8cdc57e1c995b3bf67ec50dcb2f276,7ee40f33974f51f8aa9d459ed98fec75
 ,,ob_0904_0003,object/map_object/ob_0904_0003.ice,object/map_object/ob_0904_0003_ex.ice,612d4304b893ba99bd5499081bf55675,3a9c289df825eb500b599e5f66624f09
-,,ob_0905_0000,object/map_object/ob_0905_0000.ice,object/map_object/ob_0905_0000_ex.ice,1980b03535446a15bd82a4198089f7d4,b2ef7bff27d71b89ad578285e20b3c45
-,,ob_0905_0001,object/map_object/ob_0905_0001.ice,object/map_object/ob_0905_0001_ex.ice,05b18c471124282574053e094abdaa4a,2ecfc9b8f5e29e92c2d54e2ca15e5f38
-,,ob_0905_0002,object/map_object/ob_0905_0002.ice,object/map_object/ob_0905_0002_ex.ice,a8837233beb58c4802dbf391300c2801,
+,,ob_0905_0000,object/map_object/ob_0905_0000.ice,object/map_object/ob_0905_0000_ex.ice,,
+,,ob_0905_0001,object/map_object/ob_0905_0001.ice,object/map_object/ob_0905_0001_ex.ice,,
+,,ob_0905_0002,object/map_object/ob_0905_0002.ice,object/map_object/ob_0905_0002_ex.ice,,
 ,,ob_1000_0001,object/map_object/ob_1000_0001.ice,object/map_object/ob_1000_0001_ex.ice,60c03e1256d5ae75620d2ec9375ab659,d06636513a110346019ce2d0d0ac6cf3
 モダンソファ,Modern Sofa,ob_1000_0002,object/map_object/ob_1000_0002.ice,object/map_object/ob_1000_0002_ex.ice,e94cc8730f57ee90e02999f43670d95c,2c482c032bc940f237b20db41b4dd337
 クラシックソファ,Classic Sofa,ob_1000_0003,object/map_object/ob_1000_0003.ice,object/map_object/ob_1000_0003_ex.ice,99d4c8046da3038c00e1d3601f3c8ad4,15afbdafbd1451a780933ffe48f7e175
@@ -1666,8 +1666,8 @@
 プレ・プレ・ボッカス,Sturdy Chest,ob_1000_0184,object/map_object/ob_1000_0184.ice,object/map_object/ob_1000_0184_ex.ice,a7ddf692b74a29669905b3d22be6456b,b2d095e78b9fc13a865a74d67ffd1d2c
 ,,ob_1000_0185,object/map_object/ob_1000_0185.ice,object/map_object/ob_1000_0185_ex.ice,cda7dd96e30b9f9b8baf3e06627e54cd,3f87953db349f728ef6d9b446b71fbec
 ツマラナイモノ,A Little Something,ob_1000_0186,object/map_object/ob_1000_0186.ice,object/map_object/ob_1000_0186_ex.ice,f7036268f4fd8c54a97d6513dbe1eefe,f992e94d285a56631bcf95c5eff928cd
-,,ob_1000_0187,object/map_object/ob_1000_0187.ice,object/map_object/ob_1000_0187_ex.ice,4fa7e104b981c22d8805c5e569028e79,ea3d507bc89f35c88aca2e524e4ed7f2
-,,ob_1000_0188,object/map_object/ob_1000_0188.ice,object/map_object/ob_1000_0188_ex.ice,fef8a17081d2e037e43415af32d6a1f3,c13e14751232d7c91b47c54854e2ca40
+ファンクションテーブル,Functional Table,ob_1000_0187,object/map_object/ob_1000_0187.ice,object/map_object/ob_1000_0187_ex.ice,4fa7e104b981c22d8805c5e569028e79,ea3d507bc89f35c88aca2e524e4ed7f2
+ファンクションチェア,Functional Chair,ob_1000_0188,object/map_object/ob_1000_0188.ice,object/map_object/ob_1000_0188_ex.ice,fef8a17081d2e037e43415af32d6a1f3,c13e14751232d7c91b47c54854e2ca40
 ,,ob_1000_0189,object/map_object/ob_1000_0189.ice,object/map_object/ob_1000_0189_ex.ice,3875e751a9be6e40f9ca9e4b957038a0,39f2fd92339f5ab532ac85c554db02fa
 ダンベル,Dumbbells,ob_1000_0190,object/map_object/ob_1000_0190.ice,object/map_object/ob_1000_0190_ex.ice,289c04c8ac379b48393baa470cf9c938,e7778d81ccf44171f4f9bc620e7c209b
 SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_object/ob_1000_0191_ex.ice,98191fcafed569b97ed25586f86586c3,
@@ -1894,7 +1894,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_0412,object/map_object/ob_1000_0412.ice,object/map_object/ob_1000_0412_ex.ice,e6933f757028afa0740216ae2503f120,
 ,,ob_1000_0413,object/map_object/ob_1000_0413.ice,object/map_object/ob_1000_0413_ex.ice,d712ae878c25dbb471b231d33318fa04,
 ,,ob_1000_0414,object/map_object/ob_1000_0414.ice,object/map_object/ob_1000_0414_ex.ice,4d02e2ad6b53f7175c07b0c224f15270,
-,,ob_1000_0415,object/map_object/ob_1000_0415.ice,object/map_object/ob_1000_0415_ex.ice,eba6d59b6ae3acfe983d45071f28818a,
+,,ob_1000_0415,object/map_object/ob_1000_0415.ice,object/map_object/ob_1000_0415_ex.ice,,
 ,,ob_1000_0416,object/map_object/ob_1000_0416.ice,object/map_object/ob_1000_0416_ex.ice,,
 ,,ob_1000_0417,object/map_object/ob_1000_0417.ice,object/map_object/ob_1000_0417_ex.ice,7c298ead3c6b0b0fbce4d4cf34b80dea,4ebe895aa691b4fce58b7ace45a3866e
 ,,ob_1000_0418,object/map_object/ob_1000_0418.ice,object/map_object/ob_1000_0418_ex.ice,d2e9496e28094d497f84660aeeacfa32,3a890b242d0fb80cd27dd0a4f0306ff0
@@ -1919,9 +1919,9 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_0437,object/map_object/ob_1000_0437.ice,object/map_object/ob_1000_0437_ex.ice,838a7d1f0d4023d7be8580dc74d42fd1,e286b7973371521ad5fe5dc1ea7fcb55
 ,,ob_1000_0438,object/map_object/ob_1000_0438.ice,object/map_object/ob_1000_0438_ex.ice,f6ae89a5f26404e79890c26f656c3e07,21a29de83d6f7da76128ae41179dbdd2
 ,,ob_1000_0439,object/map_object/ob_1000_0439.ice,object/map_object/ob_1000_0439_ex.ice,ff0c74aac14dca318b0de5628c755265,
-,,ob_1000_0440,object/map_object/ob_1000_0440.ice,object/map_object/ob_1000_0440_ex.ice,66ade7b679e619f93688534dbb7561ba,
-,,ob_1000_0441,object/map_object/ob_1000_0441.ice,object/map_object/ob_1000_0441_ex.ice,2942dd0824f69b3abdf6b7ad65d06018,
-,,ob_1000_0442,object/map_object/ob_1000_0442.ice,object/map_object/ob_1000_0442_ex.ice,88c4ec669b580908ae8f9d2dc24cb98f,
+,,ob_1000_0440,object/map_object/ob_1000_0440.ice,object/map_object/ob_1000_0440_ex.ice,,
+,,ob_1000_0441,object/map_object/ob_1000_0441.ice,object/map_object/ob_1000_0441_ex.ice,,
+,,ob_1000_0442,object/map_object/ob_1000_0442.ice,object/map_object/ob_1000_0442_ex.ice,,
 ,,ob_1000_0443,object/map_object/ob_1000_0443.ice,object/map_object/ob_1000_0443_ex.ice,84d5fabeae36abc959104dfdd41b7184,
 ,,ob_1000_0444,object/map_object/ob_1000_0444.ice,object/map_object/ob_1000_0444_ex.ice,03977fa6abef48b3477473a025d2fda2,6ff5cafa23c7c2a83daad1f966efd2bc
 スペースシップチェア,Spaceship Chair,ob_1000_0445,object/map_object/ob_1000_0445.ice,object/map_object/ob_1000_0445_ex.ice,d9fa7b9fc95b80ab8fcbf50988ba1882,62d78d86ffbf9f7252907fd88b1f1b9d
@@ -1934,7 +1934,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_0452,object/map_object/ob_1000_0452.ice,object/map_object/ob_1000_0452_ex.ice,,
 ,,ob_1000_0453,object/map_object/ob_1000_0453.ice,object/map_object/ob_1000_0453_ex.ice,,
 丸提灯,Round Paper Lanterns,ob_1000_0454,object/map_object/ob_1000_0454.ice,object/map_object/ob_1000_0454_ex.ice,beb825055203351e0d10e5efdc0a4bce,aa55c63ca2f8451cc2f91487a3dfd9ad
-,,ob_1000_0455,object/map_object/ob_1000_0455.ice,object/map_object/ob_1000_0455_ex.ice,75239f8d82665626282c91b717153619,
+カミノカサ,Paper Umbrella,ob_1000_0455,object/map_object/ob_1000_0455.ice,object/map_object/ob_1000_0455_ex.ice,75239f8d82665626282c91b717153619,
 ジャックモビール,Jack-o'-Lantern Mobile,ob_1000_0456,object/map_object/ob_1000_0456.ice,object/map_object/ob_1000_0456_ex.ice,ddfc0f63f726dd2a1b854097d0def48d,58292b5f4bc3c8136267b45676656c5f
 ホーンテッドアート,Haunted Artwork,ob_1000_0457,object/map_object/ob_1000_0457.ice,object/map_object/ob_1000_0457_ex.ice,ea9859e224754020aee058f24de5612c,c714023859de53eae9bfdfa6de30087a
 ,,ob_1000_0458,object/map_object/ob_1000_0458.ice,object/map_object/ob_1000_0458_ex.ice,3ea6dd80b8fbadded3c9e340c6d0da0f,55d7e6f05876c548890b4004e7a4bddb
@@ -1958,17 +1958,17 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_0476,object/map_object/ob_1000_0476.ice,object/map_object/ob_1000_0476_ex.ice,3d61785bb85e0ddf3871622f2182799a,b98387b8b1c881a4c102540f49fd245c
 ,,ob_1000_0477,object/map_object/ob_1000_0477.ice,object/map_object/ob_1000_0477_ex.ice,2384cf8468ca76c4b6ad8b2e5c9a847e,1884163a401f1f38614891706dc14cb1
 ,,ob_1000_0478,object/map_object/ob_1000_0478.ice,object/map_object/ob_1000_0478_ex.ice,bbc273060db7bfea1897179ab97b3912,06efefd86e3190ac4146703bf22e812d
-,,ob_1000_0479,object/map_object/ob_1000_0479.ice,object/map_object/ob_1000_0479_ex.ice,075ef970719feae97a53d36efd0cc60d,
-,,ob_1000_0480,object/map_object/ob_1000_0480.ice,object/map_object/ob_1000_0480_ex.ice,e58c68174341fba93d0851292b9cd6c1,
+,,ob_1000_0479,object/map_object/ob_1000_0479.ice,object/map_object/ob_1000_0479_ex.ice,,
+,,ob_1000_0480,object/map_object/ob_1000_0480.ice,object/map_object/ob_1000_0480_ex.ice,,
 ,,ob_1000_0481,object/map_object/ob_1000_0481.ice,object/map_object/ob_1000_0481_ex.ice,57a9093ffd156087692cb66c09003202,7c66232d093a83c19697a5b1f2053408
 おせちセット,New Year's Food Set,ob_1000_0482,object/map_object/ob_1000_0482.ice,object/map_object/ob_1000_0482_ex.ice,fb4c8866794d91e34a81c670c9ee83f1,2bb7dde26a759df0f4b1c353b93cf59b
 カドマツ,New Year's Decoration,ob_1000_0483,object/map_object/ob_1000_0483.ice,object/map_object/ob_1000_0483_ex.ice,8fd3601e9fdf809ceea2956dc6081deb,d76893a4a2fad46f9e4e3103c6f1bd89
-,,ob_1000_0484,object/map_object/ob_1000_0484.ice,object/map_object/ob_1000_0484_ex.ice,ecd1fba59be5bb19bd78812167a090bc,
-,,ob_1000_0485,object/map_object/ob_1000_0485.ice,object/map_object/ob_1000_0485_ex.ice,ca61fdea41440404a2e4f5f7e2038b3f,
-,,ob_1000_0486,object/map_object/ob_1000_0486.ice,object/map_object/ob_1000_0486_ex.ice,2f8464cb5420d6c2ef955f14a805004f,
-,,ob_1000_0487,object/map_object/ob_1000_0487.ice,object/map_object/ob_1000_0487_ex.ice,85e4ae1623f1d2fb3d1a63cc309180b3,
-,,ob_1000_0488,object/map_object/ob_1000_0488.ice,object/map_object/ob_1000_0488_ex.ice,19a04e769a5f03d4737c7b692c9b10c2,
-,,ob_1000_0489,object/map_object/ob_1000_0489.ice,object/map_object/ob_1000_0489_ex.ice,78431731f58bdd4aa430e01c2677297b,
+,,ob_1000_0484,object/map_object/ob_1000_0484.ice,object/map_object/ob_1000_0484_ex.ice,,
+,,ob_1000_0485,object/map_object/ob_1000_0485.ice,object/map_object/ob_1000_0485_ex.ice,,
+,,ob_1000_0486,object/map_object/ob_1000_0486.ice,object/map_object/ob_1000_0486_ex.ice,,
+,,ob_1000_0487,object/map_object/ob_1000_0487.ice,object/map_object/ob_1000_0487_ex.ice,,
+,,ob_1000_0488,object/map_object/ob_1000_0488.ice,object/map_object/ob_1000_0488_ex.ice,,
+,,ob_1000_0489,object/map_object/ob_1000_0489.ice,object/map_object/ob_1000_0489_ex.ice,,
 シェルライト,Shell Light,ob_1000_0490,object/map_object/ob_1000_0490.ice,object/map_object/ob_1000_0490_ex.ice,5ee2557a127c696d08e64eec456e17c4,6e6c444f352cdb1d35ba252395534067
 ディープファウンテン,Deep Fountain,ob_1000_0491,object/map_object/ob_1000_0491.ice,object/map_object/ob_1000_0491_ex.ice,5309564c1e5b0c8fc3d490f9d0822870,e079e027b74e347000a0b35b7fb90fd9
 シーアネモネ,Sea Anemone,ob_1000_0492,object/map_object/ob_1000_0492.ice,object/map_object/ob_1000_0492_ex.ice,63ca83a5de8e0862a6660cefaa0ef5bc,44d66a94b54ebc1c404fd94f31724e73
@@ -2002,15 +2002,15 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 レトロキッチンB,Steampunk Kitchen B,ob_1000_0520,object/map_object/ob_1000_0520.ice,object/map_object/ob_1000_0520_ex.ice,ba34f406acb63354dd6472447bc9747c,4aa8b28ea466fdb32c2d0b399ec9cbe6
 レトロオブジェB,Steampunk Objet d'Art B,ob_1000_0521,object/map_object/ob_1000_0521.ice,object/map_object/ob_1000_0521_ex.ice,2afb1035fdbb8a58341d8d3abfe53897,17eea40ed2b187ee864430690ede4a56
 ,,ob_1000_0522,object/map_object/ob_1000_0522.ice,object/map_object/ob_1000_0522_ex.ice,eb6d7f98219f14ecdaa8fcacdfdb1e3b,22c48f6a697d6037ac6a5b7d215ff99d
-,,ob_1000_0523,object/map_object/ob_1000_0523.ice,object/map_object/ob_1000_0523_ex.ice,4e5c847b545743a52e9966bff95d5126,41f21dcf6c79895f8e14ea2c8a5298a2
-,,ob_1000_0524,object/map_object/ob_1000_0524.ice,object/map_object/ob_1000_0524_ex.ice,97dff3479278e27b5778d37dbbc6b790,7c2104af934f9fec54b83563c2923d07
-,,ob_1000_0525,object/map_object/ob_1000_0525.ice,object/map_object/ob_1000_0525_ex.ice,119523041afca01933d7373a8988109c,850e9ab50dde12b851e339e84d90984d
-,,ob_1000_0526,object/map_object/ob_1000_0526.ice,object/map_object/ob_1000_0526_ex.ice,f87081846c8b092b384b33a48ef0a43b,dd1f7da0c6c614a3ff3588512f1c0e1a
-,,ob_1000_0527,object/map_object/ob_1000_0527.ice,object/map_object/ob_1000_0527_ex.ice,2ecb18aede10bc9fa0dd07560927617f,0ceea379a7b85a71ce9e85818cdb5719
-,,ob_1000_0528,object/map_object/ob_1000_0528.ice,object/map_object/ob_1000_0528_ex.ice,b8476f2e28b37b3a7ccc79f8a0289f3a,a7158b7000e40ceb611b05a2b7b302eb
-,,ob_1000_0529,object/map_object/ob_1000_0529.ice,object/map_object/ob_1000_0529_ex.ice,b89fd3129e6a4a83b27ddf9eb694d648,1e4e789572894845d86200a34c0908f7
-,,ob_1000_0530,object/map_object/ob_1000_0530.ice,object/map_object/ob_1000_0530_ex.ice,3dcf811a03bc3e67579a078d3ec72f67,72c7168bf8411780f41d0b69ce5cd471
-,,ob_1000_0531,object/map_object/ob_1000_0531.ice,object/map_object/ob_1000_0531_ex.ice,5a4421db415194499e8057a6c10dd489,fd3080a233b4c1161c51c773bf0651e7
+レトロベッドC,Steampunk Bed C,ob_1000_0523,object/map_object/ob_1000_0523.ice,object/map_object/ob_1000_0523_ex.ice,4e5c847b545743a52e9966bff95d5126,41f21dcf6c79895f8e14ea2c8a5298a2
+レトロテーブルC,Steampunk Table C,ob_1000_0524,object/map_object/ob_1000_0524.ice,object/map_object/ob_1000_0524_ex.ice,97dff3479278e27b5778d37dbbc6b790,7c2104af934f9fec54b83563c2923d07
+レトロチェアC,Steampunk Chair C,ob_1000_0525,object/map_object/ob_1000_0525.ice,object/map_object/ob_1000_0525_ex.ice,119523041afca01933d7373a8988109c,850e9ab50dde12b851e339e84d90984d
+レトロキャビネットC,Steampunk Cabinet C,ob_1000_0526,object/map_object/ob_1000_0526.ice,object/map_object/ob_1000_0526_ex.ice,f87081846c8b092b384b33a48ef0a43b,dd1f7da0c6c614a3ff3588512f1c0e1a
+レトロシャンデリアC,Steampunk Chandelier C,ob_1000_0527,object/map_object/ob_1000_0527.ice,object/map_object/ob_1000_0527_ex.ice,2ecb18aede10bc9fa0dd07560927617f,0ceea379a7b85a71ce9e85818cdb5719
+レトロソファC,Steampunk Sofa C,ob_1000_0528,object/map_object/ob_1000_0528.ice,object/map_object/ob_1000_0528_ex.ice,b8476f2e28b37b3a7ccc79f8a0289f3a,a7158b7000e40ceb611b05a2b7b302eb
+レトロテレビC,Steampunk TV C,ob_1000_0529,object/map_object/ob_1000_0529.ice,object/map_object/ob_1000_0529_ex.ice,b89fd3129e6a4a83b27ddf9eb694d648,1e4e789572894845d86200a34c0908f7
+レトロキッチンC,Steampunk Kitchen C,ob_1000_0530,object/map_object/ob_1000_0530.ice,object/map_object/ob_1000_0530_ex.ice,3dcf811a03bc3e67579a078d3ec72f67,72c7168bf8411780f41d0b69ce5cd471
+レトロオブジェC,Steampunk Objet d'Art C,ob_1000_0531,object/map_object/ob_1000_0531.ice,object/map_object/ob_1000_0531_ex.ice,5a4421db415194499e8057a6c10dd489,fd3080a233b4c1161c51c773bf0651e7
 ,,ob_1000_0532,object/map_object/ob_1000_0532.ice,object/map_object/ob_1000_0532_ex.ice,c5d8346cd3c7b20975b54690786d028d,2278597683a0c87f780d9072de7cfbc9
 レトロランプ,Steampunk Lamp,ob_1000_0533,object/map_object/ob_1000_0533.ice,object/map_object/ob_1000_0533_ex.ice,c9e27a1b18f66c4542177ae0d7ddbd1c,2b90ea083fb8e1baeb4186ce1b14fd6e
 レトロポット,Steampunk Kettle,ob_1000_0534,object/map_object/ob_1000_0534.ice,object/map_object/ob_1000_0534_ex.ice,9093f611950838c80c43ab0dd948ae80,3edaa6a1058ad6c3776aa4056b4ac78d
@@ -2018,10 +2018,10 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 レトロフラワー,Steampunk Flower,ob_1000_0536,object/map_object/ob_1000_0536.ice,object/map_object/ob_1000_0536_ex.ice,a54e152d7c2e84ada772ec14eae998c4,db944413937b8db6f3a98d1debf60ecb
 レトロスコープ,Steampunk Microscope,ob_1000_0537,object/map_object/ob_1000_0537.ice,object/map_object/ob_1000_0537_ex.ice,ff44231e4457b7d9423c52196e85c5f3,de85ceec8b336c5f8e381895949abb76
 レトロマスコット,Steampunk Mascot,ob_1000_0538,object/map_object/ob_1000_0538.ice,object/map_object/ob_1000_0538_ex.ice,13905c12da97b571f5ef4e33b1de658c,03d04300dac431d83ddb9761aa9c01a1
-,,ob_1000_0539,object/map_object/ob_1000_0539.ice,object/map_object/ob_1000_0539_ex.ice,9b3f2a80bd6230d7b84c67045fccad4b,3122226ce7d190fc6c2f70752a155727
-,,ob_1000_0540,object/map_object/ob_1000_0540.ice,object/map_object/ob_1000_0540_ex.ice,081c0c7b62ca26fb6aa071956f591122,571aa5d3e8e7ce3fcd7b1390ae65c1f8
+レトロトースター,Steampunk Toaster,ob_1000_0539,object/map_object/ob_1000_0539.ice,object/map_object/ob_1000_0539_ex.ice,9b3f2a80bd6230d7b84c67045fccad4b,3122226ce7d190fc6c2f70752a155727
+レトロコンパス,Steampunk Compass,ob_1000_0540,object/map_object/ob_1000_0540.ice,object/map_object/ob_1000_0540_ex.ice,081c0c7b62ca26fb6aa071956f591122,571aa5d3e8e7ce3fcd7b1390ae65c1f8
 レトロセンプーキ,Steampunk Floor Fan,ob_1000_0541,object/map_object/ob_1000_0541.ice,object/map_object/ob_1000_0541_ex.ice,c3c27bd13d6e019a14739e9e88d95a2c,fc992f3ea6ad96f1e52a181493f5307d
-,,ob_1000_0542,object/map_object/ob_1000_0542.ice,object/map_object/ob_1000_0542_ex.ice,e9aa9b48364fd016c8573b596e55419b,7b18c53bfb8ebe74ffbe24c85e825332
+レトロサンプル,Steampunk Specimen,ob_1000_0542,object/map_object/ob_1000_0542.ice,object/map_object/ob_1000_0542_ex.ice,e9aa9b48364fd016c8573b596e55419b,7b18c53bfb8ebe74ffbe24c85e825332
 ファンシーベッド,Fancy Bed,ob_1000_0543,object/map_object/ob_1000_0543.ice,object/map_object/ob_1000_0543_ex.ice,665978888a051f7f51d3c362b0f35e56,04254dcedb2fa91a242f8a2c5623653d
 ファンシーローテーブル,Fancy Coffee Table,ob_1000_0544,object/map_object/ob_1000_0544.ice,object/map_object/ob_1000_0544_ex.ice,080b26fccff3504ec4853e0babca368e,392bd867b7c026b332eba937548f7272
 ファンシーチェア,Fancy Chair,ob_1000_0545,object/map_object/ob_1000_0545.ice,object/map_object/ob_1000_0545_ex.ice,80e08c02b0dd5ea1db427e7e77b6ffff,9a5f7ef80ecbed1a3abb4b4d180bc8cd
@@ -2147,8 +2147,8 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_0665,object/map_object/ob_1000_0665.ice,object/map_object/ob_1000_0665_ex.ice,5d778e3b18858628b48503b84f5412df,d45c449da92d9671101b52447c521daf
 ,,ob_1000_0666,object/map_object/ob_1000_0666.ice,object/map_object/ob_1000_0666_ex.ice,19cad03c8f160d03f4ae51cfd05e520f,c769a187bb9aa1d3dd2764322dd64c64
 ,,ob_1000_0667,object/map_object/ob_1000_0667.ice,object/map_object/ob_1000_0667_ex.ice,acb2b528ad03551a979f8de076e0ad83,22589ea7e10a5d10e743a72010e305bd
-,,ob_1000_0668,object/map_object/ob_1000_0668.ice,object/map_object/ob_1000_0668_ex.ice,159d82871b64dff418b19c7720b0b746,
-,,ob_1000_0669,object/map_object/ob_1000_0669.ice,object/map_object/ob_1000_0669_ex.ice,6430aa875fa39c5fc0d16826c784d352,
+ドラゴンボートソファ,Dragon Boat Sofa,ob_1000_0668,object/map_object/ob_1000_0668.ice,object/map_object/ob_1000_0668_ex.ice,159d82871b64dff418b19c7720b0b746,
+チマキクッション,Rice Dumpling Pillows,ob_1000_0669,object/map_object/ob_1000_0669.ice,object/map_object/ob_1000_0669_ex.ice,6430aa875fa39c5fc0d16826c784d352,
 ,,ob_1000_0670,object/map_object/ob_1000_0670.ice,object/map_object/ob_1000_0670_ex.ice,,
 ,,ob_1000_0671,object/map_object/ob_1000_0671.ice,object/map_object/ob_1000_0671_ex.ice,,
 ,,ob_1000_0672,object/map_object/ob_1000_0672.ice,object/map_object/ob_1000_0672_ex.ice,,
@@ -2208,11 +2208,11 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_0726,object/map_object/ob_1000_0726.ice,object/map_object/ob_1000_0726_ex.ice,3f6cad4eb9c14dd700a9fec71aa3f609,49aa66ea3252786f9af6b8d490aea65c
 ,,ob_1000_0727,object/map_object/ob_1000_0727.ice,object/map_object/ob_1000_0727_ex.ice,b9e4e8bfdce114441cf03becf50b6916,
 ,,ob_1000_0728,object/map_object/ob_1000_0728.ice,object/map_object/ob_1000_0728_ex.ice,34f07f4b562de6e094b199cc3b833a25,
-,,ob_1000_0729,object/map_object/ob_1000_0729.ice,object/map_object/ob_1000_0729_ex.ice,c2e692a1599fff60ce1edb793b6c391d,
-,,ob_1000_0730,object/map_object/ob_1000_0730.ice,object/map_object/ob_1000_0730_ex.ice,6aa200cd054f4ac1e6a6efcb6872a481,
-,,ob_1000_0731,object/map_object/ob_1000_0731.ice,object/map_object/ob_1000_0731_ex.ice,860f480d811ddc0ab29a8489cb55c4ad,
-,,ob_1000_0732,object/map_object/ob_1000_0732.ice,object/map_object/ob_1000_0732_ex.ice,cae5e7833fa1d30f1026e8cbe37d8afe,
-,,ob_1000_0733,object/map_object/ob_1000_0733.ice,object/map_object/ob_1000_0733_ex.ice,5f7eb3c5aa0e40cb5e16d7ae7ad8af49,
+,,ob_1000_0729,object/map_object/ob_1000_0729.ice,object/map_object/ob_1000_0729_ex.ice,,
+,,ob_1000_0730,object/map_object/ob_1000_0730.ice,object/map_object/ob_1000_0730_ex.ice,,
+,,ob_1000_0731,object/map_object/ob_1000_0731.ice,object/map_object/ob_1000_0731_ex.ice,,
+,,ob_1000_0732,object/map_object/ob_1000_0732.ice,object/map_object/ob_1000_0732_ex.ice,,
+,,ob_1000_0733,object/map_object/ob_1000_0733.ice,object/map_object/ob_1000_0733_ex.ice,,
 ,,ob_1000_0734,object/map_object/ob_1000_0734.ice,object/map_object/ob_1000_0734_ex.ice,48d9596ed9c1d8c378a0384aa0f04552,2362846e5a0f08d34bf5dfa5a289199a
 ,,ob_1000_0735,object/map_object/ob_1000_0735.ice,object/map_object/ob_1000_0735_ex.ice,fbcd38dc821768e1e8cda0f22e74f2ad,
 ,,ob_1000_0736,object/map_object/ob_1000_0736.ice,object/map_object/ob_1000_0736_ex.ice,a0277e12769868ddd7be4022f1df50de,
@@ -2230,7 +2230,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_0748,object/map_object/ob_1000_0748.ice,object/map_object/ob_1000_0748_ex.ice,ac3814725527105f736e1a108b2bc803,
 ,,ob_1000_0749,object/map_object/ob_1000_0749.ice,object/map_object/ob_1000_0749_ex.ice,f6020bb1ebcd0976d2e5cac6b93cecfe,e9fea373a3c0d28c61622f0ba6a9c903
 ,,ob_1000_0750,object/map_object/ob_1000_0750.ice,object/map_object/ob_1000_0750_ex.ice,f1dd6c4b332dc94deb332eda53409faa,
-,,ob_1000_0751,object/map_object/ob_1000_0751.ice,object/map_object/ob_1000_0751_ex.ice,8536478f06111fec7fa350ac42e1de47,1a677ff9058fa6d5cee700ff575187ca
+,,ob_1000_0751,object/map_object/ob_1000_0751.ice,object/map_object/ob_1000_0751_ex.ice,,
 ,,ob_1000_0752,object/map_object/ob_1000_0752.ice,object/map_object/ob_1000_0752_ex.ice,33ada3e05c100eb698cd2cee6e294ec0,6ba1bab11f6d8624c815e49ebc52f18d
 シーベイジングセットB,Sunbathing Set B,ob_1000_0753,object/map_object/ob_1000_0753.ice,object/map_object/ob_1000_0753_ex.ice,e9f1c493917ef7a1352f6feb972d8c64,
 プライベートプールB,Private Pool B,ob_1000_0754,object/map_object/ob_1000_0754.ice,object/map_object/ob_1000_0754_ex.ice,2164d7bfe1d9b5bb27dd789c7fae2315,
@@ -2254,13 +2254,13 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_0772,object/map_object/ob_1000_0772.ice,object/map_object/ob_1000_0772_ex.ice,9bbc571315ef6dbd2255eea283b3231b,32a6ca43a70d0d8408aa2152353e049e
 ミニミニラッピーレース,Mini Mini Rappy Race,ob_1000_0773,object/map_object/ob_1000_0773.ice,object/map_object/ob_1000_0773_ex.ice,1677603a647611c72e83ac3529d85a9d,16e72828879028e3cb1c9e45e070e26a
 ,,ob_1000_0774,object/map_object/ob_1000_0774.ice,object/map_object/ob_1000_0774_ex.ice,268fdd260db23c94da3f74a47a3a885d,
-,,ob_1000_0775,object/map_object/ob_1000_0775.ice,object/map_object/ob_1000_0775_ex.ice,9848a991fb1271bad423112b376b428f,
-,,ob_1000_0776,object/map_object/ob_1000_0776.ice,object/map_object/ob_1000_0776_ex.ice,3a77061d96cab198bba6d0b36e29f92f,
+,,ob_1000_0775,object/map_object/ob_1000_0775.ice,object/map_object/ob_1000_0775_ex.ice,,
+,,ob_1000_0776,object/map_object/ob_1000_0776.ice,object/map_object/ob_1000_0776_ex.ice,,
 ,,ob_1000_0777,object/map_object/ob_1000_0777.ice,object/map_object/ob_1000_0777_ex.ice,7174a2aec266110c5e766131347fe6fc,
-,,ob_1000_0778,object/map_object/ob_1000_0778.ice,object/map_object/ob_1000_0778_ex.ice,cbbd281c5a20692253c061e336cd2146,
-,,ob_1000_0779,object/map_object/ob_1000_0779.ice,object/map_object/ob_1000_0779_ex.ice,f4aa90e315207c087c85f129ef69845b,
-,,ob_1000_0780,object/map_object/ob_1000_0780.ice,object/map_object/ob_1000_0780_ex.ice,0f2c9b71c41c467e7e5fc596df724a4b,126d33c17d2c87fbc4047635e3034ab8
-,,ob_1000_0781,object/map_object/ob_1000_0781.ice,object/map_object/ob_1000_0781_ex.ice,9c145df7ec14e92e84d114bf156c7a38,e9dea7ce98878df686464f466a127e57
+,,ob_1000_0778,object/map_object/ob_1000_0778.ice,object/map_object/ob_1000_0778_ex.ice,,
+,,ob_1000_0779,object/map_object/ob_1000_0779.ice,object/map_object/ob_1000_0779_ex.ice,,
+,,ob_1000_0780,object/map_object/ob_1000_0780.ice,object/map_object/ob_1000_0780_ex.ice,,
+,,ob_1000_0781,object/map_object/ob_1000_0781.ice,object/map_object/ob_1000_0781_ex.ice,,
 アシンメトリーソファB,Asymmetrical Sofa B,ob_1000_0782,object/map_object/ob_1000_0782.ice,object/map_object/ob_1000_0782_ex.ice,04ecccea534ce8ff7d6821d3eaf0d518,d68eafc45e0cac3f05b8a55679f52b16
 アシンメトリーソファ,Asymmetrical Sofa,ob_1000_0783,object/map_object/ob_1000_0783.ice,object/map_object/ob_1000_0783_ex.ice,178368ac36795ddffbe6163065a426d4,44357a0d0bc1733840bca0ba4f2bac29
 ,,ob_1000_0784,object/map_object/ob_1000_0784.ice,object/map_object/ob_1000_0784_ex.ice,6f1a5474082cb0a89aa6fa0784be686f,958398bdbc68d41f2bc06dbe8c007262
@@ -2272,12 +2272,12 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ロードプレート,Road Plate,ob_1000_0790,object/map_object/ob_1000_0790.ice,object/map_object/ob_1000_0790_ex.ice,ba2ab1cf12b91db529f1a8ccd6af7b68,5ce47d26817c76549558121173005683
 ロードプレートB,Road Plate B,ob_1000_0791,object/map_object/ob_1000_0791.ice,object/map_object/ob_1000_0791_ex.ice,043ee8cef7463ef485d472e387e21df7,8d1ac8720fd229c5453a7058997d44b8
 ,,ob_1000_0792,object/map_object/ob_1000_0792.ice,object/map_object/ob_1000_0792_ex.ice,01aaa5dafc00acc9d616f1e4f8e92b35,
-,,ob_1000_0793,object/map_object/ob_1000_0793.ice,object/map_object/ob_1000_0793_ex.ice,5a9b1f5577ab07f16f7cf95bf4aa5be7,
-,,ob_1000_0794,object/map_object/ob_1000_0794.ice,object/map_object/ob_1000_0794_ex.ice,cc8236ba4a6ae282973dd84cd1949e60,
-,,ob_1000_0795,object/map_object/ob_1000_0795.ice,object/map_object/ob_1000_0795_ex.ice,b7721a01adaf309cb633c487941a05ee,
-,,ob_1000_0796,object/map_object/ob_1000_0796.ice,object/map_object/ob_1000_0796_ex.ice,3de72692c54fdb09a478d8737f41835d,
-,,ob_1000_0797,object/map_object/ob_1000_0797.ice,object/map_object/ob_1000_0797_ex.ice,4db74db43325d892a265f39d14377ff1,
-,,ob_1000_0798,object/map_object/ob_1000_0798.ice,object/map_object/ob_1000_0798_ex.ice,7fe60e250a64665ac0184e4857792760,
+,,ob_1000_0793,object/map_object/ob_1000_0793.ice,object/map_object/ob_1000_0793_ex.ice,,
+,,ob_1000_0794,object/map_object/ob_1000_0794.ice,object/map_object/ob_1000_0794_ex.ice,,
+,,ob_1000_0795,object/map_object/ob_1000_0795.ice,object/map_object/ob_1000_0795_ex.ice,,
+,,ob_1000_0796,object/map_object/ob_1000_0796.ice,object/map_object/ob_1000_0796_ex.ice,,
+,,ob_1000_0797,object/map_object/ob_1000_0797.ice,object/map_object/ob_1000_0797_ex.ice,,
+,,ob_1000_0798,object/map_object/ob_1000_0798.ice,object/map_object/ob_1000_0798_ex.ice,,
 ,,ob_1000_0799,object/map_object/ob_1000_0799.ice,object/map_object/ob_1000_0799_ex.ice,a274830c0160b7e2f17c11e8dd67c5d0,2b4d58df0c32adbcf95ba59b4b3ec274
 エレガントシャンデリア,Elegant Chandelier,ob_1000_0800,object/map_object/ob_1000_0800.ice,object/map_object/ob_1000_0800_ex.ice,15fbecd20b5215a9d4a5c64bfa19fc2b,5b72835c59d62cf3ad91bb7543a8e2de
 エレガントマット,Elegant Mat,ob_1000_0801,object/map_object/ob_1000_0801.ice,object/map_object/ob_1000_0801_ex.ice,a6cf92999ad8200c631e4ffa60c9862f,42c3fd37c2068c7da5f80dc70ff394b6
@@ -2386,9 +2386,9 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 キャンプランタン,Camp Lantern,ob_1000_0904,object/map_object/ob_1000_0904.ice,object/map_object/ob_1000_0904_ex.ice,27aada37fc2398b831bec6a3d9e8e6f3,2f3ee554ccb20cc70a685f3c568378dc
 バ・テリー,Battery,ob_1000_0905,object/map_object/ob_1000_0905.ice,object/map_object/ob_1000_0905_ex.ice,b449198a17906bd6c0ea7751a3c47235,cea483a0673b7fd8ba7b0a2dbb4c5dd8
 ボ・エンキョ,Telescope,ob_1000_0906,object/map_object/ob_1000_0906.ice,object/map_object/ob_1000_0906_ex.ice,80037e4dd84885f85ff5e01ef0e9439a,0f205a463bff904943e3ff80cfb849c8
-,,ob_1000_0907,object/map_object/ob_1000_0907.ice,object/map_object/ob_1000_0907_ex.ice,2878e7eb771dc688b7196b5dbbc0d5d4,cc3c5d3e0eacf46d50b3d8bf3c02e5fd
-,,ob_1000_0908,object/map_object/ob_1000_0908.ice,object/map_object/ob_1000_0908_ex.ice,d14c3b4f18b7f4fb6c764a35e8c43151,3046b63a50782d414063f0f5d915c9ae
-,,ob_1000_0909,object/map_object/ob_1000_0909.ice,object/map_object/ob_1000_0909_ex.ice,f903d5c83ff4f8ed3e1c402991b10182,f55a0e88812e6df49a26e20ef7fb4ec2
+バーバーズミラー,Barber's Mirror,ob_1000_0907,object/map_object/ob_1000_0907.ice,object/map_object/ob_1000_0907_ex.ice,2878e7eb771dc688b7196b5dbbc0d5d4,cc3c5d3e0eacf46d50b3d8bf3c02e5fd
+バーバーズチェア,Barber Chair,ob_1000_0908,object/map_object/ob_1000_0908.ice,object/map_object/ob_1000_0908_ex.ice,d14c3b4f18b7f4fb6c764a35e8c43151,3046b63a50782d414063f0f5d915c9ae
+バーバーズポール,Barber Pole,ob_1000_0909,object/map_object/ob_1000_0909.ice,object/map_object/ob_1000_0909_ex.ice,f903d5c83ff4f8ed3e1c402991b10182,f55a0e88812e6df49a26e20ef7fb4ec2
 学校の机,School Desk,ob_1000_0910,object/map_object/ob_1000_0910.ice,object/map_object/ob_1000_0910_ex.ice,cc0bdc94e124d61c794f69e3b7204d6a,df46ecb42dea28cf472a17cc7de6bbaa
 学校の椅子,School Chair,ob_1000_0911,object/map_object/ob_1000_0911.ice,object/map_object/ob_1000_0911_ex.ice,caf08d3301a166f40cf58eb5dcfe0816,45c8774861d5d8c647875be9089c7088
 学校の黒板,School Chalkboard,ob_1000_0912,object/map_object/ob_1000_0912.ice,object/map_object/ob_1000_0912_ex.ice,44074f8e4305d2d8e9d6632fffcdfc98,99c4a894b43701d63998f745e58a3862
@@ -2463,12 +2463,12 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_0981,object/map_object/ob_1000_0981.ice,object/map_object/ob_1000_0981_ex.ice,,
 ,,ob_1000_0982,object/map_object/ob_1000_0982.ice,object/map_object/ob_1000_0982_ex.ice,,
 ,,ob_1000_0983,object/map_object/ob_1000_0983.ice,object/map_object/ob_1000_0983_ex.ice,244ca2f6cf6bbbbe62f107fc5cc3922a,
-,,ob_1000_0984,object/map_object/ob_1000_0984.ice,object/map_object/ob_1000_0984_ex.ice,6d9ceb28d144038c627f613b3b571d5e,
-,,ob_1000_0985,object/map_object/ob_1000_0985.ice,object/map_object/ob_1000_0985_ex.ice,c019f9a0290c8d441015fea867d91e62,
+,,ob_1000_0984,object/map_object/ob_1000_0984.ice,object/map_object/ob_1000_0984_ex.ice,,
+,,ob_1000_0985,object/map_object/ob_1000_0985.ice,object/map_object/ob_1000_0985_ex.ice,,
 ,,ob_1000_0986,object/map_object/ob_1000_0986.ice,object/map_object/ob_1000_0986_ex.ice,23e25a6bce33f2881ac21403ffdde3e8,4fdfa206007c47b5552e86f8294fcba9
 ,,ob_1000_0987,object/map_object/ob_1000_0987.ice,object/map_object/ob_1000_0987_ex.ice,255fb232cde42d82f1140dfe87b459d9,
 ,,ob_1000_0988,object/map_object/ob_1000_0988.ice,object/map_object/ob_1000_0988_ex.ice,07374e7f69535c279abed93aa2d0002c,
-,,ob_1000_0989,object/map_object/ob_1000_0989.ice,object/map_object/ob_1000_0989_ex.ice,302ac9c26f414337a27ceb08a0c88f2d,
+,,ob_1000_0989,object/map_object/ob_1000_0989.ice,object/map_object/ob_1000_0989_ex.ice,,
 ,,ob_1000_0990,object/map_object/ob_1000_0990.ice,object/map_object/ob_1000_0990_ex.ice,61690c7fea7e722ac83d6631f7bc52b2,
 トンネルライト,Tunnel Light,ob_1000_0991,object/map_object/ob_1000_0991.ice,object/map_object/ob_1000_0991_ex.ice,2eb1b89fdf631d5486dbd03f870b2272,06fb7d415f73c1c3fd7a36df7c4f8d31
 メンテナンスハンガー,Maintenance Hangar,ob_1000_0992,object/map_object/ob_1000_0992.ice,object/map_object/ob_1000_0992_ex.ice,7fa64ea4e3ef14f681779b9417c07f74,29a3ec46a4ffb66aa714288692e7763b
@@ -2484,7 +2484,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1002,object/map_object/ob_1000_1002.ice,object/map_object/ob_1000_1002_ex.ice,0491f0cd15cbfadb7549ee1814050e37,953002174a6ecfb62101d6f7769a0fae
 ジオラマベースタイル,Diorama Base Tile,ob_1000_1003,object/map_object/ob_1000_1003.ice,object/map_object/ob_1000_1003_ex.ice,efa27ebde409471d600b5a6acf249205,1796bfdd4ab179a7720ce59573a410b9
 ,,ob_1000_1004,object/map_object/ob_1000_1004.ice,object/map_object/ob_1000_1004_ex.ice,5d239440c3b544a858120cb0e323b18b,e12c3cbd713577c87e26032827fe9f87
-,,ob_1000_1005,object/map_object/ob_1000_1005.ice,object/map_object/ob_1000_1005_ex.ice,5c19b667d67a13b41f04a53e6db7f940,
+,,ob_1000_1005,object/map_object/ob_1000_1005.ice,object/map_object/ob_1000_1005_ex.ice,,
 ,,ob_1000_1006,object/map_object/ob_1000_1006.ice,object/map_object/ob_1000_1006_ex.ice,f28ef7801d607cc4407652016521d957,bf5d105e4246db747de079333e8b62c4
 ,,ob_1000_1007,object/map_object/ob_1000_1007.ice,object/map_object/ob_1000_1007_ex.ice,9e4a0027888f3b28f608a9b28d24ce8e,
 ビクトリースタンド,Victory Stand,ob_1000_1008,object/map_object/ob_1000_1008.ice,object/map_object/ob_1000_1008_ex.ice,99daf7e2782bbc1286bd0fa5990790a1,d0696e1cc4216444fa8b8a43a7f34087
@@ -2508,9 +2508,9 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1026,object/map_object/ob_1000_1026.ice,object/map_object/ob_1000_1026_ex.ice,723c89074a3cb0a1d34fff89800b44d1,0a3d679485873c94eea040c37d66059b
 ,,ob_1000_1027,object/map_object/ob_1000_1027.ice,object/map_object/ob_1000_1027_ex.ice,26b365bd235ab066a3c6058b71a4acc5,746958336cc655ba515742e04aec47cf
 ,,ob_1000_1028,object/map_object/ob_1000_1028.ice,object/map_object/ob_1000_1028_ex.ice,f16d77833aaaa2d18a5d6557a7b878db,cff465fec6d71e9c4f71d18b8f3de12d
-,,ob_1000_1029,object/map_object/ob_1000_1029.ice,object/map_object/ob_1000_1029_ex.ice,4097fa09b35a34e67c6bed08ccd46fc7,2db4c6d9db227f1f96756714657a6086
-,,ob_1000_1030,object/map_object/ob_1000_1030.ice,object/map_object/ob_1000_1030_ex.ice,002913f568a1de9094bb1fbe798203a0,a56462554f9243f635ca6054b867613b
-,,ob_1000_1031,object/map_object/ob_1000_1031.ice,object/map_object/ob_1000_1031_ex.ice,f2278b54f816a09b05eea431ba801573,beaeba168b27066a49d0b8c7f0dff8e6
+,,ob_1000_1029,object/map_object/ob_1000_1029.ice,object/map_object/ob_1000_1029_ex.ice,,
+,,ob_1000_1030,object/map_object/ob_1000_1030.ice,object/map_object/ob_1000_1030_ex.ice,,
+,,ob_1000_1031,object/map_object/ob_1000_1031.ice,object/map_object/ob_1000_1031_ex.ice,,
 ブルー撮影ブース,Photo Booth - Blue,ob_1000_1032,object/map_object/ob_1000_1032.ice,object/map_object/ob_1000_1032_ex.ice,69a748057c48431e4e912ca43efe31f2,
 グリーン撮影ブース,Photo Booth - Green,ob_1000_1033,object/map_object/ob_1000_1033.ice,object/map_object/ob_1000_1033_ex.ice,5c3f140d29fbbf08095e75b549db1a89,91a0e60c13070249bdb071c82d18f887
 ,,ob_1000_1034,object/map_object/ob_1000_1034.ice,object/map_object/ob_1000_1034_ex.ice,991856a67ba5b0bd5c3a443611224d7b,d8e3cdb970d3f2bbf44e7e6ddadc3ebe
@@ -2518,7 +2518,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1036,object/map_object/ob_1000_1036.ice,object/map_object/ob_1000_1036_ex.ice,24652a33cd036ec572a2b6a2e4bc2609,ea40614a0e36cd1f89717560ca5f54c7
 ,,ob_1000_1037,object/map_object/ob_1000_1037.ice,object/map_object/ob_1000_1037_ex.ice,72d63d26cadc8ec93daa10b4d146571d,23825c0040e01c3e4008d7efe845f28c
 ,,ob_1000_1038,object/map_object/ob_1000_1038.ice,object/map_object/ob_1000_1038_ex.ice,d658bcd7ff778d49855b96e79c003d3d,43ead6505f37b115dd689a318a27d661
-,,ob_1000_1039,object/map_object/ob_1000_1039.ice,object/map_object/ob_1000_1039_ex.ice,576a0f28719b6d4e892bd0244ca8fa49,
+,,ob_1000_1039,object/map_object/ob_1000_1039.ice,object/map_object/ob_1000_1039_ex.ice,,
 黄金色の彫像,Golden Idol,ob_1000_1040,object/map_object/ob_1000_1040.ice,object/map_object/ob_1000_1040_ex.ice,2e0b8eb9c43c09e9a1be6f0ef5f0fbf9,b3db41750d3073ee12f2360cf89754dd
 朱色の巨大門,Great Vermilion Gate,ob_1000_1041,object/map_object/ob_1000_1041.ice,object/map_object/ob_1000_1041_ex.ice,c757571245a9a2d34a379ab2f071430f,35900b9d2fbc42311868208e5a79a4fb
 四灯天吊灯,Four Hanging Lanterns,ob_1000_1042,object/map_object/ob_1000_1042.ice,object/map_object/ob_1000_1042_ex.ice,6284f9bfbff9ede288f996e3244c58fc,c9d7516193d33526349b8a30be031aa8
@@ -2527,7 +2527,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1045,object/map_object/ob_1000_1045.ice,object/map_object/ob_1000_1045_ex.ice,cd1f1201529483f5746888e386caa31a,
 ,,ob_1000_1046,object/map_object/ob_1000_1046.ice,object/map_object/ob_1000_1046_ex.ice,cf31b25d8d583e0e23d6b313fe4fe7ab,
 ,,ob_1000_1047,object/map_object/ob_1000_1047.ice,object/map_object/ob_1000_1047_ex.ice,474b0c6ac9683508dd8eb35229d329fe,
-,,ob_1000_1048,object/map_object/ob_1000_1048.ice,object/map_object/ob_1000_1048_ex.ice,ea235a90505bfbd4ce2f7f0a6f7c0bd9,
+,,ob_1000_1048,object/map_object/ob_1000_1048.ice,object/map_object/ob_1000_1048_ex.ice,,
 ,,ob_1000_1049,object/map_object/ob_1000_1049.ice,object/map_object/ob_1000_1049_ex.ice,783ab110d0bf3c60d38cad714e606500,
 マトイポスター,Matoi Poster,ob_1000_1050,object/map_object/ob_1000_1050.ice,object/map_object/ob_1000_1050_ex.ice,cc2b06dd26b2676affa76ed668fa2008,
 ,,ob_1000_1051,object/map_object/ob_1000_1051.ice,object/map_object/ob_1000_1051_ex.ice,432f6a837b7b6c78d314cd72bda898e4,
@@ -2541,27 +2541,27 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1059,object/map_object/ob_1000_1059.ice,object/map_object/ob_1000_1059_ex.ice,bd395708ead37d91b8f1da6bad617099,
 ,,ob_1000_1060,object/map_object/ob_1000_1060.ice,object/map_object/ob_1000_1060_ex.ice,631e128ffef8fa47d3e58f29ebbc2276,
 ,,ob_1000_1061,object/map_object/ob_1000_1061.ice,object/map_object/ob_1000_1061_ex.ice,1ca37aa3157820e31ef3cf14fc1f2850,
-,,ob_1000_1062,object/map_object/ob_1000_1062.ice,object/map_object/ob_1000_1062_ex.ice,bef9b451a637dcb0067bda10d85e5205,
-,,ob_1000_1063,object/map_object/ob_1000_1063.ice,object/map_object/ob_1000_1063_ex.ice,af905958244fba53ed7ba96787fe8b69,
-,,ob_1000_1064,object/map_object/ob_1000_1064.ice,object/map_object/ob_1000_1064_ex.ice,a74374ffd9ab88b0c6531fe0aeb62767,
-,,ob_1000_1065,object/map_object/ob_1000_1065.ice,object/map_object/ob_1000_1065_ex.ice,31fe7851544097172b03c939c33b1f7e,
-,,ob_1000_1066,object/map_object/ob_1000_1066.ice,object/map_object/ob_1000_1066_ex.ice,1f0ca8cf3b276777b7d618762849bf1a,
+,,ob_1000_1062,object/map_object/ob_1000_1062.ice,object/map_object/ob_1000_1062_ex.ice,,
+,,ob_1000_1063,object/map_object/ob_1000_1063.ice,object/map_object/ob_1000_1063_ex.ice,,
+,,ob_1000_1064,object/map_object/ob_1000_1064.ice,object/map_object/ob_1000_1064_ex.ice,,
+,,ob_1000_1065,object/map_object/ob_1000_1065.ice,object/map_object/ob_1000_1065_ex.ice,,
+,,ob_1000_1066,object/map_object/ob_1000_1066.ice,object/map_object/ob_1000_1066_ex.ice,,
 ,,ob_1000_1067,object/map_object/ob_1000_1067.ice,object/map_object/ob_1000_1067_ex.ice,4f7fcd402f4f879ac590abd087b884a4,0448f674f6fd5b0ad6abccd8d78d6dbe
 ,,ob_1000_1068,object/map_object/ob_1000_1068.ice,object/map_object/ob_1000_1068_ex.ice,2e138504ab3ac734aaf29a09087f1b33,b9c5c40b1051cafed15abc8edbac4353
 ,,ob_1000_1069,object/map_object/ob_1000_1069.ice,object/map_object/ob_1000_1069_ex.ice,fc708ca242589ad6d893fbdc3f006d63,b9f4352d1abf5826b3018abf280134fe
-,,ob_1000_1070,object/map_object/ob_1000_1070.ice,object/map_object/ob_1000_1070_ex.ice,8f28baed65e8a992eb663fbc297a8c16,
+,,ob_1000_1070,object/map_object/ob_1000_1070.ice,object/map_object/ob_1000_1070_ex.ice,,
 ,,ob_1000_1071,object/map_object/ob_1000_1071.ice,object/map_object/ob_1000_1071_ex.ice,3dda30dca2b4f88e167e29ffd6d3988e,
-,,ob_1000_1072,object/map_object/ob_1000_1072.ice,object/map_object/ob_1000_1072_ex.ice,935bea57c0e569260b9e2ffb1f117854,
+,,ob_1000_1072,object/map_object/ob_1000_1072.ice,object/map_object/ob_1000_1072_ex.ice,,
 ,,ob_1000_1073,object/map_object/ob_1000_1073.ice,object/map_object/ob_1000_1073_ex.ice,a88912e4ddbe92689e746d4e070826d8,
-,,ob_1000_1074,object/map_object/ob_1000_1074.ice,object/map_object/ob_1000_1074_ex.ice,01b48afdc17319164de37a43a606a726,
-,,ob_1000_1075,object/map_object/ob_1000_1075.ice,object/map_object/ob_1000_1075_ex.ice,e8bb3dc998f55531f739d983ee9ce873,
+,,ob_1000_1074,object/map_object/ob_1000_1074.ice,object/map_object/ob_1000_1074_ex.ice,,
+,,ob_1000_1075,object/map_object/ob_1000_1075.ice,object/map_object/ob_1000_1075_ex.ice,,
 ,,ob_1000_1076,object/map_object/ob_1000_1076.ice,object/map_object/ob_1000_1076_ex.ice,a1ba34169119ccb22699445a3e04a5bd,0824fc1c501bc35c48bbd02bf7802911
 ,,ob_1000_1077,object/map_object/ob_1000_1077.ice,object/map_object/ob_1000_1077_ex.ice,7db474d7ab6d9e504584bf93f6e1cd81,d465ee5dadf9becaf50334c3d07d152d
 ,,ob_1000_1078,object/map_object/ob_1000_1078.ice,object/map_object/ob_1000_1078_ex.ice,573dafa1f68472e9c30f873ba09f560f,88cb80270adfd551fcdaf899777deaff
 ,,ob_1000_1079,object/map_object/ob_1000_1079.ice,object/map_object/ob_1000_1079_ex.ice,06101d87c43ec068c2b487b1ebe026d9,8f2c747fd475d871b3f866fda0f84586
-,,ob_1000_1080,object/map_object/ob_1000_1080.ice,object/map_object/ob_1000_1080_ex.ice,cea52d0a7f280de38d889c20668d06e6,
-,,ob_1000_1081,object/map_object/ob_1000_1081.ice,object/map_object/ob_1000_1081_ex.ice,5c3452335cbe4136a048bb28767e7020,
-,,ob_1000_1082,object/map_object/ob_1000_1082.ice,object/map_object/ob_1000_1082_ex.ice,7e24b4e89107c9ce01707fbcc336aa5d,
+,,ob_1000_1080,object/map_object/ob_1000_1080.ice,object/map_object/ob_1000_1080_ex.ice,,
+,,ob_1000_1081,object/map_object/ob_1000_1081.ice,object/map_object/ob_1000_1081_ex.ice,,
+,,ob_1000_1082,object/map_object/ob_1000_1082.ice,object/map_object/ob_1000_1082_ex.ice,,
 ,,ob_1000_1083,object/map_object/ob_1000_1083.ice,object/map_object/ob_1000_1083_ex.ice,49f1f6eec29f9afcaa750551bdb08061,
 ,,ob_1000_1084,object/map_object/ob_1000_1084.ice,object/map_object/ob_1000_1084_ex.ice,4fbd17ad40dce78f3ec814b029731f2a,
 ,,ob_1000_1085,object/map_object/ob_1000_1085.ice,object/map_object/ob_1000_1085_ex.ice,80f82d19375a4a58226fa3120e44f5d9,
@@ -2570,7 +2570,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1088,object/map_object/ob_1000_1088.ice,object/map_object/ob_1000_1088_ex.ice,2e4c0c29fc3c21f8ae29d1f956fe4648,
 ,,ob_1000_1089,object/map_object/ob_1000_1089.ice,object/map_object/ob_1000_1089_ex.ice,81a070028ef8c6670af1d698dcc2551e,
 ,,ob_1000_1090,object/map_object/ob_1000_1090.ice,object/map_object/ob_1000_1090_ex.ice,4fd46111cb36db44b499c5bdee5f8f7f,
-,,ob_1000_1091,object/map_object/ob_1000_1091.ice,object/map_object/ob_1000_1091_ex.ice,1cbfecd53cf94a210d90a55e86df801a,
+,,ob_1000_1091,object/map_object/ob_1000_1091.ice,object/map_object/ob_1000_1091_ex.ice,,
 ,,ob_1000_1092,object/map_object/ob_1000_1092.ice,object/map_object/ob_1000_1092_ex.ice,58262ba3119f901fdb5e1f031dc5d20f,
 ,,ob_1000_1093,object/map_object/ob_1000_1093.ice,object/map_object/ob_1000_1093_ex.ice,583987ac6084824f5c208a186a782ad2,
 ,,ob_1000_1094,object/map_object/ob_1000_1094.ice,object/map_object/ob_1000_1094_ex.ice,e3596720df298568aa73724a529f9a6b,
@@ -2759,15 +2759,15 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1277,object/map_object/ob_1000_1277.ice,object/map_object/ob_1000_1277_ex.ice,a3ee0505b76faedee34c1f26b44b91a6,2908aa3e4e1c0a9f337cfe445e19ace2
 あやしい実験カプセル,Suspicious Experimental Capsule,ob_1000_1278,object/map_object/ob_1000_1278.ice,object/map_object/ob_1000_1278_ex.ice,983b34ca8f8656d23db5cb4e4043d774,12360ae129b612adcb016859658a8f94
 ,,ob_1000_1279,object/map_object/ob_1000_1279.ice,object/map_object/ob_1000_1279_ex.ice,264afbad1f0901baa5e79eea57c1b151,ebf87cff95fd105c3e2658cbb7d65b54
-,,ob_1000_1280,object/map_object/ob_1000_1280.ice,object/map_object/ob_1000_1280_ex.ice,21d542247bdaf2b35fd7b14936711b3d,8388a74c3268b67a5f5479279007c2ce
+,,ob_1000_1280,object/map_object/ob_1000_1280.ice,object/map_object/ob_1000_1280_ex.ice,,
 ,,ob_1000_1281,object/map_object/ob_1000_1281.ice,object/map_object/ob_1000_1281_ex.ice,,
-,,ob_1000_1282,object/map_object/ob_1000_1282.ice,object/map_object/ob_1000_1282_ex.ice,3b37a3d019d1ffff91788c1af9597566,e573bedfbae67d28c5759e0dcf7b9b17
-,,ob_1000_1283,object/map_object/ob_1000_1283.ice,object/map_object/ob_1000_1283_ex.ice,be1c310a912c87fc5919ec370dae2995,153429d2336ad7ec11a28f1271dc6213
-,,ob_1000_1284,object/map_object/ob_1000_1284.ice,object/map_object/ob_1000_1284_ex.ice,ba8b283a36487d8b2187c3e762b40741,4d501157c1a5ee1b05380085923f7e9e
+,,ob_1000_1282,object/map_object/ob_1000_1282.ice,object/map_object/ob_1000_1282_ex.ice,,
+,,ob_1000_1283,object/map_object/ob_1000_1283.ice,object/map_object/ob_1000_1283_ex.ice,,
+,,ob_1000_1284,object/map_object/ob_1000_1284.ice,object/map_object/ob_1000_1284_ex.ice,,
 『PSO2es』：ポスター,PSO2es - Poster,ob_1000_1285,object/map_object/ob_1000_1285.ice,object/map_object/ob_1000_1285_ex.ice,3b7b4c0f80ada2340180ac40b5c2d764,
 ,,ob_1000_1286,object/map_object/ob_1000_1286.ice,object/map_object/ob_1000_1286_ex.ice,a5299304967a74fabb106b0935c0b50e,
 ,,ob_1000_1287,object/map_object/ob_1000_1287.ice,object/map_object/ob_1000_1287_ex.ice,07928e99727c4d15f99adbb2a9ec3869,
-,,ob_1000_1288,object/map_object/ob_1000_1288.ice,object/map_object/ob_1000_1288_ex.ice,36fbe196d67fd1645c80ab89fc9455da,
+,,ob_1000_1288,object/map_object/ob_1000_1288.ice,object/map_object/ob_1000_1288_ex.ice,,
 ,,ob_1000_1289,object/map_object/ob_1000_1289.ice,object/map_object/ob_1000_1289_ex.ice,2601ed3fd1c9bdf74ef1286552421457,
 ,,ob_1000_1290,object/map_object/ob_1000_1290.ice,object/map_object/ob_1000_1290_ex.ice,5b3b242ef27f4d3f2120316b29ac4dad,
 ,,ob_1000_1291,object/map_object/ob_1000_1291.ice,object/map_object/ob_1000_1291_ex.ice,ca9e00f4c23ed38494ffec1740646190,
@@ -2811,7 +2811,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1329,object/map_object/ob_1000_1329.ice,object/map_object/ob_1000_1329_ex.ice,3356192b7209be000e76f1b066cf8e2e,
 ,,ob_1000_1330,object/map_object/ob_1000_1330.ice,object/map_object/ob_1000_1330_ex.ice,ec364ffe8fca9632e7b7542801faac12,
 ,,ob_1000_1331,object/map_object/ob_1000_1331.ice,object/map_object/ob_1000_1331_ex.ice,b1550a37ac754f951e82a3b7a0d21526,
-,,ob_1000_1332,object/map_object/ob_1000_1332.ice,object/map_object/ob_1000_1332_ex.ice,616a0709286cf82902584ccf20139b57,af4a065a7aed26a7a9435567e8c44dae
+,,ob_1000_1332,object/map_object/ob_1000_1332.ice,object/map_object/ob_1000_1332_ex.ice,,
 ,,ob_1000_1333,object/map_object/ob_1000_1333.ice,object/map_object/ob_1000_1333_ex.ice,c146c8260e67c2e8cac67b71d7a7b605,da7c43fa7deb70c49e4ddfd11c2cd032
 ,,ob_1000_1334,object/map_object/ob_1000_1334.ice,object/map_object/ob_1000_1334_ex.ice,385e4766115a5063fac2809c499ad296,78ecfd3c0a827b09f766d1bad0fd8f26
 ,,ob_1000_1335,object/map_object/ob_1000_1335.ice,object/map_object/ob_1000_1335_ex.ice,ed91fe053b3343916111012ec679831d,cca51f447cb211c32e9e282576f6a2d3
@@ -2822,16 +2822,16 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1340,object/map_object/ob_1000_1340.ice,object/map_object/ob_1000_1340_ex.ice,912759d1e3d34e27f9f41f47121404e7,6dc79f3e8523753c3b2c74ceffd4786e
 ,,ob_1000_1341,object/map_object/ob_1000_1341.ice,object/map_object/ob_1000_1341_ex.ice,a9a542bbbe725c23f073d63e0d0492b4,d0381fba74486a60fc0673df48bd6efe
 ,,ob_1000_1342,object/map_object/ob_1000_1342.ice,object/map_object/ob_1000_1342_ex.ice,7715ec377221f8a697ae9affe477305f,0de816cad066d02306012820b1df13e8
-,,ob_1000_1343,object/map_object/ob_1000_1343.ice,object/map_object/ob_1000_1343_ex.ice,f3f99fd0c5b5a5ee095f22eb57189293,fd4780d70f40fe4e79c97ee8ab1ec97a
-,,ob_1000_1344,object/map_object/ob_1000_1344.ice,object/map_object/ob_1000_1344_ex.ice,75b6b7cbb8347103bc42ecac434b9f1e,
+,,ob_1000_1343,object/map_object/ob_1000_1343.ice,object/map_object/ob_1000_1343_ex.ice,,
+,,ob_1000_1344,object/map_object/ob_1000_1344.ice,object/map_object/ob_1000_1344_ex.ice,,
 ,,ob_1000_1345,object/map_object/ob_1000_1345.ice,object/map_object/ob_1000_1345_ex.ice,4cddc941486ea9c9db9ec14911b8e43c,
 ,,ob_1000_1346,object/map_object/ob_1000_1346.ice,object/map_object/ob_1000_1346_ex.ice,472ed9ccde3749cf88f170ede1c5e98d,
 ,,ob_1000_1347,object/map_object/ob_1000_1347.ice,object/map_object/ob_1000_1347_ex.ice,3b9074de165e3a7ce30ec6cefee40445,d3abb9f31b1968447b15345b3831bf5c
 ,,ob_1000_1348,object/map_object/ob_1000_1348.ice,object/map_object/ob_1000_1348_ex.ice,ee3ffa3b5640795d67b26fb4d261a508,
 ,,ob_1000_1349,object/map_object/ob_1000_1349.ice,object/map_object/ob_1000_1349_ex.ice,7c0ce38dbe622e05c2ef21891cc2a69c,
 ,,ob_1000_1350,object/map_object/ob_1000_1350.ice,object/map_object/ob_1000_1350_ex.ice,3fcd87b64f7893b72e089d5afde00079,e02e72f741b7604244cdabd8a7dfa698
-,,ob_1000_1351,object/map_object/ob_1000_1351.ice,object/map_object/ob_1000_1351_ex.ice,8943f2acec844e2d1647bb224933730d,
-,,ob_1000_1352,object/map_object/ob_1000_1352.ice,object/map_object/ob_1000_1352_ex.ice,76e691c3893db61b38544f31452e83ab,
+,,ob_1000_1351,object/map_object/ob_1000_1351.ice,object/map_object/ob_1000_1351_ex.ice,,
+,,ob_1000_1352,object/map_object/ob_1000_1352.ice,object/map_object/ob_1000_1352_ex.ice,,
 ,,ob_1000_1353,object/map_object/ob_1000_1353.ice,object/map_object/ob_1000_1353_ex.ice,ac42eb39e08f3e3d5c4febad9198abb0,
 ,,ob_1000_1354,object/map_object/ob_1000_1354.ice,object/map_object/ob_1000_1354_ex.ice,a5471bb5620f9d72436460c97100d817,
 ,,ob_1000_1355,object/map_object/ob_1000_1355.ice,object/map_object/ob_1000_1355_ex.ice,f8e7af30d0944398316439a3022975f7,
@@ -2847,7 +2847,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ユー・エムエー,U.M.A,ob_1000_1365,object/map_object/ob_1000_1365.ice,object/map_object/ob_1000_1365_ex.ice,5effb75b0d17b57dadf2c959086b401f,0b52cd3cd3ebc12215923bcbb6b0d84c
 ルーレットウィール,Roulette Wheel,ob_1000_1366,object/map_object/ob_1000_1366.ice,object/map_object/ob_1000_1366_ex.ice,8f52f0af343b3f6db9d27a538a283ebe,106c3ed802fd4482cea4d3f8663e0653
 ,,ob_1000_1367,object/map_object/ob_1000_1367.ice,object/map_object/ob_1000_1367_ex.ice,355240015aac47ae3ad0e933a52f663d,
-,,ob_1000_1368,object/map_object/ob_1000_1368.ice,object/map_object/ob_1000_1368_ex.ice,900f089223ec56fa5794229d27bdcc85,
+,,ob_1000_1368,object/map_object/ob_1000_1368.ice,object/map_object/ob_1000_1368_ex.ice,,
 ,,ob_1000_1369,object/map_object/ob_1000_1369.ice,object/map_object/ob_1000_1369_ex.ice,f59d7a77ddeefd9f5c43a4920adc7072,1663fb5a99eae38e964b04547aed0a4d
 クリスタルオブジェ,Crystal Object,ob_1000_1370,object/map_object/ob_1000_1370.ice,object/map_object/ob_1000_1370_ex.ice,10a07013b980536a0869d88562cc0b5a,7db895dcf0534012c06952244ca4929e
 クリスタルシャンデリア,Crystal Chandelier,ob_1000_1371,object/map_object/ob_1000_1371.ice,object/map_object/ob_1000_1371_ex.ice,5f4e6074a3d2e076fa196a5c95995578,25c1a7e9c4abc75fa6a2dc41eaab0849
@@ -2858,7 +2858,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1376,object/map_object/ob_1000_1376.ice,object/map_object/ob_1000_1376_ex.ice,,
 ,,ob_1000_1377,object/map_object/ob_1000_1377.ice,object/map_object/ob_1000_1377_ex.ice,,
 ,,ob_1000_1378,object/map_object/ob_1000_1378.ice,object/map_object/ob_1000_1378_ex.ice,1ad64798a4a9e5184e391f82ed509732,
-,,ob_1000_1379,object/map_object/ob_1000_1379.ice,object/map_object/ob_1000_1379_ex.ice,28d8c01a75d7d57d9ab4aed335a14456,
+,,ob_1000_1379,object/map_object/ob_1000_1379.ice,object/map_object/ob_1000_1379_ex.ice,,
 ,,ob_1000_1380,object/map_object/ob_1000_1380.ice,object/map_object/ob_1000_1380_ex.ice,65e6815fe2fd9a102e206163db935da9,
 ,,ob_1000_1381,object/map_object/ob_1000_1381.ice,object/map_object/ob_1000_1381_ex.ice,d2269b4763a0b0c0e787558920067381,
 ,,ob_1000_1382,object/map_object/ob_1000_1382.ice,object/map_object/ob_1000_1382_ex.ice,9a1afaef1899f9ce61adfd82f7d98c74,
@@ -2871,9 +2871,9 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1389,object/map_object/ob_1000_1389.ice,object/map_object/ob_1000_1389_ex.ice,d16153273320f4b711d22b7ddbd194de,
 ,,ob_1000_1390,object/map_object/ob_1000_1390.ice,object/map_object/ob_1000_1390_ex.ice,f3fdaf7fa5612a7a74df48fa6a3327d6,
 ,,ob_1000_1391,object/map_object/ob_1000_1391.ice,object/map_object/ob_1000_1391_ex.ice,2977d01538130331bc82023a0f03402b,
-,,ob_1000_1392,object/map_object/ob_1000_1392.ice,object/map_object/ob_1000_1392_ex.ice,0898ef2e66f8efcb0d8b86d76eab0797,
-,,ob_1000_1393,object/map_object/ob_1000_1393.ice,object/map_object/ob_1000_1393_ex.ice,82159500cc62193eef532e0a37028624,
-,,ob_1000_1394,object/map_object/ob_1000_1394.ice,object/map_object/ob_1000_1394_ex.ice,7b52d7ee0b82c40526dfa24f1be258a2,
+,,ob_1000_1392,object/map_object/ob_1000_1392.ice,object/map_object/ob_1000_1392_ex.ice,,
+,,ob_1000_1393,object/map_object/ob_1000_1393.ice,object/map_object/ob_1000_1393_ex.ice,,
+,,ob_1000_1394,object/map_object/ob_1000_1394.ice,object/map_object/ob_1000_1394_ex.ice,,
 ,,ob_1000_1395,object/map_object/ob_1000_1395.ice,object/map_object/ob_1000_1395_ex.ice,d8d0dbef660882da1fa119059de31dc2,
 ,,ob_1000_1396,object/map_object/ob_1000_1396.ice,object/map_object/ob_1000_1396_ex.ice,c61074a016600e998c8580289f27b430,8b69524895704950c3af8b3fc48d5f72
 オッソリアイス,Ossoria Chair,ob_1000_1397,object/map_object/ob_1000_1397.ice,object/map_object/ob_1000_1397_ex.ice,0bbf73c9d1d3c4423200c9a7b15b3808,
@@ -2892,8 +2892,8 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 トールツリー,Tall Tree,ob_1000_1410,object/map_object/ob_1000_1410.ice,object/map_object/ob_1000_1410_ex.ice,de86bda6d83c8df910951e0b84e4d8ab,
 ,,ob_1000_1411,object/map_object/ob_1000_1411.ice,object/map_object/ob_1000_1411_ex.ice,3a89089d274c1b1fd5826ba8c0121a96,
 ,,ob_1000_1412,object/map_object/ob_1000_1412.ice,object/map_object/ob_1000_1412_ex.ice,68a2794678b8831f06dd8f5308aec6d6,
-,,ob_1000_1413,object/map_object/ob_1000_1413.ice,object/map_object/ob_1000_1413_ex.ice,3f3abb865ab7912ec72256fd214c7afd,
-,,ob_1000_1414,object/map_object/ob_1000_1414.ice,object/map_object/ob_1000_1414_ex.ice,6bc53b5604f369e18a6b8722dd887cea,
+,,ob_1000_1413,object/map_object/ob_1000_1413.ice,object/map_object/ob_1000_1413_ex.ice,,
+,,ob_1000_1414,object/map_object/ob_1000_1414.ice,object/map_object/ob_1000_1414_ex.ice,,
 ,,ob_1000_1415,object/map_object/ob_1000_1415.ice,object/map_object/ob_1000_1415_ex.ice,3ff399819c063732b656023a635c605a,
 ,,ob_1000_1416,object/map_object/ob_1000_1416.ice,object/map_object/ob_1000_1416_ex.ice,6416ba284410f32a5fd02af3fffbbc99,
 ワイドツリー,Wide Tree,ob_1000_1417,object/map_object/ob_1000_1417.ice,object/map_object/ob_1000_1417_ex.ice,89d15d487d718e1b638f9d895ab5e005,
@@ -2930,7 +2930,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1448,object/map_object/ob_1000_1448.ice,object/map_object/ob_1000_1448_ex.ice,053ed5a2e8c3ece8257b0e7831183997,
 ,,ob_1000_1449,object/map_object/ob_1000_1449.ice,object/map_object/ob_1000_1449_ex.ice,4aa028a5bdae7742f33c4a306851a4b4,
 ,,ob_1000_1450,object/map_object/ob_1000_1450.ice,object/map_object/ob_1000_1450_ex.ice,,
-,,ob_1000_1451,object/map_object/ob_1000_1451.ice,object/map_object/ob_1000_1451_ex.ice,8b61616649b5711edeebd725bf35c6f1,
+,,ob_1000_1451,object/map_object/ob_1000_1451.ice,object/map_object/ob_1000_1451_ex.ice,,
 ,,ob_1000_1452,object/map_object/ob_1000_1452.ice,object/map_object/ob_1000_1452_ex.ice,5b3d7217948d3b407a61cc1ca795b0f2,
 ,,ob_1000_1453,object/map_object/ob_1000_1453.ice,object/map_object/ob_1000_1453_ex.ice,2cd3e0a4614216bdb4da84238be30530,
 ,,ob_1000_1454,object/map_object/ob_1000_1454.ice,object/map_object/ob_1000_1454_ex.ice,b1181b6f9804da7c889cb58a91a588d4,
@@ -2948,8 +2948,8 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1466,object/map_object/ob_1000_1466.ice,object/map_object/ob_1000_1466_ex.ice,e66c997adf68fa69986a7f9be241e54e,
 ,,ob_1000_1467,object/map_object/ob_1000_1467.ice,object/map_object/ob_1000_1467_ex.ice,63b206d2c002f6edfe9ce3a190a5b7ac,
 ,,ob_1000_1468,object/map_object/ob_1000_1468.ice,object/map_object/ob_1000_1468_ex.ice,77b41bbfed60aca026c4b501859611e8,
-,,ob_1000_1469,object/map_object/ob_1000_1469.ice,object/map_object/ob_1000_1469_ex.ice,e6feb77230e394ffb6e9b6bb1edcd46e,
-,,ob_1000_1470,object/map_object/ob_1000_1470.ice,object/map_object/ob_1000_1470_ex.ice,3f50b5f6f3d4e324bd9eb1198012fd44,
+,,ob_1000_1469,object/map_object/ob_1000_1469.ice,object/map_object/ob_1000_1469_ex.ice,,
+,,ob_1000_1470,object/map_object/ob_1000_1470.ice,object/map_object/ob_1000_1470_ex.ice,,
 ,,ob_1000_1471,object/map_object/ob_1000_1471.ice,object/map_object/ob_1000_1471_ex.ice,1868c05d42b90f45c09a34f4daacf07e,
 ,,ob_1000_1472,object/map_object/ob_1000_1472.ice,object/map_object/ob_1000_1472_ex.ice,55059ebe759f986087674fdc80670800,
 ,,ob_1000_1473,object/map_object/ob_1000_1473.ice,object/map_object/ob_1000_1473_ex.ice,124d403c2532ce956ed859007f88acb9,
@@ -3016,7 +3016,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1534,object/map_object/ob_1000_1534.ice,object/map_object/ob_1000_1534_ex.ice,,
 ,,ob_1000_1535,object/map_object/ob_1000_1535.ice,object/map_object/ob_1000_1535_ex.ice,,
 ,,ob_1000_1536,object/map_object/ob_1000_1536.ice,object/map_object/ob_1000_1536_ex.ice,5de998750bf7037d9a2062424eb14649,
-,,ob_1000_1537,object/map_object/ob_1000_1537.ice,object/map_object/ob_1000_1537_ex.ice,4cd12094a0da9b92822ddb84513715aa,
+,,ob_1000_1537,object/map_object/ob_1000_1537.ice,object/map_object/ob_1000_1537_ex.ice,,
 ,,ob_1000_1538,object/map_object/ob_1000_1538.ice,object/map_object/ob_1000_1538_ex.ice,,
 ,,ob_1000_1539,object/map_object/ob_1000_1539.ice,object/map_object/ob_1000_1539_ex.ice,9d418c6f7f2701468c5ff89d01eaf695,
 ,,ob_1000_1540,object/map_object/ob_1000_1540.ice,object/map_object/ob_1000_1540_ex.ice,274ebcdb2ef8d9f1cf646d097b2aac12,
@@ -3029,18 +3029,18 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1547,object/map_object/ob_1000_1547.ice,object/map_object/ob_1000_1547_ex.ice,eb2f487591802d0a0cf330e18f2fc687,
 ,,ob_1000_1548,object/map_object/ob_1000_1548.ice,object/map_object/ob_1000_1548_ex.ice,c9fb1a9f47dac0050ae48341d430e1ac,
 ,,ob_1000_1549,object/map_object/ob_1000_1549.ice,object/map_object/ob_1000_1549_ex.ice,006a8331381129bf4b3226f90e951df7,
-,,ob_1000_1550,object/map_object/ob_1000_1550.ice,object/map_object/ob_1000_1550_ex.ice,a5dffd4b90d8a6c9d1a66ab646c18af9,
-,,ob_1000_1551,object/map_object/ob_1000_1551.ice,object/map_object/ob_1000_1551_ex.ice,b2a6a76dd22e07ef948c7be48356e6b5,
-,,ob_1000_1552,object/map_object/ob_1000_1552.ice,object/map_object/ob_1000_1552_ex.ice,52fbd23ce4367189a4e5d1e089437719,
-,,ob_1000_1553,object/map_object/ob_1000_1553.ice,object/map_object/ob_1000_1553_ex.ice,7654fc0f14fc67224998248e57c877ab,
-,,ob_1000_1554,object/map_object/ob_1000_1554.ice,object/map_object/ob_1000_1554_ex.ice,a1890e9b9c75561410c26904b7522be6,
-,,ob_1000_1555,object/map_object/ob_1000_1555.ice,object/map_object/ob_1000_1555_ex.ice,054168f541c9849c2a7932f1c5a0edca,
-,,ob_1000_1556,object/map_object/ob_1000_1556.ice,object/map_object/ob_1000_1556_ex.ice,b6a83bc448bf84bd08268c5cc190457a,
-,,ob_1000_1557,object/map_object/ob_1000_1557.ice,object/map_object/ob_1000_1557_ex.ice,82d1bfef02b761e0181aeb2090f5560b,
-,,ob_1000_1558,object/map_object/ob_1000_1558.ice,object/map_object/ob_1000_1558_ex.ice,33c58bfaecf4e5ff033db0d83672e4f4,
-,,ob_1000_1559,object/map_object/ob_1000_1559.ice,object/map_object/ob_1000_1559_ex.ice,a244709585501ba6ff97581a60593f31,
-,,ob_1000_1560,object/map_object/ob_1000_1560.ice,object/map_object/ob_1000_1560_ex.ice,549b484ca19a525b5f46e5616a171e9e,
-,,ob_1000_1561,object/map_object/ob_1000_1561.ice,object/map_object/ob_1000_1561_ex.ice,888f1ec72c1c7a868564e0b005bfb6eb,
+,,ob_1000_1550,object/map_object/ob_1000_1550.ice,object/map_object/ob_1000_1550_ex.ice,,
+,,ob_1000_1551,object/map_object/ob_1000_1551.ice,object/map_object/ob_1000_1551_ex.ice,,
+,,ob_1000_1552,object/map_object/ob_1000_1552.ice,object/map_object/ob_1000_1552_ex.ice,,
+,,ob_1000_1553,object/map_object/ob_1000_1553.ice,object/map_object/ob_1000_1553_ex.ice,,
+,,ob_1000_1554,object/map_object/ob_1000_1554.ice,object/map_object/ob_1000_1554_ex.ice,,
+,,ob_1000_1555,object/map_object/ob_1000_1555.ice,object/map_object/ob_1000_1555_ex.ice,,
+,,ob_1000_1556,object/map_object/ob_1000_1556.ice,object/map_object/ob_1000_1556_ex.ice,,
+,,ob_1000_1557,object/map_object/ob_1000_1557.ice,object/map_object/ob_1000_1557_ex.ice,,
+,,ob_1000_1558,object/map_object/ob_1000_1558.ice,object/map_object/ob_1000_1558_ex.ice,,
+,,ob_1000_1559,object/map_object/ob_1000_1559.ice,object/map_object/ob_1000_1559_ex.ice,,
+,,ob_1000_1560,object/map_object/ob_1000_1560.ice,object/map_object/ob_1000_1560_ex.ice,,
+,,ob_1000_1561,object/map_object/ob_1000_1561.ice,object/map_object/ob_1000_1561_ex.ice,,
 ,,ob_1000_1562,object/map_object/ob_1000_1562.ice,object/map_object/ob_1000_1562_ex.ice,f65db5af06b4f7b50e51f7e1f96c10ee,
 ,,ob_1000_1563,object/map_object/ob_1000_1563.ice,object/map_object/ob_1000_1563_ex.ice,dabd922bf94ae0b2b81fe0fcd1d5d97a,
 ,,ob_1000_1564,object/map_object/ob_1000_1564.ice,object/map_object/ob_1000_1564_ex.ice,30360d5131935e305a35749ab8518ec4,
@@ -3057,30 +3057,30 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1575,object/map_object/ob_1000_1575.ice,object/map_object/ob_1000_1575_ex.ice,2c38e3ea3a4c29784705d8a8b0081372,
 ,,ob_1000_1576,object/map_object/ob_1000_1576.ice,object/map_object/ob_1000_1576_ex.ice,833134a73a4ee000f762fa9eaf858d1e,
 ,,ob_1000_1577,object/map_object/ob_1000_1577.ice,object/map_object/ob_1000_1577_ex.ice,15ebd38df95dfe6c263939df1eade54b,
-,,ob_1000_1578,object/map_object/ob_1000_1578.ice,object/map_object/ob_1000_1578_ex.ice,40f70af7ca1cd99e0f702d119b646ad4,
+マザーズチェアー,Mother's Chair,ob_1000_1578,object/map_object/ob_1000_1578.ice,object/map_object/ob_1000_1578_ex.ice,40f70af7ca1cd99e0f702d119b646ad4,
 ,,ob_1000_1579,object/map_object/ob_1000_1579.ice,object/map_object/ob_1000_1579_ex.ice,36ce8d994e8228d48eba7e3b1697d08f,
-,,ob_1000_1580,object/map_object/ob_1000_1580.ice,object/map_object/ob_1000_1580_ex.ice,c16893acf0b93f106963a9d5c4b9546c,
-,,ob_1000_1581,object/map_object/ob_1000_1581.ice,object/map_object/ob_1000_1581_ex.ice,986bc1e4129959ef6751628d02025b8f,
-,,ob_1000_1582,object/map_object/ob_1000_1582.ice,object/map_object/ob_1000_1582_ex.ice,3a7521f77fe0442e079970ab9b06aeee,
-,,ob_1000_1583,object/map_object/ob_1000_1583.ice,object/map_object/ob_1000_1583_ex.ice,15adb15a7af8a509f0e0b91c6f9a57db,
-,,ob_1000_1584,object/map_object/ob_1000_1584.ice,object/map_object/ob_1000_1584_ex.ice,8380e6a9e5ce836d85a424538d503aa4,
-,,ob_1000_1585,object/map_object/ob_1000_1585.ice,object/map_object/ob_1000_1585_ex.ice,2cc9b7b1f145505d88e4fa43fc7e3431,
+,,ob_1000_1580,object/map_object/ob_1000_1580.ice,object/map_object/ob_1000_1580_ex.ice,,
+,,ob_1000_1581,object/map_object/ob_1000_1581.ice,object/map_object/ob_1000_1581_ex.ice,,
+,,ob_1000_1582,object/map_object/ob_1000_1582.ice,object/map_object/ob_1000_1582_ex.ice,,
+,,ob_1000_1583,object/map_object/ob_1000_1583.ice,object/map_object/ob_1000_1583_ex.ice,,
+,,ob_1000_1584,object/map_object/ob_1000_1584.ice,object/map_object/ob_1000_1584_ex.ice,,
+,,ob_1000_1585,object/map_object/ob_1000_1585.ice,object/map_object/ob_1000_1585_ex.ice,,
 リリーパライト,Lillipan Lamp,ob_1000_1586,object/map_object/ob_1000_1586.ice,object/map_object/ob_1000_1586_ex.ice,58ad0a1b8deeb104f70483ee9cd617fb,971ca020e08ec78429d68f37fbd245cd
-,,ob_1000_1587,object/map_object/ob_1000_1587.ice,object/map_object/ob_1000_1587_ex.ice,e8ff27fd35e5bd7c0c6f466d2580e6b3,
-,,ob_1000_1588,object/map_object/ob_1000_1588.ice,object/map_object/ob_1000_1588_ex.ice,dbdcc64235a13655741d7be46235a116,
-,,ob_1000_1589,object/map_object/ob_1000_1589.ice,object/map_object/ob_1000_1589_ex.ice,99ad7804afbf9194dcd364ac6db4473a,
-,,ob_1000_1590,object/map_object/ob_1000_1590.ice,object/map_object/ob_1000_1590_ex.ice,fab3042c99661695f58ef5a25694e010,bfcca1e220955bb3976d005771a79304
-,,ob_1000_1591,object/map_object/ob_1000_1591.ice,object/map_object/ob_1000_1591_ex.ice,25aa287a1e740a7692e71cd3642da074,69b5d4cf932b71b92ae76dfcee82f360
-,,ob_1000_1592,object/map_object/ob_1000_1592.ice,object/map_object/ob_1000_1592_ex.ice,3d8de290ae89a652a9a3339f6def7d0c,7754bd7dd057e734f74285cba84aa0bc
-,,ob_1000_1593,object/map_object/ob_1000_1593.ice,object/map_object/ob_1000_1593_ex.ice,4387cbadfc13baf5d755d700676cc0a1,2e6c8e139bdcfe98035fa5dd84b640e6
+,,ob_1000_1587,object/map_object/ob_1000_1587.ice,object/map_object/ob_1000_1587_ex.ice,,
+,,ob_1000_1588,object/map_object/ob_1000_1588.ice,object/map_object/ob_1000_1588_ex.ice,,
+,,ob_1000_1589,object/map_object/ob_1000_1589.ice,object/map_object/ob_1000_1589_ex.ice,,
+,,ob_1000_1590,object/map_object/ob_1000_1590.ice,object/map_object/ob_1000_1590_ex.ice,,
+,,ob_1000_1591,object/map_object/ob_1000_1591.ice,object/map_object/ob_1000_1591_ex.ice,,
+,,ob_1000_1592,object/map_object/ob_1000_1592.ice,object/map_object/ob_1000_1592_ex.ice,,
+,,ob_1000_1593,object/map_object/ob_1000_1593.ice,object/map_object/ob_1000_1593_ex.ice,,
 新年祭2018マット,New Year's 2018 Mat,ob_1000_1594,object/map_object/ob_1000_1594.ice,object/map_object/ob_1000_1594_ex.ice,6a8b3ad6d7be19df2e2360be0501ba09,
-,,ob_1000_1595,object/map_object/ob_1000_1595.ice,object/map_object/ob_1000_1595_ex.ice,d5676324e6f0789f93c4c7354c99014f,
-,,ob_1000_1596,object/map_object/ob_1000_1596.ice,object/map_object/ob_1000_1596_ex.ice,ef66ffcfb25b333fbd9054c68b021f52,
-,,ob_1000_1597,object/map_object/ob_1000_1597.ice,object/map_object/ob_1000_1597_ex.ice,0dfceb444e87fece73be482ae4c55f8a,
-,,ob_1000_1598,object/map_object/ob_1000_1598.ice,object/map_object/ob_1000_1598_ex.ice,2d91d81ea666ded11537676d0beffd33,
-,,ob_1000_1599,object/map_object/ob_1000_1599.ice,object/map_object/ob_1000_1599_ex.ice,7e9f955141212fae205f9f03115e6f6b,
-,,ob_1000_1600,object/map_object/ob_1000_1600.ice,object/map_object/ob_1000_1600_ex.ice,731588096b4c3d6f0d694845ce8a6930,
-,,ob_1000_1601,object/map_object/ob_1000_1601.ice,object/map_object/ob_1000_1601_ex.ice,19568bafddbbcfd04bb1197e7d34c6e4,
+,,ob_1000_1595,object/map_object/ob_1000_1595.ice,object/map_object/ob_1000_1595_ex.ice,,
+,,ob_1000_1596,object/map_object/ob_1000_1596.ice,object/map_object/ob_1000_1596_ex.ice,,
+,,ob_1000_1597,object/map_object/ob_1000_1597.ice,object/map_object/ob_1000_1597_ex.ice,,
+,,ob_1000_1598,object/map_object/ob_1000_1598.ice,object/map_object/ob_1000_1598_ex.ice,,
+,,ob_1000_1599,object/map_object/ob_1000_1599.ice,object/map_object/ob_1000_1599_ex.ice,,
+,,ob_1000_1600,object/map_object/ob_1000_1600.ice,object/map_object/ob_1000_1600_ex.ice,,
+,,ob_1000_1601,object/map_object/ob_1000_1601.ice,object/map_object/ob_1000_1601_ex.ice,,
 ,,ob_1000_1602,object/map_object/ob_1000_1602.ice,object/map_object/ob_1000_1602_ex.ice,4c5751eb3a37e1201ac7e1386b191652,
 ジェネポスター,Gené Poster,ob_1000_1603,object/map_object/ob_1000_1603.ice,object/map_object/ob_1000_1603_ex.ice,da2e39fe22b1163a902020a754d419a9,
 デュナポスター,Duna Poster,ob_1000_1604,object/map_object/ob_1000_1604.ice,object/map_object/ob_1000_1604_ex.ice,62143ca7f39d8ec9c6027336574fea08,
@@ -3090,7 +3090,7 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 オメガフクロウ,Omega Owl,ob_1000_1608,object/map_object/ob_1000_1608.ice,object/map_object/ob_1000_1608_ex.ice,b78c72f84ebb8f60f43fa8875d2cd5d0,
 オメガコウモリ,Omega Bat,ob_1000_1609,object/map_object/ob_1000_1609.ice,object/map_object/ob_1000_1609_ex.ice,6c19a64ca31434c99bfac93b80af2b26,
 オメガモノリス,Omega Monolith,ob_1000_1610,object/map_object/ob_1000_1610.ice,object/map_object/ob_1000_1610_ex.ice,beb5ed4d73fc0c4a202afc27b7071cec,
-,,ob_1000_1611,object/map_object/ob_1000_1611.ice,object/map_object/ob_1000_1611_ex.ice,0a5d3cfa786068f23669850a463d4f13,
+,,ob_1000_1611,object/map_object/ob_1000_1611.ice,object/map_object/ob_1000_1611_ex.ice,,
 ,,ob_1000_1612,object/map_object/ob_1000_1612.ice,object/map_object/ob_1000_1612_ex.ice,,
 ,,ob_1000_1613,object/map_object/ob_1000_1613.ice,object/map_object/ob_1000_1613_ex.ice,,
 ,,ob_1000_1614,object/map_object/ob_1000_1614.ice,object/map_object/ob_1000_1614_ex.ice,4a07e6d3e5a0141f18b76f3cc22ce21b,
@@ -3118,9 +3118,9 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1636,object/map_object/ob_1000_1636.ice,object/map_object/ob_1000_1636_ex.ice,8601a8b6203dc21326ba5ce2846de0a0,
 ,,ob_1000_1637,object/map_object/ob_1000_1637.ice,object/map_object/ob_1000_1637_ex.ice,a03f757729b257cc907532deb8660888,
 ハリエットパネル,Hariette Panel,ob_1000_1638,object/map_object/ob_1000_1638.ice,object/map_object/ob_1000_1638_ex.ice,bd535826ccae5445582214567daa847c,
-,,ob_1000_1639,object/map_object/ob_1000_1639.ice,object/map_object/ob_1000_1639_ex.ice,0de2ad5b66c2557c2d0c36cb996caddd,
-,,ob_1000_1640,object/map_object/ob_1000_1640.ice,object/map_object/ob_1000_1640_ex.ice,b9d7fd0415ad6a55323f0c25070592b7,
-,,ob_1000_1641,object/map_object/ob_1000_1641.ice,object/map_object/ob_1000_1641_ex.ice,1ced1b5fe44f38b8aa38a0ea10ff1868,
+,,ob_1000_1639,object/map_object/ob_1000_1639.ice,object/map_object/ob_1000_1639_ex.ice,,
+,,ob_1000_1640,object/map_object/ob_1000_1640.ice,object/map_object/ob_1000_1640_ex.ice,,
+,,ob_1000_1641,object/map_object/ob_1000_1641.ice,object/map_object/ob_1000_1641_ex.ice,,
 ,,ob_1000_1642,object/map_object/ob_1000_1642.ice,object/map_object/ob_1000_1642_ex.ice,d5517b24d5f7983e5189a049c0568c83,
 ,,ob_1000_1643,object/map_object/ob_1000_1643.ice,object/map_object/ob_1000_1643_ex.ice,1c13ae0718d66c47ea876631dece5a76,
 ,,ob_1000_1644,object/map_object/ob_1000_1644.ice,object/map_object/ob_1000_1644_ex.ice,,
@@ -3146,10 +3146,10 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1664,object/map_object/ob_1000_1664.ice,object/map_object/ob_1000_1664_ex.ice,034f73aa81a26fb2cc5aecf6ec2aa235,
 ,,ob_1000_1665,object/map_object/ob_1000_1665.ice,object/map_object/ob_1000_1665_ex.ice,dea1c9200fc94324d5ac2e904a536ca9,
 ,,ob_1000_1666,object/map_object/ob_1000_1666.ice,object/map_object/ob_1000_1666_ex.ice,b6cae7c741c56a3d401b65aaf13d0a24,
-,,ob_1000_1667,object/map_object/ob_1000_1667.ice,object/map_object/ob_1000_1667_ex.ice,79f31319dbc9a0fc74138415a121119a,
-,,ob_1000_1668,object/map_object/ob_1000_1668.ice,object/map_object/ob_1000_1668_ex.ice,81cc60a35bf9f6317ba30181599ec242,
-,,ob_1000_1669,object/map_object/ob_1000_1669.ice,object/map_object/ob_1000_1669_ex.ice,00d0ab97c421f654d8e6198be69b8297,
-,,ob_1000_1670,object/map_object/ob_1000_1670.ice,object/map_object/ob_1000_1670_ex.ice,58a79b6fa44773c6bf029adf352d9946,
+,,ob_1000_1667,object/map_object/ob_1000_1667.ice,object/map_object/ob_1000_1667_ex.ice,,
+,,ob_1000_1668,object/map_object/ob_1000_1668.ice,object/map_object/ob_1000_1668_ex.ice,,
+,,ob_1000_1669,object/map_object/ob_1000_1669.ice,object/map_object/ob_1000_1669_ex.ice,,
+,,ob_1000_1670,object/map_object/ob_1000_1670.ice,object/map_object/ob_1000_1670_ex.ice,,
 イドラ：ポスター,Idola - Poster,ob_1000_1671,object/map_object/ob_1000_1671.ice,object/map_object/ob_1000_1671_ex.ice,fc8e7c1b13d183ffd94d6f6e8daf3d3a,
 ジュースサーバー,Juice Dispenser,ob_1000_1672,object/map_object/ob_1000_1672.ice,object/map_object/ob_1000_1672_ex.ice,7ea64417bf0aba25a945c05b9985a54b,e565e00a4ebb8d0572005dda73352b65
 ラージシャーベット,Large Sherbet,ob_1000_1673,object/map_object/ob_1000_1673.ice,object/map_object/ob_1000_1673_ex.ice,4a5f344335030d0b709ae1d919ff3317,3b9ce601f7ab4329d7fee6c9dcc52e7b
@@ -3161,10 +3161,10 @@ SEGAロゴ,SEGA Logo,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_
 ,,ob_1000_1679,object/map_object/ob_1000_1679.ice,object/map_object/ob_1000_1679_ex.ice,22029256276dcbc32a1ef3d6ab9f6d63,
 ,,ob_1000_1680,object/map_object/ob_1000_1680.ice,object/map_object/ob_1000_1680_ex.ice,fb34b9c94110d9e04d7afd9ba4c7cc7b,
 ,,ob_1000_1681,object/map_object/ob_1000_1681.ice,object/map_object/ob_1000_1681_ex.ice,304a0f9b038561aa58b2e1db107ec1c2,
-,,ob_1000_1682,object/map_object/ob_1000_1682.ice,object/map_object/ob_1000_1682_ex.ice,6ec47fe6661ce45a45e85d420ecd7b4d,
-,,ob_1000_1683,object/map_object/ob_1000_1683.ice,object/map_object/ob_1000_1683_ex.ice,f6aec056a0fe36be59a46b6239dd31a3,
+,,ob_1000_1682,object/map_object/ob_1000_1682.ice,object/map_object/ob_1000_1682_ex.ice,,
+,,ob_1000_1683,object/map_object/ob_1000_1683.ice,object/map_object/ob_1000_1683_ex.ice,,
 ,,ob_1000_1684,object/map_object/ob_1000_1684.ice,object/map_object/ob_1000_1684_ex.ice,894dcd7f1ef594331cf56b9b77b2f596,
-,,ob_1000_1685,object/map_object/ob_1000_1685.ice,object/map_object/ob_1000_1685_ex.ice,2170ca34397b4b55ccc1accb227023c9,
+,,ob_1000_1685,object/map_object/ob_1000_1685.ice,object/map_object/ob_1000_1685_ex.ice,,
 ,,ob_1000_1686,object/map_object/ob_1000_1686.ice,object/map_object/ob_1000_1686_ex.ice,029aa46ca3923a6e8b2c96aa7d3398c4,
 ,,ob_1000_1687,object/map_object/ob_1000_1687.ice,object/map_object/ob_1000_1687_ex.ice,84ea6799af5ba01f60c4f7d4c8b76f97,
 ,,ob_1000_1688,object/map_object/ob_1000_1688.ice,object/map_object/ob_1000_1688_ex.ice,63e273de78b8952998fbf02f50be2405,
@@ -3211,11 +3211,11 @@ PSO2 TCGマットB,PSO2 Trading Card Game Mat B,ob_1000_1719,object/map_object/o
 ,,ob_1000_1729,object/map_object/ob_1000_1729.ice,object/map_object/ob_1000_1729_ex.ice,ce34ebf507e1834852ed2b6fae142321,
 ,,ob_1000_1730,object/map_object/ob_1000_1730.ice,object/map_object/ob_1000_1730_ex.ice,ad5696c84eb3c82abcb7eef6186a4fb0,
 ,,ob_1000_1731,object/map_object/ob_1000_1731.ice,object/map_object/ob_1000_1731_ex.ice,40a64650ba8c727967e15e51c3e8b50d,
-,,ob_1000_1732,object/map_object/ob_1000_1732.ice,object/map_object/ob_1000_1732_ex.ice,faf7e853f22bddf968356700591c3b68,
-,,ob_1000_1733,object/map_object/ob_1000_1733.ice,object/map_object/ob_1000_1733_ex.ice,4ba86213dbc49930d8176b92dee8af39,
+,,ob_1000_1732,object/map_object/ob_1000_1732.ice,object/map_object/ob_1000_1732_ex.ice,,
+,,ob_1000_1733,object/map_object/ob_1000_1733.ice,object/map_object/ob_1000_1733_ex.ice,,
 ,,ob_1000_1734,object/map_object/ob_1000_1734.ice,object/map_object/ob_1000_1734_ex.ice,d07034c488ff1bfd601d9505a79d4972,
-,,ob_1000_1735,object/map_object/ob_1000_1735.ice,object/map_object/ob_1000_1735_ex.ice,dd7782b588fef1bd4dfc35e77b92837e,
-,,ob_1000_1736,object/map_object/ob_1000_1736.ice,object/map_object/ob_1000_1736_ex.ice,5c0d9c020d10acff92c64e6acde88fc1,
+,,ob_1000_1735,object/map_object/ob_1000_1735.ice,object/map_object/ob_1000_1735_ex.ice,,
+,,ob_1000_1736,object/map_object/ob_1000_1736.ice,object/map_object/ob_1000_1736_ex.ice,,
 ,,ob_1000_1737,object/map_object/ob_1000_1737.ice,object/map_object/ob_1000_1737_ex.ice,cbedd837efcdb90b9f5ed60dfb1bdad5,
 『PSO2es』：ポスターC,PSO2es - Poster C,ob_1000_1738,object/map_object/ob_1000_1738.ice,object/map_object/ob_1000_1738_ex.ice,b99a362ff18b542d25180af99b5fa4ed,
 アフタルポスター,Aphtal Poster,ob_1000_1739,object/map_object/ob_1000_1739.ice,object/map_object/ob_1000_1739_ex.ice,3bfde34dde43303db667714560b9281f,
@@ -3226,21 +3226,21 @@ Vラッピートロフィー,V Rappy Trophy,ob_1000_1742,object/map_object/ob_10
 ,,ob_1000_1744,object/map_object/ob_1000_1744.ice,object/map_object/ob_1000_1744_ex.ice,95bae7e3ed10dc51e1315e102f0303ed,
 ,,ob_1000_1745,object/map_object/ob_1000_1745.ice,object/map_object/ob_1000_1745_ex.ice,d6f8143fee3b7e93334026f2a967f6ca,
 ,,ob_1000_1746,object/map_object/ob_1000_1746.ice,object/map_object/ob_1000_1746_ex.ice,e33fd31f67c27d69f02e875809cce673,
-,,ob_1000_1747,object/map_object/ob_1000_1747.ice,object/map_object/ob_1000_1747_ex.ice,bfaea140efd90393c74ad960573206d7,
-,,ob_1000_1748,object/map_object/ob_1000_1748.ice,object/map_object/ob_1000_1748_ex.ice,3b9d041e434378049606c3d076e6b68c,
+,,ob_1000_1747,object/map_object/ob_1000_1747.ice,object/map_object/ob_1000_1747_ex.ice,,
+,,ob_1000_1748,object/map_object/ob_1000_1748.ice,object/map_object/ob_1000_1748_ex.ice,,
 ,,ob_1000_1749,object/map_object/ob_1000_1749.ice,object/map_object/ob_1000_1749_ex.ice,7576e4682b386e204c6d505714dd816d,
 『PSO2』設定資料集表紙ポスターD,PSO2 Design DoBP - Poster D,ob_1000_1750,object/map_object/ob_1000_1750.ice,object/map_object/ob_1000_1750_ex.ice,10e1e2ca090faaaf7d120166c91c822a,
 ,,ob_1000_1751,object/map_object/ob_1000_1751.ice,object/map_object/ob_1000_1751_ex.ice,,
 アリサパネル,Alis Panel,ob_1000_1752,object/map_object/ob_1000_1752.ice,object/map_object/ob_1000_1752_ex.ice,6c39364373f44429a080e0b9dab9ac27,
-,,ob_1000_1753,object/map_object/ob_1000_1753.ice,object/map_object/ob_1000_1753_ex.ice,5b3d048d841093b443f56c0ca4ce3321,
-,,ob_1000_1754,object/map_object/ob_1000_1754.ice,object/map_object/ob_1000_1754_ex.ice,f294b9175a2fde914c5b4c3ae633c2e5,
-,,ob_1000_1755,object/map_object/ob_1000_1755.ice,object/map_object/ob_1000_1755_ex.ice,3904403f65159c3119d8233895396216,
+,,ob_1000_1753,object/map_object/ob_1000_1753.ice,object/map_object/ob_1000_1753_ex.ice,,
+,,ob_1000_1754,object/map_object/ob_1000_1754.ice,object/map_object/ob_1000_1754_ex.ice,,
+,,ob_1000_1755,object/map_object/ob_1000_1755.ice,object/map_object/ob_1000_1755_ex.ice,,
 ,,ob_1000_1756,object/map_object/ob_1000_1756.ice,object/map_object/ob_1000_1756_ex.ice,bcc1e06fbc9b5fefee7be829cb56dced,
 ,,ob_1000_1757,object/map_object/ob_1000_1757.ice,object/map_object/ob_1000_1757_ex.ice,92c4ff6ec268e448b96f086b60cb3a00,
 ,,ob_1000_1758,object/map_object/ob_1000_1758.ice,object/map_object/ob_1000_1758_ex.ice,ef42cde1a726d4cb03ec0cdcff68c23d,
 ,,ob_1000_1759,object/map_object/ob_1000_1759.ice,object/map_object/ob_1000_1759_ex.ice,3bd4cf448218c80704a8814a803e73f1,
-,,ob_1000_1760,object/map_object/ob_1000_1760.ice,object/map_object/ob_1000_1760_ex.ice,186cf84fe5689c11dbc499181959aad3,
-,,ob_1000_1761,object/map_object/ob_1000_1761.ice,object/map_object/ob_1000_1761_ex.ice,65ab162db4a2d11e11373a25b17c20aa,
+,,ob_1000_1760,object/map_object/ob_1000_1760.ice,object/map_object/ob_1000_1760_ex.ice,,
+,,ob_1000_1761,object/map_object/ob_1000_1761.ice,object/map_object/ob_1000_1761_ex.ice,,
 ,,ob_1000_1762,object/map_object/ob_1000_1762.ice,object/map_object/ob_1000_1762_ex.ice,916e12b9ce5171ac0009902c7049550c,
 ,,ob_1000_1763,object/map_object/ob_1000_1763.ice,object/map_object/ob_1000_1763_ex.ice,5226a85e761635ad2eee003645253ba8,
 ,,ob_1000_1764,object/map_object/ob_1000_1764.ice,object/map_object/ob_1000_1764_ex.ice,97f925018264f5eb4b6f3e0e5aafe3ae,
@@ -3251,8 +3251,8 @@ Vラッピートロフィー,V Rappy Trophy,ob_1000_1742,object/map_object/ob_10
 ,,ob_1000_1769,object/map_object/ob_1000_1769.ice,object/map_object/ob_1000_1769_ex.ice,d8fa554b108314c89a59fd6278f8a434,
 ,,ob_1000_1770,object/map_object/ob_1000_1770.ice,object/map_object/ob_1000_1770_ex.ice,a6c8b82b5920669d36ea5bd36374ca18,
 ,,ob_1000_1771,object/map_object/ob_1000_1771.ice,object/map_object/ob_1000_1771_ex.ice,0e5f27ece79713afd3a04c0f05b3d241,
-,,ob_1000_1772,object/map_object/ob_1000_1772.ice,object/map_object/ob_1000_1772_ex.ice,1053e7e5617210de3d119a24c44cbec0,
-,,ob_1000_1773,object/map_object/ob_1000_1773.ice,object/map_object/ob_1000_1773_ex.ice,950b44c76fb4ec02c0b699c5231d1cc0,
+,,ob_1000_1772,object/map_object/ob_1000_1772.ice,object/map_object/ob_1000_1772_ex.ice,,
+,,ob_1000_1773,object/map_object/ob_1000_1773.ice,object/map_object/ob_1000_1773_ex.ice,,
 ,,ob_1000_1774,object/map_object/ob_1000_1774.ice,object/map_object/ob_1000_1774_ex.ice,9ed189f406f72aa70439d2a68c62e2ae,
 ,,ob_1000_1775,object/map_object/ob_1000_1775.ice,object/map_object/ob_1000_1775_ex.ice,518ec46461670c9128e2f24217d74fe9,
 ,,ob_1000_1776,object/map_object/ob_1000_1776.ice,object/map_object/ob_1000_1776_ex.ice,803cd453ea12319bd1df59547f96b14e,
@@ -3263,8 +3263,8 @@ Vラッピートロフィー,V Rappy Trophy,ob_1000_1742,object/map_object/ob_10
 ,,ob_1000_1781,object/map_object/ob_1000_1781.ice,object/map_object/ob_1000_1781_ex.ice,30f871313495cdf9d1fe765cc08ad207,fa7acc402e106aca5fdf357aef9c5bb7
 マルガレータの胸像,Margareta Portrait,ob_1000_1782,object/map_object/ob_1000_1782.ice,object/map_object/ob_1000_1782_ex.ice,3c8d64cefd5caddc82a6c0f7d4b09b52,
 ルーサーの胸像,Luther Portrait,ob_1000_1783,object/map_object/ob_1000_1783.ice,object/map_object/ob_1000_1783_ex.ice,49cb7eb138716a05194a34fd34150b92,
-,,ob_1000_1784,object/map_object/ob_1000_1784.ice,object/map_object/ob_1000_1784_ex.ice,c86aee8a896a6f170c6ba9a5c236f75a,
-,,ob_1000_1785,object/map_object/ob_1000_1785.ice,object/map_object/ob_1000_1785_ex.ice,bd15620095bdeb4fa25cbc136bf97d9e,
+,,ob_1000_1784,object/map_object/ob_1000_1784.ice,object/map_object/ob_1000_1784_ex.ice,,
+,,ob_1000_1785,object/map_object/ob_1000_1785.ice,object/map_object/ob_1000_1785_ex.ice,,
 イドラ：ポスターC,Idola - Poster C,ob_1000_1786,object/map_object/ob_1000_1786.ice,object/map_object/ob_1000_1786_ex.ice,ddc28903d5684e5530d25e09e2199247,
 イドラ：ソウルシンボルポスター,Idola - Soul Symbol Poster,ob_1000_1787,object/map_object/ob_1000_1787.ice,object/map_object/ob_1000_1787_ex.ice,8e847434d5d00f15ec2dd4f7158ff293,
 イドラ：ソウルシンボルポスターB,Idola - Soul Symbol Poster B,ob_1000_1788,object/map_object/ob_1000_1788.ice,object/map_object/ob_1000_1788_ex.ice,0c8157f047eeb3db96f7288317e2883a,
@@ -3290,10 +3290,10 @@ Vラッピートロフィー,V Rappy Trophy,ob_1000_1742,object/map_object/ob_10
 ,,ob_1000_1808,object/map_object/ob_1000_1808.ice,object/map_object/ob_1000_1808_ex.ice,053313615d44bb2f69013167e5fb905a,
 ,,ob_1000_1809,object/map_object/ob_1000_1809.ice,object/map_object/ob_1000_1809_ex.ice,,
 ,,ob_1000_1810,object/map_object/ob_1000_1810.ice,object/map_object/ob_1000_1810_ex.ice,9a81572a189002dcf64a89af192511a4,
-,,ob_1000_1811,object/map_object/ob_1000_1811.ice,object/map_object/ob_1000_1811_ex.ice,22ad1919660a09353e09217ef4ea22c2,
-,,ob_1000_1812,object/map_object/ob_1000_1812.ice,object/map_object/ob_1000_1812_ex.ice,cc83c9ee6d37f0155c71c43c5b54ddd7,
-,,ob_1000_1813,object/map_object/ob_1000_1813.ice,object/map_object/ob_1000_1813_ex.ice,29fc3659ae6716c1bdad5710ea241fad,
-,,ob_1000_1814,object/map_object/ob_1000_1814.ice,object/map_object/ob_1000_1814_ex.ice,467498cf4f294f2bad006e564fefd6d9,
+ジャイアントパイ,Giant Pie,ob_1000_1811,object/map_object/ob_1000_1811.ice,object/map_object/ob_1000_1811_ex.ice,22ad1919660a09353e09217ef4ea22c2,
+打ち上げ花火,Aerial Fireworks,ob_1000_1812,object/map_object/ob_1000_1812.ice,object/map_object/ob_1000_1812_ex.ice,cc83c9ee6d37f0155c71c43c5b54ddd7,
+リバティーベル,Liberty Bell,ob_1000_1813,object/map_object/ob_1000_1813.ice,object/map_object/ob_1000_1813_ex.ice,29fc3659ae6716c1bdad5710ea241fad,
+ジャイアントターキー,Giant Turkey,ob_1000_1814,object/map_object/ob_1000_1814.ice,object/map_object/ob_1000_1814_ex.ice,467498cf4f294f2bad006e564fefd6d9,
 ,,ob_1000_1815,object/map_object/ob_1000_1815.ice,object/map_object/ob_1000_1815_ex.ice,7c6d4ac1983dc4b2f2b038724ef7f7d3,
 ,,ob_1000_1816,object/map_object/ob_1000_1816.ice,object/map_object/ob_1000_1816_ex.ice,40fd8689c9671a9ee533fbebc001d711,
 ,,ob_1000_1817,object/map_object/ob_1000_1817.ice,object/map_object/ob_1000_1817_ex.ice,6432c4cce0432540866f98e0b2030f56,
@@ -3333,7 +3333,7 @@ SEGAロゴB,SEGA Logo B,ob_1000_1827,object/map_object/ob_1000_1827.ice,object/m
 ,,ob_1000_1851,object/map_object/ob_1000_1851.ice,object/map_object/ob_1000_1851_ex.ice,3550cfc05b2ac91c10feddadd51e8fbb,
 ,,ob_1000_1852,object/map_object/ob_1000_1852.ice,object/map_object/ob_1000_1852_ex.ice,110fea1d5f5ef7df59feb2875d2c7cdb,
 ,,ob_1000_1853,object/map_object/ob_1000_1853.ice,object/map_object/ob_1000_1853_ex.ice,9a425ee25c2aceba60efe9ef1e91ceca,
-,,ob_1000_1854,object/map_object/ob_1000_1854.ice,object/map_object/ob_1000_1854_ex.ice,c1684de97ca2563c44100ad3444bf1f0,
+,,ob_1000_1854,object/map_object/ob_1000_1854.ice,object/map_object/ob_1000_1854_ex.ice,,
 ,,ob_1000_1855,object/map_object/ob_1000_1855.ice,object/map_object/ob_1000_1855_ex.ice,db19ba1fa19c379df86c46afb89d7a70,
 ,,ob_1000_1856,object/map_object/ob_1000_1856.ice,object/map_object/ob_1000_1856_ex.ice,0becbba71c5d4e11e4869c7073c86027,
 ,,ob_1000_1857,object/map_object/ob_1000_1857.ice,object/map_object/ob_1000_1857_ex.ice,0c180a7e473aa33b6a7b916be28d0833,
@@ -3351,21 +3351,21 @@ SEGA GENESIS,SEGA GENESIS,ob_1000_1864,object/map_object/ob_1000_1864.ice,object
 ,,ob_1000_1869,object/map_object/ob_1000_1869.ice,object/map_object/ob_1000_1869_ex.ice,8881df4d7c0131ec423403d6f92fe891,
 ,,ob_1000_1870,object/map_object/ob_1000_1870.ice,object/map_object/ob_1000_1870_ex.ice,35eb86d071678ac245261becba3d9926,
 ,,ob_1000_1871,object/map_object/ob_1000_1871.ice,object/map_object/ob_1000_1871_ex.ice,d18b87cf68ab03e7b1042196e5c68f9f,
-,,ob_1000_1872,object/map_object/ob_1000_1872.ice,object/map_object/ob_1000_1872_ex.ice,a15ea9d83c09ed876fe70267502ae43e,
-,,ob_1000_1873,object/map_object/ob_1000_1873.ice,object/map_object/ob_1000_1873_ex.ice,7981ec38d96768ffe32ef729c19c8476,
-,,ob_1000_1874,object/map_object/ob_1000_1874.ice,object/map_object/ob_1000_1874_ex.ice,bb9e16dfe583952339114a972ad5efa7,
-,,ob_1000_1875,object/map_object/ob_1000_1875.ice,object/map_object/ob_1000_1875_ex.ice,47520b4812d678abfa9ab65ec10b6cee,
-,,ob_1000_1876,object/map_object/ob_1000_1876.ice,object/map_object/ob_1000_1876_ex.ice,38e3fd3130659d40f7a25008e4b19c09,
-,,ob_1000_1877,object/map_object/ob_1000_1877.ice,object/map_object/ob_1000_1877_ex.ice,a4e2f80a4cec1e564f2a72aaf45aca92,
-,,ob_1000_1878,object/map_object/ob_1000_1878.ice,object/map_object/ob_1000_1878_ex.ice,6fea96a965bfe388ac2c9dd152923a69,
-,,ob_1000_1879,object/map_object/ob_1000_1879.ice,object/map_object/ob_1000_1879_ex.ice,dd239f66c4e3ef71eb1a1be646f93964,
-,,ob_1000_1880,object/map_object/ob_1000_1880.ice,object/map_object/ob_1000_1880_ex.ice,37d50eda042ffd4b6c2c1b626fd214d7,
-,,ob_1000_1881,object/map_object/ob_1000_1881.ice,object/map_object/ob_1000_1881_ex.ice,b893732dc52b8fa39e37264eeb331443,
-,,ob_1000_1882,object/map_object/ob_1000_1882.ice,object/map_object/ob_1000_1882_ex.ice,809b3edb0b9a6710f428ca078d7df5e7,
-,,ob_1000_1883,object/map_object/ob_1000_1883.ice,object/map_object/ob_1000_1883_ex.ice,706e01b26d0ed5f477c89cd14f579379,
+,,ob_1000_1872,object/map_object/ob_1000_1872.ice,object/map_object/ob_1000_1872_ex.ice,,
+,,ob_1000_1873,object/map_object/ob_1000_1873.ice,object/map_object/ob_1000_1873_ex.ice,,
+,,ob_1000_1874,object/map_object/ob_1000_1874.ice,object/map_object/ob_1000_1874_ex.ice,,
+,,ob_1000_1875,object/map_object/ob_1000_1875.ice,object/map_object/ob_1000_1875_ex.ice,,
+,,ob_1000_1876,object/map_object/ob_1000_1876.ice,object/map_object/ob_1000_1876_ex.ice,,
+,,ob_1000_1877,object/map_object/ob_1000_1877.ice,object/map_object/ob_1000_1877_ex.ice,,
+,,ob_1000_1878,object/map_object/ob_1000_1878.ice,object/map_object/ob_1000_1878_ex.ice,,
+,,ob_1000_1879,object/map_object/ob_1000_1879.ice,object/map_object/ob_1000_1879_ex.ice,,
+,,ob_1000_1880,object/map_object/ob_1000_1880.ice,object/map_object/ob_1000_1880_ex.ice,,
+,,ob_1000_1881,object/map_object/ob_1000_1881.ice,object/map_object/ob_1000_1881_ex.ice,,
+,,ob_1000_1882,object/map_object/ob_1000_1882.ice,object/map_object/ob_1000_1882_ex.ice,,
+,,ob_1000_1883,object/map_object/ob_1000_1883.ice,object/map_object/ob_1000_1883_ex.ice,,
 ,,ob_1000_1884,object/map_object/ob_1000_1884.ice,object/map_object/ob_1000_1884_ex.ice,982eba8d25b27cfd020aed40073893f9,
 ,,ob_1000_1885,object/map_object/ob_1000_1885.ice,object/map_object/ob_1000_1885_ex.ice,54f7744af616b055e7b122e178a563f8,
-,,ob_1000_1886,object/map_object/ob_1000_1886.ice,object/map_object/ob_1000_1886_ex.ice,9159cadb601a8513f56d720827db8922,
+,,ob_1000_1886,object/map_object/ob_1000_1886.ice,object/map_object/ob_1000_1886_ex.ice,,
 ,,ob_1000_1887,object/map_object/ob_1000_1887.ice,object/map_object/ob_1000_1887_ex.ice,2ed243cfe65c877f38fb54ac371b3c72,
 ,,ob_1000_1888,object/map_object/ob_1000_1888.ice,object/map_object/ob_1000_1888_ex.ice,1c19088fd6563164d1ba1883f1fac880,
 ,,ob_1000_1889,object/map_object/ob_1000_1889.ice,object/map_object/ob_1000_1889_ex.ice,5e5168cac87beb3a2987a5dcffc20b33,
@@ -3401,7 +3401,7 @@ es炎チップ背景ボックス,es Fire Chip Background Box,ob_1000_1913,object
 ,,ob_1000_1919,object/map_object/ob_1000_1919.ice,object/map_object/ob_1000_1919_ex.ice,ef7ab9481e1b2dfd7760570c7fa9ea69,
 ルーサーポスター,Luther Poster,ob_1000_1920,object/map_object/ob_1000_1920.ice,object/map_object/ob_1000_1920_ex.ice,e63157e0af3f8928503c537b9c084a7f,
 ,,ob_1000_1921,object/map_object/ob_1000_1921.ice,object/map_object/ob_1000_1921_ex.ice,ea68ed241328e38d9a8c3f1c50fa0274,
-,,ob_1000_1922,object/map_object/ob_1000_1922.ice,object/map_object/ob_1000_1922_ex.ice,10a21e1314c89e8783337e117fe3566b,
+,,ob_1000_1922,object/map_object/ob_1000_1922.ice,object/map_object/ob_1000_1922_ex.ice,,
 ,,ob_1000_1923,object/map_object/ob_1000_1923.ice,object/map_object/ob_1000_1923_ex.ice,714b8280601f5aa1d3c02fd6558dd0dc,
 ,,ob_1000_1924,object/map_object/ob_1000_1924.ice,object/map_object/ob_1000_1924_ex.ice,4aca6dfc24cc1190926d0590ddb27773,
 ,,ob_1000_1925,object/map_object/ob_1000_1925.ice,object/map_object/ob_1000_1925_ex.ice,be549c6f23592f0d152fc0edd9826ae6,
@@ -3539,7 +3539,7 @@ es炎チップ背景ボックス,es Fire Chip Background Box,ob_1000_1913,object
 ,,ob_1015_0004,object/map_object/ob_1015_0004.ice,object/map_object/ob_1015_0004_ex.ice,db2b34c7c08bdfa444e4793e4fe913b7,32e1864e9dba247b0b2fef76a1139324
 ,,ob_1015_0006,object/map_object/ob_1015_0006.ice,object/map_object/ob_1015_0006_ex.ice,193284a38bd50f6c2c4073c40f255a69,75afb8c30f4fbad7480a53a1a0037eb8
 ,,ob_1015_0007,object/map_object/ob_1015_0007.ice,object/map_object/ob_1015_0007_ex.ice,6fdc63d4d6614494d359ce84865f4f8f,f5ee9323eaa8fa49f3002275ba33dd7b
-,,ob_1015_0008,object/map_object/ob_1015_0008.ice,object/map_object/ob_1015_0008_ex.ice,af2f48ede29c40118893b12e74599801,4bdfcf3e93c25763d46f5312cf26174a
+,,ob_1015_0008,object/map_object/ob_1015_0008.ice,object/map_object/ob_1015_0008_ex.ice,,
 チャイナ・テーマ,Chinese Theme,ob_1016_0000,object/map_object/ob_1016_0000.ice,object/map_object/ob_1016_0000_ex.ice,c456ae3d03002a150bee11d3e2ecefe3,c41598e91669104dde9bb233a91cb1df
 チャイナ・テーマ,Chinese Theme,ob_1016_0001,object/map_object/ob_1016_0001.ice,object/map_object/ob_1016_0001_ex.ice,69c693e6cb858d4a6f6a4f9432ba81b6,0076cb51fb285aedbf89761fa6df12f5
 ,,ob_1016_0002,object/map_object/ob_1016_0002.ice,object/map_object/ob_1016_0002_ex.ice,426a838e7a57eb0a8e3d351d08082d10,254ea1c33404c407915d94101b70db96
@@ -4562,13 +4562,13 @@ es炎チップ背景ボックス,es Fire Chip Background Box,ob_1000_1913,object
 ,,ob_9900_0437,object/map_object/ob_9900_0437.ice,object/map_object/ob_9900_0437_ex.ice,574246a9bc11811848a1c190fc488e1e,9c6ddf45b0c2f559228957ff5f948b85
 ,,ob_9900_0438,object/map_object/ob_9900_0438.ice,object/map_object/ob_9900_0438_ex.ice,,
 ,,ob_9900_0439,object/map_object/ob_9900_0439.ice,object/map_object/ob_9900_0439_ex.ice,,
-,,ob_9900_0440,object/map_object/ob_9900_0440.ice,object/map_object/ob_9900_0440_ex.ice,505925700799abdb2058748960a14bc3,1087bde198c84d84522c64bf40c7137c
+,,ob_9900_0440,object/map_object/ob_9900_0440.ice,object/map_object/ob_9900_0440_ex.ice,,
 ,,ob_9900_0441,object/map_object/ob_9900_0441.ice,object/map_object/ob_9900_0441_ex.ice,e7d0724db2f235c6cbc3bbd9c6680f6e,5a1df75c8b335e5050a7844499df600f
 ,,ob_9900_0442,object/map_object/ob_9900_0442.ice,object/map_object/ob_9900_0442_ex.ice,89fcbb6e5ac9cb3810d675d9dba6ea9f,549684b2e3bdba6ab21a95d72b87aa29
 ,,ob_9900_0443,object/map_object/ob_9900_0443.ice,object/map_object/ob_9900_0443_ex.ice,e3c55fbb5380d7ded77fddbf81f864a2,ed2191b21dbda027d8fa8b92551fc945
 ,,ob_9900_0444,object/map_object/ob_9900_0444.ice,object/map_object/ob_9900_0444_ex.ice,78f1c684877c3657950809ed15e55b2c,
 ,,ob_9900_0445,object/map_object/ob_9900_0445.ice,object/map_object/ob_9900_0445_ex.ice,40ef80c4dbd806430e6ef1708814b07f,f61ba945d480c2fcfc2ff8541fa8869f
-,,ob_9900_0446,object/map_object/ob_9900_0446.ice,object/map_object/ob_9900_0446_ex.ice,31703e2b79ad3c78bbfe55defd25795b,
+,,ob_9900_0446,object/map_object/ob_9900_0446.ice,object/map_object/ob_9900_0446_ex.ice,,
 ,,ob_9900_0447,object/map_object/ob_9900_0447.ice,object/map_object/ob_9900_0447_ex.ice,,
 ,,ob_9900_0448,object/map_object/ob_9900_0448.ice,object/map_object/ob_9900_0448_ex.ice,f792650e232515f7c7c07d6e6215c3ec,
 ,,ob_9900_0449,object/map_object/ob_9900_0449.ice,object/map_object/ob_9900_0449_ex.ice,b4ff0db44a1c10c89efa9723b9972f54,e7a013e543a8934efd49eabaddbfde43
@@ -4659,7 +4659,7 @@ es炎チップ背景ボックス,es Fire Chip Background Box,ob_1000_1913,object
 ,,oa_9900_0454,object/map_object/oa_9900_0454.ice,,b2adfd3300278ca99b4df7124dd9bf85,
 ,,oa_9900_0455,object/map_object/oa_9900_0455.ice,,9e728726967587e7804e73e71d247ff0,
 ,,oa_abyss_object_manager,object/map_object/oa_abyss_object_manager.ice,,b0e90472ef8fb9d36567b37fac060bfa,
-,,oa_acc_fever_eff,,,,
+,,oa_acc_fever_eff,object/map_object/oa_acc_fever_eff.ice,,6f9ab385e3c55178bf82e0bd03c3458c,
 ,,oa_ais_socket,object/map_object/oa_ais_socket.ice,,b42dcdaf557a849d625f2ee1068f5c91,
 ,,oa_alert_zone,,,,
 ,,oa_am_cardgame_dealer001,,,,

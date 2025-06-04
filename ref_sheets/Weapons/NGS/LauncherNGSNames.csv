@@ -13,9 +13,6 @@
 ＊ＲＡトラベラー,RA Traberah,item/weapon/it_wp_09_255.ice,54\a9ba809e7e3e9c561e4badf61ac707
 ＊ジラドボルス,* Girad Borus,item/weapon/it_wp_09_269.ice,fb\6464c219ded70cb3d238d8f4b1db46
 ,,item/weapon/it_wp_09_270.ice,54\2790d0774b41d5903ce6ef61a229a9
-＊ＢＬＡＣＫ　ＭＯＮＯＬＩＴＨ,* Black Monolith,item/weapon/it_wp_09_311.ice,1c\31d9f842d2ef5c6570505078b792e9
-＊ＢＬＯＯＤ　ＰＲＡＹＥＲＳ,* BLOOD PRAYERS,item/weapon/it_wp_09_312.ice,fb\9578b612c0689dd0465fb243be7367
-＊灼零エルゼガンツェ,* Burning Zero Elze Ganze,item/weapon/it_wp_09_316.ice,c5\0d22a5933263efd1ace07176286cf0
 プリムランチャー,Primm Launcher,item/weapon/it_wp_09_501.ice,0d\05e69f826bef6f1b2549d7e10f9611
 リサージュランチャー,Resurgir Launcher,item/weapon/it_wp_09_502.ice,c3\7125acbca646b56e41784ac42e168f
 テルセウスランチャー,Theseus Launcher,item/weapon/it_wp_09_503.ice,0c\82c1f53a5cd194591941dff410551e
@@ -60,6 +57,7 @@
 ,,item/weapon/it_wp_09_544.ice,dc\d518719c6574ecbd0bb3411cad1795
 ,,item/weapon/it_wp_09_545.ice,b0\a2eb9fc0f6a09e992aa82caa4bbd85
 ,,item/weapon/it_wp_09_547.ice,52\1cd3eb7f9249c5af7205d1e5cc7986
+,,item/weapon/it_wp_09_548.ice,04\6e08684150914119bb1f3926fda988
 ,,item/weapon/it_wp_09_550.ice,be\9c0d1676dfefdad7769f4b2dfedef5
 ,,item/weapon/it_wp_09_552.ice,0c\25cb2b684a4a8d086177898e82d39c
 ,,item/weapon/it_wp_09_553.ice,ed\d08ccff6ba914a576d783fe7cc4578
@@ -84,6 +82,7 @@
 ,,item/weapon/it_wp_09_575.ice,aa\37c651ced95ef5241a9bcd74830342
 ,,item/weapon/it_wp_09_576.ice,d3\eb99a56c74cefda1558bcb445c1d20
 ,,item/weapon/it_wp_09_577.ice,db\d5626dc7971714f83172534c6f3692
+,,item/weapon/it_wp_09_582.ice,a1\94d9d15a556b36caf6473606cbb596
 ,,item/weapon/it_wp_09_583.ice,20\f22d4baf185d637b8b15736f0490ba
 ,,item/weapon/it_wp_09_584.ice,9a\74ab87d78e8605cd8a90237510acb5
 ,,item/weapon/it_wp_09_585.ice,c1\b892871eea2f6d89dcb3a03555a4c7

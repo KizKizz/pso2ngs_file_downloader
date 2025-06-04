@@ -4,22 +4,12 @@
 ＊零織・イザヨイ,* Zero-type Izayoi,item/weapon/it_wp_01_098.ice,f2\886b9b8ffcc82deb501e425ce7bf98
 ＊フロウウェンの大剣,* Flowen's Sword,item/weapon/it_wp_01_104.ice,51\5df6abbd8b9efc844c303a34465050
 ＊ジャンクヤード・ドッグ,* Junkyard Dog,item/weapon/it_wp_01_106.ice,4d\8e4f9f384c4d35bf098a7ef9d24393
-＊約束された勝利の剣,* The Sword of Promised Victory,item/weapon/it_wp_01_130.ice,8b\c3822f0ddc6e9a667ad69ae5e738b2
-＊乖離剣エア,* Sword of Rupture, Ea,item/weapon/it_wp_01_131.ice,83\98393c172fa339ed3b12b0ad131830
-＊スライプナーＭｋ６,* Sleipnir Mk6,item/weapon/it_wp_01_177.ice,97\f20be585d17535040dbe21a63be7c3
-＊スライプナーＭｋ６Ｄ,* Sleipnir Mk6D,item/weapon/it_wp_01_183.ice,d4\0a11e26e63db270ee074d4725261db
-＊スライプナーＭｋ６Ｒ,* Sleipnir Mk6R,item/weapon/it_wp_01_184.ice,93\7725d0ae2bd986c5294497c255ccc4
 ＊霊刀雪姫,* Soul Blade Yukihime,item/weapon/it_wp_01_188.ice,e2\4e6795981742d8c83c2123256e5bff
 朔桜,Saku Sakura,item/weapon/it_wp_01_203.ice,96\d54eba44cdb1e823defe70db49338b
-＊ブルー・ハート,* Blue Heart,item/weapon/it_wp_01_238.ice,45\af82d944fa42c2c95ba6bfa9a10afb
 ソードレボルシオ,Sword Revolsio,item/weapon/it_wp_01_256.ice,2d\f0ca2267fa289eb67436d39ef644fe
 ソードドミナシオ,Sword Dominacio,item/weapon/it_wp_01_257.ice,02\6b020215656075084636fc9da806cd
 ソードインクルシオ,Sword Inclusio,item/weapon/it_wp_01_258.ice,ff\fb418561dbebcafe4948d1aff3ad1c
 ＊レヴァティーン,* Laevateinn,item/weapon/it_wp_01_333.ice,53\2aacdf4fab601b3a7be71fab4a0db7
-＊上条専用スライプナー,* Sleipnir for Kamijo,item/weapon/it_wp_01_362.ice,f5\e8290154334203db0e6e0fd37c212c
-＊スライプナー,* Sleipnir,item/weapon/it_wp_01_363.ice,56\025697f95f7a4365c821c7518bcff6
-＊ＢＬＡＣＫ　ＭＯＮＯＬＩＴＨ,* Black Monolith,item/weapon/it_wp_01_374.ice,b7\1b2a44be87f4367e4712c1ab0144df
-＊ＢＬＯＯＤ　ＰＲＡＹＥＲＳ,* Blood Prayers,item/weapon/it_wp_01_375.ice,ee\e2b50d58714eafd12cde054f7941c1
 ＊シッドストリッド,* Cydstrid,item/weapon/it_wp_01_402.ice,92\549db7da8bb8c2738fc8e38fb8ff20
 プリムソード,Primm Sword,item/weapon/it_wp_01_501.ice,ab\2efc1c5a777fae109fcdda3d00c540
 リサージュソード,Resurgir Sword,item/weapon/it_wp_01_505.ice,6c\a6e6fb3ba51f60a53ddd06d5329b7d
@@ -81,6 +71,7 @@
 ,,item/weapon/it_wp_01_565.ice,23\7d0f05240c99c6b6774a93cb460524
 ,,item/weapon/it_wp_01_566.ice,65\39dff9c48ba9bf57b748ab3cf21fb1
 コルボ・ラルースRe-Lソード,Xover Laluz Re-L Sword,item/weapon/it_wp_01_567.ice,f6\94fe8cb74305648208fe7e1b076ed7
+,,item/weapon/it_wp_01_568.ice,01\4f79c0d744d7f01e5b2b627c4c1c4a
 ,,item/weapon/it_wp_01_570.ice,98\9c51408cc834f66a7414e712bdc64c
 ,,item/weapon/it_wp_01_572.ice,56\26fe51e82f769bdaaade611b4df34e
 ,,item/weapon/it_wp_01_573.ice,2a\760d556399e0dd81f9764d5f52d8d8
@@ -94,6 +85,7 @@
 ,,item/weapon/it_wp_01_582.ice,8e\e145a72cdf8a56cf688961235f2806
 ,,item/weapon/it_wp_01_585.ice,2c\8bafec72ba1ab7d64f22e5715ffa11
 ,,item/weapon/it_wp_01_586.ice,9d\095085e3999f6988dff064d714347c
+,,item/weapon/it_wp_01_588.ice,ba\7f6c02acb0b0132f02445161fdd4dd
 ,,item/weapon/it_wp_01_589.ice,b7\ce2f10c75bcbb8c4c82351250c2333
 ,,item/weapon/it_wp_01_590.ice,a4\90dfbec2154c7a86ca74d6a0edd527
 ,,item/weapon/it_wp_01_591.ice,14\5389d129c85fce471ee5e727e82f14
@@ -137,3 +129,4 @@
 ,,item/weapon/it_wp_01_632.ice,29\f395e02a92454bef6d8ac1dd11ca62
 ,,item/weapon/it_wp_01_633.ice,82\ee24094742df2beba573755b47b8ca
 ,,item/weapon/it_wp_01_634.ice,3d\cae185638cd179754552e09232e28a
+,,item/weapon/it_wp_01_637.ice,74\a8394f5a591686cc4beca46249fb26
