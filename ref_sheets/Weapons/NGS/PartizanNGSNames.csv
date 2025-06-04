@@ -5,7 +5,6 @@
 スピアドミナシオ,Spear Dominacio,item/weapon/it_wp_03_202.ice,84\cb2eb424759c2cb3be0ec9d85fe65a
 スピアインクルシオ,Spear Inclusio,item/weapon/it_wp_03_203.ice,b3\005cfa7a227a473dd00b86b3c45a06
 ＊レヴァティーン,* Laevateinn,item/weapon/it_wp_03_274.ice,fd\7c14c55b283f5a7fa33c7ceb913cad
-＊ロンギヌスの槍,* Spear of Longinus,item/weapon/it_wp_03_335.ice,82\b81de5b2d4beed3b3f804e462e79cb
 プリムスピア,Primm Spear,item/weapon/it_wp_03_501.ice,fb\c95101a16d44ceb9f1f36a4518d3cf
 リサージュスピア,Resurgir Spear,item/weapon/it_wp_03_502.ice,d7\6326f9f49dc21f0a7e381b39f17b99
 テルセウススピア,Theseus Spear,item/weapon/it_wp_03_503.ice,1e\f2217dac43b3f731e863a1e09b436c
@@ -57,6 +56,7 @@
 ,,item/weapon/it_wp_03_554.ice,0f\35d297c25953df2eef7bfd6c86bc49
 ,,item/weapon/it_wp_03_555.ice,ef\3b3adb11503838cae8124b32fcd259
 ,,item/weapon/it_wp_03_556.ice,6f\2b0bd02c76c4fed6d87dbfb4499e7b
+,,item/weapon/it_wp_03_557.ice,20\e4b7663fc0b2799f9db3b21a81a5b7
 ,,item/weapon/it_wp_03_559.ice,3f\fd9fa39af50dbb0aa2a50fcb5c3fcb
 ,,item/weapon/it_wp_03_560.ice,f1\4a96d1da42f782733014933b992e72
 ,,item/weapon/it_wp_03_562.ice,79\e0cf7347f3bf25d19fddaac777b39f
@@ -71,6 +71,7 @@
 ,,item/weapon/it_wp_03_573.ice,02\5273f41d56b5c44145516623c2aebd
 ,,item/weapon/it_wp_03_575.ice,21\9fd9418fc57c478575ed5f3be28951
 ,,item/weapon/it_wp_03_576.ice,17\2166e04bd14eb9661aca8c7f2d8bfc
+,,item/weapon/it_wp_03_578.ice,42\9bf1027c572839be7cee1162842faf
 ,,item/weapon/it_wp_03_579.ice,e3\26c5f572ae8d16d7bcf045f4c2b382
 ,,item/weapon/it_wp_03_580.ice,80\b6a80eaf76992830873eb7dcb31fe8
 ,,item/weapon/it_wp_03_581.ice,22\34ee0d9dc8fe7167d733c5bd9514bd
@@ -111,3 +112,5 @@
 ,,item/weapon/it_wp_03_618.ice,28\42b57943883b1f89ebf5602a7ccee4
 ,,item/weapon/it_wp_03_619.ice,6c\7ae05c4aec8e90be4d7565a916cdf7
 ,,item/weapon/it_wp_03_620.ice,87\568bc004441cf9438ce8ec8ff023eb
+,,item/weapon/it_wp_03_622.ice,9c\c20e31e4628274d180e733b0358da3
+,,item/weapon/it_wp_03_623.ice,a1\b60507f5f864c7abd1cb47817a3e77

@@ -1,4 +1,4 @@
 http://download.pso2.jp/patch_prod/v72900_rc_40_masterbase/patches/
-http://download.pso2.jp/patch_prod/v73200_rc_73_8FAAFC01/patches/
+http://download.pso2.jp/patch_prod/v73300_rc_72_E6F8A101/patches/
 http://sub-download.pso2.jp/patch_prod/v72900_rc_40_masterbase/patches/
-http://sub-download.pso2.jp/patch_prod/v73200_rc_73_8FAAFC01/patches/
+http://sub-download.pso2.jp/patch_prod/v73300_rc_72_E6F8A101/patches/

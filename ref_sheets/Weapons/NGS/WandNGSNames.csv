@@ -1,6 +1,4 @@
-﻿＊マジカルサファイア,* Magical Sapphire,item/weapon/it_wp_13_055.ice,66\56aef6c7f98ac3233213421b1a7407
-＊ジャンクヤード・ドッグ,* Junkyard Dog,item/weapon/it_wp_13_066.ice,5e\667f400306165bca500b26505c7498
-＊マジカルルビー,* Magical Ruby,item/weapon/it_wp_13_139.ice,1c\c46edd6be4d7eb33fa585044650952
+﻿＊ジャンクヤード・ドッグ,* Junkyard Dog,item/weapon/it_wp_13_066.ice,5e\667f400306165bca500b26505c7498
 エッジレボルシオ,Edge Revolsio,item/weapon/it_wp_13_253.ice,67\d0abf7b57f43a4edbb8e5cabb21906
 エッジドミナシオ,Edge Dominacio,item/weapon/it_wp_13_254.ice,77\3a4338c64515bfb8639c6bfad4e6d8
 エッジインクルシオ,Edge Inclusio,item/weapon/it_wp_13_255.ice,c3\93cc2c8f66c5a5a5c69beb18f3212b
@@ -60,6 +58,7 @@ DEBUG - プリムウォンド,Steel Primm Wand,item/weapon/it_wp_13_527.ice,93\5
 ,,item/weapon/it_wp_13_555.ice,0e\cdb482de0f94f78adc79d07b4a6e81
 ,,item/weapon/it_wp_13_556.ice,60\2672080bbacfdb02bc5d6fb5ee05b0
 ,,item/weapon/it_wp_13_557.ice,ce\537c6d4013bfee4b01d8e2bad449e4
+,,item/weapon/it_wp_13_559.ice,a8\d629c866130b04bd371fb61b4151c8
 ,,item/weapon/it_wp_13_561.ice,18\ea6abe4ef76fb40c987594f2e6a7a7
 ,,item/weapon/it_wp_13_563.ice,64\4f3cb4434df2751d2922640871ecde
 ,,item/weapon/it_wp_13_564.ice,86\bde77219ff11cff15ec546d1a326af
@@ -75,6 +74,7 @@ DEBUG - プリムウォンド,Steel Primm Wand,item/weapon/it_wp_13_527.ice,93\5
 ,,item/weapon/it_wp_13_578.ice,99\f93b7683e5bbe79d68946d34cb272a
 ,,item/weapon/it_wp_13_579.ice,f6\c7a26ffb8be42dd77fc7ed5808c56a
 ,,item/weapon/it_wp_13_580.ice,52\a71e86f87f5259db8942b99f9137f0
+,,item/weapon/it_wp_13_582.ice,0c\8cf3ea6dc7de720dc9a3268ed922c0
 ,,item/weapon/it_wp_13_583.ice,7c\451234a994ad139e9381ef4ab2344c
 ,,item/weapon/it_wp_13_584.ice,ce\a11eb73dfc40850d0742df4126d1ec
 ,,item/weapon/it_wp_13_585.ice,a0\01d9442386a70e97c756fb6744b307
@@ -120,3 +120,4 @@ DEBUG - プリムウォンド,Steel Primm Wand,item/weapon/it_wp_13_527.ice,93\5
 ,,item/weapon/it_wp_13_627.ice,d3\7a469d3bed203c080b869ddb743c54
 ,,item/weapon/it_wp_13_628.ice,87\b5d1821b53ab16310bf4331af3aa61
 ,,item/weapon/it_wp_13_629.ice,df\956f155a96af84538093ba9ff2c94f
+,,item/weapon/it_wp_13_631.ice,74\a554831d36ec108ed1fa35b1b8f0a6
