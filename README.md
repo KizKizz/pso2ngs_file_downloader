@@ -3,6 +3,9 @@ An app to search, view and download PSO2NGS original game files
 
 ![image](https://github.com/KizKizz/pso2ngs_file_downloader/assets/101075148/ed121015-16fa-40bc-9bb2-936b9793bd51)
 
+## Web App
+[PSO2NGS File Downloader](https://kizkizz.github.io/pso2ngs_file_downloader/)
+
 ## Downloads
 [Releases Page](https://github.com/KizKizz/pso2ngs_file_downloader/releases)
 
