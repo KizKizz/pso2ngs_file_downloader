@@ -452,7 +452,7 @@ Future<List<Item>> populateItemList() async {
                 ? 'NGS'
                 : filePathInCsvDir.contains('PSO2') || filePathInCsvDir.contains('Classic') || filePathInCsvDir.contains('classic')
                     ? 'PSO2'
-                    : '',
+                    : 'PSO2 | NGS',
             [p.basenameWithoutExtension(file.path)],
             categoryIndex != -1 ? defaultCategoryDirs[categoryIndex] : defaultCategoryDirs[13],
             subCategory,
@@ -820,6 +820,20 @@ Future<List<Item>> populateItemList() async {
         int matchedIndex = itemList.indexWhere((element) => element.compareItem(newItem));
         if (matchedIndex == -1) {
           itemList.add(newItem);
+        } else {
+          Item matchedItem = itemList[matchedIndex];
+          if (matchedItem.infos.keys.contains('Normal Quality') &&
+              matchedItem.infos.entries.firstWhere((element) => element.key == 'Normal Quality').value.isEmpty &&
+              newItem.infos.keys.contains('Normal Quality') &&
+              newItem.infos.entries.firstWhere((element) => element.key == 'Normal Quality').value.isNotEmpty) {
+            matchedItem.infos.update('Normal Quality', (value) => newItem.infos.entries.firstWhere((element) => element.key == 'Normal Quality').value);
+          }
+          if (matchedItem.infos.keys.contains('High Quality') &&
+              matchedItem.infos.entries.firstWhere((element) => element.key == 'High Quality').value.isEmpty &&
+              newItem.infos.keys.contains('High Quality') &&
+              newItem.infos.entries.firstWhere((element) => element.key == 'High Quality').value.isNotEmpty) {
+            matchedItem.infos.update('High Quality', (value) => newItem.infos.entries.firstWhere((element) => element.key == 'High Quality').value);
+          }
         }
 
         infos.clear();
