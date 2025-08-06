@@ -219,6 +219,7 @@ en_nat_gdn_common.ice,75\4cdc61ca1f14244faa04679c1cc4e4
 スパルダンＡ・ロア,Spardun A Lore,en_r02_nat_gma_ba.ice,a8\e769cd2f192491c92510a53994ec21
 スパルザイル・ロア,Sparzile Lore,en_r02_nat_gma_bo.ice,9e\fe6f86e0282d1841c577d6ef82a25f
 スパルガン・ロア,Spargun A Lore,en_r02_nat_gma_gu.ice,5e\1e2ef5f1642e0e2a1977f417d213d5
+ヒート・スパルザイル,Heat Sparzile,en_r02_nat_gma_bobi.ice,67\043ad109bc519e08b098c9b1cbbd89
 en_nat_gma_common.ice,e1\f5ff02d4bfbcb3fc11d90e20eb964b
 ディンゲール・ロア,Dingale Lore,en_r02_nat_hmc_ba.ice,16\cfdefef8b7c0ab63c6197cd06241b8
 en_nat_hmc_common.ice,6d\175c78f084bdbba60ddd5a88e26bd3
@@ -527,6 +528,8 @@ en_non_trt_common.ice,68\6aa7d24905ea09a6441e7a9c102431
 ,,en_s01_mon_01.ice,6c\fb7827ac59b36662550f938eeb4c7a
 ,,en_gd_nyb_ex.ice,5f\8b2ac6cdeaa4ea1088b7f2a4513d8c
 en_gd_nyb_common.ice,51\c76204c733f9a562684eb64abcecd8
+ガラガロンゴ,Gara Garongo,en_nat_armma_ba.ice,0f\b6076b4176cdf61ea3839a9271d955
+en_nat_armma_common.ice,d5\da138f5d9ff25cfce478e0cb381edb
 マリオネス,Marioness,en_r05_gd_gho_ba.ice,a9\28d67c967835bf41eb177ff496f365
 ギルーヴァ,Giruva,en_r05_gd_gho_ch.ice,0f\1299e727a09000590258ad421f7c95
 en_gd_gho_common.ice,70\01215589d9b3360d46094a45705f8a
@@ -541,6 +544,7 @@ en_non_myt_common.ice,d6\cc96ec78b2f3328190a77a42babd66
 ラヴィード,Raveed,en_r05_stl_box_ba1.ice,c6\a95c434bba98f8aa805c9276e44dad
 ハイ・ラヴィード,High Raveed,en_r05_stl_box_ba1h.ice,5a\1cca10368e72c0ea0aa9c338fc66f9
 ヴァルザッガ,Val Zagga,en_r05_stl_cas_el1.ice,f5\3a12b0ad30f3dbfab3d42c7e845c4d
+ハイ・ヴァルザッガ,High Val Zagga,en_r05_stl_cas_el1h.ice,f2\b91ad3b9628f5aff136cb4b5bb966e
 グラティガル,Gratigal,en_r05_stl_fan_ba1.ice,9f\be18999146dab158c376455f716251
 グラティガル,Gratigal,en_r05_stl_fan_ba1_ag.ice,1c\8eb5957fdc94d651209d74785b4817,ベテラン,Veteran
 レヴィーデ,Revide,en_r05_stl_flo_ba.ice,b5\68b9b2e6d221ec10b04e8e85693268
@@ -551,6 +555,7 @@ en_non_myt_common.ice,d6\cc96ec78b2f3328190a77a42babd66
 ハイ・エリミネイダ,High Elimineda,en_r05_stl_ins_ba1h.ice,69\51f21c4df8dc549bef47ff983c3c5e
 リングウェッジ,Ringwedge,en_r05_stl_kic_ba1.ice,53\49fb14cee669f9cf91209970d61e4a
 ラセツ,Rasetsu,en_r05_stl_ktn_ba1.ice,64\824183743f24089468564d26d94f63
+ハイ・ラセツ,High Rasetsu,en_r05_stl_ktn_ba1h.ice,0c\58bf8dfd5fe2119c95fe627bab5742
 ドゥランゲラド,Duran Gerad,en_r05_stl_leg_ba1.ice,a4\39ecf6ea7cd8218f48d57daf89226c
 バルブレッダ,Val Bredda,en_r05_stl_mrt_ba1.ice,56\30b5a6a4153675c952bb9f75d6c4b3
 ハイ・バルブレッダ,High Val Bredda,en_r05_stl_mrt_ba1h.ice,1b\4cd10c3cdd9e72846b03d8819c6345
@@ -605,6 +610,9 @@ en_rem_yor_common.ice,8c\1a5ea9ed4ccb54bdcdda6cbe430d30
 en_rem_ace_common.ice,f7\db0db3bdad7166302d68dba5321d64
 ルイノ・マスカレーダ,Ruine Masquerader,en_r05_rem_akk_ba.ice,73\7ba2df8e82258205f83ba100557f14
 ルイノ・マスカレーダ,Ruine Masquerader,en_r05_rem_akk_mlt.ice,d6\59c33298da392aa354c84e205f0de4
+ルイノ・Ｄ・ヒューナル,Ruine D Hyunal,en_r05_rem_abh_ba.ice,7f\7e618a91f6b8c340da5a71f5e2e610
+en_rem_abh_common.ice,d6\3416cd396a20dfb4c8664c5c57c14b
+ルイノ・グランゾ,Ruine Granz,en_r05_rem_ztg_ba.ice,8f\82daef08fcc98f08ac2c7b07265e31
 en_gd_flo_eff.ice,a8\42fb661ed8319ab2349b0be5578eee
 en_gd_gia_eff.ice,f8\3bab9cbdd38b0641a47a91a4dd7cb4
 en_gd_kpy_eff.ice,6e\0d8a1df8942306521ab87ef7027c80

@@ -1,5 +1,5 @@
 ﻿Japanese Name,English Name,Id,Adjusted Id,Icon,Normal Quality,High Quality,Normal Quality RP,High Quality RP,Linked Inner,HQ Linked Inner,Linked Outer,HQ Linked Outer,Sounds,Cast Sounds,Material Anim,Material Anim Ex,Hand Textures,HQ Hand Textures,Hair Model,High Quality Hair Model,Face Model,High Quality Face Model
-,,400000,400000,,,,,,a8aea6e433b36e5bdcbbc87176c5ee89,d62dff1009c85a9205d213a4d36a6d3a,,,,,,,,,,,,
+,,400000,400000,,e39966dbb663f2a2db6ab59002641aa6,47ce3cf03d9f30496d93e5fcb790af4f,,,a8aea6e433b36e5bdcbbc87176c5ee89,d62dff1009c85a9205d213a4d36a6d3a,,,,,,,,,,,,
 ディアーレ・レッグ,Di Allez Legs,400010,400010,da352b8fa65560daa723783960774c1e,3bc46a5dc523bbf875ef374529398aee,21ab2936706958bf459c573f2d273e61,,,a8aea6e433b36e5bdcbbc87176c5ee89,d62dff1009c85a9205d213a4d36a6d3a,,,,6f7642f38befe79942629b17833f9467,,,,,,,,
 ディアーレ・レッグ/2,Di Allez Legs/2,400011,400011,edbda444cdd9bd4e2fcb6eb61f282f52,a6bd96586676be4132f5b584a0e46fe7,6589060d4ac49408d40d717300b67f23,,,0df02f0c50359918eb06852b5e968d4c,993d53684030afb6f604a82e1db7e224,,,,6f7642f38befe79942629b17833f9467,,,,,,,,
 コルセロ・レッグ,Corsero Legs,400020,400020,480059bfc482fe44b803537694d9d20f,1245cf9f1f8848147b5a95e8f3f449e9,a099eb7bf35aad2d5c9a1e538d784d45,,,b3a9f7f3b07d55e867a9ff969cb5f4eb,2c898a20b32109789a55f82e1332afc8,,,,4c655122c844ccb947f8cfa5cd117255,,,,,,,,
@@ -81,5 +81,6 @@ N-アリスリーパー・レッグ/B,N-Alice Reaper Legs/B,400660,400660,c30f28
 スメラギヒメ・レッグ,Regal Princess Legs,400830,400830,a1ccd3e0e02b5a99d638bc540faa1e2a,8e3fc302e5736b033a255f6b68021d37,17d56661681e00fe205ff48e8ec9f52c,,,8c9a7b3a936df167a85f3938008fc73f,301dd16f504e53ac4fdbecf1a3327d32,,,,4c655122c844ccb947f8cfa5cd117255,,,,,,,,
 ライカスポーティ・レッグ/B,Super Sporty Legs/B,400840,400840,202489673c37c44761b0d229e3095419,4e44798ab73c3d40b3de22270c2bd81f,26d61af41ddf414742dbb765b8e5d6f4,,,,,,,,318af74487fa823c8e6e248e9e4133f6,,,,,,,,
 テアナーガ・レッグ/C,Theanaga Legs/C,400850,400850,8fe0c7288dd69e4d2f1e9ecc93be08c5,d64c8d1db4caa53e594fd17ecabf30a4,f51a8ee63d0c36917ad3b39d6c621c79,,,6981606b228da5d864802af54b8ef17f,73037e666649b2a4ef494480daa9bad7,,,,4c655122c844ccb947f8cfa5cd117255,,,,,,,,
+ククールカウス・レッグ/B,Kuetzalkaos Legs/B,400870,400870,ca5494cf374f85b95e7cefa40d6bc194,dd8ff292e338404f7bb4a197e14d8da0,a5afc1015d01c7f70019f0ba3f8d71e4,,,ab781d7cd1551865bfd90ea6f81cc1ab,82fba94e9507f908c334ba47c95569d8,,,,318af74487fa823c8e6e248e9e4133f6,,,,,,,,
 ,,499900,499900,,2fb8568f1ac56f93ea5ce3aeae88eedc,fdb92b38ff107ba0818d8092c7b46718,,,,,,,,,,,,,,,,
 ,,499910,499910,,,,,,,,,,,,,,,,,,,

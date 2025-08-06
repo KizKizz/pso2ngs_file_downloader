@@ -22,8 +22,6 @@
 ＊ＢＬＯＯＤ　ＰＲＡＹＥＲＳ,* Blood Prayers,item/weapon/it_wp_01_375.ice,ee\e2b50d58714eafd12cde054f7941c1
 ＊シッドストリッド,* Cydstrid,item/weapon/it_wp_01_402.ice,92\549db7da8bb8c2738fc8e38fb8ff20
 プリムソード,Primm Sword,item/weapon/it_wp_01_501.ice,ab\2efc1c5a777fae109fcdda3d00c540
-ゴルドプリムソード?,Gold Primm Sword?,item/weapon/it_wp_01_503.ice,d4\4641332cef96ce1d526ff0e21a2e11
-赤プリムソード?,Red Primm Sword?,item/weapon/it_wp_01_504.ice,22\721249e927bbc233e86975c1280eed
 リサージュソード,Resurgir Sword,item/weapon/it_wp_01_505.ice,6c\a6e6fb3ba51f60a53ddd06d5329b7d
 ,,item/weapon/it_wp_01_507.ice,94\d9e9df4cdca5a3e5559051ff35f3ff
 テルセウスソード,Theseus Sword,item/weapon/it_wp_01_508.ice,d9\2be4feef271bd2f19fb156f00b945d
@@ -142,3 +140,8 @@
 ,,item/weapon/it_wp_01_633.ice,82\ee24094742df2beba573755b47b8ca
 ,,item/weapon/it_wp_01_634.ice,3d\cae185638cd179754552e09232e28a
 ,,item/weapon/it_wp_01_637.ice,74\a8394f5a591686cc4beca46249fb26
+,,item/weapon/it_wp_01_639.ice,84\94f8971476d48901b7a04cd89856d5
+,,item/weapon/it_wp_01_640.ice,1e\6d759b651a9aec1066167a3ffe52f0
+,,item/weapon/it_wp_01_641.ice,1f\1567f63d27b01d45d7908f237763d7
+,,item/weapon/it_wp_01_642.ice,d3\c9f61626dfaa6594c33acb54b1f5a3
+,,item/weapon/it_wp_01_643.ice,b4\9e6578fdb662744f6fa00b27e45d2a

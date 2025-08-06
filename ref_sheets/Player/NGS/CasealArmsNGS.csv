@@ -1,5 +1,5 @@
 ﻿Japanese Name,English Name,Id,Adjusted Id,Icon,Normal Quality,High Quality,Normal Quality RP,High Quality RP,Linked Inner,HQ Linked Inner,Linked Outer,HQ Linked Outer,Sounds,Cast Sounds,Material Anim,Material Anim Ex,Hand Textures,HQ Hand Textures,Hair Model,High Quality Hair Model,Face Model,High Quality Face Model
-,,400000,400000,,,,,,cec6555edfaeb1eaf449d99ec2cee89f,d5bf86c74c57bf959b97736f0d889749,,,,,,,,,,,,
+,,400000,400000,,af3398ed565848a20c6123d728bd9276,17e00e817bbbba076371ac12084e97e2,,,cec6555edfaeb1eaf449d99ec2cee89f,d5bf86c74c57bf959b97736f0d889749,,,,,,,,,,,,
 ディアーレ・アーム,Di Allez Arms,400010,400010,ea0f41d992d0e7f6a2da3b2ac8ca09f4,343f7608868f47a3d8391599dc3129c6,46ef4938ed7d4dc4521a8ca89c798b99,,,cec6555edfaeb1eaf449d99ec2cee89f,d5bf86c74c57bf959b97736f0d889749,,,,,,,,,,,,
 ディアーレ・アーム/2,Di Allez Arms/2,400011,400011,76a6a3f70d457cb04aac4d0800b7788d,dc83651a9b6741a7fb45045b8db644a4,594f893358869064e0811d3597a7d7e2,,,5ef947a591d1448cea7d51aed586617b,957dc2a13858412f2796639f178a58fd,,,,,,,,,,,,
 コルセロ・アーム,Corsero Arms,400020,400020,a63b6dfec9cf2ad3d51d9a3f00b38abc,78f475b0acd8272c65efc23a619aea48,6dcd611392ff0cc266b53ebbc3114f92,,,d4a3bcba240aca99454ce410a10f18c2,77c93d15dec0923870aff2df25334c6d,,,,,,,,,,,,
@@ -80,5 +80,6 @@ N-アリスリーパー・アーム/B,N-Alice Reaper Arms/B,400660,400660,6072b1
 スメラギヒメ・アーム,Regal Princess Arms,400830,400830,2212dfdbf2f554049641a9488904c362,84cad74d628512ab535367472dd58d39,7b864b700de88b30ae7e49a959068b1b,,,94903a65663fffc3e05e354406cbf9f0,9ae54a9968a5d5c34d77858ae306b4d3,,,,,,,,,,,,
 ライカスポーティ・アーム/B,Super Sporty Arms/B,400840,400840,0f8f0ce25cdfee92b49ba72f4dbadef2,c0be24f4007f20930baa379355429910,115ebcb9e026f2f69a50b78b9f351cd9,,,,,,,,,,,,,,,,
 テアナーガ・アーム/C,Theanaga Arms/C,400850,400850,7942ae71b7b929f9603d56375fa02bb5,5ea9ab9fd15d8b27bbe74dd6894018e7,c4e06e943b94a4ae9991489bd8c56765,,,ff9d3d0bb631a88bc0e7f55d8ffd4b6f,22f95622249971cbd42101d6d79ee457,,,,,,,,,,,,
+ククールカウス・アーム/B,Kuetzalkaos Arms/B,400870,400870,af33c906dd320187a7824f74fd1bbad9,6da8fb3f23e74ab93da24828bea0df0b,9ab64edf4a68dbb13c70a532009ddc2e,,,16588e85c12533ece1f5681b0f45266a,67fd3efa6376cb22722a5e80b7d1acb9,,,,,,,,,,,,
 ,,499900,499900,,d72f1fbd1a095561938a850bf315a09f,3f40c9e0c1862457fcfe421d270797e0,,,,,,,,,,,,,,,,
 ,,499910,499910,,,,,,,,,,,,,,,,,,,
