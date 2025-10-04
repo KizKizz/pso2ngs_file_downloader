@@ -300,6 +300,7 @@ en_gd_gor_common.ice,42\b1bba7ca2e1d2461269f93edf2b8f7
 アムス・クヴァリス,Ams Kvaris,en_r03_gd_hum_ba_ag.ice,46\7ed198f76475a1e83d2b68ce6534ee,ベテラン,Veteran
 アムス・クローネ,Ams Krone,en_r03_gd_hum_cl.ice,e4\2772a15e70de1586b21ac692b3a519
 アムス・ヴェラ,Ams Vera,en_r03_gd_hum_rai.ice,1a\832765f416500d65279f61c1fbf0f7
+ハイ・アムス,High Ams,en_r03_gd_hum_raih.ice,43\87d729eaeec387af56fb971c79be1c
 en_gd_hum_common.ice,b8\6303459792b19f2fcbb4422cb3464e
 ヴァーディアス,Vardias,en_r03_gd_ksg_ba.ice,c5\30d33d2b67579d927ef58bcbabc807
 en_gd_ksg_common.ice,eb\cd5536625275248dad6f6ad7565baf
@@ -325,6 +326,7 @@ en_gd_sol_common.ice,3f\374d3ce809469e3666c4571719e017
 クロコダラス,Crocodylis,en_r03_gd_tur_ba.ice,3f\c42da11c880d9e8069b82ad11475a9
 クロコダラス,Crocodylis,en_r03_gd_tur_ba_ag.ice,5e\94b4dcf068cc2c5ef3bb0cae88fe47,ベテラン,Veteran
 クロコダラス・ヴェラ,Crocodylis Vera,en_r03_gd_tur_rai.ice,c2\37a9482b38a0005380fbd6d13796ad
+ハイ・クロコダラス,High Crocodylis,en_r03_gd_tur_raih.ice,3a\a6c37a11ee018f4a245668b1288f89
 en_gd_tur_common.ice,9b\30d0b15b1bfce1258d092e7b4c991e
 ジャンゲス,Jangis,en_r03_gd_tyu_ba.ice,13\bdd1d088839bebc4eeb7a5030572b5
 en_gd_tyu_common.ice,9f\9ef45c54c3592e9700cf4124773eb5
@@ -530,6 +532,8 @@ en_non_trt_common.ice,68\6aa7d24905ea09a6441e7a9c102431
 en_gd_nyb_common.ice,51\c76204c733f9a562684eb64abcecd8
 ガラガロンゴ,Gara Garongo,en_nat_armma_ba.ice,0f\b6076b4176cdf61ea3839a9271d955
 en_nat_armma_common.ice,d5\da138f5d9ff25cfce478e0cb381edb
+ハイ・ゴロロロクス,High Gorororox,en_r05_gd_gor_baldh.ice,73\92a9bb840e4d5064ba1a36b983fc37
+en_gd_gor_common.ice,42\b1bba7ca2e1d2461269f93edf2b8f7
 マリオネス,Marioness,en_r05_gd_gho_ba.ice,a9\28d67c967835bf41eb177ff496f365
 ギルーヴァ,Giruva,en_r05_gd_gho_ch.ice,0f\1299e727a09000590258ad421f7c95
 en_gd_gho_common.ice,70\01215589d9b3360d46094a45705f8a
@@ -541,6 +545,7 @@ en_gd_zft_common.ice,2e\8202a869344df24699527b96ef2b8d
 en_non_myt_common.ice,d6\cc96ec78b2f3328190a77a42babd66
 カオスザヴェル,Chaos Xaver,en_r05_stl_akm_ba1.ice,84\84bab196db237325bf889af2156a9a
 グラッジボーン,Grudgeborne,en_r05_stl_bkt_ba1.ice,d6\e3a42413c61f0d9e08e8e90a7058fa
+ハイ・グラッジボーン,High Grudgeborne,en_r05_stl_bkt_ba1h.ice,c3\66936915176a883eddeca1cb5313ad
 ラヴィード,Raveed,en_r05_stl_box_ba1.ice,c6\a95c434bba98f8aa805c9276e44dad
 ハイ・ラヴィード,High Raveed,en_r05_stl_box_ba1h.ice,5a\1cca10368e72c0ea0aa9c338fc66f9
 ヴァルザッガ,Val Zagga,en_r05_stl_cas_el1.ice,f5\3a12b0ad30f3dbfab3d42c7e845c4d
@@ -551,6 +556,7 @@ en_non_myt_common.ice,d6\cc96ec78b2f3328190a77a42babd66
 ヘルジーグ,Herzig,en_r05_stl_gia_ba1.ice,46\a937967cce51909f83fd4e508748db
 ペイヴル,Peivl,en_r05_stl_gos_ba.ice,bb\a9681a0271f4b8679347d663b1984d
 パヴォリム,Pavolim,en_r05_stl_hrp_ba1.ice,b3\47e33b5166b1fe7f93ba5d6442ff15
+アグニ,Agni,en_r05_stl_hum_ba.ice,f8\415f59ff9960ecbae1735843ea33cc
 エリミネイダ,Elimineda,en_r05_stl_ins_ba1.ice,c0\c29a1bb138471c9537a52ed7918607
 ハイ・エリミネイダ,High Elimineda,en_r05_stl_ins_ba1h.ice,69\51f21c4df8dc549bef47ff983c3c5e
 リングウェッジ,Ringwedge,en_r05_stl_kic_ba1.ice,53\49fb14cee669f9cf91209970d61e4a
@@ -562,12 +568,15 @@ en_non_myt_common.ice,d6\cc96ec78b2f3328190a77a42babd66
 ディンド,Dindo,en_r05_stl_mtl_ba1.ice,dd\242f0659d3f68ebcfde00bbf9c497e
 ハヌマッド,Hanumad,en_r05_stl_nyb_ba1.ice,bc\ae18cf415949491f7505aaed4d9f59
 ギルゼイヴァ,Gil Zaver,en_r05_stl_pan_ba1.ice,6b\e7725fee7f3a0d26fa86195ca1ad5d
+ハイ・ギルゼイヴァ,High Gil Zaver,en_r05_stl_pan_ba1h.ice,5e\9d1c95ab4453c3556f679c412439c0
 ヴォルガ,Volga,en_r05_stl_pyc_ba.ice,b0\eff4225aad4b29031e9df8590a6f8f
 マクスヴァング,Max Vang,en_r05_stl_sip_ba1.ice,87\6cc2dfd03e55b4987fe63fc2c9bb65
+ハイ・マクスヴァング,High Max Vang,en_r05_stl_sip_ba1h.ice,a4\560c0d88d2077d42a28e62e856b9b0
 ,,en_r05_stl_sol_ba.ice,80\ccc3624ffc9a17d923231ed41413b0
 en_stl_sol_common.ice,cf\b7ad5fd232812252c462bf3db98b95
 アグネド,Agned,en_r05_stl_tig_ba1.ice,f8\7bd9f26e2e30ad849d66542508708e
 プルティネーデ,Plutineide,en_r05_stl_wic_ba1.ice,08\ab01642af28a6ff6854737221adff2
+ハイ・プルティネーデ,High Plutineide,en_r05_stl_wic_ba1h.ice,5e\5201c18c569a14c366890dd1a5718f
 ダークファルス・ソウラス,Dark Falz Solus,en_r05_stl_sls_ba.ice,d8\882838f67e66673e9136122546c400
 ダークファルス・ソウラス,Dark Falz Solus,en_r05_stl_sls_ex.ice,3d\a93f128035fa82e4faecdc56b8e4bd
 en_stl_sls_common.ice,6e\4e4f4eab90defa97725a45c14471a3
