@@ -14,7 +14,7 @@ import 'package:url_launcher/url_launcher_string.dart';
 Signal<String> downloadStatus = Signal('');
 Signal<double> downloadProgress = Signal(0.0);
 
-Future<bool> itemInfoDialog(context, Item item) async {
+Future<bool> itemInfoDialog(dynamic context, Item item) async {
   List<String> nameStrings = [];
   item.infos.forEach((key, value) {
     if (key.contains('Name')) {
@@ -193,7 +193,7 @@ Future<bool> itemInfoDialog(context, Item item) async {
       });
 }
 
-Future<bool> itemDownloadingDialog(context, Item item) async {
+Future<bool> itemDownloadingDialog(dynamic context, Item item) async {
   String? outputDirPath;
   late final webDownload = filesDownloadWeb(item);
   late final pcDownload = filesDownload(context, item);

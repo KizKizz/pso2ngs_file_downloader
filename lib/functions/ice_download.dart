@@ -131,7 +131,7 @@ Future<File> downloadIceFromOfficial(String iceName, String pathToSave) async {
   return downloadedIce;
 }
 
-Future<String?> filesDownload(context, Item item) async {
+Future<String?> filesDownload(dynamic context, Item item) async {
   List<String> downloadableKeys = ['Icon', 'Normal Quality', 'High Quality', 'Hash', 'Hash', 'Sounds', 'Linked Inner'];
   downloadDir.createSync(recursive: true);
   if (downloadDir.existsSync()) {

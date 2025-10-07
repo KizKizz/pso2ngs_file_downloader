@@ -52,7 +52,7 @@ Future<bool> itemDataFetch() async {
 
     loadingStatus.value = 'Loading Items';
 
-    if (!kIsWeb && kDebugMode && !overrideDebugMode) {
+    if (!kIsWeb && kDebugMode && !skipItemsRefresh) {
       // get filter choices from sheets
       itemFilterListJson.createSync(recursive: true);
       itemFilters.add(Filter('Item Type', ['PSO2', 'NGS']));

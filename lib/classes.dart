@@ -1,5 +1,8 @@
 import 'dart:convert';
+import 'dart:io';
 
+import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 
@@ -18,6 +21,38 @@ class Item {
   int? categoryIndex;
   String iconImagePath;
   Map<String, String> infos = {};
+
+  List<String> getItemNames() {
+    List<String> nameStrings = [];
+    infos.forEach((key, value) {
+      if (key.toLowerCase().contains('name') && value.isNotEmpty) {
+        nameStrings.add(value);
+      }
+    });
+    if (nameStrings.isEmpty) {
+      nameStrings.add(infos.values.firstWhere(
+        (element) => element.isNotEmpty,
+        orElse: () => 'Unknown',
+      ));
+    }
+
+    return nameStrings;
+  }
+
+  Widget getItemIcon() {
+    if (iconImagePath.isNotEmpty) {
+      return kDebugMode && !kIsWeb
+          ? Image.file(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, File(Uri.file(Directory.current.path + iconImagePath).toFilePath()))
+          : Image.network(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, githubIconPath + iconImagePath.replaceAll('\\', '/'));
+    } else {
+      return Image.asset(
+        width: double.infinity,
+        'assets/images/unknown.png',
+        filterQuality: FilterQuality.high,
+        fit: BoxFit.contain,
+      );
+    }
+  }
 
   bool filteredItem(List<String> filters) {
     if (filters.contains('PSO2') && filters.contains('NGS') && filters.length == 2) {

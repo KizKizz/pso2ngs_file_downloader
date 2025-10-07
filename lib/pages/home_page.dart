@@ -3,6 +3,7 @@
 import 'dart:io';
 import 'dart:typed_data';
 
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:choice/choice.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +19,7 @@ import 'package:pso2ngs_file_locator/pages/info_popup.dart';
 import 'package:pso2ngs_file_locator/version_check.dart';
 import 'package:pso2ngs_file_locator/widgets/buttons.dart';
 import 'package:responsive_grid/responsive_grid.dart';
+import 'package:searchfield/searchfield.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:signals/signals_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -120,7 +122,11 @@ class _HomePageState extends State<HomePage> with WindowListener {
         toolbarHeight: 30,
         elevation: 10,
         title: searchBox(),
-        actions: [itemCounter(), downloadMenuBtn(), filterBoxBtn(), lightDarkModeBtn(), aboutBtn()],
+        automaticallyImplyLeading: false,
+        leadingWidth: 0,
+        centerTitle: false,
+        titleSpacing: 5,
+        actions: [itemCounter(), if (!kIsWeb) downloadMenuBtn(), filterBoxBtn(), lightDarkModeBtn(), aboutBtn()],
       ),
       bottomNavigationBar: isUpdateAvailable.watch(context) ? newVersionBanner() : null,
       body: Padding(
@@ -215,19 +221,6 @@ class _HomePageState extends State<HomePage> with WindowListener {
 
   //Item Box
   Widget itemBox(Item item, double maxHeight) {
-    List<String> nameStrings = [];
-    item.infos.forEach((key, value) {
-      if (key.toLowerCase().contains('name') && value.isNotEmpty) {
-        nameStrings.add(value);
-      }
-    });
-    if (nameStrings.isEmpty) {
-      nameStrings.add(item.infos.values.firstWhere(
-        (element) => element.isNotEmpty,
-        orElse: () => 'Unknown',
-      ));
-    }
-
     return Container(
         constraints: BoxConstraints(maxHeight: maxHeight),
         child: Card(
@@ -243,20 +236,11 @@ class _HomePageState extends State<HomePage> with WindowListener {
               padding: const EdgeInsets.all(2),
               child: Column(
                 children: [
-                  item.iconImagePath.isNotEmpty
-                      ? kDebugMode && !kIsWeb
-                          ? Image.file(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, File(Uri.file(Directory.current.path + item.iconImagePath).toFilePath()))
-                          : Image.network(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, githubIconPath + item.iconImagePath.replaceAll('\\', '/'))
-                      : Image.asset(
-                          width: double.infinity,
-                          'assets/images/unknown.png',
-                          filterQuality: FilterQuality.high,
-                          fit: BoxFit.contain,
-                        ),
+                  item.getItemIcon(),
                   Expanded(
                       child: Center(
-                    child: Text(
-                      nameStrings.join('\n'),
+                    child: AutoSizeText(
+                      item.getItemNames().join('\n'),
                       textAlign: TextAlign.center,
                     ),
                   )),
@@ -269,54 +253,179 @@ class _HomePageState extends State<HomePage> with WindowListener {
 
   //Search box
   Widget searchBox() {
-    return SearchBar(
-      controller: searchBarController,
-      leading: Icon(Icons.search),
-      hintText: 'Search Items',
-      padding: WidgetStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
-      constraints: BoxConstraints(minHeight: 25, maxHeight: 25, maxWidth: double.infinity),
-      shape: WidgetStateProperty.resolveWith((states) {
-        return RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).primaryColor), borderRadius: const BorderRadius.all(Radius.circular(15)));
-      }),
-      backgroundColor: WidgetStatePropertyAll(Theme.of(context).canvasColor),
-      elevation: WidgetStatePropertyAll(0),
-      trailing: [
-        Visibility(
-          visible: searchBarController.text.isNotEmpty,
-          child: MaterialButton(
-            minWidth: 10,
-            onPressed: () {
-              searchBarController.clear();
-              if (selectedItemFilters.isEmpty) {
-                filteredItems = items;
-              } else {
-                filteredItems = items.where((element) => element.filteredItem(selectedItemFilters)).toList();
-              }
+    return SizedBox(
+        height: 26,
+        child: Stack(alignment: AlignmentDirectional.centerEnd, children: [
+          SearchField<Item>(
+            itemHeight: 90,
+            searchInputDecoration: SearchInputDecoration(
+                filled: true,
+                fillColor: Theme.of(context).scaffoldBackgroundColor,
+                isDense: true,
+                contentPadding: const EdgeInsets.only(left: 20, right: 5, bottom: 15),
+                cursorHeight: 15,
+                border: OutlineInputBorder(borderRadius: BorderRadius.circular(25), borderSide: BorderSide(color: Theme.of(context).colorScheme.inverseSurface)),
+                cursorColor: Theme.of(context).colorScheme.inverseSurface,
+                hintText: 'Item Search'),
+            suggestionsDecoration: SuggestionDecoration(color: Theme.of(context).navigationBarTheme.backgroundColor),
+            suggestions: filteredItems
+                .map(
+                  (e) => SearchFieldListItem<Item>(
+                    e.getItemNames().join(' '),
+                    item: e,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 5),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        spacing: 5,
+                        children: [
+                          SizedBox(
+                            width: 75,
+                            height: 75,
+                            child: e.getItemIcon(),
+                          ),
+                          Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(e.category!, style: TextStyle(fontWeight: FontWeight.bold)),
+                              if (e.subCategory!.isNotEmpty && !e.category!.contains(e.subCategory!)) Text(e.subCategory!, style: TextStyle(fontWeight: FontWeight.w500)),
+                              Text(e.getItemNames().join(' | ')),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                )
+                .toList(),
+            controller: searchBarController,
+            onSuggestionTap: (p0) {
+              searchBarController.text = p0.searchKey;
+              filteredItems = [p0.item!];
               setState(() {});
             },
-            child: Icon(Icons.close),
+            onSearchTextChanged: (p0) {
+              if (p0.isNotEmpty) {
+                if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
+                  filteredItems = items;
+                } else {
+                  filteredItems = items.where((element) => element.filteredItem(selectedItemFilters)).toList();
+                }
+                filteredItems = filteredItems.where((element) => element.infos.values.where((element) => element.toLowerCase().contains(p0.toLowerCase())).isNotEmpty).toList();
+              } else {
+                if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
+                  filteredItems = items;
+                } else {
+                  filteredItems = items.where((element) => element.filteredItem(selectedItemFilters)).toList();
+                }
+              }
+              setState(() {});
+              return filteredItems
+                  .map(
+                    (e) => SearchFieldListItem<Item>(
+                      e.getItemNames().join(' '),
+                      item: e,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 5),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          spacing: 5,
+                          children: [
+                            SizedBox(
+                              width: 75,
+                              height: 75,
+                              child: e.getItemIcon(),
+                            ),
+                            Column(
+                              mainAxisSize: MainAxisSize.min,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(e.category!, style: TextStyle(fontWeight: FontWeight.bold)),
+                                if (e.subCategory!.isNotEmpty && !e.category!.contains(e.subCategory!)) Text(e.subCategory!, style: TextStyle(fontWeight: FontWeight.w500)),
+                                Text(e.getItemNames().join(' | ')),
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  )
+                  .toList();
+            },
           ),
-        )
-      ],
-      onChanged: (value) {
-        //searchBarController.text = value;
-        if (value.isNotEmpty) {
-          if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
-            filteredItems = items;
-          } else {
-            filteredItems = items.where((element) => element.filteredItem(selectedItemFilters)).toList();
-          }
-          filteredItems = filteredItems.where((element) => element.infos.values.where((element) => element.toLowerCase().contains(value.toLowerCase())).isNotEmpty).toList();
-        } else {
-          if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
-            filteredItems = items;
-          } else {
-            filteredItems = items.where((element) => element.filteredItem(selectedItemFilters)).toList();
-          }
-        }
-        setState(() {});
-      },
-    );
+          Visibility(
+            visible: searchBarController.value.text.isNotEmpty,
+            child: Padding(
+              padding: const EdgeInsets.only(right: 2),
+              child: IconButton(
+                  visualDensity: VisualDensity.adaptivePlatformDensity,
+                  onPressed: searchBarController.value.text.isNotEmpty
+                      ? () {
+                          searchBarController.clear();
+                          if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
+                            filteredItems = items;
+                          } else {
+                            filteredItems = items.where((element) => element.filteredItem(selectedItemFilters)).toList();
+                          }
+                          setState(() {});
+                        }
+                      : null,
+                  icon: const Icon(Icons.close)),
+            ),
+          )
+        ]));
+
+    // return SearchBar(
+    //   controller: searchBarController,
+    //   leading: Icon(Icons.search),
+    //   hintText: 'Search Items',
+    //   padding: WidgetStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
+    //   constraints: BoxConstraints(minHeight: 25, maxHeight: 25, maxWidth: double.infinity),
+    //   shape: WidgetStateProperty.resolveWith((states) {
+    //     return RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).primaryColor), borderRadius: const BorderRadius.all(Radius.circular(15)));
+    //   }),
+    //   backgroundColor: WidgetStatePropertyAll(Theme.of(context).canvasColor),
+    //   elevation: WidgetStatePropertyAll(0),
+    //   trailing: [
+    //     Visibility(
+    //       visible: searchBarController.text.isNotEmpty,
+    //       child: MaterialButton(
+    //         minWidth: 10,
+    //         onPressed: () {
+    //           searchBarController.clear();
+    //           if (selectedItemFilters.isEmpty) {
+    //             filteredItems = items;
+    //           } else {
+    //             filteredItems = items.where((element) => element.filteredItem(selectedItemFilters)).toList();
+    //           }
+    //           setState(() {});
+    //         },
+    //         child: Icon(Icons.close),
+    //       ),
+    //     )
+    //   ],
+    //   onChanged: (value) {
+    //     //searchBarController.text = value;
+    //     if (value.isNotEmpty) {
+    //       if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
+    //         filteredItems = items;
+    //       } else {
+    //         filteredItems = items.where((element) => element.filteredItem(selectedItemFilters)).toList();
+    //       }
+    //       filteredItems = filteredItems.where((element) => element.infos.values.where((element) => element.toLowerCase().contains(value.toLowerCase())).isNotEmpty).toList();
+    //     } else {
+    //       if (selectedItemFilters.contains('PSO2') && selectedItemFilters.contains('NGS') && selectedItemFilters.length == 2) {
+    //         filteredItems = items;
+    //       } else {
+    //         filteredItems = items.where((element) => element.filteredItem(selectedItemFilters)).toList();
+    //       }
+    //     }
+    //     setState(() {});
+    //   },
+    // );
   }
 
   //Item Count
@@ -378,7 +487,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
     return SearchBar(
       controller: filterSearchBarController,
       leading: Icon(Icons.search),
-      hintText: 'Search Filters',
+      hintText: 'Filter Search',
       padding: WidgetStatePropertyAll(EdgeInsets.only(bottom: 2, left: 10, right: 10)),
       constraints: BoxConstraints(minHeight: 30, maxHeight: 30, maxWidth: double.infinity),
       shape: WidgetStateProperty.resolveWith((states) {
@@ -597,7 +706,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
 
   Widget clearAllFiltersBtn() {
     return ElevatedButton(
-        child: const Text('Clear All Filters'),
+        child: const Text('Reset All Filters'),
         onPressed: () async {
           final prefs = await SharedPreferences.getInstance();
           selectedItemFilters = ['PSO2', 'NGS'];
@@ -654,9 +763,12 @@ class _HomePageState extends State<HomePage> with WindowListener {
                       );
                       for (var dir in dledItems) {
                         for (var itemDir in dir.listSync().whereType<Directory>()) {
-                          downloadedItemList.add(ListTile(title: Text(p.basename(itemDir.path)), dense: true, onTap: () => launchUrlString(itemDir.path),));
+                          downloadedItemList.add(ListTile(
+                            title: Text(p.basename(itemDir.path)),
+                            dense: true,
+                            onTap: () => launchUrlString(itemDir.path),
+                          ));
                         }
-                        
                       }
                     }
                   } else {

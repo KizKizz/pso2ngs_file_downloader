@@ -9,7 +9,7 @@ import 'package:url_launcher/url_launcher.dart';
 double _downloadPercent = 0;
 String _downloadErrorMsg = '';
 
-Future<void> patchNotesDialog(context) async {
+Future<void> patchNotesDialog(dynamic context) async {
   return showDialog<void>(
     barrierDismissible: false,
     context: context, // user must tap button!
@@ -53,7 +53,7 @@ Future<void> patchNotesDialog(context) async {
   );
 }
 
-Future<void> appDownloadDialog(context) async {
+Future<void> appDownloadDialog(dynamic context) async {
   Dio dio = Dio();
   return showDialog<void>(
     barrierDismissible: false,
