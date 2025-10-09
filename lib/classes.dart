@@ -1,5 +1,8 @@
 import 'dart:convert';
+import 'dart:io';
 
+import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 
@@ -19,16 +22,58 @@ class Item {
   String iconImagePath;
   Map<String, String> infos = {};
 
-  bool filteredItem(List<String> filters) {
-    if (filters.contains('PSO2') && filters.contains('NGS') && filters.length == 2) {
-      return true;
-    } else if (filters.where((element) => itemType.contains(element)).isNotEmpty && filters.length == 1) {
-      return true;
+  List<String> getItemNames() {
+    List<String> nameStrings = [];
+    infos.forEach((key, value) {
+      if (key.toLowerCase().contains('name') && value.isNotEmpty) {
+        nameStrings.add(value);
+      }
+    });
+    if (nameStrings.isEmpty) {
+      nameStrings.add(infos.values.firstWhere(
+        (element) => element.isNotEmpty,
+        orElse: () => 'Unknown',
+      ));
+    }
+
+    return nameStrings;
+  }
+
+  Widget getItemIcon() {
+    if (iconImagePath.isNotEmpty) {
+      return kDebugMode && !kIsWeb
+          ? Image.file(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, File(Uri.file(Directory.current.path + iconImagePath).toFilePath()))
+          : Image.network(width: double.infinity, filterQuality: FilterQuality.high, fit: BoxFit.contain, githubIconPath + iconImagePath.replaceAll('\\', '/'));
     } else {
-      if (filters.where((element) => itemType.contains(element)).isNotEmpty && filters.where((e) => itemCategories.contains(e)).isNotEmpty) {
-        return true;
-      } else if (filters.where((element) => itemType.contains(element)).isNotEmpty && itemCategories.where((e) => filters.contains(e.replaceAll('PSO2', '').replaceAll('NGS', ''))).isNotEmpty) {
-        return true;
+      return Image.asset(
+        width: double.infinity,
+        'assets/images/unknown.png',
+        filterQuality: FilterQuality.high,
+        fit: BoxFit.contain,
+      );
+    }
+  }
+
+  bool filteredItem(List<String> filters) {
+    if (showItemCategoryFilters) {
+      if (itemType.contains(itemVersionFilter) || itemVersionFilter == 'Both') {
+        if (filters.isEmpty) {
+          return true;
+        } else if (filters.contains(category)) {
+          return true;
+        }
+      } else {
+        return false;
+      }
+    } else {
+      if (itemType.contains(itemVersionFilter) || itemVersionFilter == 'Both') {
+        if (filters.isEmpty) {
+          return true;
+        } else if (itemCategories.where((e) => filters.contains(e.replaceAll('PSO2', '').replaceAll('NGS', ''))).isNotEmpty) {
+          return true;
+        }
+      } else {
+        return false;
       }
     }
     return false;

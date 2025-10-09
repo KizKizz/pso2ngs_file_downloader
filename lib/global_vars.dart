@@ -39,15 +39,18 @@ Directory downloadDir = Directory(Uri.file('${Directory.current.path}/Downloaded
 String zamboniExePath = Uri.file('${Directory.current.path}/Zamboni/Zamboni.exe').toFilePath();
 String githubIconPath = 'https://raw.githubusercontent.com/KizKizz/pso2ngs_file_downloader/main';
 String charToReplace = '[\\/:*?"<>|]';
-bool overrideDebugMode = false;
+bool skipItemsRefresh = true;
 bool filterBoxShow = true;
 List<Filter> itemFilters = [];
 List<String> selectedItemFilters = [];
 bool showEmptyInfoFields = false;
 bool extractIceFilesAfterDownload = false;
+bool showItemCategoryFilters = true;
 List<Widget> downloadedItemList = [];
 List<String> searchedFilterList = [];
 List<String> allFilterList = [];
+List<String> itemCategoryList = [];
+String itemVersionFilter = '';
 List<String> defaultCategoryDirs = [
   'Accessories', //0
   'Basewears', //1

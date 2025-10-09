@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 
 List<String> currentVersionValues = appVersion.split('.');
-Future<void> checkForUpdates(context) async {
+Future<void> checkForUpdates(dynamic context) async {
   final jsonVal = await loadJsonFromGithub();
   if (jsonVal.entries.first.key != 'null') {
     int curMajor = int.parse(currentVersionValues[0]);
