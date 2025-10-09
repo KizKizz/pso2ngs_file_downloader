@@ -55,7 +55,7 @@ Future<bool> itemDataFetch() async {
     if (!kIsWeb && kDebugMode && !skipItemsRefresh) {
       // get filter choices from sheets
       itemFilterListJson.createSync(recursive: true);
-      itemFilters.add(Filter('Item Type', ['PSO2', 'NGS']));
+      // itemFilters.add(Filter('Item Type', ['PSO2', 'NGS']));
       for (var mainDir in refSheetsDir.listSync().whereType<Directory>()) {
         final allFilesInMainDir = mainDir.listSync(recursive: true).whereType<File>().where((element) => p.extension(element.path) == '.csv');
         if (allFilesInMainDir.isNotEmpty) {
@@ -183,6 +183,11 @@ Future<bool> itemDataFetch() async {
         await Future.delayed(const Duration(microseconds: 10));
       }
     }
+
+    for (var item in items) {
+      if (!itemCategoryList.contains(item.category)) itemCategoryList.add(item.category!);
+    }
+    itemCategoryList.sort((a, b) => a.toLowerCase().compareTo(b.toLowerCase()));
 
     loadingStatus.value = 'Finish!';
     await Future.delayed(const Duration(microseconds: 10));

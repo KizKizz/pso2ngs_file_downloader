@@ -45,9 +45,12 @@ List<Filter> itemFilters = [];
 List<String> selectedItemFilters = [];
 bool showEmptyInfoFields = false;
 bool extractIceFilesAfterDownload = false;
+bool showItemCategoryFilters = true;
 List<Widget> downloadedItemList = [];
 List<String> searchedFilterList = [];
 List<String> allFilterList = [];
+List<String> itemCategoryList = [];
+String itemVersionFilter = '';
 List<String> defaultCategoryDirs = [
   'Accessories', //0
   'Basewears', //1

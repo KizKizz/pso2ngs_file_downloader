@@ -84,6 +84,7 @@ class _SplashState extends State<Splash> {
 
     themeModeCheck();
     filtersCheck();
+    itemVersionFilterCheck();
     super.initState();
   }
 
@@ -106,7 +107,18 @@ class _SplashState extends State<Splash> {
   Future<void> filtersCheck() async {
     final prefs = await SharedPreferences.getInstance();
     filterBoxShow = (prefs.getBool('filterBoxShow') ?? true);
-    selectedItemFilters = (prefs.getStringList('selectedItemFilters') ?? ['PSO2', 'NGS']);
+    showItemCategoryFilters = prefs.getBool('showItemCategoryFilters') ?? true;
+    selectedItemFilters = prefs.getStringList('selectedItemFilters') ?? [];
+    if (selectedItemFilters.contains('PSO2') || selectedItemFilters.contains('NGS')) {
+      selectedItemFilters.removeWhere((e) => e == 'PSO2');
+      selectedItemFilters.removeWhere((e) => e == 'NGS');
+      prefs.setStringList('selectedItemFilters', selectedItemFilters);
+    }
+  }
+
+  Future<void> itemVersionFilterCheck() async {
+    final prefs = await SharedPreferences.getInstance();
+    itemVersionFilter = prefs.getString('itemVersionFilter') ?? 'Both';
   }
 
   Future<void> miscSettingsCheck() async {

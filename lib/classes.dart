@@ -55,15 +55,25 @@ class Item {
   }
 
   bool filteredItem(List<String> filters) {
-    if (filters.contains('PSO2') && filters.contains('NGS') && filters.length == 2) {
-      return true;
-    } else if (filters.where((element) => itemType.contains(element)).isNotEmpty && filters.length == 1) {
-      return true;
+    if (showItemCategoryFilters) {
+      if (itemType.contains(itemVersionFilter) || itemVersionFilter == 'Both') {
+        if (filters.isEmpty) {
+          return true;
+        } else if (filters.contains(category)) {
+          return true;
+        }
+      } else {
+        return false;
+      }
     } else {
-      if (filters.where((element) => itemType.contains(element)).isNotEmpty && filters.where((e) => itemCategories.contains(e)).isNotEmpty) {
-        return true;
-      } else if (filters.where((element) => itemType.contains(element)).isNotEmpty && itemCategories.where((e) => filters.contains(e.replaceAll('PSO2', '').replaceAll('NGS', ''))).isNotEmpty) {
-        return true;
+      if (itemType.contains(itemVersionFilter) || itemVersionFilter == 'Both') {
+        if (filters.isEmpty) {
+          return true;
+        } else if (itemCategories.where((e) => filters.contains(e.replaceAll('PSO2', '').replaceAll('NGS', ''))).isNotEmpty) {
+          return true;
+        }
+      } else {
+        return false;
       }
     }
     return false;
