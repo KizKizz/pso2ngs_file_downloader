@@ -49,8 +49,9 @@ bool showItemCategoryFilters = true;
 List<Widget> downloadedItemList = [];
 List<String> searchedFilterList = [];
 List<String> allFilterList = [];
-List<String> itemCategoryList = [];
+List<(String, List<String>)> itemCategoryList = [];
 String itemVersionFilter = '';
+List<Item> filteredItems = [];
 List<String> defaultCategoryDirs = [
   'Accessories', //0
   'Basewears', //1

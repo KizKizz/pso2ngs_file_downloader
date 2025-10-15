@@ -1,5 +1,7 @@
 // ignore_for_file: use_build_context_synchronously
 
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -7,9 +9,12 @@ import 'package:pso2ngs_file_locator/functions/data_fetch.dart';
 import 'package:pso2ngs_file_locator/functions/helpers.dart';
 import 'package:pso2ngs_file_locator/global_vars.dart';
 import 'package:pso2ngs_file_locator/pages/home_page.dart';
+import 'package:pso2ngs_file_locator/version_check.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:signals/signals_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:window_manager/window_manager.dart';
+import 'package:path/path.dart' as p;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -171,6 +176,50 @@ class _SplashState extends State<Splash> {
               ],
             );
           } else {
+            if (!kIsWeb) {
+              checkForUpdates(context);
+
+              if (downloadDir.existsSync()) {
+                final dledItems = downloadDir.listSync().whereType<Directory>().map((e) => p.basenameWithoutExtension(e.path)).toList();
+                downloadedItemList.add(
+                  Padding(
+                    padding: EdgeInsets.only(top: 10, bottom: 10, left: 5, right: 5),
+                    child: Center(
+                      child: ElevatedButton(
+                          child: const Text('Open Download Folder'),
+                          onPressed: () async {
+                            launchUrl(Uri.directory(downloadDir.path));
+                          }),
+                    ),
+                  ),
+                );
+                if (dledItems.isNotEmpty) {
+                  downloadedItemList.add(
+                    Divider(
+                      thickness: 1,
+                      indent: 5,
+                      endIndent: 5,
+                      height: 0,
+                    ),
+                  );
+                  for (var name in dledItems) {
+                    downloadedItemList.add(ListTile(title: Text(name), dense: true));
+                  }
+                }
+              }
+            }
+
+            if (selectedItemFilters.isEmpty) {
+              filteredItems = items;
+            } else {
+              filteredItems = items.where((e) => e.filteredItem(selectedItemFilters)).toList();
+            }
+
+            for (var filter in itemFilters) {
+              for (var ff in filter.fileFilters) {
+                allFilterList.add(ff);
+              }
+            }
             // Navigator.pushReplacementNamed(context, '/home');
             return const HomePage();
           }
