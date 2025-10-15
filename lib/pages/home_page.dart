@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, unused_import, duplicate_ignore
 
+import 'dart:async';
 import 'dart:io';
 import 'dart:typed_data';
 
@@ -38,58 +39,24 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> with WindowListener {
-  List<Item> filteredItems = [];
+  List<int> expandedTiles = [];
   TextEditingController searchBarController = TextEditingController();
   TextEditingController filterSearchBarController = TextEditingController();
 
+  Future<List<Widget>> getItems() async {
+    List<Widget> widgets = [];
+    Future.delayed(Duration(milliseconds: 100));
+    for (var item in filteredItems) {
+      widgets.add(itemBox(item, 200));
+      Future.delayed(Duration(milliseconds: 100));
+    }
+    return widgets;
+    // return filteredItems.map((e) => itemBox(e, 200)).toList();
+  }
+
   @override
   void initState() {
-    if (!kIsWeb) {
-      checkForUpdates(context);
-      windowManager.addListener(this);
-
-      if (downloadDir.existsSync()) {
-        final dledItems = downloadDir.listSync().whereType<Directory>().map((e) => p.basenameWithoutExtension(e.path)).toList();
-        downloadedItemList.add(
-          Padding(
-            padding: EdgeInsets.only(top: 10, bottom: 10, left: 5, right: 5),
-            child: Center(
-              child: ElevatedButton(
-                  child: const Text('Open Download Folder'),
-                  onPressed: () async {
-                    launchUrl(Uri.directory(downloadDir.path));
-                  }),
-            ),
-          ),
-        );
-        if (dledItems.isNotEmpty) {
-          downloadedItemList.add(
-            Divider(
-              thickness: 1,
-              indent: 5,
-              endIndent: 5,
-              height: 0,
-            ),
-          );
-          for (var name in dledItems) {
-            downloadedItemList.add(ListTile(title: Text(name), dense: true));
-          }
-        }
-      }
-    }
-
-    if (selectedItemFilters.isEmpty) {
-      filteredItems = items;
-    } else {
-      filteredItems = items.where((e) => e.filteredItem(selectedItemFilters)).toList();
-    }
-
-    for (var filter in itemFilters) {
-      for (var ff in filter.fileFilters) {
-        allFilterList.add(ff);
-      }
-    }
-
+    windowManager.addListener(this);
     super.initState();
   }
 
@@ -104,7 +71,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
   @override
   Widget build(BuildContext context) {
     double gridItemWidth = 100;
-    double gridItemHeight = 200;
+    // double gridItemHeight = 200;
 
     return Scaffold(
       appBar: AppBar(
@@ -122,7 +89,72 @@ class _HomePageState extends State<HomePage> with WindowListener {
       body: Padding(
         padding: EdgeInsets.only(left: 0, right: 5, top: 5, bottom: 5),
         child: Row(children: [
-          Expanded(flex: 3, child: ResponsiveGridList(desiredItemWidth: gridItemWidth, minSpacing: 5, children: filteredItems.map((e) => itemBox(e, gridItemHeight)).toList())),
+          Expanded(
+              flex: 3,
+              child: FutureBuilder(
+                future: getItems(),
+                builder: (BuildContext context, AsyncSnapshot snapshot) {
+                  if (snapshot.connectionState != ConnectionState.done && filteredItems.length > items.length / 2 || snapshot.data == null) {
+                    return Center(
+                      child: Card(
+                          shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).colorScheme.outline, width: 1.5), borderRadius: const BorderRadius.all(Radius.circular(5))),
+                          color: Theme.of(context).scaffoldBackgroundColor.withAlpha(150),
+                          elevation: 5,
+                          child: Padding(
+                            padding: EdgeInsetsGeometry.all(20),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                CircularProgressIndicator(),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10),
+                                  child: Text(
+                                    'Loading Items',
+                                    style: Theme.of(context).textTheme.bodyLarge,
+                                  ),
+                                )
+                              ],
+                            ),
+                          )),
+                    );
+                  } else if (snapshot.connectionState == ConnectionState.done && snapshot.hasError && filteredItems.length > items.length / 2) {
+                    return Center(
+                      child: Card(
+                          shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).colorScheme.outline, width: 1.5), borderRadius: const BorderRadius.all(Radius.circular(5))),
+                          color: Theme.of(context).scaffoldBackgroundColor.withAlpha(150),
+                          elevation: 5,
+                          child: Padding(
+                            padding: EdgeInsetsGeometry.all(20),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                CircularProgressIndicator(),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10),
+                                  child: Text('Error', style: Theme.of(context).textTheme.headlineMedium),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 5),
+                                  child: Text('Loading Items', style: Theme.of(context).textTheme.bodyLarge),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10),
+                                  child: Text(snapshot.error.toString(), style: Theme.of(context).textTheme.bodyMedium),
+                                )
+                              ],
+                            ),
+                          )),
+                    );
+                  } else {
+                    List<Widget> widgets = snapshot.data;
+                    return ResponsiveGridList(desiredItemWidth: gridItemWidth, minSpacing: 5, children: widgets);
+                  }
+                },
+              )),
           Visibility(
               visible: filterBoxShow,
               child: Expanded(
@@ -223,19 +255,52 @@ class _HomePageState extends State<HomePage> with WindowListener {
                                       shrinkWrap: true,
                                       itemCount: itemCategoryList.length,
                                       itemBuilder: (context, index) {
-                                        return CheckboxListTile(
-                                          title: Text(itemCategoryList[index]),
-                                          value: selectedItemFilters.contains(itemCategoryList[index]),
-                                          onChanged: (value) async {
-                                            final prefs = await SharedPreferences.getInstance();
-                                            selectedItemFilters.contains(itemCategoryList[index])
-                                                ? selectedItemFilters.remove(itemCategoryList[index])
-                                                : selectedItemFilters.add(itemCategoryList[index]);
-                                            filteredItems = items.where((e) => e.filteredItem(selectedItemFilters)).toList();
-                                            prefs.setStringList('selectedItemFilters', selectedItemFilters);
-                                            setState(() {});
-                                          },
-                                        );
+                                        return itemCategoryList[index].$2.isEmpty
+                                            ? CheckboxListTile(
+                                                title: Text(itemCategoryList[index].$1),
+                                                value: selectedItemFilters.contains(itemCategoryList[index].$1),
+                                                controlAffinity: ListTileControlAffinity.leading,
+                                                onChanged: (value) async {
+                                                  final prefs = await SharedPreferences.getInstance();
+                                                  selectedItemFilters.contains(itemCategoryList[index].$1)
+                                                      ? selectedItemFilters.remove(itemCategoryList[index].$1)
+                                                      : selectedItemFilters.add(itemCategoryList[index].$1);
+                                                  filteredItems = items.where((e) => e.filteredItem(selectedItemFilters)).toList();
+                                                  prefs.setStringList('selectedItemFilters', selectedItemFilters);
+                                                  setState(() {});
+                                                },
+                                              )
+                                            : ExpansionTile(
+                                                initiallyExpanded: selectedItemFilters.indexWhere((e) => itemCategoryList[index].$2.contains(e)) != -1,
+                                                leading: Checkbox(
+                                                  value: selectedItemFilters.indexWhere((e) => itemCategoryList[index].$2.contains(e)) == -1
+                                                      ? false
+                                                      : selectedItemFilters.where((e) => itemCategoryList[index].$2.contains(e)).length < itemCategoryList[index].$2.length
+                                                          ? null
+                                                          : true,
+                                                  tristate: true,
+                                                  onChanged: (value) {},
+                                                ),
+                                                childrenPadding: EdgeInsets.only(left: 5),
+                                                title: Text(
+                                                  itemCategoryList[index].$1,
+                                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                                ),
+                                                children: itemCategoryList[index]
+                                                    .$2
+                                                    .map((e) => CheckboxListTile(
+                                                          title: Text(e),
+                                                          value: selectedItemFilters.contains(e),
+                                                          controlAffinity: ListTileControlAffinity.leading,
+                                                          onChanged: (value) async {
+                                                            final prefs = await SharedPreferences.getInstance();
+                                                            selectedItemFilters.contains(e) ? selectedItemFilters.remove(e) : selectedItemFilters.add(e);
+                                                            filteredItems = items.where((i) => i.filteredItem(selectedItemFilters)).toList();
+                                                            prefs.setStringList('selectedItemFilters', selectedItemFilters);
+                                                            setState(() {});
+                                                          },
+                                                        ))
+                                                    .toList());
                                       },
                                     ),
                                   ),

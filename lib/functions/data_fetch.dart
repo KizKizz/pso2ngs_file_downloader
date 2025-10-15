@@ -185,9 +185,14 @@ Future<bool> itemDataFetch() async {
     }
 
     for (var item in items) {
-      if (!itemCategoryList.contains(item.category)) itemCategoryList.add(item.category!);
+      int index = itemCategoryList.indexWhere((e) => e.$1.contains(item.category!));
+      if (index == -1) {
+        itemCategoryList.add((item.category!, item.subCategory!.isNotEmpty ? [item.subCategory!] : []));
+      } else {
+        if (item.subCategory!.isNotEmpty && !itemCategoryList[index].$2.contains(item.subCategory!)) itemCategoryList[index].$2.add(item.subCategory!);
+      }
     }
-    itemCategoryList.sort((a, b) => a.toLowerCase().compareTo(b.toLowerCase()));
+    itemCategoryList.sort((a, b) => a.$1.compareTo(b.$1));
 
     loadingStatus.value = 'Finish!';
     await Future.delayed(const Duration(microseconds: 10));

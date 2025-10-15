@@ -59,7 +59,7 @@ class Item {
       if (itemType.contains(itemVersionFilter) || itemVersionFilter == 'Both') {
         if (filters.isEmpty) {
           return true;
-        } else if (filters.contains(category)) {
+        } else if (filters.contains(category) || filters.contains(subCategory)) {
           return true;
         }
       } else {
