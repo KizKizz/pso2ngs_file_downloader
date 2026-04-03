@@ -2,7 +2,7 @@
 Object Name JP (if known),Object Name EN (if known),Object Function,Animation type,category 1,category 2,object unhashed name,object hashed name,object _ex textures hashed name
 
 
-,,message_inout,motion_none,ground,ground,object/map_object/ob_1000_0001.ice,60c03e1256d5ae75620d2ec9375ab659,d06636513a110346019ce2d0d0ac6cf3
+ウェルカムマット,Welcome Mat,message_inout,motion_none,ground,ground,object/map_object/ob_1000_0001.ice,60c03e1256d5ae75620d2ec9375ab659,d06636513a110346019ce2d0d0ac6cf3
 モダンソファ,Modern Sofa,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_0002.ice,e94cc8730f57ee90e02999f43670d95c,2c482c032bc940f237b20db41b4dd337
 クラシックソファ,Classic Sofa,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_0003.ice,99d4c8046da3038c00e1d3601f3c8ad4,15afbdafbd1451a780933ffe48f7e175
 ゴシックソファ,Gothic Sofa,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_0004.ice,03a4b8d148993d8e3c692cfa155bf621,e487556140c41a7964120f6ee7fe8c3c
@@ -26,7 +26,7 @@ Object Name JP (if known),Object Name EN (if known),Object Function,Animation ty
 エレガントバスタブ,Elegant Bathtub,motion,motion_bathe,ground,ground,object/map_object/ob_1000_0023.ice,f95742d44adefc0712f07ee9f1714089,715be3c5688a58675a15d41648a91d6c
 ,,motion,motion_toilet,ground,ground,object/map_object/ob_1000_0024.ice,945d0bfd68d13d2f77b3b5a3095b2054,d6cc2ed85973b424b84a446d88ded75c
 洗濯機,Washing Machine,none,motion_none,ground,ground,object/map_object/ob_1000_0026.ice,8313de8637e9524b09cf1aaf44d19bfa,1ef902f6f4552c4be89e96e842b1d4a8
-,,fatscale,motion_none,ground,ground,object/map_object/ob_1000_0027.ice,ff55daf4565724ac032289e86666c909,1882994f8ef94aed97b36373fecd6f38
+ウェイトチェッカー,Weight Analyzer,fatscale,motion_none,ground,ground,object/map_object/ob_1000_0027.ice,ff55daf4565724ac032289e86666c909,1882994f8ef94aed97b36373fecd6f38
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_0028.ice,6991f645a0bc614a13f8607c9734f42d,f94f91d27c8e76996765a55dc13e4cdb
 ワノシーリングライト,Japanese Pendant Light,none,motion_none,ceiling,ground,object/map_object/ob_1000_0030.ice,6e5c89136f7233d3f25b661be6330529,0c4438998b61b78de3c4e494fda21a0d
 モダンシャンデリア,Modern Chandelier,none,motion_none,ceiling,ground,object/map_object/ob_1000_0031.ice,e12a073b4c9963c449cf6994cae2b46d,9835ec64939237e1a2a710e44556be72
@@ -34,7 +34,7 @@ Object Name JP (if known),Object Name EN (if known),Object Function,Animation ty
 ゴシックシャンデリア,Gothic Chandelier,none,motion_none,ceiling,ground,object/map_object/ob_1000_0033.ice,d2e01b5306ece5ef2a8e6b72ef91089e,8378847536dd0eb0ccd13f40ed68554b
 メッセージボード,Message Board,black_board,motion_none,wall,ground,object/map_object/ob_1000_0034.ice,b66e8add2a826e992a135fac150ec02f,2425a3a4b898d7202f40f8ef26aa40c2
 ロッカー,Locker,none,motion_none,wall,ground,object/map_object/ob_1000_0035.ice,d8f2c97e0388fb1c1535f6faa0268141,3eb158abe751af9fc97aadba7dd2ae9c
-,,jukebox,motion_none,ground,ground,object/map_object/ob_1000_0037.ice,4aa1ade09dc9b3c312e3d3cebb0de524,f156bbd78bc3551b5bf4c37535fe22f1
+ＤＪブース,DJ Booth,jukebox,motion_none,ground,ground,object/map_object/ob_1000_0037.ice,4aa1ade09dc9b3c312e3d3cebb0de524,f156bbd78bc3551b5bf4c37535fe22f1
 プライベートプール,Private Pool,none,motion_none,ground,ground,object/map_object/ob_1000_0038.ice,996511b0e6a9592ae019a5cd70b5d975,d7b0ada339ec376ef93a51fe389ea2a8
 シーベイジングセット,Sunbathing Set,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_0039.ice,8626ec7be9403d4f3018beece1eb0489,718a3f5aaaf4afd1a5144283f6549aec
 ,,motion,motion_darts,ground,ground,object/map_object/ob_1000_0044.ice,3e2203af7420dbe341705a6809210c82,ca22c8dcf4162880e3285ec148190e46
@@ -165,7 +165,7 @@ Object Name JP (if known),Object Name EN (if known),Object Function,Animation ty
 ＰＲＥボックス,PRE Box,present_box,motion_none,ground,ground,object/map_object/ob_1000_0182.ice,70d1c75277cb48bb2f416b523999514a,725d24d1c1cbca2260f6d770304a6ae4
 プレゼバコウラ,Gift Box Stack,present_box,motion_none,ground,ground,object/map_object/ob_1000_0183.ice,d0ee5a9413579460ee882a3b8026c1b5,e0ae1670fafe44f9d4f2305b180ff723
 プレ・プレ・ボッカス,Sturdy Chest,present_box,motion_none,ground,ground,object/map_object/ob_1000_0184.ice,a7ddf692b74a29669905b3d22be6456b,b2d095e78b9fc13a865a74d67ffd1d2c
-,,present_box,motion_none,ground,ground,object/map_object/ob_1000_0185.ice,cda7dd96e30b9f9b8baf3e06627e54cd,3f87953db349f728ef6d9b446b71fbec
+ドコデモキュウビン,Anywhere Express Package,present_box,motion_none,ground,ground,object/map_object/ob_1000_0185.ice,cda7dd96e30b9f9b8baf3e06627e54cd,3f87953db349f728ef6d9b446b71fbec
 ツマラナイモノ,A Little Something,present_box,motion_none,ground,ground,object/map_object/ob_1000_0186.ice,f7036268f4fd8c54a97d6513dbe1eefe,f992e94d285a56631bcf95c5eff928cd
 ファンクションテーブル,Functional Table,custmize,motion_none,ground,ground,object/map_object/ob_1000_0187.ice,4fa7e104b981c22d8805c5e569028e79,ea3d507bc89f35c88aca2e524e4ed7f2
 ファンクションチェア,Functional Chair,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_0188.ice,fef8a17081d2e037e43415af32d6a1f3,c13e14751232d7c91b47c54854e2ca40
@@ -210,8 +210,8 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ラッピーピンクマグカップ,Pink Rappy Mug,none,motion_none,ground,deco,object/map_object/ob_1000_0227.ice,9546fb659881c8295184491163a76460,02469cd3cf205018d4c79616765539d0
 ラッピーブルーマグカップ,Blue Rappy Mug,none,motion_none,ground,deco,object/map_object/ob_1000_0228.ice,b7bf60106999186009c575ae7437e0b1,af08b570291cde856e612bca3914baa1
 キャンドルスティック,Candle Sconce,none,motion_none,wall,ground,object/map_object/ob_1000_0229.ice,bad2bb9e39fa066a4f4e57a9583e75fd,78ab35612d59fbadce5e1d311c992502
-,,custmize,motion_none,wall,ground,object/map_object/ob_1000_0230.ice,7f602a4a19236f531c469a1c982e0df5,a12c3803a06561fd25b31476b038eba1
-,,custmize,motion_none,wall,ground,object/map_object/ob_1000_0231.ice,ea68ba35c6dd1ca161b21eb36feb9fbd,4194cbe99712e1cba562aa3fd7b87dfd
+クラシックダンロ,Classic Fireplace,custmize,motion_none,wall,ground,object/map_object/ob_1000_0230.ice,7f602a4a19236f531c469a1c982e0df5,a12c3803a06561fd25b31476b038eba1
+ゴシックダンロ,Gothic Fireplace,custmize,motion_none,wall,ground,object/map_object/ob_1000_0231.ice,ea68ba35c6dd1ca161b21eb36feb9fbd,4194cbe99712e1cba562aa3fd7b87dfd
 クラシックシェルフ,Classic Shelf,custmize,motion_none,wall,ground,object/map_object/ob_1000_0232.ice,78fe85bd8e13613e02bff0223823a98d,40e2c68c183e29a3edc938d0fa5aa4a5
 ゴシックシェルフ,Gothic Shelf,custmize,motion_none,wall,ground,object/map_object/ob_1000_0233.ice,4e76e66518838ea65f6c48f110e10c5d,c3cb3d74801497a49b9f029d88907dcb
 ゴシックソファC,Gothic Sofa C,motion,motion_sitdown,ground,ground,object/map_object/ob_1000_0234.ice,b2a258249ef52d55a6e454abd0760ec5,75904cc30c03639e6ffbaa62b7c99f27
@@ -284,7 +284,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 スタンドライト,Floor Lamp,none,motion_none,ground,ground,object/map_object/ob_1000_0301.ice,5621715b741edfff1d991e4f3918606a,2025141b4e880989c3e3ceff0c404256
 デコ・プラント,Decorative Plant,none,motion_none,ground,ground,object/map_object/ob_1000_0302.ice,5c4310da19dff07dab68509a732d1c48,73443bef52165dbff9710466ef67dbb1
 ベーシックシェルフ,Basic Shelf,custmize,motion_none,wall,ground,object/map_object/ob_1000_0303.ice,b5c5ee4da36c5f9f9ee9010ed8183109,67f4fa6ea5941e6ad99e1d3ba86e2964
-,,none,motion_none,wall,poster,object/map_object/ob_1000_0304.ice,4ce15e63dcc462b09d22191c471f98df,21a856835f8ea88797ca6b2f14f3ac45
+パネルポスター,Poster Panel,none,motion_none,wall,poster,object/map_object/ob_1000_0304.ice,4ce15e63dcc462b09d22191c471f98df,21a856835f8ea88797ca6b2f14f3ac45
 ゴシックテーブル,Gothic Table,custmize,motion_none,ground,ground,object/map_object/ob_1000_0305.ice,32e538e5668ce67948f3c8fe37fbafc9,ed341072ce5485ea2f4484eb9ee92300
 ゴシックテーブルC,Gothic Table C,custmize,motion_none,ground,ground,object/map_object/ob_1000_0306.ice,e2c80a244a2e4d187830ea42eb888440,6250d7b5dc2b3361a901e8dc6fdc676b
 クラシックテーブルC,Classic Table C,custmize,motion_none,ground,ground,object/map_object/ob_1000_0307.ice,1debd3041dc18dc58ec77dfa1e36f892,c0159a34aba06179b904052305f2b252
@@ -878,8 +878,8 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 矢印板,Arrow Sign,none,motion_none,ground,ground,object/map_object/ob_1000_0925.ice,8bf508bfcbfc143b0c5f3b67c851b658,15367160be5cb0f44794b6a836883c5d
 カチカチダマ,Kachikachi-Dama,none,motion_none,ground,deco,object/map_object/ob_1000_0926.ice,77caeb2772d5d44c945b375400b9d6b1,40af009efe96f4cf9a8b1cea1a2a9ed6
 ブリスターパック,Blister Pack,none,motion_none,ground,ground,object/map_object/ob_1000_0927.ice,48bf5faf82ac80c5660fc9364b150f06,236e19e24049df2f353ec66a95d69823
-,,none,motion_none,ground,ground,object/map_object/ob_1000_0928.ice,c80cf0c0aac65c699999cd11b69d13bf,c7096e2e213e95eee7fab9fcf2d3bca3
-,,none,motion_none,ground,ground,object/map_object/ob_1000_0929.ice,70a6da6c95b2d712fcad1d978a8791d7,88e4c069537aa3ad0346227ca1b20233
+ダン・ノレン,Bath Partition (Men's),none,motion_none,ground,ground,object/map_object/ob_1000_0928.ice,c80cf0c0aac65c699999cd11b69d13bf,c7096e2e213e95eee7fab9fcf2d3bca3
+ジョ・ノレン,Bath Partition (Women's),none,motion_none,ground,ground,object/map_object/ob_1000_0929.ice,70a6da6c95b2d712fcad1d978a8791d7,88e4c069537aa3ad0346227ca1b20233
 レコードプレイヤー,Record Player,none,motion_none,ground,ground,object/map_object/ob_1000_0930.ice,80a7d493d27aedd9df71ee7a30068846,290fc6daa1ca8030b6718475ce3e479d
 パイレーツキャノン,Pirate's Cannon,none,motion_none,ground,ground,object/map_object/ob_1000_0931.ice,7d18cab49a74abe889ba5435c9cd8e8c,61f3ec36412fa28ed5e74cb7b7b9706a
 錆びたイカリ,Rusty Anchor,none,motion_none,wall,ground,object/map_object/ob_1000_0932.ice,9372dc21c129516228623edf0d480bc3,fc4f108dab2c8aef01a79df59822d4d3
@@ -1432,7 +1432,7 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1559.ice,a244709585501ba6ff97581a60593f31
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1560.ice,549b484ca19a525b5f46e5616a171e9e
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1561.ice,888f1ec72c1c7a868564e0b005bfb6eb
-,,none,motion_none,wall,poster,object/map_object/ob_1000_1562.ice,f65db5af06b4f7b50e51f7e1f96c10ee
+アヴェンジャーポスター,Avenger Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1562.ice,f65db5af06b4f7b50e51f7e1f96c10ee
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1563.ice,dabd922bf94ae0b2b81fe0fcd1d5d97a
 ブルージーＲポスター,Bluesy R Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1564.ice,30360d5131935e305a35749ab8518ec4
 ブルージーＲマット,Bluesy R Mat,none,motion_none,ground,ground,object/map_object/ob_1000_1565.ice,fa4fa084a35dfbd70010109aa971cc08
@@ -1542,9 +1542,9 @@ SEGAロゴ,SEGA Logo,none,motion_none,ground,ground,object/map_object/ob_1000_01
 リリーパカップル,Lillipan Couple,none,motion_none,ground,ground,object/map_object/ob_1000_1676.ice,3d33c603fb7ad2233890012814a196f6
 ニレンカムイポスター,Twin Kamuy Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1677.ice,cb4e4bd8b23898f02c6880dc94b82ee5
 ライトニングＥポスター,Lightning E. Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1678.ice,3e1031d525b9b80aab726d6abc87cb42
-,,none,motion_none,wall,poster,object/map_object/ob_1000_1679.ice,22029256276dcbc32a1ef3d6ab9f6d63
-,,none,motion_none,wall,poster,object/map_object/ob_1000_1680.ice,fb34b9c94110d9e04d7afd9ba4c7cc7b
-,,none,motion_none,wall,poster,object/map_object/ob_1000_1681.ice,304a0f9b038561aa58b2e1db107ec1c2
+シューティングＤポスター,Shooting Drive Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1679.ice,22029256276dcbc32a1ef3d6ab9f6d63
+ラヴィス=ブレイドポスター,Lavis Blades Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1680.ice,fb34b9c94110d9e04d7afd9ba4c7cc7b
+ノクスカディナポスター,Nox Cadina Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1681.ice,304a0f9b038561aa58b2e1db107ec1c2
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1682.ice,6ec47fe6661ce45a45e85d420ecd7b4d
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1683.ice,f6aec056a0fe36be59a46b6239dd31a3
 ,,none,motion_none,ground,ground,object/map_object/ob_1000_1684.ice,894dcd7f1ef594331cf56b9b77b2f596
@@ -1727,7 +1727,7 @@ SEGA GENESIS,SEGA GENESIS,none,motion_none,ground,deco,object/map_object/ob_1000
 ,,none,motion_none,ground,deco,object/map_object/ob_1000_1866.ice,afd3aecbf770b73501e3ebd09ba75d22,0b899732ff85151402b938bc8e8d564c
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1867.ice,9a5cd2f5393d10fbb035c641c7f5aa8f
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1868.ice,d59d6471a8ec5c0789739e69a07e2d4f
-,,none,motion_none,wall,poster,object/map_object/ob_1000_1869.ice,8881df4d7c0131ec423403d6f92fe891
+オプトレイオンポスター,Opt Leon Poster,none,motion_none,wall,poster,object/map_object/ob_1000_1869.ice,8881df4d7c0131ec423403d6f92fe891
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1870.ice,35eb86d071678ac245261becba3d9926
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1871.ice,d18b87cf68ab03e7b1042196e5c68f9f
 ,,none,motion_none,wall,poster,object/map_object/ob_1000_1872.ice,a15ea9d83c09ed876fe70267502ae43e
