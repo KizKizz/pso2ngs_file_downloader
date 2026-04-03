@@ -1480,7 +1480,7 @@
 ,,ob_0905_0000,object/map_object/ob_0905_0000.ice,object/map_object/ob_0905_0000_ex.ice,1980b03535446a15bd82a4198089f7d4,b2ef7bff27d71b89ad578285e20b3c45
 ,,ob_0905_0001,object/map_object/ob_0905_0001.ice,object/map_object/ob_0905_0001_ex.ice,05b18c471124282574053e094abdaa4a,2ecfc9b8f5e29e92c2d54e2ca15e5f38
 ,,ob_0905_0002,object/map_object/ob_0905_0002.ice,object/map_object/ob_0905_0002_ex.ice,a8837233beb58c4802dbf391300c2801,
-,,ob_1000_0001,object/map_object/ob_1000_0001.ice,object/map_object/ob_1000_0001_ex.ice,60c03e1256d5ae75620d2ec9375ab659,d06636513a110346019ce2d0d0ac6cf3
+ウェルカムマット,,ob_1000_0001,object/map_object/ob_1000_0001.ice,object/map_object/ob_1000_0001_ex.ice,60c03e1256d5ae75620d2ec9375ab659,d06636513a110346019ce2d0d0ac6cf3
 モダンソファ,,ob_1000_0002,object/map_object/ob_1000_0002.ice,object/map_object/ob_1000_0002_ex.ice,e94cc8730f57ee90e02999f43670d95c,2c482c032bc940f237b20db41b4dd337
 クラシックソファ,,ob_1000_0003,object/map_object/ob_1000_0003.ice,object/map_object/ob_1000_0003_ex.ice,99d4c8046da3038c00e1d3601f3c8ad4,15afbdafbd1451a780933ffe48f7e175
 ゴシックソファ,,ob_1000_0004,object/map_object/ob_1000_0004.ice,object/map_object/ob_1000_0004_ex.ice,03a4b8d148993d8e3c692cfa155bf621,e487556140c41a7964120f6ee7fe8c3c
@@ -1506,7 +1506,7 @@
 ,,ob_1000_0024,object/map_object/ob_1000_0024.ice,object/map_object/ob_1000_0024_ex.ice,945d0bfd68d13d2f77b3b5a3095b2054,d6cc2ed85973b424b84a446d88ded75c
 ,,ob_1000_0025,object/map_object/ob_1000_0025.ice,object/map_object/ob_1000_0025_ex.ice,,
 洗濯機,,ob_1000_0026,object/map_object/ob_1000_0026.ice,object/map_object/ob_1000_0026_ex.ice,8313de8637e9524b09cf1aaf44d19bfa,1ef902f6f4552c4be89e96e842b1d4a8
-,,ob_1000_0027,object/map_object/ob_1000_0027.ice,object/map_object/ob_1000_0027_ex.ice,ff55daf4565724ac032289e86666c909,1882994f8ef94aed97b36373fecd6f38
+ウェイトチェッカー,,ob_1000_0027,object/map_object/ob_1000_0027.ice,object/map_object/ob_1000_0027_ex.ice,ff55daf4565724ac032289e86666c909,1882994f8ef94aed97b36373fecd6f38
 ,,ob_1000_0028,object/map_object/ob_1000_0028.ice,object/map_object/ob_1000_0028_ex.ice,6991f645a0bc614a13f8607c9734f42d,f94f91d27c8e76996765a55dc13e4cdb
 ,,ob_1000_0029,object/map_object/ob_1000_0029.ice,object/map_object/ob_1000_0029_ex.ice,,
 ワノシーリングライト,,ob_1000_0030,object/map_object/ob_1000_0030.ice,object/map_object/ob_1000_0030_ex.ice,6e5c89136f7233d3f25b661be6330529,0c4438998b61b78de3c4e494fda21a0d
@@ -1516,7 +1516,7 @@
 メッセージボード,,ob_1000_0034,object/map_object/ob_1000_0034.ice,object/map_object/ob_1000_0034_ex.ice,b66e8add2a826e992a135fac150ec02f,2425a3a4b898d7202f40f8ef26aa40c2
 ロッカー,,ob_1000_0035,object/map_object/ob_1000_0035.ice,object/map_object/ob_1000_0035_ex.ice,d8f2c97e0388fb1c1535f6faa0268141,3eb158abe751af9fc97aadba7dd2ae9c
 ,,ob_1000_0036,object/map_object/ob_1000_0036.ice,object/map_object/ob_1000_0036_ex.ice,,
-,,ob_1000_0037,object/map_object/ob_1000_0037.ice,object/map_object/ob_1000_0037_ex.ice,4aa1ade09dc9b3c312e3d3cebb0de524,f156bbd78bc3551b5bf4c37535fe22f1
+ＤＪブース,,ob_1000_0037,object/map_object/ob_1000_0037.ice,object/map_object/ob_1000_0037_ex.ice,4aa1ade09dc9b3c312e3d3cebb0de524,f156bbd78bc3551b5bf4c37535fe22f1
 プライベートプール,,ob_1000_0038,object/map_object/ob_1000_0038.ice,object/map_object/ob_1000_0038_ex.ice,996511b0e6a9592ae019a5cd70b5d975,d7b0ada339ec376ef93a51fe389ea2a8
 シーベイジングセット,,ob_1000_0039,object/map_object/ob_1000_0039.ice,object/map_object/ob_1000_0039_ex.ice,8626ec7be9403d4f3018beece1eb0489,718a3f5aaaf4afd1a5144283f6549aec
 ,,ob_1000_0040,object/map_object/ob_1000_0040.ice,object/map_object/ob_1000_0040_ex.ice,,
@@ -1664,7 +1664,7 @@
 ＰＲＥボックス,,ob_1000_0182,object/map_object/ob_1000_0182.ice,object/map_object/ob_1000_0182_ex.ice,70d1c75277cb48bb2f416b523999514a,725d24d1c1cbca2260f6d770304a6ae4
 プレゼバコウラ,,ob_1000_0183,object/map_object/ob_1000_0183.ice,object/map_object/ob_1000_0183_ex.ice,d0ee5a9413579460ee882a3b8026c1b5,e0ae1670fafe44f9d4f2305b180ff723
 プレ・プレ・ボッカス,,ob_1000_0184,object/map_object/ob_1000_0184.ice,object/map_object/ob_1000_0184_ex.ice,a7ddf692b74a29669905b3d22be6456b,b2d095e78b9fc13a865a74d67ffd1d2c
-,,ob_1000_0185,object/map_object/ob_1000_0185.ice,object/map_object/ob_1000_0185_ex.ice,cda7dd96e30b9f9b8baf3e06627e54cd,3f87953db349f728ef6d9b446b71fbec
+ドコデモキュウビン,,ob_1000_0185,object/map_object/ob_1000_0185.ice,object/map_object/ob_1000_0185_ex.ice,cda7dd96e30b9f9b8baf3e06627e54cd,3f87953db349f728ef6d9b446b71fbec
 ツマラナイモノ,,ob_1000_0186,object/map_object/ob_1000_0186.ice,object/map_object/ob_1000_0186_ex.ice,f7036268f4fd8c54a97d6513dbe1eefe,f992e94d285a56631bcf95c5eff928cd
 ファンクションテーブル,,ob_1000_0187,object/map_object/ob_1000_0187.ice,object/map_object/ob_1000_0187_ex.ice,4fa7e104b981c22d8805c5e569028e79,ea3d507bc89f35c88aca2e524e4ed7f2
 ファンクションチェア,,ob_1000_0188,object/map_object/ob_1000_0188.ice,object/map_object/ob_1000_0188_ex.ice,fef8a17081d2e037e43415af32d6a1f3,c13e14751232d7c91b47c54854e2ca40
@@ -1709,8 +1709,8 @@ SEGAロゴ,,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_object/ob
 ラッピーピンクマグカップ,,ob_1000_0227,object/map_object/ob_1000_0227.ice,object/map_object/ob_1000_0227_ex.ice,9546fb659881c8295184491163a76460,02469cd3cf205018d4c79616765539d0
 ラッピーブルーマグカップ,,ob_1000_0228,object/map_object/ob_1000_0228.ice,object/map_object/ob_1000_0228_ex.ice,b7bf60106999186009c575ae7437e0b1,af08b570291cde856e612bca3914baa1
 キャンドルスティック,,ob_1000_0229,object/map_object/ob_1000_0229.ice,object/map_object/ob_1000_0229_ex.ice,bad2bb9e39fa066a4f4e57a9583e75fd,78ab35612d59fbadce5e1d311c992502
-,,ob_1000_0230,object/map_object/ob_1000_0230.ice,object/map_object/ob_1000_0230_ex.ice,7f602a4a19236f531c469a1c982e0df5,a12c3803a06561fd25b31476b038eba1
-,,ob_1000_0231,object/map_object/ob_1000_0231.ice,object/map_object/ob_1000_0231_ex.ice,ea68ba35c6dd1ca161b21eb36feb9fbd,4194cbe99712e1cba562aa3fd7b87dfd
+クラシックダンロ,,ob_1000_0230,object/map_object/ob_1000_0230.ice,object/map_object/ob_1000_0230_ex.ice,7f602a4a19236f531c469a1c982e0df5,a12c3803a06561fd25b31476b038eba1
+ゴシックダンロ,,ob_1000_0231,object/map_object/ob_1000_0231.ice,object/map_object/ob_1000_0231_ex.ice,ea68ba35c6dd1ca161b21eb36feb9fbd,4194cbe99712e1cba562aa3fd7b87dfd
 クラシックシェルフ,,ob_1000_0232,object/map_object/ob_1000_0232.ice,object/map_object/ob_1000_0232_ex.ice,78fe85bd8e13613e02bff0223823a98d,40e2c68c183e29a3edc938d0fa5aa4a5
 ゴシックシェルフ,,ob_1000_0233,object/map_object/ob_1000_0233.ice,object/map_object/ob_1000_0233_ex.ice,4e76e66518838ea65f6c48f110e10c5d,c3cb3d74801497a49b9f029d88907dcb
 ゴシックソファC,,ob_1000_0234,object/map_object/ob_1000_0234.ice,object/map_object/ob_1000_0234_ex.ice,b2a258249ef52d55a6e454abd0760ec5,75904cc30c03639e6ffbaa62b7c99f27
@@ -1783,7 +1783,7 @@ SEGAロゴ,,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_object/ob
 スタンドライト,,ob_1000_0301,object/map_object/ob_1000_0301.ice,object/map_object/ob_1000_0301_ex.ice,5621715b741edfff1d991e4f3918606a,2025141b4e880989c3e3ceff0c404256
 デコ・プラント,,ob_1000_0302,object/map_object/ob_1000_0302.ice,object/map_object/ob_1000_0302_ex.ice,5c4310da19dff07dab68509a732d1c48,73443bef52165dbff9710466ef67dbb1
 ベーシックシェルフ,,ob_1000_0303,object/map_object/ob_1000_0303.ice,object/map_object/ob_1000_0303_ex.ice,b5c5ee4da36c5f9f9ee9010ed8183109,67f4fa6ea5941e6ad99e1d3ba86e2964
-,,ob_1000_0304,object/map_object/ob_1000_0304.ice,object/map_object/ob_1000_0304_ex.ice,4ce15e63dcc462b09d22191c471f98df,21a856835f8ea88797ca6b2f14f3ac45
+パネルポスター,,ob_1000_0304,object/map_object/ob_1000_0304.ice,object/map_object/ob_1000_0304_ex.ice,4ce15e63dcc462b09d22191c471f98df,21a856835f8ea88797ca6b2f14f3ac45
 ゴシックテーブル,,ob_1000_0305,object/map_object/ob_1000_0305.ice,object/map_object/ob_1000_0305_ex.ice,32e538e5668ce67948f3c8fe37fbafc9,ed341072ce5485ea2f4484eb9ee92300
 ゴシックテーブルC,,ob_1000_0306,object/map_object/ob_1000_0306.ice,object/map_object/ob_1000_0306_ex.ice,e2c80a244a2e4d187830ea42eb888440,6250d7b5dc2b3361a901e8dc6fdc676b
 クラシックテーブルC,,ob_1000_0307,object/map_object/ob_1000_0307.ice,object/map_object/ob_1000_0307_ex.ice,1debd3041dc18dc58ec77dfa1e36f892,c0159a34aba06179b904052305f2b252
@@ -2407,8 +2407,8 @@ SEGAロゴ,,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_object/ob
 矢印板,,ob_1000_0925,object/map_object/ob_1000_0925.ice,object/map_object/ob_1000_0925_ex.ice,8bf508bfcbfc143b0c5f3b67c851b658,15367160be5cb0f44794b6a836883c5d
 カチカチダマ,,ob_1000_0926,object/map_object/ob_1000_0926.ice,object/map_object/ob_1000_0926_ex.ice,77caeb2772d5d44c945b375400b9d6b1,40af009efe96f4cf9a8b1cea1a2a9ed6
 ブリスターパック,,ob_1000_0927,object/map_object/ob_1000_0927.ice,object/map_object/ob_1000_0927_ex.ice,48bf5faf82ac80c5660fc9364b150f06,236e19e24049df2f353ec66a95d69823
-,,ob_1000_0928,object/map_object/ob_1000_0928.ice,object/map_object/ob_1000_0928_ex.ice,c80cf0c0aac65c699999cd11b69d13bf,c7096e2e213e95eee7fab9fcf2d3bca3
-,,ob_1000_0929,object/map_object/ob_1000_0929.ice,object/map_object/ob_1000_0929_ex.ice,70a6da6c95b2d712fcad1d978a8791d7,88e4c069537aa3ad0346227ca1b20233
+ダン・ノレン,,ob_1000_0928,object/map_object/ob_1000_0928.ice,object/map_object/ob_1000_0928_ex.ice,c80cf0c0aac65c699999cd11b69d13bf,c7096e2e213e95eee7fab9fcf2d3bca3
+ジョ・ノレン,,ob_1000_0929,object/map_object/ob_1000_0929.ice,object/map_object/ob_1000_0929_ex.ice,70a6da6c95b2d712fcad1d978a8791d7,88e4c069537aa3ad0346227ca1b20233
 レコードプレイヤー,,ob_1000_0930,object/map_object/ob_1000_0930.ice,object/map_object/ob_1000_0930_ex.ice,80a7d493d27aedd9df71ee7a30068846,290fc6daa1ca8030b6718475ce3e479d
 パイレーツキャノン,,ob_1000_0931,object/map_object/ob_1000_0931.ice,object/map_object/ob_1000_0931_ex.ice,7d18cab49a74abe889ba5435c9cd8e8c,61f3ec36412fa28ed5e74cb7b7b9706a
 錆びたイカリ,,ob_1000_0932,object/map_object/ob_1000_0932.ice,object/map_object/ob_1000_0932_ex.ice,9372dc21c129516228623edf0d480bc3,fc4f108dab2c8aef01a79df59822d4d3
@@ -3041,7 +3041,7 @@ SEGAロゴ,,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_object/ob
 ,,ob_1000_1559,object/map_object/ob_1000_1559.ice,object/map_object/ob_1000_1559_ex.ice,a244709585501ba6ff97581a60593f31,
 ,,ob_1000_1560,object/map_object/ob_1000_1560.ice,object/map_object/ob_1000_1560_ex.ice,549b484ca19a525b5f46e5616a171e9e,
 ,,ob_1000_1561,object/map_object/ob_1000_1561.ice,object/map_object/ob_1000_1561_ex.ice,888f1ec72c1c7a868564e0b005bfb6eb,
-,,ob_1000_1562,object/map_object/ob_1000_1562.ice,object/map_object/ob_1000_1562_ex.ice,f65db5af06b4f7b50e51f7e1f96c10ee,
+アヴェンジャーポスター,,ob_1000_1562,object/map_object/ob_1000_1562.ice,object/map_object/ob_1000_1562_ex.ice,f65db5af06b4f7b50e51f7e1f96c10ee,
 ,,ob_1000_1563,object/map_object/ob_1000_1563.ice,object/map_object/ob_1000_1563_ex.ice,dabd922bf94ae0b2b81fe0fcd1d5d97a,
 ブルージーＲポスター,,ob_1000_1564,object/map_object/ob_1000_1564.ice,object/map_object/ob_1000_1564_ex.ice,30360d5131935e305a35749ab8518ec4,
 ブルージーＲマット,,ob_1000_1565,object/map_object/ob_1000_1565.ice,object/map_object/ob_1000_1565_ex.ice,fa4fa084a35dfbd70010109aa971cc08,
@@ -3158,9 +3158,9 @@ SEGAロゴ,,ob_1000_0191,object/map_object/ob_1000_0191.ice,object/map_object/ob
 リリーパカップル,,ob_1000_1676,object/map_object/ob_1000_1676.ice,object/map_object/ob_1000_1676_ex.ice,3d33c603fb7ad2233890012814a196f6,
 ニレンカムイポスター,,ob_1000_1677,object/map_object/ob_1000_1677.ice,object/map_object/ob_1000_1677_ex.ice,cb4e4bd8b23898f02c6880dc94b82ee5,
 ライトニングＥポスター,,ob_1000_1678,object/map_object/ob_1000_1678.ice,object/map_object/ob_1000_1678_ex.ice,3e1031d525b9b80aab726d6abc87cb42,
-,,ob_1000_1679,object/map_object/ob_1000_1679.ice,object/map_object/ob_1000_1679_ex.ice,22029256276dcbc32a1ef3d6ab9f6d63,
-,,ob_1000_1680,object/map_object/ob_1000_1680.ice,object/map_object/ob_1000_1680_ex.ice,fb34b9c94110d9e04d7afd9ba4c7cc7b,
-,,ob_1000_1681,object/map_object/ob_1000_1681.ice,object/map_object/ob_1000_1681_ex.ice,304a0f9b038561aa58b2e1db107ec1c2,
+シューティングＤポスター,,ob_1000_1679,object/map_object/ob_1000_1679.ice,object/map_object/ob_1000_1679_ex.ice,22029256276dcbc32a1ef3d6ab9f6d63,
+ラヴィス=ブレイドポスター,,ob_1000_1680,object/map_object/ob_1000_1680.ice,object/map_object/ob_1000_1680_ex.ice,fb34b9c94110d9e04d7afd9ba4c7cc7b,
+ノクスカディナポスター,,ob_1000_1681,object/map_object/ob_1000_1681.ice,object/map_object/ob_1000_1681_ex.ice,304a0f9b038561aa58b2e1db107ec1c2,
 ,,ob_1000_1682,object/map_object/ob_1000_1682.ice,object/map_object/ob_1000_1682_ex.ice,6ec47fe6661ce45a45e85d420ecd7b4d,
 ,,ob_1000_1683,object/map_object/ob_1000_1683.ice,object/map_object/ob_1000_1683_ex.ice,f6aec056a0fe36be59a46b6239dd31a3,
 ,,ob_1000_1684,object/map_object/ob_1000_1684.ice,object/map_object/ob_1000_1684_ex.ice,894dcd7f1ef594331cf56b9b77b2f596,
@@ -3348,7 +3348,7 @@ SEGA GENESIS,,ob_1000_1864,object/map_object/ob_1000_1864.ice,object/map_object/
 ,,ob_1000_1866,object/map_object/ob_1000_1866.ice,object/map_object/ob_1000_1866_ex.ice,afd3aecbf770b73501e3ebd09ba75d22,0b899732ff85151402b938bc8e8d564c
 ,,ob_1000_1867,object/map_object/ob_1000_1867.ice,object/map_object/ob_1000_1867_ex.ice,9a5cd2f5393d10fbb035c641c7f5aa8f,
 ,,ob_1000_1868,object/map_object/ob_1000_1868.ice,object/map_object/ob_1000_1868_ex.ice,d59d6471a8ec5c0789739e69a07e2d4f,
-,,ob_1000_1869,object/map_object/ob_1000_1869.ice,object/map_object/ob_1000_1869_ex.ice,8881df4d7c0131ec423403d6f92fe891,
+オプトレイオンポスター,,ob_1000_1869,object/map_object/ob_1000_1869.ice,object/map_object/ob_1000_1869_ex.ice,8881df4d7c0131ec423403d6f92fe891,
 ,,ob_1000_1870,object/map_object/ob_1000_1870.ice,object/map_object/ob_1000_1870_ex.ice,35eb86d071678ac245261becba3d9926,
 ,,ob_1000_1871,object/map_object/ob_1000_1871.ice,object/map_object/ob_1000_1871_ex.ice,d18b87cf68ab03e7b1042196e5c68f9f,
 ,,ob_1000_1872,object/map_object/ob_1000_1872.ice,object/map_object/ob_1000_1872_ex.ice,a15ea9d83c09ed876fe70267502ae43e,

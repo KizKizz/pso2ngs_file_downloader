@@ -4,6 +4,7 @@
 ＊シッドレクヴィット,* Sid Lechwitt,item/weapon/it_wp_08_346.ice,5c\b9c2fa2d084028cc2521e6bab8eec6
 プリムライフル,Primm Rifle,item/weapon/it_wp_08_501.ice,44\08d9a1c2cb64cf8f87b2bd22391ab7
 リサージュライフル,Resurgir Rifle,item/weapon/it_wp_08_502.ice,95\b074d9e838f4173dcfe8f6f04aadaf
+,,item/weapon/it_wp_08_503.ice,f4\00e9a688788ffd757fdfefd53f606e
 ,,item/weapon/it_wp_08_504.ice,79\739b5dd99b13c51737c05859ddd6d9
 テルセウスライフル,Theseus Rifle,item/weapon/it_wp_08_505.ice,35\a3f0240195ef5f80ceebe84a7230a9
 ＊グラヴィルベオーネ,* Gravil Rifle,item/weapon/it_wp_08_506.ice,23\a395e6e0c8ddce8a24579de2ac3289
@@ -104,6 +105,10 @@
 ,,item/weapon/it_wp_08_614.ice,6a\aa68825b686fecb168e2e95f7442b4
 ,,item/weapon/it_wp_08_615.ice,56\d698bba36807416ca48adf8780c9b3
 ,,item/weapon/it_wp_08_618.ice,dd\6f3cf1017ce37c216d81ecfe4f7e1f
+,,item/weapon/it_wp_08_621.ice,36\2ff9620948c780403e8d80d12c7be1
 ,,item/weapon/it_wp_08_622.ice,81\4ceef29f7e1d6043ccd83118a7014f
 ,,item/weapon/it_wp_08_623.ice,d3\9d08ed9d987bd7082a37aaf9becea1
+,,item/weapon/it_wp_08_624.ice,17\a4f97b770bd214aeb4366b983929fb
 ,,item/weapon/it_wp_08_625.ice,8f\eee0bb529a9467bbd272191559ef26
+,,item/weapon/it_wp_08_630.ice,e1\c04c0ffd219df16456cefbdfe7e427
+,,item/weapon/it_wp_08_631.ice,83\5c2ef31b1c68047e1dd5a630ff0464
