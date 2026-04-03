@@ -107,6 +107,7 @@ en_unk_emp_common.ice,d6\dc27fc7e6818459ec7fd2797a30ecd
 スペキュ・ラッピー,,,,,,,,,,en_r01_unk_rap_ud2.ice,63\3a4edd7e6ae5c7574cdafba02149eb
 ノルディ・ラッピー,,,,,,,,,,en_r01_unk_rap_wi.ice,7e\347f1b0423bd0d21b749abd43bef13
 スノム・ラッピー,,,,,,,,,,en_r01_unk_rap_wi2.ice,fb\50bb83d7c4ccf2f2879d7d02110a6b
+イド・ラッピー,,,,,,,,,,en_r01_unk_rap_id.ice,4a\c0240f3fb6d1ef730535311ee865c8
 en_unk_rap_common.ice,3a\70e26f5ce413d87461887c9556fa78
 カプタン,,,,,,,,,,en_r01_unk_tan_ba.ice,ee\8d4e618b20c016cbcd2d1d22bde80f
 キングカプタン,,,,,,,,,,en_r01_unk_tan_kn.ice,c7\cdcd336ee40f13fc3dd606c2d5a878
@@ -228,6 +229,7 @@ en_nat_gma_common.ice,e1\f5ff02d4bfbcb3fc11d90e20eb964b
 en_nat_hmc_common.ice,6d\175c78f084bdbba60ddd5a88e26bd3
 グランマイザー,,,,,,,,,,en_r02_nat_trf_ba.ice,40\65a65227087cbcd528362b1ec1daaf
 グランマイザー,,,,,,,,,,en_r02_nat_trf_ba_ag.ice,3e\26ba02bf71a98329d044ffad4641f3,ベテラン,Veteran
+ハイ・グランマイザー,,,,,,,,,,en_r02_nat_trf_bah.ice,6d\288c6ae5c470b971c556a87027ccef
 en_nat_trf_common.ice,df\ec401c9b1a8197dcc29f414896b9d2
 フォンガルフ・デロア,,,,,,,,,,en_r02_nat_wol_bi.ice,e7\21b9070247132fa3024ed5426cab14
 ガルフ・デロア,,,,,,,,,,en_r02_nat_wol_sm.ice,30\e564c041e4f775f046185a1c5563c4
@@ -264,6 +266,7 @@ en_alt_tis_common.ice,4d\382018cb76419bb36d83a011ca15da
 en_alt_tkm_common.ice,d2\9af1ffa6449cf28219e02816ab1b6c
 サヴァウロン,,,,,,,,,,en_r02_alt_wlf_ba.ice,ab\99420064456d983a406e55b6e52264
 サヴァウロン,,,,,,,,,,en_r02_alt_wlf_ba_ag.ice,3b\31f691c3142bb3867439067c13fa84,ベテラン,Veteran
+ハイ・ワウロン,,,,,,,,,,en_r02_alt_wlf_bah.ice,8a\3a81515927ae3ab0ee41bb236ee416
 en_alt_wlf_common.ice,19\ebabbd9f5cb9cd602ff8311de783d4
 ラムルバーディ,,,,,,,,,,en_r02_ani_bir_b.ice,5d\c87af592226eb2eddac524606554c9
 en_ani_bir_common.ice,fd\3d5faaf8952fb16ab6cf5e4e7fff03
@@ -544,8 +547,16 @@ en_gd_gho_common.ice,70\01215589d9b3360d46094a45705f8a
 ヴェノギア・ヴェラ,,,,,,,,,,en_r05_gd_zft_rai.ice,0e\ac7b2c4a5ab56f38709bccdb779ef5
 ゼフェット・ヴェノギア,,,,,,,,,,en_r05_gd_zft_str.ice,a2\3911821f1df4cbce997b727cbc60a9
 en_gd_zft_common.ice,2e\8202a869344df24699527b96ef2b8d
+ハイ・ギルナッチ,,,,,,,,,,en_r05_nat_zmr_rsh.ice,39\6ce120d9b0a3ed78dbc64bdd7d70a6
+en_nat_zmr_common.ice,08\c9a2ec93a19074025b833001f5a9f5
 ボルガリス,,,,,,,,,,en_r05_non_myt_a.ice,d9\2bbb7a41a5cc2d9782270828a6b016
 en_non_myt_common.ice,d6\cc96ec78b2f3328190a77a42babd66
+調査隊員[長槍],,,,,,,,,,en_r05_non_cml1_mob.ice,d8\4271fbf8c7f7af20ba2c5a295c677a
+en_non_cml1_common.ice,50\72a4250a7297371986b6fd04497869
+調査隊員[長杖],,,,,,,,,,en_r05_non_cml2_mob.ice,c2\a94f683d44fd4a05d035fd82c9c93d
+en_non_cml2_common.ice,fa\39703a4319c343cbbc3165c8dbc1c4
+調査隊員[大剣],,,,,,,,,,en_r05_non_cml3_mob.ice,70\92943000497a928ecfdf4aa1d33ba2
+en_non_cml3_common.ice,66\31149d2a395b6888fbe56fe2875d72
 カオスザヴェル,,,,,,,,,,en_r05_stl_akm_ba1.ice,84\84bab196db237325bf889af2156a9a
 ハイ・カオスザヴェル,,,,,,,,,,en_r05_stl_akm_ba1h.ice,63\32317904048df3c063694a9b3525ea
 グラッジボーン,,,,,,,,,,en_r05_stl_bkt_ba1.ice,d6\e3a42413c61f0d9e08e8e90a7058fa
@@ -633,6 +644,7 @@ en_rem_ace_common.ice,f7\db0db3bdad7166302d68dba5321d64
 en_rem_abh_common.ice,d6\3416cd396a20dfb4c8664c5c57c14b
 ルイノ・グランゾ,,,,,,,,,,en_r05_rem_ztg_ba.ice,8f\82daef08fcc98f08ac2c7b07265e31
 ルイノ・ルーサー,,,,,,,,,,en_r05_rem_dpb_ba.ice,d5\1ad75d4c0fd9745a38f5dd88308da0
+ルイノ・ルーサー,,,,,,,,,,en_r05_rem_dpb_ex.ice,f1\88fe36be18d23e4f4bfac0ee91089f
 en_rem_dpb_common.ice,d6\659115b88d3fb597fa41b304e6d1af
 ルイノ・エクス,,,,,,,,,,en_r05_rem_gla_ba.ice,10\cf14b98d0ce2b7644a846145e75807
 en_rem_gla_common.ice,7a\a47fcdb645b0e5e4842a6287d76203
