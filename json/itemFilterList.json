@@ -97,6 +97,7 @@
       "MaleNewmanFaces",
       "MaleOuters",
       "MaleVoices",
+      "OtherVoices",
       "PhotonBlastCreatures",
       "Skins",
       "Stickers",
@@ -336,6 +337,7 @@
       "5001_ハルファ (エアリオタウン),Halpha (Aelio Town)_StageData",
       "5100_トレイニア,Trainia_StageData",
       "5101_トレイニア,Trainia_StageData",
+      "5102_5102_StageData",
       "5202_5202_StageData",
       "5300_5300_NavMeshList",
       "5300_5300_StageData",
@@ -343,6 +345,7 @@
       "5301_5301_StageData",
       "5400_5400_DetailObjectList",
       "5400_5400_NavMeshList",
+      "5500_5500_StageData",
       "6000__,__StageData",
       "CharacterCreator_LoginRoom",
       "StageTemplates"

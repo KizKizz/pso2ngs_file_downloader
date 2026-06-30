@@ -68,6 +68,7 @@
 トレイターケイジ,Traitor Cage,item/weapon/it_wp_13_071.ice,d88f78416f633ba9b9147602f906c175
 トレイターピーク ?,Traitor Peak ?,item/weapon/it_wp_13_072.ice,cfac39ee85efcd4f8902e5b0a03aa93c
 ＊フランカさんのフライパン,* Franka's Frying Pan,item/weapon/it_wp_13_075.ice,6705659dd033661a3d80b8eee376e630
+,,item/weapon/it_wp_13_076.ice,e950decdb19752ed073a419bb96d54bd
 アクローケーン,Acro Cane,item/weapon/it_wp_13_080.ice,fb2d72426189fa02633155b4ce3b6444
 アウスターケーン,Ouster Cane,item/weapon/it_wp_13_081.ice,2c0d0f840e6a7f4223748375df1fad60
 ゼファーケーン,Zephyr Cane,item/weapon/it_wp_13_082.ice,e5c750c983a680161eab1696c63cc85e
@@ -339,7 +340,6 @@
 ＊荒風十七葉,* Tempest Leaves,item/weapon/it_wp_13_441.ice,c139cbcb26a639a22e1b700e0dcc6ca6
 ＊神山誠十郎の刀,* Seijuro Kamiyama Sword,item/weapon/it_wp_13_442.ice,94b2ab089e0e68e485f01284b9d1a556
 ＊天宮國定,* Amamiya Kunisada,item/weapon/it_wp_13_443.ice,f2bca83a39fbb631e5cdb46f14eb36fd
-＊ターキーレッグ,* Turkey Leg,item/weapon/it_wp_13_444.ice,4e24353bd897a96fd39644e60cebdcaa
 ＊フワル・フシャエータ,* Hvare-khshaeta,item/weapon/it_wp_13_445.ice,72958f4d44d7fcbab22e83c3a85e0815
 ＊ホルシード・マクラ,* Khorshid Pillow,item/weapon/it_wp_13_446.ice,d5626d237dcbb736729abc172ae19538
 フルクシオキューマ,Fluxio Cyuma,item/weapon/it_wp_13_449.ice,092f524a0806c6579dd69fe3719b9696

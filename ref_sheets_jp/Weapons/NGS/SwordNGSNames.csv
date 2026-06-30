@@ -22,6 +22,8 @@
 ＊ＢＬＯＯＤ　ＰＲＡＹＥＲＳ,* Blood Prayers,item/weapon/it_wp_01_375.ice,ee\e2b50d58714eafd12cde054f7941c1
 ＊シッドストリッド,* Cydstrid,item/weapon/it_wp_01_402.ice,92\549db7da8bb8c2738fc8e38fb8ff20
 プリムソード,Primm Sword,item/weapon/it_wp_01_501.ice,ab\2efc1c5a777fae109fcdda3d00c540
+ゴルドプリムソード?,Gold Primm Sword?,item/weapon/it_wp_01_503.ice,d4\4641332cef96ce1d526ff0e21a2e11
+赤プリムソード?,Red Primm Sword?,item/weapon/it_wp_01_504.ice,22\721249e927bbc233e86975c1280eed
 リサージュソード,Resurgir Sword,item/weapon/it_wp_01_505.ice,6c\a6e6fb3ba51f60a53ddd06d5329b7d
 ,,item/weapon/it_wp_01_507.ice,94\d9e9df4cdca5a3e5559051ff35f3ff
 テルセウスソード,Theseus Sword,item/weapon/it_wp_01_508.ice,d9\2be4feef271bd2f19fb156f00b945d
@@ -93,6 +95,7 @@
 ,,item/weapon/it_wp_01_580.ice,28\777786b85f7b781a698fed4a58552d
 ,,item/weapon/it_wp_01_581.ice,63\c62382b10073e3a28e80ab48abfc65
 ,,item/weapon/it_wp_01_582.ice,8e\e145a72cdf8a56cf688961235f2806
+,,item/weapon/it_wp_01_583.ice,a3\07b0099790b745942fda93e7bc30be
 ,,item/weapon/it_wp_01_585.ice,2c\8bafec72ba1ab7d64f22e5715ffa11
 ,,item/weapon/it_wp_01_586.ice,9d\095085e3999f6988dff064d714347c
 ,,item/weapon/it_wp_01_588.ice,ba\7f6c02acb0b0132f02445161fdd4dd
@@ -147,6 +150,7 @@
 ,,item/weapon/it_wp_01_641.ice,1f\1567f63d27b01d45d7908f237763d7
 ,,item/weapon/it_wp_01_642.ice,d3\c9f61626dfaa6594c33acb54b1f5a3
 ,,item/weapon/it_wp_01_643.ice,b4\9e6578fdb662744f6fa00b27e45d2a
+,,item/weapon/it_wp_01_645.ice,07\500fba04a57c33eb91dcf4edf4c87f
 ,,item/weapon/it_wp_01_647.ice,de\9c8aad80ec968ccee19e5c02a22eb4
 ,,item/weapon/it_wp_01_648.ice,48\7579987d8937bbaecc3a616b4156fc
 ,,item/weapon/it_wp_01_651.ice,93\c16450bca84b2fb061732d21e202c2
@@ -168,4 +172,11 @@
 ,,item/weapon/it_wp_01_667.ice,1a\996417eba5712eba4976b57a45c572
 ,,item/weapon/it_wp_01_668.ice,bf\9a058e1ce7c49f26a655975fa9c985
 ,,item/weapon/it_wp_01_669.ice,b9\3ed8874f812d8a4d0d0e34f8253598
+,,item/weapon/it_wp_01_671.ice,20\912b26c7ae7e61ef391c0632f5c715
 ,,item/weapon/it_wp_01_672.ice,1e\b601c73de7cb83b5b1d76d2d419bbe
+,,item/weapon/it_wp_01_675.ice,fe\603072862a6ad856d72ec21517e9c4
+,,item/weapon/it_wp_01_676.ice,1e\e86db6a707d247de324200cf8e4871
+,,item/weapon/it_wp_01_677.ice,e1\eca4750254853651f47e1f8ebdb504
+,,item/weapon/it_wp_01_678.ice,4c\bb7506a4622dd523c0d54f2eafd950
+,,item/weapon/it_wp_01_679.ice,00\c928aac050448ac7f5670f7b960e93
+,,item/weapon/it_wp_01_689.ice,a0\d68d8050fbbd0f46c80874cc11bc10

@@ -597,6 +597,7 @@ en_stl_sol_common.ice,cf\b7ad5fd232812252c462bf3db98b95
 ハイ・プルティネーデ,,,,,,,,,,en_r05_stl_wic_ba1h.ice,5e\5201c18c569a14c366890dd1a5718f
 ダークファルス・ソウラス,,,,,,,,,,en_r05_stl_sls_ba.ice,d8\882838f67e66673e9136122546c400
 ダークファルス・ソウラス,,,,,,,,,,en_r05_stl_sls_ex.ice,3d\a93f128035fa82e4faecdc56b8e4bd
+ソラス・クリプト,,,,,,,,,,en_r05_stl_sls_exh.ice,27\e30dae5cdb5e8e04f18b4a4710ab1a
 en_stl_sls_common.ice,6e\4e4f4eab90defa97725a45c14471a3
 バロウグ・ガン,,,,,,,,,,en_r05_stl_solri_ba.ice,bc\26cf073c3582191583351fd76d711e
 ,,,,,,,,,,en_r05_stl_solri_bah.ice,12\af94a99bf2eb47b82f7261fbaa3b15
@@ -606,6 +607,7 @@ en_stl_solri_common.ice,03\fcd6136a152e46212cd60036119137
 en_stl_solsw_common.ice,4e\975ec113c2b32384f68709940acf19
 ハルヴァルディ,,,,,,,,,,en_r05_stl_pnr_ba.ice,71\c4e03a9acbbe2c9ee787a21e7ed75b
 ハルヴァルディ・ヴェラ,,,,,,,,,,en_r05_stl_pnr_rai.ice,aa\0c56ed6d9d8f0ef873817d91889f56
+en_stl_pnr_common.ice,95\0b535f4d6095e3095a59812111b352
 アーンズゥ,,,,,,,,,,en_r05_stl_bbd_ba.ice,ad\5dd09d6885cd04949cce9521e71f21
 en_stl_bbd_common.ice,9e\28c10e7e704b9678698f7d849b7b10
 ゼレヴィン,,,,,,,,,,en_r05_stl_mzc_ba.ice,7e\05983c856c7990aeb583a3f6a0eb14
@@ -648,6 +650,8 @@ en_rem_abh_common.ice,d6\3416cd396a20dfb4c8664c5c57c14b
 en_rem_dpb_common.ice,d6\659115b88d3fb597fa41b304e6d1af
 ルイノ・エクス,,,,,,,,,,en_r05_rem_gla_ba.ice,10\cf14b98d0ce2b7644a846145e75807
 en_rem_gla_common.ice,7a\a47fcdb645b0e5e4842a6287d76203
+ルイノ・シュレイダΛ,,,,,,,,,,en_r05_rem_zsh_ba.ice,46\ce3dc49f54f2f8c761cd9a816b0685
+en_rem_zsh_common.ice,66\18efe0413e9b12bf12ec26b1deaa75
 en_gd_flo_eff.ice,a8\42fb661ed8319ab2349b0be5578eee
 en_gd_gia_eff.ice,f8\3bab9cbdd38b0641a47a91a4dd7cb4
 en_gd_kpy_eff.ice,6e\0d8a1df8942306521ab87ef7027c80

@@ -1,6 +1,4 @@
-﻿＊マジカルサファイア,* Magical Sapphire,item/weapon/it_wp_13_055.ice,66\56aef6c7f98ac3233213421b1a7407
-＊ジャンクヤード・ドッグ,* Junkyard Dog,item/weapon/it_wp_13_066.ice,5e\667f400306165bca500b26505c7498
-＊マジカルルビー,* Magical Ruby,item/weapon/it_wp_13_139.ice,1c\c46edd6be4d7eb33fa585044650952
+﻿＊ジャンクヤード・ドッグ,* Junkyard Dog,item/weapon/it_wp_13_066.ice,5e\667f400306165bca500b26505c7498
 エッジレボルシオ,Edge Revolsio,item/weapon/it_wp_13_253.ice,67\d0abf7b57f43a4edbb8e5cabb21906
 エッジドミナシオ,Edge Dominacio,item/weapon/it_wp_13_254.ice,77\3a4338c64515bfb8639c6bfad4e6d8
 エッジインクルシオ,Edge Inclusio,item/weapon/it_wp_13_255.ice,c3\93cc2c8f66c5a5a5c69beb18f3212b
@@ -61,6 +59,7 @@ DEBUG - プリムウォンド,Steel Primm Wand,item/weapon/it_wp_13_527.ice,93\5
 ,,item/weapon/it_wp_13_556.ice,60\2672080bbacfdb02bc5d6fb5ee05b0
 ,,item/weapon/it_wp_13_557.ice,ce\537c6d4013bfee4b01d8e2bad449e4
 ,,item/weapon/it_wp_13_559.ice,a8\d629c866130b04bd371fb61b4151c8
+,,item/weapon/it_wp_13_560.ice,26\8b0980ec74e0ce2af83f38531dd1c0
 ,,item/weapon/it_wp_13_561.ice,18\ea6abe4ef76fb40c987594f2e6a7a7
 ,,item/weapon/it_wp_13_563.ice,64\4f3cb4434df2751d2922640871ecde
 ,,item/weapon/it_wp_13_564.ice,86\bde77219ff11cff15ec546d1a326af
@@ -144,6 +143,7 @@ DEBUG - プリムウォンド,Steel Primm Wand,item/weapon/it_wp_13_527.ice,93\5
 ,,item/weapon/it_wp_13_652.ice,f8\76a2e157185ce35783c54813709fe5
 ,,item/weapon/it_wp_13_653.ice,9e\de4920ca28fe9e4b43104f2b4211fd
 ,,item/weapon/it_wp_13_655.ice,03\f00430617d8bbf72212286588a5018
+,,item/weapon/it_wp_13_656.ice,80\4c0c624f4c15585c7fff0094ac5e2a
 ,,item/weapon/it_wp_13_657.ice,ce\5f58155650557834ad77a53159dbea
 ,,item/weapon/it_wp_13_658.ice,31\010bce4d64b2b834eace58580b4008
 ,,item/weapon/it_wp_13_659.ice,15\6e2ebf8873e5b6cbcd0c58bae0a444
@@ -154,3 +154,11 @@ DEBUG - プリムウォンド,Steel Primm Wand,item/weapon/it_wp_13_527.ice,93\5
 ,,item/weapon/it_wp_13_664.ice,f9\a25d62ab6a7c87f92b7e5f842d8948
 ,,item/weapon/it_wp_13_665.ice,2d\c97e050e7bbe08e33308b3ae3d2f43
 ,,item/weapon/it_wp_13_666.ice,0e\f754572b0bc1c36b2044a239a6bd21
+,,item/weapon/it_wp_13_669.ice,c6\d4df85d008af98c0af85a1a05754a4
+,,item/weapon/it_wp_13_670.ice,30\f405461a3dbd6fddc8d259768f4868
+,,item/weapon/it_wp_13_671.ice,bd\b2458f246112c310d75f1a7c933c86
+,,item/weapon/it_wp_13_672.ice,cb\04cd6ab3f9f8f4387c5f6c84e2df99
+,,item/weapon/it_wp_13_673.ice,d3\36dbb97f9e3e4d655ff5ee3f6cb876
+,,item/weapon/it_wp_13_674.ice,7f\f21c0e6a38931920e65d52b09fd6f7
+,,item/weapon/it_wp_13_675.ice,75\45595d9f39b80a5b5391dbebb813fe
+,,item/weapon/it_wp_13_676.ice,d4\26f5e72276a1d2c9f974ecce319516

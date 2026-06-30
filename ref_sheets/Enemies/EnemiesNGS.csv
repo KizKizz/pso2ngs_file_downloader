@@ -536,8 +536,6 @@ en_non_trt_common.ice,68\6aa7d24905ea09a6441e7a9c102431
 ,,en_s01_mon_01.ice,6c\fb7827ac59b36662550f938eeb4c7a
 ,,en_gd_nyb_ex.ice,5f\8b2ac6cdeaa4ea1088b7f2a4513d8c
 en_gd_nyb_common.ice,51\c76204c733f9a562684eb64abcecd8
-ガラガロンゴ,Gara Garongo,en_nat_armma_ba.ice,0f\b6076b4176cdf61ea3839a9271d955
-en_nat_armma_common.ice,d5\da138f5d9ff25cfce478e0cb381edb
 ハイ・ゴロロロクス,High Gorororox,en_r05_gd_gor_baldh.ice,73\92a9bb840e4d5064ba1a36b983fc37
 en_gd_gor_common.ice,42\b1bba7ca2e1d2461269f93edf2b8f7
 マリオネス,Marioness,en_r05_gd_gho_ba.ice,a9\28d67c967835bf41eb177ff496f365
@@ -597,6 +595,7 @@ en_stl_sol_common.ice,cf\b7ad5fd232812252c462bf3db98b95
 ハイ・プルティネーデ,High Plutineide,en_r05_stl_wic_ba1h.ice,5e\5201c18c569a14c366890dd1a5718f
 ダークファルス・ソウラス,Dark Falz Solus,en_r05_stl_sls_ba.ice,d8\882838f67e66673e9136122546c400
 ダークファルス・ソウラス,Dark Falz Solus,en_r05_stl_sls_ex.ice,3d\a93f128035fa82e4faecdc56b8e4bd
+ソラス・クリプト,Sols Krypt,en_r05_stl_sls_exh.ice,27\e30dae5cdb5e8e04f18b4a4710ab1a
 en_stl_sls_common.ice,6e\4e4f4eab90defa97725a45c14471a3
 バロウグ・ガン,Balrog Gun,en_r05_stl_solri_ba.ice,bc\26cf073c3582191583351fd76d711e
 ,,en_r05_stl_solri_bah.ice,12\af94a99bf2eb47b82f7261fbaa3b15
@@ -648,6 +647,8 @@ en_rem_abh_common.ice,d6\3416cd396a20dfb4c8664c5c57c14b
 en_rem_dpb_common.ice,d6\659115b88d3fb597fa41b304e6d1af
 ルイノ・エクス,Ruine EX,en_r05_rem_gla_ba.ice,10\cf14b98d0ce2b7644a846145e75807
 en_rem_gla_common.ice,7a\a47fcdb645b0e5e4842a6287d76203
+ルイノ・シュレイダΛ,Ruine Shraider Λ,en_r05_rem_zsh_ba.ice,46\ce3dc49f54f2f8c761cd9a816b0685
+en_rem_zsh_common.ice,66\18efe0413e9b12bf12ec26b1deaa75
 en_gd_flo_eff.ice,a8\42fb661ed8319ab2349b0be5578eee
 en_gd_gia_eff.ice,f8\3bab9cbdd38b0641a47a91a4dd7cb4
 en_gd_kpy_eff.ice,6e\0d8a1df8942306521ab87ef7027c80
