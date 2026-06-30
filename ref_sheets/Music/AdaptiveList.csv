@@ -275,8 +275,6 @@ Underworld,Underworld,mu_11_bgm_11.cpk, 0ffccf035aa81072ced6f171f81695bd
 ,mu_11_bgm_charamake.cpk, aa3bfb7cd19bd372562f4afe4a082f95
 ,mu_11_bgm_city.ice, 89a20a573c42a3e64b151f9b2aaa0971
 ,mu_11_bgm_city.cpk, 0ef653a258221022ef779443a1b70355
-,mu_11_bgm_clb19_1.ice, 13e94c0010dbe0ffd12fd386b9489edc
-,mu_11_bgm_clb19_1.cpk, 4b7a4842c19a7dca0f3f5139f23c140c
 ,mu_11_bgm_clear.ice, c5cf42c2bfa7da5e93012e82b3e681c0
 ,mu_11_bgm_clear.cpk, 816ce8700563ae09f1b97c77fa93cc69
 ,mu_11_bgm_darkernest.ice, 1a664dadf8eda3c1fc78a018d6ced2c5
@@ -400,10 +398,6 @@ Our Fighting (マイルームの楽器),Our Fighting MyRoom Instruments,mu_11_bg
 ,mu_11_bgm_pk_result.cpk, 60a57cd940c549ace7f3f25b0ed5acb5
 ,mu_11_bgm_pk_win.ice, 70161d9f96646b488bd1873da3a19294
 ,mu_11_bgm_pk_win.cpk, 46eae0307b7f2cf31339995bfb1b3188
-,mu_11_bgm_pkv_before.ice, e5fb100a869554b19956694e4e0e720f
-,mu_11_bgm_pkv_draw.ice, bb479476a61be02fef4f5c5124be1b01
-,mu_11_bgm_pkv_lose.ice, f231e6078b1d7c70532d247005c37429
-,mu_11_bgm_pkv_win.ice, e18fd993bd99df953ad4aabad3f93478
 ,mu_11_bgm_rps_md.ice, 83daba946e0a750621d0d6306a92722e
 ,mu_11_bgm_rps_md.cpk, db9e23a251f789fc67ea82d2df94c8ba
 ,mu_11_bgm_sanctuary.ice, c3b9708410710423bf2491bdfbd41bd2

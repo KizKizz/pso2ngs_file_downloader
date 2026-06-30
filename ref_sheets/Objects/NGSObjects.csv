@@ -6365,7 +6365,7 @@ WIN(Ef),WIN (Ef),ob_7300_0006,FreeObjectSet2,object/map_object/ob_7300_0006_l1.i
 ,,ob_ep01_decoy_machine,noclipping,,,,,,,,,,,object/map_object/ob_ep01_decoy_machine_com.ice,51\eaaa678f97baecf42a9f4c183b4bfb,object/map_object/ob_ep01_decoy_machine_eff.ice,c2\7cc15dab5d05fda0ae3b99cc0b5af8,
 ,,ob_ep01_decoy,noclipping,,,,,,,,,,,object/map_object/ob_ep01_decoy_com.ice,1f\19bfef56eb30ec332ef95bf2f2075d,object/map_object/ob_ep01_decoy_eff.ice,cb\29e3cdb3623e56bac95d70681c8ce2,
 ,,ob_ep01_def_tri_barrier,noclipping,,,,,,,,,,,object/map_object/ob_ep01_def_tri_barrier_com.ice,71\725ee205fe2630816956150e4a4f45,object/map_object/ob_ep01_def_tri_barrier_eff.ice,6b\756badf62171bd51aee6f360a1485f,
-,,ob_ep01_def_tri_mng,noclipping,,,,,,,,,,,object/map_object/ob_ep01_def_tri_mng_com.ice,54\06de5133b86a18dd5b22fcc6fc4e88,,,
+,,ob_ep01_def_tri_mng,noclipping,,,,,,,,,,,,,,,
 ,,ob_ep01_def_tri_npc_obj,noclipping,,,,,,,,,,,object/map_object/ob_ep01_def_tri_npc_obj_com.ice,a1\4acb919aa6832313c2b58757af875e,,,
 ,,ob_ep01_diva_speaker,noclipping,,,,,,,,,,,object/map_object/ob_ep01_diva_speaker_com.ice,da\691bf5526bd213faa4e826c35bbdbe,,,
 ,,ob_ep01_diva,noclipping,,,,,,,,,,,object/map_object/ob_ep01_diva_com.ice,b1\4aceb820c2cc559da49e7a2ef0e3d5,,,

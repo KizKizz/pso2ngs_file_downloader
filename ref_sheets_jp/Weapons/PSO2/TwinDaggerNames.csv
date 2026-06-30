@@ -117,6 +117,7 @@
 エルキュリア,Elcuria,item/weapon/it_wp_04_143.ice,dd74d4cf562cd20b883a32708b142bcf
 ＊タマヤノウチワ,* Tamaya no Uchiwa,item/weapon/it_wp_04_146.ice,2d3dd38866b0c73565ebe53c8a76e75d
 アラナミノウチワ,Aranami no Uchiwa,item/weapon/it_wp_04_147.ice,5651e28936f45db5cc8843ddc085191d
+,,item/weapon/it_wp_04_148.ice,2bd2a823208b70d358ca481c1919bf4e
 フブキセンガ,Fubuki Senga,item/weapon/it_wp_04_149.ice,8cf71c7a696b2d680cc5f3780fb17ffc
 シノノメセンガ,Shinonome Senga,item/weapon/it_wp_04_151.ice,f904fe6c3fe2ee90bbefd9f40374f0c8
 ネメシスダガー,Nemesis Daggers,item/weapon/it_wp_04_152.ice,43fca4c354753d4423e111a0edc2a580
@@ -258,7 +259,6 @@
 ＊インペリアルクリムゾン 2,* Imperial Crimson 2,item/weapon/it_wp_04_331.ice,b7a22d958b41c317dd5f523504991f9a
 ＊凍玄幽閃,* Frostcrypt Essence,item/weapon/it_wp_04_332.ice,7e6852ec1f85ab1cd4b7fda4209a2eb0
 ＊ウォーヴァルエッジ,* Woval Edge,item/weapon/it_wp_04_333.ice,9dd1cc74c0cd4f1675b3f3a26d4ea37d
-＊ターキーレッグ,* Turkey Leg,item/weapon/it_wp_04_334.ice,433233fe20baa472711165ed4aa50bae
 ＊ティシュトリヤ,* Tishtrya,item/weapon/it_wp_04_335.ice,90fa4d1f2cf5df36bc5eddb93faf0f36
 ＊荒風十七葉,* Tempest Leaves,item/weapon/it_wp_04_336.ice,10249081bf71338dc6a0fa71b7f9dab6
 ＊フワル・フシャエータ,* Hvare-khshaeta,item/weapon/it_wp_04_338.ice,3938c0d5c71e73dbc0f7a5df114943b8
