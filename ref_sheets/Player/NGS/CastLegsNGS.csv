@@ -1,7 +1,7 @@
 ﻿Japanese Name,English Name,Id,Adjusted Id,Icon,Normal Quality,High Quality,Normal Quality RP,High Quality RP,Linked Inner,HQ Linked Inner,Linked Outer,HQ Linked Outer,Sounds,Cast Sounds,Material Anim,Material Anim Ex,Hand Textures,HQ Hand Textures,Hair Model,High Quality Hair Model,Face Model,High Quality Face Model
 ￥サモナーデフォルト女[Se]ＭＶ（肩のパーツなしver）　ＴＶ１　Ｃ１　レッグ,,203410,203410,,,,,,,,,,,,,,,,,,,
 ￥サモナーデフォルト女[Se]ＭＶ（肩のパーツなしver）　ＴＶ２　Ｃ１　レッグ,,204290,204290,,,,,,,,,,,,,,,,,,,
-,,300000,300000,,,,,,,,,,,,,,,,,,,
+,,300000,300000,,61e161dafc849f9025a2ca55e856eb2a,a88ba39e4a130aa59adf9d335af344d3,,,,,,,,,,,,,,,,
 ディガーン・レッグ,Di Gant Legs,300010,300010,61cdc3ac9b67e4c88a628b3a3a4574d1,e3acbe01258b8362bf7c286895c194f0,18c0926af771b238b3a57102cec5d83d,,,,,,,,2bbc2c665ffa8b823c916c68031ef88d,,,,,,,,
 ディガーン・レッグ/2,Di Gant Legs/2,300011,300011,13cd42e4b5bdb9fe1cf2b0d355b023ea,0a6b9de5f81fe986dea12ae5475c1631,0de0cbd7bcd3f9671e42e09c58776051,,,,,,,,2bbc2c665ffa8b823c916c68031ef88d,,,,,,,,
 ザンナ・レッグ,Zanna Legs,300030,300030,55d71f0c06bb224d4f5fed16c677525d,45b80e85d7826b54e4bd1782b615fcc7,fb8f5df4d4ec4d9175e77c9b53bbb728,,,,,,,,2bd05076bb0a7d606b6ec41de415ce69,,,,,,,,
@@ -145,5 +145,7 @@ N-エグザギア・レッグ/D,N-Exagia Legs/D,300610,300610,84013af56663365617
 ディノレックス・レッグV2/D,Dinorex Legs V2/D,301410,301410,45282c194ba27006cf9615d817fbcffe,c9d7742d85603a184f54ba088427d531,162cd38d7c73cec1668f1ba4f4d06da4,,,,,,,,2bd05076bb0a7d606b6ec41de415ce69,,,,,,,,
 サーグレイヴン・レッグ,Sirgraven Legs,301420,301420,7ffa71ad56b451b552df7962984d9599,eec7eb25bdd10e5ad20c52732e8194f4,9cb58f0783c0b1bbfef3115e3d1d251c,,,,,,,,2bd05076bb0a7d606b6ec41de415ce69,,,,,,,,
 ,,301430,301430,,71889065edc78fe8f42017fff3df5f8c,cfcd685bedd8d494c31eb9610fa5b2a4,,,,,,,,,,,,,,,,
+,,301440,301440,,,,,,,,,,,,,,,,,,,
+,,301450,301450,,,,,,,,,,,,,,,,,,,
 ,,399900,399900,,4e6349581b8c985bb1e43735e8beff2e,736b4b9d231f1922ca520a784544deec,,,,,,,,,,,,,,,,
 ,,399920,399920,,,,,,,,,,,,,,,,,,,

@@ -1,5 +1,6 @@
 ﻿＊ラッピーケージ,* Rappy Cage,item/weapon/it_wp_02_080.ice,8e\6ff7a5caebda7c7b36e4a988b3a7dc
 ＊超硬質ブレード,* Ultrahard Blades,item/weapon/it_wp_02_135.ice,43\afbc905d811d4d494f95d042e81b68
+＊荊,* Thorn,item/weapon/it_wp_02_168.ice,37\9301c110c5347f0a170d35e7a6aa2f
 ランスレボルシオ,Lance Revolsio,item/weapon/it_wp_02_196.ice,66\ba6f0150cf105b055323f2edd35623
 ランスドミナシオ,Lance Dominacio,item/weapon/it_wp_02_197.ice,7d\7e7293c858c98fbeaa6b3120bd24d3
 ランスインクルシオ,Lance Inclusio,item/weapon/it_wp_02_198.ice,e8\b4a7f54090d9a03d69928f86fec282
@@ -88,3 +89,7 @@
 ,,item/weapon/it_wp_02_592.ice,36\0f1616279ce66012004c1d9d8b6334
 ,,item/weapon/it_wp_02_593.ice,20\78426775db8ab7755700c3d4b640d8
 ,,item/weapon/it_wp_02_596.ice,bb\9c7805996f1ca14c32d5336bb1cb10
+,,item/weapon/it_wp_02_597.ice,dd\5bdbd29cc9d345ed78d3cad994a447
+,,item/weapon/it_wp_02_598.ice,45\e26f60c4dac4f4e1ec540729319968
+,,item/weapon/it_wp_02_600.ice,22\47cb95ef3fb5a3798ce94769aa3df6
+,,item/weapon/it_wp_02_601.ice,3d\baa7a4b398109019f549f54a4611e3

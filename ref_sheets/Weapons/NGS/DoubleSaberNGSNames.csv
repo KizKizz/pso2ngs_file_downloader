@@ -1,5 +1,6 @@
 ﻿デモリションコメット,Demolition Comet,item/weapon/it_wp_05_030.ice,9b\9bf179ac9f5f370a0df270973712e2
 双蓮華,Sourenge,item/weapon/it_wp_05_056.ice,51\37df89f4398c8e603f6af0afd2171b
+＊ブルー・ハート,* Blue Heart,item/weapon/it_wp_05_062.ice,10\39e8d39a4315312a4849face1da626
 ＊ブラッドサイズ,* Blood Scythe,item/weapon/it_wp_05_078.ice,fc\67d6fb7d30a4870df23779f4fc93e3
 夜双輪,Yasourin,item/weapon/it_wp_05_150.ice,e6\bf6bb835a2ddc2b8a541a1fe927e32
 ＊ジャンクヤード・ドッグ,* Junkyard Dog,item/weapon/it_wp_05_196.ice,89\d7b15194503fe4e6e0f70df3d098ce
@@ -157,3 +158,6 @@
 ,,item/weapon/it_wp_05_662.ice,94\612c73930c1989399ec06beacf7bc3
 ,,item/weapon/it_wp_05_663.ice,dd\3b29a29ed9ee83dfea3cd4f7c7c910
 ,,item/weapon/it_wp_05_664.ice,15\7c54e956a20c4013c03b55d763a209
+,,item/weapon/it_wp_05_665.ice,f0\549adb69d5b17d016ae615b21289e8
+,,item/weapon/it_wp_05_666.ice,b9\e5ce98d3b966b39bb5deacaed0d390
+,,item/weapon/it_wp_05_668.ice,23\d8cbce150b14cb731b22c80cbd16ef
