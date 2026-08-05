@@ -356,6 +356,7 @@ en_nat_fan_common.ice,03\ebc66ad51eb0fd7b41e43bcaa998a1
 ゾ・マルモス,,,,,,,,,,en_r03_nat_mam_de.ice,3e\59474851f161fb0bb67f49bc30aae1
 ゾ・マルモス,,,,,,,,,,en_r03_nat_mam_de_ag.ice,14\93302d6b75c2985331c1aad52183ac,ベテラン,Veteran
 マルモス・ロア,,,,,,,,,,en_r03_nat_mam_sm.ice,c3\a2d200d211d3b18e8565dc0c54feaf
+ハイ・ゾ・マルモス,,,,,,,,,,en_r03_nat_mam_deh.ice,aa\6d221e86878afcbce5c5d8b66886e1
 en_nat_mam_common.ice,13\632b1e7638a46507ac7652e8211b70
 ファンガルフル・ロア,,,,,,,,,,en_r03_nat_wol_bi.ice,cc\4375c38bcd16a259cae7be0dd6dbf6
 ガルフル・ロア,,,,,,,,,,en_r03_nat_wol_sm.ice,6d\6475f759942cba6025ea1dc4e72794
@@ -557,6 +558,8 @@ en_non_cml1_common.ice,50\72a4250a7297371986b6fd04497869
 en_non_cml2_common.ice,fa\39703a4319c343cbbc3165c8dbc1c4
 調査隊員[大剣],,,,,,,,,,en_r05_non_cml3_mob.ice,70\92943000497a928ecfdf4aa1d33ba2
 en_non_cml3_common.ice,66\31149d2a395b6888fbe56fe2875d72
+オルタ・クロフォード,,,,,,,,,,en_r05_non_cml4_crf.ice,a2\5ff68d8f1c37cd334af587db7e5261
+en_non_cml4_common.ice,77\dea4be7eae8f22da8ba023713d60ec
 カオスザヴェル,,,,,,,,,,en_r05_stl_akm_ba1.ice,84\84bab196db237325bf889af2156a9a
 ハイ・カオスザヴェル,,,,,,,,,,en_r05_stl_akm_ba1h.ice,63\32317904048df3c063694a9b3525ea
 グラッジボーン,,,,,,,,,,en_r05_stl_bkt_ba1.ice,d6\e3a42413c61f0d9e08e8e90a7058fa
@@ -607,7 +610,6 @@ en_stl_solri_common.ice,03\fcd6136a152e46212cd60036119137
 en_stl_solsw_common.ice,4e\975ec113c2b32384f68709940acf19
 ハルヴァルディ,,,,,,,,,,en_r05_stl_pnr_ba.ice,71\c4e03a9acbbe2c9ee787a21e7ed75b
 ハルヴァルディ・ヴェラ,,,,,,,,,,en_r05_stl_pnr_rai.ice,aa\0c56ed6d9d8f0ef873817d91889f56
-en_stl_pnr_common.ice,95\0b535f4d6095e3095a59812111b352
 アーンズゥ,,,,,,,,,,en_r05_stl_bbd_ba.ice,ad\5dd09d6885cd04949cce9521e71f21
 en_stl_bbd_common.ice,9e\28c10e7e704b9678698f7d849b7b10
 ゼレヴィン,,,,,,,,,,en_r05_stl_mzc_ba.ice,7e\05983c856c7990aeb583a3f6a0eb14
@@ -618,6 +620,7 @@ en_stl_mzc_common.ice,53\d32c80a3be14e5d9ceee5b0d89aff8
 en_stl_dnt_common.ice,54\de46f7b421fbea5b7c0927d178552c
 ドライヴェルズ,,,,,,,,,,en_r05_stl_krb_ba.ice,8a\f85c810cbdbce07407f9f7f0e19bce
 en_stl_krb_common.ice,f6\ae5dd3152d1418aabaecea0ed1f18c
+オルタ・ノエティカ,,,,,,,,,,en_r05_stl_bhu_ba1.ice,85\77da266989d0fd556b64b5e0e2ea50
 ヴァルヴィラン・アクス,,,,,,,,,,en_r05_stl_ars_ax.ice,c1\0ef2a80bb70ffa93e8301938285396
 ヴァルヴィラン・ウォンド,,,,,,,,,,en_r05_stl_ars_st.ice,1d\6f70726d9a2501915302c86f33d5b4
 ダークファルス・ヴァエル,,,,,,,,,,en_r05_stl_bel_ba.ice,eb\c08e7c5ee9599caf8b322fcb41a30d
@@ -650,6 +653,8 @@ en_rem_abh_common.ice,d6\3416cd396a20dfb4c8664c5c57c14b
 en_rem_dpb_common.ice,d6\659115b88d3fb597fa41b304e6d1af
 ルイノ・エクス,,,,,,,,,,en_r05_rem_gla_ba.ice,10\cf14b98d0ce2b7644a846145e75807
 en_rem_gla_common.ice,7a\a47fcdb645b0e5e4842a6287d76203
+ルイノ・アンガ,,,,,,,,,,en_r05_rem_ang_ba1.ice,95\3ac5d3467be5b494bf1b5047396c51
+en_rem_ang_common.ice,9d\e0f32c8e36ab512fcd998d64540ff7
 ルイノ・シュレイダΛ,,,,,,,,,,en_r05_rem_zsh_ba.ice,46\ce3dc49f54f2f8c761cd9a816b0685
 en_rem_zsh_common.ice,66\18efe0413e9b12bf12ec26b1deaa75
 en_gd_flo_eff.ice,a8\42fb661ed8319ab2349b0be5578eee

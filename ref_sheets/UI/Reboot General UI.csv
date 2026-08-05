@@ -7,6 +7,7 @@
 ,interface/ui_ending.ice,ca\6fc7b5e812104c07b2169fdcdbdc26
 ,interface/ui_event.ice,28\1b361cdab7bb1ee13362768cfd4cf4
 ,interface/ui_gacha.ice,c4\d8379a29fadfb4d27763c1528d0f2b
+,interface/ui_icon.ice,e8\20dfac5374c9f576113d7d3e104a51
 ,interface/ui_loginstamp.ice,c1\b0348885fea77ab0f1bd5bd0591762
 ,interface/ui_playable_load.ice,b4\70dd928e226d878f3d522cf4ca52c0
 ,interface/ui_worldmap.ice,36\991e9d648aaf083fc1638eb6b5d376

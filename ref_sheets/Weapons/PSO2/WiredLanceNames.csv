@@ -118,6 +118,8 @@
 エルデトロス,Eldetross,item/weapon/it_wp_02_162.ice,ce0976da3bb01994d2dfd3e0862da729
 ケイモストロス,Keimostross,item/weapon/it_wp_02_163.ice,3ce2f482433ec119dbe7b18df58154c6
 ,,item/weapon/it_wp_02_164.ice,7c38d7d31b9e826ad6ec764d64b2f6a6
+＊荊,* Thorn,item/weapon/it_wp_02_168.ice,379301c110c5347f0a170d35e7a6aa2f
+＊ペンデュラム,* Pendulum,item/weapon/it_wp_02_169.ice,b34d608be5f78daa2867e4ff6844af2c
 ＊ブーストランサー,* Boost Lancers,item/weapon/it_wp_02_170.ice,d3818118eca778da7f5fbf3c6c7e5ffe
 ノクスジラーク,Nox Jirac,item/weapon/it_wp_02_173.ice,e8831b715746886a4fb7cc8661fe3417
 レーテジラーク,Raete Jirac,item/weapon/it_wp_02_174.ice,79738dab5200ee7a464fb75ba5f5e6e9
@@ -154,6 +156,7 @@
 ,,item/weapon/it_wp_02_215.ice,8fab4aec5d5d4041b437278e5956ac44
 フォルニスグルズ,Fornis Gulz,item/weapon/it_wp_02_218.ice,8774fb36862fbd86a6e7b9fdcba53897
 アクルドグルズ,Aculd Gulz,item/weapon/it_wp_02_219.ice,d7a761e269d3b683822d3f9cc8593645
+＊レムのモーニングスター,* Rem's Morning Star,item/weapon/it_wp_02_220.ice,193eb449f9b289a38a7f7e6f9b89970c
 レイランス,Ray Lance,item/weapon/it_wp_02_221.ice,93e9fed08c6c7aa83f3c1e3aa399a022
 ユニオンランス,Union Lance,item/weapon/it_wp_02_222.ice,d43f9f880f31577bb6b8ef94e52f41d2
 レイニールオービット,Reinier Orbit,item/weapon/it_wp_02_223.ice,77ea33ab5517540b04c5c3c6fe2e9b0f
@@ -185,6 +188,7 @@
 バルヴェイス,Val Weiss,item/weapon/it_wp_02_253.ice,c596cff3d4b6ae14e4447a6b5b924b28
 アトラヴェイス,Atlas Weiss,item/weapon/it_wp_02_254.ice,29c79a66575866fea0dc77993793e1ab
 アトラヴェイス・イクス,Atlas Weiss Ex,item/weapon/it_wp_02_255.ice,7fc51ccf64c56999cefb3200d6ccdc46
+＊プラフタの駆動機兵,* Plachta Drive,item/weapon/it_wp_02_256.ice,9d934063671820ca3efe09bf206a484f
 ＊ウロボロス,* Ouroboros,item/weapon/it_wp_02_257.ice,befab304b8c3c8a55cae39bd13861321
 ネイクロー ?,NeiClaw ?,item/weapon/it_wp_02_258.ice,76e9ffee3a160793c88d052eeac4c2f7
 ＊レヴァティーン,* Laevateinn,item/weapon/it_wp_02_259.ice,3d4e5f3d720d52f56e80b0e51dc4fca8
@@ -222,5 +226,6 @@
 フルクシオウェイヴ,Fluxio Wave,item/weapon/it_wp_02_301.ice,d6406bc7b259c3e4b3b03d6fc41941ef
 リンザーウェイヴ,Rinser Wave,item/weapon/it_wp_02_302.ice,0a17d6136fb041539120dd519fe2758e
 闇征鞭アジェルアンカー,Darkweave Agile Anchor,item/weapon/it_wp_02_303.ice,88a23cfc34d6bd037fcd9215626decff
+＊雪泉の扇子,* Yumi Folding Fans,item/weapon/it_wp_02_304.ice,5943765660de4f1f4bfa73ab9da37342
 ＊ソニックリング,* Sonic Ring,item/weapon/it_wp_02_305.ice,f89e322378af4ece802acf69e2c91943
 デバッグウェポン,Debug Weapon,item/weapon/it_wp_02_999.ice,27d491706cd9f0cbfa93b8805b58386b
