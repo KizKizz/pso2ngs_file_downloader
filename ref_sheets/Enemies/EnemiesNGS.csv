@@ -6,6 +6,7 @@ en_gd_box_common.ice,14\7400f545dbf5a0f2ef5662b8162532
 ネクス,Nex,en_r01_gd_dra_cm.ice,01\201860c1d03bfefe1a984799260dc2
 ネクス,Nex,en_r01_gd_dra_cm.ice,01\201860c1d03bfefe1a984799260dc2
 ネクス・ヴェラ,Nex Vera,en_r01_gd_dra_rai.ice,18\00cf00b09593231448e1e0452fc79e
+ハイ・ネクス,High Nex,en_r01_gd_dra_raih.ice,03\76519ed46eb1d5628cfd0b38670c01
 en_gd_dra_common.ice,f4\01aec29c453c452a4e2729753b5aa9
 フワン,Fuwan,en_r01_gd_flo_wi.ice,27\e8ac0f1281b9acef2b23772adcb43e
 en_gd_flo_common.ice,c2\9e34669c8ec1f2462da713a0e12b0b
@@ -152,6 +153,7 @@ en_ani_kit_common.ice,38\417d4e27cc742966c52c024df601c6
 en_ani_moo_common.ice,47\cebbb22af97ecb052c7f60ae0323d6
 ムーニィ,Moony,en_r01_ani_rbt_b.ice,3d\9ba6c0ea1659d2ed223f42646a0ab6
 サニィ,Sunny,en_r01_ani_rbt_w.ice,64\3bf454b331a777874bc1295d206d87
+ハイ・サニィ,High Sunny,en_r01_ani_rbt_wh.ice,93\361acb8d6dc3b973e253554566b43e
 en_ani_rbt_common.ice,25\af964afa2d5a73dfaaa063d050ce30
 オタリカ,Otarica,en_r01_ani_sli_a.ice,e0\23fa229c5bc257ffdb5934c752d097
 en_ani_sli_common.ice,ae\94378ef003b6395b5a42b865834697
@@ -537,8 +539,6 @@ en_non_trt_common.ice,68\6aa7d24905ea09a6441e7a9c102431
 ,,en_s01_mon_01.ice,6c\fb7827ac59b36662550f938eeb4c7a
 ,,en_gd_nyb_ex.ice,5f\8b2ac6cdeaa4ea1088b7f2a4513d8c
 en_gd_nyb_common.ice,51\c76204c733f9a562684eb64abcecd8
-ガラガロンゴ,Gara Garongo,en_nat_armma_ba.ice,0f\b6076b4176cdf61ea3839a9271d955
-en_nat_armma_common.ice,d5\da138f5d9ff25cfce478e0cb381edb
 ハイ・ゴロロロクス,High Gorororox,en_r05_gd_gor_baldh.ice,73\92a9bb840e4d5064ba1a36b983fc37
 en_gd_gor_common.ice,42\b1bba7ca2e1d2461269f93edf2b8f7
 マリオネス,Marioness,en_r05_gd_gho_ba.ice,a9\28d67c967835bf41eb177ff496f365
@@ -572,6 +572,7 @@ en_non_cml4_common.ice,77\dea4be7eae8f22da8ba023713d60ec
 グラティガル,Gratigal,en_r05_stl_fan_ba1_ag.ice,1c\8eb5957fdc94d651209d74785b4817,ベテラン,Veteran
 レヴィーデ,Revide,en_r05_stl_flo_ba.ice,b5\68b9b2e6d221ec10b04e8e85693268
 ヘルジーグ,Herzig,en_r05_stl_gia_ba1.ice,46\a937967cce51909f83fd4e508748db
+ハイ・ヘルジーグ,High Herzig,en_r05_stl_gia_ba1h.ice,5d\d0fcfc25b45614eb110411b18e7143
 ペイヴル,Peivl,en_r05_stl_gos_ba.ice,bb\a9681a0271f4b8679347d663b1984d
 パヴォリム,Pavolim,en_r05_stl_hrp_ba1.ice,b3\47e33b5166b1fe7f93ba5d6442ff15
 アグニ,Agni,en_r05_stl_hum_ba.ice,f8\415f59ff9960ecbae1735843ea33cc
@@ -617,6 +618,7 @@ en_stl_bbd_common.ice,9e\28c10e7e704b9678698f7d849b7b10
 en_stl_mzc_common.ice,53\d32c80a3be14e5d9ceee5b0d89aff8
 ダークファルス・ダリオン,Dark Falz Dalion,en_r05_stl_dnt_ba.ice,5b\c2154e75afa47441f78c812c8f78ab
 ダークファルス・ダリオン,Dark Falz Dalion,en_r05_stl_dnt_ex.ice,3a\72e88a59c962902100c5fcd11319a0
+ダリオ・ルデアン,Dalio Ludian,en_r05_stl_dnt_exh.ice,1f\0259aa9f804024e62fa49440c250f6
 en_stl_dnt_common.ice,54\de46f7b421fbea5b7c0927d178552c
 ドライヴェルズ,Dryverus,en_r05_stl_krb_ba.ice,8a\f85c810cbdbce07407f9f7f0e19bce
 en_stl_krb_common.ice,f6\ae5dd3152d1418aabaecea0ed1f18c

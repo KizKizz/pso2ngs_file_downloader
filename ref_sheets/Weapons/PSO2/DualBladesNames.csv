@@ -83,11 +83,9 @@
 トウシナギ,Toushinagi,item/weapon/it_wp_17_124.ice,1029da431b56ddf50c7701781ca0482e
 フレトクル,Furetokuru,item/weapon/it_wp_17_127.ice,798b223315e61fbc31ab4f515128104b
 レイルランダー,Rail Lander,item/weapon/it_wp_17_130.ice,943bb564e9a0524a7a54d99cc4da0a1d
-＊干将・莫耶kaleid liner,* Kanshou & Bakuya kaleid liner,item/weapon/it_wp_17_137.ice,efbaf9be225c4952ff21e000eaeede27
 パルシュクレ,Palsucre,item/weapon/it_wp_17_138.ice,01c6c7edf606542576b5c67859bf9eb7
 ＊セレモ・ナイフ,* Ceremo Knife,item/weapon/it_wp_17_141.ice,ba2f01115683e22e25d4d06d69cea3de
 ＊ラムダエクスキャリバー,* Lambda Excalibur,item/weapon/it_wp_17_142.ice,0f58efea1a5c7609ebbaad9af504cdcd
-＊ダイナミックライブ７１１,* Dynamic Live 711,item/weapon/it_wp_17_143.ice,36b5d12c36cafc0d87a2eb4f92398958
 レクトラ,Rektora,item/weapon/it_wp_17_144.ice,cd3460a1a1bb83fcedaa4869f016bac1
 金剛杵,Kongousho,item/weapon/it_wp_17_150.ice,5ad0e0fd0e4d2632457d755f760845c0
 ＊クララレンダン,* Clara Rendan,item/weapon/it_wp_17_151.ice,fd8cf57a477bcb08a52d01cb02d9fa4e
@@ -96,15 +94,12 @@
 レーテディナス,Raete Dinas,item/weapon/it_wp_17_154.ice,a8d2cd96850e9d1d20cd078a610698b3
 ディナスアリオン,Dinas Arion,item/weapon/it_wp_17_155.ice,3829853e489254691e0b259476afbe5c
 アストラルブレイズ,Astral Blaze,item/weapon/it_wp_17_156.ice,a54227f3167a6b56594f9fb683874d3b
-＊干将・莫耶,* Kanshou and Bakuya,item/weapon/it_wp_17_157.ice,f7417cf5954b4d1b3f62c9134628b882
-＊干将・莫耶ＯＥ,* Kanshou and Bakuya Overedge,item/weapon/it_wp_17_158.ice,ebeb724f769e77def35f82dcf3158001
 ラビットブレード,Rabbit Blade,item/weapon/it_wp_17_159.ice,55e6aa6d8e0d6e02384ff6bcdbdf75a1
 フルネシブレード,Furnish Blade,item/weapon/it_wp_17_160.ice,eb547d33333d181a88e990cc07613229
 ＊フレミシュアブレード,* Flemish Blade,item/weapon/it_wp_17_161.ice,47331d91907d22c33b3d482f88a62d8a
 リグトゥーレン,Rig Touren,item/weapon/it_wp_17_162.ice,b0351cc9ed2a4b2920f3ab1f33c43085
 ＊グラムトゥーレン,* Gram Touren,item/weapon/it_wp_17_163.ice,e51d582192566fa1665fd786cf7eb9ef
 ジグマトゥーレン,Sigma Touren,item/weapon/it_wp_17_164.ice,23f0df93aea737c0acda2d0aad6fa303
-＊ロゼの二刀短剣,* Rose's Twin Daggers,item/weapon/it_wp_17_168.ice,fdc1a7f621f40b469ee3577f1bfc1636
 ＊バンブーブレイズ,* Bamboo Blaze,item/weapon/it_wp_17_169.ice,43aafbc40e14097007e1f32a6f203c1e
 ファヴニスオービット,Fafnir Orbit,item/weapon/it_wp_17_176.ice,cfc9286ad40234c419104c5eed161f98
 ファヴニスミラージュ,Fafnir Mirage,item/weapon/it_wp_17_177.ice,13db87a103864a2c13954ce773ec1c58
@@ -123,17 +118,13 @@
 アクルドザルク,Aculd Zalque,item/weapon/it_wp_17_191.ice,c51f827bbb45e33aebe1b1370564a451
 インヴェイドセイヴァー,Invade Savior,item/weapon/it_wp_17_193.ice,329e7628f20cfccc34d4b2c770ba15d9
 オフスティアセイヴァー,Ophistia Savior,item/weapon/it_wp_17_194.ice,d3b272ee1d727d0ff83d95bae64c8719
-＊アリアの双剣双銃,* Aria's Twin Swords & Guns,item/weapon/it_wp_17_195.ice,fa3ec00d7a7572c6806354b0e65a3c4f
 ＊ナウラ愛用フライパン,* Naura's Favorite Frying Pan,item/weapon/it_wp_17_196.ice,971e195793d8413503a625a304faa6bd
-＊天輪の鎧・双剣,* Heaven's Wheel Armor DB,item/weapon/it_wp_17_197.ice,6e6a9f97416d31ebd7ca169bb46df6ef
 Ｓ．ＣＮマンティス,S.CN Mantis,item/weapon/it_wp_17_198.ice,d2b6ce9d40002bb67091160334948a7a
 Ｓ．ＣＮアーバマンティス,S.CN Arbor Mantis,item/weapon/it_wp_17_199.ice,c16b311abc20b376b522779f473d9c79
 ,,item/weapon/it_wp_17_200.ice,55b77ff92ff379b8d5abd90d1fd6ec08
 イヴリダバタディア,Evleda Battadia,item/weapon/it_wp_17_201.ice,336d374f4cc59157603d9bd82c0eb019
 クリシスバタディア,Cleasis Battadia,item/weapon/it_wp_17_202.ice,d875e2b245febb0bb99174b486335ced
 シュベルバタディア,Schvelle Battadia,item/weapon/it_wp_17_203.ice,ff4aaa0db4051c436e8084f0f90c3214
-＊火竜の鉄拳,* Fire Dragon's Iron Fist,item/weapon/it_wp_17_207.ice,aa898ac5f237b3e0a66c62455160c9eb
-＊フィーの双銃剣,* Fie's Twin Bayonets,item/weapon/it_wp_17_208.ice,e66c0e8681b4c475abc8a47bd6b0c57d
 アウラヴォルザーグ,Aura Vulzzarg,item/weapon/it_wp_17_209.ice,4795ca641cc47857a414de3463bfb247
 マルスヴォルザーグ,Mars Vulzzarg,item/weapon/it_wp_17_211.ice,f9899d7522508befe939f97684111bc8
 ＊フェンヴォルフ,* Fenwolf,item/weapon/it_wp_17_212.ice,99e15ea1b9ae14a5f4dea3da7cd61ed8
@@ -158,7 +149,6 @@
 ゼイネシスサーベル,Zeinesis Saber,item/weapon/it_wp_17_237.ice,f759423f121e16e44a82235a4e03f03a
 クリファドサーベル,Clifard Saber,item/weapon/it_wp_17_238.ice,5eb0f7bd457d69f04c157cdb68d3a5d3
 ＊ブランノワール,* Blanc Noir,item/weapon/it_wp_17_239.ice,a14a6944c775dc86c6ff3d596b2ec8c2
-＊盗賊・エクスカリバー,* Theif Excalibur,item/weapon/it_wp_17_240.ice,f302c5ade52434498a7ef4d941360fa9
 アストラエンド,Astra End,item/weapon/it_wp_17_241.ice,c6d4b7c237c507c4c51677454b68a93d
 ＊超硬質ブレード,* Ultrahard Blades,item/weapon/it_wp_17_242.ice,afdfac1715ff8bc680cbc66b782425a1
 ＊ジラドゾウラ,* Girad Zoura,item/weapon/it_wp_17_245.ice,47fe2b6853a4ad30c3cc3325fc4444a8
@@ -213,13 +203,11 @@
 光跡翔クレアシオン,Trailblazer Creaxion,item/weapon/it_wp_17_301.ice,73649b6e01fe8e04c87f3552020865f7
 シャライラシュルプ,Chalyra Shulp,item/weapon/it_wp_17_302.ice,96169d5d894e56b0b987b7dc2db96d5f
 ＊ブロマペトレーマ,* Broma Petriema,item/weapon/it_wp_17_303.ice,4fd2109b77505cbba39345f5f2f703e6
-＊灼零エルゼデュアル,* Burning Zero Elze Dual,item/weapon/it_wp_17_304.ice,182d28eb0fe01bf0178bc3882afa4e36
 ＊メガスラッシュエッジ,* Mega Slash Edge,item/weapon/it_wp_17_305.ice,0c1e5c02251c67c22f12f8d42ccdc6d6
 ホムラノヤマカゲ,Homura no Yamakage,item/weapon/it_wp_17_306.ice,7d5f9188b8c3914aa92d8501360df0f1
 シエンノヤマカゲ,Shien no Yamakage,item/weapon/it_wp_17_307.ice,7ecab6762e16ded58cb4fa3e018cafdf
 セレスピラドン,Ceres Spiradon,item/weapon/it_wp_17_308.ice,42321bd30b3d91829c067db51c3d855a
 セレスピラドン・ザラ,Ceres Spiradon Zara,item/weapon/it_wp_17_309.ice,d4616c8c8d3022f49a802ceb980a6f7f
-＊ヘスティア・ナイフ,* Hestia Knife,item/weapon/it_wp_17_310.ice,05c0694fdbb799eb2fd2424ac519a210
 ＊フェリシテエーデル,* Felicity Edel,item/weapon/it_wp_17_311.ice,2748c745efd0d9e43a016cdf4fed5387
 ＊淑花春遊,* Shukuka Shunyuu,item/weapon/it_wp_17_312.ice,fc67f09cf519c606737c41e5739a66ec
 ＊ステルスウェポン,* Weapon Stealthing,item/weapon/it_wp_17_313.ice,218e3308f17ae4f7b4e5fbff76937e45
@@ -231,10 +219,7 @@
 オルゲイマリス,Orgei Malice,item/weapon/it_wp_17_321.ice,90a65112a5e1839533fd7d9fa34b0ef1
 ＊エクディクマリス,* Equdic Malice,item/weapon/it_wp_17_322.ice,eb9819326424e378588035a2a116311e
 ＊コートウェポンD,* Coated Edge D,item/weapon/it_wp_17_324.ice,a6cbdb814eb98701b4771cc68c5c5935
-＊プログレッシブ・ナイフ,* Progressive Knife,item/weapon/it_wp_17_325.ice,18d22e40bb77559f9a3ba7ee9de521f2
-＊ヴァリアブル・ソード,* Variable Sword,item/weapon/it_wp_17_326.ice,a842f1837a602ce6daf0b4790d5bf7e4
 ＊エールスターライト,* Aile Starlight,item/weapon/it_wp_17_327.ice,bf495d2c6cda5c446e8861f1d44ce6e1
-＊日本帝国標準兵装,* Imperial Army Std. Equipment,item/weapon/it_wp_17_328.ice,b09021c76a9917133b7c4e82ef70ddec
 シホウスザク,Shihou Suzaku,item/weapon/it_wp_17_329.ice,b5fe6ab17d29deac53b86276efa4a825
 ＊シコウレイジュウ,* Shikou Reiju,item/weapon/it_wp_17_330.ice,d774681ebab74ce13274d4c9ef0eabed
 ワールドオブガーディアン,World of Guardians,item/weapon/it_wp_17_331.ice,8354bbca3ed23c741f397ea8dd63446b
@@ -264,10 +249,7 @@
 イグニス-NT,Ignis-NT,item/weapon/it_wp_17_362.ice,fdfdca40d835f8a036859bdd1eb1a3c5
 ＊キリトの双剣,* Kirito Dual Blades,item/weapon/it_wp_17_363.ice,ca95426b59b84ea3b3fdf063a355761d
 ＊紅斬,* Benikiri,item/weapon/it_wp_17_364.ice,05e0d7f88547f6e9aa002c36252c624e
-＊飛鳥の双刀,* Asuka Twin Swords,item/weapon/it_wp_17_365.ice,092abb3b94f08b1dd07e2d3e19c50130
-＊焔の六刀,* Homura Six Swords,item/weapon/it_wp_17_366.ice,1eadd6ae78247413c1b6182f8e76401c
 ＊フォトンほうき,* Photon Broom,item/weapon/it_wp_17_367.ice,f8622b3a97cd41c718f28178a23b1e05
-＊雪泉の扇子,* Yumi Folding Fans,item/weapon/it_wp_17_368.ice,1c3bdc38f7a46c73d4c796f8eb3cd07d
 ＊テイルススパナ,* Tails Wrench,item/weapon/it_wp_17_369.ice,04710d37e2ffe7c13a16f56d26cfc70c
 ＊勇者の聖剣,* The Hero’s Holy Sword,item/weapon/it_wp_17_370.ice,fd00bc0b2cabd7e901eb5570707c6513
 デバッグウェポン,Debug Weapon,item/weapon/it_wp_17_999.ice,a9fe256fb65cdba18199dbe022d9c985
