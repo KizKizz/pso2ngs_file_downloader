@@ -68,7 +68,6 @@
 ミズーリＭ１３,Missouri M13,item/weapon/it_wp_10_069.ice,c7c568a8e2d7d2a09d21795df592e825
 Ｈ４４ミズーリＴ,H44 Missouri T,item/weapon/it_wp_10_070.ice,4e31594cfbcaf17e901d7bb333455acb
 ＊Ｄ９２ジェイナス,* D92 Janus,item/weapon/it_wp_10_071.ice,53a0a035128ce75007f8adae9e621f00
-＊スプニャッシュ,* Spnyash,item/weapon/it_wp_10_072.ice,e5215882baf5123273797dd4a8c8054e
 赤のマシンガン,Red Machineguns,item/weapon/it_wp_10_074.ice,0c8e3f9c2fdbbb5d929c954a036efbcd
 青のマシンガン,Blue Machineguns,item/weapon/it_wp_10_075.ice,b7f882026e4af6244e82003b6be93195
 ノワルミラーズ,Noire Mirrors,item/weapon/it_wp_10_076.ice,162a707792c3609b2a66094ece11dbff
@@ -186,18 +185,14 @@
 ミストールノヴァ,Mistral Nova,item/weapon/it_wp_10_255.ice,667467ac40b056deaf5243d203476e0d
 ＊フレイフィオーラ,* Frey Fiora,item/weapon/it_wp_10_256.ice,d51ece420189952fb7917f393a648061
 三連幻創機銃,Phantom Triple Cannon,item/weapon/it_wp_10_259.ice,431a89039ca660197ec26f370d28c51a
-＊アリアの双剣双銃,* Aria's Twin Swords & Guns,item/weapon/it_wp_10_262.ice,bef2c2d2ca9902360c6c35e2eff06a32
-＊あかりの短機関銃,* Akari's Micro Uzi,item/weapon/it_wp_10_263.ice,d8dc8fae108604b3d4c4622b44d517aa
 ＊双魔銃剣アンフィスバエナ,* Demonic Gunblades Amphisbaena,item/weapon/it_wp_10_264.ice,c49641f4bc44074b17184cd333f1c74c
 雷銃タガミコウガ,Thunder Gun Tagamikouga,item/weapon/it_wp_10_265.ice,699924778f54f6a2ffc98d88c5c482cf
 ＊雷装イザネカヅチ,* Lightning Izanekazuchi,item/weapon/it_wp_10_266.ice,cb8d9b2af598da48ae52906462c0e496
 ＳワルキューレＲ２５Ｓ,S Valkyrie R25S,item/weapon/it_wp_10_270.ice,4c68cb3fbea248b06c2973a31ac289c2
-＊フィーの双銃剣,* Fie's Twin Gunswords,item/weapon/it_wp_10_274.ice,68c52643f2012615794ff4f558083c22
 ＊煌舞アウロラ,* Shining Dance Aurora,item/weapon/it_wp_10_275.ice,0058999372913d2dca80133ba652a88a
 バレットレボルシオ,Bullet Revolsio,item/weapon/it_wp_10_276.ice,348a7167c9977c6aac7349ee45025032
 バレットドミナシオ,Bullet Dominacio,item/weapon/it_wp_10_277.ice,6f9adf9813f5077452c9ec42e96a9783
 バレットインクルシオ,Bullet Inclusio,item/weapon/it_wp_10_278.ice,1ef35d1e95e990ab92dd95d9aab41ffe
-＊絢爛砲ブリュンヒルデ,* Gorgeous Guns Brunhilde,item/weapon/it_wp_10_279.ice,ee481b19e704db626945677abbf64c93
 アウラディアズス,Aura Diazuth,item/weapon/it_wp_10_280.ice,ea54e3d91ae3c7ef719d893bcc40ab99
 マルスディアズス,Mars Diazuth,item/weapon/it_wp_10_282.ice,c38a7e59271d56a94a513350fd3f363a
 ＊ベノムリアクター,* Venom Reactor,item/weapon/it_wp_10_283.ice,9843ac105b1bc8bcb500afa57f4a6b28
@@ -254,7 +249,6 @@
 グレンノサミダレ,Guren no Samidare,item/weapon/it_wp_10_343.ice,f54ad0585dbffb78bcb7e553932c4cf6
 ネメシスバレット-NT,Nemesis Bullet-NT,item/weapon/it_wp_10_344.ice,31278871212e5b9df09ae59820a6d6a4
 スレイヴバレット-NT,Raven Bullet-NT,item/weapon/it_wp_10_345.ice,a30e1111c260f288f27c9a08cc81c86c
-＊東郷美森の銃,* Mimori Togo's Gun,item/weapon/it_wp_10_346.ice,392e2a8ee156e1d351d4fff4a236230f
 Ｈ１０ミズーリＴ-NT,H10 Missouri T-NT,item/weapon/it_wp_10_348.ice,e1107a41d8a29bbfb2ab3bbc99791db2
 深遠弾エヘクシオン,Profound Execuxion,item/weapon/it_wp_10_349.ice,0e300fcef79cf4964277449111134653
 星震弾エヘクシオン,Celestial Execuxion,item/weapon/it_wp_10_350.ice,b52ae1ec4d57877545ef7e9c36ad3c95
@@ -268,7 +262,6 @@
 ＊セグメントライフル,* Segment Rifle,item/weapon/it_wp_10_362.ice,7cb2d39c6a10c7988590a055710a6d4a
 セレシオステガ,Ceres Zeostega,item/weapon/it_wp_10_363.ice,879ca2b309291ab63628ff6d8263a0e7
 セレシオステガ・ザラ,Ceres Zeostega Zara,item/weapon/it_wp_10_364.ice,724b9e72a5688f34acd40a4ecd45e965
-＊日本帝国標準兵装,* Imperial Army Std. Equipment,item/weapon/it_wp_10_365.ice,5ecefb8e14f296bf714daeae990e992d
 ＊コートバレル,* Coat Barrel,item/weapon/it_wp_10_366.ice,55c3f50511b051a4b730e30f6eb6d63d
 ダインオンブロス,Dyne Ombros,item/weapon/it_wp_10_367.ice,b8bb2480df024d89f357928373b0af41
 ＊ショコラブエンペ,* Chocolate Emblem,item/weapon/it_wp_10_368.ice,4c46a3819e11bf27fbbaafa3c5f4fd53
@@ -279,7 +272,6 @@
 ヤスミノコフ８０００Ｃ-NT,Yasminkov 8000C-NT,item/weapon/it_wp_10_373.ice,5aaa453422efcc174401451b0a5a8993
 オルゲイランコア,Orgei Rancor,item/weapon/it_wp_10_374.ice,af664283ac16020507468fd176099783
 ＊エクディクランコア,* Equdic Rancor,item/weapon/it_wp_10_375.ice,bf63dd31982e5a68cf123b4fc4fb1c80
-＊パレットライフル,* Pallet Rifle,item/weapon/it_wp_10_376.ice,7742965f5839d6806dc8321cd7bec884
 ブラックダークネス,Black Darkness,item/weapon/it_wp_10_381.ice,bcf97cff31d393fb6679d4ef0f245de6
 ＊フェズリールイス,* Featherly Lewis,item/weapon/it_wp_10_383.ice,825ef1af7c6aa416e35592dbf97af240
 ＊カリエンテオーブ・メギス,* Caliente Orb Megis,item/weapon/it_wp_10_384.ice,ec8a8007f94e7eece673dbbe022a15d0
